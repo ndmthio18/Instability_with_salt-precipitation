@@ -2,7 +2,7 @@
 
 | 案例 | 当前范围 | 状态与限制 |
 |---|---|---|
-| 36877 | 同 ELF、原 nx28/1e-6 的新 sal M0/M1 同主机严格配对 | M0 running，M1 pending dependency；物理比较 pending |
+| 36877 | 同 ELF、原 nx28/1e-6 的新 sal M0/M1 同主机严格配对 | M0/M1 running concurrently；物理比较 pending |
 | 38852 | 接近竞争边界的第二案例 | pending；按 command/3 Task 7 等待 36877 的信号/误差评价后准备最小 WP1 配对 |
 | 42929 | 另一条已启动的无扰动延窗计算 | 正在运行，占用同服务器；不属于本次严格 M0/M1 输运证据，不重复启动 |
 

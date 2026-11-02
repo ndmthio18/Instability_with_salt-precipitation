@@ -1,0 +1,29 @@
+{
+  "utc": "2026-11-02T22:59:28.513534+00:00",
+  "allow_parallel_pair": true,
+  "M0_job_id": "19160",
+  "M1_job_id": "19161",
+  "user_instruction": "M0 and M1 each use one core concurrently; check resources first; analyze and report after completion",
+  "resources": {
+    "cpu_allocation": "66/62/0/128",
+    "available_memory_bytes": 233013067776,
+    "scratch_available_bytes": 134883147776
+  },
+  "old_worker_sha256": "ba42f3f28723a67169cc462663c5060281fec6782dfa41ca393409af79c791d4",
+  "new_worker_sha256": "a799ed1ea38a61ee8641c9814d4731422672b96f088b8d16d9e29725d0bd7c86",
+  "M0_running_original_worker_unchanged": true,
+  "final_analysis_requires_complete_M0_bridge_and_M1_initial_check": true,
+  "scontrol": {
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  "job_after": "JobId=19161 JobName=p2-M1\n   UserId=zhixin(2389) GroupId=lh2studi(2001) MCS_label=N/A\n   Priority=1 Nice=0 Account=(null) QOS=(null)\n   JobState=PENDING Reason=None Dependency=(null)\n   Requeue=1 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0\n   RunTime=00:00:00 TimeLimit=12:00:00 TimeMin=N/A\n   SubmitTime=2026-11-02T23:46:17 EligibleTime=2026-11-02T23:59:28\n   AccrueTime=Unknown\n   StartTime=Unknown EndTime=Unknown Deadline=N/A\n   SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-11-02T23:46:17 Scheduler=Main\n   Partition=debug AllocNode:Sid=sal:1325435\n   ReqNodeList=(null) ExcNodeList=(null)\n   NodeList=\n   NumNodes=1-1 NumCPUs=1 NumTasks=1 CPUs/Task=1 ReqB:S:C:T=0:0:*:*\n   ReqTRES=cpu=1,mem=1M,node=1,billing=1\n   AllocTRES=(null)\n   Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=*\n   MinCPUsNode=1 MinMemoryNode=0 MinTmpDiskNode=0\n   Features=(null) DelayBoot=00:00:00\n   OverSubscribe=OK Contiguous=0 Licenses=(null) Network=(null)\n   Command=/tmp/zhixin_paper2_pilot0_20261102_r01/M1.sbatch\n   WorkDir=/home/guests/2023/zhixin\n   StdErr=/tmp/zhixin_paper2_pilot0_20261102_r01/M1/slurm-19161.log\n   StdIn=/dev/null\n   StdOut=/tmp/zhixin_paper2_pilot0_20261102_r01/M1/slurm-19161.log\n   KillOInInvalidDependent=Yes\n   TresPerTask=cpu=1\n   \n\n",
+  "jobs": {
+    "host": "sal",
+    "remote": "/tmp/zhixin_paper2_pilot0_20261102_r01",
+    "M0_job_id": "19160",
+    "M1_job_id": "19161",
+    "policy": "User-authorized M0/M1 concurrent, one physical core and one rank each, each <=12h; final analysis gates retained"
+  }
+}

@@ -1,4 +1,4 @@
-"""One Slurm-owned, 12-hour-limited leg on sal; M1 depends on verified M0.
+"""One Slurm-owned, 12-hour-limited leg on sal; parallel M1 requires explicit authorization.
 
 The solver runs with the original frodo loader/libraries, one rank and one core.
 No retries or changes of physical parameters are implemented here.
@@ -39,6 +39,33 @@ def check_background(reference,current):
         scope='Host/runtime bridge only; final physical pair uses two new sal legs. These thresholds are not transport-effectiveness thresholds.')
 
 
+def check_m1_launch(root, run, plan):
+    authorization = root/'parallel_authorization.json'
+    if authorization.exists():
+        auth = json.loads(authorization.read_text())
+        assert auth['allow_parallel_pair'] is True
+        assert str(auth['M1_job_id']) == os.environ['SLURM_JOB_ID']
+        assert os.environ.get('SLURM_CPUS_PER_TASK') == '1'
+        m0 = root/'M0'
+        start = json.loads((m0/'started.json').read_text())
+        assert str(start['SLURM_JOB_ID']) == str(auth['M0_job_id'])
+        assert start['elf_sha256'] == plan['executable']['sha256']
+        assert set(os.sched_getaffinity(0)).isdisjoint(start['affinity']), 'M0/M1 CPU affinity overlaps'
+        stop = json.loads((m0/'stop_record.json').read_text())
+        assert stop['initial_diagnostics_written'] and stop['accepted_steps'] >= 1
+        assert list(m0.glob('*-00000.vtu'))
+        for name in ('wrapper_failure.json', 'wrapper_exception.json'):
+            assert not (m0/name).exists(), 'M0 failure: '+name
+        if (m0/'finished.json').exists():
+            done = json.loads((m0/'finished.json').read_text())
+            assert done['returncode'] == 0 and not done.get('wrapper_stop_reason')
+            assert json.loads((m0/'bridge_validation.json').read_text())['passed']
+    else:
+        assert json.loads((root/'M0/bridge_validation.json').read_text())['passed']
+        assert json.loads((root/'M0/finished.json').read_text())['returncode'] == 0
+    assert sha(run/'eigenprofile.dat') == plan['profile_sha256']
+
+
 def main(root,role):
     root=root.resolve();run=root/role;bundle=root/'bundle';p=json.loads((run/'plan.json').read_text())
     started=run/'started.json';state=run/'runtime_state.json'
@@ -50,9 +77,7 @@ def main(root,role):
     assert sha(run/'params.input')==p['input_sha256']
     assert sha(bundle/'bin/paper2_transport')==p['executable']['sha256']
     if role=='M1':
-        assert json.loads((root/'M0/bridge_validation.json').read_text())['passed']
-        assert json.loads((root/'M0/finished.json').read_text())['returncode']==0
-        assert sha(run/'eigenprofile.dat')==p['profile_sha256']
+        check_m1_launch(root, run, p)
     if os.statvfs(root).f_bavail*os.statvfs(root).f_frsize<4*1024**3:raise RuntimeError('Insufficient scratch')
     command=[sys.executable,str(bundle/'launch_solver.py'),'params.input']
     # This process is already under srun CPU placement. Strip scheduler-discovery

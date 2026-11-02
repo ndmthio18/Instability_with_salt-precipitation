@@ -1,0 +1,48 @@
+{
+  "utc": "2026-11-02T22:58:16.241030+00:00",
+  "cpu_allocation": "66/62/0/128",
+  "load": [
+    66.19580078125,
+    66.533203125,
+    68.8193359375
+  ],
+  "memory": {
+    "MemTotal": 270046978048,
+    "MemAvailable": 233064108032
+  },
+  "scratch_available_bytes": 134883160064,
+  "jobs": "19161|PENDING|(Dependency)\n19160|RUNNING|localhost\n",
+  "M0_started": {
+    "utc": "2026-11-02T22:46:18.960023+00:00",
+    "pid": 1325566,
+    "command": [
+      "/usr/bin/python3",
+      "/tmp/zhixin_paper2_pilot0_20261102_r01/bundle/launch_solver.py",
+      "params.input"
+    ],
+    "SLURM_JOB_ID": "19160",
+    "execution_host": "sal",
+    "elf_sha256": "d78ce5122cf69e4dee5a4d12bcc726779959f304b343246009cb45bb37e894cc",
+    "single_rank": true,
+    "solver_address_space_limit_bytes": 8589934592,
+    "affinity": [
+      0,
+      64
+    ]
+  },
+  "M0_stop": {
+    "schema_version": 1,
+    "reason": "in_progress_or_interrupted",
+    "last_accepted_time_s": 6593.781415663503,
+    "accepted_steps": 29,
+    "initial_diagnostics_written": true,
+    "requested_end_s": 136423.0637723484,
+    "surface_threshold_low_s": null,
+    "surface_threshold_high_s": null,
+    "global_threshold_low_s": null,
+    "global_threshold_high_s": null
+  },
+  "M1_started": false,
+  "M0_initial_field_present": true,
+  "owned_tasks": "19161|p2-M1|PENDING|1\n19160|p2-M0|RUNNING|2\n"
+}

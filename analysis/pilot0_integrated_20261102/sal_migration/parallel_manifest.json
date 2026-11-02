@@ -1,0 +1,15 @@
+{
+  "utc": "2026-11-02T23:00:46.266186+00:00",
+  "scope": "Authorized concurrent launch and final analysis guards; original migration manifest retained as historical snapshot",
+  "sha256": {
+    "scripts/pilot0_sal_worker.py": "a799ed1ea38a61ee8641c9814d4731422672b96f088b8d16d9e29725d0bd7c86",
+    "scripts/analyze_matched_pair.py": "e5cb3bd8409d4e1cdb909203704af30c69a131cfc89f60c6388ee6be4019a80c",
+    "analysis\\pilot0_integrated_20261102\\sal_migration\\parallel_activation.json": "04371eeefd0565d66c246ed4b68f601bad66ea3bf93ea9ca76827d816442cc68",
+    "analysis\\pilot0_integrated_20261102\\sal_migration\\parallel_gate_checks.json": "699fdab431b8efb4cee2742a20edb0ec282fd9d2a8cbb36da5a9935ba4b1647c",
+    "analysis\\pilot0_integrated_20261102\\sal_migration\\parallel_resource_preflight.json": "2d381fb8e95e6ec9cf04e4ff79a23d3877823dfbf100a314d4d3753b202a08ab",
+    "analysis\\pilot0_integrated_20261102\\sal_migration\\parallel_start_verification.json": "85a073c2fb3048f527e1b48c7bc5aed77402e10f990cdf1f4cdaef68fd3ab39f",
+    "analysis\\pilot0_integrated_20261102\\sal_migration\\execution\\pilot0_sal_worker_parallel.py": "a799ed1ea38a61ee8641c9814d4731422672b96f088b8d16d9e29725d0bd7c86",
+    "analysis\\pilot0_integrated_20261102\\sal_migration\\execution\\enable_parallel_remote.py": "5718b7f714eed167c3adae5b911357862ea89969ce3d5de43c0a5cc27b0f26cf",
+    "analysis\\pilot0_integrated_20261102\\sal_migration\\M1_initial_field_check_snapshot.json": "d53ccf3d1a734b3ce67b7da470d1c25135c2e2c7f5daac09c256079e6e8caa43"
+  }
+}

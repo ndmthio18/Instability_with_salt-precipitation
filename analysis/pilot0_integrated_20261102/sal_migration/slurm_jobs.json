@@ -3,5 +3,5 @@
   "remote": "/tmp/zhixin_paper2_pilot0_20261102_r01",
   "M0_job_id": "19160",
   "M1_job_id": "19161",
-  "policy": "M0 then M1, one large solver at a time on sal, each <=12h"
+  "policy": "User-authorized M0/M1 concurrent, one physical core and one rank each, each <=12h; final analysis gates retained"
 }

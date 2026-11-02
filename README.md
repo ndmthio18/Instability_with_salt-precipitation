@@ -1,6 +1,6 @@
 # Paper 2 — effective salt redistribution
 
-`command/3.md` 综合 Pilot-0 已进入持续执行：已按用户授权迁移 sal，M0 桥接正在运行，M1 按成功依赖顺序启动，尚无新配对物理结果。运行门槛、状态、预算与后续自动检查见 [执行交接](analysis/pilot0_integrated_20261102/EXECUTION_HANDOFF_ZH.md)。
+`command/3.md` 综合 Pilot-0 已进入持续执行：已按用户授权迁移 sal，M0/M1 已按最新授权各一核并行运行，尚无新配对物理结果。运行门槛、状态、预算与后续自动检查见 [执行交接](analysis/pilot0_integrated_20261102/EXECUTION_HANDOFF_ZH.md)。
 
 已完成 `command/2.md` 的 [onset 来源审计](analysis/onset_semantics_20261102/AUDIT_ZH.md)与[字段约定](analysis/onset_semantics_20261102/CONTRACT_ZH.md)。新分析使用 `analysis/onset_semantics_20261102/views/` 中保留原列并附加标准字段的表；原始来源表和注册计划保持冻结。Case 36877：全局 nx=5、t_crit=31409.16 s；observable nx=28、t_seed(0.10)=45474.35 s；历史 t_detect=50394.33 s。t_eff 尚未定义，本轮未重算或启动模拟。
 

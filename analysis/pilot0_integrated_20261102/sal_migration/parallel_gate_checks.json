@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "checks": {
+    "authorized_disjoint_launch_passes_without_completed_M0": true,
+    "overlapping_core_rejected": true,
+    "failed_M0_rejected": true,
+    "without_authorization_complete_bridge_required": true,
+    "final_analysis_rejects_failed_bridge": true,
+    "pair_inputs_still_match": true
+  }
+}

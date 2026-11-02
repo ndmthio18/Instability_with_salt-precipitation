@@ -1,14 +1,14 @@
 # command/3.md 持续执行交接
 
-状态：**sal M0 running / M1 pending dependency**，不是已完成的 Pilot 结果。
-用户已授权 command/3 全工作包，并授权使用 cxhpc 或 sal。2026-11-02 已迁移至 sal。
+状态：**sal M0 running / M1 running, authorized parallel pair**，不是已完成的 Pilot 结果。
+用户已授权 command/3 全工作包，并授权使用 cxhpc 或 sal。已迁移至 sal；用户最新明确授权 M0/M1 各一个核并行，覆盖原串行限制。
 
 ## 当前执行身份
 
 - 本仓库：`D:/3OutputFile/1Research/Article/22Surrogate_model/paper/2`，分支 `codex/paper2-main`。
 - sal：`/tmp/zhixin_paper2_pilot0_20261102_r01`。
-- **M0 Slurm job 19160，M1 Slurm job 19161，afterok:19160**，失败依赖自动取消。
-- 两条腿顺序运行，各 1 rank、1 CPU、BLAS/OMP/MKL=1、墙钟上限 12 h。
+- **M0 Slurm job 19160，M1 Slurm job 19161，均已 RUNNING**；原 afterok 依赖已解除，没有新提交或重复模拟。
+- 两条腿同时运行，各 1 rank、1 个物理核心、BLAS/OMP/MKL=1、墙钟上限 12 h；M1 启动检查 CPU 亲和性与 M0 不重叠。
 - frodo worker 2453288 已在启动 M1 前取消；`frodo_queue_cancelled.json` 留存证据。禁止恢复该队列。
 - frodo 原 case42929 未修改，继续运行。sal 不必等待它。
 - `paper-2-pilot-0` heartbeat 已改为每 30 min 检查 sal；无变化静默，完成、失败或决策时通知。
@@ -35,9 +35,9 @@ python scripts/pilot0_sal_campaign.py collect
 本轮 checkpoint/restart 未验证，VTK 不能直接作为重启状态。
 
 1. M0 完成后 worker 比较原 frodo M0 的完整预算/表面历史，生成 `bridge_validation.json`。
-   这是主机桥接测试，容差不是物理有效输运阈值。失败时 M1 不运行。
+   这是主机桥接测试，容差不是物理有效输运阈值。并行不跳过最终门槛；失败时不得发布配对物理结论，并评估停止尚在运行的 M1。
 2. M1 第一接受步后自动检查实际初始 VTK：600×200 坐标、与新 M0 的压力/Sw、nx28/1e-6 公式及三个 BOX 区域初始库存。
-   `initial_field_check.json` 失败即停止。
+   `initial_field_check.json` 失败即停止。本次启动已通过实际网格、压力、Sw、扰动公式及初始库存6项检查；快照见 `sal_migration/M1_initial_field_check_snapshot.json`。
 3. 完成后 collect 回传小文件；执行下列归档将完成腿的原始场备份到本地忽略目录：
 
 ```powershell
@@ -53,6 +53,8 @@ python scripts/analyze_matched_pair.py --m0 analysis/pilot0_integrated_20261102/
 未完成或 wrapper 失败必须拒绝；不得用 diagnostic-only 替代验收。接受时刻不同可显式用 `--common-accepted-times`，只比较精确共有物理时刻的原始累计量，保留未覆盖时段，不能按行号相减。
 
 最初 5 步桥接输出相同，仅为局部检查，完整结果 pending。早期每步约 20–35 s，600 步的 M0 粗估 3–6 h；M1 启动后实测估计，不能套用原 frodo 成本保证完成。
+
+并行变更来源：`sal_migration/parallel_activation.json`、`parallel_resource_preflight.json`、`parallel_gate_checks.json`。检查时62个空闲逻辑CPU、约217 GiB可用内存。原 M0 正在执行的包装器未改动，M1 使用留存旧版本后的新包装器；原 ELF、输入、profile 不变。`enable_parallel_remote.py` 是已执行记录，禁止重复执行。正式分析接口强制核验 M0 bridge 和 M1 initial check 及其输出哈希。
 
 ## 继续工作顺序
 

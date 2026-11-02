@@ -149,6 +149,12 @@ def validate_pair(m0, m1):
         if finished['returncode'] != 0 or finished.get('wrapper_stop_reason') or stop['reason'] not in (
                 'requested_horizon','surface_solubility_threshold','interior_solubility_threshold'):
             raise ValueError('Incomplete/failed run; retain separately')
+        if plan.get('execution_host') == 'sal':
+            gate = 'bridge_validation.json' if p == m0 else 'initial_field_check.json'
+            if not json.loads((p/gate).read_text()).get('passed'):
+                raise ValueError('Failed sal validation gate: '+gate)
+            if hashlib.sha256((p/gate).read_bytes()).hexdigest() != finished['files'][gate]['sha256']:
+                raise ValueError('Validation gate hash mismatch: '+gate)
         for name in ('transport_budget.csv','surface_events.csv','stop_record.json'):
             if hashlib.sha256((p/name).read_bytes()).hexdigest() != finished['files'][name]['sha256']:
                 raise ValueError('Output hash mismatch: '+name)
