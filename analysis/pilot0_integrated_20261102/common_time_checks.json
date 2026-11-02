@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "checks": {
+    "exact_shared_physical_times": true,
+    "initial_offset_corrected": true,
+    "cumulative_flux_not_reintegrated": true,
+    "identity_preserved": true,
+    "differing_dt_retained": true,
+    "default_still_rejects_step_mismatch": true,
+    "cut_shift_rejected": true,
+    "initial_only_overlap_rejected": true,
+    "crossing_excluded_between_common_times": true
+  },
+  "scope": "exact shared accepted times only; no interpolation error estimate or convergence claim"
+}

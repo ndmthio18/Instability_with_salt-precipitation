@@ -1,0 +1,48 @@
+{
+  "current_utc": "2026-11-02T22:30:27Z",
+  "stop": {
+    "schema_version": 1,
+    "reason": "in_progress_or_interrupted",
+    "last_accepted_time_s": 18878.913079758426,
+    "accepted_steps": 643,
+    "initial_diagnostics_written": true,
+    "requested_end_s": 65500.419762994294,
+    "surface_threshold_low_s": null,
+    "surface_threshold_high_s": null,
+    "global_threshold_low_s": null,
+    "global_threshold_high_s": null
+  },
+  "progress": 0.2882258334842676,
+  "recent_steps": 50,
+  "recent_median_step_s": 11.0,
+  "recent_mean_step_s": 11.006,
+  "recent_min_step_s": 9.7,
+  "recent_max_step_s": 13.0,
+  "estimated_remaining_steps": 1587.889550138451,
+  "estimated_remaining_h_at_recent_rate": 4.85453121911772,
+  "load": [
+    26.1025390625,
+    25.189453125,
+    25.2490234375
+  ],
+  "queue": {
+    "status": "queued_resource_gate",
+    "elapsed_queue_s": 240.082404544577,
+    "resources": {
+      "utc": "2026-11-02T22:30:16.700010+00:00",
+      "load_1m": 25.939453125,
+      "load_5m": 25.12744140625,
+      "cpu": 24,
+      "available_memory_bytes": 22419210240,
+      "free_disk_bytes": 282087481344,
+      "active_paper2_solvers": [
+        {
+          "pid": 2416984,
+          "exe": "/temp/zhixin/paper2_transport_20261102/build-gcc-release/appl/simpleRichardsnc/paper2_transport",
+          "cwd": "/temp/zhixin/paper2_transport_20261102/highk_unperturbed_42929_20261102_r01"
+        }
+      ]
+    },
+    "reason": "Wait for existing Paper2 solver to finish and load/memory/disk gates to pass"
+  }
+}

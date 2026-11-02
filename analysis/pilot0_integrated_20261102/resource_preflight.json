@@ -1,0 +1,32 @@
+{
+  "load": [
+    24.79931640625,
+    25.09912109375,
+    25.4150390625
+  ],
+  "cpu": 24,
+  "disk": {
+    "total": 3936819662848,
+    "used": 3454457757696,
+    "free": 282305830912
+  },
+  "memory": "               total        used        free      shared  buff/cache   available\nMem:           31997       10811        1082          80       20617       21185\nSwap:          10239        6876        3363\n",
+  "processes": [
+    "    PID USER     %CPU %MEM     ELAPSED COMMAND",
+    "2378370 zhixin   1646  1.1    03:49:02 /temp/zhixin/coupleffpnm_fair/stack/dumux-2x5-comparison-20261102/build-cmake/test/multidomain/boundary/freeflowporenetwork/1p2c_1p2c/test_md_boundary_ff1p2c_pnm2pncmin_precip /temp/zhixin/coupleffpnm_fair/2x5_comparison_20261102/runs/production_Q-S-0_5000s/case.input",
+    "2421036 zhixin    158  0.9    01:40:17 /temp/zhixin/heterogeneity_thermal_calibration_v15_r02_20261102/build_ni1/heterogeneity_revised /temp/zhixin/heterogeneity_thermal_calibration_v15_r02_20261102/raw/runs/Film06mm/Film06mm.input",
+    "2421035 zhixin    158  0.9    01:40:17 /temp/zhixin/heterogeneity_thermal_calibration_v15_r02_20261102/build_ni1/heterogeneity_revised /temp/zhixin/heterogeneity_thermal_calibration_v15_r02_20261102/raw/runs/Film07mm/Film07mm.input",
+    "2416984 zhixin    147  2.6    01:51:56 /temp/zhixin/paper2_transport_20261102/build-gcc-release/appl/simpleRichardsnc/paper2_transport params.input",
+    "2420830 zhixin    1.2  0.2    01:40:35 /temp/zhixin/heterogeneity_thermal_calibration_v15_20261102/venv/bin/python /temp/zhixin/heterogeneity_thermal_calibration_v15_r02_20261102/run_6_7mm.py"
+  ],
+  "existing_dirs": [
+    "/temp/zhixin/paper2_transport_20261102/validation_20261102_r01",
+    "/temp/zhixin/paper2_transport_20261102/unperturbed_36877_20261102_r01",
+    "/temp/zhixin/paper2_transport_20261102/attempt_01",
+    "/temp/zhixin/paper2_transport_20261102/source",
+    "/temp/zhixin/paper2_transport_20261102/build-gcc-release",
+    "/temp/zhixin/paper2_transport_20261102/attempt_02",
+    "/temp/zhixin/paper2_transport_20261102/highk_unperturbed_42929_20261102_r01"
+  ],
+  "highk_finished": null
+}

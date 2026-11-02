@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "checks": {
+    "free_resource_gate_accepts": true,
+    "existing_solver_blocks": true,
+    "high_load_blocks": true,
+    "sustained_load_blocks": true,
+    "low_memory_blocks": true,
+    "low_disk_blocks": true,
+    "actual_registered_pair_inputs_pass_formal_interface": true,
+    "unexecuted_M1_is_not_certified_as_complete": true,
+    "same_grid_dt_end_and_threshold": true,
+    "M0_actual_budget_and_self_null/upper_0.900000": true,
+    "M0_actual_budget_and_self_null/upper_0.750000": true,
+    "M0_actual_budget_and_self_null/upper_0.500000": true,
+    "all_python_sources_parse": true
+  },
+  "scope": "pre-run guards, no claim of completed M1 or numerical validation"
+}

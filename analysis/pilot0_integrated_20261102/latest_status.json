@@ -1,0 +1,22 @@
+{
+  "worker_state.json": {
+    "status": "queued_resource_gate",
+    "elapsed_queue_s": 0.0168150682002306,
+    "resources": {
+      "utc": "2026-11-02T22:26:16.634331+00:00",
+      "load_1m": 24.0556640625,
+      "load_5m": 24.83447265625,
+      "cpu": 24,
+      "available_memory_bytes": 22181953536,
+      "free_disk_bytes": 282163052544,
+      "active_paper2_solvers": [
+        {
+          "pid": 2416984,
+          "exe": "/temp/zhixin/paper2_transport_20261102/build-gcc-release/appl/simpleRichardsnc/paper2_transport",
+          "cwd": "/temp/zhixin/paper2_transport_20261102/highk_unperturbed_42929_20261102_r01"
+        }
+      ]
+    },
+    "reason": "Wait for existing Paper2 solver to finish and load/memory/disk gates to pass"
+  }
+}

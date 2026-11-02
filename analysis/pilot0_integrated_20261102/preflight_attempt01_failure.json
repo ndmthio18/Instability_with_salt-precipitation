@@ -1,0 +1,9 @@
+{
+  "status": "failed_before_staging_or_launch",
+  "reason": "Frozen planned M0 local-input hash vs actual remote bytes; investigate recorded newline difference",
+  "remote": {
+    "actual_input_sha256": "b2f8d4021918497d02dee97d46cd4af6be3f1a49f7d55dad4cc6ccf8f485aa67",
+    "plan_input_sha256": "b2f8d4021918497d02dee97d46cd4af6be3f1a49f7d55dad4cc6ccf8f485aa67",
+    "actual_plan_sha256": "f48ab5f28aae8e9a27b0dc9bd5af75cf2045cd1942d7d3b07a455b0e958d05a0"
+  }
+}

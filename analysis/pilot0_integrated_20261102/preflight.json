@@ -1,0 +1,22 @@
+{
+  "status": "prepared_not_started",
+  "remote": "/temp/zhixin/paper2_transport_20261102/pilot0_integrated_20261102_r01",
+  "input_differences": [
+    "Problem.Amplitude",
+    "Problem.EigenprofilePath",
+    "Problem.Name",
+    "Problem.PerturbationType",
+    "Problem.StandardDeviationSaltMoleFraction"
+  ],
+  "M0_completed_and_verified": true,
+  "ELF_and_21_source_hashes_verified": true,
+  "M0_actual_plan_sha256": "f48ab5f28aae8e9a27b0dc9bd5af75cf2045cd1942d7d3b07a455b0e958d05a0",
+  "staged_sha256": {
+    "M1/params.input": "cdb9780397f7faeb820abe7bb1d0d28d5d20b4b752f97a5fd34de2b3addea8ad",
+    "M1/eigenprofile.dat": "d721e605d126e555f92b43200aa73b999ed4e2b61397edd1e98c0d9fddb36575",
+    "M1/plan.json": "7c2f7e0aec816cffb40a49d4e9b763b293576544c05bc754d74dba3c0f7cc0d5",
+    "pilot0_remote_worker.py": "bff1923629e99961cff3560b61f00bafe5c1fff347ab4d0b11a075488dea7d90",
+    "pilot0_field_review.py": "5404441d77b553ea4e79ac5e22ffce2398246b772efd7824e40dd01073cc353f"
+  },
+  "checked_utc": "2026-11-02T22:25:33.163907+00:00"
+}

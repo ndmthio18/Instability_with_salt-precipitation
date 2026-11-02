@@ -4,9 +4,9 @@
 
 - 说明: Status 只写 Not started / In progress（Done 由用户决定）；进度为科研阶段的粗略估计，仓库准备不代表研究验证完成。
 - Status: In progress
-- 阶段: Pilot-0 配对准备与 onset 语义冻结
+- 阶段: Pilot-0 M1 已授权登记，等待 frodo 资源
 - 进度: 25%
-- 下一步: 使用 `analysis/onset_semantics_20261102/` 的标准字段与来源映射，保持 t_eff 未定义；等待用户审查 `analysis/matched_pair_36877_20261102/` 的报告与最小计划；批准后仅执行 case 36877 的 nx=28、幅值 1e-6 严格配对 M1，再根据差值信号决定时间步与垂向敏感性。已有 case 42929 的运行与记录单独保留，不替代配对，不扩大完整 Pilot A/B。
+- 下一步: 按 `command/3.md` 持续执行；frodo 已提交资源门槛包装器，等待现有 case42929 与负载释放后自动运行唯一 M1（12 h墙钟上限）。完成后由本聊天自动继续正式配对、误差/发展窗口判断和报告，不重复提交；详见 `analysis/pilot0_integrated_20261102/EXECUTION_HANDOFF_ZH.md`。
 - 目标期刊: 待定
 - 投稿状态: 未投稿
 
@@ -34,6 +34,8 @@
 
 - [x] 按 `command/2.md` 和用户指定的合作稿 PDF 完成两种 LSA onset、DuMuX 检测和独立输运时间的语义审计，保留原字段并标准化运行表、图和接口，未重算或启动模拟。
 
+- [x] 按 `command/3.md` 完成 M1 最终输入/ELF/source 核验、资源门槛与12 h包装器部署、正式配对输入和共有时刻测试；M1仍在资源队列，尚无新模拟结果。
+
 ## Log
 
 <!-- ↑ synced to Notion · ↓ not yet synced -->
@@ -58,3 +60,5 @@
 - 2026-11-02 22:25 Codex: 完成 `command/1.md` 四项 Pilot-0 审计，冻结 nx28/1e-6 M1 待运行输入，复核 M0 预算与初始库存并保留 CRLF/LF 来源差异；结论为配对准备条件性 GO、物理有效性与扩展 NO-GO，未启动新模拟。
 
 - 2026-11-02 23:09 Codex: 按合作稿 Section 2.2–2.4 冻结 onset 命名，追溯 case 36877 指定 nx28 的 manifest 路径，新增 436/84 运行标准视图并更新历史图表，保留原始 LSA/模拟证据，未启动新求解。
+
+- 2026-11-02 23:32 Codex: 已授权综合Pilot-0，严格核验M1并在frodo登记单任务资源等待队列，部署每30分钟持续检查；13项执行检查及9项共有时刻检查通过，完成嵌套网格切面预检，新增物理结果仍pending。
