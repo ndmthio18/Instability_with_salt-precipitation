@@ -1,0 +1,26 @@
+__pycache__/
+*.py[cod]
+.venv/
+.env
+.env.*
+!.env.example
+/data/external/
+/data/generated/
+/runs/
+/tmp/
+/output/
+*.vtu
+*.pvtu
+*.vtp
+*.pvd
+*.sqlite
+*.sqlite-*
+*.aux
+*.blg
+*.fdb_latexmk
+*.fls
+*.out
+*.synctex.gz
+
+# Machine-specific dependency paths belong here, not in the source lock.
+/local_paths.json

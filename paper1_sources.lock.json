@@ -1,0 +1,98 @@
+{
+  "schema_version": 1,
+  "created_date": "2026-11-02",
+  "purpose": "Frozen Paper 1 inputs for Paper 2 Phase 0; not a claim of transport suitability",
+  "paper1_repository": {
+    "remote": "git@git.iws.uni-stuttgart.de:zhixinchen/surrogate.git",
+    "branch": "feature/dimensionless-campaign-pipeline",
+    "commit": "158395f3d25a29680dea5bcd0d3a24e52a28b4cd",
+    "default_relative_path": "../..",
+    "source_hash_convention": "Exact SHA-256 of committed blobs; working text may differ only by CRLF/LF. Archive and handoff hashes are exact bytes.",
+    "source_files": {
+      "paper/1/analysis_manifest.json": {
+        "git_blob_oid": "0fe64493cae27b76b27030ba37e332fd07ff2394",
+        "sha256_git_blob": "cfcee6d2f2c1728828bdd5a69d01bd1319451d24ec8d3b5f327c49a805a114ac"
+      },
+      "paper/1/protocol_contract.md": {
+        "git_blob_oid": "15b6516ca167d8eefdecb16118d87ddaa1be2a4b",
+        "sha256_git_blob": "c0d33689b55b746590e6ef2de04a9a74ee9b7f8a65cfb42f76b4cde01f06e357"
+      },
+      "paper/1/WP1_PAIRED_VALIDATION_DESIGN.md": {
+        "git_blob_oid": "eaa1cbcad358be17d8363f770128aacbd8f194aa",
+        "sha256_git_blob": "25789196bb3e29d2239ea23f74401f7f65c2879cf8cad0dad559a74212436bdb"
+      },
+      "paper/1/analysis/wp1_paired_results.json": {
+        "git_blob_oid": "5d091fa9be15405387db0dae7606dbfc5d58e761",
+        "sha256_git_blob": "94927cc2bc024c5c1e26d2d0b05d5823cfa7b4436b02c406e426432a8f2b068a"
+      },
+      "paper/1/analysis/wp1_paired_case_results.csv": {
+        "git_blob_oid": "2cc330413885e94fcae43af0ed32f68d9de34225",
+        "sha256_git_blob": "f4473f5b826ba667375b32bb67b7fdd0da13978d669c1f113221d6e6b224ba15"
+      },
+      "paper/1/analysis/wp1_paired_control_results.csv": {
+        "git_blob_oid": "335d790a5c9b7cd1e1fd8f683c4181b79fa192e0",
+        "sha256_git_blob": "168a07021aba4433e7034ec9356dfbc0cce2dd7bd1065904d6e98ad99fba44f5"
+      },
+      "paper/1/analysis/wp1_paired_timing_both_resolved.csv": {
+        "git_blob_oid": "851ed75026d9a98f13d4239e75119bf93221b091",
+        "sha256_git_blob": "8de8cc1aaabf670290ef3d42b81b2452dad0304be1b2ff83cb05bd100c4d67da"
+      },
+      "code/lsa_unsaturated.py": {
+        "git_blob_oid": "730b8105857ad0c401ffeea14ef3fa887896af5d",
+        "sha256_git_blob": "8ffa7f0bb1491b082ef23c2770ab86e9cc0c46e4dac30a75aa323473d97c8d8b"
+      },
+      "code/parameter_database/core.py": {
+        "git_blob_oid": "5968940ea427a427127a5a601424c240ec931b7e",
+        "sha256_git_blob": "4a3c5399bda5ad2df05c82328bb4fdca0852e0a5a3f64a39128b4f2b9b4bbd60"
+      },
+      "code/parameter_database/run_paired_onset_validation.py": {
+        "git_blob_oid": "25bc6fa5109f73660414f4205d1db3e583cb175d",
+        "sha256_git_blob": "8e069150538e6faa89c83802cabb61ef67753285f8a381b25a459d0df0e364ea"
+      },
+      "code/dumux_kiemle2023b_unsat/CHANGES.md": {
+        "git_blob_oid": "3af5fb0a4a142ec5473b3388aa8fac2be2c66441",
+        "sha256_git_blob": "9ea814c174f61fde4f1ad5eff17f25d0788a05ccde40904c4e307f0df702ff33"
+      },
+      "code/dumux_kiemle2023b_unsat/kiemle2023b_unsat_modifications.patch": {
+        "git_blob_oid": "84a357d32865d5d304b9526ef46d74300d2e8bf2",
+        "sha256_git_blob": "de97a7622563efa2bb84ee665bf2f6c8c3fef218cf3bfcb18099d0af2443757b"
+      }
+    }
+  },
+  "release": {
+    "dataset_id": "surrogate-handoff-database_results_export-20260913-empirical",
+    "archive_path": "data/parameter_database/releases/production_v2/surrogate_production_v2.tar.gz",
+    "archive_sha256": "8d11dddbad8b1dfe2ce5bedf0c9bff20c670398be0886d496d1768cbceac35aa",
+    "handoff_prefix": "surrogate_production_v2/handoff/",
+    "handoff_files": {
+      "arrays.npz": "fe487c9d74ecc37f29b5be6a9cb537f3ec6d218b4849df7c4f422e8fa8e93157",
+      "cases.csv": "f75e11336674ce92804a55f64572b9a954adc997f1722800229191c4596d15b7",
+      "data_dictionary.csv": "905b2b1801d820df471a291f8b195bb5b4a537c9116e0897073a1ca0cc795717",
+      "dumux_onsets.csv": "70d611f2e343d1f68915ce16b9a3c5ed5f6ec66f5f55f03692e8c20103d347b3",
+      "observations.csv": "bd13ca41330d722aa12fc0aeb768654dd7e77eb22b307e7373025115b9146e7f",
+      "protocols.csv": "f04dd85752ea2dc619774e4b891589989318f24da7711f139db261e75f889094",
+      "quality_issues.csv": "a747d708332cd2233937b17f967be76f71ebfe3ac4033b454d79a4b3b56144d6",
+      "seeded_modes.csv": "f147118f19333a620ebb4a9e7c5ecdcf9d93618951eb7fe41785007b68aee7be",
+      "splits.csv": "7eb9aa092efd83b28e258fb357b79b56615747b67fdad6290f14e446c681e5fa",
+      "manifest.json": "24ee271522bbdeb156a9fe9867237e4501567992bf7560efd7f5afa59f8258fd"
+    }
+  },
+  "external_manuscript": {
+    "observed_checkout": "D:\\3OutputFile\\1Research\\Article\\22-1-surrogate_model\\69e50893f5d9b55adfb56494",
+    "commit": "dd824646d5ec6d2d4b0384f043697ea862e9f936",
+    "files": {
+      "AWR_onstime/onstime.tex": {
+        "sha256_git_blob": "2dca2248db020e7366550ad00d3ba66ad31df4b06a284b2b4074f7e2469852e8"
+      },
+      "Reports/report2.tex": {
+        "sha256_git_blob": "0dbd1b402afb85b9991604d1d8db7689e865b0be38ec9c36ca88862875836bc1"
+      }
+    },
+    "verification_scope": "Recorded source identities only; preparation script does not require this external checkout"
+  },
+  "limitations": [
+    "September delivery is not the complete November run inventory.",
+    "VTK fields, conservative salt flux availability, post-onset duration and transport suitability still require Phase 0 audit.",
+    "436 runs / 253 cases / 293 paired observations are report claims pending run-level reconciliation."
+  ]
+}
