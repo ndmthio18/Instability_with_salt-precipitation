@@ -3,6 +3,7 @@ import argparse,base64,csv,hashlib,json,subprocess,sys,time
 from pathlib import Path
 from datetime import datetime
 from zoneinfo import ZoneInfo
+from onset_semantics import FrozenOnsets, standard_fields
 ROOT=Path(__file__).resolve().parents[1]
 OUT=ROOT/'analysis/highk_unperturbed_42929_20261102'
 REMOTE='/temp/zhixin/paper2_transport_20261102/highk_unperturbed_42929_20261102_r01'
@@ -16,13 +17,15 @@ def launch():
  audit=ROOT/'analysis/phase0_20261102'
  inventory={r['run_key']:r for r in json.loads((audit/'remote_frodo_inventory.json').read_text())['runs']}
  candidates=[]
+ onsets=FrozenOnsets()
  for row in csv.DictReader((audit/'run_audit.csv').open(encoding='utf-8-sig')):
+  row.update(standard_fields(onsets.run_by_key(row['run_key'])))
   if row['soil_group']=='sandy' and row['onset_class']=='resolved_onset' and row['run_key'] in inventory:
    row['K']=float(inventory[row['run_key']]['parameters']['Problem.Permeability']);candidates.append(row)
  candidates.sort(key=lambda r:-r['K']);selected=candidates[0];assert selected['case_id']=='42929'
  with (OUT/'screening.csv').open('w',newline='') as f:
-  names=['case_id','run_key','K','onset_s','lsa_t_sat_reference_s','amplification_since_min','effective_saturation_top'];w=csv.DictWriter(f,fieldnames=names,extrasaction='ignore');w.writeheader();w.writerows(candidates)
- original=inventory[selected['run_key']];v=original['parameters'].copy();end=10*float(selected['onset_s'])
+  names=['case_id','run_key','K','onset_s','dumux_t_detect_s','lsa_t_crit_s','lsa_t_seed_theta010_s','lsa_t_sat_reference_s','amplification_since_min','effective_saturation_top'];w=csv.DictWriter(f,fieldnames=names,extrasaction='ignore');w.writeheader();w.writerows(candidates)
+ original=inventory[selected['run_key']];v=original['parameters'].copy();end=10*selected['dumux_t_detect_s']
  changes={'Problem.Name':'unperturbed_42929','Problem.PerturbationType':'Constant','Problem.Amplitude':'0','Problem.StandardDeviationSaltMoleFraction':'0','TimeLoop.TEnd':format(end,'.17g'),'TimeLoop.OutputInterval':'100','Transport.StopAtSolubility':'true','Transport.SolubilityMoleFraction':'0.1'}
  v.update(changes);v.pop('Problem.EigenprofilePath',None);sections={}
  for k,val in v.items():
@@ -31,6 +34,7 @@ def launch():
  build=json.loads((ROOT/'analysis/transport_build_20261102/attempt_02/result.json').read_text())
  for n,h in build['source_sha256'].items():assert hashlib.sha256((ROOT/'model/transport_v1/source'/n).read_bytes()).hexdigest()==h
  plan={'case_id':42929,'soil_label':'high-permeability sandy; coarse grain size not verified','selection':selected,'original_parameters':original['parameters'],'parameters':v,'changes':changes,'horizon_multiple_of_legacy_detect':10,'horizon_s':end,'old_detect_s':float(selected['onset_s']),'executable':build['executable'],'source_sha256':build['source_sha256'],'input_sha256':hashlib.sha256(text.encode()).hexdigest(),'remote':REMOTE,'criterion':'top sigma > 1e-8 for 5 accepted steps; this is visibility, not LSA onset','wall_timeout_s':86400,'old_small_file_hashes':original['small_file_hashes'],'old_path':original['path']}
+ plan['legacy_onset_reference']=standard_fields(selected)
  (OUT/'plan.json').write_text(json.dumps(plan,indent=2));(OUT/'params.input').write_text(text)
  worker='''import subprocess,json,hashlib,os,time
 from pathlib import Path

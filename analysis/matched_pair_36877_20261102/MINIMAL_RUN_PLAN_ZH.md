@@ -1,5 +1,7 @@
 # 最小运行计划：先取得一个严格配对
 
+> 2026-11-02 命名核对：LSA `t_crit` 是全局临界模态首次 crossing；`t_seed(0.10)` 是增长筛选（含 fallback）选中的 observable 模态自身 crossing；`t_detect` 是 DuMuX 检测时间。`t_eff` 独立且尚未定义。原始字段按[统一映射](../onset_semantics_20261102/CONTRACT_ZH.md)阅读，不能把 `t_seed` 解释为达到指定幅值的时间。
+
 状态：**仅计划，未授权启动，未执行任何新增模拟**。研究限于Pilot-0物理可行性，不扩展完整A/B或代理模型。
 
 ## A. 第一批：只需批准一条 M1

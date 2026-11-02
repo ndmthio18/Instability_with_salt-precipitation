@@ -1,0 +1,369 @@
+=== PDF page 8 (printed page 7) ===
+gravitational flux Qref = Kρrefg/µref, where ρref and µref are evaluated at
+the initial concentration. Four dimensionless groups then characterize a case
+[17]:
+RE = Kρrefg
+µrefE ,
+β = ϕ3/2D
+EH ,
+γ = α ρrefgH,
+ˆPB =
+pB
+ρrefgH = d
+H −1.
+(5)
+The Rayleigh number RE compares gravitational and evaporative fluxes,
+while β compares diffusion with evaporation.
+The parameters γ and ˆPB
+describe capillarity and bottom pressure, respectively. Hydrostatic equilib-
+rium relates bottom pressure to water-table depth below the surface through
+d = (1 + ˆPB)H. Together with the constitutive parameters, these groups
+define the seven inputs
+ξ =
+\x00RE, β, γ, ˆPB, n, Swr, L
+\x01
+.
+(6)
+The soil parameters vary jointly as described in Section 2.5. The surrogate
+models use the transformed vector
+x =
+\x02
+log10 RE, log10 β, log10 γ, log(1+ ˆPB), log(n−1), logit(Swr), L
+\x03
+, (7)
+Here, log denotes the natural logarithm and logit(s) = log[s/(1−s)]. The pa-
+rameter L remains untransformed because its support includes non-positive
+values. Predictions apply to the fixed configuration specified in Section 2.5,
+including H = 0.2 m, D, x0, and ℓ/H.
+2.2. Linear stability analysis, competing events, and critical onset
+We use the LSA developed by Bringedal et al. [17] to calculate the critical
+onset time for each parameter combination. At each dimensionless time ˆt,
+the evolving one-dimensional base state is frozen and perturbed laterally with
+wavenumber ˆa. The neutral eigenvalue problem yields the Rayleigh number
+at which each mode becomes unstable. Minimization over the searched modes
+gives Rc(ˆt), with instability when Rc(ˆt) < RE. We search ˆa = 2πnx/(ℓ/H)
+for nx = 1, . . . , 30, with ℓ/H = 3. The neutral curve is long-wave dominated,
+so the critical mode lies well inside this range; a critical mode at the up-
+per end of the search is flagged and excluded from the analysis populations
+(Section 2.5). We adopt the simplified eigenvalue problem of Bringedal et al.
+[17], which evolves salt concentration while retaining the initial hydrostatic
+saturation and pressure profiles. This formulation is linear in RE but omits
+7
+
+
+=== PDF page 9 (printed page 8) ===
+Evaporation
+Water leaves; salt is retained
+Onset of instability
+Small-amplitude perturbations
+Partially saturated porous medium
+No flow
+No flow
+x
+z
+Salt concentration
+Low
+High
+Salt accumulation
+Water table
+Hydrostatic connection
+Fixed capillary pressure pB and salt concentration x0
+H = 0.2 m
+HP̂B
+l
+Initial hydrostatic pressure
+Pore-water pressure relative to atmosphere
+z
+pw
+0
+Surface
+z = H
+Column base
+z = 0
+Water table
+z = H − d
+−ρref g d
+−pB
+pw = 0
+d = (1 + P̂B)H
+pw(z) = −pB − ρref g z
+pB: bottom capillary pressure
+Figure 1: Model configuration. An unsaturated column of height H evaporates at the rate
+E from its surface, where the salt is retained and a dense brine layer forms. The base is
+connected to a water table at depth d below the surface, which fixes the bottom pressure
+pB; the initial state is hydrostatic with uniform concentration. Length, time, and pressure
+are scaled by H, ϕH/E, and ρrefgH, giving the dimensionless groups of Eq. (5).
+evaporation-induced changes in these profiles, which can be important at low
+RE. Following Bringedal et al. [17], who recommend this approximation for
+RE ≫10, we adopt RE > 10 as an initial screening criterion. This criterion
+removes 16 of the 46 952 candidate cases, and the first percentile of RE in
+the solved database is 46.5 (Table 1), so nearly all retained cases lie in the
+recommended regime.
+Chebyshev collocation discretizes the vertical coordinate in both the base-
+state salt-transport equation and the neutral eigenvalue problem, replacing
+spatial derivatives with differentiation matrices. To assess numerical conver-
+gence, we progressively increase the collocation order and compare the onset
+predictions at consecutive resolutions. Convergence is accepted when con-
+secutive resolutions give the same LSA onset status and critical mode, with
+onset times differing by at most 5 % when onset is detected.
+As salt accumulates, Rc(ˆt) decreases from a large initial value, and the
+critical onset time ˆtcrit is the dimensionless time of the first crossing
+Rc(ˆtcrit) = RE,
+(8)
+attained by the critical mode nc. This state-stability threshold is indepen-
+dent of perturbation initialization and detection. The critical mode has zero
+growth rate at this crossing.
+8
+
+
+=== PDF page 10 (printed page 9) ===
+The competing precipitation time ˆtprecip is calculated from the same base
+state when the surface reaches xsat = 0.1 mol mol−1. This approximates the
+NaCl solubility limit of 0.0977 mol mol−1 (26 wt%) used by Bringedal et al.
+[10]. The observation horizon is T = 90 days, chosen to represent an idealized
+three-month period of sustained evaporation under constant forcing. This
+gives a case-specific dimensionless limit ˆt90 = TE/(ϕH). Each case receives
+one of four mutually exclusive outcomes:
+• Instability first. The critical crossing occurs before precipitation and
+within the horizon, ˆtcrit < min(ˆtprecip, ˆt90).
+• Precipitation first. The surface reaches the solubility limit before the
+base state becomes unstable and within the observation horizon.
+• Horizon censored. Neither event occurs within 90 days, and the steady-
+state analysis does not identify a stable limiting base state; the onset
+time is right-censored at the horizon.
+• Never unstable. Neither event occurs within 90 days, and the steady
+base state remains linearly stable, with its critical Rayleigh number
+exceeding RE [17]. This structural status is distinct from horizon cen-
+soring.
+Primary first-event labels are assigned by comparing critical onset, precipi-
+tation and the observation horizon, with steady-state stability distinguishing
+never-unstable cases. Events within the horizon take precedence over the
+steady-state classification; coincident instability and precipitation times are
+assigned to precipitation first. Onset-time regression is restricted to cases
+classified as instability first. The regression targets are dimensionless, with
+physical time recovered as t = ˆt ϕH/E.
+2.3. Observable onset
+The critical time in Section 2.2 identifies a stability threshold, but weak
+post-crossing growth can make the corresponding numerical onset difficult
+to resolve. Other modes may cross later and grow more strongly under the
+prescribed initialization. We define the observable mode as the LSA mode
+accepted by the growth-based selection rule below, including its fallback cri-
+terion. We denote this mode by nseed
+x
+, while ncrit
+x
+= nc denotes the critical
+mode. The subscript “seed” indicates that this mode seeds the numerical sim-
+ulations of Section 2.4. Its own neutral crossing defines the growth-qualified
+9
+
+
+=== PDF page 11 (printed page 10) ===
+LSA onset, termed observable onset. Here, “observable” denotes predicted
+numerical resolvability under the prescribed initialization and detection pro-
+tocol.
+Figure 2 illustrates this construction for a dry sandy column as an exam-
+ple. Each lateral mode nx has its own neutral crossing time ˆtc(nx). In the
+left panel, the dots mark Rc(nx, ˆtc(nx)) = RE, at unity on the normalized
+vertical axis. The earliest neutral crossing occurs for mode nc (blue curve),
+defining ˆtcrit = ˆtc(nc).
+0.0002
+0.0005
+0.001
+0.003
+dimensionless time ̂t
+0.6
+0.8
+1.0
+1.2
+1.4
+1.6
+Rc(nx, ̂t) / RE
+critical mode nc
+other modes
+0.5
+1.0
+1.5
+2.0
+2.5
+3.0
+̂t / ̂tc of the plotted mode
+−0.2
+0.0
+0.2
+0.4
+0.6
+0.8
+Rc = RE
+̂tcrit
+̂tseed(θ)
+= 0.001
+= 0.10
+θ
+floor
+sharpness is read here
+σ(nx, ̂t) ̂tc(nx)
+observable mode
+Figure 2: Illustration of critical and observable onset for a dry sandy column with initial
+surface effective saturation Stop
+we ≈0.2. Left: neutral curves normalized by RE, with dots
+marking neutral crossings. Right: growth rates scaled by each mode’s own crossing time.
+Shading marks the near-neutral band |σ(ˆt)ˆtc| ≤0.03. Its upper boundary corresponds
+to the resolvability floor Sfloor = 0.03, and the dashed line marks the seeding threshold
+θ = 0.10.
+The right panel plots the quasi-steady growth rate in the scaled form
+σ(nx, ˆt) ˆtc(nx) against ˆt/ˆtc(nx) for the same modes. Since σ(nx, ˆtc(nx)) = 0,
+we sample post-crossing growth at twice the crossing time and define the
+dimensionless sharpness
+S(nx) = σ
+\x00nx, 2ˆtc(nx)
+\x01 ˆtc(nx).
+(9)
+In Figure 2 (right), S(nx) corresponds to the scaled growth rate evaluated
+at ˆt/ˆtc(nx) = 2.
+Two sharpness criteria govern mode selection.
+The resolvability floor
+Sfloor is an empirical acceptance criterion for numerical detectability under
+a prescribed protocol. Critical modes with S(nc) < Sfloor are termed quasi-
+neutral. The seeding threshold θ sets the preferred growth requirement. We
+use Sfloor = 0.03 and θ = 0.10 as the reference values, calibrated against
+10
+
+
+=== PDF page 12 (printed page 11) ===
+single-mode numerical runs in Section 2.4. In Figure 2 (right), this same
+mode nc (blue curve) has S(nc) ≈0.001, below the floor, while the ob-
+servable mode (orange curve) has S ≈0.10, meeting the reference seeding
+threshold.
+We select the observable mode from a prescribed set of candidates,
+N = {nc} ∪{2, . . . , 30, 40, 60, 80, 120}.
+Consecutive integer modes are considered up to nx = 30, with a sparse
+extension to higher modes to limit computational cost. Among candidates
+with nx ≥nc, we choose the smallest nx that meets the growth threshold
+before precipitation or the observation horizon,
+S(nx) ≥θ
+and
+ˆtc(nx) < min
+\x00ˆtprecip, ˆt90
+\x01
+.
+(10)
+The observable onset is the observable mode’s own crossing time, ˆtseed(θ) =
+ˆtc(nx). When the critical mode qualifies, ˆtseed = ˆtcrit; Figure 2 illustrates a
+case in which the observable mode (orange curve) crosses later.
+If no candidate reaches θ before the time limit, we choose the candidate
+with the highest sharpness among those crossing before that limit. We accept
+this mode if S ≥Sfloor and record the selection as a fallback; otherwise, no
+observable mode is assigned. Fallback selection is enabled by default, and
+threshold sensitivity is assessed at θ = 0.05 and 0.20, half and twice the
+reference value.
+The observable mode’s crossing time provides the LSA reference for com-
+parison with the numerically detected onset defined in Section 2.4. We also
+compare conditional surrogates for critical and observable onset on a com-
+mon population to quantify how the criterion affects predicted timing and
+input sensitivities.
+Primary event labels follow the critical-onset definition in Section 2.2
+throughout these comparisons. For cases labeled instability first, we assess
+whether an observable mode also crosses before precipitation or the obser-
+vation horizon (Section 4.2). Further sensitivity analyses vary the threshold
+and floor and repeat the selection with fallback disabled.
+2.4. Numerical model and detection protocol
+Numerical simulations assess whether the LSA modes produce resolvable
+onsets and how their crossing times compare with detected onset. We use
+the DuMux model developed for Bringedal et al. [17], with the equations,
+11
+
+
+=== PDF page 13 (printed page 12) ===
+constitutive relations and fluid properties of Section 2.1. Surrogate training
+uses only the LSA database described in Section 2.5.
+The two-dimensional domain has height H and width ℓ= 3H. We use a
+vertex-centered finite-volume (box) scheme with implicit Euler time stepping.
+The grid has 200 surface-refined vertical cells and at least 600 lateral cells,
+increased for shorter seeded wavelengths.
+Each run starts from the hydrostatic, uniformly saline state of Section 2.1
+with a single lateral perturbation,
+x(xh, z, 0) = x0 + ε A(z) cos
+\x122πnxxh
+ℓ
+\x13
+,
+(11)
+where xh is the horizontal coordinate and A(z) is the mode’s vertical eigen-
+profile at its own crossing, normalized to unit maximum amplitude. All runs
+use ε = 10−6 in mole fraction, seeding either nc or the observable mode de-
+fined in Section 2.3. After physical-time conversion (Section 2.2), the LSA
+reference is tcrit for critical-mode runs and tseed(θ) for observable-mode runs.
+Following Bringedal et al. [17], the detected onset tdetect is identified from
+the minimum of the surface salt-mole-fraction standard deviation, σtop(t).
+Unless stated otherwise, records contain 400 samples over twice the crossing
+time of the initialization mode. The same extractor identifies a contiguous
+plateau within 0.1 % of the minimum, with width ∆tplat. An onset is resolved
+when the plateau spans at most one quarter of the sampled record and the
+signal subsequently rises.
+Broader minima are classified as weak-interval
+onsets, traces without initial decay as immediate growth, and minima at the
+record end as no onset within the record.
+Of 192 single-mode calibration runs recorded over twice their LSA cross-
+ing times, 123 had resolved onsets. Resolved onsets had sharpness as low as
+0.0294, while weak-interval onsets extended up to 0.0311. The overlap be-
+tween these ranges motivates the rounded floor Sfloor = 0.03. For the resolved
+runs, a log-log least-squares fit gives
+log10
+\x12∆tplat
+tdetect
+\x13
+≃−1.088 −0.497 log10 S.
+(12)
+Setting ∆tplat/tdetect = 0.25 gives S ≈0.105. We therefore adopt the rounded
+reference seeding threshold θ = 0.10. The quarter-onset-time requirement is
+stricter than the extractor’s quarter-record criterion.
+We assess detectability using numerical simulations of 209 physical cases
+initialized with the observable mode at θ = 0.10 (Section 4.1). Within this
+12
+
+
+=== PDF page 14 (printed page 13) ===
+group, 69 cases have quasi-neutral critical crossings and observable modes
+different from nc. These 69 cases also have critical-mode simulations, allowing
+comparison of detectability under the two initializations.
+Using a separately selected design of 48 physical cases, we compare each
+mode’s LSA crossing time with the onset time detected in its corresponding
+numerical run. For critical-mode runs, the comparison is between tcrit and
+tdetect; for observable-mode runs, it is between tseed(0.10) and tdetect from that
+run. For 36 cases in which the two modes differ, we run both initializations
+using the same grid and stopping time. The common dimensionless stopping
+time is
+ˆtend = min
+\x08ˆt90, ˆtprecip, 2 max
+\x00ˆtcrit, ˆtseed(0.10)
+\x01
+,
+with the precipitation limit omitted when no finite precipitation time is avail-
+able. Both runs use 400 samples over this common interval. The remaining
+12 cases have matching modes and serve as controls, with a single run rep-
+resenting both definitions. This gives 84 numerical runs in total, comprising
+36 pairs and 12 single-run controls. Selection uses physical inputs and LSA
+results without consulting DuMux outcomes. Cases are divided into three
+equal-sized groups (dry, intermediate and wet) based on initial surface ef-
+fective saturation. Within each saturation group, we select 12 cases with
+different critical and observable modes and four cases with matching modes.
+To cover a broad range of input combinations, we use maximin selection in
+the seven-dimensional transformed input space. At each step, we choose the
+case whose distance to its nearest already selected case is largest.
+The primary paired outcome is whether an onset satisfies the resolution
+criteria above before the common stopping time. As a supplementary timing
+comparison, we use only cases with resolved onsets under both initializations
+and calculate e = | ln(tdetect/tLSA)| for each run, where tLSA is the cross-
+ing time of its initialization mode. The paired change is ∆e = eobs −ecrit.
+Bootstrap intervals use 20 000 resamples of physical-case pairs within initial-
+saturation groups, preserving each group’s sample size.
+Timing intervals
+describe the extracted minimum locations; sensitivity to location within the
+minimum plateaus is assessed separately.
+2.5. LSA database and analysis populations
+To assess how soil hydraulic properties, evaporation and water-table
+depth affect first-event outcomes and instability onset times, we construct
+an LSA database spanning these conditions. We use ROSETTA3 to esti-
+mate complete soil hydraulic parameter sets from 3 353 surface-soil records
+13

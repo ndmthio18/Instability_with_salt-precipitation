@@ -1,5 +1,7 @@
 # Paper 2 — effective salt redistribution
 
+已完成 `command/2.md` 的 [onset 来源审计](analysis/onset_semantics_20261102/AUDIT_ZH.md)与[字段约定](analysis/onset_semantics_20261102/CONTRACT_ZH.md)。新分析使用 `analysis/onset_semantics_20261102/views/` 中保留原列并附加标准字段的表；原始来源表和注册计划保持冻结。Case 36877：全局 nx=5、t_crit=31409.16 s；observable nx=28、t_seed(0.10)=45474.35 s；历史 t_detect=50394.33 s。t_eff 尚未定义，本轮未重算或启动模拟。
+
 本目录已独立为一个 Git 仓库。研究方案见
 [Option_A_Research_Plan.md](Option_A_Research_Plan.md)，当前任务是 Phase 0
 审计与 Pilot-0 准备，已完成小规模背景及诊断验证，完整 Pilot A/B 尚未启动。

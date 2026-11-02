@@ -13,7 +13,7 @@ assert len(consistent)==14,'Quarantined runs require an individually scoped repo
 all_monotone=all(int(r['intervals_decreasing_over_1e_minus8_initial'])==0 for r in inv)
 text=['# 14 条历史密集时序：盐库存与再分配分析',
       '', '日期：2026-11-02。范围：已有 14 条运行、10 个物理案例、1,414 个 VTU 场；仅后处理，未启动任何新模拟或 Pilot A/B。',
-      '', '## 结论', '',
+      '', '时间定义遵循 [统一命名约定](../onset_semantics_20261102/CONTRACT_ZH.md)。`t_crit` 是全局临界模态首次 crossing；`t_seed(0.10)` 是经过增长筛选（含 fallback）的 observable 模态自身 crossing，既不是 DuMuX 检测时间，也不是达到指定扰动幅值的时间。`t_detect` 是数值检测时间，`t_eff` 仍未定义。', '', '## 结论', '',
       ('**这些记录可以分析，且已完成全部时序分析。在首次观测越界前，14 条运行的三个上部控制体均没有超过描述性筛选下限的相邻帧库存下降。已有结果的主要表现为表层盐分累积，尚不能据此证明不稳定性产生了显著的额外向下再分配。**' if all_monotone else '**部分控制体出现库存回落，须结合下表、来源与窗口逐例检查；没有背景对照，仍不能直接归因为不稳定性。**'),
       '', '这里的“没有下降”只指保存帧之间，筛选下限为初始库存的 1e-8，不是经过网格/时间步验证的物理显著性阈值。净库存增加不排除“相对于无扰动背景的累积减缓”，也不排除同时存在向下扩散和向上平流。现有数据缺少匹配背景，不能识别这部分额外输运。',
       '', f"14 条运行的输入、profile、PVD、每步诊断哈希与冻结审计一致；所有场的密度和饱和度与明确输入相符。历史可执行文件身份仍未建立。{summary['observed_threshold_runs']} 条运行在保存场中达到 x=0.1，越界帧及其后数据已从主汇总中剔除。",
@@ -37,11 +37,18 @@ text+=['', '表中深度是目标标签，实际离散切面 z/H 分别为 0.899
        '', '## 扰动增长是否已经转化为强再分配', '']
 best=next(r for r in runs if r['id']=='r06_c36877_n60')
 text += [f"case 36877 的模态 60 是这批中最值得追踪的辅助记录：记录终点为 {float(best['final_time_day']):.5f} day，顶部标准差相对记录中的最小值放大 {float(best['sigma_amplification_full_record']):.4f} 倍。但末帧 sigma={float(best['top_sigma_last_pre_threshold']):.4e} mol/mol，仅为表面均值的 {100*float(best['top_sigma_over_mean_last_pre_threshold']):.5f}%。绝对扰动仍很小，放大倍数不能直接解释成成熟指状对流或强输运。",
-         '',f"其三个上部区域库存增加分别为 {100*float(iv[best['id'],'upper_0.9']['relative_inventory_change']):.4f}%、{100*float(iv[best['id'],'upper_0.75']['relative_inventory_change']):.4f}%、{100*float(iv[best['id'],'upper_0.5']['relative_inventory_change']):.4f}%。原 onset 检测区间与增长曲线已画在同一时间轴；库存没有因出现 std 极小值而自动转为下降。",
+         '',f"其三个上部区域库存增加分别为 {100*float(iv[best['id'],'upper_0.9']['relative_inventory_change']):.4f}%、{100*float(iv[best['id'],'upper_0.75']['relative_inventory_change']):.4f}%、{100*float(iv[best['id'],'upper_0.5']['relative_inventory_change']):.4f}%。原 DuMuX t_detect 检测区间与增长曲线已画在同一时间轴；库存没有因出现 std 极小值而自动转为下降。",
          '',f"全体前阈保存帧的最大横向层标准差/该层均值为 {100*summary['max_relative_layer_sigma_pre_threshold']:.5f}%，且可能由初始扰动而非后期增长决定。需要结合各运行末值和整条时间线判断，不能把全时段最大值当成非线性增长幅度。",
          '', '模态 60 采用 1200×200 网格；同一案例模态 30/5 的记录采用不同模式或时间设置，原主协议模态是 28。这些轨迹不能拼接，也不能只凭它们之间的差别宣称某个物理参数的因果作用。',
-         '', f"该记录仅保存到 {float(best['final_time_day']):.3f} day；此案例的 LSA 基态阈值参考约为 {float(best['lsa_sat_reference_s'])/86400:.3f} day。这个对比说明旧记录未覆盖全部候选后续窗口，但 LSA 时钟不是已验证的二维实际阈值，不能据此直接设定延长终点。原运行以 onset 为目标、扰动很小，不能默认已经进入强非线性输运阶段。",
+         '', f"该记录仅保存到 {float(best['final_time_day']):.3f} day；此案例的 LSA 基态阈值参考约为 {float(best['lsa_sat_reference_s'])/86400:.3f} day。这个对比说明旧记录未覆盖全部候选后续窗口，但 LSA 时钟不是已验证的二维实际阈值，不能据此直接设定延长终点。原运行以 DuMuX t_detect 检测为目标、扰动很小，不能默认已经进入强非线性输运阶段。",
          '', '## 阈值与已有时间步信息', '']
+text += ['', '下表将每条运行的三个参考时间与实际初始化模态分开；所有时间单位 s。弱区间、immediate 和记录内未检测到的情况不赋予已分辨的 t_detect 点值。', '',
+         '| 运行 | 全局 n_c | t_crit | observable n_x | t_seed(0.10) | 实际模态 | 实际模态 crossing | t_detect（resolved） | 检测类别 |',
+         '|---|---:|---:|---:|---:|---:|---:|---:|---|']
+for r in runs:
+    fmt=lambda k: f"{float(r[k]):.2f}" if r[k] else '—'
+    text.append(f"| {r['id']} | {r['lsa_global_critical_mode_nx']} | {fmt('lsa_t_crit_s')} | {r['lsa_observable_mode_nx_theta010']} | {fmt('lsa_t_seed_theta010_s')} | {r['initialized_mode_nx']} | {fmt('lsa_t_initialized_mode_crossing_s')} | {fmt('dumux_t_detect_s')} | {r['dumux_detection_class']} |")
+text += ['', 'Case 36877 的 canonical observable 模态为 28，t_seed(0.10)=45474.35 s；本表的模态 30/60 运行不实现该 canonical 初始化。t_eff 不从任何一列复制或推断。', '']
 for r in runs:
     if r['threshold_high_s']:
         text.append(f"- {r['id']} 首次观测全域阈值的相邻保存帧区间为 [{float(r['threshold_low_s']):.6f}, {float(r['threshold_high_s']):.6f}] s；{r['post_observed_threshold_frames']} 帧从主汇总排除。它是稀疏场的首次观测区间，不是精确首次局部达阈时间。")
@@ -58,7 +65,7 @@ text += ['', '## 对下一步的具体建议', '',
          '4. 只有在配对差异超过时间步、网格和预算误差后，再决定是否延长到更强非线性阶段以及定义 t_eff。目前不适合直接训练“有效输运”代理标签。',
          '', '本轮没有实施这些新模拟。结论是“已有时段尚不足以建立显著额外输运”，不是“这些物理条件永远不会产生有效输运”，也不是对 Option A 的最终否定。',
          '', '## 文件与复现', '',
-         '- `run_assessment.csv`：14 条运行身份、协议、窗口、阈值和场核验状态。',
+         '- `run_assessment.csv`：14 条运行身份、协议、窗口、阈值和场核验状态；新增标准化字段，旧字段作为来源别名保留。旧 `t_seed_s` 是案例的 canonical observable crossing，不一定是该行实际初始化模态的 crossing，后者使用 `lsa_t_initialized_mode_crossing_s`。',
          '- `inventory_timeseries.csv` / `inventory_summary.csv`：三个区域全部库存时序与汇总。',
          '- `event_intervals.csv` / `time_reconciliation.csv`：阈值记录和时间精度修复证据。',
          '- `figures/inventory_overview.png`：全部运行的库存轨迹；`dense_history_diagnostics.pdf`：逐运行时间线及代表场/剖面。',

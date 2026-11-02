@@ -7,11 +7,13 @@ import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 from matplotlib.backends.backend_pdf import PdfPages
+from onset_semantics import FrozenOnsets, standard_fields
 
 ROOT=Path(__file__).resolve().parents[1]
 OUT=ROOT/'analysis/dense_history_20261102'
 EVIDENCE=OUT/'evidence';FIG=OUT/'figures';FIG.mkdir(exist_ok=True)
 PLAN=json.loads((OUT/'plan.json').read_text())
+ONSETS=FrozenOnsets()
 AUDITS={r['id']:r for r in json.loads((EVIDENCE/'summary.json').read_text())}
 plt.rcParams.update({'font.family':'DejaVu Sans','font.size':9,'axes.spines.top':False,'axes.spines.right':False,
                      'savefig.dpi':180,'pdf.fonttype':42})
@@ -99,6 +101,7 @@ for spec in PLAN['runs']:
         sigma_amplification_pre_threshold=float(sig[sf][-1,2]/min(sig[sf][1:,2])) if sf.sum()>1 else None,
         density_input_max_error_kg_m3=audit['max_density_error_kg_m3'],sw_input_max_error=audit['max_sw_error'],
         historical_executable_verified=False,background_control_available=False,discrete_budget_verified=False)
+    summary.update(standard_fields(ONSETS.run_by_key(spec['run_key'])))
     runs.append(summary)
     for kind,values in [('surface',xtop),('global',xmax)]:
         hit=np.flatnonzero(values>=.1);k=int(hit[0]) if len(hit) else None
@@ -212,13 +215,21 @@ with PdfPages(FIG/'dense_history_diagnostics.pdf') as pdf:
         axes[1,0].set_ylabel('Amplitude relative to minimum');axes[1,0].legend(fontsize=8)
         axes[1,1].plot(t,100*val(f,'max_layer_sigma_over_mean'),label='Max over depth of lateral sigma / mean')
         axes[1,1].set_ylabel('Relative lateral variation (%)');axes[1,1].legend(fontsize=8)
+        for key,color,style,label in [
+                ('lsa_t_crit_s','#0072B2','--','LSA t_crit (global)'),
+                ('lsa_t_seed_theta010_s','#D55E00',':','LSA t_seed(0.10) (canonical observable)')]:
+            if s[key] is not None:
+                axes[1,0].axvline(s[key]/86400,color=color,ls=style,lw=1,label=label)
+        if s['initialized_mode_nx'] != s['lsa_observable_mode_nx_theta010'] and s['lsa_t_initialized_mode_crossing_s'] is not None:
+            axes[1,0].axvline(s['lsa_t_initialized_mode_crossing_s']/86400,color='#009E73',ls='-.',lw=1,label='LSA crossing of initialized mode')
+        axes[1,0].legend(fontsize=6.5)
         for ax in axes.flat:
             ax.set_xlabel('Time (day)');ax.grid(alpha=.15)
             if s['threshold_high_s'] is not None:ax.axvspan(s['threshold_high_s']/86400,t[-1],color='.8',alpha=.4)
-            if s['onset_low_s'] and s['onset_high_s']:
-                ax.axvspan(float(s['onset_low_s'])/86400,float(s['onset_high_s'])/86400,color='#CC79A7',alpha=.13)
+            if s['dumux_t_detect_low_s'] is not None and s['dumux_t_detect_high_s'] is not None:
+                ax.axvspan(s['dumux_t_detect_low_s']/86400,s['dumux_t_detect_high_s']/86400,color='#CC79A7',alpha=.13)
         status_label='Input / field checks consistent' if s['status'].startswith('field_input_consistent') else 'Source review required'
-        fig.suptitle(f"Case {s['case_id']} | mode {s['mode_nx']} | {status_label}\nPink: inherited onset interval; grey: after first observed threshold",fontsize=11)
+        fig.suptitle(f"Case {s['case_id']} | initialized mode {s['mode_nx']} | {status_label}\nPink: DuMuX detection plateau ({s['dumux_detection_class']}); grey: after first observed threshold",fontsize=10)
         pdf.savefig(fig)
         if name=='r06_c36877_n60':fig.savefig(FIG/'case36877_n60_timeline.png')
         plt.close(fig)

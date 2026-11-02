@@ -1,5 +1,7 @@
 # 历史密集时序分析方法与解释边界
 
+> 2026-11-02 命名核对：LSA `t_crit` 是全局临界模态首次 crossing；`t_seed(0.10)` 是增长筛选（含 fallback）选中的 observable 模态自身 crossing；`t_detect` 是 DuMuX 检测时间。`t_eff` 独立且尚未定义。原始字段按[统一映射](../onset_semantics_20261102/CONTRACT_ZH.md)阅读，不能把 `t_seed` 解释为达到指定幅值的时间。
+
 本工作只解析冻结审计中全部 14 条具有 101 帧的运行。长时间文件解析在 frodo 上进行，原输入、VTU、PVD、profile、manifest 和每步诊断只读。新文件写入独立 `paper2_history_analysis_20261102_r02`，本地结果位于本目录。没有执行求解器。
 
 ## 身份与时间

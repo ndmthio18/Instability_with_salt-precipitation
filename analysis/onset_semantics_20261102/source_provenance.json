@@ -1,0 +1,129 @@
+{
+  "pdf": {
+    "path": "D:\\3OutputFile\\1Research\\Article\\22-1-surrogate_model\\69e50893f5d9b55adfb56494\\AWR_onstime\\onstime.pdf",
+    "sha256": "e57fc093419d388ca9bdf005ac5a5b08bb73ae5a402ead7b08a33c1a39bfb498",
+    "bytes": 4797060,
+    "total_pages": 60,
+    "relevant_pdf_pages": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14
+    ],
+    "selected_by_user": true
+  },
+  "code": [
+    {
+      "path": "code/lsa_unsaturated.py",
+      "commit": "158395f3d25a29680dea5bcd0d3a24e52a28b4cd",
+      "git_blob_oid": "730b8105857ad0c401ffeea14ef3fa887896af5d",
+      "sha256": "8ffa7f0bb1491b082ef23c2770ab86e9cc0c46e4dac30a75aa323473d97c8d8b",
+      "lines": [
+        [
+          571,
+          605
+        ]
+      ]
+    },
+    {
+      "path": "code/parameter_database/solvers.py",
+      "commit": "158395f3d25a29680dea5bcd0d3a24e52a28b4cd",
+      "git_blob_oid": "9807fb784303f8248d66f463c332607affb63503",
+      "sha256": "743f57038de93ad4529ae2e82726f2d8a27192237f91fcefb31858493fe03265",
+      "lines": [
+        [
+          286,
+          335
+        ],
+        [
+          402,
+          434
+        ],
+        [
+          730,
+          823
+        ],
+        [
+          890,
+          928
+        ],
+        [
+          950,
+          975
+        ]
+      ]
+    },
+    {
+      "path": "code/parameter_database/pipeline.py",
+      "commit": "158395f3d25a29680dea5bcd0d3a24e52a28b4cd",
+      "git_blob_oid": "fe6b67931e701f11c9abd8c3e4f473052d69bb94",
+      "sha256": "0ac19f5fac98302643d15341a3eece0d8f87c107075a062e8950c59095fd4850",
+      "lines": [
+        [
+          245,
+          275
+        ],
+        [
+          280,
+          345
+        ],
+        [
+          424,
+          451
+        ]
+      ]
+    },
+    {
+      "path": "code/parameter_database/run_design_campaign_parallel.py",
+      "commit": "158395f3d25a29680dea5bcd0d3a24e52a28b4cd",
+      "git_blob_oid": "c8467c39edcc51b5a3da184b5f4e5ce1fc3213db",
+      "sha256": "af219488071f3b55fb735e943287883ac7593afb252deefb24b402a6fa18b043",
+      "lines": [
+        [
+          163,
+          178
+        ]
+      ]
+    },
+    {
+      "path": "code/parameter_database/dominant_mode_cli.py",
+      "commit": "158395f3d25a29680dea5bcd0d3a24e52a28b4cd",
+      "git_blob_oid": "e4f4213b28a0ccfb20ea1904641deeb320b86c3d",
+      "sha256": "1f47b546317234a2e27148e132ae9a87d5830a5f4fb3b3eedee3d4033d995cce",
+      "lines": [
+        [
+          90,
+          145
+        ]
+      ]
+    },
+    {
+      "path": "code/parameter_database/seeded_mode_cli.py",
+      "commit": "158395f3d25a29680dea5bcd0d3a24e52a28b4cd",
+      "git_blob_oid": "ed5ae8b6da4bb66f6ada8ac09832f7bb81b8e1de",
+      "sha256": "be00eb0fcfc517e04891ff0817da1bd0ac864b9e52c648427f228b27c4409ff4",
+      "lines": [
+        [
+          70,
+          145
+        ]
+      ]
+    }
+  ],
+  "input_sha256": {
+    "data\\external\\paper1\\158395f3d25a\\handoff\\observations.csv": "bd13ca41330d722aa12fc0aeb768654dd7e77eb22b307e7373025115b9146e7f",
+    "data\\external\\paper1\\158395f3d25a\\handoff\\seeded_modes.csv": "f147118f19333a620ebb4a9e7c5ecdcf9d93618951eb7fe41785007b68aee7be",
+    "data\\external\\paper1\\158395f3d25a\\handoff\\dumux_onsets.csv": "70d611f2e343d1f68915ce16b9a3c5ed5f6ec66f5f55f03692e8c20103d347b3",
+    "data\\external\\paper1\\158395f3d25a\\handoff\\cases.csv": "f75e11336674ce92804a55f64572b9a954adc997f1722800229191c4596d15b7",
+    "analysis/phase0_20261102/run_audit.csv": "5c22a055c44a1635d3c4e5295b6e1b8083651cb9960a41955e2ab4f91d79065d",
+    "analysis/phase0_20261102/wp1_supplement_audit.csv": "20ff9b6e21e00eba769defb908a62dea0d8bdfc55a055e9a930c8d795ad78834",
+    "analysis/phase0_20261102/pilot_screening.csv": "bed321aaf8e2ef6ac242c697bad5a203fa3c48df08b91f4ba579b73be5055a3b",
+    "analysis/highk_unperturbed_42929_20261102/screening.csv": "79d16b720da365dd30c303a1293bc2288b6fb92f2c534a0df62ca46132b38175",
+    "analysis\\phase0_20261102\\pilot_candidates.json": "c839c163e942fce1dad3051387d662a70d3139bee50c72ff4cceb429e4365027",
+    "analysis\\matched_pair_36877_20261102\\legacy_nx28\\case_manifest.json": "8203f223b8329c0d4bf6d876eaccc6fcfae379c595d00fc407dd424484669a27"
+  },
+  "paper1_read_only": true
+}

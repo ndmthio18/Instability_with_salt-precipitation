@@ -153,7 +153,8 @@ def main():
     with (args.out/'pair_timeseries.csv').open('w', newline='') as f:
         w=csv.DictWriter(f,fieldnames=list(output[0]));w.writeheader();w.writerows(output)
     record = dict(status='diagnostic_only_not_physical_evidence' if args.diagnostic_only else 'paired_diagnostics_pending_sensitivity',
-        sensitivity_error_available=False, t_eff_defined=False, regions=summary,
+        sensitivity_error_available=False, t_eff_defined=False,
+        transport_t_eff_s=None, transport_t_eff_status='undefined_not_a_label', regions=summary,
         sources={str(p/name):hashlib.sha256((p/name).read_bytes()).hexdigest()
                  for p in (args.m0,args.m1) for name in ('transport_budget.csv','surface_events.csv')})
     (args.out/'summary.json').write_text(json.dumps(record,indent=2))

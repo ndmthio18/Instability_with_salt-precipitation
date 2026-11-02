@@ -1,5 +1,7 @@
 # Phase 0：运行、源码与输运可用性审计
 
+> 2026-11-02 命名核对：LSA `t_crit` 是全局临界模态首次 crossing；`t_seed(0.10)` 是增长筛选（含 fallback）选中的 observable 模态自身 crossing；`t_detect` 是 DuMuX 检测时间。`t_eff` 独立且尚未定义。原始字段按[统一映射](../onset_semantics_20261102/CONTRACT_ZH.md)阅读，不能把 `t_seed` 解释为达到指定幅值的时间。
+
 日期：2026-11-02。范围：读取现有文件和服务器结果；未启动、延长或重跑任何模拟，未修改 Paper 1、远程源码或原始结果。此报告不宣告 Pilot 可行性成立。
 
 ## 结论与交付物

@@ -1,6 +1,7 @@
 """One explicitly requested unperturbed run; frozen legacy grid and time window."""
 import hashlib,json,subprocess
 from pathlib import Path
+from onset_semantics import FrozenOnsets, standard_fields
 from datetime import datetime,timezone
 ROOT=Path(__file__).resolve().parents[1]
 OUT=ROOT/'analysis/unperturbed_36877_20261102'
@@ -17,6 +18,7 @@ inp='\n\n'.join('['+s+']\n'+'\n'.join(k+' = '+v for k,v in vals.items()) for s,v
 build=json.loads((ROOT/'analysis/transport_build_20261102/attempt_02/result.json').read_text())
 for n,h in build['source_sha256'].items():assert hashlib.sha256((ROOT/'model/transport_v1/source'/n).read_bytes()).hexdigest()==h
 plan={'created_utc':datetime.now(timezone.utc).isoformat(),'case_id':36877,'purpose':'observe whether numerical noise grows without imposed perturbation','parameters':v,'changes_from_legacy':updates,'removed_unused_key':'Problem.EigenprofilePath','source_run':c['preferred_existing_run_key'],'executable':build['executable'],'source_sha256':build['source_sha256'],'input_sha256':hashlib.sha256(inp.encode()).hexdigest(),'legacy_detect_s':50394.334,'horizon_s':float(v['TimeLoop.TEnd']),'claim_scope':'same legacy time window; absence of growth is not proof of stability','predeclared_detection':'surface sigma > 1e-8 for 5 consecutive accepted steps and above 1000 times initial noise floor; descriptive visibility criterion, not LSA onset','wall_timeout_s':43200}
+plan['legacy_onset_reference']=standard_fields(FrozenOnsets().run_by_key(c['preferred_existing_run_key']))
 (OUT/'plan.json').write_text(json.dumps(plan,indent=2))
 remote='/temp/zhixin/paper2_transport_20261102/unperturbed_36877_20261102_r01'
 worker='''import json,subprocess,os,time,hashlib,datetime

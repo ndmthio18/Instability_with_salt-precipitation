@@ -4,6 +4,8 @@
 
 **研究背景：** 本方案基于 Chen、Ciriello 和 Helmig 合作的 Paper 1《Evaporation-Driven Density Instability in Unsaturated Porous Media: Observable Onset and Competition with Salt Precipitation》、2026 年 11 月 1 日报告《Transfer Learning Results and Proposed Extensions of Evaporation-Driven Instability Modelling》的 Option A，以及随后关于研究创新性、DuMux 盐输运和 LSA-informed prediction 的讨论。
 
+**时间定义更新（2026-11-02）：** 两种 LSA onset、DuMuX `t_detect` 与独立的 `t_eff` 严格区分，见 [统一约定](analysis/onset_semantics_20261102/CONTRACT_ZH.md)。下文输运阈值和时间线属于待验证的候选设计，当前未定义 `t_eff`，没有训练标签。
+
 **研究策略：** 小规模可行性验证 → 定量物理机制研究 → LSA 预测能力验证 → 代理模型开发 → 稳健性和论文整合。
 
 > **核心原则：** 第一阶段不是证明 Option A 一定成立，而是用少量计算尽早判断，它是否包含独立、可靠、值得发表的新科学问题。DuMux 是非线性盐输运的主要计算依据；LSA 提供 onset、增长率、模态和候选的线性输运指标；机器学习仅在物理目标明确之后用于建立可推广的预测关系。
@@ -47,7 +49,7 @@
 Paper 1 已经具有：
 
 - 43,253 个有效 LSA 案例；9,354 个 instability-first 案例。
-- 临界起始时间 $t_{\mathrm{crit}}$、增长判据起始时间 $t_{\mathrm{seed}}(0.10)$ 与模态信息。
+- 临界起始时间 $t_{\mathrm{crit}}$、observable onset（增长筛选模态自身的中性穿越时间） $t_{\mathrm{seed}}(0.10)$ 与模态信息。
 - 采用特定初始扰动和检测协议的 DuMux onset 对比验证。
 - 固定配置：$H=0.2\,\mathrm m$，横向宽度 $W=3H=0.6\,\mathrm m$。
 - 表面盐浓度达到溶解度阈值 $x_{\mathrm{sat}}=0.1$（摩尔分数）的竞争事件定义。
@@ -428,7 +430,7 @@ $$
 
 ## 十、主要参考资料
 
-1. Chen, Z., Ciriello, V., & Helmig, R. *Evaporation-Driven Density Instability in Unsaturated Porous Media: Observable Onset and Competition with Salt Precipitation.* Paper 1，用户提供的 `onstime(4).pdf`。
+1. Chen, Z., Ciriello, V., & Helmig, R. *Evaporation-Driven Density Instability in Unsaturated Porous Media: Observable Onset and Competition with Salt Precipitation.* Paper 1。原方案引用名为 `onstime(4).pdf`；本轮定义以用户指定的合作稿 `AWR_onstime/onstime.pdf` Section 2.2–2.4 为准，文件哈希和字段规范见 [命名约定](analysis/onset_semantics_20261102/CONTRACT_ZH.md)。
 2. *Transfer Learning Results and Proposed Extensions of Evaporation-Driven Instability Modelling.* 1 November 2026，用户提供的 `report2(1).pdf`，尤其 Section 7.1（Option A）。
 3. Bringedal, C., Schollenberger, T., Pieters, G. J. M., van Duijn, C. J., & Helmig, R. (2022). *Evaporation-driven density instabilities in saturated porous media.* Transport in Porous Media. https://doi.org/10.1007/s11242-022-01772-w
 4. Bringedal, C., Kiemle, S., van Duijn, C. J., & Helmig, R. (2025). *Impact of saturation on evaporation-driven density instabilities in porous media: Mathematical and numerical analysis.* Transport in Porous Media. https://doi.org/10.1007/s11242-025-02207-y

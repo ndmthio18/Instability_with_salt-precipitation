@@ -1,0 +1,33 @@
+{
+  "passed": true,
+  "checks": {
+    "all_recorded_input_bytes_unchanged": true,
+    "36877_global_vs_observable": true,
+    "manifest_retains_restricted_critical_nx": true,
+    "sample_minimum_not_refined_detection": true,
+    "fallback_accepted_without_requiring_theta": true,
+    "no_observable_remains_missing": true,
+    "inconsistent_global_source_rejected": true,
+    "raw_columns_preserved/analysis/phase0_20261102/run_audit.csv": true,
+    "raw_columns_preserved/analysis/phase0_20261102/wp1_supplement_audit.csv": true,
+    "raw_columns_preserved/analysis/phase0_20261102/pilot_screening.csv": true,
+    "raw_columns_preserved/analysis/highk_unperturbed_42929_20261102/screening.csv": true,
+    "520_run_rows": true,
+    "unresolved_not_promoted_to_points": true,
+    "transport_time_never_inferred": true,
+    "nx60_not_assigned_nx28_crossing": true,
+    "dense_original_columns_identical": true,
+    "candidate_raw_objects_identical": true,
+    "original_evidence_and_registered_inputs_identical": true,
+    "other_numeric_tables_byte_identical": true,
+    "all_scripts_parse": true,
+    "figure_labels_14_timelines": true,
+    "figure_distinguishes_both_lsa_times": true
+  },
+  "baseline_commit": "b3a960f8f230d6e6e96cc6a13f640ebce597e773",
+  "protected_artifacts": 295,
+  "artifact_coverage_rows": 261,
+  "lsa_recomputed": false,
+  "simulations_started": false,
+  "scope": "mapping and regression checks; no renewed physical or eigenvalue validation"
+}

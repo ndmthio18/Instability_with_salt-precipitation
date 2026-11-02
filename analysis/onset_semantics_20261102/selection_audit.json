@@ -1,0 +1,19 @@
+{
+  "schema": "paper2-onset-v1",
+  "frozen_theta010_rows": 10985,
+  "accepted": 10718,
+  "accepted_selections": {
+    "preferred": 10586,
+    "fallback_best": 132
+  },
+  "statuses": {
+    "ok": 10718,
+    "no_sharp_mode": 267
+  },
+  "equals_time_limit": [],
+  "beyond_time_limit": [],
+  "boundary_note": "PDF Eq.10 uses strict <; frozen selector excludes only >. No accepted frozen theta010 row is on or beyond the boundary.",
+  "verification_scope": "Stored scalar acceptance and source trace only; candidate optimization and eigenvalues were not recomputed.",
+  "simulations_started": false,
+  "lsa_recomputed": false
+}

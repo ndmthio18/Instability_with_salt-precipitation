@@ -12,8 +12,7 @@ Do not stage, commit or push changes in the parent as part of ordinary Paper 2 w
   does not establish feasibility or authorize a production campaign.
 - Paper 2 studies effective salt redistribution. Onset information inherited from
   Paper 1 is an input/reference, not evidence that effective transport occurs.
-- Distinguish LSA `t_crit`, protocol-dependent `t_seed`, numerical `t_detect`, and
-  the as-yet unvalidated transport-effective time `t_eff`.
+- Follow `analysis/onset_semantics_20261102/CONTRACT_ZH.md`: LSA `t_crit` is the global critical-mode crossing; `t_seed(0.10)` is the growth-qualified observable mode's own crossing (theta=.10, floor=.03, fallback enabled), never an amplitude-reaching time. Keep DuMuX `t_detect` and undefined transport `t_eff` separate. Use `scripts/onset_semantics.py` or normalized views; preserve raw source fields and censoring.
 - Preserve correlated soil joint support, constitutive branches, perturbation
   protocol, units, failed runs and censoring. A solubility threshold crossing is
   not a precipitation-kinetics prediction.

@@ -1,6 +1,7 @@
 """Collect live/final evidence and report for the one no-imposed-perturbation test."""
 import base64,csv,hashlib,io,json,subprocess,math
 from pathlib import Path
+from onset_semantics import FrozenOnsets, standard_fields
 ROOT=Path(__file__).resolve().parents[1];OUT=ROOT/'analysis/unperturbed_36877_20261102'
 launch=json.loads((OUT/'launch.json').read_text());plan=json.loads((OUT/'plan.json').read_text())
 code='''import base64,json,hashlib,csv,io
@@ -40,6 +41,8 @@ last=events[-1]
 bud=list(csv.DictReader((dest/'transport_budget.csv').open()));initial={r['region']:r for r in bud if r['step']=='0'}
 res={s:max(abs(float(r[s+'_residual_m']))/float(initial[r['region']]['inventory_'+s+'_m']) for r in bud) for s in ['salt','water']}
 metrics={'completed':finished is not None,'returncode':finished['returncode'] if finished else None,'stop':stop,'last_time_s':float(last['time_s']),'max_sigma':max(float(r['sigma_top_node']) for r in events),'last_sigma':float(last['sigma_top_node']),'last_top_max':float(last['x_top_max']),'last_top_mean':float(last['x_top_area_mean']),'visibility_threshold':threshold,'first_sustained_visible_s':onset,'max_relative_inventory_residual':res,'legacy_detection_s':plan['legacy_detect_s'],'wall_s':finished['wall_s'] if finished else None}
+metrics['legacy_onset_reference']=standard_fields(FrozenOnsets().run_by_key(plan['source_run']))
+metrics['transport_t_eff_s']=None; metrics['transport_t_eff_status']='undefined_not_a_label'
 (OUT/'metrics.json').write_text(json.dumps(metrics,indent=2))
 # A self-contained diagnostic figure, with log scale explicitly labeled.
 points=[]

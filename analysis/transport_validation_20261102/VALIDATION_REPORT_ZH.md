@@ -1,5 +1,7 @@
 # 小规模背景解与守恒验证
 
+> 2026-11-02 命名核对：LSA `t_crit` 是全局临界模态首次 crossing；`t_seed(0.10)` 是增长筛选（含 fallback）选中的 observable 模态自身 crossing；`t_detect` 是 DuMuX 检测时间。`t_eff` 独立且尚未定义。原始字段按[统一映射](../onset_semantics_20261102/CONTRACT_ZH.md)阅读，不能把 `t_seed` 解释为达到指定幅值的时间。
+
 日期：2026-11-02。执行位置：frodo。范围：均匀二维背景、归一化盐/水预算、阈值停止及启动失败记录；没有启动 Pilot A/B。
 
 ## 判定

@@ -45,3 +45,5 @@
 本次文件校验通过仅说明归档身份与 Paper 1 清单一致，不证明方案可行、实验验证
 成立或某组已有运行足以支持盐输运结论。不得混同 `t_crit`、`t_seed`、`t_detect`
 及待定义的 `t_eff`，也不得把盐摩尔分数直接作为质量或累计通量。
+
+本轮 `command/2.md` 命名来源改以用户明确指定的 `AWR_onstime/onstime.pdf` 为准；精确 SHA、页码与原始字段映射见 [onset 约定](analysis/onset_semantics_20261102/CONTRACT_ZH.md)。冻结 handoff 不升级、不改写。

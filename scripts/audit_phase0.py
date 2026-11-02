@@ -1,4 +1,6 @@
 """Reproduce Phase-0 tables from frozen inputs and the read-only remote snapshot.
+These are raw-source audit tables; public onset fields are supplied by
+onset_semantics.FrozenOnsets and audit_onset_semantics.py (additive views).
 No solver imports, no simulation, no network. Run prepare_paper1_inputs --verify-only first.
 """
 import csv
