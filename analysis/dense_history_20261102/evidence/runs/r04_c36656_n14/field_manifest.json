@@ -1,0 +1,810 @@
+[
+  {
+    "frame": 0,
+    "time_s": 0.0,
+    "path": "/temp/zhixin/diag/runs_a/shard-001/0001--case-36656--native/sandy--boreal--s1957--f1092--global_default_L0p5--native-00000.vtu",
+    "bytes": 19226912,
+    "mtime_ns": 1788543322521991445,
+    "sha256": "956315ac42f89b2be18c36aa423bc17bbb09ba3a05dc903e3c392e62e61a3207"
+  },
+  {
+    "frame": 1,
+    "time_s": 296.138,
+    "path": "/temp/zhixin/diag/runs_a/shard-001/0001--case-36656--native/sandy--boreal--s1957--f1092--global_default_L0p5--native-00001.vtu",
+    "bytes": 23409090,
+    "mtime_ns": 1788543469562372926,
+    "sha256": "3cb537b1e224b92c9c3aecffea01e1e3c53857fdb0d0688c4015584312369870"
+  },
+  {
+    "frame": 2,
+    "time_s": 592.276,
+    "path": "/temp/zhixin/diag/runs_a/shard-001/0001--case-36656--native/sandy--boreal--s1957--f1092--global_default_L0p5--native-00002.vtu",
+    "bytes": 23408305,
+    "mtime_ns": 1788543599811574677,
+    "sha256": "4c371a1c6d916b434b505133be36ffbc960416bd7b6d752677c4d3b94ab71b4d"
+  },
+  {
+    "frame": 3,
+    "time_s": 888.413,
+    "path": "/temp/zhixin/diag/runs_a/shard-001/0001--case-36656--native/sandy--boreal--s1957--f1092--global_default_L0p5--native-00003.vtu",
+    "bytes": 23632398,
+    "mtime_ns": 1788543708017560852,
+    "sha256": "c0f8f1514fe81428615600124d428d264b2d2f41a3d2fcf4670f4219e68b4298"
+  },
+  {
+    "frame": 4,
+    "time_s": 1184.55,
+    "path": "/temp/zhixin/diag/runs_a/shard-001/0001--case-36656--native/sandy--boreal--s1957--f1092--global_default_L0p5--native-00004.vtu",
+    "bytes": 23639457,
+    "mtime_ns": 1788543802264412554,
+    "sha256": "621bcb9803a89bfef3742f2094961fa03e5b51edda77d060fa77921f597d48c3"
+  },
+  {
+    "frame": 5,
+    "time_s": 1480.69,
+    "path": "/temp/zhixin/diag/runs_a/shard-001/0001--case-36656--native/sandy--boreal--s1957--f1092--global_default_L0p5--native-00005.vtu",
+    "bytes": 23647806,
+    "mtime_ns": 1788543887346176628,
+    "sha256": "5d5abb825011625212c00db55b7085f2a3972a29da9b7749805ea32c8d605e55"
+  },
+  {
+    "frame": 6,
+    "time_s": 1776.83,
+    "path": "/temp/zhixin/diag/runs_a/shard-001/0001--case-36656--native/sandy--boreal--s1957--f1092--global_default_L0p5--native-00006.vtu",
+    "bytes": 23689001,
+    "mtime_ns": 1788543971256926429,
+    "sha256": "15923c58995b24b8c516d70e43ad3b5014b98ac475cd9f74531928c8f93a8b58"
+  },
+  {
+    "frame": 7,
+    "time_s": 2072.96,
+    "path": "/temp/zhixin/diag/runs_a/shard-001/0001--case-36656--native/sandy--boreal--s1957--f1092--global_default_L0p5--native-00007.vtu",
+    "bytes": 23698552,
+    "mtime_ns": 1788544053633659440,
+    "sha256": "88ecae7515f6d33a3bba224f9b6e480426c63305759212873dfef890d165e44e"
+  },
+  {
+    "frame": 8,
+    "time_s": 2369.1,
+    "path": "/temp/zhixin/diag/runs_a/shard-001/0001--case-36656--native/sandy--boreal--s1957--f1092--global_default_L0p5--native-00008.vtu",
+    "bytes": 23669805,
+    "mtime_ns": 1788544137625404151,
+    "sha256": "dd2791ceef6ff573d6722c8595c7944eb723bacc1601c0022071130b82262f1a"
+  },
+  {
+    "frame": 9,
+    "time_s": 2665.24,
+    "path": "/temp/zhixin/diag/runs_a/shard-001/0001--case-36656--native/sandy--boreal--s1957--f1092--global_default_L0p5--native-00009.vtu",
+    "bytes": 23651179,
+    "mtime_ns": 1788544225444180347,
+    "sha256": "0d0e9bb82c64b60daa7b6a4db2cb9f958603848d9e1333f38867204de10146ba"
+  },
+  {
+    "frame": 10,
+    "time_s": 2961.38,
+    "path": "/temp/zhixin/diag/runs_a/shard-001/0001--case-36656--native/sandy--boreal--s1957--f1092--global_default_L0p5--native-00010.vtu",
+    "bytes": 23574406,
+    "mtime_ns": 1788544313343955151,
+    "sha256": "27abea4c90807a1f2f9b64564b45ed67690cc802d434a1dc346fece78199430e"
+  },
+  {
+    "frame": 11,
+    "time_s": 3257.52,
+    "path": "/temp/zhixin/diag/runs_a/shard-001/0001--case-36656--native/sandy--boreal--s1957--f1092--global_default_L0p5--native-00011.vtu",
+    "bytes": 23557809,
+    "mtime_ns": 1788544395793680295,
+    "sha256": "724e64abb4305ca1b1d8acb674fe7c022fc8989afa519b0963e8c1a65440f9ff"
+  },
+  {
+    "frame": 12,
+    "time_s": 3553.65,
+    "path": "/temp/zhixin/diag/runs_a/shard-001/0001--case-36656--native/sandy--boreal--s1957--f1092--global_default_L0p5--native-00012.vtu",
+    "bytes": 23566161,
+    "mtime_ns": 1788544470629337313,
+    "sha256": "76d50d6a7a5065681edce2e91e7016c407ce08fc5b22b8cdd22c04157d6f7660"
+  },
+  {
+    "frame": 13,
+    "time_s": 3849.79,
+    "path": "/temp/zhixin/diag/runs_a/shard-001/0001--case-36656--native/sandy--boreal--s1957--f1092--global_default_L0p5--native-00013.vtu",
+    "bytes": 23547336,
+    "mtime_ns": 1788544560015120840,
+    "sha256": "2c26107207ef0bd8dcc8e434b3ff81baea67db8e9905969ab2b9f563472a6e6c"
+  },
+  {
+    "frame": 14,
+    "time_s": 4145.93,
+    "path": "/temp/zhixin/diag/runs_a/shard-001/0001--case-36656--native/sandy--boreal--s1957--f1092--global_default_L0p5--native-00014.vtu",
+    "bytes": 23513639,
+    "mtime_ns": 1788544646994882186,
+    "sha256": "ea6dbcc227d5bf8743eb207bfd20607506ff14c0b2a23c2e703cfde7edf91cb0"
+  },
+  {
+    "frame": 15,
+    "time_s": 4442.07,
+    "path": "/temp/zhixin/diag/runs_a/shard-001/0001--case-36656--native/sandy--boreal--s1957--f1092--global_default_L0p5--native-00015.vtu",
+    "bytes": 23450384,
+    "mtime_ns": 1788544732382628711,
+    "sha256": "fa9a9ef265efbb5f274ea24cc4703bdea56bea1b8344f01d5fed762750b01c78"
+  },
+  {
+    "frame": 16,
+    "time_s": 4738.2,
+    "path": "/temp/zhixin/diag/runs_a/shard-001/0001--case-36656--native/sandy--boreal--s1957--f1092--global_default_L0p5--native-00016.vtu",
+    "bytes": 23458592,
+    "mtime_ns": 1788544825671443473,
+    "sha256": "c96fb37ea3f5571f9f4bccb4f75dabebdd812d69af4a7ebc04a477d034f4f663"
+  },
+  {
+    "frame": 17,
+    "time_s": 5034.34,
+    "path": "/temp/zhixin/diag/runs_a/shard-001/0001--case-36656--native/sandy--boreal--s1957--f1092--global_default_L0p5--native-00017.vtu",
+    "bytes": 23462986,
+    "mtime_ns": 1788544907416156804,
+    "sha256": "ea2a277682aa40bd0b943698b3f120b8d138d9c3a1e9f930cb41c1cbf7df458b"
+  },
+  {
+    "frame": 18,
+    "time_s": 5330.48,
+    "path": "/temp/zhixin/diag/runs_a/shard-001/0001--case-36656--native/sandy--boreal--s1957--f1092--global_default_L0p5--native-00018.vtu",
+    "bytes": 23444954,
+    "mtime_ns": 1788544992127895515,
+    "sha256": "440fa0f6ab59059da075162fc8e9ee48ffc22c614f7e963bff4e6391a00b3f0b"
+  },
+  {
+    "frame": 19,
+    "time_s": 5626.62,
+    "path": "/temp/zhixin/diag/runs_a/shard-001/0001--case-36656--native/sandy--boreal--s1957--f1092--global_default_L0p5--native-00019.vtu",
+    "bytes": 23437128,
+    "mtime_ns": 1788545077042635553,
+    "sha256": "42bb4466ff29392fed742dd5faccd4cf6081cfb792c3f18ded7b99a02866a75b"
+  },
+  {
+    "frame": 20,
+    "time_s": 5922.76,
+    "path": "/temp/zhixin/diag/runs_a/shard-001/0001--case-36656--native/sandy--boreal--s1957--f1092--global_default_L0p5--native-00020.vtu",
+    "bytes": 23425107,
+    "mtime_ns": 1788545160130359310,
+    "sha256": "e969d53b3bc76902cac584d342844ee4b29a13b52aa04e5d0b1d1bfdea2b3b40"
+  },
+  {
+    "frame": 21,
+    "time_s": 6218.89,
+    "path": "/temp/zhixin/diag/runs_a/shard-001/0001--case-36656--native/sandy--boreal--s1957--f1092--global_default_L0p5--native-00021.vtu",
+    "bytes": 23412769,
+    "mtime_ns": 1788545241699069538,
+    "sha256": "3acc26963e73b862f8917175c96f8263e06c6119bdd92353fb863a4212054a55"
+  },
+  {
+    "frame": 22,
+    "time_s": 6515.03,
+    "path": "/temp/zhixin/diag/runs_a/shard-001/0001--case-36656--native/sandy--boreal--s1957--f1092--global_default_L0p5--native-00022.vtu",
+    "bytes": 23415697,
+    "mtime_ns": 1788545331927854882,
+    "sha256": "8beec63d070bda9674988ec142facc9fbae4fd54b45960919af3a5a9df748b7d"
+  },
+  {
+    "frame": 23,
+    "time_s": 6811.17,
+    "path": "/temp/zhixin/diag/runs_a/shard-001/0001--case-36656--native/sandy--boreal--s1957--f1092--global_default_L0p5--native-00023.vtu",
+    "bytes": 23421661,
+    "mtime_ns": 1788545431755723480,
+    "sha256": "038cd4af9cc749f837b8134a2d80a7af8cfd100d298ceb501be8bd489f413316"
+  },
+  {
+    "frame": 24,
+    "time_s": 7107.31,
+    "path": "/temp/zhixin/diag/runs_a/shard-001/0001--case-36656--native/sandy--boreal--s1957--f1092--global_default_L0p5--native-00024.vtu",
+    "bytes": 23404471,
+    "mtime_ns": 1788545505771367318,
+    "sha256": "b0aca6caee4719f7e5dfd6ea34d669bc2a08ff12990eac96f47153d156e50ae7"
+  },
+  {
+    "frame": 25,
+    "time_s": 7403.44,
+    "path": "/temp/zhixin/diag/runs_a/shard-001/0001--case-36656--native/sandy--boreal--s1957--f1092--global_default_L0p5--native-00025.vtu",
+    "bytes": 23397992,
+    "mtime_ns": 1788545592518121744,
+    "sha256": "3c5d7a8e395aad51e11f66b98135b5a69069e340632a5f45fe6fbacb72a03c62"
+  },
+  {
+    "frame": 26,
+    "time_s": 7699.58,
+    "path": "/temp/zhixin/diag/runs_a/shard-001/0001--case-36656--native/sandy--boreal--s1957--f1092--global_default_L0p5--native-00026.vtu",
+    "bytes": 23387093,
+    "mtime_ns": 1788545671624809600,
+    "sha256": "59ecb120eea6c3157a456e0d6e6aad1c48f23f1cb7ef2add2848685590233659"
+  },
+  {
+    "frame": 27,
+    "time_s": 7995.72,
+    "path": "/temp/zhixin/diag/runs_a/shard-001/0001--case-36656--native/sandy--boreal--s1957--f1092--global_default_L0p5--native-00027.vtu",
+    "bytes": 23373888,
+    "mtime_ns": 1788545750941499181,
+    "sha256": "5f600b045ffe876a810bca1dbf9766ed5d8a2ebebce08d6b4fea7fa06682dc64"
+  },
+  {
+    "frame": 28,
+    "time_s": 8291.86,
+    "path": "/temp/zhixin/diag/runs_a/shard-001/0001--case-36656--native/sandy--boreal--s1957--f1092--global_default_L0p5--native-00028.vtu",
+    "bytes": 23372190,
+    "mtime_ns": 1788545827696166403,
+    "sha256": "fcc5490933f331096d363af77404ae35e13f5096087d8fe26a15c9bbbccd46e8"
+  },
+  {
+    "frame": 29,
+    "time_s": 8588.0,
+    "path": "/temp/zhixin/diag/runs_a/shard-001/0001--case-36656--native/sandy--boreal--s1957--f1092--global_default_L0p5--native-00029.vtu",
+    "bytes": 23375677,
+    "mtime_ns": 1788545899244788307,
+    "sha256": "d8ea92c253dd4cb0ed0eacd76d422a5adf2750e5a302d1e1f9d14ae8c65ea760"
+  },
+  {
+    "frame": 30,
+    "time_s": 8884.13,
+    "path": "/temp/zhixin/diag/runs_a/shard-001/0001--case-36656--native/sandy--boreal--s1957--f1092--global_default_L0p5--native-00030.vtu",
+    "bytes": 23371987,
+    "mtime_ns": 1788545969623399991,
+    "sha256": "b813b51cea50eff61a0faed9bf8c1b6990cd52a30c51606eb749722c6602a089"
+  },
+  {
+    "frame": 31,
+    "time_s": 9180.27,
+    "path": "/temp/zhixin/diag/runs_a/shard-001/0001--case-36656--native/sandy--boreal--s1957--f1092--global_default_L0p5--native-00031.vtu",
+    "bytes": 23358799,
+    "mtime_ns": 1788546046699069831,
+    "sha256": "5f1e54438fd9fe24d3bfe6609c12b2b094c1d08d72f68d7469e0cfa1fb832898"
+  },
+  {
+    "frame": 32,
+    "time_s": 9476.41,
+    "path": "/temp/zhixin/diag/runs_a/shard-001/0001--case-36656--native/sandy--boreal--s1957--f1092--global_default_L0p5--native-00032.vtu",
+    "bytes": 23347916,
+    "mtime_ns": 1788546120347709843,
+    "sha256": "55ffe6893700fcbc7d4ac7aa48a2c0e916c7036c316eb75b353295477b4ede98"
+  },
+  {
+    "frame": 33,
+    "time_s": 9772.55,
+    "path": "/temp/zhixin/diag/runs_a/shard-001/0001--case-36656--native/sandy--boreal--s1957--f1092--global_default_L0p5--native-00033.vtu",
+    "bytes": 23336501,
+    "mtime_ns": 1788546196297369812,
+    "sha256": "8caf981f0bc262c9bd17d008d8b86649f9122947d9c0e3715314838b9b9ec649"
+  },
+  {
+    "frame": 34,
+    "time_s": 10068.7,
+    "path": "/temp/zhixin/diag/runs_a/shard-001/0001--case-36656--native/sandy--boreal--s1957--f1092--global_default_L0p5--native-00034.vtu",
+    "bytes": 23323624,
+    "mtime_ns": 1788546275508058082,
+    "sha256": "803a65c57ddf4a9b53494ec5d09a06acd5b51b267f1a83bd068d7bc8ba388890"
+  },
+  {
+    "frame": 35,
+    "time_s": 10364.8,
+    "path": "/temp/zhixin/diag/runs_a/shard-001/0001--case-36656--native/sandy--boreal--s1957--f1092--global_default_L0p5--native-00035.vtu",
+    "bytes": 23313034,
+    "mtime_ns": 1788546352741729144,
+    "sha256": "b88669cbad2db1aff945de360523cbaa9008e76e6d509ad0eb0a4dad1396c0b5"
+  },
+  {
+    "frame": 36,
+    "time_s": 10661.0,
+    "path": "/temp/zhixin/diag/runs_a/shard-001/0001--case-36656--native/sandy--boreal--s1957--f1092--global_default_L0p5--native-00036.vtu",
+    "bytes": 23303120,
+    "mtime_ns": 1788546426435369427,
+    "sha256": "d015fd15b6e755b946b67e37a63902cd98bcfedf04ca052e1ca13fe0984650ec"
+  },
+  {
+    "frame": 37,
+    "time_s": 10957.1,
+    "path": "/temp/zhixin/diag/runs_a/shard-001/0001--case-36656--native/sandy--boreal--s1957--f1092--global_default_L0p5--native-00037.vtu",
+    "bytes": 23284281,
+    "mtime_ns": 1788546501242019357,
+    "sha256": "57e1911d8c9b98ed04909f89c45873f89052007f79245c2e4e75a21c3b12f752"
+  },
+  {
+    "frame": 38,
+    "time_s": 11253.2,
+    "path": "/temp/zhixin/diag/runs_a/shard-001/0001--case-36656--native/sandy--boreal--s1957--f1092--global_default_L0p5--native-00038.vtu",
+    "bytes": 23293751,
+    "mtime_ns": 1788546576445672721,
+    "sha256": "33f00609ea14091ea179e815c75ae7406be8bae12436a55ecddafe3909bb859a"
+  },
+  {
+    "frame": 39,
+    "time_s": 11549.4,
+    "path": "/temp/zhixin/diag/runs_a/shard-001/0001--case-36656--native/sandy--boreal--s1957--f1092--global_default_L0p5--native-00039.vtu",
+    "bytes": 23279666,
+    "mtime_ns": 1788546655621360572,
+    "sha256": "407dc4d479bc4c053367121b4b91e657b39bba43ec73f1ae69b4988cb6f07234"
+  },
+  {
+    "frame": 40,
+    "time_s": 11845.5,
+    "path": "/temp/zhixin/diag/runs_a/shard-001/0001--case-36656--native/sandy--boreal--s1957--f1092--global_default_L0p5--native-00040.vtu",
+    "bytes": 23278044,
+    "mtime_ns": 1788546728238991437,
+    "sha256": "3cf27cdb41b73aca8e2a14320b92dc8ab1a227f4866dd59d0fed358444265f00"
+  },
+  {
+    "frame": 41,
+    "time_s": 12141.6,
+    "path": "/temp/zhixin/diag/runs_a/shard-001/0001--case-36656--native/sandy--boreal--s1957--f1092--global_default_L0p5--native-00041.vtu",
+    "bytes": 23268661,
+    "mtime_ns": 1788546806634672487,
+    "sha256": "a0acfac429dcac218e908cfd7822066fb5ad27863d88c487d2f4b7f0818d79e1"
+  },
+  {
+    "frame": 42,
+    "time_s": 12437.8,
+    "path": "/temp/zhixin/diag/runs_a/shard-001/0001--case-36656--native/sandy--boreal--s1957--f1092--global_default_L0p5--native-00042.vtu",
+    "bytes": 23268400,
+    "mtime_ns": 1788546881324321331,
+    "sha256": "1ebaaa5b0bc13f7306f0555bfbe692b97bfa652c68ee16c1c857a6367ca64935"
+  },
+  {
+    "frame": 43,
+    "time_s": 12733.9,
+    "path": "/temp/zhixin/diag/runs_a/shard-001/0001--case-36656--native/sandy--boreal--s1957--f1092--global_default_L0p5--native-00043.vtu",
+    "bytes": 23262059,
+    "mtime_ns": 1788546951566931535,
+    "sha256": "11c629b0941be0561e42820007450054105c6749154abd34940156a4130a093e"
+  },
+  {
+    "frame": 44,
+    "time_s": 13030.1,
+    "path": "/temp/zhixin/diag/runs_a/shard-001/0001--case-36656--native/sandy--boreal--s1957--f1092--global_default_L0p5--native-00044.vtu",
+    "bytes": 23248758,
+    "mtime_ns": 1788547030238614955,
+    "sha256": "a6561d67333a15eb82bc05f8142a46020e0bbd5e9fb61673d3c418f4d4ce620d"
+  },
+  {
+    "frame": 45,
+    "time_s": 13326.2,
+    "path": "/temp/zhixin/diag/runs_a/shard-001/0001--case-36656--native/sandy--boreal--s1957--f1092--global_default_L0p5--native-00045.vtu",
+    "bytes": 23258677,
+    "mtime_ns": 1788547098129204713,
+    "sha256": "e05f12c00b2b3d3d11601230933462d8b239840b1dcded341d627f2706ce59db"
+  },
+  {
+    "frame": 46,
+    "time_s": 13622.3,
+    "path": "/temp/zhixin/diag/runs_a/shard-001/0001--case-36656--native/sandy--boreal--s1957--f1092--global_default_L0p5--native-00046.vtu",
+    "bytes": 23245380,
+    "mtime_ns": 1788547166851801696,
+    "sha256": "8c5b0645c48fd9312ed4d6db8042ec17fafdb499a2ab0f0623fe0fd5b766c5a4"
+  },
+  {
+    "frame": 47,
+    "time_s": 13918.5,
+    "path": "/temp/zhixin/diag/runs_a/shard-001/0001--case-36656--native/sandy--boreal--s1957--f1092--global_default_L0p5--native-00047.vtu",
+    "bytes": 23248391,
+    "mtime_ns": 1788547240655442811,
+    "sha256": "9e61ddbe5b8f731143ba464fc95e5fa714ea55bc6c52dce4f31704211b2bcbc3"
+  },
+  {
+    "frame": 48,
+    "time_s": 14214.6,
+    "path": "/temp/zhixin/diag/runs_a/shard-001/0001--case-36656--native/sandy--boreal--s1957--f1092--global_default_L0p5--native-00048.vtu",
+    "bytes": 23236152,
+    "mtime_ns": 1788547317564139532,
+    "sha256": "cb09cd9ef15a0dda32fe4d925831a61f7075526970983abb1c8ca5ee62e710d0"
+  },
+  {
+    "frame": 49,
+    "time_s": 14510.8,
+    "path": "/temp/zhixin/diag/runs_a/shard-001/0001--case-36656--native/sandy--boreal--s1957--f1092--global_default_L0p5--native-00049.vtu",
+    "bytes": 23236340,
+    "mtime_ns": 1788547388499828943,
+    "sha256": "d861c559178041f9885798b7b98993d0be9e9e044bc14f55b9e188d98b74e992"
+  },
+  {
+    "frame": 50,
+    "time_s": 14806.9,
+    "path": "/temp/zhixin/diag/runs_a/shard-001/0001--case-36656--native/sandy--boreal--s1957--f1092--global_default_L0p5--native-00050.vtu",
+    "bytes": 23214025,
+    "mtime_ns": 1788547467174584178,
+    "sha256": "36b40d8cc6637a50fcecbfc23ed9fa2b99f216e827504020a899ad5abfe2b6a6"
+  },
+  {
+    "frame": 51,
+    "time_s": 15103.0,
+    "path": "/temp/zhixin/diag/runs_a/shard-001/0001--case-36656--native/sandy--boreal--s1957--f1092--global_default_L0p5--native-00051.vtu",
+    "bytes": 23205606,
+    "mtime_ns": 1788547534869227152,
+    "sha256": "795d1170ea59a63aad2bb2a7279e4f8ce165462a9f2b18df0b48d16141e186e5"
+  },
+  {
+    "frame": 52,
+    "time_s": 15399.2,
+    "path": "/temp/zhixin/diag/runs_a/shard-001/0001--case-36656--native/sandy--boreal--s1957--f1092--global_default_L0p5--native-00052.vtu",
+    "bytes": 23188279,
+    "mtime_ns": 1788547604423882051,
+    "sha256": "c182d915bcea3c4b0d02104280b995d5d6e36b5dec7bda752a00e17a6ff62be2"
+  },
+  {
+    "frame": 53,
+    "time_s": 15695.3,
+    "path": "/temp/zhixin/diag/runs_a/shard-001/0001--case-36656--native/sandy--boreal--s1957--f1092--global_default_L0p5--native-00053.vtu",
+    "bytes": 23170741,
+    "mtime_ns": 1788547678143570631,
+    "sha256": "b8f5a33a92fdfd1710faf54bde7fa80d2b40cc6c23d9d7257be43befc201785f"
+  },
+  {
+    "frame": 54,
+    "time_s": 15991.4,
+    "path": "/temp/zhixin/diag/runs_a/shard-001/0001--case-36656--native/sandy--boreal--s1957--f1092--global_default_L0p5--native-00054.vtu",
+    "bytes": 23159395,
+    "mtime_ns": 1788547753472269138,
+    "sha256": "2a2a288e6ad29a0befec486c16b1688d8413dc1f046a67b31b870bae5809efab"
+  },
+  {
+    "frame": 55,
+    "time_s": 16287.6,
+    "path": "/temp/zhixin/diag/runs_a/shard-001/0001--case-36656--native/sandy--boreal--s1957--f1092--global_default_L0p5--native-00055.vtu",
+    "bytes": 23142461,
+    "mtime_ns": 1788547823749916775,
+    "sha256": "3997ba2157b0e168a9a2192bc6506fc1abc473832219458ebf5faa364c680374"
+  },
+  {
+    "frame": 56,
+    "time_s": 16583.7,
+    "path": "/temp/zhixin/diag/runs_a/shard-001/0001--case-36656--native/sandy--boreal--s1957--f1092--global_default_L0p5--native-00056.vtu",
+    "bytes": 23113961,
+    "mtime_ns": 1788547893787558840,
+    "sha256": "d01e72a7959f187c6071d1ff6b23508287c261cd6ecbc3f436577af441d896aa"
+  },
+  {
+    "frame": 57,
+    "time_s": 16879.9,
+    "path": "/temp/zhixin/diag/runs_a/shard-001/0001--case-36656--native/sandy--boreal--s1957--f1092--global_default_L0p5--native-00057.vtu",
+    "bytes": 23108946,
+    "mtime_ns": 1788547964470203846,
+    "sha256": "031dfd66922578d53535b85651b4eb871181bdc3b362d328ad8825716f86f629"
+  },
+  {
+    "frame": 58,
+    "time_s": 17176.0,
+    "path": "/temp/zhixin/diag/runs_a/shard-001/0001--case-36656--native/sandy--boreal--s1957--f1092--global_default_L0p5--native-00058.vtu",
+    "bytes": 23098241,
+    "mtime_ns": 1788548038999881153,
+    "sha256": "a66a87130dc3bd26d0c88e49a257e6516e8774764eb50ce2d4396168e2bef6f2"
+  },
+  {
+    "frame": 59,
+    "time_s": 17472.1,
+    "path": "/temp/zhixin/diag/runs_a/shard-001/0001--case-36656--native/sandy--boreal--s1957--f1092--global_default_L0p5--native-00059.vtu",
+    "bytes": 23091350,
+    "mtime_ns": 1788548110484528437,
+    "sha256": "2c84bbcdcdb2886f0c5f0ff53e80fb700b5f9dba20421d25212939a0ea39531d"
+  },
+  {
+    "frame": 60,
+    "time_s": 17768.3,
+    "path": "/temp/zhixin/diag/runs_a/shard-001/0001--case-36656--native/sandy--boreal--s1957--f1092--global_default_L0p5--native-00060.vtu",
+    "bytes": 23084501,
+    "mtime_ns": 1788548181593170336,
+    "sha256": "c554a47e91a7c15523937b32bf6bffa473c7adcab2ecd9ad2e842a1fe8de34ea"
+  },
+  {
+    "frame": 61,
+    "time_s": 18064.4,
+    "path": "/temp/zhixin/diag/runs_a/shard-001/0001--case-36656--native/sandy--boreal--s1957--f1092--global_default_L0p5--native-00061.vtu",
+    "bytes": 23074846,
+    "mtime_ns": 1788548246935758662,
+    "sha256": "0d3a10ad21a3c85697497afbf84c3b9f3c19262cadb5c8c2729c193e5ab572b0"
+  },
+  {
+    "frame": 62,
+    "time_s": 18360.5,
+    "path": "/temp/zhixin/diag/runs_a/shard-001/0001--case-36656--native/sandy--boreal--s1957--f1092--global_default_L0p5--native-00062.vtu",
+    "bytes": 23049941,
+    "mtime_ns": 1788548314770368078,
+    "sha256": "29c95a5cb2892caa78e90b734b6adae62fc72ef488cd54e81036d7bd9de65914"
+  },
+  {
+    "frame": 63,
+    "time_s": 18656.7,
+    "path": "/temp/zhixin/diag/runs_a/shard-001/0001--case-36656--native/sandy--boreal--s1957--f1092--global_default_L0p5--native-00063.vtu",
+    "bytes": 23025080,
+    "mtime_ns": 1788548386136007915,
+    "sha256": "d80c2d1738818658aa0b8297f551d1f269556b02d4c829c5350751b009dfe259"
+  },
+  {
+    "frame": 64,
+    "time_s": 18952.8,
+    "path": "/temp/zhixin/diag/runs_a/shard-001/0001--case-36656--native/sandy--boreal--s1957--f1092--global_default_L0p5--native-00064.vtu",
+    "bytes": 23029447,
+    "mtime_ns": 1788548455236626337,
+    "sha256": "0b29448922da61fb35b9bc5f342a3c2c8f636602f514c511c17ed5c5d79a9751"
+  },
+  {
+    "frame": 65,
+    "time_s": 19249.0,
+    "path": "/temp/zhixin/diag/runs_a/shard-001/0001--case-36656--native/sandy--boreal--s1957--f1092--global_default_L0p5--native-00065.vtu",
+    "bytes": 23026070,
+    "mtime_ns": 1788548519031196425,
+    "sha256": "f768c4e2de77687a7cfa030f9a22fcc19b0fba4f7ae69454c8ee3d5d6e52b497"
+  },
+  {
+    "frame": 66,
+    "time_s": 19545.1,
+    "path": "/temp/zhixin/diag/runs_a/shard-001/0001--case-36656--native/sandy--boreal--s1957--f1092--global_default_L0p5--native-00066.vtu",
+    "bytes": 23010816,
+    "mtime_ns": 1788548583010767448,
+    "sha256": "7e1768a14c3f0ff1f3c912bb9b4b96e6d2c96426be1be56fb5d2d55287736c63"
+  },
+  {
+    "frame": 67,
+    "time_s": 19841.2,
+    "path": "/temp/zhixin/diag/runs_a/shard-001/0001--case-36656--native/sandy--boreal--s1957--f1092--global_default_L0p5--native-00067.vtu",
+    "bytes": 22997815,
+    "mtime_ns": 1788548644164312651,
+    "sha256": "aa35eab6bb811bef85738a14ff9a4047317f29ccdf130e300831b3b371581436"
+  },
+  {
+    "frame": 68,
+    "time_s": 20137.4,
+    "path": "/temp/zhixin/diag/runs_a/shard-001/0001--case-36656--native/sandy--boreal--s1957--f1092--global_default_L0p5--native-00068.vtu",
+    "bytes": 22989339,
+    "mtime_ns": 1788548706847870963,
+    "sha256": "e3b0975ae041534273ed801725442b163a4f0f531ebf468fb9ebe20057f51e2f"
+  },
+  {
+    "frame": 69,
+    "time_s": 20433.5,
+    "path": "/temp/zhixin/diag/runs_a/shard-001/0001--case-36656--native/sandy--boreal--s1957--f1092--global_default_L0p5--native-00069.vtu",
+    "bytes": 22972871,
+    "mtime_ns": 1788548774833475958,
+    "sha256": "228e10dd2f17b05827e87dc16fd1ce5b59ffa913902681fbf7a54e8bab0c7855"
+  },
+  {
+    "frame": 70,
+    "time_s": 20729.6,
+    "path": "/temp/zhixin/diag/runs_a/shard-001/0001--case-36656--native/sandy--boreal--s1957--f1092--global_default_L0p5--native-00070.vtu",
+    "bytes": 22972861,
+    "mtime_ns": 1788548836217021781,
+    "sha256": "b6b693fb02cc90776736ca707da9e8731a1e2201197a14e7c21f5cb36993bdbd"
+  },
+  {
+    "frame": 71,
+    "time_s": 21025.8,
+    "path": "/temp/zhixin/diag/runs_a/shard-001/0001--case-36656--native/sandy--boreal--s1957--f1092--global_default_L0p5--native-00071.vtu",
+    "bytes": 22967243,
+    "mtime_ns": 1788548906342644902,
+    "sha256": "3b6220a0002e17dec4ed799e88bb8de6529669490480f96bda29e08c3d25d07f"
+  },
+  {
+    "frame": 72,
+    "time_s": 21321.9,
+    "path": "/temp/zhixin/diag/runs_a/shard-001/0001--case-36656--native/sandy--boreal--s1957--f1092--global_default_L0p5--native-00072.vtu",
+    "bytes": 22967090,
+    "mtime_ns": 1788548967896191521,
+    "sha256": "75e4a17adc6d83670a2c16e781b6eec84c93d2cf75d83b839f722d295f00a21d"
+  },
+  {
+    "frame": 73,
+    "time_s": 21618.1,
+    "path": "/temp/zhixin/diag/runs_a/shard-001/0001--case-36656--native/sandy--boreal--s1957--f1092--global_default_L0p5--native-00073.vtu",
+    "bytes": 22968616,
+    "mtime_ns": 1788549031929759869,
+    "sha256": "12c2f35bbe315c1730f414b536a2757acb8d127111c48ebc107272ad51de080d"
+  },
+  {
+    "frame": 74,
+    "time_s": 21914.2,
+    "path": "/temp/zhixin/diag/runs_a/shard-001/0001--case-36656--native/sandy--boreal--s1957--f1092--global_default_L0p5--native-00074.vtu",
+    "bytes": 22951128,
+    "mtime_ns": 1788549097719343528,
+    "sha256": "f18179f6680b348dbec4265e2967a9ba0b1616568775110c9aabe4bb594ea700"
+  },
+  {
+    "frame": 75,
+    "time_s": 22210.3,
+    "path": "/temp/zhixin/diag/runs_a/shard-001/0001--case-36656--native/sandy--boreal--s1957--f1092--global_default_L0p5--native-00075.vtu",
+    "bytes": 22957332,
+    "mtime_ns": 1788549173143012356,
+    "sha256": "26eaf9fd768ed7db655e3edad609ec41ca46691e75694e614040a30f0dd916b1"
+  },
+  {
+    "frame": 76,
+    "time_s": 22506.5,
+    "path": "/temp/zhixin/diag/runs_a/shard-001/0001--case-36656--native/sandy--boreal--s1957--f1092--global_default_L0p5--native-00076.vtu",
+    "bytes": 22949105,
+    "mtime_ns": 1788549243094632412,
+    "sha256": "abd4e4d0c15408b85d5d7efde74a2415d18cacdf794ea42c422212a640e899c2"
+  },
+  {
+    "frame": 77,
+    "time_s": 22802.6,
+    "path": "/temp/zhixin/diag/runs_a/shard-001/0001--case-36656--native/sandy--boreal--s1957--f1092--global_default_L0p5--native-00077.vtu",
+    "bytes": 22942490,
+    "mtime_ns": 1788549304743178695,
+    "sha256": "8ebc99094f75bd59e35ec629904f49bfd35c8b3ebfb7366543570622755d216c"
+  },
+  {
+    "frame": 78,
+    "time_s": 23098.7,
+    "path": "/temp/zhixin/diag/runs_a/shard-001/0001--case-36656--native/sandy--boreal--s1957--f1092--global_default_L0p5--native-00078.vtu",
+    "bytes": 22934834,
+    "mtime_ns": 1788549364258705275,
+    "sha256": "6e777dbbe665c7e7a60679af314fc997e5e476a07b176e4614f7fc3dc57624dd"
+  },
+  {
+    "frame": 79,
+    "time_s": 23394.9,
+    "path": "/temp/zhixin/diag/runs_a/shard-001/0001--case-36656--native/sandy--boreal--s1957--f1092--global_default_L0p5--native-00079.vtu",
+    "bytes": 22929810,
+    "mtime_ns": 1788549426789257522,
+    "sha256": "1035d64712b59932da50b5eaf39dfdc66ef4b6ae1b97be63f482a985fb9b0e9d"
+  },
+  {
+    "frame": 80,
+    "time_s": 23691.0,
+    "path": "/temp/zhixin/diag/runs_a/shard-001/0001--case-36656--native/sandy--boreal--s1957--f1092--global_default_L0p5--native-00080.vtu",
+    "bytes": 22924208,
+    "mtime_ns": 1788549499686901399,
+    "sha256": "ccd1ec38fdac97f658d9e5f25b4a3e28d297bc269a475782fce2e8e4388b131b"
+  },
+  {
+    "frame": 81,
+    "time_s": 23987.2,
+    "path": "/temp/zhixin/diag/runs_a/shard-001/0001--case-36656--native/sandy--boreal--s1957--f1092--global_default_L0p5--native-00081.vtu",
+    "bytes": 22919122,
+    "mtime_ns": 1788549562392455307,
+    "sha256": "b5a57a40589e1adfe4c4fb6ce579ff730b7259c0de36051ee28c8c3da2c5acb9"
+  },
+  {
+    "frame": 82,
+    "time_s": 24283.3,
+    "path": "/temp/zhixin/diag/runs_a/shard-001/0001--case-36656--native/sandy--boreal--s1957--f1092--global_default_L0p5--native-00082.vtu",
+    "bytes": 22922454,
+    "mtime_ns": 1788549627653031832,
+    "sha256": "f84144a94d6a4facfa5cb9227a45357a60ded163f7ced3d12c6162ea8d20b2e4"
+  },
+  {
+    "frame": 83,
+    "time_s": 24579.4,
+    "path": "/temp/zhixin/diag/runs_a/shard-001/0001--case-36656--native/sandy--boreal--s1957--f1092--global_default_L0p5--native-00083.vtu",
+    "bytes": 22912250,
+    "mtime_ns": 1788549687183557773,
+    "sha256": "445ff624bc38e64c113482c86e095765e9677d888aef37823cf775b57a6edf61"
+  },
+  {
+    "frame": 84,
+    "time_s": 24875.6,
+    "path": "/temp/zhixin/diag/runs_a/shard-001/0001--case-36656--native/sandy--boreal--s1957--f1092--global_default_L0p5--native-00084.vtu",
+    "bytes": 22900853,
+    "mtime_ns": 1788549749322106787,
+    "sha256": "b12626c89f0aa566a7916311826430dab524f08794198618e503e535e11ac50e"
+  },
+  {
+    "frame": 85,
+    "time_s": 25171.7,
+    "path": "/temp/zhixin/diag/runs_a/shard-001/0001--case-36656--native/sandy--boreal--s1957--f1092--global_default_L0p5--native-00085.vtu",
+    "bytes": 22906373,
+    "mtime_ns": 1788549811518656345,
+    "sha256": "ef08417e048f631dae7806deb4f3ee6f721a9ec4652d942127651ee39c8e8725"
+  },
+  {
+    "frame": 86,
+    "time_s": 25467.9,
+    "path": "/temp/zhixin/diag/runs_a/shard-001/0001--case-36656--native/sandy--boreal--s1957--f1092--global_default_L0p5--native-00086.vtu",
+    "bytes": 22903527,
+    "mtime_ns": 1788549869523168888,
+    "sha256": "1dada917e4bde9cb81fde47335d1631b68d38994544f277217c53ab48982b17b"
+  },
+  {
+    "frame": 87,
+    "time_s": 25764.0,
+    "path": "/temp/zhixin/diag/runs_a/shard-001/0001--case-36656--native/sandy--boreal--s1957--f1092--global_default_L0p5--native-00087.vtu",
+    "bytes": 22902867,
+    "mtime_ns": 1788549931453716144,
+    "sha256": "1d4a021132c2c621a707cf1734ec6b617778ddf40570e6c5805600e7c1c3b15c"
+  },
+  {
+    "frame": 88,
+    "time_s": 26060.1,
+    "path": "/temp/zhixin/diag/runs_a/shard-001/0001--case-36656--native/sandy--boreal--s1957--f1092--global_default_L0p5--native-00088.vtu",
+    "bytes": 22904715,
+    "mtime_ns": 1788549993808267170,
+    "sha256": "5132634ab39b3e083d20a313acf0f6b12243bfd3bedd9fc8691dc22eed228fbb"
+  },
+  {
+    "frame": 89,
+    "time_s": 26356.3,
+    "path": "/temp/zhixin/diag/runs_a/shard-001/0001--case-36656--native/sandy--boreal--s1957--f1092--global_default_L0p5--native-00089.vtu",
+    "bytes": 22890838,
+    "mtime_ns": 1788550055219809879,
+    "sha256": "57a873a6c55f7de0c03ba7986ad0d40165c8fac1fd0a9072c663e30855aa034e"
+  },
+  {
+    "frame": 90,
+    "time_s": 26652.4,
+    "path": "/temp/zhixin/diag/runs_a/shard-001/0001--case-36656--native/sandy--boreal--s1957--f1092--global_default_L0p5--native-00090.vtu",
+    "bytes": 22895745,
+    "mtime_ns": 1788550117055356352,
+    "sha256": "95bb18eca96fd1694b1ef05e2367d9e1dfe53bd66154987afe7669bb1ac055e9"
+  },
+  {
+    "frame": 91,
+    "time_s": 26948.5,
+    "path": "/temp/zhixin/diag/runs_a/shard-001/0001--case-36656--native/sandy--boreal--s1957--f1092--global_default_L0p5--native-00091.vtu",
+    "bytes": 22882889,
+    "mtime_ns": 1788550186912973736,
+    "sha256": "1e2ca196bf0b515af8ac756bbf6655821571873a1a76fa9ab79211ad772f4ad1"
+  },
+  {
+    "frame": 92,
+    "time_s": 27244.7,
+    "path": "/temp/zhixin/diag/runs_a/shard-001/0001--case-36656--native/sandy--boreal--s1957--f1092--global_default_L0p5--native-00092.vtu",
+    "bytes": 22885569,
+    "mtime_ns": 1788550246894503855,
+    "sha256": "5e5735e11587f74c620dffb8ca7a9ea49422c88e307589518fafed0951404665"
+  },
+  {
+    "frame": 93,
+    "time_s": 27540.8,
+    "path": "/temp/zhixin/diag/runs_a/shard-001/0001--case-36656--native/sandy--boreal--s1957--f1092--global_default_L0p5--native-00093.vtu",
+    "bytes": 22878484,
+    "mtime_ns": 1788550308439047795,
+    "sha256": "b9cc2776345911d3065592a066f3bf12d8d64e8f412daea377e2665f76106d88"
+  },
+  {
+    "frame": 94,
+    "time_s": 27837.0,
+    "path": "/temp/zhixin/diag/runs_a/shard-001/0001--case-36656--native/sandy--boreal--s1957--f1092--global_default_L0p5--native-00094.vtu",
+    "bytes": 22881488,
+    "mtime_ns": 1788550372287612109,
+    "sha256": "858ac845e9c7bfeae67519b8211f381ec85b44a441d24ce668b29a9e55f735ad"
+  },
+  {
+    "frame": 95,
+    "time_s": 28133.1,
+    "path": "/temp/zhixin/diag/runs_a/shard-001/0001--case-36656--native/sandy--boreal--s1957--f1092--global_default_L0p5--native-00095.vtu",
+    "bytes": 22872468,
+    "mtime_ns": 1788550430739128733,
+    "sha256": "7ae871e881b8003d8013572c3b944cc6259e9a3ca2c2f7260350cfb9cb23caee"
+  },
+  {
+    "frame": 96,
+    "time_s": 28429.2,
+    "path": "/temp/zhixin/diag/runs_a/shard-001/0001--case-36656--native/sandy--boreal--s1957--f1092--global_default_L0p5--native-00096.vtu",
+    "bytes": 22887215,
+    "mtime_ns": 1788550498357726387,
+    "sha256": "d5323fb57cad946987ec79320211d5a33f870d85640d71c3f3713c38be281ef0"
+  },
+  {
+    "frame": 97,
+    "time_s": 28725.4,
+    "path": "/temp/zhixin/diag/runs_a/shard-001/0001--case-36656--native/sandy--boreal--s1957--f1092--global_default_L0p5--native-00097.vtu",
+    "bytes": 22876760,
+    "mtime_ns": 1788550564594311831,
+    "sha256": "4c74e16ac57715b665ddeeebf0b8bfbac5ef110a988cee55505f59a4afc47841"
+  },
+  {
+    "frame": 98,
+    "time_s": 29021.5,
+    "path": "/temp/zhixin/diag/runs_a/shard-001/0001--case-36656--native/sandy--boreal--s1957--f1092--global_default_L0p5--native-00098.vtu",
+    "bytes": 22878178,
+    "mtime_ns": 1788550625888853602,
+    "sha256": "cfdeb92fbfbf367e8d949b2c73839c7eb7e6e5ab4b0910d8e3257e14fb516252"
+  },
+  {
+    "frame": 99,
+    "time_s": 29317.6,
+    "path": "/temp/zhixin/diag/runs_a/shard-001/0001--case-36656--native/sandy--boreal--s1957--f1092--global_default_L0p5--native-00099.vtu",
+    "bytes": 22879329,
+    "mtime_ns": 1788550688786409548,
+    "sha256": "05139055b1a919b0f3217a5afb9e19cd6a4c9b8f09e54271a975ed8a3a62b823"
+  },
+  {
+    "frame": 100,
+    "time_s": 29613.8,
+    "path": "/temp/zhixin/diag/runs_a/shard-001/0001--case-36656--native/sandy--boreal--s1957--f1092--global_default_L0p5--native-00100.vtu",
+    "bytes": 22868836,
+    "mtime_ns": 1788550758986030042,
+    "sha256": "53d12cbdbc278997912478b84b079423317bdcaacd570e82cbc9522dcac7f35c"
+  }
+]

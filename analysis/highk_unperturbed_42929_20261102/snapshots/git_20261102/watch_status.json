@@ -1,0 +1,26 @@
+{
+  "completed": false,
+  "returncode": null,
+  "time_s": 1203.7876147279921,
+  "horizon_s": 65500.419762994294,
+  "sigma_max": 1.7667522274685523e-14,
+  "sigma_last": 1.7667522274685523e-14,
+  "visible_growth_first_s": null,
+  "x_top_max": 0.004401130790398453,
+  "relative_budget_residual_max": {
+    "salt": 5.675316824397296e-12,
+    "water": 5.917393237721046e-12
+  },
+  "stop": {
+    "schema_version": 1,
+    "reason": "in_progress_or_interrupted",
+    "last_accepted_time_s": 1203.7876147279921,
+    "accepted_steps": 41,
+    "initial_diagnostics_written": true,
+    "requested_end_s": 65500.419762994294,
+    "surface_threshold_low_s": null,
+    "surface_threshold_high_s": null,
+    "global_threshold_low_s": null,
+    "global_threshold_high_s": null
+  }
+}

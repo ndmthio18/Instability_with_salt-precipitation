@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "checks": {
+    "frozen_plan_matches_remote": true,
+    "all_collected_product_hashes": true,
+    "14_runs_10_cases": true,
+    "1414_time_mappings": true,
+    "4242_region_frames": true,
+    "inputs_and_fields_consistent": true,
+    "sampled_initial_profile_mode_amplitude": true,
+    "region_counts": true,
+    "time_order": true,
+    "inventory_sign_and_normalization": true,
+    "analytic_postprocessor_check": true
+  },
+  "simulations_started": false,
+  "scope": "postprocessing verification only; not independent discrete-budget or physical validation"
+}

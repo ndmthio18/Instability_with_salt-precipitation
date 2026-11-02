@@ -1,0 +1,48 @@
+[Grid]
+Positions0 = 0 0.6
+Positions1 = 0 0.2
+Cells0 = 8
+Cells1 = 40
+Grading1 = -0.98
+
+[TimeLoop]
+TEnd = -1
+DtInitial = 20
+MaxTimeStepSize = 20
+OutputInterval = 100000
+
+[Problem]
+Name = startup_invalid_time
+Permeability = 2.89e-11
+Porosity = 0.41
+Swr = 0.122
+PcN = 10.8
+PcAlpha = 0.000177
+SweL = 0.73
+KrwMualemExponent = true
+WaterLevel = 0.2499230091212796
+EvaporationRate = 1.08e-08
+SaltDiffusivity = 1.5e-09
+ReferenceViscosity = 0.0011
+SaltMoleFraction = 0.0036
+GravitationalAcceleration = 9.8
+PureWaterDensity = 998.203
+DensityLinearCoefficient = 0.670804
+DensityQuadraticCoefficient = 0.373854
+MolarMassH2O = 0.01801528
+MolarMassNaCl = 0.05844
+Amplitude = 0
+WaveNumber = 1
+StandardDeviationSaltMoleFraction = 0
+PerturbationType = Constant
+RandomSeed = 1
+EnableGravity = true
+PerturbationHeight = 0
+
+[Transport]
+SolubilityMoleFraction = 0.1
+StopAtSolubility = true
+
+[Vtk]
+Precision = Float64
+AddVelocity = true

@@ -1,0 +1,83 @@
+{
+  "runs": 14,
+  "physical_cases": 10,
+  "frames": 1414,
+  "field_input_consistent": 14,
+  "quarantined": 0,
+  "pvd_time_rounding_reconciled_runs": 14,
+  "observed_threshold_runs": 1,
+  "full_trajectory_duplicate_groups": [],
+  "max_relative_layer_sigma_pre_threshold": 0.0001964185503296769,
+  "max_peak_drawdown_over_initial": 0.0,
+  "inventories_with_decrease_over_1e_minus8_initial": 0,
+  "simulations_started": false,
+  "transport_effectiveness_established": false
+}
+Shared-window comparisons: [
+  {
+    "a": "r07_c36877_n5",
+    "b": "r08_c36877_n5",
+    "case_id": 36877,
+    "region": "upper_0.5",
+    "common_saved_times": 51,
+    "max_inventory_difference_over_initial": 3.6035938498302013e-06,
+    "last_shared_time_s": 62818.31558536,
+    "changed_parameters": "Problem.EigenprofilePath;TimeLoop.DtInitial;TimeLoop.MaxTimeStepSize;TimeLoop.TEnd",
+    "interpretation": "same physics/mode/grid/profile, differing time settings; limited shared-window sensitivity"
+  },
+  {
+    "a": "r07_c36877_n5",
+    "b": "r08_c36877_n5",
+    "case_id": 36877,
+    "region": "upper_0.75",
+    "common_saved_times": 51,
+    "max_inventory_difference_over_initial": 4.023091219577982e-06,
+    "last_shared_time_s": 62818.31558536,
+    "changed_parameters": "Problem.EigenprofilePath;TimeLoop.DtInitial;TimeLoop.MaxTimeStepSize;TimeLoop.TEnd",
+    "interpretation": "same physics/mode/grid/profile, differing time settings; limited shared-window sensitivity"
+  },
+  {
+    "a": "r07_c36877_n5",
+    "b": "r08_c36877_n5",
+    "case_id": 36877,
+    "region": "upper_0.9",
+    "common_saved_times": 51,
+    "max_inventory_difference_over_initial": 4.094580962479473e-06,
+    "last_shared_time_s": 62818.31558536,
+    "changed_parameters": "Problem.EigenprofilePath;TimeLoop.DtInitial;TimeLoop.MaxTimeStepSize;TimeLoop.TEnd",
+    "interpretation": "same physics/mode/grid/profile, differing time settings; limited shared-window sensitivity"
+  },
+  {
+    "a": "r10_c41634_n1",
+    "b": "r11_c41634_n1",
+    "case_id": 41634,
+    "region": "upper_0.5",
+    "common_saved_times": 51,
+    "max_inventory_difference_over_initial": 4.3987692537019124e-08,
+    "last_shared_time_s": 2067391.450246,
+    "changed_parameters": "Problem.EigenprofilePath;TimeLoop.DtInitial;TimeLoop.MaxTimeStepSize;TimeLoop.TEnd",
+    "interpretation": "same physics/mode/grid/profile, differing time settings; limited shared-window sensitivity"
+  },
+  {
+    "a": "r10_c41634_n1",
+    "b": "r11_c41634_n1",
+    "case_id": 41634,
+    "region": "upper_0.75",
+    "common_saved_times": 51,
+    "max_inventory_difference_over_initial": 4.6632533031790316e-08,
+    "last_shared_time_s": 2067391.450246,
+    "changed_parameters": "Problem.EigenprofilePath;TimeLoop.DtInitial;TimeLoop.MaxTimeStepSize;TimeLoop.TEnd",
+    "interpretation": "same physics/mode/grid/profile, differing time settings; limited shared-window sensitivity"
+  },
+  {
+    "a": "r10_c41634_n1",
+    "b": "r11_c41634_n1",
+    "case_id": 41634,
+    "region": "upper_0.9",
+    "common_saved_times": 51,
+    "max_inventory_difference_over_initial": 5.354082891825119e-07,
+    "last_shared_time_s": 2067391.450246,
+    "changed_parameters": "Problem.EigenprofilePath;TimeLoop.DtInitial;TimeLoop.MaxTimeStepSize;TimeLoop.TEnd",
+    "interpretation": "same physics/mode/grid/profile, differing time settings; limited shared-window sensitivity"
+  }
+]

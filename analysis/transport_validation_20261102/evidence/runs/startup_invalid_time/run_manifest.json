@@ -1,0 +1,114 @@
+{
+  "id": "startup_invalid_time",
+  "parameters": {
+    "Grid": {
+      "Positions0": "0 0.6",
+      "Positions1": "0 0.2",
+      "Cells0": 8,
+      "Cells1": 40,
+      "Grading1": -0.98
+    },
+    "TimeLoop": {
+      "TEnd": -1,
+      "DtInitial": 20,
+      "MaxTimeStepSize": 20,
+      "OutputInterval": 100000
+    },
+    "Problem": {
+      "Name": "startup_invalid_time",
+      "Permeability": 2.89e-11,
+      "Porosity": 0.41,
+      "Swr": 0.122,
+      "PcN": 10.8,
+      "PcAlpha": 0.000177,
+      "SweL": 0.73,
+      "KrwMualemExponent": "true",
+      "WaterLevel": 0.2499230091212796,
+      "EvaporationRate": 1.08e-08,
+      "SaltDiffusivity": 1.5e-09,
+      "ReferenceViscosity": 0.0011,
+      "SaltMoleFraction": 0.0036,
+      "GravitationalAcceleration": 9.8,
+      "PureWaterDensity": "998.203",
+      "DensityLinearCoefficient": "0.670804",
+      "DensityQuadraticCoefficient": "0.373854",
+      "MolarMassH2O": "0.01801528",
+      "MolarMassNaCl": "0.05844",
+      "Amplitude": 0,
+      "WaveNumber": 1,
+      "StandardDeviationSaltMoleFraction": 0,
+      "PerturbationType": "Constant",
+      "RandomSeed": 1,
+      "EnableGravity": "true",
+      "PerturbationHeight": 0
+    },
+    "Transport": {
+      "SolubilityMoleFraction": 0.1,
+      "StopAtSolubility": "true"
+    },
+    "Vtk": {
+      "Precision": "Float64",
+      "AddVelocity": "true"
+    }
+  },
+  "expected_reason": "startup_failure",
+  "expected_exit": 1,
+  "input_sha256": "5560919d75e3a28f2c5d7b2914db9dfd21a022657bb0bc17208e241ab2a244cf",
+  "wall_timeout_s": 600,
+  "executable_sha256": "d78ce5122cf69e4dee5a4d12bcc726779959f304b343246009cb45bb37e894cc",
+  "build_source_sha256": {
+    "config.h.cmake": "addc2df015faa7334b78458a92aa2cb06ac0df5662da054714ac479ca7e706f9",
+    "kiemle2023b.pc.in": "54fee13aecdcfb07004dc6b4249b68c9a9ea33b7af2136bb278c1949e4a80d86",
+    "README.md": "ef8f3fca28d26200a17fb3386fddfddfb30ad69138dfea472866cc987e9e4e61",
+    "dune.module": "edd9a0bd7703bb4aff92d568d557f008d30895081e0a68d7a3cac1969ead72de",
+    "CMakeLists.txt": "a3750056e945193f32678c7246260515ad18fae14770667b8cccedca54b9fe2e",
+    "doc/CMakeLists.txt": "4fde2ae1df1e9ded71688fd731a4ab48a5bc2035c4ad4e160e034d863b02558c",
+    "appl/CMakeLists.txt": "e4932eb4852ddaa91476d791c91d8ef7d5c13b07a6a2c81ae7033e308ae5768b",
+    "dune/CMakeLists.txt": "4e6273b47c6cd604f89c82ca3fa716391ac252dfa319e27b67fea01bee98e6a8",
+    "src/kiemle2023b.cc": "8ca429bfc299f9410723e3d83f7d876920b443869b00f5d198d038581db813ba",
+    "src/CMakeLists.txt": "7ecedb534af8c9849450955b8242ca9e137b8ad3f03c4ab0d779804093d59ffa",
+    "doc/doxygen/CMakeLists.txt": "d145d336814fca3994a64c7b916565975f7ed9bdff4986bccfe7809d7e1a5c35",
+    "cmake/modules/Kiemle2023bMacros.cmake": "7524f6919d6e280ee968a64140a3a3c006061d29aa5426c26eaafec4ff5d97a4",
+    "cmake/modules/CMakeLists.txt": "5dbd18a784411da7e200169f154d9d62b2578e1ea41e8e5c832b7f738aa2f575",
+    "appl/simpleRichardsnc/main.cc": "dc7c629220fd0f3b23a6fcb6f156537d0d1d38b376550606235aeda7729dd2b4",
+    "appl/simpleRichardsnc/params.input": "2cbfbc4c82e5016b8c6de0a998a0e7ce5f26293a60b75087a50e50fc7b128ad7",
+    "appl/simpleRichardsnc/transportdiagnostics.hh": "6fdaa494d232148e5affe63527dfb2c2677bf9f6a5f7da1e4f1551934c0384e9",
+    "appl/simpleRichardsnc/CMakeLists.txt": "5a9a763908e7053c80d637a3e60156ec6bd98e76b8d900655c68b1cba2ca1c00",
+    "appl/simpleRichardsnc/model.hh": "a65bef0f231519637ae4493a7035904f8c53bc61a09588b2a83a6eeda08c05e4",
+    "bin/eigenprofile/README.md": "4565332f7edbdd59d016cccd515fb53fd07aa692f8271f19e7f3c8a84077c270",
+    "dune/kiemle2023b/kiemle2023b.hh": "afa7958833dc5acb74a6015365481c67eb666b412f7096be26c93c7d3791a6e5",
+    "dune/kiemle2023b/CMakeLists.txt": "154ce468ad7fc60a049449ed1867df43e15e78aabcd5c8c1caa7b605f9ca0730"
+  },
+  "purpose": "small uniform 2D background and diagnostic validation; no Pilot A/B",
+  "status": "finished",
+  "started_utc": "2026-11-02T18:39:50.956319+00:00",
+  "result": {
+    "id": "startup_invalid_time",
+    "expected_reason": "startup_failure",
+    "expected_exit": 1,
+    "returncode": 1,
+    "wall_s": 0.47027930431067944,
+    "stop": {
+      "schema_version": 1,
+      "reason": "startup_failure",
+      "last_accepted_time_s": null,
+      "accepted_steps": 0,
+      "initial_diagnostics_written": false
+    },
+    "files": {
+      "stop_record.json": {
+        "bytes": 131,
+        "sha256": "79bb684eb6ec917f9208acb0aeec2c5e8d0be8feb9794c82f0393fa263c9c668"
+      },
+      "solver.log": {
+        "bytes": 193,
+        "sha256": "a7f8baa2da60c37ebbdd4667d8347b132d8163f31fb31686d621b1e5d766a869"
+      },
+      "params.input": {
+        "bytes": 914,
+        "sha256": "5560919d75e3a28f2c5d7b2914db9dfd21a022657bb0bc17208e241ab2a244cf"
+      }
+    }
+  },
+  "finished_utc": "2026-11-02T18:39:51.427101+00:00"
+}

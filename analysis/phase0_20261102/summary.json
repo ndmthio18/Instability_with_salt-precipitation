@@ -1,0 +1,51 @@
+{
+  "frozen_runs": 436,
+  "frozen_cases": 253,
+  "primary": 359,
+  "nonprimary": 77,
+  "resolved_primary": 293,
+  "frozen_onset_classes": {
+    "resolved_onset": 344,
+    "right_censored": 8,
+    "weak_interval_onset": 78,
+    "immediate_growth": 6
+  },
+  "incomplete": 12,
+  "remote_access": {
+    "found": 320,
+    "unverified_host_key": 116
+  },
+  "frozen_vtu_counts": {
+    "2": 292,
+    "None": 116,
+    "1": 12,
+    "101": 14,
+    "0": 2
+  },
+  "modes_observation_window_multiples": {
+    "2": 317,
+    "3": 112,
+    "4": 7
+  },
+  "exceeds_lsa_sat_reference": 50,
+  "finite_lsa_sat_reference": 163,
+  "exceeds_application_horizon": 54,
+  "top_mean_threshold_observed": 43,
+  "remote_record_end_mismatch": 0,
+  "sampled_field_density_conflicts": [
+    "frodo:hf1/runs/shard-019/0079--case-38852--native"
+  ],
+  "wp1_runs": 84,
+  "wp1_cases": 48,
+  "wp1_onset_classes": {
+    "resolved_onset": 70,
+    "weak_interval_onset": 14
+  },
+  "wp1_vtu_counts": {
+    "2": 84
+  },
+  "wp1_case_overlap_with_frozen": 7,
+  "simulations_started": false,
+  "remote_coverage_limit": "cxhpc 116 rows: host key verification failed; no key acceptance or bypass",
+  "source_identity_limit": "remote source is inspected current checkout, not proof every historical executable matches"
+}

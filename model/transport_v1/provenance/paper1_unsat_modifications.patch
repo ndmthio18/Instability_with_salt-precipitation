@@ -1,0 +1,347 @@
+--- kiemle2023b-main/appl/simpleRichardsnc/main.cc
++++ kiemle2023b-main/appl/simpleRichardsnc/main.cc
+@@ -8,6 +8,13 @@
+ #include <config.h>
+ #include <type_traits>
+ #include <random>
++#include <fstream>
++#include <sstream>
++#include <string>
++#include <vector>
++#include <algorithm>
++#include <iomanip>
++#include <cmath>
+
+ #include <dune/grid/yaspgrid.hh>
+
+@@ -75,7 +82,8 @@
+         {
+             Periodic,
+             Constant,
+-            Random
++            Random,
++            Eigenprofile
+         };
+
+         // Function to convert string to PerturbationType
+@@ -93,6 +101,10 @@
+             {
+                 return PerturbationType::Random;
+             }
++            else if (str == "Eigenprofile")
++            {
++                return PerturbationType::Eigenprofile;
++            }
+             else
+             {
+                 throw std::invalid_argument("Invalid perturbation type: " + str);
+@@ -116,7 +128,7 @@
+
+             perturbationType_ = stringToPerturbationType(getParam<std::string>("Problem.PerturbationType"));
+
+-            unsigned seed = 1;
++            unsigned seed = getParam<unsigned>("Problem.RandomSeed", 1);
+             std::default_random_engine generator(seed);
+             std::normal_distribution<double> distribution(saltMoleFraction_, stdSaltMoleFraction_);
+
+@@ -128,6 +140,43 @@
+                 int vIdx = this->gridGeometry().vertexMapper().index(vertex);
+                 randomSaltMoleFraction_[vIdx] = distribution(generator);
+             }
++
++            // Load the tabulated eigenprofile A(y) if the Eigenprofile perturbation is used.
++            if (perturbationType_ == PerturbationType::Eigenprofile)
++            {
++                const auto path = getParam<std::string>("Problem.EigenprofilePath");
++                std::ifstream in(path);
++                if (!in)
++                    throw std::runtime_error("Cannot open Problem.EigenprofilePath: " + path);
++                std::string line;
++                while (std::getline(in, line))
++                {
++                    if (line.empty() || line[0] == '#')
++                        continue;
++                    std::istringstream iss(line);
++                    Scalar yy, aa;
++                    if (iss >> yy >> aa)
++                    {
++                        eigenY_.push_back(yy);
++                        eigenA_.push_back(aa);
++                    }
++                }
++                if (eigenY_.size() < 2)
++                    throw std::runtime_error("Eigenprofile table needs >=2 rows: " + path);
++            }
++        }
++
++        // Linear interpolation of the tabulated eigenprofile A at depth coordinate y
++        // (y assumed ascending in the table; clamps outside the tabulated range).
++        Scalar eigenAmplitude_(Scalar y) const
++        {
++            if (y <= eigenY_.front()) return eigenA_.front();
++            if (y >= eigenY_.back())  return eigenA_.back();
++            auto it = std::lower_bound(eigenY_.begin(), eigenY_.end(), y);
++            const std::size_t i = static_cast<std::size_t>(it - eigenY_.begin());
++            const Scalar y1 = eigenY_[i - 1], y2 = eigenY_[i];
++            const Scalar a1 = eigenA_[i - 1], a2 = eigenA_[i];
++            return a1 + (a2 - a1) * (y - y1) / (y2 - y1);
+         }
+
+         BoundaryTypes boundaryTypesAtPos(const GlobalPosition &globalPos) const
+@@ -144,7 +193,7 @@
+             PrimaryVariables values(0.0);
+
+             const Scalar densityW = rhoW(saltMoleFraction_);
+-            Scalar hydrostaticPressure = -(waterLevel_ + globalPos[1])*densityW*9.81;
++            Scalar hydrostaticPressure = -(waterLevel_ + globalPos[1])*densityW*gravitationalAcceleration();
+             values[pressureIdx] = nonWettingReferencePressure() + hydrostaticPressure;
+             
+             // We assume here that at the bottom boundary is constant
+@@ -180,7 +229,7 @@
+             PrimaryVariables values(0.0);
+             const auto globalPos = vertex.geometry().center();
+             const Scalar densityW = rhoW(saltMoleFraction_);
+-            Scalar hydrostaticPressure = -(waterLevel_ + globalPos[1])*densityW*9.81;
++            Scalar hydrostaticPressure = -(waterLevel_ + globalPos[1])*densityW*gravitationalAcceleration();
+             values[pressureIdx] = nonWettingReferencePressure() + hydrostaticPressure;
+             // Option A: Enable for analysis of the perturbation height 
+             static const Scalar perturbationHeight = getParam<Scalar>("Problem.PerturbationHeight"); 
+@@ -289,8 +338,27 @@
+             }
+             case PerturbationType::Random:
+             {
+-                int vertexIdx = this->gridGeometry().vertexMapper().index(vertex);
+-                values[moleFractionIdx] = randomSaltMoleFraction_[vertexIdx];
++                // Respect PerturbationHeight (as the Periodic branch does): set
++                // PerturbationHeight just below the top to perturb only the top row of
++                // vertices, matching the paper's "random perturbation in the top row".
++                if (globalPos[1] >= perturbationHeight)
++                {
++                    int vertexIdx = this->gridGeometry().vertexMapper().index(vertex);
++                    values[moleFractionIdx] = randomSaltMoleFraction_[vertexIdx];
++                }
++                else
++                {
++                    values[moleFractionIdx] = saltMoleFraction_;
++                }
++                break;
++            }
++            case PerturbationType::Eigenprofile:
++            {
++                // Most-unstable LSA eigenmode A(y) (tabulated) modulated laterally by the
++                // fastest-growing wavelength: x(x0,y) = x0 + amplitude * A(y) * cos(2 pi x / lambda).
++                Scalar wavelength = (this->gridGeometry().bBoxMax()[0] - this->gridGeometry().bBoxMin()[0]) / wavenumber_;
++                Scalar A = eigenAmplitude_(globalPos[1]);
++                values[moleFractionIdx] = saltMoleFraction_ + amplitude_ * A * std::cos(2 * M_PI / wavelength * globalPos[0]);
+                 break;
+             }
+             }
+@@ -335,44 +403,87 @@
+             }
+         }
+
++        // Gravitational acceleration [m/s^2], used CONSISTENTLY by the hydrostatic
++        // initial/boundary profiles and by the momentum balance. Default 9.81 reproduces
++        // pristine upstream darus-4610, which is what produced the published numerical
++        // results of Bringedal et al. (2025) (Tables 5.8, 5.9). Set 9.8 to match the
++        // value stated in Bringedal et al. (2022) Table 2 / (2025) Table 5.1 -- note the
++        // authors' own LSA driver implies 9.80015, so their two legs differ by 0.1 %.
++        // Before this parameter existed our patch set the momentum term to 9.8 while
++        // leaving the hydrostatic profiles at 9.81, which left the initial state out of
++        // equilibrium and drove a spurious Darcy flux ~18x the evaporation rate.
++        Scalar gravitationalAcceleration() const
++        {
++            static const Scalar g = getParam<Scalar>("Problem.GravitationalAcceleration", 9.81);
++            return g;
++        }
++
+         Scalar krw(Scalar sw) const
+         {
+             static const Scalar n = getParam<Scalar>("Problem.PcN");
+             static const Scalar m = 1.0 - 1.0 / n;
+             static const Scalar sweL = getParam<Scalar>("Problem.SweL");
+
++            // Problem.KrwMualemExponent selects how the Mualem parameter L enters.
++            //  false (default): sweL as a constant FACTOR -> krw(Se=1) = sweL = 0.73.
++            //                   This is the upstream darus-4610 behaviour and is what
++            //                   the published numerical results of Bringedal et al.
++            //                   (2025) were produced with. Kept as the default so no
++            //                   existing result changes.
++            //  true:            Se^L as an EXPONENT -> krw(Se=1) = 1. This is what the
++            //                   paper's eq. (2.5)/(3.13) prescribe, and what the
++            //                   authors' own LSA code (Fktilde.m, DaRUS darus-4711)
++            //                   implements. See code/paper_comparison/UNSAT_NOTES.md.
++            static const bool mualemExponent = getParam<bool>("Problem.KrwMualemExponent", false);
++
+             const auto eSw = effectiveSw(sw);
+
+             Scalar val = 1.0 - std::pow(1.0 - std::pow(eSw, 1.0 / m), m);
+-            return sweL * val * val;
++            return mualemExponent ? std::pow(eSw, sweL) * val * val
++                                  : sweL * val * val;
+         }
+
+         Scalar viscosity() const
+         {
+-            return 1.1e-3;
++            // Runtime-configurable so a dimensionless design point can be realized
++            // without silently changing R_E.  The default preserves the published run.
++            static const Scalar mu = getParam<Scalar>("Problem.ReferenceViscosity", 1.1e-3);
++            return mu;
+         }
+
+         Scalar effectiveDiffusionCoefficient(Scalar sw) const
+         {
+-            return std::pow(porosity(), 1.5) * std::pow(sw, 3.5) * 1.5e-9;
++            // Molecular salt diffusivity (before Millington-Quirk porosity/saturation
++            // scaling).  Making it an input is required by the proposal_fixed_e
++            // realization, where beta determines D for each design point.
++            static const Scalar molecularD =
++                getParam<Scalar>("Problem.SaltDiffusivity", 1.5e-9);
++            return std::pow(porosity(), 1.5) * std::pow(sw, 3.5) * molecularD;
+         }
+
+         Scalar molarMassH2O() const
+         {
+-            return 18e-3; // molar mass of H2O [kg/mol]
++            static const Scalar value = getParam<Scalar>("Problem.MolarMassH2O", 18e-3);
++            return value; // [kg/mol]
+         }
+
+         Scalar molarMassNaCl() const
+         {
+-            return 58.4428e-3; // molar mass of NaCl [kg/mol]
++            static const Scalar value = getParam<Scalar>("Problem.MolarMassNaCl", 58.4428e-3);
++            return value; // [kg/mol]
+         }
+
+         Scalar rhoW(Scalar moleFraction) const
+         {
+-            const Scalar rhoH2O = 1000.0; // kg/m3
++            static const Scalar rhoH2O =
++                getParam<Scalar>("Problem.PureWaterDensity", 1000.0); // kg/m3
++            static const Scalar linear =
++                getParam<Scalar>("Problem.DensityLinearCoefficient", 0.6708);
++            static const Scalar quadratic =
++                getParam<Scalar>("Problem.DensityQuadraticCoefficient", 0.3739);
+             Scalar massFraction = moleFraction * molarMassNaCl() / ((1 - moleFraction) * molarMassH2O() + moleFraction * molarMassNaCl());
+
+-            return rhoH2O + 1000.0 * massFraction * (0.6708 + 0.3739 * massFraction);
++            return rhoH2O + 1000.0 * massFraction * (linear + quadratic * massFraction);
+         }
+
+         Scalar molarRhoW(Scalar moleFraction) const
+@@ -396,7 +507,7 @@
+         Scalar porosity_;
+
+         Scalar saltMoleFraction_;
+-        Scalar waterLevel_; 
++        Scalar waterLevel_;
+
+         PerturbationType perturbationType_;
+
+@@ -406,6 +517,10 @@
+         std::vector<Scalar> randomSaltMoleFraction_;
+         Scalar stdSaltMoleFraction_;
+
++        // Eigenprofile reference perturbation: tabulated A(y) read from a file.
++        std::vector<Scalar> eigenY_;
++        std::vector<Scalar> eigenA_;
++
+         static constexpr Scalar eps_ = 1.5e-7;
+     };
+ } // end namespace Dumux
+@@ -494,7 +609,7 @@
+     static const bool enableGravity = getParam<bool>("Problem.EnableGravity");
+     GlobalPosition gravity(0.0);
+     if (enableGravity)
+-        gravity[GridGeometry::GridView::dimension-1] = -9.81; 
++        gravity[GridGeometry::GridView::dimension-1] = -getParam<Scalar>("Problem.GravitationalAcceleration", 9.81);
+
+     // initialize the vtk output module
+     VtkOutputModule<GridVariables, SolutionVector> vtkWriter(*gridVariables, x, problem->name());
+@@ -511,6 +626,59 @@
+
+     vtkWriter.write(0.0);
+
++    // ---------------------------------------------------------------------------------
++    // Onset diagnostic, written every time step independently of the VTU cadence.
++    //
++    // The onset time is the minimum over time of the spread of the salt mole fraction
++    // along the top boundary (Bringedal et al. 2025, eqs. 5.1-5.2; same diagnostic as
++    // the 2022 paper and as code/paper_comparison/extract_onset.py). Writing it here
++    // decouples the quantity of interest from the VTU output, which at the paper's
++    // protocol (TEnd = 604800 s, dt = 50 s) would otherwise cost ~56 GB per run.
++    //
++    // `sigma_top` below is the population standard deviation, i.e. what numpy.std gives.
++    // The paper's sigma^top is the unnormalised line integral sqrt(int (x - xbar)^2 dx);
++    // for the uniform lateral spacing used here the two differ by the constant
++    // sqrt(domain width) and therefore share the same argmin.
++    // ---------------------------------------------------------------------------------
++    static const int outputInterval = getParam<int>("TimeLoop.OutputInterval", 1);
++
++    using ModelIndices = typename GetPropType<TypeTag, Properties::ModelTraits>::Indices;
++
++    std::vector<std::size_t> topDofs;
++    {
++        const auto yTop = gridGeometry->bBoxMax()[GridGeometry::GridView::dimension-1];
++        for (const auto &vertex : vertices(leafGridView))
++        {
++            const auto pos = vertex.geometry().center();
++            if (std::abs(pos[GridGeometry::GridView::dimension-1] - yTop) < 1e-12)
++                topDofs.push_back(gridGeometry->vertexMapper().index(vertex));
++        }
++    }
++
++    std::ofstream sigmaFile(problem->name() + "_sigmatop.csv");
++    sigmaFile << "# time[s] x_top_mean[mol/mol] sigma_top[mol/mol] n_top_dofs\n";
++    sigmaFile << std::scientific << std::setprecision(12);
++
++    auto writeSigmaTop = [&](Scalar time)
++    {
++        if (topDofs.empty()) return;
++        Scalar mean = 0.0;
++        for (const auto dof : topDofs)
++            mean += x[dof][ModelIndices::moleFractionIdx];
++        mean /= static_cast<Scalar>(topDofs.size());
++        Scalar var = 0.0;
++        for (const auto dof : topDofs)
++        {
++            const Scalar d = x[dof][ModelIndices::moleFractionIdx] - mean;
++            var += d*d;
++        }
++        var /= static_cast<Scalar>(topDofs.size());
++        sigmaFile << time << " " << mean << " " << std::sqrt(var) << " "
++                  << topDofs.size() << "\n";
++        sigmaFile.flush();
++    };
++    writeSigmaTop(0.0);
++
+     // instantiate time loop
+     auto timeLoop = std::make_shared<TimeLoop<Scalar>>(0.0, dt, tEnd);
+     timeLoop->setMaxTimeStepSize(maxDt);
+@@ -585,8 +753,11 @@
+         // advance the time loop to the next step
+         timeLoop->advanceTimeStep();
+
+-        // write vtk output
+-        vtkWriter.write(timeLoop->time());
++        // the onset diagnostic, always; the VTU only every OutputInterval-th step
++        writeSigmaTop(timeLoop->time());
++        if (outputInterval <= 1 || timeLoop->timeStepIndex() % outputInterval == 0
++            || timeLoop->finished())
++            vtkWriter.write(timeLoop->time());
+
+         // report statistics of this time step
+         timeLoop->reportTimeStep();
+--- kiemle2023b-main/appl/simpleRichardsnc/model.hh
++++ kiemle2023b-main/appl/simpleRichardsnc/model.hh
+@@ -170,7 +170,7 @@
+         static const bool enableGravity = getParam<bool>("Problem.EnableGravity");
+         GlobalPosition gravity(0.0);
+         if (enableGravity)
+-            gravity[dimWorld-1] = -9.81; 
++            gravity[dimWorld-1] = -problem.gravitationalAcceleration();
+
+         auto vn = -vtmv(scvf.unitOuterNormal(), K, gradP - rhoW*gravity);
+         const auto upVolVar = (vn > 0) ? insideVolVars : outsideVolVars;

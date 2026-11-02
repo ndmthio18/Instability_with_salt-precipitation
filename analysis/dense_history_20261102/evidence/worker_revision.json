@@ -1,0 +1,7 @@
+{
+  "reason": "numpy.bool_ in audit checks was not JSON serializable; convert to builtin bool",
+  "original_worker_sha256": "6432c18df97ef98d7254f7fe3d9485a33dc7192a2ee9b56e69e6cc510466839a",
+  "actual_worker_sha256": "060b93e59135bb398d3527d099e9ad5a196b394821093144e72e00cb490ffcbf",
+  "scientific_method_changed": false,
+  "simulations_started": false
+}

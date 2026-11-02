@@ -1,0 +1,59 @@
+{
+  "id": "r09_c38247_n2",
+  "run_key": "frodo:diag/runs_a/shard-006/0006--case-38247--native",
+  "case_id": 38247,
+  "status": "structural_review_required",
+  "checks": {
+    "frozen_sha/case_manifest.json": true,
+    "frozen_sha/run_meta.json": true,
+    "frozen_sha/sandy--boreal--s1214--f1077--global_default_L0p5--native.input": true,
+    "frozen_sha/sandy--boreal--s1214--f1077--global_default_L0p5--native.pvd": true,
+    "frozen_sha/sandy--boreal--s1214--f1077--global_default_L0p5--native_eigenprofile.dat": true,
+    "input_matches_audit": true,
+    "sigmatop_hash": true,
+    "101_monotonic_frames": true,
+    "input_grid_shape": true,
+    "tensor_volume": true,
+    "density_matches_explicit_input": true,
+    "saturation_matches_input": true,
+    "field_top_statistics_match_record": true,
+    "frame_time_matches_diagnostics": false,
+    "independent_quadrature": true
+  },
+  "frames": 101,
+  "points_per_frame": 120801,
+  "bytes_read": 2359629228,
+  "actual_cuts": [
+    {
+      "region": "upper_0.9",
+      "requested_z_over_H": 0.9,
+      "actual_z_over_H": 0.8995154060206101
+    },
+    {
+      "region": "upper_0.75",
+      "requested_z_over_H": 0.75,
+      "actual_z_over_H": 0.7522817588955174
+    },
+    {
+      "region": "upper_0.5",
+      "requested_z_over_H": 0.5,
+      "actual_z_over_H": 0.5005319056786239
+    }
+  ],
+  "max_density_error_kg_m3": 5.222489107836736e-12,
+  "max_legacy_density_error_kg_m3": 1.8279293839278594,
+  "max_sw_error": 9.43689570931383e-16,
+  "max_sigmatop_mean_error": 4.893654925730573e-15,
+  "max_sigmatop_sigma_error": 3.562091180559553e-18,
+  "max_quadrature_relative_error": 2.321823741951236e-16,
+  "small_file_sha256": {
+    "case_manifest.json": "aa37d7adb3aa11a33dc0732294ab070e9e7253ad634df7b2209aeeb63c57a356",
+    "run_meta.json": "a9b5deb9816332097c96d4227a3ed3e21f8b2877cd47015529160e025b0426d4",
+    "sandy--boreal--s1214--f1077--global_default_L0p5--native.input": "7326f008e1d05bc994ff0d195e80363d64f92189eef1c24ceea7c689098f3bec",
+    "sandy--boreal--s1214--f1077--global_default_L0p5--native.pvd": "f6201f5f66e63282d3bf6059c0afc89731d25e777170842914e9d96a71ca39ed",
+    "sandy--boreal--s1214--f1077--global_default_L0p5--native_eigenprofile.dat": "50b23907603672139f40f974c2e9f199f93af07f21f1a0f062535d929e3b0191"
+  },
+  "sigmatop_sha256": "316be758575cf34e87f4cb28d30ac7ff9bca9fd936ba0a21370d82413fbdf089",
+  "historical_executable_identity": "not established",
+  "physical_interpretation": "inventory-derived net exchange; no independent face-flux closure, no unperturbed reference"
+}

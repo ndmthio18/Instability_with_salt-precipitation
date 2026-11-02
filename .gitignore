@@ -24,3 +24,25 @@ __pycache__/
 
 # Machine-specific dependency paths belong here, not in the source lock.
 /local_paths.json
+
+# Isolated Paper 2 build products; source and compile evidence remain reviewable.
+/model/transport_v1/artifacts/
+/model/transport_v1/build*/
+
+# Historical field display samples are reproducible derived fields, kept locally/remote.
+/analysis/dense_history_20261102/evidence/runs/*/representative_fields.npz
+
+# Local watcher bookkeeping; scientific run logs remain retained separately.
+/analysis/*/watch_status.json
+/analysis/*/watch_stdout.log
+/analysis/*/watch_stderr.log
+
+# Case 42929 is still running. Track its plan and frozen snapshots, not live outputs.
+/analysis/highk_unperturbed_42929_20261102/*
+!/analysis/highk_unperturbed_42929_20261102/plan.json
+!/analysis/highk_unperturbed_42929_20261102/params.input
+!/analysis/highk_unperturbed_42929_20261102/launch.json
+!/analysis/highk_unperturbed_42929_20261102/screening.csv
+!/analysis/highk_unperturbed_42929_20261102/worker.py
+!/analysis/highk_unperturbed_42929_20261102/SNAPSHOT_POLICY.md
+!/analysis/highk_unperturbed_42929_20261102/snapshots/

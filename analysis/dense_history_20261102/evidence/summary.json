@@ -1,0 +1,842 @@
+[
+  {
+    "id": "r01_c34596_n14",
+    "run_key": "frodo:diag/runs_a/shard-002/0002--case-34596--native",
+    "case_id": 34596,
+    "status": "structural_review_required",
+    "checks": {
+      "frozen_sha/case_manifest.json": true,
+      "frozen_sha/run_meta.json": true,
+      "frozen_sha/sandy--arid--s1416--f9853--global_default_L0p5--native.input": true,
+      "frozen_sha/sandy--arid--s1416--f9853--global_default_L0p5--native.pvd": true,
+      "frozen_sha/sandy--arid--s1416--f9853--global_default_L0p5--native_eigenprofile.dat": true,
+      "input_matches_audit": true,
+      "sigmatop_hash": true,
+      "101_monotonic_frames": true,
+      "input_grid_shape": true,
+      "tensor_volume": true,
+      "density_matches_explicit_input": true,
+      "saturation_matches_input": true,
+      "field_top_statistics_match_record": true,
+      "frame_time_matches_diagnostics": false,
+      "independent_quadrature": true
+    },
+    "frames": 101,
+    "points_per_frame": 120801,
+    "bytes_read": 2303130894,
+    "actual_cuts": [
+      {
+        "region": "upper_0.9",
+        "requested_z_over_H": 0.9,
+        "actual_z_over_H": 0.8995154060206101
+      },
+      {
+        "region": "upper_0.75",
+        "requested_z_over_H": 0.75,
+        "actual_z_over_H": 0.7522817588955174
+      },
+      {
+        "region": "upper_0.5",
+        "requested_z_over_H": 0.5,
+        "actual_z_over_H": 0.5005319056786239
+      }
+    ],
+    "max_density_error_kg_m3": 5.9969806898152456e-12,
+    "max_legacy_density_error_kg_m3": 1.9571319279581587,
+    "max_sw_error": 8.881784197001252e-16,
+    "max_sigmatop_mean_error": 4.414524301665779e-14,
+    "max_sigmatop_sigma_error": 1.9854346404522393e-17,
+    "max_quadrature_relative_error": 2.3765761045612045e-16,
+    "small_file_sha256": {
+      "case_manifest.json": "2d58a1cdc756311ac1f536293b08f5c3fcc73a9cdbaea87b7c1983bbb98b6067",
+      "run_meta.json": "06420a7a4d74704901e9b5e0f597ac3feb597e7cb98d662a4e18890575caedce",
+      "sandy--arid--s1416--f9853--global_default_L0p5--native.input": "863144f45ee3fc5c73b4d7cdefe736f97ffffd24aa4f557f968f39b5c158dca1",
+      "sandy--arid--s1416--f9853--global_default_L0p5--native.pvd": "af6c06c0d9a1263c17cb183994b89c90f630758f3fc6d621c8818e38d4cfd20f",
+      "sandy--arid--s1416--f9853--global_default_L0p5--native_eigenprofile.dat": "74f030421cb3c502103a1d5d8918eaec7c6b7b4fabb9646b069bef72e51aca4f"
+    },
+    "sigmatop_sha256": "7be6ad6e567d633b3e1314775b7c54c6a7acd3b05db886f2da37abc82bf5a39c",
+    "historical_executable_identity": "not established",
+    "physical_interpretation": "inventory-derived net exchange; no independent face-flux closure, no unperturbed reference",
+    "analysis_wall_s": 42.67405395954847
+  },
+  {
+    "id": "r02_c34830_n2",
+    "run_key": "frodo:diag/runs_a/shard-005/0005--case-34830--native",
+    "case_id": 34830,
+    "status": "structural_review_required",
+    "checks": {
+      "frozen_sha/case_manifest.json": true,
+      "frozen_sha/run_meta.json": true,
+      "frozen_sha/sandy--arid--s1656--f10169--global_default_L0p5--native.input": true,
+      "frozen_sha/sandy--arid--s1656--f10169--global_default_L0p5--native.pvd": true,
+      "frozen_sha/sandy--arid--s1656--f10169--global_default_L0p5--native_eigenprofile.dat": true,
+      "input_matches_audit": true,
+      "sigmatop_hash": true,
+      "101_monotonic_frames": true,
+      "input_grid_shape": true,
+      "tensor_volume": true,
+      "density_matches_explicit_input": true,
+      "saturation_matches_input": true,
+      "field_top_statistics_match_record": true,
+      "frame_time_matches_diagnostics": false,
+      "independent_quadrature": true
+    },
+    "frames": 101,
+    "points_per_frame": 120801,
+    "bytes_read": 2403749657,
+    "actual_cuts": [
+      {
+        "region": "upper_0.9",
+        "requested_z_over_H": 0.9,
+        "actual_z_over_H": 0.8995154060206101
+      },
+      {
+        "region": "upper_0.75",
+        "requested_z_over_H": 0.75,
+        "actual_z_over_H": 0.7522817588955174
+      },
+      {
+        "region": "upper_0.5",
+        "requested_z_over_H": 0.5,
+        "actual_z_over_H": 0.5005319056786239
+      }
+    ],
+    "max_density_error_kg_m3": 5.071498776487715e-12,
+    "max_legacy_density_error_kg_m3": 1.8058912554953466,
+    "max_sw_error": 7.66053886991358e-15,
+    "max_sigmatop_mean_error": 5.004677228193088e-16,
+    "max_sigmatop_sigma_error": 4.55491967386e-19,
+    "max_quadrature_relative_error": 2.8187455051690644e-16,
+    "small_file_sha256": {
+      "case_manifest.json": "b7a112bb00af0076a39ae67d849da133a85c0c88c59d141152293b5952af62a5",
+      "run_meta.json": "ea6d557145755b245cf1dead21f2c7eb51841bf157368461807df2b7a9d10147",
+      "sandy--arid--s1656--f10169--global_default_L0p5--native.input": "2eb95ea740b023e8ea30c7569ea6a061756e4d1475add52fb470b626f6011533",
+      "sandy--arid--s1656--f10169--global_default_L0p5--native.pvd": "80da27927f0f683b715e4c847e5aee46623c8d9d0ee863851b8369f85dfccfd2",
+      "sandy--arid--s1656--f10169--global_default_L0p5--native_eigenprofile.dat": "36532ac0d076452e9cf816ec59d392c52d72276cc6c2574e18ef04a9885b13d9"
+    },
+    "sigmatop_sha256": "cac5725eefdb8c06f7e654fa9694d2955dcd707aeb4d8eccaeb910d30fe135c3",
+    "historical_executable_identity": "not established",
+    "physical_interpretation": "inventory-derived net exchange; no independent face-flux closure, no unperturbed reference",
+    "analysis_wall_s": 39.583273235708475
+  },
+  {
+    "id": "r03_c36545_n1",
+    "run_key": "frodo:diag/runs_a/shard-004/0004--case-36545--native",
+    "case_id": 36545,
+    "status": "structural_review_required",
+    "checks": {
+      "frozen_sha/case_manifest.json": true,
+      "frozen_sha/run_meta.json": true,
+      "frozen_sha/sandy--boreal--s1354--f877--global_default_L0p5--native.input": true,
+      "frozen_sha/sandy--boreal--s1354--f877--global_default_L0p5--native.pvd": true,
+      "frozen_sha/sandy--boreal--s1354--f877--global_default_L0p5--native_eigenprofile.dat": true,
+      "input_matches_audit": true,
+      "sigmatop_hash": true,
+      "101_monotonic_frames": true,
+      "input_grid_shape": true,
+      "tensor_volume": true,
+      "density_matches_explicit_input": true,
+      "saturation_matches_input": true,
+      "field_top_statistics_match_record": true,
+      "frame_time_matches_diagnostics": false,
+      "independent_quadrature": true
+    },
+    "frames": 101,
+    "points_per_frame": 120801,
+    "bytes_read": 2403802271,
+    "actual_cuts": [
+      {
+        "region": "upper_0.9",
+        "requested_z_over_H": 0.9,
+        "actual_z_over_H": 0.8995154060206101
+      },
+      {
+        "region": "upper_0.75",
+        "requested_z_over_H": 0.75,
+        "actual_z_over_H": 0.7522817588955174
+      },
+      {
+        "region": "upper_0.5",
+        "requested_z_over_H": 0.5,
+        "actual_z_over_H": 0.5005319056786239
+      }
+    ],
+    "max_density_error_kg_m3": 5.071498776487715e-12,
+    "max_legacy_density_error_kg_m3": 1.8047207759554773,
+    "max_sw_error": 8.326672684688674e-15,
+    "max_sigmatop_mean_error": 4.956972332603726e-16,
+    "max_sigmatop_sigma_error": 3.417777942171102e-19,
+    "max_quadrature_relative_error": 1.9518340362130733e-16,
+    "small_file_sha256": {
+      "case_manifest.json": "339ad923e0b0c94fe630c72ceb5432c2adbc13eaa0224f588a1a8bafd9de6d38",
+      "run_meta.json": "cfd650f26a190b2906300fcb3d6615fd19fed6d325ce86285e15021061478b2e",
+      "sandy--boreal--s1354--f877--global_default_L0p5--native.input": "7091efd15c25d6252e034bc635858f1a558d8110dbf9507a26c179023a110e99",
+      "sandy--boreal--s1354--f877--global_default_L0p5--native.pvd": "3a310f7a28e9aee25a39b4e64eaa406c25788283ce5ad6d3989557bd0fe51391",
+      "sandy--boreal--s1354--f877--global_default_L0p5--native_eigenprofile.dat": "23c36a5c102b90c945d3ab968d1a384f366abbbf701d80e75c8021c16992de1a"
+    },
+    "sigmatop_sha256": "d8eeea59da873c7e0e12757502619b4fb19b251fd4806c87ba02c183c45843a5",
+    "historical_executable_identity": "not established",
+    "physical_interpretation": "inventory-derived net exchange; no independent face-flux closure, no unperturbed reference",
+    "analysis_wall_s": 48.6740267239511
+  },
+  {
+    "id": "r04_c36656_n14",
+    "run_key": "frodo:diag/runs_a/shard-001/0001--case-36656--native",
+    "case_id": 36656,
+    "status": "structural_review_required",
+    "checks": {
+      "frozen_sha/case_manifest.json": true,
+      "frozen_sha/run_meta.json": true,
+      "frozen_sha/sandy--boreal--s1957--f1092--global_default_L0p5--native.input": true,
+      "frozen_sha/sandy--boreal--s1957--f1092--global_default_L0p5--native.pvd": true,
+      "frozen_sha/sandy--boreal--s1957--f1092--global_default_L0p5--native_eigenprofile.dat": true,
+      "input_matches_audit": true,
+      "sigmatop_hash": true,
+      "101_monotonic_frames": true,
+      "input_grid_shape": true,
+      "tensor_volume": true,
+      "density_matches_explicit_input": true,
+      "saturation_matches_input": true,
+      "field_top_statistics_match_record": true,
+      "frame_time_matches_diagnostics": false,
+      "independent_quadrature": true
+    },
+    "frames": 101,
+    "points_per_frame": 120801,
+    "bytes_read": 2338504394,
+    "actual_cuts": [
+      {
+        "region": "upper_0.9",
+        "requested_z_over_H": 0.9,
+        "actual_z_over_H": 0.8995154060206101
+      },
+      {
+        "region": "upper_0.75",
+        "requested_z_over_H": 0.75,
+        "actual_z_over_H": 0.7522817588955174
+      },
+      {
+        "region": "upper_0.5",
+        "requested_z_over_H": 0.5,
+        "actual_z_over_H": 0.5005319056786239
+      }
+    ],
+    "max_density_error_kg_m3": 5.236699962551938e-12,
+    "max_legacy_density_error_kg_m3": 1.8601733340042443,
+    "max_sw_error": 2.609024107869118e-15,
+    "max_sigmatop_mean_error": 5.016820292524926e-15,
+    "max_sigmatop_sigma_error": 3.1310572895255212e-18,
+    "max_quadrature_relative_error": 3.152244721448102e-16,
+    "small_file_sha256": {
+      "case_manifest.json": "3b59147cde3fe7833935f49a42bfb82869f37edd6db6f003ccbcebecae6018d8",
+      "run_meta.json": "2759a9c308e095a585e726bda996567ff9a01b41ac24122a038bc8e6195082ae",
+      "sandy--boreal--s1957--f1092--global_default_L0p5--native.input": "2596206026c8ba2c08f01b26782ed3286c5a2aa781124c764439012cf430a520",
+      "sandy--boreal--s1957--f1092--global_default_L0p5--native.pvd": "3b466e7024242084273d8e3a10749f7e35a22ab48d71a47329d4410cb92b9718",
+      "sandy--boreal--s1957--f1092--global_default_L0p5--native_eigenprofile.dat": "4c7d12f1eda87e43b753aa691ea3b46dadd52799a74b6063da25a6418cd0eeab"
+    },
+    "sigmatop_sha256": "b62afa011a02e09a5753a95e61551c8ac2bae46242d82d85e0cf098dbfe104bb",
+    "historical_executable_identity": "not established",
+    "physical_interpretation": "inventory-derived net exchange; no independent face-flux closure, no unperturbed reference",
+    "analysis_wall_s": 64.18945865519345
+  },
+  {
+    "id": "r05_c36877_n30",
+    "run_key": "frodo:c1/runs_36877_nx30/shard-000/0001--case-36877--native",
+    "case_id": 36877,
+    "status": "structural_review_required",
+    "checks": {
+      "frozen_sha/case_manifest.json": true,
+      "frozen_sha/run_meta.json": true,
+      "frozen_sha/sandy--boreal--s1354--f1080--global_default_L0p5--native.input": true,
+      "frozen_sha/sandy--boreal--s1354--f1080--global_default_L0p5--native.pvd": true,
+      "frozen_sha/sandy--boreal--s1354--f1080--global_default_L0p5--native_eigenprofile.dat": true,
+      "input_matches_audit": true,
+      "sigmatop_hash": true,
+      "101_monotonic_frames": true,
+      "input_grid_shape": true,
+      "tensor_volume": true,
+      "density_matches_explicit_input": true,
+      "saturation_matches_input": true,
+      "field_top_statistics_match_record": true,
+      "frame_time_matches_diagnostics": false,
+      "independent_quadrature": true
+    },
+    "frames": 101,
+    "points_per_frame": 120801,
+    "bytes_read": 2283701085,
+    "actual_cuts": [
+      {
+        "region": "upper_0.9",
+        "requested_z_over_H": 0.9,
+        "actual_z_over_H": 0.8995154060206101
+      },
+      {
+        "region": "upper_0.75",
+        "requested_z_over_H": 0.75,
+        "actual_z_over_H": 0.7522817588955174
+      },
+      {
+        "region": "upper_0.5",
+        "requested_z_over_H": 0.5,
+        "actual_z_over_H": 0.5005319056786239
+      }
+    ],
+    "max_density_error_kg_m3": 5.222489107836736e-12,
+    "max_legacy_density_error_kg_m3": 1.8341518675221096,
+    "max_sw_error": 3.1086244689504383e-15,
+    "max_sigmatop_mean_error": 4.9509008004378074e-15,
+    "max_sigmatop_sigma_error": 3.9283270511286314e-18,
+    "max_quadrature_relative_error": 3.085754974357561e-16,
+    "small_file_sha256": {
+      "case_manifest.json": "4b8e794878a73e4f5b9f43abc37c3d582a941fdb0cdc1431615588b1429fc097",
+      "run_meta.json": "8f379be0fb29cdd36c7be5746cba2a3612199ceb8bb70c6d274ad1d7ab5b3e23",
+      "sandy--boreal--s1354--f1080--global_default_L0p5--native.input": "d1e70e2edce7011cbbaafc364f3ed7bf1443135b202cc149711d24e6e57dce63",
+      "sandy--boreal--s1354--f1080--global_default_L0p5--native.pvd": "1d05591c1f3c99b701ebf9a85dbaa8917d4a38768f06c45f2138ba0044af32d6",
+      "sandy--boreal--s1354--f1080--global_default_L0p5--native_eigenprofile.dat": "303a87c9c7d15f9cc3d84b736499420e07fe128790a639e1d9eaabf72f7cd61f"
+    },
+    "sigmatop_sha256": "b5160a67e2d7b887b55c1b290a1bd2727fd6c62955bca34a3afe9ed1ab427285",
+    "historical_executable_identity": "not established",
+    "physical_interpretation": "inventory-derived net exchange; no independent face-flux closure, no unperturbed reference",
+    "analysis_wall_s": 66.31557524576783
+  },
+  {
+    "id": "r06_c36877_n60",
+    "run_key": "frodo:c1/runs_36877_nx60/shard-000/0001--case-36877--native",
+    "case_id": 36877,
+    "status": "structural_review_required",
+    "checks": {
+      "frozen_sha/case_manifest.json": true,
+      "frozen_sha/run_meta.json": true,
+      "frozen_sha/sandy--boreal--s1354--f1080--global_default_L0p5--native.input": true,
+      "frozen_sha/sandy--boreal--s1354--f1080--global_default_L0p5--native.pvd": true,
+      "frozen_sha/sandy--boreal--s1354--f1080--global_default_L0p5--native_eigenprofile.dat": true,
+      "input_matches_audit": true,
+      "sigmatop_hash": true,
+      "101_monotonic_frames": true,
+      "input_grid_shape": true,
+      "tensor_volume": true,
+      "density_matches_explicit_input": true,
+      "saturation_matches_input": true,
+      "field_top_statistics_match_record": true,
+      "frame_time_matches_diagnostics": false,
+      "independent_quadrature": true
+    },
+    "frames": 101,
+    "points_per_frame": 241401,
+    "bytes_read": 4642946931,
+    "actual_cuts": [
+      {
+        "region": "upper_0.9",
+        "requested_z_over_H": 0.9,
+        "actual_z_over_H": 0.8995154060206101
+      },
+      {
+        "region": "upper_0.75",
+        "requested_z_over_H": 0.75,
+        "actual_z_over_H": 0.7522817588955174
+      },
+      {
+        "region": "upper_0.5",
+        "requested_z_over_H": 0.5,
+        "actual_z_over_H": 0.5005319056786239
+      }
+    ],
+    "max_density_error_kg_m3": 5.229594535194337e-12,
+    "max_legacy_density_error_kg_m3": 1.8479196531456736,
+    "max_sw_error": 3.164135620181696e-15,
+    "max_sigmatop_mean_error": 4.98212582300539e-15,
+    "max_sigmatop_sigma_error": 2.1725336305888736e-18,
+    "max_quadrature_relative_error": 4.71108942710216e-16,
+    "small_file_sha256": {
+      "case_manifest.json": "00fc60761dbc8674c105aee76cdea8484f11fcaa0f207091ec7a0348dc0c1caa",
+      "run_meta.json": "c8643cdf2841c72e3f82a7a3b8703ebe1758ae1315bc8f1984b5e4859efc1d42",
+      "sandy--boreal--s1354--f1080--global_default_L0p5--native.input": "c3c07bff3527a0aaab624ef1b843e02d89b9d93f529f9f80aa29105dc9043650",
+      "sandy--boreal--s1354--f1080--global_default_L0p5--native.pvd": "ae74c45fe556a660580cbbf37bad6ee991b7c84b280cfd7bfc3cdd54ad24578c",
+      "sandy--boreal--s1354--f1080--global_default_L0p5--native_eigenprofile.dat": "aa0a93fdd24a1118b84f44a880b5481c733271749a0a8f13c7d5cc2905d4c4c7"
+    },
+    "sigmatop_sha256": "b7324fd1718d6acf414610edbec612236fd764b9335c56f6aa8d1dc4a7920f98",
+    "historical_executable_identity": "not established",
+    "physical_interpretation": "inventory-derived net exchange; no independent face-flux closure, no unperturbed reference",
+    "analysis_wall_s": 123.29442039877176
+  },
+  {
+    "id": "r07_c36877_n5",
+    "run_key": "frodo:diag/runs_b/shard-001/0001--case-36877--native",
+    "case_id": 36877,
+    "status": "structural_review_required",
+    "checks": {
+      "frozen_sha/case_manifest.json": true,
+      "frozen_sha/run_meta.json": true,
+      "frozen_sha/sandy--boreal--s1354--f1080--global_default_L0p5--native.input": true,
+      "frozen_sha/sandy--boreal--s1354--f1080--global_default_L0p5--native.pvd": true,
+      "frozen_sha/sandy--boreal--s1354--f1080--global_default_L0p5--native_eigenprofile.dat": true,
+      "input_matches_audit": true,
+      "sigmatop_hash": true,
+      "101_monotonic_frames": true,
+      "input_grid_shape": true,
+      "tensor_volume": true,
+      "density_matches_explicit_input": true,
+      "saturation_matches_input": true,
+      "field_top_statistics_match_record": true,
+      "frame_time_matches_diagnostics": false,
+      "independent_quadrature": true
+    },
+    "frames": 101,
+    "points_per_frame": 120801,
+    "bytes_read": 2328335149,
+    "actual_cuts": [
+      {
+        "region": "upper_0.9",
+        "requested_z_over_H": 0.9,
+        "actual_z_over_H": 0.8995154060206101
+      },
+      {
+        "region": "upper_0.75",
+        "requested_z_over_H": 0.75,
+        "actual_z_over_H": 0.7522817588955174
+      },
+      {
+        "region": "upper_0.5",
+        "requested_z_over_H": 0.5,
+        "actual_z_over_H": 0.5005319056786239
+      }
+    ],
+    "max_density_error_kg_m3": 5.218936394157936e-12,
+    "max_legacy_density_error_kg_m3": 1.8315180809535434,
+    "max_sw_error": 3.164135620181696e-15,
+    "max_sigmatop_mean_error": 4.9960036108132044e-15,
+    "max_sigmatop_sigma_error": 4.422041380259482e-18,
+    "max_quadrature_relative_error": 3.091766154903436e-16,
+    "small_file_sha256": {
+      "case_manifest.json": "d51be55f89fdd9d5522f3e1fd194e794444c6aa4ff597cf07716fa9054a3ce3c",
+      "run_meta.json": "7e29f9d485fde1ae11c139b76c4965d757d1db3a34d1de5b5514d678b60180eb",
+      "sandy--boreal--s1354--f1080--global_default_L0p5--native.input": "0d22fba388e2bc148c0300dda01ec3e450cd1439b0c44382da481b94dcc8b02b",
+      "sandy--boreal--s1354--f1080--global_default_L0p5--native.pvd": "00ebf5765fd085f4d06f5bcecb41915b6034de48b1cb33fa1e198276e6431969",
+      "sandy--boreal--s1354--f1080--global_default_L0p5--native_eigenprofile.dat": "2a67cd35ce9e2d89e1568164fd70e57c413b18bc2809d6695f059497cf863cd4"
+    },
+    "sigmatop_sha256": "cd74a9b5faaa7523d148d928cd4e5aea94cc048a58755c554b151154f9051b07",
+    "historical_executable_identity": "not established",
+    "physical_interpretation": "inventory-derived net exchange; no independent face-flux closure, no unperturbed reference",
+    "analysis_wall_s": 64.7997020855546
+  },
+  {
+    "id": "r08_c36877_n5",
+    "run_key": "frodo:diag/runs_c/shard-001/0001--case-36877--native",
+    "case_id": 36877,
+    "status": "structural_review_required",
+    "checks": {
+      "frozen_sha/case_manifest.json": true,
+      "frozen_sha/run_meta.json": true,
+      "frozen_sha/sandy--boreal--s1354--f1080--global_default_L0p5--native.input": true,
+      "frozen_sha/sandy--boreal--s1354--f1080--global_default_L0p5--native.pvd": true,
+      "frozen_sha/sandy--boreal--s1354--f1080--global_default_L0p5--native_eigenprofile.dat": true,
+      "input_matches_audit": true,
+      "sigmatop_hash": true,
+      "101_monotonic_frames": true,
+      "input_grid_shape": true,
+      "tensor_volume": true,
+      "density_matches_explicit_input": true,
+      "saturation_matches_input": true,
+      "field_top_statistics_match_record": true,
+      "frame_time_matches_diagnostics": false,
+      "independent_quadrature": true
+    },
+    "frames": 101,
+    "points_per_frame": 120801,
+    "bytes_read": 2329498566,
+    "actual_cuts": [
+      {
+        "region": "upper_0.9",
+        "requested_z_over_H": 0.9,
+        "actual_z_over_H": 0.8995154060206101
+      },
+      {
+        "region": "upper_0.75",
+        "requested_z_over_H": 0.75,
+        "actual_z_over_H": 0.7522817588955174
+      },
+      {
+        "region": "upper_0.5",
+        "requested_z_over_H": 0.5,
+        "actual_z_over_H": 0.5005319056786239
+      }
+    ],
+    "max_density_error_kg_m3": 5.190514684727532e-12,
+    "max_legacy_density_error_kg_m3": 1.8202984665119075,
+    "max_sw_error": 3.164135620181696e-15,
+    "max_sigmatop_mean_error": 4.65599780952175e-15,
+    "max_sigmatop_sigma_error": 3.0781177303221274e-18,
+    "max_quadrature_relative_error": 3.1164097145928627e-16,
+    "small_file_sha256": {
+      "case_manifest.json": "176dd82ebb26b165cb02f44c5e6ed62954e4d61f974ed788c91b63e028f00bd9",
+      "run_meta.json": "9709d97b2380ab2fc47f04e98d75510478879fb383a61b2088913e1a364a4a8c",
+      "sandy--boreal--s1354--f1080--global_default_L0p5--native.input": "9533557d1ee5303007ffa53acc2cb473fff82bafcfb5e3b0d477b39036f8393f",
+      "sandy--boreal--s1354--f1080--global_default_L0p5--native.pvd": "5f962ec0587bf8874dd5bc848de42517d45c26b81ce359ff89f65979f00b42b8",
+      "sandy--boreal--s1354--f1080--global_default_L0p5--native_eigenprofile.dat": "2a67cd35ce9e2d89e1568164fd70e57c413b18bc2809d6695f059497cf863cd4"
+    },
+    "sigmatop_sha256": "0a857754462785519d0e0599de8f39f471e75c4e1cc8e811cb7ef696f011ed9c",
+    "historical_executable_identity": "not established",
+    "physical_interpretation": "inventory-derived net exchange; no independent face-flux closure, no unperturbed reference",
+    "analysis_wall_s": 63.094679133966565
+  },
+  {
+    "id": "r09_c38247_n2",
+    "run_key": "frodo:diag/runs_a/shard-006/0006--case-38247--native",
+    "case_id": 38247,
+    "status": "structural_review_required",
+    "checks": {
+      "frozen_sha/case_manifest.json": true,
+      "frozen_sha/run_meta.json": true,
+      "frozen_sha/sandy--boreal--s1214--f1077--global_default_L0p5--native.input": true,
+      "frozen_sha/sandy--boreal--s1214--f1077--global_default_L0p5--native.pvd": true,
+      "frozen_sha/sandy--boreal--s1214--f1077--global_default_L0p5--native_eigenprofile.dat": true,
+      "input_matches_audit": true,
+      "sigmatop_hash": true,
+      "101_monotonic_frames": true,
+      "input_grid_shape": true,
+      "tensor_volume": true,
+      "density_matches_explicit_input": true,
+      "saturation_matches_input": true,
+      "field_top_statistics_match_record": true,
+      "frame_time_matches_diagnostics": false,
+      "independent_quadrature": true
+    },
+    "frames": 101,
+    "points_per_frame": 120801,
+    "bytes_read": 2359629228,
+    "actual_cuts": [
+      {
+        "region": "upper_0.9",
+        "requested_z_over_H": 0.9,
+        "actual_z_over_H": 0.8995154060206101
+      },
+      {
+        "region": "upper_0.75",
+        "requested_z_over_H": 0.75,
+        "actual_z_over_H": 0.7522817588955174
+      },
+      {
+        "region": "upper_0.5",
+        "requested_z_over_H": 0.5,
+        "actual_z_over_H": 0.5005319056786239
+      }
+    ],
+    "max_density_error_kg_m3": 5.222489107836736e-12,
+    "max_legacy_density_error_kg_m3": 1.8279293839278594,
+    "max_sw_error": 9.43689570931383e-16,
+    "max_sigmatop_mean_error": 4.893654925730573e-15,
+    "max_sigmatop_sigma_error": 3.562091180559553e-18,
+    "max_quadrature_relative_error": 2.321823741951236e-16,
+    "small_file_sha256": {
+      "case_manifest.json": "aa37d7adb3aa11a33dc0732294ab070e9e7253ad634df7b2209aeeb63c57a356",
+      "run_meta.json": "a9b5deb9816332097c96d4227a3ed3e21f8b2877cd47015529160e025b0426d4",
+      "sandy--boreal--s1214--f1077--global_default_L0p5--native.input": "7326f008e1d05bc994ff0d195e80363d64f92189eef1c24ceea7c689098f3bec",
+      "sandy--boreal--s1214--f1077--global_default_L0p5--native.pvd": "f6201f5f66e63282d3bf6059c0afc89731d25e777170842914e9d96a71ca39ed",
+      "sandy--boreal--s1214--f1077--global_default_L0p5--native_eigenprofile.dat": "50b23907603672139f40f974c2e9f199f93af07f21f1a0f062535d929e3b0191"
+    },
+    "sigmatop_sha256": "316be758575cf34e87f4cb28d30ac7ff9bca9fd936ba0a21370d82413fbdf089",
+    "historical_executable_identity": "not established",
+    "physical_interpretation": "inventory-derived net exchange; no independent face-flux closure, no unperturbed reference",
+    "analysis_wall_s": 62.67971454747021
+  },
+  {
+    "id": "r10_c41634_n1",
+    "run_key": "frodo:diag/runs_b/shard-000/0002--case-41634--native",
+    "case_id": 41634,
+    "status": "structural_review_required",
+    "checks": {
+      "frozen_sha/case_manifest.json": true,
+      "frozen_sha/run_meta.json": true,
+      "frozen_sha/sandy--temperate--s1761--f5662--global_default_L0p5--native.input": true,
+      "frozen_sha/sandy--temperate--s1761--f5662--global_default_L0p5--native.pvd": true,
+      "frozen_sha/sandy--temperate--s1761--f5662--global_default_L0p5--native_eigenprofile.dat": true,
+      "input_matches_audit": true,
+      "sigmatop_hash": true,
+      "101_monotonic_frames": true,
+      "input_grid_shape": true,
+      "tensor_volume": true,
+      "density_matches_explicit_input": true,
+      "saturation_matches_input": true,
+      "field_top_statistics_match_record": true,
+      "frame_time_matches_diagnostics": false,
+      "independent_quadrature": true
+    },
+    "frames": 101,
+    "points_per_frame": 120801,
+    "bytes_read": 2398649215,
+    "actual_cuts": [
+      {
+        "region": "upper_0.9",
+        "requested_z_over_H": 0.9,
+        "actual_z_over_H": 0.8995154060206101
+      },
+      {
+        "region": "upper_0.75",
+        "requested_z_over_H": 0.75,
+        "actual_z_over_H": 0.7522817588955174
+      },
+      {
+        "region": "upper_0.5",
+        "requested_z_over_H": 0.5,
+        "actual_z_over_H": 0.5005319056786239
+      }
+    ],
+    "max_density_error_kg_m3": 5.169198402654729e-12,
+    "max_legacy_density_error_kg_m3": 1.8185480336254507,
+    "max_sw_error": 9.43689570931383e-16,
+    "max_sigmatop_mean_error": 4.773959005888173e-15,
+    "max_sigmatop_sigma_error": 2.4537485690773013e-18,
+    "max_quadrature_relative_error": 2.3472808568700986e-16,
+    "small_file_sha256": {
+      "case_manifest.json": "8a3a661efc7650a8e19b093d7fc72823662fc847b5e301e261e9fd4ea6d34730",
+      "run_meta.json": "612ba021bd56c6d13d72f45e89aef0e55a398bc13845f7094651ddb4b83ca6fa",
+      "sandy--temperate--s1761--f5662--global_default_L0p5--native.input": "7feb93b6d864ac815f9bd97e538da40970a29c1507a40ded39fbea5a31eeee12",
+      "sandy--temperate--s1761--f5662--global_default_L0p5--native.pvd": "a3a30695e21c0f65cbe06e095cc6a965eaff8588b5e16a97e45b37656cd6ced8",
+      "sandy--temperate--s1761--f5662--global_default_L0p5--native_eigenprofile.dat": "5aedaf94a1f5e99dd97b653324cad48fcbd9e0dda9946dd47441bc2859b2ef4e"
+    },
+    "sigmatop_sha256": "90d2a1bb669a78b2e6618f85d2f157e825daff87f1b848fd0e87d3e3224ed463",
+    "historical_executable_identity": "not established",
+    "physical_interpretation": "inventory-derived net exchange; no independent face-flux closure, no unperturbed reference",
+    "analysis_wall_s": 65.28623379766941
+  },
+  {
+    "id": "r11_c41634_n1",
+    "run_key": "frodo:diag/runs_c/shard-000/0002--case-41634--native",
+    "case_id": 41634,
+    "status": "structural_review_required",
+    "checks": {
+      "frozen_sha/case_manifest.json": true,
+      "frozen_sha/run_meta.json": true,
+      "frozen_sha/sandy--temperate--s1761--f5662--global_default_L0p5--native.input": true,
+      "frozen_sha/sandy--temperate--s1761--f5662--global_default_L0p5--native.pvd": true,
+      "frozen_sha/sandy--temperate--s1761--f5662--global_default_L0p5--native_eigenprofile.dat": true,
+      "input_matches_audit": true,
+      "sigmatop_hash": true,
+      "101_monotonic_frames": true,
+      "input_grid_shape": true,
+      "tensor_volume": true,
+      "density_matches_explicit_input": true,
+      "saturation_matches_input": true,
+      "field_top_statistics_match_record": true,
+      "frame_time_matches_diagnostics": false,
+      "independent_quadrature": true
+    },
+    "frames": 101,
+    "points_per_frame": 120801,
+    "bytes_read": 2398982269,
+    "actual_cuts": [
+      {
+        "region": "upper_0.9",
+        "requested_z_over_H": 0.9,
+        "actual_z_over_H": 0.8995154060206101
+      },
+      {
+        "region": "upper_0.75",
+        "requested_z_over_H": 0.75,
+        "actual_z_over_H": 0.7522817588955174
+      },
+      {
+        "region": "upper_0.5",
+        "requested_z_over_H": 0.5,
+        "actual_z_over_H": 0.5005319056786239
+      }
+    ],
+    "max_density_error_kg_m3": 5.073275133327115e-12,
+    "max_legacy_density_error_kg_m3": 1.813024745403986,
+    "max_sw_error": 9.43689570931383e-16,
+    "max_sigmatop_mean_error": 4.996003610813204e-16,
+    "max_sigmatop_sigma_error": 3.459070798349749e-19,
+    "max_quadrature_relative_error": 2.347280267599615e-16,
+    "small_file_sha256": {
+      "case_manifest.json": "0a05efead23171a62d60e1c742120da4f312d62b5b94636eff59fbfec573f018",
+      "run_meta.json": "6d290eed5ec8d11c3ff4c5626c5fbb493678a4c784e406eb523e784670abb264",
+      "sandy--temperate--s1761--f5662--global_default_L0p5--native.input": "a47a6a625904707103d4aeb765cca042c3fbc80dc495687690fc54c2b31c62df",
+      "sandy--temperate--s1761--f5662--global_default_L0p5--native.pvd": "94409d2013d465a6b75ecc3c05cd1449673c3a5e1d253a62c7a955dd46103093",
+      "sandy--temperate--s1761--f5662--global_default_L0p5--native_eigenprofile.dat": "5aedaf94a1f5e99dd97b653324cad48fcbd9e0dda9946dd47441bc2859b2ef4e"
+    },
+    "sigmatop_sha256": "2f436ba5889e2947a2721cbb67d5096cbe99e312b6ac26a1d4414bcf16034437",
+    "historical_executable_identity": "not established",
+    "physical_interpretation": "inventory-derived net exchange; no independent face-flux closure, no unperturbed reference",
+    "analysis_wall_s": 65.51012961566448
+  },
+  {
+    "id": "r12_c42048_n1",
+    "run_key": "frodo:diag/runs_a/shard-000/0008--case-42048--native",
+    "case_id": 42048,
+    "status": "structural_review_required",
+    "checks": {
+      "frozen_sha/case_manifest.json": true,
+      "frozen_sha/run_meta.json": true,
+      "frozen_sha/sandy--temperate--s1223--f8922--global_default_L0p5--native.input": true,
+      "frozen_sha/sandy--temperate--s1223--f8922--global_default_L0p5--native.pvd": true,
+      "frozen_sha/sandy--temperate--s1223--f8922--global_default_L0p5--native_eigenprofile.dat": true,
+      "input_matches_audit": true,
+      "sigmatop_hash": true,
+      "101_monotonic_frames": true,
+      "input_grid_shape": true,
+      "tensor_volume": true,
+      "density_matches_explicit_input": true,
+      "saturation_matches_input": true,
+      "field_top_statistics_match_record": true,
+      "frame_time_matches_diagnostics": false,
+      "independent_quadrature": true
+    },
+    "frames": 101,
+    "points_per_frame": 120801,
+    "bytes_read": 2403807777,
+    "actual_cuts": [
+      {
+        "region": "upper_0.9",
+        "requested_z_over_H": 0.9,
+        "actual_z_over_H": 0.8995154060206101
+      },
+      {
+        "region": "upper_0.75",
+        "requested_z_over_H": 0.75,
+        "actual_z_over_H": 0.7522817588955174
+      },
+      {
+        "region": "upper_0.5",
+        "requested_z_over_H": 0.5,
+        "actual_z_over_H": 0.5005319056786239
+      }
+    ],
+    "max_density_error_kg_m3": 5.071498776487715e-12,
+    "max_legacy_density_error_kg_m3": 1.805349940839461,
+    "max_sw_error": 7.66053886991358e-15,
+    "max_sigmatop_mean_error": 4.969982758673552e-16,
+    "max_sigmatop_sigma_error": 3.732238923839261e-19,
+    "max_quadrature_relative_error": 2.957566986084152e-16,
+    "small_file_sha256": {
+      "case_manifest.json": "7c79d1e1d402b5c4731734ec8d0f0eb150b63411dfe833b1fd9391cb336eb25e",
+      "run_meta.json": "a3ad59ba00c0abcdd6e79e670af37ab0ccc614ae764ff315daaa95d5fe184e7a",
+      "sandy--temperate--s1223--f8922--global_default_L0p5--native.input": "e47c8b577ff6614093d83dc50de316dbd1a86f8ef8c523ff92d5979a6e17b8e9",
+      "sandy--temperate--s1223--f8922--global_default_L0p5--native.pvd": "7e7b2adebb1ced741db25d5577e7b64343294039c40363050e6b3d462c3b2a8a",
+      "sandy--temperate--s1223--f8922--global_default_L0p5--native_eigenprofile.dat": "8f77c3823c783bdffc2e01b262c16709980d531f0d207166263fec30a69ca2ed"
+    },
+    "sigmatop_sha256": "b0022f2d88d6583c7da8ec8e2cb3e96e3fad4db165df7f6aac7c805d929c537c",
+    "historical_executable_identity": "not established",
+    "physical_interpretation": "inventory-derived net exchange; no independent face-flux closure, no unperturbed reference",
+    "analysis_wall_s": 64.03223951533437
+  },
+  {
+    "id": "r13_c45164_n1",
+    "run_key": "frodo:diag/runs_a/shard-003/0003--case-45164--native",
+    "case_id": 45164,
+    "status": "structural_review_required",
+    "checks": {
+      "frozen_sha/case_manifest.json": true,
+      "frozen_sha/run_meta.json": true,
+      "frozen_sha/sandy--tropical--s1691--f9225--global_default_L0p5--native.input": true,
+      "frozen_sha/sandy--tropical--s1691--f9225--global_default_L0p5--native.pvd": true,
+      "frozen_sha/sandy--tropical--s1691--f9225--global_default_L0p5--native_eigenprofile.dat": true,
+      "input_matches_audit": true,
+      "sigmatop_hash": true,
+      "101_monotonic_frames": true,
+      "input_grid_shape": true,
+      "tensor_volume": true,
+      "density_matches_explicit_input": true,
+      "saturation_matches_input": true,
+      "field_top_statistics_match_record": true,
+      "frame_time_matches_diagnostics": false,
+      "independent_quadrature": true
+    },
+    "frames": 101,
+    "points_per_frame": 120801,
+    "bytes_read": 2403752288,
+    "actual_cuts": [
+      {
+        "region": "upper_0.9",
+        "requested_z_over_H": 0.9,
+        "actual_z_over_H": 0.8995154060206101
+      },
+      {
+        "region": "upper_0.75",
+        "requested_z_over_H": 0.75,
+        "actual_z_over_H": 0.7522817588955174
+      },
+      {
+        "region": "upper_0.5",
+        "requested_z_over_H": 0.5,
+        "actual_z_over_H": 0.5005319056786239
+      }
+    ],
+    "max_density_error_kg_m3": 5.073275133327115e-12,
+    "max_legacy_density_error_kg_m3": 1.8053618453892089,
+    "max_sw_error": 7.549516567451064e-15,
+    "max_sigmatop_mean_error": 4.961309141293668e-16,
+    "max_sigmatop_sigma_error": 3.6507120026660345e-19,
+    "max_quadrature_relative_error": 2.001869888568791e-16,
+    "small_file_sha256": {
+      "case_manifest.json": "ff3c96ca1004a114f97c7905b26de9fbca19d2c4d4765d6f4279071223535894",
+      "run_meta.json": "d5a45b17697b257cd4b29f81c4f800ba39fd5b7dc3722e7a747c23462d465028",
+      "sandy--tropical--s1691--f9225--global_default_L0p5--native.input": "987ff271c0b90f28aeac00df692ddcb0a02367f59bc141060f41cd72daf59ffe",
+      "sandy--tropical--s1691--f9225--global_default_L0p5--native.pvd": "9e6faf6522deb7a0967c7609353b0c400c7cf9ef6c3b0fa253ee89327333bb6d",
+      "sandy--tropical--s1691--f9225--global_default_L0p5--native_eigenprofile.dat": "032c601535af9b239fa4d1b8baab9af17b8ee0f2bcdbde5080a2272999b77fa8"
+    },
+    "sigmatop_sha256": "68029d9345d407c7a7289a5e16ef5789c2baa47ca975d210f15c60df82053710",
+    "historical_executable_identity": "not established",
+    "physical_interpretation": "inventory-derived net exchange; no independent face-flux closure, no unperturbed reference",
+    "analysis_wall_s": 63.85941508598626
+  },
+  {
+    "id": "r14_c45558_n1",
+    "run_key": "frodo:diag/runs_a/shard-007/0007--case-45558--native",
+    "case_id": 45558,
+    "status": "structural_review_required",
+    "checks": {
+      "frozen_sha/case_manifest.json": true,
+      "frozen_sha/run_meta.json": true,
+      "frozen_sha/sandy--tropical--s459--f8257--global_default_L0p5--native.input": true,
+      "frozen_sha/sandy--tropical--s459--f8257--global_default_L0p5--native.pvd": true,
+      "frozen_sha/sandy--tropical--s459--f8257--global_default_L0p5--native_eigenprofile.dat": true,
+      "input_matches_audit": true,
+      "sigmatop_hash": true,
+      "101_monotonic_frames": true,
+      "input_grid_shape": true,
+      "tensor_volume": true,
+      "density_matches_explicit_input": true,
+      "saturation_matches_input": true,
+      "field_top_statistics_match_record": true,
+      "frame_time_matches_diagnostics": false,
+      "independent_quadrature": true
+    },
+    "frames": 101,
+    "points_per_frame": 120801,
+    "bytes_read": 2403800170,
+    "actual_cuts": [
+      {
+        "region": "upper_0.9",
+        "requested_z_over_H": 0.9,
+        "actual_z_over_H": 0.8995154060206101
+      },
+      {
+        "region": "upper_0.75",
+        "requested_z_over_H": 0.75,
+        "actual_z_over_H": 0.7522817588955174
+      },
+      {
+        "region": "upper_0.5",
+        "requested_z_over_H": 0.5,
+        "actual_z_over_H": 0.5005319056786239
+      }
+    ],
+    "max_density_error_kg_m3": 5.073275133327115e-12,
+    "max_legacy_density_error_kg_m3": 1.8047833169168133,
+    "max_sw_error": 8.770761894538737e-15,
+    "max_sigmatop_mean_error": 5.0133508455729725e-16,
+    "max_sigmatop_sigma_error": 3.0969642133985356e-19,
+    "max_quadrature_relative_error": 4.2921998252546014e-16,
+    "small_file_sha256": {
+      "case_manifest.json": "6f7e6781f215099478223922754a6bc6d093903163ca92a404046b1046932d22",
+      "run_meta.json": "ef5bbc90e65147a5650850f5cf12655480be58a0d2be35ddf33ef8bb5938925c",
+      "sandy--tropical--s459--f8257--global_default_L0p5--native.input": "ee111bcdc1fb1aa619e194a312a5f0c635057933b25acee9e5f3347accc24262",
+      "sandy--tropical--s459--f8257--global_default_L0p5--native.pvd": "01d4d9cb657cc55a9a83199b4968a5defbbc26a1a6b8b4fce813edfd658daf24",
+      "sandy--tropical--s459--f8257--global_default_L0p5--native_eigenprofile.dat": "eff8eddc9b28c22095c16661bda5273063976199da784e9ba12361c9b0ce6e9c"
+    },
+    "sigmatop_sha256": "2aed658b4f7411ab8943f31d1baa77c680963c908729bb2cd447f7ae3a25da03",
+    "historical_executable_identity": "not established",
+    "physical_interpretation": "inventory-derived net exchange; no independent face-flux closure, no unperturbed reference",
+    "analysis_wall_s": 63.719173077493906
+  }
+]

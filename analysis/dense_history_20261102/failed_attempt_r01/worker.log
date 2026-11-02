@@ -1,0 +1,54 @@
+Traceback (most recent call last):
+  File "/temp/zhixin/paper2_history_analysis_20261102_r01/worker.py", line 191, in <module>
+    result=analyze(spec); result['analysis_wall_s']=time.monotonic()-t0
+           ^^^^^^^^^^^^^
+  File "/temp/zhixin/paper2_history_analysis_20261102_r01/worker.py", line 183, in analyze
+    (target/'audit.json').write_text(json.dumps(audit,indent=2))
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/encoder.py", line 202, in encode
+    chunks = list(chunks)
+             ^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/encoder.py", line 432, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "/usr/lib/python3.12/json/encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "/usr/lib/python3.12/json/encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "/usr/lib/python3.12/json/encoder.py", line 439, in _iterencode
+    o = _default(o)
+        ^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type bool_ is not JSON serializable
+
+r01_c34596_n14 analysis_failed
+Traceback (most recent call last):
+  File "/temp/zhixin/paper2_history_analysis_20261102_r01/worker.py", line 191, in <module>
+    result=analyze(spec); result['analysis_wall_s']=time.monotonic()-t0
+           ^^^^^^^^^^^^^
+  File "/temp/zhixin/paper2_history_analysis_20261102_r01/worker.py", line 183, in analyze
+    (target/'audit.json').write_text(json.dumps(audit,indent=2))
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/encoder.py", line 202, in encode
+    chunks = list(chunks)
+             ^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/encoder.py", line 432, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "/usr/lib/python3.12/json/encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "/usr/lib/python3.12/json/encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "/usr/lib/python3.12/json/encoder.py", line 439, in _iterencode
+    o = _default(o)
+        ^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type bool_ is not JSON serializable
+
+r02_c34830_n2 analysis_failed

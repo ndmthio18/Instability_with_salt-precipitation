@@ -1,0 +1,45 @@
+# Auto-generated from parameter_database; policy=native
+[Grid]
+Positions0 = 0 0.6000000000000001
+Positions1 = 0 0.2
+Cells0 = 600
+Cells1 = 200
+Grading1 = -0.98
+
+[TimeLoop]
+TEnd = 1692720.252095798
+DtInitial = 4231.800630239496
+MaxTimeStepSize = 4231.800630239496
+OutputInterval = 4
+
+[Problem]
+Name = sandy--tropical--s1691--f9225--global_default_L0p5--native
+Permeability = 1.02009278311813e-11
+Porosity = 0.4008956033531376
+Swr = 0.1289997838510178
+PcN = 2.770198448620865
+PcAlpha = 0.0003033922301316187
+SweL = -0.8221792538500331
+KrwMualemExponent = true
+WaterLevel = 0.06540573975185322
+EvaporationRate = 1.014606774850485e-09
+SaltDiffusivity = 1.5e-09
+ReferenceViscosity = 0.0011
+SaltMoleFraction = 0.0036
+GravitationalAcceleration = 9.800000000000001
+PureWaterDensity = 998.203
+DensityLinearCoefficient = 0.670804
+DensityQuadraticCoefficient = 0.373854
+MolarMassH2O = 0.01801528
+MolarMassNaCl = 0.05844
+Amplitude = 1e-06
+WaveNumber = 1
+StandardDeviationSaltMoleFraction = 1e-06
+PerturbationType = Eigenprofile
+RandomSeed = 1
+EnableGravity = true
+PerturbationHeight = 0
+EigenprofilePath = /temp/zhixin/diag/runs_a/shard-003/0003--case-45164--native/sandy--tropical--s1691--f9225--global_default_L0p5--native_eigenprofile.dat
+[Vtk]
+Precision = Float64
+AddVelocity = true

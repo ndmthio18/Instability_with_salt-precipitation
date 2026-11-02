@@ -1,0 +1,155 @@
+{
+  "id": "closed_hydrostatic",
+  "parameters": {
+    "Grid": {
+      "Positions0": "0 0.6",
+      "Positions1": "0 0.2",
+      "Cells0": 8,
+      "Cells1": 40,
+      "Grading1": -0.98
+    },
+    "TimeLoop": {
+      "TEnd": 100,
+      "DtInitial": 10,
+      "MaxTimeStepSize": 10,
+      "OutputInterval": 100000
+    },
+    "Problem": {
+      "Name": "closed_hydrostatic",
+      "Permeability": 2.89e-11,
+      "Porosity": 0.41,
+      "Swr": 0.122,
+      "PcN": 10.8,
+      "PcAlpha": 0.000177,
+      "SweL": 0.73,
+      "KrwMualemExponent": "true",
+      "WaterLevel": 0.2499230091212796,
+      "EvaporationRate": 0,
+      "SaltDiffusivity": 1.5e-09,
+      "ReferenceViscosity": 0.0011,
+      "SaltMoleFraction": 0.0036,
+      "GravitationalAcceleration": 9.8,
+      "PureWaterDensity": "998.203",
+      "DensityLinearCoefficient": "0.670804",
+      "DensityQuadraticCoefficient": "0.373854",
+      "MolarMassH2O": "0.01801528",
+      "MolarMassNaCl": "0.05844",
+      "Amplitude": 0,
+      "WaveNumber": 1,
+      "StandardDeviationSaltMoleFraction": 0,
+      "PerturbationType": "Constant",
+      "RandomSeed": 1,
+      "EnableGravity": "true",
+      "PerturbationHeight": 0
+    },
+    "Transport": {
+      "SolubilityMoleFraction": 0.1,
+      "StopAtSolubility": "true"
+    },
+    "Vtk": {
+      "Precision": "Float64",
+      "AddVelocity": "true"
+    }
+  },
+  "expected_reason": "requested_horizon",
+  "expected_exit": 0,
+  "input_sha256": "2de7a62fac279de84a61b904f9afa53872d4fb9c4277642641ad9d3b6ac85512",
+  "wall_timeout_s": 600,
+  "executable_sha256": "d78ce5122cf69e4dee5a4d12bcc726779959f304b343246009cb45bb37e894cc",
+  "build_source_sha256": {
+    "config.h.cmake": "addc2df015faa7334b78458a92aa2cb06ac0df5662da054714ac479ca7e706f9",
+    "kiemle2023b.pc.in": "54fee13aecdcfb07004dc6b4249b68c9a9ea33b7af2136bb278c1949e4a80d86",
+    "README.md": "ef8f3fca28d26200a17fb3386fddfddfb30ad69138dfea472866cc987e9e4e61",
+    "dune.module": "edd9a0bd7703bb4aff92d568d557f008d30895081e0a68d7a3cac1969ead72de",
+    "CMakeLists.txt": "a3750056e945193f32678c7246260515ad18fae14770667b8cccedca54b9fe2e",
+    "doc/CMakeLists.txt": "4fde2ae1df1e9ded71688fd731a4ab48a5bc2035c4ad4e160e034d863b02558c",
+    "appl/CMakeLists.txt": "e4932eb4852ddaa91476d791c91d8ef7d5c13b07a6a2c81ae7033e308ae5768b",
+    "dune/CMakeLists.txt": "4e6273b47c6cd604f89c82ca3fa716391ac252dfa319e27b67fea01bee98e6a8",
+    "src/kiemle2023b.cc": "8ca429bfc299f9410723e3d83f7d876920b443869b00f5d198d038581db813ba",
+    "src/CMakeLists.txt": "7ecedb534af8c9849450955b8242ca9e137b8ad3f03c4ab0d779804093d59ffa",
+    "doc/doxygen/CMakeLists.txt": "d145d336814fca3994a64c7b916565975f7ed9bdff4986bccfe7809d7e1a5c35",
+    "cmake/modules/Kiemle2023bMacros.cmake": "7524f6919d6e280ee968a64140a3a3c006061d29aa5426c26eaafec4ff5d97a4",
+    "cmake/modules/CMakeLists.txt": "5dbd18a784411da7e200169f154d9d62b2578e1ea41e8e5c832b7f738aa2f575",
+    "appl/simpleRichardsnc/main.cc": "dc7c629220fd0f3b23a6fcb6f156537d0d1d38b376550606235aeda7729dd2b4",
+    "appl/simpleRichardsnc/params.input": "2cbfbc4c82e5016b8c6de0a998a0e7ce5f26293a60b75087a50e50fc7b128ad7",
+    "appl/simpleRichardsnc/transportdiagnostics.hh": "6fdaa494d232148e5affe63527dfb2c2677bf9f6a5f7da1e4f1551934c0384e9",
+    "appl/simpleRichardsnc/CMakeLists.txt": "5a9a763908e7053c80d637a3e60156ec6bd98e76b8d900655c68b1cba2ca1c00",
+    "appl/simpleRichardsnc/model.hh": "a65bef0f231519637ae4493a7035904f8c53bc61a09588b2a83a6eeda08c05e4",
+    "bin/eigenprofile/README.md": "4565332f7edbdd59d016cccd515fb53fd07aa692f8271f19e7f3c8a84077c270",
+    "dune/kiemle2023b/kiemle2023b.hh": "afa7958833dc5acb74a6015365481c67eb666b412f7096be26c93c7d3791a6e5",
+    "dune/kiemle2023b/CMakeLists.txt": "154ce468ad7fc60a049449ed1867df43e15e78aabcd5c8c1caa7b605f9ca0730"
+  },
+  "purpose": "small uniform 2D background and diagnostic validation; no Pilot A/B",
+  "status": "finished",
+  "started_utc": "2026-11-02T18:39:46.350894+00:00",
+  "result": {
+    "id": "closed_hydrostatic",
+    "expected_reason": "requested_horizon",
+    "expected_exit": 0,
+    "returncode": 0,
+    "wall_s": 0.5655338875949383,
+    "stop": {
+      "schema_version": 1,
+      "reason": "requested_horizon",
+      "last_accepted_time_s": 100,
+      "accepted_steps": 10,
+      "initial_diagnostics_written": true,
+      "requested_end_s": 100,
+      "surface_threshold_low_s": null,
+      "surface_threshold_high_s": null,
+      "global_threshold_low_s": null,
+      "global_threshold_high_s": null
+    },
+    "files": {
+      "stop_record.json": {
+        "bytes": 319,
+        "sha256": "ca75f3d89aa0b867b7b8c60f44535ecaafa05cf0cdcbf7dc44db93badba029b1"
+      },
+      "solver.log": {
+        "bytes": 5992,
+        "sha256": "39673dcb100430bf332e094a45d0bf092ce77bae730d06eef3321a4d0e35f697"
+      },
+      "field_profiles.csv": {
+        "bytes": 18595,
+        "sha256": "867747281315c0cbebc673dbaaaf13de3d846bc6be281ccf590f1d32ad8099e0"
+      },
+      "closed_hydrostatic_sigmatop.csv": {
+        "bytes": 1167,
+        "sha256": "7d313228e507fb3013c64b02c9a8988dd486e6b7266b33ebea53dc93af4465be"
+      },
+      "transport_metadata.json": {
+        "bytes": 983,
+        "sha256": "846e4791c26d8cb13d4765f456acdd8c315735ce6f8677eac8a62bd7a5d25aec"
+      },
+      "closed_hydrostatic-00000.vtu": {
+        "bytes": 52737,
+        "sha256": "d92de8aa33f1c73cef4e54af7ec218fbf0ec5573d618d7c701dd2208ec2ca888"
+      },
+      "transport_budget.csv": {
+        "bytes": 23406,
+        "sha256": "5ec49cddb6f68f1a3dc7ca2265c22f39dfbd8553ad4428e73d943dde4975f18b"
+      },
+      "field_checks.json": {
+        "bytes": 1625,
+        "sha256": "8dd5b1eca4b3f9b0c6ee8cf2fccf8fbac14dab406c6ca99a0764f3a2f81c2d70"
+      },
+      "params.input": {
+        "bytes": 906,
+        "sha256": "2de7a62fac279de84a61b904f9afa53872d4fb9c4277642641ad9d3b6ac85512"
+      },
+      "closed_hydrostatic-00001.vtu": {
+        "bytes": 57064,
+        "sha256": "b9c188854d5c1ea6dc740d1626331faeeed0b0e1de6936b7278920356d1f6fce"
+      },
+      "surface_events.csv": {
+        "bytes": 1764,
+        "sha256": "36ff952ba122f8ff6a230e51fd8711a7a00678d237c8bebd2cd08765890a0458"
+      },
+      "closed_hydrostatic.pvd": {
+        "bytes": 309,
+        "sha256": "e4182a59b649b4e402491b7cb739ad83599eccb40a8d4e0e2cae1a54b2eb8f30"
+      }
+    }
+  },
+  "finished_utc": "2026-11-02T18:39:46.927014+00:00"
+}

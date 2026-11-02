@@ -1,0 +1,50 @@
+{
+  "captured_utc": "2026-11-02T20:39:28.369022+00:00",
+  "status": "running_snapshot_not_final",
+  "files": {
+    "metrics.json": {
+      "bytes": 790,
+      "sha256": "6ad1cdb38c8aa2caa7066eb1ea877664c94301dce76f9d0a1b718b19ae72d496"
+    },
+    "RESULT_ZH.md": {
+      "bytes": 1981,
+      "sha256": "50c947198edd06c8026b7ecb68f1a33f8882b4a703e205752a5bddde988ffe06"
+    },
+    "watch_status.json": {
+      "bytes": 790,
+      "sha256": "6ad1cdb38c8aa2caa7066eb1ea877664c94301dce76f9d0a1b718b19ae72d496"
+    },
+    "evidence\\legacy_check.json": {
+      "bytes": 807,
+      "sha256": "5804c318ea3fd70efe00d1ce815d3b4d8c2aa5c23dc2fdae770304029d182983"
+    },
+    "evidence\\solver_pid.json": {
+      "bytes": 16,
+      "sha256": "63228b70099825582a41e99e37db4beebd9f5a70dbad83fd68c3ae115dcc8db0"
+    },
+    "evidence\\solver_tail.log": {
+      "bytes": 6047,
+      "sha256": "5c43e5062c073197c2643d81dcb19bd718025b788720431aeb37c0733087754c"
+    },
+    "evidence\\stop_record.json": {
+      "bytes": 358,
+      "sha256": "9b479823ffb92dd85491d2e0f754086152c771c0b14dc30ad87649af36c10846"
+    },
+    "evidence\\surface_events.csv": {
+      "bytes": 8431,
+      "sha256": "fefb9456827926c8566a099db98d22eae556171980b13a6f718ce88328fe1474"
+    },
+    "evidence\\transport_budget.csv": {
+      "bytes": 99832,
+      "sha256": "d93561adcfba93e2be46280107dd895f2e49dfd373de9141525ca452a18a0c87"
+    },
+    "evidence\\transport_metadata.json": {
+      "bytes": 982,
+      "sha256": "a34804046a2c9bbb693d4ccbd25889c5f6572211e8b4ef7937b0812cbcd113d6"
+    },
+    "evidence\\worker.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

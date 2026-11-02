@@ -1,0 +1,18 @@
+{
+  "checked_utc": "2026-11-02T20:39:28.997369+00:00",
+  "checks": {
+    "frozen_accounting": true,
+    "resolved_primary_293": true,
+    "supplement_84_runs_48_cases": true,
+    "remote_coverage": true,
+    "incomplete_retained": true,
+    "two_named_candidates": true,
+    "candidate_sample_density_and_validity": true,
+    "B_weak_class_preserved": true,
+    "output_hashes": true,
+    "source_hashes": true,
+    "no_simulation_in_audit_manifest": true
+  },
+  "passed": true,
+  "scope": "audit artifacts only; no transport or solver validation claimed"
+}

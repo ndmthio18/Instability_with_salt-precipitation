@@ -2,7 +2,33 @@
 
 本目录已独立为一个 Git 仓库。研究方案见
 [Option_A_Research_Plan.md](Option_A_Research_Plan.md)，当前任务是 Phase 0
-审计与 Pilot-0 准备，尚未开始新的数值试验。
+审计与 Pilot-0 准备，已完成小规模背景及诊断验证，完整 Pilot A/B 尚未启动。
+
+2026-11-02 已完成可访问范围的 Phase 0 审计：见
+[审计报告](analysis/phase0_20261102/PHASE0_AUDIT_ZH.md)、
+[输运诊断约定](analysis/phase0_20261102/TRANSPORT_DIAGNOSTIC_CONTRACT.md) 和
+[Pilot-0 候选案例](analysis/phase0_20261102/PILOT0_CANDIDATES_ZH.md)。
+运行表重现 436 条 / 253 个案例 / 293 条 resolved primary；frodo 的 320 条及
+后续 84 条已检查，cxhpc 的 116 条文件仍未核实。新增发现包括归一化守恒量、
+VTK 速度缺少 krw 因子，以及 case 38852 旧场与当前输入的密度公式冲突。
+候选为 case 36877 / 38852；尚未证明有效输运，完整 A/B 配对尚未启动。
+
+已建立 [隔离输运模型](model/transport_v1/README.md)，实现 `phi Sw x` 预算、
+共享离散面通量、表面/全域浓度阈值及停止记录。静态检查与 frodo 编译通过，
+详见 [编译报告](analysis/transport_build_20261102/BUILD_REPORT_ZH.md)。
+随后在 frodo 完成 8 项小规模背景/事件配置，结果见
+[验证报告](analysis/transport_validation_20261102/VALIDATION_REPORT_ZH.md)。
+均匀二维背景、归一化盐水收支及事件记录通过预设门槛；近零通量使用了绝对误差下限，
+不能宣称所有微弱输运信号均已分辨。垂向网格收敛、真正 1D/2D 一致性和 Pilot 可行性仍待验证。
+
+进一步完成 [14 条历史密集时序分析](analysis/dense_history_20261102/REPORT_ZH.md)：
+覆盖 10 个物理案例、1,414 帧。输入—字段一致性和时间轴修复通过；首次观测越界前，
+三个上部控制体库存均随保存时间增加。case 36877 模态 60 虽有约 3.9 倍 std 放大，
+末帧 sigma 仅为表面均值的 0.0066%。现有数据支持早期富集/扰动诊断，尚不足以识别
+相对于无扰动背景的额外再分配；本次只做后处理，没有启动新模拟。项目另行进行的
+600×200 无外加扰动试算已正常结束，见 `analysis/unperturbed_36877_20261102/RESULT_ZH.md`。
+高渗透率 case 42929 的延长无扰动试算正在进行；注册输入和阶段快照位于
+`analysis/highk_unperturbed_42929_20261102/`，快照不代表最终结果。
 
 ## 仓库边界
 
@@ -16,8 +42,9 @@
 | 正式合作稿和 11 月 1 日报告源文件 | 独立 Overleaf 仓库，定位见 `PAPER1_REUSE.md` |
 
 本仓库不是父仓库的分支或子模块。父仓库忽略整个 `paper/2/`，因此 Paper 2
-的修改不会进入 Paper 1 的提交。本仓库已建立本地历史，尚未配置独立远程；
-推送 Paper 1 不会备份 Paper 2，之后需为 Paper 2 配置自己的远程仓库。
+的修改不会进入 Paper 1 的提交。按用户指定，本仓库的独立 GitHub 远程为
+`git@github.com:ndmthio18/surrogate_model.git`，远程名 `origin`，工作分支为
+`codex/paper2-main`。推送 Paper 1 不会备份 Paper 2；本仓库需单独推送。
 
 ## 准备 Paper 1 输入数据
 

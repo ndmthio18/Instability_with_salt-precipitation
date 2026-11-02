@@ -1,0 +1,59 @@
+{
+  "id": "r01_c34596_n14",
+  "run_key": "frodo:diag/runs_a/shard-002/0002--case-34596--native",
+  "case_id": 34596,
+  "status": "structural_review_required",
+  "checks": {
+    "frozen_sha/case_manifest.json": true,
+    "frozen_sha/run_meta.json": true,
+    "frozen_sha/sandy--arid--s1416--f9853--global_default_L0p5--native.input": true,
+    "frozen_sha/sandy--arid--s1416--f9853--global_default_L0p5--native.pvd": true,
+    "frozen_sha/sandy--arid--s1416--f9853--global_default_L0p5--native_eigenprofile.dat": true,
+    "input_matches_audit": true,
+    "sigmatop_hash": true,
+    "101_monotonic_frames": true,
+    "input_grid_shape": true,
+    "tensor_volume": true,
+    "density_matches_explicit_input": true,
+    "saturation_matches_input": true,
+    "field_top_statistics_match_record": true,
+    "frame_time_matches_diagnostics": false,
+    "independent_quadrature": true
+  },
+  "frames": 101,
+  "points_per_frame": 120801,
+  "bytes_read": 2303130894,
+  "actual_cuts": [
+    {
+      "region": "upper_0.9",
+      "requested_z_over_H": 0.9,
+      "actual_z_over_H": 0.8995154060206101
+    },
+    {
+      "region": "upper_0.75",
+      "requested_z_over_H": 0.75,
+      "actual_z_over_H": 0.7522817588955174
+    },
+    {
+      "region": "upper_0.5",
+      "requested_z_over_H": 0.5,
+      "actual_z_over_H": 0.5005319056786239
+    }
+  ],
+  "max_density_error_kg_m3": 5.9969806898152456e-12,
+  "max_legacy_density_error_kg_m3": 1.9571319279581587,
+  "max_sw_error": 8.881784197001252e-16,
+  "max_sigmatop_mean_error": 4.414524301665779e-14,
+  "max_sigmatop_sigma_error": 1.9854346404522393e-17,
+  "max_quadrature_relative_error": 2.3765761045612045e-16,
+  "small_file_sha256": {
+    "case_manifest.json": "2d58a1cdc756311ac1f536293b08f5c3fcc73a9cdbaea87b7c1983bbb98b6067",
+    "run_meta.json": "06420a7a4d74704901e9b5e0f597ac3feb597e7cb98d662a4e18890575caedce",
+    "sandy--arid--s1416--f9853--global_default_L0p5--native.input": "863144f45ee3fc5c73b4d7cdefe736f97ffffd24aa4f557f968f39b5c158dca1",
+    "sandy--arid--s1416--f9853--global_default_L0p5--native.pvd": "af6c06c0d9a1263c17cb183994b89c90f630758f3fc6d621c8818e38d4cfd20f",
+    "sandy--arid--s1416--f9853--global_default_L0p5--native_eigenprofile.dat": "74f030421cb3c502103a1d5d8918eaec7c6b7b4fabb9646b069bef72e51aca4f"
+  },
+  "sigmatop_sha256": "7be6ad6e567d633b3e1314775b7c54c6a7acd3b05db886f2da37abc82bf5a39c",
+  "historical_executable_identity": "not established",
+  "physical_interpretation": "inventory-derived net exchange; no independent face-flux closure, no unperturbed reference"
+}

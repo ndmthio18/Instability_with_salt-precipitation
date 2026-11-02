@@ -1,0 +1,29 @@
+{
+  "completed": true,
+  "returncode": 0,
+  "stop": {
+    "schema_version": 1,
+    "reason": "requested_horizon",
+    "last_accepted_time_s": 136423.0637723484,
+    "accepted_steps": 600,
+    "initial_diagnostics_written": true,
+    "requested_end_s": 136423.0637723484,
+    "surface_threshold_low_s": null,
+    "surface_threshold_high_s": null,
+    "global_threshold_low_s": null,
+    "global_threshold_high_s": null
+  },
+  "last_time_s": 136423.0637723484,
+  "max_sigma": 1.6168187273070779e-13,
+  "last_sigma": 1.6168187273070779e-13,
+  "last_top_max": 0.01942554041885793,
+  "last_top_mean": 0.019425540418335357,
+  "visibility_threshold": 1e-08,
+  "first_sustained_visible_s": null,
+  "max_relative_inventory_residual": {
+    "salt": 4.579947988679766e-12,
+    "water": 5.339357773872711e-12
+  },
+  "legacy_detection_s": 50394.334,
+  "wall_s": 2492.6874599196017
+}

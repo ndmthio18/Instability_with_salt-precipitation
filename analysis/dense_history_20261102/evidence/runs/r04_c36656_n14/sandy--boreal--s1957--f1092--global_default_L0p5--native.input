@@ -1,0 +1,45 @@
+# Auto-generated from parameter_database; policy=native
+[Grid]
+Positions0 = 0 0.6000000000000001
+Positions1 = 0 0.2
+Cells0 = 600
+Cells1 = 200
+Grading1 = -0.98
+
+[TimeLoop]
+TEnd = 29613.77985556959
+DtInitial = 74.03444963892397
+MaxTimeStepSize = 74.03444963892397
+OutputInterval = 4
+
+[Problem]
+Name = sandy--boreal--s1957--f1092--global_default_L0p5--native
+Permeability = 1.216107511530014e-11
+Porosity = 0.413325261765585
+Swr = 0.1291529633638763
+PcN = 2.87506247766391
+PcAlpha = 0.0003037906089837029
+SweL = -0.8193473167390987
+KrwMualemExponent = true
+WaterLevel = 0.7081300448641263
+EvaporationRate = 1.032959669649061e-08
+SaltDiffusivity = 1.5e-09
+ReferenceViscosity = 0.0011
+SaltMoleFraction = 0.0036
+GravitationalAcceleration = 9.800000000000001
+PureWaterDensity = 998.203
+DensityLinearCoefficient = 0.670804
+DensityQuadraticCoefficient = 0.373854
+MolarMassH2O = 0.01801528
+MolarMassNaCl = 0.05844
+Amplitude = 1e-06
+WaveNumber = 14
+StandardDeviationSaltMoleFraction = 1e-06
+PerturbationType = Eigenprofile
+RandomSeed = 1
+EnableGravity = true
+PerturbationHeight = 0
+EigenprofilePath = /temp/zhixin/diag/runs_a/shard-001/0001--case-36656--native/sandy--boreal--s1957--f1092--global_default_L0p5--native_eigenprofile.dat
+[Vtk]
+Precision = Float64
+AddVelocity = true

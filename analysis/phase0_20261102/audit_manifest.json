@@ -1,0 +1,26 @@
+{
+  "input_sha256": {
+    "D:\\3OutputFile\\1Research\\Article\\22Surrogate_model\\paper\\2\\data\\external\\paper1\\158395f3d25a\\handoff\\dumux_onsets.csv": "70d611f2e343d1f68915ce16b9a3c5ed5f6ec66f5f55f03692e8c20103d347b3",
+    "D:\\3OutputFile\\1Research\\Article\\22Surrogate_model\\paper\\2\\data\\external\\paper1\\158395f3d25a\\handoff\\cases.csv": "f75e11336674ce92804a55f64572b9a954adc997f1722800229191c4596d15b7",
+    "D:\\3OutputFile\\1Research\\Article\\22Surrogate_model\\paper\\2\\data\\external\\paper1\\158395f3d25a\\handoff\\observations.csv": "bd13ca41330d722aa12fc0aeb768654dd7e77eb22b307e7373025115b9146e7f",
+    "D:\\3OutputFile\\1Research\\Article\\22Surrogate_model\\paper\\2\\data\\external\\paper1\\158395f3d25a\\handoff\\seeded_modes.csv": "f147118f19333a620ebb4a9e7c5ecdcf9d93618951eb7fe41785007b68aee7be",
+    "D:\\3OutputFile\\1Research\\Article\\22Surrogate_model\\paper\\1\\analysis_manifest.json": "cbd0685c5ab63803c31198c8a6c19eb2aa203c2b3aef9ce3555127ce654a1b0c",
+    "D:\\3OutputFile\\1Research\\Article\\22Surrogate_model\\paper\\1\\protocol_contract.md": "419e3b6042bdeff761b6ab3f40e8a67d88d5aed44cf27b6a672cc1a25063dfa3",
+    "D:\\3OutputFile\\1Research\\Article\\22Surrogate_model\\paper\\2\\analysis\\phase0_20261102\\remote_frodo_inventory.json": "49226a613c8961236bca92685786e9415437267e48c176413ade92318bb5184a",
+    "D:\\3OutputFile\\1Research\\Article\\22Surrogate_model\\paper\\2\\analysis\\phase0_20261102\\candidate_field_evidence.json": "a1b9fab0be568602352fb74ab4f53dfc2eae214b9e90ac31d897155761979471"
+  },
+  "script_sha256": {
+    "audit_phase0.py": "0afaaaa57e73be12e653282a9ab7fa5ac7c477ccdbe01e26bc3d956c3c7e7cdd",
+    "collect_phase0_remote.py": "5aac96175e28d5003caf45ed204fd834f1c8cb9b2a2521faaa15b3ffaa0599d9",
+    "inspect_phase0_candidates.py": "6f26269e820cd6e388b6a3255c475981cd6f5f909e43f25a55f77af6ec5ff092"
+  },
+  "output_sha256": {
+    "pilot_screening.csv": "bed321aaf8e2ef6ac242c697bad5a203fa3c48df08b91f4ba579b73be5055a3b",
+    "run_audit.csv": "5c22a055c44a1635d3c4e5295b6e1b8083651cb9960a41955e2ab4f91d79065d",
+    "wp1_supplement_audit.csv": "20ff9b6e21e00eba769defb908a62dea0d8bdfc55a055e9a930c8d795ad78834",
+    "pilot_candidates.json": "c839c163e942fce1dad3051387d662a70d3139bee50c72ff4cceb429e4365027",
+    "summary.json": "e3bba9376d4a570fa7e666e2a2385aee9e8c81119d1a0c3205a917d8c334112d"
+  },
+  "source_lock_unchanged": true,
+  "new_simulations": false
+}

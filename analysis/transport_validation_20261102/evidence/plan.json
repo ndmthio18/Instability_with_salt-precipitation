@@ -1,0 +1,543 @@
+{
+  "created_utc": "2026-11-02T18:39:42.594829+00:00",
+  "scope": "small uniform 2D background and diagnostic validation; no Pilot A/B",
+  "constant_source": "D:\\3OutputFile\\1Research\\Article\\22Surrogate_model\\code\\compare_onset_vs_paper_2025.py",
+  "constant_source_sha256": "c9d11f95130fa259a2339fe291805d7e5d4925c2a69e3c1747470b64318e9d1a",
+  "constants": {
+    "phi": 0.41,
+    "K": 2.89e-11,
+    "D": 1.5e-09,
+    "vg_n": 10.8,
+    "Swr": 0.122,
+    "vg_L": 0.73,
+    "p_B": 2464.0,
+    "alpha": 0.000177,
+    "E": 1.08e-08,
+    "H": 0.2,
+    "ell": 0.6,
+    "g": 9.8,
+    "x0": 0.0036,
+    "mu_ref": 0.0011
+  },
+  "reference_density_kg_m3": 1006.0241044335427,
+  "fluid_source": "phase0 pilot_candidates.json actual input fluid constants only; no A/B case simulations",
+  "fluid_source_sha256": "c839c163e942fce1dad3051387d662a70d3139bee50c72ff4cceb429e4365027",
+  "executable": {
+    "path": "/temp/zhixin/paper2_transport_20261102/build-gcc-release/appl/simpleRichardsnc/paper2_transport",
+    "size": 1615760,
+    "sha256": "d78ce5122cf69e4dee5a4d12bcc726779959f304b343246009cb45bb37e894cc"
+  },
+  "build_source_sha256": {
+    "config.h.cmake": "addc2df015faa7334b78458a92aa2cb06ac0df5662da054714ac479ca7e706f9",
+    "kiemle2023b.pc.in": "54fee13aecdcfb07004dc6b4249b68c9a9ea33b7af2136bb278c1949e4a80d86",
+    "README.md": "ef8f3fca28d26200a17fb3386fddfddfb30ad69138dfea472866cc987e9e4e61",
+    "dune.module": "edd9a0bd7703bb4aff92d568d557f008d30895081e0a68d7a3cac1969ead72de",
+    "CMakeLists.txt": "a3750056e945193f32678c7246260515ad18fae14770667b8cccedca54b9fe2e",
+    "doc/CMakeLists.txt": "4fde2ae1df1e9ded71688fd731a4ab48a5bc2035c4ad4e160e034d863b02558c",
+    "appl/CMakeLists.txt": "e4932eb4852ddaa91476d791c91d8ef7d5c13b07a6a2c81ae7033e308ae5768b",
+    "dune/CMakeLists.txt": "4e6273b47c6cd604f89c82ca3fa716391ac252dfa319e27b67fea01bee98e6a8",
+    "src/kiemle2023b.cc": "8ca429bfc299f9410723e3d83f7d876920b443869b00f5d198d038581db813ba",
+    "src/CMakeLists.txt": "7ecedb534af8c9849450955b8242ca9e137b8ad3f03c4ab0d779804093d59ffa",
+    "doc/doxygen/CMakeLists.txt": "d145d336814fca3994a64c7b916565975f7ed9bdff4986bccfe7809d7e1a5c35",
+    "cmake/modules/Kiemle2023bMacros.cmake": "7524f6919d6e280ee968a64140a3a3c006061d29aa5426c26eaafec4ff5d97a4",
+    "cmake/modules/CMakeLists.txt": "5dbd18a784411da7e200169f154d9d62b2578e1ea41e8e5c832b7f738aa2f575",
+    "appl/simpleRichardsnc/main.cc": "dc7c629220fd0f3b23a6fcb6f156537d0d1d38b376550606235aeda7729dd2b4",
+    "appl/simpleRichardsnc/params.input": "2cbfbc4c82e5016b8c6de0a998a0e7ce5f26293a60b75087a50e50fc7b128ad7",
+    "appl/simpleRichardsnc/transportdiagnostics.hh": "6fdaa494d232148e5affe63527dfb2c2677bf9f6a5f7da1e4f1551934c0384e9",
+    "appl/simpleRichardsnc/CMakeLists.txt": "5a9a763908e7053c80d637a3e60156ec6bd98e76b8d900655c68b1cba2ca1c00",
+    "appl/simpleRichardsnc/model.hh": "a65bef0f231519637ae4493a7035904f8c53bc61a09588b2a83a6eeda08c05e4",
+    "bin/eigenprofile/README.md": "4565332f7edbdd59d016cccd515fb53fd07aa692f8271f19e7f3c8a84077c270",
+    "dune/kiemle2023b/kiemle2023b.hh": "afa7958833dc5acb74a6015365481c67eb666b412f7096be26c93c7d3791a6e5",
+    "dune/kiemle2023b/CMakeLists.txt": "154ce468ad7fc60a049449ed1867df43e15e78aabcd5c8c1caa7b605f9ca0730"
+  },
+  "runs": [
+    {
+      "id": "closed_hydrostatic",
+      "input": "[Grid]\nPositions0 = 0 0.6\nPositions1 = 0 0.2\nCells0 = 8\nCells1 = 40\nGrading1 = -0.98\n\n[TimeLoop]\nTEnd = 100\nDtInitial = 10\nMaxTimeStepSize = 10\nOutputInterval = 100000\n\n[Problem]\nName = closed_hydrostatic\nPermeability = 2.89e-11\nPorosity = 0.41\nSwr = 0.122\nPcN = 10.8\nPcAlpha = 0.000177\nSweL = 0.73\nKrwMualemExponent = true\nWaterLevel = 0.2499230091212796\nEvaporationRate = 0\nSaltDiffusivity = 1.5e-09\nReferenceViscosity = 0.0011\nSaltMoleFraction = 0.0036\nGravitationalAcceleration = 9.8\nPureWaterDensity = 998.203\nDensityLinearCoefficient = 0.670804\nDensityQuadraticCoefficient = 0.373854\nMolarMassH2O = 0.01801528\nMolarMassNaCl = 0.05844\nAmplitude = 0\nWaveNumber = 1\nStandardDeviationSaltMoleFraction = 0\nPerturbationType = Constant\nRandomSeed = 1\nEnableGravity = true\nPerturbationHeight = 0\n\n[Transport]\nSolubilityMoleFraction = 0.1\nStopAtSolubility = true\n\n[Vtk]\nPrecision = Float64\nAddVelocity = true\n",
+      "parameters": {
+        "Grid": {
+          "Positions0": "0 0.6",
+          "Positions1": "0 0.2",
+          "Cells0": 8,
+          "Cells1": 40,
+          "Grading1": -0.98
+        },
+        "TimeLoop": {
+          "TEnd": 100,
+          "DtInitial": 10,
+          "MaxTimeStepSize": 10,
+          "OutputInterval": 100000
+        },
+        "Problem": {
+          "Name": "closed_hydrostatic",
+          "Permeability": 2.89e-11,
+          "Porosity": 0.41,
+          "Swr": 0.122,
+          "PcN": 10.8,
+          "PcAlpha": 0.000177,
+          "SweL": 0.73,
+          "KrwMualemExponent": "true",
+          "WaterLevel": 0.2499230091212796,
+          "EvaporationRate": 0,
+          "SaltDiffusivity": 1.5e-09,
+          "ReferenceViscosity": 0.0011,
+          "SaltMoleFraction": 0.0036,
+          "GravitationalAcceleration": 9.8,
+          "PureWaterDensity": "998.203",
+          "DensityLinearCoefficient": "0.670804",
+          "DensityQuadraticCoefficient": "0.373854",
+          "MolarMassH2O": "0.01801528",
+          "MolarMassNaCl": "0.05844",
+          "Amplitude": 0,
+          "WaveNumber": 1,
+          "StandardDeviationSaltMoleFraction": 0,
+          "PerturbationType": "Constant",
+          "RandomSeed": 1,
+          "EnableGravity": "true",
+          "PerturbationHeight": 0
+        },
+        "Transport": {
+          "SolubilityMoleFraction": 0.1,
+          "StopAtSolubility": "true"
+        },
+        "Vtk": {
+          "Precision": "Float64",
+          "AddVelocity": "true"
+        }
+      },
+      "expected_reason": "requested_horizon",
+      "expected_exit": 0,
+      "input_sha256": "2de7a62fac279de84a61b904f9afa53872d4fb9c4277642641ad9d3b6ac85512",
+      "wall_timeout_s": 600
+    },
+    {
+      "id": "evap_nx8_dt20",
+      "input": "[Grid]\nPositions0 = 0 0.6\nPositions1 = 0 0.2\nCells0 = 8\nCells1 = 40\nGrading1 = -0.98\n\n[TimeLoop]\nTEnd = 2000\nDtInitial = 20\nMaxTimeStepSize = 20\nOutputInterval = 100000\n\n[Problem]\nName = evap_nx8_dt20\nPermeability = 2.89e-11\nPorosity = 0.41\nSwr = 0.122\nPcN = 10.8\nPcAlpha = 0.000177\nSweL = 0.73\nKrwMualemExponent = true\nWaterLevel = 0.2499230091212796\nEvaporationRate = 1.08e-08\nSaltDiffusivity = 1.5e-09\nReferenceViscosity = 0.0011\nSaltMoleFraction = 0.0036\nGravitationalAcceleration = 9.8\nPureWaterDensity = 998.203\nDensityLinearCoefficient = 0.670804\nDensityQuadraticCoefficient = 0.373854\nMolarMassH2O = 0.01801528\nMolarMassNaCl = 0.05844\nAmplitude = 0\nWaveNumber = 1\nStandardDeviationSaltMoleFraction = 0\nPerturbationType = Constant\nRandomSeed = 1\nEnableGravity = true\nPerturbationHeight = 0\n\n[Transport]\nSolubilityMoleFraction = 0.1\nStopAtSolubility = true\n\n[Vtk]\nPrecision = Float64\nAddVelocity = true\n",
+      "parameters": {
+        "Grid": {
+          "Positions0": "0 0.6",
+          "Positions1": "0 0.2",
+          "Cells0": 8,
+          "Cells1": 40,
+          "Grading1": -0.98
+        },
+        "TimeLoop": {
+          "TEnd": 2000,
+          "DtInitial": 20,
+          "MaxTimeStepSize": 20,
+          "OutputInterval": 100000
+        },
+        "Problem": {
+          "Name": "evap_nx8_dt20",
+          "Permeability": 2.89e-11,
+          "Porosity": 0.41,
+          "Swr": 0.122,
+          "PcN": 10.8,
+          "PcAlpha": 0.000177,
+          "SweL": 0.73,
+          "KrwMualemExponent": "true",
+          "WaterLevel": 0.2499230091212796,
+          "EvaporationRate": 1.08e-08,
+          "SaltDiffusivity": 1.5e-09,
+          "ReferenceViscosity": 0.0011,
+          "SaltMoleFraction": 0.0036,
+          "GravitationalAcceleration": 9.8,
+          "PureWaterDensity": "998.203",
+          "DensityLinearCoefficient": "0.670804",
+          "DensityQuadraticCoefficient": "0.373854",
+          "MolarMassH2O": "0.01801528",
+          "MolarMassNaCl": "0.05844",
+          "Amplitude": 0,
+          "WaveNumber": 1,
+          "StandardDeviationSaltMoleFraction": 0,
+          "PerturbationType": "Constant",
+          "RandomSeed": 1,
+          "EnableGravity": "true",
+          "PerturbationHeight": 0
+        },
+        "Transport": {
+          "SolubilityMoleFraction": 0.1,
+          "StopAtSolubility": "true"
+        },
+        "Vtk": {
+          "Precision": "Float64",
+          "AddVelocity": "true"
+        }
+      },
+      "expected_reason": "requested_horizon",
+      "expected_exit": 0,
+      "input_sha256": "9e3c693ddbeef7b842b4a80d48e8370c5b194c1221beecc542a7f0532f08f638",
+      "wall_timeout_s": 600
+    },
+    {
+      "id": "evap_nx16_dt20",
+      "input": "[Grid]\nPositions0 = 0 0.6\nPositions1 = 0 0.2\nCells0 = 16\nCells1 = 40\nGrading1 = -0.98\n\n[TimeLoop]\nTEnd = 2000\nDtInitial = 20\nMaxTimeStepSize = 20\nOutputInterval = 100000\n\n[Problem]\nName = evap_nx16_dt20\nPermeability = 2.89e-11\nPorosity = 0.41\nSwr = 0.122\nPcN = 10.8\nPcAlpha = 0.000177\nSweL = 0.73\nKrwMualemExponent = true\nWaterLevel = 0.2499230091212796\nEvaporationRate = 1.08e-08\nSaltDiffusivity = 1.5e-09\nReferenceViscosity = 0.0011\nSaltMoleFraction = 0.0036\nGravitationalAcceleration = 9.8\nPureWaterDensity = 998.203\nDensityLinearCoefficient = 0.670804\nDensityQuadraticCoefficient = 0.373854\nMolarMassH2O = 0.01801528\nMolarMassNaCl = 0.05844\nAmplitude = 0\nWaveNumber = 1\nStandardDeviationSaltMoleFraction = 0\nPerturbationType = Constant\nRandomSeed = 1\nEnableGravity = true\nPerturbationHeight = 0\n\n[Transport]\nSolubilityMoleFraction = 0.1\nStopAtSolubility = true\n\n[Vtk]\nPrecision = Float64\nAddVelocity = true\n",
+      "parameters": {
+        "Grid": {
+          "Positions0": "0 0.6",
+          "Positions1": "0 0.2",
+          "Cells0": 16,
+          "Cells1": 40,
+          "Grading1": -0.98
+        },
+        "TimeLoop": {
+          "TEnd": 2000,
+          "DtInitial": 20,
+          "MaxTimeStepSize": 20,
+          "OutputInterval": 100000
+        },
+        "Problem": {
+          "Name": "evap_nx16_dt20",
+          "Permeability": 2.89e-11,
+          "Porosity": 0.41,
+          "Swr": 0.122,
+          "PcN": 10.8,
+          "PcAlpha": 0.000177,
+          "SweL": 0.73,
+          "KrwMualemExponent": "true",
+          "WaterLevel": 0.2499230091212796,
+          "EvaporationRate": 1.08e-08,
+          "SaltDiffusivity": 1.5e-09,
+          "ReferenceViscosity": 0.0011,
+          "SaltMoleFraction": 0.0036,
+          "GravitationalAcceleration": 9.8,
+          "PureWaterDensity": "998.203",
+          "DensityLinearCoefficient": "0.670804",
+          "DensityQuadraticCoefficient": "0.373854",
+          "MolarMassH2O": "0.01801528",
+          "MolarMassNaCl": "0.05844",
+          "Amplitude": 0,
+          "WaveNumber": 1,
+          "StandardDeviationSaltMoleFraction": 0,
+          "PerturbationType": "Constant",
+          "RandomSeed": 1,
+          "EnableGravity": "true",
+          "PerturbationHeight": 0
+        },
+        "Transport": {
+          "SolubilityMoleFraction": 0.1,
+          "StopAtSolubility": "true"
+        },
+        "Vtk": {
+          "Precision": "Float64",
+          "AddVelocity": "true"
+        }
+      },
+      "expected_reason": "requested_horizon",
+      "expected_exit": 0,
+      "input_sha256": "53d6073a6d807fea151d90df8fd12eb6c4ce4c7539eceb2ea8d4cce48ffc602c",
+      "wall_timeout_s": 600
+    },
+    {
+      "id": "evap_nx8_dt10",
+      "input": "[Grid]\nPositions0 = 0 0.6\nPositions1 = 0 0.2\nCells0 = 8\nCells1 = 40\nGrading1 = -0.98\n\n[TimeLoop]\nTEnd = 2000\nDtInitial = 10\nMaxTimeStepSize = 10\nOutputInterval = 100000\n\n[Problem]\nName = evap_nx8_dt10\nPermeability = 2.89e-11\nPorosity = 0.41\nSwr = 0.122\nPcN = 10.8\nPcAlpha = 0.000177\nSweL = 0.73\nKrwMualemExponent = true\nWaterLevel = 0.2499230091212796\nEvaporationRate = 1.08e-08\nSaltDiffusivity = 1.5e-09\nReferenceViscosity = 0.0011\nSaltMoleFraction = 0.0036\nGravitationalAcceleration = 9.8\nPureWaterDensity = 998.203\nDensityLinearCoefficient = 0.670804\nDensityQuadraticCoefficient = 0.373854\nMolarMassH2O = 0.01801528\nMolarMassNaCl = 0.05844\nAmplitude = 0\nWaveNumber = 1\nStandardDeviationSaltMoleFraction = 0\nPerturbationType = Constant\nRandomSeed = 1\nEnableGravity = true\nPerturbationHeight = 0\n\n[Transport]\nSolubilityMoleFraction = 0.1\nStopAtSolubility = true\n\n[Vtk]\nPrecision = Float64\nAddVelocity = true\n",
+      "parameters": {
+        "Grid": {
+          "Positions0": "0 0.6",
+          "Positions1": "0 0.2",
+          "Cells0": 8,
+          "Cells1": 40,
+          "Grading1": -0.98
+        },
+        "TimeLoop": {
+          "TEnd": 2000,
+          "DtInitial": 10,
+          "MaxTimeStepSize": 10,
+          "OutputInterval": 100000
+        },
+        "Problem": {
+          "Name": "evap_nx8_dt10",
+          "Permeability": 2.89e-11,
+          "Porosity": 0.41,
+          "Swr": 0.122,
+          "PcN": 10.8,
+          "PcAlpha": 0.000177,
+          "SweL": 0.73,
+          "KrwMualemExponent": "true",
+          "WaterLevel": 0.2499230091212796,
+          "EvaporationRate": 1.08e-08,
+          "SaltDiffusivity": 1.5e-09,
+          "ReferenceViscosity": 0.0011,
+          "SaltMoleFraction": 0.0036,
+          "GravitationalAcceleration": 9.8,
+          "PureWaterDensity": "998.203",
+          "DensityLinearCoefficient": "0.670804",
+          "DensityQuadraticCoefficient": "0.373854",
+          "MolarMassH2O": "0.01801528",
+          "MolarMassNaCl": "0.05844",
+          "Amplitude": 0,
+          "WaveNumber": 1,
+          "StandardDeviationSaltMoleFraction": 0,
+          "PerturbationType": "Constant",
+          "RandomSeed": 1,
+          "EnableGravity": "true",
+          "PerturbationHeight": 0
+        },
+        "Transport": {
+          "SolubilityMoleFraction": 0.1,
+          "StopAtSolubility": "true"
+        },
+        "Vtk": {
+          "Precision": "Float64",
+          "AddVelocity": "true"
+        }
+      },
+      "expected_reason": "requested_horizon",
+      "expected_exit": 0,
+      "input_sha256": "e8f342470b765b0e7ed906a54c6087f0cbea01902c7abb486801a20bbeca3839",
+      "wall_timeout_s": 600
+    },
+    {
+      "id": "threshold_dt2",
+      "input": "[Grid]\nPositions0 = 0 0.6\nPositions1 = 0 0.2\nCells0 = 8\nCells1 = 40\nGrading1 = -0.98\n\n[TimeLoop]\nTEnd = 2000\nDtInitial = 2\nMaxTimeStepSize = 2\nOutputInterval = 100000\n\n[Problem]\nName = threshold_dt2\nPermeability = 2.89e-11\nPorosity = 0.41\nSwr = 0.122\nPcN = 10.8\nPcAlpha = 0.000177\nSweL = 0.73\nKrwMualemExponent = true\nWaterLevel = 0.2499230091212796\nEvaporationRate = 1.08e-08\nSaltDiffusivity = 1.5e-09\nReferenceViscosity = 0.0011\nSaltMoleFraction = 0.09999\nGravitationalAcceleration = 9.8\nPureWaterDensity = 998.203\nDensityLinearCoefficient = 0.670804\nDensityQuadraticCoefficient = 0.373854\nMolarMassH2O = 0.01801528\nMolarMassNaCl = 0.05844\nAmplitude = 0\nWaveNumber = 1\nStandardDeviationSaltMoleFraction = 0\nPerturbationType = Constant\nRandomSeed = 1\nEnableGravity = true\nPerturbationHeight = 0\n\n[Transport]\nSolubilityMoleFraction = 0.1\nStopAtSolubility = true\n\n[Vtk]\nPrecision = Float64\nAddVelocity = true\n",
+      "parameters": {
+        "Grid": {
+          "Positions0": "0 0.6",
+          "Positions1": "0 0.2",
+          "Cells0": 8,
+          "Cells1": 40,
+          "Grading1": -0.98
+        },
+        "TimeLoop": {
+          "TEnd": 2000,
+          "DtInitial": 2,
+          "MaxTimeStepSize": 2,
+          "OutputInterval": 100000
+        },
+        "Problem": {
+          "Name": "threshold_dt2",
+          "Permeability": 2.89e-11,
+          "Porosity": 0.41,
+          "Swr": 0.122,
+          "PcN": 10.8,
+          "PcAlpha": 0.000177,
+          "SweL": 0.73,
+          "KrwMualemExponent": "true",
+          "WaterLevel": 0.2499230091212796,
+          "EvaporationRate": 1.08e-08,
+          "SaltDiffusivity": 1.5e-09,
+          "ReferenceViscosity": 0.0011,
+          "SaltMoleFraction": 0.09999,
+          "GravitationalAcceleration": 9.8,
+          "PureWaterDensity": "998.203",
+          "DensityLinearCoefficient": "0.670804",
+          "DensityQuadraticCoefficient": "0.373854",
+          "MolarMassH2O": "0.01801528",
+          "MolarMassNaCl": "0.05844",
+          "Amplitude": 0,
+          "WaveNumber": 1,
+          "StandardDeviationSaltMoleFraction": 0,
+          "PerturbationType": "Constant",
+          "RandomSeed": 1,
+          "EnableGravity": "true",
+          "PerturbationHeight": 0
+        },
+        "Transport": {
+          "SolubilityMoleFraction": 0.1,
+          "StopAtSolubility": "true"
+        },
+        "Vtk": {
+          "Precision": "Float64",
+          "AddVelocity": "true"
+        }
+      },
+      "expected_reason": "surface_solubility_threshold",
+      "expected_exit": 0,
+      "input_sha256": "f6b12bf5adc0b024ffa0684eeb701f24863024553ab1d21a5fe24044971268c4",
+      "wall_timeout_s": 600
+    },
+    {
+      "id": "threshold_dt1",
+      "input": "[Grid]\nPositions0 = 0 0.6\nPositions1 = 0 0.2\nCells0 = 8\nCells1 = 40\nGrading1 = -0.98\n\n[TimeLoop]\nTEnd = 2000\nDtInitial = 1\nMaxTimeStepSize = 1\nOutputInterval = 100000\n\n[Problem]\nName = threshold_dt1\nPermeability = 2.89e-11\nPorosity = 0.41\nSwr = 0.122\nPcN = 10.8\nPcAlpha = 0.000177\nSweL = 0.73\nKrwMualemExponent = true\nWaterLevel = 0.2499230091212796\nEvaporationRate = 1.08e-08\nSaltDiffusivity = 1.5e-09\nReferenceViscosity = 0.0011\nSaltMoleFraction = 0.09999\nGravitationalAcceleration = 9.8\nPureWaterDensity = 998.203\nDensityLinearCoefficient = 0.670804\nDensityQuadraticCoefficient = 0.373854\nMolarMassH2O = 0.01801528\nMolarMassNaCl = 0.05844\nAmplitude = 0\nWaveNumber = 1\nStandardDeviationSaltMoleFraction = 0\nPerturbationType = Constant\nRandomSeed = 1\nEnableGravity = true\nPerturbationHeight = 0\n\n[Transport]\nSolubilityMoleFraction = 0.1\nStopAtSolubility = true\n\n[Vtk]\nPrecision = Float64\nAddVelocity = true\n",
+      "parameters": {
+        "Grid": {
+          "Positions0": "0 0.6",
+          "Positions1": "0 0.2",
+          "Cells0": 8,
+          "Cells1": 40,
+          "Grading1": -0.98
+        },
+        "TimeLoop": {
+          "TEnd": 2000,
+          "DtInitial": 1,
+          "MaxTimeStepSize": 1,
+          "OutputInterval": 100000
+        },
+        "Problem": {
+          "Name": "threshold_dt1",
+          "Permeability": 2.89e-11,
+          "Porosity": 0.41,
+          "Swr": 0.122,
+          "PcN": 10.8,
+          "PcAlpha": 0.000177,
+          "SweL": 0.73,
+          "KrwMualemExponent": "true",
+          "WaterLevel": 0.2499230091212796,
+          "EvaporationRate": 1.08e-08,
+          "SaltDiffusivity": 1.5e-09,
+          "ReferenceViscosity": 0.0011,
+          "SaltMoleFraction": 0.09999,
+          "GravitationalAcceleration": 9.8,
+          "PureWaterDensity": "998.203",
+          "DensityLinearCoefficient": "0.670804",
+          "DensityQuadraticCoefficient": "0.373854",
+          "MolarMassH2O": "0.01801528",
+          "MolarMassNaCl": "0.05844",
+          "Amplitude": 0,
+          "WaveNumber": 1,
+          "StandardDeviationSaltMoleFraction": 0,
+          "PerturbationType": "Constant",
+          "RandomSeed": 1,
+          "EnableGravity": "true",
+          "PerturbationHeight": 0
+        },
+        "Transport": {
+          "SolubilityMoleFraction": 0.1,
+          "StopAtSolubility": "true"
+        },
+        "Vtk": {
+          "Precision": "Float64",
+          "AddVelocity": "true"
+        }
+      },
+      "expected_reason": "surface_solubility_threshold",
+      "expected_exit": 0,
+      "input_sha256": "3e4fe8972e2887985e69aea9a67ebeb07e02256379cbbf925e91aedc4686bc3f",
+      "wall_timeout_s": 600
+    },
+    {
+      "id": "threshold_initial",
+      "input": "[Grid]\nPositions0 = 0 0.6\nPositions1 = 0 0.2\nCells0 = 8\nCells1 = 40\nGrading1 = -0.98\n\n[TimeLoop]\nTEnd = 2000\nDtInitial = 20\nMaxTimeStepSize = 20\nOutputInterval = 100000\n\n[Problem]\nName = threshold_initial\nPermeability = 2.89e-11\nPorosity = 0.41\nSwr = 0.122\nPcN = 10.8\nPcAlpha = 0.000177\nSweL = 0.73\nKrwMualemExponent = true\nWaterLevel = 0.2499230091212796\nEvaporationRate = 1.08e-08\nSaltDiffusivity = 1.5e-09\nReferenceViscosity = 0.0011\nSaltMoleFraction = 0.1\nGravitationalAcceleration = 9.8\nPureWaterDensity = 998.203\nDensityLinearCoefficient = 0.670804\nDensityQuadraticCoefficient = 0.373854\nMolarMassH2O = 0.01801528\nMolarMassNaCl = 0.05844\nAmplitude = 0\nWaveNumber = 1\nStandardDeviationSaltMoleFraction = 0\nPerturbationType = Constant\nRandomSeed = 1\nEnableGravity = true\nPerturbationHeight = 0\n\n[Transport]\nSolubilityMoleFraction = 0.1\nStopAtSolubility = true\n\n[Vtk]\nPrecision = Float64\nAddVelocity = true\n",
+      "parameters": {
+        "Grid": {
+          "Positions0": "0 0.6",
+          "Positions1": "0 0.2",
+          "Cells0": 8,
+          "Cells1": 40,
+          "Grading1": -0.98
+        },
+        "TimeLoop": {
+          "TEnd": 2000,
+          "DtInitial": 20,
+          "MaxTimeStepSize": 20,
+          "OutputInterval": 100000
+        },
+        "Problem": {
+          "Name": "threshold_initial",
+          "Permeability": 2.89e-11,
+          "Porosity": 0.41,
+          "Swr": 0.122,
+          "PcN": 10.8,
+          "PcAlpha": 0.000177,
+          "SweL": 0.73,
+          "KrwMualemExponent": "true",
+          "WaterLevel": 0.2499230091212796,
+          "EvaporationRate": 1.08e-08,
+          "SaltDiffusivity": 1.5e-09,
+          "ReferenceViscosity": 0.0011,
+          "SaltMoleFraction": 0.1,
+          "GravitationalAcceleration": 9.8,
+          "PureWaterDensity": "998.203",
+          "DensityLinearCoefficient": "0.670804",
+          "DensityQuadraticCoefficient": "0.373854",
+          "MolarMassH2O": "0.01801528",
+          "MolarMassNaCl": "0.05844",
+          "Amplitude": 0,
+          "WaveNumber": 1,
+          "StandardDeviationSaltMoleFraction": 0,
+          "PerturbationType": "Constant",
+          "RandomSeed": 1,
+          "EnableGravity": "true",
+          "PerturbationHeight": 0
+        },
+        "Transport": {
+          "SolubilityMoleFraction": 0.1,
+          "StopAtSolubility": "true"
+        },
+        "Vtk": {
+          "Precision": "Float64",
+          "AddVelocity": "true"
+        }
+      },
+      "expected_reason": "surface_solubility_threshold",
+      "expected_exit": 0,
+      "input_sha256": "d88e283734445e849eef37cc40b92b0665db73da67eb5cd4798b0f7b09363027",
+      "wall_timeout_s": 600
+    },
+    {
+      "id": "startup_invalid_time",
+      "input": "[Grid]\nPositions0 = 0 0.6\nPositions1 = 0 0.2\nCells0 = 8\nCells1 = 40\nGrading1 = -0.98\n\n[TimeLoop]\nTEnd = -1\nDtInitial = 20\nMaxTimeStepSize = 20\nOutputInterval = 100000\n\n[Problem]\nName = startup_invalid_time\nPermeability = 2.89e-11\nPorosity = 0.41\nSwr = 0.122\nPcN = 10.8\nPcAlpha = 0.000177\nSweL = 0.73\nKrwMualemExponent = true\nWaterLevel = 0.2499230091212796\nEvaporationRate = 1.08e-08\nSaltDiffusivity = 1.5e-09\nReferenceViscosity = 0.0011\nSaltMoleFraction = 0.0036\nGravitationalAcceleration = 9.8\nPureWaterDensity = 998.203\nDensityLinearCoefficient = 0.670804\nDensityQuadraticCoefficient = 0.373854\nMolarMassH2O = 0.01801528\nMolarMassNaCl = 0.05844\nAmplitude = 0\nWaveNumber = 1\nStandardDeviationSaltMoleFraction = 0\nPerturbationType = Constant\nRandomSeed = 1\nEnableGravity = true\nPerturbationHeight = 0\n\n[Transport]\nSolubilityMoleFraction = 0.1\nStopAtSolubility = true\n\n[Vtk]\nPrecision = Float64\nAddVelocity = true\n",
+      "parameters": {
+        "Grid": {
+          "Positions0": "0 0.6",
+          "Positions1": "0 0.2",
+          "Cells0": 8,
+          "Cells1": 40,
+          "Grading1": -0.98
+        },
+        "TimeLoop": {
+          "TEnd": -1,
+          "DtInitial": 20,
+          "MaxTimeStepSize": 20,
+          "OutputInterval": 100000
+        },
+        "Problem": {
+          "Name": "startup_invalid_time",
+          "Permeability": 2.89e-11,
+          "Porosity": 0.41,
+          "Swr": 0.122,
+          "PcN": 10.8,
+          "PcAlpha": 0.000177,
+          "SweL": 0.73,
+          "KrwMualemExponent": "true",
+          "WaterLevel": 0.2499230091212796,
+          "EvaporationRate": 1.08e-08,
+          "SaltDiffusivity": 1.5e-09,
+          "ReferenceViscosity": 0.0011,
+          "SaltMoleFraction": 0.0036,
+          "GravitationalAcceleration": 9.8,
+          "PureWaterDensity": "998.203",
+          "DensityLinearCoefficient": "0.670804",
+          "DensityQuadraticCoefficient": "0.373854",
+          "MolarMassH2O": "0.01801528",
+          "MolarMassNaCl": "0.05844",
+          "Amplitude": 0,
+          "WaveNumber": 1,
+          "StandardDeviationSaltMoleFraction": 0,
+          "PerturbationType": "Constant",
+          "RandomSeed": 1,
+          "EnableGravity": "true",
+          "PerturbationHeight": 0
+        },
+        "Transport": {
+          "SolubilityMoleFraction": 0.1,
+          "StopAtSolubility": "true"
+        },
+        "Vtk": {
+          "Precision": "Float64",
+          "AddVelocity": "true"
+        }
+      },
+      "expected_reason": "startup_failure",
+      "expected_exit": 1,
+      "input_sha256": "5560919d75e3a28f2c5d7b2914db9dfd21a022657bb0bc17208e241ab2a244cf",
+      "wall_timeout_s": 600
+    }
+  ],
+  "criteria": {
+    "relative_cumulative_inventory_residual_max": 1e-06,
+    "relative_residual_to_cumulative_absolute_flux_max": 0.001,
+    "absolute_residual_floor_m": 1e-12,
+    "lateral_x_span_max": 1e-09,
+    "lateral_sw_span_max": 1e-09,
+    "lateral_pressure_span_Pa_max": 0.0001,
+    "horizontal_refinement_profile_x_relative_max": 1e-05,
+    "horizontal_refinement_inventory_relative_max": 1e-06,
+    "dt_halving_top_x_relative_max": 0.005,
+    "vtk_inventory_relative_max": 1e-10,
+    "hydrostatic_flux_abs_m_s_max": 1e-12
+  },
+  "event_tests_are_manufactured_high_initial_salinity": true,
+  "max_concurrent_processes": 1,
+  "nice": 10
+}

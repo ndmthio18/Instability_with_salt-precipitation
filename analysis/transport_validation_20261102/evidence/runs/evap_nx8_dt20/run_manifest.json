@@ -1,0 +1,155 @@
+{
+  "id": "evap_nx8_dt20",
+  "parameters": {
+    "Grid": {
+      "Positions0": "0 0.6",
+      "Positions1": "0 0.2",
+      "Cells0": 8,
+      "Cells1": 40,
+      "Grading1": -0.98
+    },
+    "TimeLoop": {
+      "TEnd": 2000,
+      "DtInitial": 20,
+      "MaxTimeStepSize": 20,
+      "OutputInterval": 100000
+    },
+    "Problem": {
+      "Name": "evap_nx8_dt20",
+      "Permeability": 2.89e-11,
+      "Porosity": 0.41,
+      "Swr": 0.122,
+      "PcN": 10.8,
+      "PcAlpha": 0.000177,
+      "SweL": 0.73,
+      "KrwMualemExponent": "true",
+      "WaterLevel": 0.2499230091212796,
+      "EvaporationRate": 1.08e-08,
+      "SaltDiffusivity": 1.5e-09,
+      "ReferenceViscosity": 0.0011,
+      "SaltMoleFraction": 0.0036,
+      "GravitationalAcceleration": 9.8,
+      "PureWaterDensity": "998.203",
+      "DensityLinearCoefficient": "0.670804",
+      "DensityQuadraticCoefficient": "0.373854",
+      "MolarMassH2O": "0.01801528",
+      "MolarMassNaCl": "0.05844",
+      "Amplitude": 0,
+      "WaveNumber": 1,
+      "StandardDeviationSaltMoleFraction": 0,
+      "PerturbationType": "Constant",
+      "RandomSeed": 1,
+      "EnableGravity": "true",
+      "PerturbationHeight": 0
+    },
+    "Transport": {
+      "SolubilityMoleFraction": 0.1,
+      "StopAtSolubility": "true"
+    },
+    "Vtk": {
+      "Precision": "Float64",
+      "AddVelocity": "true"
+    }
+  },
+  "expected_reason": "requested_horizon",
+  "expected_exit": 0,
+  "input_sha256": "9e3c693ddbeef7b842b4a80d48e8370c5b194c1221beecc542a7f0532f08f638",
+  "wall_timeout_s": 600,
+  "executable_sha256": "d78ce5122cf69e4dee5a4d12bcc726779959f304b343246009cb45bb37e894cc",
+  "build_source_sha256": {
+    "config.h.cmake": "addc2df015faa7334b78458a92aa2cb06ac0df5662da054714ac479ca7e706f9",
+    "kiemle2023b.pc.in": "54fee13aecdcfb07004dc6b4249b68c9a9ea33b7af2136bb278c1949e4a80d86",
+    "README.md": "ef8f3fca28d26200a17fb3386fddfddfb30ad69138dfea472866cc987e9e4e61",
+    "dune.module": "edd9a0bd7703bb4aff92d568d557f008d30895081e0a68d7a3cac1969ead72de",
+    "CMakeLists.txt": "a3750056e945193f32678c7246260515ad18fae14770667b8cccedca54b9fe2e",
+    "doc/CMakeLists.txt": "4fde2ae1df1e9ded71688fd731a4ab48a5bc2035c4ad4e160e034d863b02558c",
+    "appl/CMakeLists.txt": "e4932eb4852ddaa91476d791c91d8ef7d5c13b07a6a2c81ae7033e308ae5768b",
+    "dune/CMakeLists.txt": "4e6273b47c6cd604f89c82ca3fa716391ac252dfa319e27b67fea01bee98e6a8",
+    "src/kiemle2023b.cc": "8ca429bfc299f9410723e3d83f7d876920b443869b00f5d198d038581db813ba",
+    "src/CMakeLists.txt": "7ecedb534af8c9849450955b8242ca9e137b8ad3f03c4ab0d779804093d59ffa",
+    "doc/doxygen/CMakeLists.txt": "d145d336814fca3994a64c7b916565975f7ed9bdff4986bccfe7809d7e1a5c35",
+    "cmake/modules/Kiemle2023bMacros.cmake": "7524f6919d6e280ee968a64140a3a3c006061d29aa5426c26eaafec4ff5d97a4",
+    "cmake/modules/CMakeLists.txt": "5dbd18a784411da7e200169f154d9d62b2578e1ea41e8e5c832b7f738aa2f575",
+    "appl/simpleRichardsnc/main.cc": "dc7c629220fd0f3b23a6fcb6f156537d0d1d38b376550606235aeda7729dd2b4",
+    "appl/simpleRichardsnc/params.input": "2cbfbc4c82e5016b8c6de0a998a0e7ce5f26293a60b75087a50e50fc7b128ad7",
+    "appl/simpleRichardsnc/transportdiagnostics.hh": "6fdaa494d232148e5affe63527dfb2c2677bf9f6a5f7da1e4f1551934c0384e9",
+    "appl/simpleRichardsnc/CMakeLists.txt": "5a9a763908e7053c80d637a3e60156ec6bd98e76b8d900655c68b1cba2ca1c00",
+    "appl/simpleRichardsnc/model.hh": "a65bef0f231519637ae4493a7035904f8c53bc61a09588b2a83a6eeda08c05e4",
+    "bin/eigenprofile/README.md": "4565332f7edbdd59d016cccd515fb53fd07aa692f8271f19e7f3c8a84077c270",
+    "dune/kiemle2023b/kiemle2023b.hh": "afa7958833dc5acb74a6015365481c67eb666b412f7096be26c93c7d3791a6e5",
+    "dune/kiemle2023b/CMakeLists.txt": "154ce468ad7fc60a049449ed1867df43e15e78aabcd5c8c1caa7b605f9ca0730"
+  },
+  "purpose": "small uniform 2D background and diagnostic validation; no Pilot A/B",
+  "status": "finished",
+  "started_utc": "2026-11-02T18:39:46.927474+00:00",
+  "result": {
+    "id": "evap_nx8_dt20",
+    "expected_reason": "requested_horizon",
+    "expected_exit": 0,
+    "returncode": 0,
+    "wall_s": 0.6649916004389524,
+    "stop": {
+      "schema_version": 1,
+      "reason": "requested_horizon",
+      "last_accepted_time_s": 2000,
+      "accepted_steps": 100,
+      "initial_diagnostics_written": true,
+      "requested_end_s": 2000,
+      "surface_threshold_low_s": null,
+      "surface_threshold_high_s": null,
+      "global_threshold_low_s": null,
+      "global_threshold_high_s": null
+    },
+    "files": {
+      "stop_record.json": {
+        "bytes": 322,
+        "sha256": "2a64c61cf819fecbab9b3c26d43f6193f6dc0718b5e82d8d13f14b9a97b67196"
+      },
+      "solver.log": {
+        "bytes": 53231,
+        "sha256": "8f015352157568da5e2bb0ec0abd0df8fcc5edd2fe671a81139167ad26ca08fa"
+      },
+      "field_profiles.csv": {
+        "bytes": 17893,
+        "sha256": "949380c854069c6219fdc62d21e72e58aa1d7d6a0a50c732e51cd975593bb708"
+      },
+      "transport_metadata.json": {
+        "bytes": 983,
+        "sha256": "846e4791c26d8cb13d4765f456acdd8c315735ce6f8677eac8a62bd7a5d25aec"
+      },
+      "evap_nx8_dt20-00000.vtu": {
+        "bytes": 52737,
+        "sha256": "d92de8aa33f1c73cef4e54af7ec218fbf0ec5573d618d7c701dd2208ec2ca888"
+      },
+      "transport_budget.csv": {
+        "bytes": 228563,
+        "sha256": "501e181566d60523495134c9b88823d68bbdbe5dcdbbf39cdaebb91f55ba25d8"
+      },
+      "field_checks.json": {
+        "bytes": 1633,
+        "sha256": "80c29378b2031ac0378d15409bbeeb7b53f590b6e48e79a7cd19b1798a3a27e3"
+      },
+      "params.input": {
+        "bytes": 909,
+        "sha256": "9e3c693ddbeef7b842b4a80d48e8370c5b194c1221beecc542a7f0532f08f638"
+      },
+      "evap_nx8_dt20-00001.vtu": {
+        "bytes": 59049,
+        "sha256": "15670d83a03c3aa2d579d14dd2116efe584b5a71be258b6542c9bf6744a9cde2"
+      },
+      "evap_nx8_dt20_sigmatop.csv": {
+        "bytes": 9897,
+        "sha256": "a0ea663670d8964225d29b0136827c5fee43ce1c367ca6edcaf4a84500eefffc"
+      },
+      "evap_nx8_dt20.pvd": {
+        "bytes": 300,
+        "sha256": "25c00294a37411cc88778c4cc58ecb1770fba1d5ced1c58fab72c6b4d7fb692d"
+      },
+      "surface_events.csv": {
+        "bytes": 16989,
+        "sha256": "0de9fa0a3e20ccfe4a1f1d5b26669f10265d03876540d0c92d15dbb52ba8cfcf"
+      }
+    }
+  },
+  "finished_utc": "2026-11-02T18:39:47.605298+00:00"
+}

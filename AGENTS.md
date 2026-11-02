@@ -43,4 +43,5 @@ Do not stage, commit or push changes in the parent as part of ordinary Paper 2 w
 - Do not call Notion. Do not change the parent Paper 1 progress percentage merely
   because Paper 2 starts. Status stays `In progress` until the user decides otherwise.
 - Commit messages must not include AI attribution or `Co-Authored-By` trailers.
-- Paper 2 has no remote initially. Do not repurpose Paper 1's remote as its remote.
+- Paper 2's user-specified remote is `git@github.com:ndmthio18/surrogate_model.git`.
+  Use its own `origin` and `codex/paper2-main` branch; do not change Paper 1's remote.

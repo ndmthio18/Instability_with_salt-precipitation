@@ -1,0 +1,5 @@
+# Preserve exact scientific evidence and source bytes used by SHA-256 manifests.
+# Git's platform-dependent newline conversion would invalidate these manifests.
+analysis/** -text
+model/** -text
+scripts/** -text

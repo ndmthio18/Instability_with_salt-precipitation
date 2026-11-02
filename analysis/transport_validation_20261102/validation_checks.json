@@ -1,0 +1,2968 @@
+{
+  "passed": true,
+  "check_count": 414,
+  "failed": [],
+  "comparisons": {
+    "hydrostatic_flux_abs_max_m_s": 3.807082146559853e-17,
+    "horizontal_profile_x_relative": 3.159783733421063e-15,
+    "horizontal_inventory_relative": 8.839054158450003e-15,
+    "dt_halving_top_x_relative": 1.6049186190592676e-05
+  },
+  "runs": [
+    {
+      "id": "closed_hydrostatic",
+      "reason": "requested_horizon",
+      "accepted_steps": 10,
+      "final_time_s": 100,
+      "wall_s": 0.5655338875949383,
+      "lateral_x_span_max": 0.0,
+      "lateral_sw_span_max": 6.994405055138486e-15,
+      "lateral_pressure_span_Pa_max": 1.0186340659856796e-10,
+      "independent_inventory_rel_error_max": 8.546817527998093e-15,
+      "surface_sigma_all_steps_max": 0.0,
+      "final_top_x": 0.0036,
+      "threshold_low_s": null,
+      "threshold_high_s": null,
+      "salt_balance_rel_max": 1.527624708904104e-13,
+      "water_balance_rel_max": 1.5188315181169612e-13
+    },
+    {
+      "id": "evap_nx8_dt20",
+      "reason": "requested_horizon",
+      "accepted_steps": 100,
+      "final_time_s": 2000,
+      "wall_s": 0.6649916004389524,
+      "lateral_x_span_max": 1.0408340855860843e-17,
+      "lateral_sw_span_max": 7.993605777301127e-15,
+      "lateral_pressure_span_Pa_max": 1.0186340659856796e-10,
+      "independent_inventory_rel_error_max": 8.078571341856668e-15,
+      "surface_sigma_all_steps_max": 4.963704422428389e-18,
+      "final_top_x": 0.0037057547132081222,
+      "threshold_low_s": null,
+      "threshold_high_s": null,
+      "salt_balance_rel_max": 6.227236619674587e-13,
+      "water_balance_rel_max": 6.231499550450865e-13
+    },
+    {
+      "id": "evap_nx16_dt20",
+      "reason": "requested_horizon",
+      "accepted_steps": 100,
+      "final_time_s": 2000,
+      "wall_s": 0.9654426816850901,
+      "lateral_x_span_max": 9.974659986866641e-17,
+      "lateral_sw_span_max": 6.994405055138486e-15,
+      "lateral_pressure_span_Pa_max": 1.0186340659856796e-10,
+      "independent_inventory_rel_error_max": 2.2647393111773436e-14,
+      "surface_sigma_all_steps_max": 2.7117653639685294e-17,
+      "final_top_x": 0.0037057547132081686,
+      "threshold_low_s": null,
+      "threshold_high_s": null,
+      "salt_balance_rel_max": 3.1709381043567515e-13,
+      "water_balance_rel_max": 3.209755231726702e-13
+    },
+    {
+      "id": "evap_nx8_dt10",
+      "reason": "requested_horizon",
+      "accepted_steps": 200,
+      "final_time_s": 2000,
+      "wall_s": 0.9661026932299137,
+      "lateral_x_span_max": 1.9949319973733282e-17,
+      "lateral_sw_span_max": 7.993605777301127e-15,
+      "lateral_pressure_span_Pa_max": 1.0186340659856796e-10,
+      "independent_inventory_rel_error_max": 8.003494581547868e-15,
+      "surface_sigma_all_steps_max": 4.7264804119937334e-18,
+      "final_top_x": 0.0037058141885100214,
+      "threshold_low_s": null,
+      "threshold_high_s": null,
+      "salt_balance_rel_max": 6.210335638975737e-13,
+      "water_balance_rel_max": 6.201470510240671e-13
+    },
+    {
+      "id": "threshold_dt2",
+      "reason": "surface_solubility_threshold",
+      "accepted_steps": 3,
+      "final_time_s": 6,
+      "wall_s": 0.46542499028146267,
+      "lateral_x_span_max": 1.1102230246251565e-16,
+      "lateral_sw_span_max": 1.099120794378905e-14,
+      "lateral_pressure_span_Pa_max": 1.0186340659856796e-10,
+      "independent_inventory_rel_error_max": 9.646803556594992e-15,
+      "surface_sigma_all_steps_max": 1.9073194993842656e-17,
+      "final_top_x": 0.10000320706958606,
+      "threshold_low_s": 4,
+      "threshold_high_s": 6,
+      "salt_balance_rel_max": 1.1927093200935126e-14,
+      "water_balance_rel_max": 7.141954550671008e-15
+    },
+    {
+      "id": "threshold_dt1",
+      "reason": "surface_solubility_threshold",
+      "accepted_steps": 5,
+      "final_time_s": 5,
+      "wall_s": 0.4648694321513176,
+      "lateral_x_span_max": 9.992007221626409e-16,
+      "lateral_sw_span_max": 1.0302869668521453e-13,
+      "lateral_pressure_span_Pa_max": 3.055902197957039e-10,
+      "independent_inventory_rel_error_max": 9.646803556594992e-15,
+      "surface_sigma_all_steps_max": 2.732432692261821e-16,
+      "final_top_x": 0.1000010068027891,
+      "threshold_low_s": 4,
+      "threshold_high_s": 5,
+      "salt_balance_rel_max": 7.415547617098743e-12,
+      "water_balance_rel_max": 7.419078749829006e-12
+    },
+    {
+      "id": "threshold_initial",
+      "reason": "surface_solubility_threshold",
+      "accepted_steps": 0,
+      "final_time_s": 0,
+      "wall_s": 0.41461520083248615,
+      "lateral_x_span_max": 0.0,
+      "lateral_sw_span_max": 0.0,
+      "lateral_pressure_span_Pa_max": 0.0,
+      "independent_inventory_rel_error_max": 1.1284226777000048e-14,
+      "surface_sigma_all_steps_max": 1.3877787807814457e-17,
+      "final_top_x": 0.1,
+      "threshold_low_s": 0,
+      "threshold_high_s": 0,
+      "salt_balance_rel_max": 0.0,
+      "water_balance_rel_max": 0.0
+    },
+    {
+      "id": "startup_invalid_time",
+      "reason": "startup_failure",
+      "accepted_steps": 0,
+      "final_time_s": null,
+      "wall_s": 0.47027930431067944
+    }
+  ],
+  "checks": [
+    {
+      "name": "remote_plan_unchanged",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "closed_hydrostatic/sha256/stop_record.json",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "closed_hydrostatic/sha256/solver.log",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "closed_hydrostatic/sha256/field_profiles.csv",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "closed_hydrostatic/sha256/closed_hydrostatic_sigmatop.csv",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "closed_hydrostatic/sha256/transport_metadata.json",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "closed_hydrostatic/sha256/closed_hydrostatic-00000.vtu",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "closed_hydrostatic/sha256/transport_budget.csv",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "closed_hydrostatic/sha256/field_checks.json",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "closed_hydrostatic/sha256/params.input",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "closed_hydrostatic/sha256/closed_hydrostatic-00001.vtu",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "closed_hydrostatic/sha256/surface_events.csv",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "closed_hydrostatic/sha256/closed_hydrostatic.pvd",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "closed_hydrostatic/input_sha256",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "closed_hydrostatic/exit",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "closed_hydrostatic/stop",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "closed_hydrostatic/row_counts",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "closed_hydrostatic/finite",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "closed_hydrostatic/event_time_order",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "closed_hydrostatic/final_time",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "closed_hydrostatic/surface_uniform_every_step",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "closed_hydrostatic/prescribed_evaporation",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "closed_hydrostatic/free_domain/salt_inventory_balance",
+      "passed": true,
+      "value": 3.596748114045405e-15,
+      "limit": 1e-06
+    },
+    {
+      "name": "closed_hydrostatic/free_domain/salt_flux_balance",
+      "passed": true,
+      "value": {
+        "max_relative_when_flux_above_floor": 0.0,
+        "floor_rescued_rows": 10
+      },
+      "limit": {
+        "relative": 0.001,
+        "absolute_floor_m": 1e-12
+      }
+    },
+    {
+      "name": "closed_hydrostatic/free_domain/salt_CSV_algebra",
+      "passed": true,
+      "value": 1.2037061524638512e-35,
+      "limit": 1e-15
+    },
+    {
+      "name": "closed_hydrostatic/free_domain/water_inventory_balance",
+      "passed": true,
+      "value": 3.596748114045394e-15,
+      "limit": 1e-06
+    },
+    {
+      "name": "closed_hydrostatic/free_domain/water_flux_balance",
+      "passed": true,
+      "value": {
+        "max_relative_when_flux_above_floor": 0.0,
+        "floor_rescued_rows": 10
+      },
+      "limit": {
+        "relative": 0.001,
+        "absolute_floor_m": 1e-12
+      }
+    },
+    {
+      "name": "closed_hydrostatic/free_domain/water_CSV_algebra",
+      "passed": true,
+      "value": 0.0,
+      "limit": 1e-15
+    },
+    {
+      "name": "closed_hydrostatic/upper_0.500000/salt_inventory_balance",
+      "passed": true,
+      "value": 6.481366501393033e-15,
+      "limit": 1e-06
+    },
+    {
+      "name": "closed_hydrostatic/upper_0.500000/salt_flux_balance",
+      "passed": true,
+      "value": {
+        "max_relative_when_flux_above_floor": 0.0,
+        "floor_rescued_rows": 10
+      },
+      "limit": {
+        "relative": 0.001,
+        "absolute_floor_m": 1e-12
+      }
+    },
+    {
+      "name": "closed_hydrostatic/upper_0.500000/salt_CSV_algebra",
+      "passed": true,
+      "value": 2.665472470575404e-35,
+      "limit": 1e-15
+    },
+    {
+      "name": "closed_hydrostatic/upper_0.500000/water_inventory_balance",
+      "passed": true,
+      "value": 7.162332618592487e-15,
+      "limit": 1e-06
+    },
+    {
+      "name": "closed_hydrostatic/upper_0.500000/water_flux_balance",
+      "passed": true,
+      "value": {
+        "max_relative_when_flux_above_floor": 0.0,
+        "floor_rescued_rows": 10
+      },
+      "limit": {
+        "relative": 0.001,
+        "absolute_floor_m": 1e-12
+      }
+    },
+    {
+      "name": "closed_hydrostatic/upper_0.500000/water_CSV_algebra",
+      "passed": true,
+      "value": 0.0,
+      "limit": 1e-15
+    },
+    {
+      "name": "closed_hydrostatic/upper_0.750000/salt_inventory_balance",
+      "passed": true,
+      "value": 2.857085671890841e-14,
+      "limit": 1e-06
+    },
+    {
+      "name": "closed_hydrostatic/upper_0.750000/salt_flux_balance",
+      "passed": true,
+      "value": {
+        "max_relative_when_flux_above_floor": 0.0,
+        "floor_rescued_rows": 10
+      },
+      "limit": {
+        "relative": 0.001,
+        "absolute_floor_m": 1e-12
+      }
+    },
+    {
+      "name": "closed_hydrostatic/upper_0.750000/salt_CSV_algebra",
+      "passed": true,
+      "value": 3.481559997605628e-35,
+      "limit": 1e-15
+    },
+    {
+      "name": "closed_hydrostatic/upper_0.750000/water_inventory_balance",
+      "passed": true,
+      "value": 2.7907083144557407e-14,
+      "limit": 1e-06
+    },
+    {
+      "name": "closed_hydrostatic/upper_0.750000/water_flux_balance",
+      "passed": true,
+      "value": {
+        "max_relative_when_flux_above_floor": 0.0,
+        "floor_rescued_rows": 10
+      },
+      "limit": {
+        "relative": 0.001,
+        "absolute_floor_m": 1e-12
+      }
+    },
+    {
+      "name": "closed_hydrostatic/upper_0.750000/water_CSV_algebra",
+      "passed": true,
+      "value": 0.0,
+      "limit": 1e-15
+    },
+    {
+      "name": "closed_hydrostatic/upper_0.900000/salt_inventory_balance",
+      "passed": true,
+      "value": 1.527624708904104e-13,
+      "limit": 1e-06
+    },
+    {
+      "name": "closed_hydrostatic/upper_0.900000/salt_flux_balance",
+      "passed": true,
+      "value": {
+        "max_relative_when_flux_above_floor": 0.0,
+        "floor_rescued_rows": 10
+      },
+      "limit": {
+        "relative": 0.001,
+        "absolute_floor_m": 1e-12
+      }
+    },
+    {
+      "name": "closed_hydrostatic/upper_0.900000/salt_CSV_algebra",
+      "passed": true,
+      "value": 2.7009364693323653e-35,
+      "limit": 1e-15
+    },
+    {
+      "name": "closed_hydrostatic/upper_0.900000/water_inventory_balance",
+      "passed": true,
+      "value": 1.5188315181169612e-13,
+      "limit": 1e-06
+    },
+    {
+      "name": "closed_hydrostatic/upper_0.900000/water_flux_balance",
+      "passed": true,
+      "value": {
+        "max_relative_when_flux_above_floor": 0.0,
+        "floor_rescued_rows": 10
+      },
+      "limit": {
+        "relative": 0.001,
+        "absolute_floor_m": 1e-12
+      }
+    },
+    {
+      "name": "closed_hydrostatic/upper_0.900000/water_CSV_algebra",
+      "passed": true,
+      "value": 0.0,
+      "limit": 1e-15
+    },
+    {
+      "name": "closed_hydrostatic/whole_salt_reaction_accounting",
+      "passed": true,
+      "value": 0.0,
+      "limit": 1e-15
+    },
+    {
+      "name": "closed_hydrostatic/whole_water_reaction_accounting",
+      "passed": true,
+      "value": 0.0,
+      "limit": 1e-15
+    },
+    {
+      "name": "closed_hydrostatic/closed_hydrostatic-00000.vtu/tensor_grid",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "closed_hydrostatic/closed_hydrostatic-00000.vtu/extrema",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "closed_hydrostatic/closed_hydrostatic-00001.vtu/tensor_grid",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "closed_hydrostatic/closed_hydrostatic-00001.vtu/extrema",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "closed_hydrostatic/uniform_moleFraction",
+      "passed": true,
+      "value": 0.0,
+      "limit": 1e-09
+    },
+    {
+      "name": "closed_hydrostatic/uniform_sw",
+      "passed": true,
+      "value": 6.994405055138486e-15,
+      "limit": 1e-09
+    },
+    {
+      "name": "closed_hydrostatic/uniform_pw",
+      "passed": true,
+      "value": 1.0186340659856796e-10,
+      "limit": 0.0001
+    },
+    {
+      "name": "closed_hydrostatic/independent_VTU_inventory",
+      "passed": true,
+      "value": 8.546817527998093e-15,
+      "limit": 1e-10
+    },
+    {
+      "name": "closed_hydrostatic/independent_surface_mean",
+      "passed": true,
+      "value": 8.673617379884035e-19,
+      "limit": 1e-14
+    },
+    {
+      "name": "closed_hydrostatic/no_false_threshold",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "evap_nx8_dt20/sha256/stop_record.json",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "evap_nx8_dt20/sha256/solver.log",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "evap_nx8_dt20/sha256/field_profiles.csv",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "evap_nx8_dt20/sha256/transport_metadata.json",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "evap_nx8_dt20/sha256/evap_nx8_dt20-00000.vtu",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "evap_nx8_dt20/sha256/transport_budget.csv",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "evap_nx8_dt20/sha256/field_checks.json",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "evap_nx8_dt20/sha256/params.input",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "evap_nx8_dt20/sha256/evap_nx8_dt20-00001.vtu",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "evap_nx8_dt20/sha256/evap_nx8_dt20_sigmatop.csv",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "evap_nx8_dt20/sha256/evap_nx8_dt20.pvd",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "evap_nx8_dt20/sha256/surface_events.csv",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "evap_nx8_dt20/input_sha256",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "evap_nx8_dt20/exit",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "evap_nx8_dt20/stop",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "evap_nx8_dt20/row_counts",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "evap_nx8_dt20/finite",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "evap_nx8_dt20/event_time_order",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "evap_nx8_dt20/final_time",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "evap_nx8_dt20/surface_uniform_every_step",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "evap_nx8_dt20/prescribed_evaporation",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "evap_nx8_dt20/free_domain/salt_inventory_balance",
+      "passed": true,
+      "value": 1.3231097415804979e-14,
+      "limit": 1e-06
+    },
+    {
+      "name": "evap_nx8_dt20/free_domain/salt_flux_balance",
+      "passed": true,
+      "value": {
+        "max_relative_when_flux_above_floor": 7.658707323337925e-10,
+        "floor_rescued_rows": 0
+      },
+      "limit": {
+        "relative": 0.001,
+        "absolute_floor_m": 1e-12
+      }
+    },
+    {
+      "name": "evap_nx8_dt20/free_domain/salt_CSV_algebra",
+      "passed": true,
+      "value": 1.6093262392896144e-26,
+      "limit": 1e-15
+    },
+    {
+      "name": "evap_nx8_dt20/free_domain/water_inventory_balance",
+      "passed": true,
+      "value": 1.5113902017173012e-14,
+      "limit": 1e-06
+    },
+    {
+      "name": "evap_nx8_dt20/free_domain/water_flux_balance",
+      "passed": true,
+      "value": {
+        "max_relative_when_flux_above_floor": 7.778224980791775e-09,
+        "floor_rescued_rows": 0
+      },
+      "limit": {
+        "relative": 0.001,
+        "absolute_floor_m": 1e-12
+      }
+    },
+    {
+      "name": "evap_nx8_dt20/free_domain/water_CSV_algebra",
+      "passed": true,
+      "value": 0.0,
+      "limit": 1e-15
+    },
+    {
+      "name": "evap_nx8_dt20/upper_0.500000/salt_inventory_balance",
+      "passed": true,
+      "value": 1.2116424873047813e-13,
+      "limit": 1e-06
+    },
+    {
+      "name": "evap_nx8_dt20/upper_0.500000/salt_flux_balance",
+      "passed": true,
+      "value": {
+        "max_relative_when_flux_above_floor": 2.989414194955243e-09,
+        "floor_rescued_rows": 0
+      },
+      "limit": {
+        "relative": 0.001,
+        "absolute_floor_m": 1e-12
+      }
+    },
+    {
+      "name": "evap_nx8_dt20/upper_0.500000/salt_CSV_algebra",
+      "passed": true,
+      "value": 2.0642390299157063e-26,
+      "limit": 1e-15
+    },
+    {
+      "name": "evap_nx8_dt20/upper_0.500000/water_inventory_balance",
+      "passed": true,
+      "value": 1.1847716252859717e-13,
+      "limit": 1e-06
+    },
+    {
+      "name": "evap_nx8_dt20/upper_0.500000/water_flux_balance",
+      "passed": true,
+      "value": {
+        "max_relative_when_flux_above_floor": 3.106883010994568e-08,
+        "floor_rescued_rows": 0
+      },
+      "limit": {
+        "relative": 0.001,
+        "absolute_floor_m": 1e-12
+      }
+    },
+    {
+      "name": "evap_nx8_dt20/upper_0.500000/water_CSV_algebra",
+      "passed": true,
+      "value": 0.0,
+      "limit": 1e-15
+    },
+    {
+      "name": "evap_nx8_dt20/upper_0.750000/salt_inventory_balance",
+      "passed": true,
+      "value": 2.7681832281958873e-13,
+      "limit": 1e-06
+    },
+    {
+      "name": "evap_nx8_dt20/upper_0.750000/salt_flux_balance",
+      "passed": true,
+      "value": {
+        "max_relative_when_flux_above_floor": 2.2308750664717118e-09,
+        "floor_rescued_rows": 0
+      },
+      "limit": {
+        "relative": 0.001,
+        "absolute_floor_m": 1e-12
+      }
+    },
+    {
+      "name": "evap_nx8_dt20/upper_0.750000/salt_CSV_algebra",
+      "passed": true,
+      "value": 1.9375651524483236e-26,
+      "limit": 1e-15
+    },
+    {
+      "name": "evap_nx8_dt20/upper_0.750000/water_inventory_balance",
+      "passed": true,
+      "value": 2.802916536538793e-13,
+      "limit": 1e-06
+    },
+    {
+      "name": "evap_nx8_dt20/upper_0.750000/water_flux_balance",
+      "passed": true,
+      "value": {
+        "max_relative_when_flux_above_floor": 4.556523859809472e-08,
+        "floor_rescued_rows": 0
+      },
+      "limit": {
+        "relative": 0.001,
+        "absolute_floor_m": 1e-12
+      }
+    },
+    {
+      "name": "evap_nx8_dt20/upper_0.750000/water_CSV_algebra",
+      "passed": true,
+      "value": 0.0,
+      "limit": 1e-15
+    },
+    {
+      "name": "evap_nx8_dt20/upper_0.900000/salt_inventory_balance",
+      "passed": true,
+      "value": 6.227236619674587e-13,
+      "limit": 1e-06
+    },
+    {
+      "name": "evap_nx8_dt20/upper_0.900000/salt_flux_balance",
+      "passed": true,
+      "value": {
+        "max_relative_when_flux_above_floor": 1.9019557310957303e-09,
+        "floor_rescued_rows": 0
+      },
+      "limit": {
+        "relative": 0.001,
+        "absolute_floor_m": 1e-12
+      }
+    },
+    {
+      "name": "evap_nx8_dt20/upper_0.900000/salt_CSV_algebra",
+      "passed": true,
+      "value": 2.3884240585267601e-26,
+      "limit": 1e-15
+    },
+    {
+      "name": "evap_nx8_dt20/upper_0.900000/water_inventory_balance",
+      "passed": true,
+      "value": 6.231499550450865e-13,
+      "limit": 1e-06
+    },
+    {
+      "name": "evap_nx8_dt20/upper_0.900000/water_flux_balance",
+      "passed": true,
+      "value": {
+        "max_relative_when_flux_above_floor": 6.963361361535791e-08,
+        "floor_rescued_rows": 0
+      },
+      "limit": {
+        "relative": 0.001,
+        "absolute_floor_m": 1e-12
+      }
+    },
+    {
+      "name": "evap_nx8_dt20/upper_0.900000/water_CSV_algebra",
+      "passed": true,
+      "value": 0.0,
+      "limit": 1e-15
+    },
+    {
+      "name": "evap_nx8_dt20/whole_salt_reaction_accounting",
+      "passed": true,
+      "value": 0.0,
+      "limit": 1e-15
+    },
+    {
+      "name": "evap_nx8_dt20/whole_water_reaction_accounting",
+      "passed": true,
+      "value": 4.7804421960664575e-20,
+      "limit": 1e-15
+    },
+    {
+      "name": "evap_nx8_dt20/evap_nx8_dt20-00000.vtu/tensor_grid",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "evap_nx8_dt20/evap_nx8_dt20-00000.vtu/extrema",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "evap_nx8_dt20/evap_nx8_dt20-00001.vtu/tensor_grid",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "evap_nx8_dt20/evap_nx8_dt20-00001.vtu/extrema",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "evap_nx8_dt20/uniform_moleFraction",
+      "passed": true,
+      "value": 1.0408340855860843e-17,
+      "limit": 1e-09
+    },
+    {
+      "name": "evap_nx8_dt20/uniform_sw",
+      "passed": true,
+      "value": 7.993605777301127e-15,
+      "limit": 1e-09
+    },
+    {
+      "name": "evap_nx8_dt20/uniform_pw",
+      "passed": true,
+      "value": 1.0186340659856796e-10,
+      "limit": 0.0001
+    },
+    {
+      "name": "evap_nx8_dt20/independent_VTU_inventory",
+      "passed": true,
+      "value": 8.078571341856668e-15,
+      "limit": 1e-10
+    },
+    {
+      "name": "evap_nx8_dt20/independent_surface_mean",
+      "passed": true,
+      "value": 8.673617379884035e-19,
+      "limit": 1e-14
+    },
+    {
+      "name": "evap_nx8_dt20/no_false_threshold",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "evap_nx16_dt20/sha256/stop_record.json",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "evap_nx16_dt20/sha256/solver.log",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "evap_nx16_dt20/sha256/field_profiles.csv",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "evap_nx16_dt20/sha256/transport_metadata.json",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "evap_nx16_dt20/sha256/transport_budget.csv",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "evap_nx16_dt20/sha256/field_checks.json",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "evap_nx16_dt20/sha256/evap_nx16_dt20-00001.vtu",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "evap_nx16_dt20/sha256/evap_nx16_dt20_sigmatop.csv",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "evap_nx16_dt20/sha256/params.input",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "evap_nx16_dt20/sha256/evap_nx16_dt20-00000.vtu",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "evap_nx16_dt20/sha256/evap_nx16_dt20.pvd",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "evap_nx16_dt20/sha256/surface_events.csv",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "evap_nx16_dt20/input_sha256",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "evap_nx16_dt20/exit",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "evap_nx16_dt20/stop",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "evap_nx16_dt20/row_counts",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "evap_nx16_dt20/finite",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "evap_nx16_dt20/event_time_order",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "evap_nx16_dt20/final_time",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "evap_nx16_dt20/surface_uniform_every_step",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "evap_nx16_dt20/prescribed_evaporation",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "evap_nx16_dt20/free_domain/salt_inventory_balance",
+      "passed": true,
+      "value": 4.73128097157552e-14,
+      "limit": 1e-06
+    },
+    {
+      "name": "evap_nx16_dt20/free_domain/salt_flux_balance",
+      "passed": true,
+      "value": {
+        "max_relative_when_flux_above_floor": 1.4415560475251086e-08,
+        "floor_rescued_rows": 0
+      },
+      "limit": {
+        "relative": 0.001,
+        "absolute_floor_m": 1e-12
+      }
+    },
+    {
+      "name": "evap_nx16_dt20/free_domain/salt_CSV_algebra",
+      "passed": true,
+      "value": 2.5067113216077232e-26,
+      "limit": 1e-15
+    },
+    {
+      "name": "evap_nx16_dt20/free_domain/water_inventory_balance",
+      "passed": true,
+      "value": 3.2028758718990005e-14,
+      "limit": 1e-06
+    },
+    {
+      "name": "evap_nx16_dt20/free_domain/water_flux_balance",
+      "passed": true,
+      "value": {
+        "max_relative_when_flux_above_floor": 1.6490111809216446e-08,
+        "floor_rescued_rows": 0
+      },
+      "limit": {
+        "relative": 0.001,
+        "absolute_floor_m": 1e-12
+      }
+    },
+    {
+      "name": "evap_nx16_dt20/free_domain/water_CSV_algebra",
+      "passed": true,
+      "value": 0.0,
+      "limit": 1e-15
+    },
+    {
+      "name": "evap_nx16_dt20/upper_0.500000/salt_inventory_balance",
+      "passed": true,
+      "value": 1.1030791690313578e-13,
+      "limit": 1e-06
+    },
+    {
+      "name": "evap_nx16_dt20/upper_0.500000/salt_flux_balance",
+      "passed": true,
+      "value": {
+        "max_relative_when_flux_above_floor": 7.830099298195036e-09,
+        "floor_rescued_rows": 0
+      },
+      "limit": {
+        "relative": 0.001,
+        "absolute_floor_m": 1e-12
+      }
+    },
+    {
+      "name": "evap_nx16_dt20/upper_0.500000/salt_CSV_algebra",
+      "passed": true,
+      "value": 3.3117596051880037e-26,
+      "limit": 1e-15
+    },
+    {
+      "name": "evap_nx16_dt20/upper_0.500000/water_inventory_balance",
+      "passed": true,
+      "value": 1.0497025274609121e-13,
+      "limit": 1e-06
+    },
+    {
+      "name": "evap_nx16_dt20/upper_0.500000/water_flux_balance",
+      "passed": true,
+      "value": {
+        "max_relative_when_flux_above_floor": 2.7540428268853202e-08,
+        "floor_rescued_rows": 0
+      },
+      "limit": {
+        "relative": 0.001,
+        "absolute_floor_m": 1e-12
+      }
+    },
+    {
+      "name": "evap_nx16_dt20/upper_0.500000/water_CSV_algebra",
+      "passed": true,
+      "value": 0.0,
+      "limit": 1e-15
+    },
+    {
+      "name": "evap_nx16_dt20/upper_0.750000/salt_inventory_balance",
+      "passed": true,
+      "value": 2.5483819326038276e-13,
+      "limit": 1e-06
+    },
+    {
+      "name": "evap_nx16_dt20/upper_0.750000/salt_flux_balance",
+      "passed": true,
+      "value": {
+        "max_relative_when_flux_above_floor": 2.529194238263591e-09,
+        "floor_rescued_rows": 0
+      },
+      "limit": {
+        "relative": 0.001,
+        "absolute_floor_m": 1e-12
+      }
+    },
+    {
+      "name": "evap_nx16_dt20/upper_0.750000/salt_CSV_algebra",
+      "passed": true,
+      "value": 2.651044130325645e-26,
+      "limit": 1e-15
+    },
+    {
+      "name": "evap_nx16_dt20/upper_0.750000/water_inventory_balance",
+      "passed": true,
+      "value": 2.5029988956679486e-13,
+      "limit": 1e-06
+    },
+    {
+      "name": "evap_nx16_dt20/upper_0.750000/water_flux_balance",
+      "passed": true,
+      "value": {
+        "max_relative_when_flux_above_floor": 4.076251947539572e-08,
+        "floor_rescued_rows": 0
+      },
+      "limit": {
+        "relative": 0.001,
+        "absolute_floor_m": 1e-12
+      }
+    },
+    {
+      "name": "evap_nx16_dt20/upper_0.750000/water_CSV_algebra",
+      "passed": true,
+      "value": 0.0,
+      "limit": 1e-15
+    },
+    {
+      "name": "evap_nx16_dt20/upper_0.900000/salt_inventory_balance",
+      "passed": true,
+      "value": 3.1709381043567515e-13,
+      "limit": 1e-06
+    },
+    {
+      "name": "evap_nx16_dt20/upper_0.900000/salt_flux_balance",
+      "passed": true,
+      "value": {
+        "max_relative_when_flux_above_floor": 1.3938397679026085e-09,
+        "floor_rescued_rows": 0
+      },
+      "limit": {
+        "relative": 0.001,
+        "absolute_floor_m": 1e-12
+      }
+    },
+    {
+      "name": "evap_nx16_dt20/upper_0.900000/salt_CSV_algebra",
+      "passed": true,
+      "value": 2.612665660227294e-26,
+      "limit": 1e-15
+    },
+    {
+      "name": "evap_nx16_dt20/upper_0.900000/water_inventory_balance",
+      "passed": true,
+      "value": 3.209755231726702e-13,
+      "limit": 1e-06
+    },
+    {
+      "name": "evap_nx16_dt20/upper_0.900000/water_flux_balance",
+      "passed": true,
+      "value": {
+        "max_relative_when_flux_above_floor": 3.574692239728361e-08,
+        "floor_rescued_rows": 0
+      },
+      "limit": {
+        "relative": 0.001,
+        "absolute_floor_m": 1e-12
+      }
+    },
+    {
+      "name": "evap_nx16_dt20/upper_0.900000/water_CSV_algebra",
+      "passed": true,
+      "value": 0.0,
+      "limit": 1e-15
+    },
+    {
+      "name": "evap_nx16_dt20/whole_salt_reaction_accounting",
+      "passed": true,
+      "value": 0.0,
+      "limit": 1e-15
+    },
+    {
+      "name": "evap_nx16_dt20/whole_water_reaction_accounting",
+      "passed": true,
+      "value": 3.210784265685832e-20,
+      "limit": 1e-15
+    },
+    {
+      "name": "evap_nx16_dt20/evap_nx16_dt20-00000.vtu/tensor_grid",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "evap_nx16_dt20/evap_nx16_dt20-00000.vtu/extrema",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "evap_nx16_dt20/evap_nx16_dt20-00001.vtu/tensor_grid",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "evap_nx16_dt20/evap_nx16_dt20-00001.vtu/extrema",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "evap_nx16_dt20/uniform_moleFraction",
+      "passed": true,
+      "value": 9.974659986866641e-17,
+      "limit": 1e-09
+    },
+    {
+      "name": "evap_nx16_dt20/uniform_sw",
+      "passed": true,
+      "value": 6.994405055138486e-15,
+      "limit": 1e-09
+    },
+    {
+      "name": "evap_nx16_dt20/uniform_pw",
+      "passed": true,
+      "value": 1.0186340659856796e-10,
+      "limit": 0.0001
+    },
+    {
+      "name": "evap_nx16_dt20/independent_VTU_inventory",
+      "passed": true,
+      "value": 2.2647393111773436e-14,
+      "limit": 1e-10
+    },
+    {
+      "name": "evap_nx16_dt20/independent_surface_mean",
+      "passed": true,
+      "value": 1.734723475976807e-18,
+      "limit": 1e-14
+    },
+    {
+      "name": "evap_nx16_dt20/no_false_threshold",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "evap_nx8_dt10/sha256/stop_record.json",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "evap_nx8_dt10/sha256/solver.log",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "evap_nx8_dt10/sha256/field_profiles.csv",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "evap_nx8_dt10/sha256/evap_nx8_dt10.pvd",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "evap_nx8_dt10/sha256/transport_metadata.json",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "evap_nx8_dt10/sha256/transport_budget.csv",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "evap_nx8_dt10/sha256/field_checks.json",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "evap_nx8_dt10/sha256/params.input",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "evap_nx8_dt10/sha256/evap_nx8_dt10-00001.vtu",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "evap_nx8_dt10/sha256/evap_nx8_dt10-00000.vtu",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "evap_nx8_dt10/sha256/evap_nx8_dt10_sigmatop.csv",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "evap_nx8_dt10/sha256/surface_events.csv",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "evap_nx8_dt10/input_sha256",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "evap_nx8_dt10/exit",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "evap_nx8_dt10/stop",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "evap_nx8_dt10/row_counts",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "evap_nx8_dt10/finite",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "evap_nx8_dt10/event_time_order",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "evap_nx8_dt10/final_time",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "evap_nx8_dt10/surface_uniform_every_step",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "evap_nx8_dt10/prescribed_evaporation",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "evap_nx8_dt10/free_domain/salt_inventory_balance",
+      "passed": true,
+      "value": 1.682476870635301e-14,
+      "limit": 1e-06
+    },
+    {
+      "name": "evap_nx8_dt10/free_domain/salt_flux_balance",
+      "passed": true,
+      "value": {
+        "max_relative_when_flux_above_floor": 2.5994104449129616e-09,
+        "floor_rescued_rows": 0
+      },
+      "limit": {
+        "relative": 0.001,
+        "absolute_floor_m": 1e-12
+      }
+    },
+    {
+      "name": "evap_nx8_dt10/free_domain/salt_CSV_algebra",
+      "passed": true,
+      "value": 1.3998065118844138e-26,
+      "limit": 1e-15
+    },
+    {
+      "name": "evap_nx8_dt10/free_domain/water_inventory_balance",
+      "passed": true,
+      "value": 2.4846930323846558e-14,
+      "limit": 1e-06
+    },
+    {
+      "name": "evap_nx8_dt10/free_domain/water_flux_balance",
+      "passed": true,
+      "value": {
+        "max_relative_when_flux_above_floor": 1.2797985688704955e-08,
+        "floor_rescued_rows": 0
+      },
+      "limit": {
+        "relative": 0.001,
+        "absolute_floor_m": 1e-12
+      }
+    },
+    {
+      "name": "evap_nx8_dt10/free_domain/water_CSV_algebra",
+      "passed": true,
+      "value": 0.0,
+      "limit": 1e-15
+    },
+    {
+      "name": "evap_nx8_dt10/upper_0.500000/salt_inventory_balance",
+      "passed": true,
+      "value": 1.2509681015292284e-13,
+      "limit": 1e-06
+    },
+    {
+      "name": "evap_nx8_dt10/upper_0.500000/salt_flux_balance",
+      "passed": true,
+      "value": {
+        "max_relative_when_flux_above_floor": 6.404363758980262e-09,
+        "floor_rescued_rows": 0
+      },
+      "limit": {
+        "relative": 0.001,
+        "absolute_floor_m": 1e-12
+      }
+    },
+    {
+      "name": "evap_nx8_dt10/upper_0.500000/salt_CSV_algebra",
+      "passed": true,
+      "value": 2.1412026737359945e-26,
+      "limit": 1e-15
+    },
+    {
+      "name": "evap_nx8_dt10/upper_0.500000/water_inventory_balance",
+      "passed": true,
+      "value": 1.2086408377146793e-13,
+      "limit": 1e-06
+    },
+    {
+      "name": "evap_nx8_dt10/upper_0.500000/water_flux_balance",
+      "passed": true,
+      "value": {
+        "max_relative_when_flux_above_floor": 3.168249083698242e-08,
+        "floor_rescued_rows": 0
+      },
+      "limit": {
+        "relative": 0.001,
+        "absolute_floor_m": 1e-12
+      }
+    },
+    {
+      "name": "evap_nx8_dt10/upper_0.500000/water_CSV_algebra",
+      "passed": true,
+      "value": 0.0,
+      "limit": 1e-15
+    },
+    {
+      "name": "evap_nx8_dt10/upper_0.750000/salt_inventory_balance",
+      "passed": true,
+      "value": 1.7664523906661032e-13,
+      "limit": 1e-06
+    },
+    {
+      "name": "evap_nx8_dt10/upper_0.750000/salt_flux_balance",
+      "passed": true,
+      "value": {
+        "max_relative_when_flux_above_floor": 1.92406883070199e-09,
+        "floor_rescued_rows": 0
+      },
+      "limit": {
+        "relative": 0.001,
+        "absolute_floor_m": 1e-12
+      }
+    },
+    {
+      "name": "evap_nx8_dt10/upper_0.750000/salt_CSV_algebra",
+      "passed": true,
+      "value": 1.931108505571223e-26,
+      "limit": 1e-15
+    },
+    {
+      "name": "evap_nx8_dt10/upper_0.750000/water_inventory_balance",
+      "passed": true,
+      "value": 1.7978657038798598e-13,
+      "limit": 1e-06
+    },
+    {
+      "name": "evap_nx8_dt10/upper_0.750000/water_flux_balance",
+      "passed": true,
+      "value": {
+        "max_relative_when_flux_above_floor": 2.923366728373918e-08,
+        "floor_rescued_rows": 0
+      },
+      "limit": {
+        "relative": 0.001,
+        "absolute_floor_m": 1e-12
+      }
+    },
+    {
+      "name": "evap_nx8_dt10/upper_0.750000/water_CSV_algebra",
+      "passed": true,
+      "value": 0.0,
+      "limit": 1e-15
+    },
+    {
+      "name": "evap_nx8_dt10/upper_0.900000/salt_inventory_balance",
+      "passed": true,
+      "value": 6.210335638975737e-13,
+      "limit": 1e-06
+    },
+    {
+      "name": "evap_nx8_dt10/upper_0.900000/salt_flux_balance",
+      "passed": true,
+      "value": {
+        "max_relative_when_flux_above_floor": 1.988100336546957e-09,
+        "floor_rescued_rows": 0
+      },
+      "limit": {
+        "relative": 0.001,
+        "absolute_floor_m": 1e-12
+      }
+    },
+    {
+      "name": "evap_nx8_dt10/upper_0.900000/salt_CSV_algebra",
+      "passed": true,
+      "value": 2.4392511146933774e-26,
+      "limit": 1e-15
+    },
+    {
+      "name": "evap_nx8_dt10/upper_0.900000/water_inventory_balance",
+      "passed": true,
+      "value": 6.201470510240671e-13,
+      "limit": 1e-06
+    },
+    {
+      "name": "evap_nx8_dt10/upper_0.900000/water_flux_balance",
+      "passed": true,
+      "value": {
+        "max_relative_when_flux_above_floor": 6.905416991801683e-08,
+        "floor_rescued_rows": 0
+      },
+      "limit": {
+        "relative": 0.001,
+        "absolute_floor_m": 1e-12
+      }
+    },
+    {
+      "name": "evap_nx8_dt10/upper_0.900000/water_CSV_algebra",
+      "passed": true,
+      "value": 0.0,
+      "limit": 1e-15
+    },
+    {
+      "name": "evap_nx8_dt10/whole_salt_reaction_accounting",
+      "passed": true,
+      "value": 0.0,
+      "limit": 1e-15
+    },
+    {
+      "name": "evap_nx8_dt10/whole_water_reaction_accounting",
+      "passed": true,
+      "value": 6.622738856344561e-20,
+      "limit": 1e-15
+    },
+    {
+      "name": "evap_nx8_dt10/evap_nx8_dt10-00000.vtu/tensor_grid",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "evap_nx8_dt10/evap_nx8_dt10-00000.vtu/extrema",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "evap_nx8_dt10/evap_nx8_dt10-00001.vtu/tensor_grid",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "evap_nx8_dt10/evap_nx8_dt10-00001.vtu/extrema",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "evap_nx8_dt10/uniform_moleFraction",
+      "passed": true,
+      "value": 1.9949319973733282e-17,
+      "limit": 1e-09
+    },
+    {
+      "name": "evap_nx8_dt10/uniform_sw",
+      "passed": true,
+      "value": 7.993605777301127e-15,
+      "limit": 1e-09
+    },
+    {
+      "name": "evap_nx8_dt10/uniform_pw",
+      "passed": true,
+      "value": 1.0186340659856796e-10,
+      "limit": 0.0001
+    },
+    {
+      "name": "evap_nx8_dt10/independent_VTU_inventory",
+      "passed": true,
+      "value": 8.003494581547868e-15,
+      "limit": 1e-10
+    },
+    {
+      "name": "evap_nx8_dt10/independent_surface_mean",
+      "passed": true,
+      "value": 1.734723475976807e-18,
+      "limit": 1e-14
+    },
+    {
+      "name": "evap_nx8_dt10/no_false_threshold",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "threshold_dt2/sha256/stop_record.json",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "threshold_dt2/sha256/solver.log",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "threshold_dt2/sha256/field_profiles.csv",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "threshold_dt2/sha256/transport_metadata.json",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "threshold_dt2/sha256/transport_budget.csv",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "threshold_dt2/sha256/field_checks.json",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "threshold_dt2/sha256/threshold_dt2-00001.vtu",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "threshold_dt2/sha256/params.input",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "threshold_dt2/sha256/threshold_dt2.pvd",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "threshold_dt2/sha256/threshold_dt2-00000.vtu",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "threshold_dt2/sha256/threshold_dt2_sigmatop.csv",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "threshold_dt2/sha256/surface_events.csv",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "threshold_dt2/input_sha256",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "threshold_dt2/exit",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "threshold_dt2/stop",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "threshold_dt2/row_counts",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "threshold_dt2/finite",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "threshold_dt2/event_time_order",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "threshold_dt2/final_time",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "threshold_dt2/surface_uniform_every_step",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "threshold_dt2/prescribed_evaporation",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "threshold_dt2/free_domain/salt_inventory_balance",
+      "passed": true,
+      "value": 1.1927093200935126e-14,
+      "limit": 1e-06
+    },
+    {
+      "name": "threshold_dt2/free_domain/salt_flux_balance",
+      "passed": true,
+      "value": {
+        "max_relative_when_flux_above_floor": 2.408033447849325e-05,
+        "floor_rescued_rows": 0
+      },
+      "limit": {
+        "relative": 0.001,
+        "absolute_floor_m": 1e-12
+      }
+    },
+    {
+      "name": "threshold_dt2/free_domain/salt_CSV_algebra",
+      "passed": true,
+      "value": 4.0525180413609434e-27,
+      "limit": 1e-15
+    },
+    {
+      "name": "threshold_dt2/free_domain/water_inventory_balance",
+      "passed": true,
+      "value": 7.141954550671008e-15,
+      "limit": 1e-06
+    },
+    {
+      "name": "threshold_dt2/free_domain/water_flux_balance",
+      "passed": true,
+      "value": {
+        "max_relative_when_flux_above_floor": 2.2403144783391373e-08,
+        "floor_rescued_rows": 0
+      },
+      "limit": {
+        "relative": 0.001,
+        "absolute_floor_m": 1e-12
+      }
+    },
+    {
+      "name": "threshold_dt2/free_domain/water_CSV_algebra",
+      "passed": true,
+      "value": 0.0,
+      "limit": 1e-15
+    },
+    {
+      "name": "threshold_dt2/upper_0.500000/salt_inventory_balance",
+      "passed": true,
+      "value": 6.109892158553701e-15,
+      "limit": 1e-06
+    },
+    {
+      "name": "threshold_dt2/upper_0.500000/salt_flux_balance",
+      "passed": true,
+      "value": {
+        "max_relative_when_flux_above_floor": 2.264382123707727e-06,
+        "floor_rescued_rows": 0
+      },
+      "limit": {
+        "relative": 0.001,
+        "absolute_floor_m": 1e-12
+      }
+    },
+    {
+      "name": "threshold_dt2/upper_0.500000/salt_CSV_algebra",
+      "passed": true,
+      "value": 7.968919471528747e-27,
+      "limit": 1e-15
+    },
+    {
+      "name": "threshold_dt2/upper_0.500000/water_inventory_balance",
+      "passed": true,
+      "value": 5.679963463028668e-15,
+      "limit": 1e-06
+    },
+    {
+      "name": "threshold_dt2/upper_0.500000/water_flux_balance",
+      "passed": true,
+      "value": {
+        "max_relative_when_flux_above_floor": 9.334253538682697e-09,
+        "floor_rescued_rows": 0
+      },
+      "limit": {
+        "relative": 0.001,
+        "absolute_floor_m": 1e-12
+      }
+    },
+    {
+      "name": "threshold_dt2/upper_0.500000/water_CSV_algebra",
+      "passed": true,
+      "value": 0.0,
+      "limit": 1e-15
+    },
+    {
+      "name": "threshold_dt2/upper_0.750000/salt_inventory_balance",
+      "passed": true,
+      "value": 2.812195454864783e-15,
+      "limit": 1e-06
+    },
+    {
+      "name": "threshold_dt2/upper_0.750000/salt_flux_balance",
+      "passed": true,
+      "value": {
+        "max_relative_when_flux_above_floor": 6.73360611660831e-08,
+        "floor_rescued_rows": 0
+      },
+      "limit": {
+        "relative": 0.001,
+        "absolute_floor_m": 1e-12
+      }
+    },
+    {
+      "name": "threshold_dt2/upper_0.750000/salt_CSV_algebra",
+      "passed": true,
+      "value": 3.449339723721842e-26,
+      "limit": 1e-15
+    },
+    {
+      "name": "threshold_dt2/upper_0.750000/water_inventory_balance",
+      "passed": true,
+      "value": 3.344119356775301e-15,
+      "limit": 1e-06
+    },
+    {
+      "name": "threshold_dt2/upper_0.750000/water_flux_balance",
+      "passed": true,
+      "value": {
+        "max_relative_when_flux_above_floor": 1.3965288274566207e-09,
+        "floor_rescued_rows": 0
+      },
+      "limit": {
+        "relative": 0.001,
+        "absolute_floor_m": 1e-12
+      }
+    },
+    {
+      "name": "threshold_dt2/upper_0.750000/water_CSV_algebra",
+      "passed": true,
+      "value": 0.0,
+      "limit": 1e-15
+    },
+    {
+      "name": "threshold_dt2/upper_0.900000/salt_inventory_balance",
+      "passed": true,
+      "value": 5.805085509527613e-15,
+      "limit": 1e-06
+    },
+    {
+      "name": "threshold_dt2/upper_0.900000/salt_flux_balance",
+      "passed": true,
+      "value": {
+        "max_relative_when_flux_above_floor": 5.511524833321766e-09,
+        "floor_rescued_rows": 0
+      },
+      "limit": {
+        "relative": 0.001,
+        "absolute_floor_m": 1e-12
+      }
+    },
+    {
+      "name": "threshold_dt2/upper_0.900000/salt_CSV_algebra",
+      "passed": true,
+      "value": 7.689075531297103e-26,
+      "limit": 1e-15
+    },
+    {
+      "name": "threshold_dt2/upper_0.900000/water_inventory_balance",
+      "passed": true,
+      "value": 5.936614421422723e-15,
+      "limit": 1e-06
+    },
+    {
+      "name": "threshold_dt2/upper_0.900000/water_flux_balance",
+      "passed": true,
+      "value": {
+        "max_relative_when_flux_above_floor": 2.065332572935092e-09,
+        "floor_rescued_rows": 0
+      },
+      "limit": {
+        "relative": 0.001,
+        "absolute_floor_m": 1e-12
+      }
+    },
+    {
+      "name": "threshold_dt2/upper_0.900000/water_CSV_algebra",
+      "passed": true,
+      "value": 0.0,
+      "limit": 1e-15
+    },
+    {
+      "name": "threshold_dt2/whole_salt_reaction_accounting",
+      "passed": true,
+      "value": 0.0,
+      "limit": 1e-15
+    },
+    {
+      "name": "threshold_dt2/whole_water_reaction_accounting",
+      "passed": true,
+      "value": 1.3648480107124957e-23,
+      "limit": 1e-15
+    },
+    {
+      "name": "threshold_dt2/threshold_dt2-00000.vtu/tensor_grid",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "threshold_dt2/threshold_dt2-00000.vtu/extrema",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "threshold_dt2/threshold_dt2-00001.vtu/tensor_grid",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "threshold_dt2/threshold_dt2-00001.vtu/extrema",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "threshold_dt2/uniform_moleFraction",
+      "passed": true,
+      "value": 1.1102230246251565e-16,
+      "limit": 1e-09
+    },
+    {
+      "name": "threshold_dt2/uniform_sw",
+      "passed": true,
+      "value": 1.099120794378905e-14,
+      "limit": 1e-09
+    },
+    {
+      "name": "threshold_dt2/uniform_pw",
+      "passed": true,
+      "value": 1.0186340659856796e-10,
+      "limit": 0.0001
+    },
+    {
+      "name": "threshold_dt2/independent_VTU_inventory",
+      "passed": true,
+      "value": 9.646803556594992e-15,
+      "limit": 1e-10
+    },
+    {
+      "name": "threshold_dt2/independent_surface_mean",
+      "passed": true,
+      "value": 1.3877787807814457e-17,
+      "limit": 1e-14
+    },
+    {
+      "name": "threshold_dt2/threshold_last_step",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "threshold_dt2/threshold_bracket",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "threshold_dt2/global_bracket",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "threshold_dt1/sha256/threshold_dt1-00000.vtu",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "threshold_dt1/sha256/stop_record.json",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "threshold_dt1/sha256/solver.log",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "threshold_dt1/sha256/field_profiles.csv",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "threshold_dt1/sha256/transport_metadata.json",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "threshold_dt1/sha256/threshold_dt1.pvd",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "threshold_dt1/sha256/threshold_dt1-00001.vtu",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "threshold_dt1/sha256/transport_budget.csv",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "threshold_dt1/sha256/field_checks.json",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "threshold_dt1/sha256/threshold_dt1_sigmatop.csv",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "threshold_dt1/sha256/params.input",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "threshold_dt1/sha256/surface_events.csv",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "threshold_dt1/input_sha256",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "threshold_dt1/exit",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "threshold_dt1/stop",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "threshold_dt1/row_counts",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "threshold_dt1/finite",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "threshold_dt1/event_time_order",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "threshold_dt1/final_time",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "threshold_dt1/surface_uniform_every_step",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "threshold_dt1/prescribed_evaporation",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "threshold_dt1/free_domain/salt_inventory_balance",
+      "passed": true,
+      "value": 2.3681208003834927e-14,
+      "limit": 1e-06
+    },
+    {
+      "name": "threshold_dt1/free_domain/salt_flux_balance",
+      "passed": true,
+      "value": {
+        "max_relative_when_flux_above_floor": 3.6422957687819555e-05,
+        "floor_rescued_rows": 0
+      },
+      "limit": {
+        "relative": 0.001,
+        "absolute_floor_m": 1e-12
+      }
+    },
+    {
+      "name": "threshold_dt1/free_domain/salt_CSV_algebra",
+      "passed": true,
+      "value": 6.722915626929709e-28,
+      "limit": 1e-15
+    },
+    {
+      "name": "threshold_dt1/free_domain/water_inventory_balance",
+      "passed": true,
+      "value": 1.7980233376010814e-14,
+      "limit": 1e-06
+    },
+    {
+      "name": "threshold_dt1/free_domain/water_flux_balance",
+      "passed": true,
+      "value": {
+        "max_relative_when_flux_above_floor": 7.49558033531505e-08,
+        "floor_rescued_rows": 0
+      },
+      "limit": {
+        "relative": 0.001,
+        "absolute_floor_m": 1e-12
+      }
+    },
+    {
+      "name": "threshold_dt1/free_domain/water_CSV_algebra",
+      "passed": true,
+      "value": 0.0,
+      "limit": 1e-15
+    },
+    {
+      "name": "threshold_dt1/upper_0.500000/salt_inventory_balance",
+      "passed": true,
+      "value": 7.415547617098743e-12,
+      "limit": 1e-06
+    },
+    {
+      "name": "threshold_dt1/upper_0.500000/salt_flux_balance",
+      "passed": true,
+      "value": {
+        "max_relative_when_flux_above_floor": 0.008119183775232259,
+        "floor_rescued_rows": 4
+      },
+      "limit": {
+        "relative": 0.001,
+        "absolute_floor_m": 1e-12
+      }
+    },
+    {
+      "name": "threshold_dt1/upper_0.500000/salt_CSV_algebra",
+      "passed": true,
+      "value": 3.8137448503312266e-27,
+      "limit": 1e-15
+    },
+    {
+      "name": "threshold_dt1/upper_0.500000/water_inventory_balance",
+      "passed": true,
+      "value": 7.419078749829006e-12,
+      "limit": 1e-06
+    },
+    {
+      "name": "threshold_dt1/upper_0.500000/water_flux_balance",
+      "passed": true,
+      "value": {
+        "max_relative_when_flux_above_floor": 2.367167550064223e-05,
+        "floor_rescued_rows": 0
+      },
+      "limit": {
+        "relative": 0.001,
+        "absolute_floor_m": 1e-12
+      }
+    },
+    {
+      "name": "threshold_dt1/upper_0.500000/water_CSV_algebra",
+      "passed": true,
+      "value": 0.0,
+      "limit": 1e-15
+    },
+    {
+      "name": "threshold_dt1/upper_0.750000/salt_inventory_balance",
+      "passed": true,
+      "value": 1.3250668346288392e-14,
+      "limit": 1e-06
+    },
+    {
+      "name": "threshold_dt1/upper_0.750000/salt_flux_balance",
+      "passed": true,
+      "value": {
+        "max_relative_when_flux_above_floor": 2.8477817741262852e-06,
+        "floor_rescued_rows": 0
+      },
+      "limit": {
+        "relative": 0.001,
+        "absolute_floor_m": 1e-12
+      }
+    },
+    {
+      "name": "threshold_dt1/upper_0.750000/salt_CSV_algebra",
+      "passed": true,
+      "value": 1.6033783269693983e-26,
+      "limit": 1e-15
+    },
+    {
+      "name": "threshold_dt1/upper_0.750000/water_inventory_balance",
+      "passed": true,
+      "value": 1.4258353579958254e-14,
+      "limit": 1e-06
+    },
+    {
+      "name": "threshold_dt1/upper_0.750000/water_flux_balance",
+      "passed": true,
+      "value": {
+        "max_relative_when_flux_above_floor": 2.090046189569076e-08,
+        "floor_rescued_rows": 0
+      },
+      "limit": {
+        "relative": 0.001,
+        "absolute_floor_m": 1e-12
+      }
+    },
+    {
+      "name": "threshold_dt1/upper_0.750000/water_CSV_algebra",
+      "passed": true,
+      "value": 0.0,
+      "limit": 1e-15
+    },
+    {
+      "name": "threshold_dt1/upper_0.900000/salt_inventory_balance",
+      "passed": true,
+      "value": 2.2672526439249253e-14,
+      "limit": 1e-06
+    },
+    {
+      "name": "threshold_dt1/upper_0.900000/salt_flux_balance",
+      "passed": true,
+      "value": {
+        "max_relative_when_flux_above_floor": 1.003543897199981e-07,
+        "floor_rescued_rows": 0
+      },
+      "limit": {
+        "relative": 0.001,
+        "absolute_floor_m": 1e-12
+      }
+    },
+    {
+      "name": "threshold_dt1/upper_0.900000/salt_CSV_algebra",
+      "passed": true,
+      "value": 1.288157277150084e-25,
+      "limit": 1e-15
+    },
+    {
+      "name": "threshold_dt1/upper_0.900000/water_inventory_balance",
+      "passed": true,
+      "value": 2.047338887869503e-14,
+      "limit": 1e-06
+    },
+    {
+      "name": "threshold_dt1/upper_0.900000/water_flux_balance",
+      "passed": true,
+      "value": {
+        "max_relative_when_flux_above_floor": 1.1014595500734344e-08,
+        "floor_rescued_rows": 0
+      },
+      "limit": {
+        "relative": 0.001,
+        "absolute_floor_m": 1e-12
+      }
+    },
+    {
+      "name": "threshold_dt1/upper_0.900000/water_CSV_algebra",
+      "passed": true,
+      "value": 0.0,
+      "limit": 1e-15
+    },
+    {
+      "name": "threshold_dt1/whole_salt_reaction_accounting",
+      "passed": true,
+      "value": 0.0,
+      "limit": 1e-15
+    },
+    {
+      "name": "threshold_dt1/whole_water_reaction_accounting",
+      "passed": true,
+      "value": 2.3005960786631082e-24,
+      "limit": 1e-15
+    },
+    {
+      "name": "threshold_dt1/threshold_dt1-00000.vtu/tensor_grid",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "threshold_dt1/threshold_dt1-00000.vtu/extrema",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "threshold_dt1/threshold_dt1-00001.vtu/tensor_grid",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "threshold_dt1/threshold_dt1-00001.vtu/extrema",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "threshold_dt1/uniform_moleFraction",
+      "passed": true,
+      "value": 9.992007221626409e-16,
+      "limit": 1e-09
+    },
+    {
+      "name": "threshold_dt1/uniform_sw",
+      "passed": true,
+      "value": 1.0302869668521453e-13,
+      "limit": 1e-09
+    },
+    {
+      "name": "threshold_dt1/uniform_pw",
+      "passed": true,
+      "value": 3.055902197957039e-10,
+      "limit": 0.0001
+    },
+    {
+      "name": "threshold_dt1/independent_VTU_inventory",
+      "passed": true,
+      "value": 9.646803556594992e-15,
+      "limit": 1e-10
+    },
+    {
+      "name": "threshold_dt1/independent_surface_mean",
+      "passed": true,
+      "value": 2.7755575615628914e-17,
+      "limit": 1e-14
+    },
+    {
+      "name": "threshold_dt1/threshold_last_step",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "threshold_dt1/threshold_bracket",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "threshold_dt1/global_bracket",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "threshold_initial/sha256/threshold_initial-00000.vtu",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "threshold_initial/sha256/stop_record.json",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "threshold_initial/sha256/solver.log",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "threshold_initial/sha256/field_profiles.csv",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "threshold_initial/sha256/threshold_initial.pvd",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "threshold_initial/sha256/threshold_initial_sigmatop.csv",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "threshold_initial/sha256/transport_metadata.json",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "threshold_initial/sha256/transport_budget.csv",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "threshold_initial/sha256/field_checks.json",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "threshold_initial/sha256/params.input",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "threshold_initial/sha256/surface_events.csv",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "threshold_initial/input_sha256",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "threshold_initial/exit",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "threshold_initial/stop",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "threshold_initial/row_counts",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "threshold_initial/finite",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "threshold_initial/event_time_order",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "threshold_initial/final_time",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "threshold_initial/surface_uniform_every_step",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "threshold_initial/prescribed_evaporation",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "threshold_initial/free_domain/salt_inventory_balance",
+      "passed": true,
+      "value": 0.0,
+      "limit": 1e-06
+    },
+    {
+      "name": "threshold_initial/free_domain/salt_flux_balance",
+      "passed": true,
+      "value": {
+        "max_relative_when_flux_above_floor": 0.0,
+        "floor_rescued_rows": 0
+      },
+      "limit": {
+        "relative": 0.001,
+        "absolute_floor_m": 1e-12
+      }
+    },
+    {
+      "name": "threshold_initial/free_domain/salt_CSV_algebra",
+      "passed": true,
+      "value": 2.0647566881771245e-35,
+      "limit": 1e-15
+    },
+    {
+      "name": "threshold_initial/free_domain/water_inventory_balance",
+      "passed": true,
+      "value": 0.0,
+      "limit": 1e-06
+    },
+    {
+      "name": "threshold_initial/free_domain/water_flux_balance",
+      "passed": true,
+      "value": {
+        "max_relative_when_flux_above_floor": 0.0,
+        "floor_rescued_rows": 0
+      },
+      "limit": {
+        "relative": 0.001,
+        "absolute_floor_m": 1e-12
+      }
+    },
+    {
+      "name": "threshold_initial/free_domain/water_CSV_algebra",
+      "passed": true,
+      "value": 0.0,
+      "limit": 1e-15
+    },
+    {
+      "name": "threshold_initial/upper_0.500000/salt_inventory_balance",
+      "passed": true,
+      "value": 0.0,
+      "limit": 1e-06
+    },
+    {
+      "name": "threshold_initial/upper_0.500000/salt_flux_balance",
+      "passed": true,
+      "value": {
+        "max_relative_when_flux_above_floor": 0.0,
+        "floor_rescued_rows": 0
+      },
+      "limit": {
+        "relative": 0.001,
+        "absolute_floor_m": 1e-12
+      }
+    },
+    {
+      "name": "threshold_initial/upper_0.500000/salt_CSV_algebra",
+      "passed": true,
+      "value": 7.788078257198491e-35,
+      "limit": 1e-15
+    },
+    {
+      "name": "threshold_initial/upper_0.500000/water_inventory_balance",
+      "passed": true,
+      "value": 0.0,
+      "limit": 1e-06
+    },
+    {
+      "name": "threshold_initial/upper_0.500000/water_flux_balance",
+      "passed": true,
+      "value": {
+        "max_relative_when_flux_above_floor": 0.0,
+        "floor_rescued_rows": 0
+      },
+      "limit": {
+        "relative": 0.001,
+        "absolute_floor_m": 1e-12
+      }
+    },
+    {
+      "name": "threshold_initial/upper_0.500000/water_CSV_algebra",
+      "passed": true,
+      "value": 0.0,
+      "limit": 1e-15
+    },
+    {
+      "name": "threshold_initial/upper_0.750000/salt_inventory_balance",
+      "passed": true,
+      "value": 0.0,
+      "limit": 1e-06
+    },
+    {
+      "name": "threshold_initial/upper_0.750000/salt_flux_balance",
+      "passed": true,
+      "value": {
+        "max_relative_when_flux_above_floor": 0.0,
+        "floor_rescued_rows": 0
+      },
+      "limit": {
+        "relative": 0.001,
+        "absolute_floor_m": 1e-12
+      }
+    },
+    {
+      "name": "threshold_initial/upper_0.750000/salt_CSV_algebra",
+      "passed": true,
+      "value": 1.7889963319534591e-34,
+      "limit": 1e-15
+    },
+    {
+      "name": "threshold_initial/upper_0.750000/water_inventory_balance",
+      "passed": true,
+      "value": 0.0,
+      "limit": 1e-06
+    },
+    {
+      "name": "threshold_initial/upper_0.750000/water_flux_balance",
+      "passed": true,
+      "value": {
+        "max_relative_when_flux_above_floor": 0.0,
+        "floor_rescued_rows": 0
+      },
+      "limit": {
+        "relative": 0.001,
+        "absolute_floor_m": 1e-12
+      }
+    },
+    {
+      "name": "threshold_initial/upper_0.750000/water_CSV_algebra",
+      "passed": true,
+      "value": 0.0,
+      "limit": 1e-15
+    },
+    {
+      "name": "threshold_initial/upper_0.900000/salt_inventory_balance",
+      "passed": true,
+      "value": 0.0,
+      "limit": 1e-06
+    },
+    {
+      "name": "threshold_initial/upper_0.900000/salt_flux_balance",
+      "passed": true,
+      "value": {
+        "max_relative_when_flux_above_floor": 0.0,
+        "floor_rescued_rows": 0
+      },
+      "limit": {
+        "relative": 0.001,
+        "absolute_floor_m": 1e-12
+      }
+    },
+    {
+      "name": "threshold_initial/upper_0.900000/salt_CSV_algebra",
+      "passed": true,
+      "value": 2.1815639202588414e-34,
+      "limit": 1e-15
+    },
+    {
+      "name": "threshold_initial/upper_0.900000/water_inventory_balance",
+      "passed": true,
+      "value": 0.0,
+      "limit": 1e-06
+    },
+    {
+      "name": "threshold_initial/upper_0.900000/water_flux_balance",
+      "passed": true,
+      "value": {
+        "max_relative_when_flux_above_floor": 0.0,
+        "floor_rescued_rows": 0
+      },
+      "limit": {
+        "relative": 0.001,
+        "absolute_floor_m": 1e-12
+      }
+    },
+    {
+      "name": "threshold_initial/upper_0.900000/water_CSV_algebra",
+      "passed": true,
+      "value": 0.0,
+      "limit": 1e-15
+    },
+    {
+      "name": "threshold_initial/whole_salt_reaction_accounting",
+      "passed": true,
+      "value": 0.0,
+      "limit": 1e-15
+    },
+    {
+      "name": "threshold_initial/whole_water_reaction_accounting",
+      "passed": true,
+      "value": 0.0,
+      "limit": 1e-15
+    },
+    {
+      "name": "threshold_initial/threshold_initial-00000.vtu/tensor_grid",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "threshold_initial/threshold_initial-00000.vtu/extrema",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "threshold_initial/uniform_moleFraction",
+      "passed": true,
+      "value": 0.0,
+      "limit": 1e-09
+    },
+    {
+      "name": "threshold_initial/uniform_sw",
+      "passed": true,
+      "value": 0.0,
+      "limit": 1e-09
+    },
+    {
+      "name": "threshold_initial/uniform_pw",
+      "passed": true,
+      "value": 0.0,
+      "limit": 0.0001
+    },
+    {
+      "name": "threshold_initial/independent_VTU_inventory",
+      "passed": true,
+      "value": 1.1284226777000048e-14,
+      "limit": 1e-10
+    },
+    {
+      "name": "threshold_initial/independent_surface_mean",
+      "passed": true,
+      "value": 1.3877787807814457e-17,
+      "limit": 1e-14
+    },
+    {
+      "name": "threshold_initial/threshold_last_step",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "threshold_initial/threshold_bracket",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "threshold_initial/global_bracket",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "startup_invalid_time/sha256/stop_record.json",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "startup_invalid_time/sha256/solver.log",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "startup_invalid_time/sha256/params.input",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "startup_invalid_time/input_sha256",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "startup_invalid_time/exit",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "startup_invalid_time/stop",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "startup_invalid_time/no_false_output",
+      "passed": true,
+      "value": null,
+      "limit": null
+    },
+    {
+      "name": "closed_hydrostatic/flux",
+      "passed": true,
+      "value": 3.807082146559853e-17,
+      "limit": 1e-12
+    },
+    {
+      "name": "horizontal_refinement/x_profile",
+      "passed": true,
+      "value": 3.159783733421063e-15,
+      "limit": 1e-05
+    },
+    {
+      "name": "horizontal_refinement/inventory",
+      "passed": true,
+      "value": 8.839054158450003e-15,
+      "limit": 1e-06
+    },
+    {
+      "name": "dt_halving/top_x",
+      "passed": true,
+      "value": 1.6049186190592676e-05,
+      "limit": 0.005
+    }
+  ],
+  "limitations": [
+    "uniform 2D only; not independently coded 1D",
+    "no vertical mesh convergence",
+    "bottom reaction inferred, not an independent physical boundary flux",
+    "event stress tests use synthetic high initial salinity",
+    "no Pilot A/B or effective transport label"
+  ]
+}

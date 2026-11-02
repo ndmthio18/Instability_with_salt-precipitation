@@ -1,0 +1,509 @@
+[
+  {
+    "id": "closed_hydrostatic",
+    "expected_reason": "requested_horizon",
+    "expected_exit": 0,
+    "returncode": 0,
+    "wall_s": 0.5655338875949383,
+    "stop": {
+      "schema_version": 1,
+      "reason": "requested_horizon",
+      "last_accepted_time_s": 100,
+      "accepted_steps": 10,
+      "initial_diagnostics_written": true,
+      "requested_end_s": 100,
+      "surface_threshold_low_s": null,
+      "surface_threshold_high_s": null,
+      "global_threshold_low_s": null,
+      "global_threshold_high_s": null
+    },
+    "files": {
+      "stop_record.json": {
+        "bytes": 319,
+        "sha256": "ca75f3d89aa0b867b7b8c60f44535ecaafa05cf0cdcbf7dc44db93badba029b1"
+      },
+      "solver.log": {
+        "bytes": 5992,
+        "sha256": "39673dcb100430bf332e094a45d0bf092ce77bae730d06eef3321a4d0e35f697"
+      },
+      "field_profiles.csv": {
+        "bytes": 18595,
+        "sha256": "867747281315c0cbebc673dbaaaf13de3d846bc6be281ccf590f1d32ad8099e0"
+      },
+      "closed_hydrostatic_sigmatop.csv": {
+        "bytes": 1167,
+        "sha256": "7d313228e507fb3013c64b02c9a8988dd486e6b7266b33ebea53dc93af4465be"
+      },
+      "transport_metadata.json": {
+        "bytes": 983,
+        "sha256": "846e4791c26d8cb13d4765f456acdd8c315735ce6f8677eac8a62bd7a5d25aec"
+      },
+      "closed_hydrostatic-00000.vtu": {
+        "bytes": 52737,
+        "sha256": "d92de8aa33f1c73cef4e54af7ec218fbf0ec5573d618d7c701dd2208ec2ca888"
+      },
+      "transport_budget.csv": {
+        "bytes": 23406,
+        "sha256": "5ec49cddb6f68f1a3dc7ca2265c22f39dfbd8553ad4428e73d943dde4975f18b"
+      },
+      "field_checks.json": {
+        "bytes": 1625,
+        "sha256": "8dd5b1eca4b3f9b0c6ee8cf2fccf8fbac14dab406c6ca99a0764f3a2f81c2d70"
+      },
+      "params.input": {
+        "bytes": 906,
+        "sha256": "2de7a62fac279de84a61b904f9afa53872d4fb9c4277642641ad9d3b6ac85512"
+      },
+      "closed_hydrostatic-00001.vtu": {
+        "bytes": 57064,
+        "sha256": "b9c188854d5c1ea6dc740d1626331faeeed0b0e1de6936b7278920356d1f6fce"
+      },
+      "surface_events.csv": {
+        "bytes": 1764,
+        "sha256": "36ff952ba122f8ff6a230e51fd8711a7a00678d237c8bebd2cd08765890a0458"
+      },
+      "closed_hydrostatic.pvd": {
+        "bytes": 309,
+        "sha256": "e4182a59b649b4e402491b7cb739ad83599eccb40a8d4e0e2cae1a54b2eb8f30"
+      }
+    }
+  },
+  {
+    "id": "evap_nx8_dt20",
+    "expected_reason": "requested_horizon",
+    "expected_exit": 0,
+    "returncode": 0,
+    "wall_s": 0.6649916004389524,
+    "stop": {
+      "schema_version": 1,
+      "reason": "requested_horizon",
+      "last_accepted_time_s": 2000,
+      "accepted_steps": 100,
+      "initial_diagnostics_written": true,
+      "requested_end_s": 2000,
+      "surface_threshold_low_s": null,
+      "surface_threshold_high_s": null,
+      "global_threshold_low_s": null,
+      "global_threshold_high_s": null
+    },
+    "files": {
+      "stop_record.json": {
+        "bytes": 322,
+        "sha256": "2a64c61cf819fecbab9b3c26d43f6193f6dc0718b5e82d8d13f14b9a97b67196"
+      },
+      "solver.log": {
+        "bytes": 53231,
+        "sha256": "8f015352157568da5e2bb0ec0abd0df8fcc5edd2fe671a81139167ad26ca08fa"
+      },
+      "field_profiles.csv": {
+        "bytes": 17893,
+        "sha256": "949380c854069c6219fdc62d21e72e58aa1d7d6a0a50c732e51cd975593bb708"
+      },
+      "transport_metadata.json": {
+        "bytes": 983,
+        "sha256": "846e4791c26d8cb13d4765f456acdd8c315735ce6f8677eac8a62bd7a5d25aec"
+      },
+      "evap_nx8_dt20-00000.vtu": {
+        "bytes": 52737,
+        "sha256": "d92de8aa33f1c73cef4e54af7ec218fbf0ec5573d618d7c701dd2208ec2ca888"
+      },
+      "transport_budget.csv": {
+        "bytes": 228563,
+        "sha256": "501e181566d60523495134c9b88823d68bbdbe5dcdbbf39cdaebb91f55ba25d8"
+      },
+      "field_checks.json": {
+        "bytes": 1633,
+        "sha256": "80c29378b2031ac0378d15409bbeeb7b53f590b6e48e79a7cd19b1798a3a27e3"
+      },
+      "params.input": {
+        "bytes": 909,
+        "sha256": "9e3c693ddbeef7b842b4a80d48e8370c5b194c1221beecc542a7f0532f08f638"
+      },
+      "evap_nx8_dt20-00001.vtu": {
+        "bytes": 59049,
+        "sha256": "15670d83a03c3aa2d579d14dd2116efe584b5a71be258b6542c9bf6744a9cde2"
+      },
+      "evap_nx8_dt20_sigmatop.csv": {
+        "bytes": 9897,
+        "sha256": "a0ea663670d8964225d29b0136827c5fee43ce1c367ca6edcaf4a84500eefffc"
+      },
+      "evap_nx8_dt20.pvd": {
+        "bytes": 300,
+        "sha256": "25c00294a37411cc88778c4cc58ecb1770fba1d5ced1c58fab72c6b4d7fb692d"
+      },
+      "surface_events.csv": {
+        "bytes": 16989,
+        "sha256": "0de9fa0a3e20ccfe4a1f1d5b26669f10265d03876540d0c92d15dbb52ba8cfcf"
+      }
+    }
+  },
+  {
+    "id": "evap_nx16_dt20",
+    "expected_reason": "requested_horizon",
+    "expected_exit": 0,
+    "returncode": 0,
+    "wall_s": 0.9654426816850901,
+    "stop": {
+      "schema_version": 1,
+      "reason": "requested_horizon",
+      "last_accepted_time_s": 2000,
+      "accepted_steps": 100,
+      "initial_diagnostics_written": true,
+      "requested_end_s": 2000,
+      "surface_threshold_low_s": null,
+      "surface_threshold_high_s": null,
+      "global_threshold_low_s": null,
+      "global_threshold_high_s": null
+    },
+    "files": {
+      "stop_record.json": {
+        "bytes": 322,
+        "sha256": "2a64c61cf819fecbab9b3c26d43f6193f6dc0718b5e82d8d13f14b9a97b67196"
+      },
+      "solver.log": {
+        "bytes": 53143,
+        "sha256": "82ee2e2e4b9dd2fd719163dec92c03dbfb58ad7b0273d33f67b692b6f056bea9"
+      },
+      "field_profiles.csv": {
+        "bytes": 18482,
+        "sha256": "d226d20c1b55e2f282ebdd491910e9ff707ad4d101065153d59e457cc625fc16"
+      },
+      "transport_metadata.json": {
+        "bytes": 983,
+        "sha256": "846e4791c26d8cb13d4765f456acdd8c315735ce6f8677eac8a62bd7a5d25aec"
+      },
+      "transport_budget.csv": {
+        "bytes": 228282,
+        "sha256": "5bf7fdde9d4ff5bb5257183c2ec684a42062d0e2b9da15678c1435b075368102"
+      },
+      "field_checks.json": {
+        "bytes": 1631,
+        "sha256": "6c3746502eebc8d2eb8eb6c390a2e843279f7443264575f428be3110ed27a39b"
+      },
+      "evap_nx16_dt20-00001.vtu": {
+        "bytes": 112963,
+        "sha256": "66eb1840de5bd2b390c423b5ef76bf2592285863c046b75a0fe098bd4f738dcc"
+      },
+      "evap_nx16_dt20_sigmatop.csv": {
+        "bytes": 9998,
+        "sha256": "b1a8dfb37b9e02a2ba23a70599ff74dbab6538584a7f7556a28c34e5e50c538a"
+      },
+      "params.input": {
+        "bytes": 911,
+        "sha256": "53d6073a6d807fea151d90df8fd12eb6c4ce4c7539eceb2ea8d4cce48ffc602c"
+      },
+      "evap_nx16_dt20-00000.vtu": {
+        "bytes": 101684,
+        "sha256": "5c0c4d4a2417d3550ef47644012a53877dd2a27f8d464db77643f5aacb0eda94"
+      },
+      "evap_nx16_dt20.pvd": {
+        "bytes": 302,
+        "sha256": "c18ff41838d2908eacb785133add68493aad9a05c8c018e5180b6f43b7dc0d09"
+      },
+      "surface_events.csv": {
+        "bytes": 17035,
+        "sha256": "556affee7ea467a9ca090adcb494c05108158cf45588803b1518d600b2134397"
+      }
+    }
+  },
+  {
+    "id": "evap_nx8_dt10",
+    "expected_reason": "requested_horizon",
+    "expected_exit": 0,
+    "returncode": 0,
+    "wall_s": 0.9661026932299137,
+    "stop": {
+      "schema_version": 1,
+      "reason": "requested_horizon",
+      "last_accepted_time_s": 2000,
+      "accepted_steps": 200,
+      "initial_diagnostics_written": true,
+      "requested_end_s": 2000,
+      "surface_threshold_low_s": null,
+      "surface_threshold_high_s": null,
+      "global_threshold_low_s": null,
+      "global_threshold_high_s": null
+    },
+    "files": {
+      "stop_record.json": {
+        "bytes": 322,
+        "sha256": "092190f4af16a933325daf3253a2224e7c35d1d1d9f0a5dca55b1eb9fd0617f0"
+      },
+      "solver.log": {
+        "bytes": 105504,
+        "sha256": "2531ae6b68d7d8e8cf8a6341a4bd8b6fbd33b499401365223026a185654cda19"
+      },
+      "field_profiles.csv": {
+        "bytes": 18290,
+        "sha256": "bc01adbcc164526e19d071d85f45e6f1da6b18cc18126df49ca799d4813807c9"
+      },
+      "evap_nx8_dt10.pvd": {
+        "bytes": 300,
+        "sha256": "e067f4db5bc99d931337edfa5fe7c522fae7e7c292c1510170045440d133db1b"
+      },
+      "transport_metadata.json": {
+        "bytes": 983,
+        "sha256": "846e4791c26d8cb13d4765f456acdd8c315735ce6f8677eac8a62bd7a5d25aec"
+      },
+      "transport_budget.csv": {
+        "bytes": 456667,
+        "sha256": "6ce38456df5c38f60c938ba5fcb4a819f7f063dfc1cccc17edcb21e3e6cf1d78"
+      },
+      "field_checks.json": {
+        "bytes": 1633,
+        "sha256": "85ff4d4a565601e31815d397ac8083b9e24dcea51e9226c189cd175cf7d57015"
+      },
+      "params.input": {
+        "bytes": 909,
+        "sha256": "e8f342470b765b0e7ed906a54c6087f0cbea01902c7abb486801a20bbeca3839"
+      },
+      "evap_nx8_dt10-00001.vtu": {
+        "bytes": 59847,
+        "sha256": "ed0828691ce4e67f325e99fb41f3457ea7072e3844786d1a9800b3a08b674d61"
+      },
+      "evap_nx8_dt10-00000.vtu": {
+        "bytes": 52737,
+        "sha256": "d92de8aa33f1c73cef4e54af7ec218fbf0ec5573d618d7c701dd2208ec2ca888"
+      },
+      "evap_nx8_dt10_sigmatop.csv": {
+        "bytes": 19597,
+        "sha256": "26ebaf1ccb58ee88afb98d045c65100ff630fe2517c35c34edf5688a9c26234a"
+      },
+      "surface_events.csv": {
+        "bytes": 33747,
+        "sha256": "5dd9afab7c28196d22e08c61df662bc08e750cd0a83f1ef0b813a7f6403c40e3"
+      }
+    }
+  },
+  {
+    "id": "threshold_dt2",
+    "expected_reason": "surface_solubility_threshold",
+    "expected_exit": 0,
+    "returncode": 0,
+    "wall_s": 0.46542499028146267,
+    "stop": {
+      "schema_version": 1,
+      "reason": "surface_solubility_threshold",
+      "last_accepted_time_s": 6,
+      "accepted_steps": 3,
+      "initial_diagnostics_written": true,
+      "requested_end_s": 2000,
+      "surface_threshold_low_s": 4,
+      "surface_threshold_high_s": 6,
+      "global_threshold_low_s": 4,
+      "global_threshold_high_s": 6
+    },
+    "files": {
+      "stop_record.json": {
+        "bytes": 316,
+        "sha256": "671d48cff5ff4c47c4f0f8f0ca0dac6bc0cdd7c75d9d5c9b255ae4a1ba589a91"
+      },
+      "solver.log": {
+        "bytes": 2493,
+        "sha256": "f77d06350b5d89c33bf1cd4908e53fa7ade977b0cf7f0a02806a2957307a5efa"
+      },
+      "field_profiles.csv": {
+        "bytes": 17595,
+        "sha256": "24c1e58eed239447a8ad0632a6af65d7555111c58128a2618ff90f8f69d3c5d9"
+      },
+      "transport_metadata.json": {
+        "bytes": 983,
+        "sha256": "846e4791c26d8cb13d4765f456acdd8c315735ce6f8677eac8a62bd7a5d25aec"
+      },
+      "transport_budget.csv": {
+        "bytes": 8558,
+        "sha256": "a302b6edd6f0b5cfd03734ad87943a7b3645664454a641d9978a2e27fca0663c"
+      },
+      "field_checks.json": {
+        "bytes": 1617,
+        "sha256": "b9692e5c252bfb40fa3aee57066ae48696673ae37af03f7ae88d2b10dc044fe3"
+      },
+      "threshold_dt2-00001.vtu": {
+        "bytes": 57674,
+        "sha256": "6c658381772bb2c69e688e14712fc9add8745ec800de83de7ca77563dc9c3a1f"
+      },
+      "params.input": {
+        "bytes": 908,
+        "sha256": "f6b12bf5adc0b024ffa0684eeb701f24863024553ab1d21a5fe24044971268c4"
+      },
+      "threshold_dt2.pvd": {
+        "bytes": 297,
+        "sha256": "4b10b47fad0afae828e415ecafdc5bedd947bc2894f7d9016340eab51f437648"
+      },
+      "threshold_dt2-00000.vtu": {
+        "bytes": 53168,
+        "sha256": "12fb20876eb23b0aa3ff179ce4e23a99f1c1bc8fdb9cd390431c15f4dd1eef0e"
+      },
+      "threshold_dt2_sigmatop.csv": {
+        "bytes": 488,
+        "sha256": "71c3659b338b9773eab969f1165b194d5c61d7b45ba9b4025352a395c4b27c0e"
+      },
+      "surface_events.csv": {
+        "bytes": 809,
+        "sha256": "92afed2819f58e73da14248293a529ce812a3e771a573ca93fb352ed919d0e0e"
+      }
+    }
+  },
+  {
+    "id": "threshold_dt1",
+    "expected_reason": "surface_solubility_threshold",
+    "expected_exit": 0,
+    "returncode": 0,
+    "wall_s": 0.4648694321513176,
+    "stop": {
+      "schema_version": 1,
+      "reason": "surface_solubility_threshold",
+      "last_accepted_time_s": 5,
+      "accepted_steps": 5,
+      "initial_diagnostics_written": true,
+      "requested_end_s": 2000,
+      "surface_threshold_low_s": 4,
+      "surface_threshold_high_s": 5,
+      "global_threshold_low_s": 4,
+      "global_threshold_high_s": 5
+    },
+    "files": {
+      "threshold_dt1-00000.vtu": {
+        "bytes": 53168,
+        "sha256": "12fb20876eb23b0aa3ff179ce4e23a99f1c1bc8fdb9cd390431c15f4dd1eef0e"
+      },
+      "stop_record.json": {
+        "bytes": 316,
+        "sha256": "01d36d716ce12d07abd9579596c04efe25b017b86f1f8136ef492cfff1796cbd"
+      },
+      "solver.log": {
+        "bytes": 3356,
+        "sha256": "ac498f9583e2bc8a37c9e9729303e3823edce454527edead5240130ebcac94be"
+      },
+      "field_profiles.csv": {
+        "bytes": 18308,
+        "sha256": "0c6ac746f38c970d91530d70cf0196a5e3cb59f5e4f5f13ac0d3e7162ece7673"
+      },
+      "transport_metadata.json": {
+        "bytes": 983,
+        "sha256": "846e4791c26d8cb13d4765f456acdd8c315735ce6f8677eac8a62bd7a5d25aec"
+      },
+      "threshold_dt1.pvd": {
+        "bytes": 297,
+        "sha256": "1c91379a369e7f77abd6d9f622d1c11a134172ce6dafb348532025f29c7ab101"
+      },
+      "threshold_dt1-00001.vtu": {
+        "bytes": 58317,
+        "sha256": "62a635fbec9ddd1d52b36844c3976c48f7d8f2c23bba2aab8cccfb5b0d3084bb"
+      },
+      "transport_budget.csv": {
+        "bytes": 13076,
+        "sha256": "e67eefd312d44eedc8d781a5408cba8e8c1d6c70e565eb5e26b9bb227539bf4e"
+      },
+      "field_checks.json": {
+        "bytes": 1617,
+        "sha256": "84d34a9b78266db2ca0fd142a0c2ba5fd0b5fb386293d2958de8b28d3ba5b0c2"
+      },
+      "threshold_dt1_sigmatop.csv": {
+        "bytes": 682,
+        "sha256": "bc8d53416c9a534b3876cb8f3ca77c90b1bc2a39b837522275287375f14755f4"
+      },
+      "params.input": {
+        "bytes": 908,
+        "sha256": "3e4fe8972e2887985e69aea9a67ebeb07e02256379cbbf925e91aedc4686bc3f"
+      },
+      "surface_events.csv": {
+        "bytes": 1119,
+        "sha256": "c53fc488ccd5860552a4b49606a615766afd835a29a38c676d231f8939fc9577"
+      }
+    }
+  },
+  {
+    "id": "threshold_initial",
+    "expected_reason": "surface_solubility_threshold",
+    "expected_exit": 0,
+    "returncode": 0,
+    "wall_s": 0.41461520083248615,
+    "stop": {
+      "schema_version": 1,
+      "reason": "surface_solubility_threshold",
+      "last_accepted_time_s": 0,
+      "accepted_steps": 0,
+      "initial_diagnostics_written": true,
+      "requested_end_s": 2000,
+      "surface_threshold_low_s": 0,
+      "surface_threshold_high_s": 0,
+      "global_threshold_low_s": 0,
+      "global_threshold_high_s": 0
+    },
+    "files": {
+      "threshold_initial-00000.vtu": {
+        "bytes": 51760,
+        "sha256": "56ec6aad98458d7dd1d45c5e7356c2af3dd2f9a43c8ff48a66addbac8489efdc"
+      },
+      "stop_record.json": {
+        "bytes": 316,
+        "sha256": "1680021c8842542d756fdabbc5852b912d6f848ec3de7d6d55f3aa6fc20209a4"
+      },
+      "solver.log": {
+        "bytes": 199,
+        "sha256": "663d41177d07199c7d5a30bd2dd0e8530650dae5d0236c7a2f92847d4573136a"
+      },
+      "field_profiles.csv": {
+        "bytes": 8639,
+        "sha256": "9767fba98d063802ceec674acd00652a2faf8815b1b6cc24aa08e1257bb7d193"
+      },
+      "threshold_initial.pvd": {
+        "bytes": 219,
+        "sha256": "874d192ae99be8cd501d05e7e4da11487b21fb1b1e1f2dad26a15194476d9610"
+      },
+      "threshold_initial_sigmatop.csv": {
+        "bytes": 197,
+        "sha256": "5746226f0c5e0d7d33448325c2bce37b0faea59624c1bf379867da524deb9140"
+      },
+      "transport_metadata.json": {
+        "bytes": 983,
+        "sha256": "846e4791c26d8cb13d4765f456acdd8c315735ce6f8677eac8a62bd7a5d25aec"
+      },
+      "transport_budget.csv": {
+        "bytes": 1819,
+        "sha256": "da21c8be6c4e8ce6074abbe6a490ec4cf791a0b6b00b48e5bb25f4c32fc704b8"
+      },
+      "field_checks.json": {
+        "bytes": 787,
+        "sha256": "3dca0e781f16f2f48088943303a19285335d244e1f5b556f37add94b6f5907fd"
+      },
+      "params.input": {
+        "bytes": 910,
+        "sha256": "d88e283734445e849eef37cc40b92b0665db73da67eb5cd4798b0f7b09363027"
+      },
+      "surface_events.csv": {
+        "bytes": 336,
+        "sha256": "a291aed42f1fba0948622b257c482c5ce736e096a73beebd7413a2843354692c"
+      }
+    }
+  },
+  {
+    "id": "startup_invalid_time",
+    "expected_reason": "startup_failure",
+    "expected_exit": 1,
+    "returncode": 1,
+    "wall_s": 0.47027930431067944,
+    "stop": {
+      "schema_version": 1,
+      "reason": "startup_failure",
+      "last_accepted_time_s": null,
+      "accepted_steps": 0,
+      "initial_diagnostics_written": false
+    },
+    "files": {
+      "stop_record.json": {
+        "bytes": 131,
+        "sha256": "79bb684eb6ec917f9208acb0aeec2c5e8d0be8feb9794c82f0393fa263c9c668"
+      },
+      "solver.log": {
+        "bytes": 193,
+        "sha256": "a7f8baa2da60c37ebbdd4667d8347b132d8163f31fb31686d621b1e5d766a869"
+      },
+      "params.input": {
+        "bytes": 914,
+        "sha256": "5560919d75e3a28f2c5d7b2914db9dfd21a022657bb0bc17208e241ab2a244cf"
+      }
+    }
+  }
+]

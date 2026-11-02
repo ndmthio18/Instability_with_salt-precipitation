@@ -1,0 +1,155 @@
+{
+  "id": "evap_nx16_dt20",
+  "parameters": {
+    "Grid": {
+      "Positions0": "0 0.6",
+      "Positions1": "0 0.2",
+      "Cells0": 16,
+      "Cells1": 40,
+      "Grading1": -0.98
+    },
+    "TimeLoop": {
+      "TEnd": 2000,
+      "DtInitial": 20,
+      "MaxTimeStepSize": 20,
+      "OutputInterval": 100000
+    },
+    "Problem": {
+      "Name": "evap_nx16_dt20",
+      "Permeability": 2.89e-11,
+      "Porosity": 0.41,
+      "Swr": 0.122,
+      "PcN": 10.8,
+      "PcAlpha": 0.000177,
+      "SweL": 0.73,
+      "KrwMualemExponent": "true",
+      "WaterLevel": 0.2499230091212796,
+      "EvaporationRate": 1.08e-08,
+      "SaltDiffusivity": 1.5e-09,
+      "ReferenceViscosity": 0.0011,
+      "SaltMoleFraction": 0.0036,
+      "GravitationalAcceleration": 9.8,
+      "PureWaterDensity": "998.203",
+      "DensityLinearCoefficient": "0.670804",
+      "DensityQuadraticCoefficient": "0.373854",
+      "MolarMassH2O": "0.01801528",
+      "MolarMassNaCl": "0.05844",
+      "Amplitude": 0,
+      "WaveNumber": 1,
+      "StandardDeviationSaltMoleFraction": 0,
+      "PerturbationType": "Constant",
+      "RandomSeed": 1,
+      "EnableGravity": "true",
+      "PerturbationHeight": 0
+    },
+    "Transport": {
+      "SolubilityMoleFraction": 0.1,
+      "StopAtSolubility": "true"
+    },
+    "Vtk": {
+      "Precision": "Float64",
+      "AddVelocity": "true"
+    }
+  },
+  "expected_reason": "requested_horizon",
+  "expected_exit": 0,
+  "input_sha256": "53d6073a6d807fea151d90df8fd12eb6c4ce4c7539eceb2ea8d4cce48ffc602c",
+  "wall_timeout_s": 600,
+  "executable_sha256": "d78ce5122cf69e4dee5a4d12bcc726779959f304b343246009cb45bb37e894cc",
+  "build_source_sha256": {
+    "config.h.cmake": "addc2df015faa7334b78458a92aa2cb06ac0df5662da054714ac479ca7e706f9",
+    "kiemle2023b.pc.in": "54fee13aecdcfb07004dc6b4249b68c9a9ea33b7af2136bb278c1949e4a80d86",
+    "README.md": "ef8f3fca28d26200a17fb3386fddfddfb30ad69138dfea472866cc987e9e4e61",
+    "dune.module": "edd9a0bd7703bb4aff92d568d557f008d30895081e0a68d7a3cac1969ead72de",
+    "CMakeLists.txt": "a3750056e945193f32678c7246260515ad18fae14770667b8cccedca54b9fe2e",
+    "doc/CMakeLists.txt": "4fde2ae1df1e9ded71688fd731a4ab48a5bc2035c4ad4e160e034d863b02558c",
+    "appl/CMakeLists.txt": "e4932eb4852ddaa91476d791c91d8ef7d5c13b07a6a2c81ae7033e308ae5768b",
+    "dune/CMakeLists.txt": "4e6273b47c6cd604f89c82ca3fa716391ac252dfa319e27b67fea01bee98e6a8",
+    "src/kiemle2023b.cc": "8ca429bfc299f9410723e3d83f7d876920b443869b00f5d198d038581db813ba",
+    "src/CMakeLists.txt": "7ecedb534af8c9849450955b8242ca9e137b8ad3f03c4ab0d779804093d59ffa",
+    "doc/doxygen/CMakeLists.txt": "d145d336814fca3994a64c7b916565975f7ed9bdff4986bccfe7809d7e1a5c35",
+    "cmake/modules/Kiemle2023bMacros.cmake": "7524f6919d6e280ee968a64140a3a3c006061d29aa5426c26eaafec4ff5d97a4",
+    "cmake/modules/CMakeLists.txt": "5dbd18a784411da7e200169f154d9d62b2578e1ea41e8e5c832b7f738aa2f575",
+    "appl/simpleRichardsnc/main.cc": "dc7c629220fd0f3b23a6fcb6f156537d0d1d38b376550606235aeda7729dd2b4",
+    "appl/simpleRichardsnc/params.input": "2cbfbc4c82e5016b8c6de0a998a0e7ce5f26293a60b75087a50e50fc7b128ad7",
+    "appl/simpleRichardsnc/transportdiagnostics.hh": "6fdaa494d232148e5affe63527dfb2c2677bf9f6a5f7da1e4f1551934c0384e9",
+    "appl/simpleRichardsnc/CMakeLists.txt": "5a9a763908e7053c80d637a3e60156ec6bd98e76b8d900655c68b1cba2ca1c00",
+    "appl/simpleRichardsnc/model.hh": "a65bef0f231519637ae4493a7035904f8c53bc61a09588b2a83a6eeda08c05e4",
+    "bin/eigenprofile/README.md": "4565332f7edbdd59d016cccd515fb53fd07aa692f8271f19e7f3c8a84077c270",
+    "dune/kiemle2023b/kiemle2023b.hh": "afa7958833dc5acb74a6015365481c67eb666b412f7096be26c93c7d3791a6e5",
+    "dune/kiemle2023b/CMakeLists.txt": "154ce468ad7fc60a049449ed1867df43e15e78aabcd5c8c1caa7b605f9ca0730"
+  },
+  "purpose": "small uniform 2D background and diagnostic validation; no Pilot A/B",
+  "status": "finished",
+  "started_utc": "2026-11-02T18:39:47.605982+00:00",
+  "result": {
+    "id": "evap_nx16_dt20",
+    "expected_reason": "requested_horizon",
+    "expected_exit": 0,
+    "returncode": 0,
+    "wall_s": 0.9654426816850901,
+    "stop": {
+      "schema_version": 1,
+      "reason": "requested_horizon",
+      "last_accepted_time_s": 2000,
+      "accepted_steps": 100,
+      "initial_diagnostics_written": true,
+      "requested_end_s": 2000,
+      "surface_threshold_low_s": null,
+      "surface_threshold_high_s": null,
+      "global_threshold_low_s": null,
+      "global_threshold_high_s": null
+    },
+    "files": {
+      "stop_record.json": {
+        "bytes": 322,
+        "sha256": "2a64c61cf819fecbab9b3c26d43f6193f6dc0718b5e82d8d13f14b9a97b67196"
+      },
+      "solver.log": {
+        "bytes": 53143,
+        "sha256": "82ee2e2e4b9dd2fd719163dec92c03dbfb58ad7b0273d33f67b692b6f056bea9"
+      },
+      "field_profiles.csv": {
+        "bytes": 18482,
+        "sha256": "d226d20c1b55e2f282ebdd491910e9ff707ad4d101065153d59e457cc625fc16"
+      },
+      "transport_metadata.json": {
+        "bytes": 983,
+        "sha256": "846e4791c26d8cb13d4765f456acdd8c315735ce6f8677eac8a62bd7a5d25aec"
+      },
+      "transport_budget.csv": {
+        "bytes": 228282,
+        "sha256": "5bf7fdde9d4ff5bb5257183c2ec684a42062d0e2b9da15678c1435b075368102"
+      },
+      "field_checks.json": {
+        "bytes": 1631,
+        "sha256": "6c3746502eebc8d2eb8eb6c390a2e843279f7443264575f428be3110ed27a39b"
+      },
+      "evap_nx16_dt20-00001.vtu": {
+        "bytes": 112963,
+        "sha256": "66eb1840de5bd2b390c423b5ef76bf2592285863c046b75a0fe098bd4f738dcc"
+      },
+      "evap_nx16_dt20_sigmatop.csv": {
+        "bytes": 9998,
+        "sha256": "b1a8dfb37b9e02a2ba23a70599ff74dbab6538584a7f7556a28c34e5e50c538a"
+      },
+      "params.input": {
+        "bytes": 911,
+        "sha256": "53d6073a6d807fea151d90df8fd12eb6c4ce4c7539eceb2ea8d4cce48ffc602c"
+      },
+      "evap_nx16_dt20-00000.vtu": {
+        "bytes": 101684,
+        "sha256": "5c0c4d4a2417d3550ef47644012a53877dd2a27f8d464db77643f5aacb0eda94"
+      },
+      "evap_nx16_dt20.pvd": {
+        "bytes": 302,
+        "sha256": "c18ff41838d2908eacb785133add68493aad9a05c8c018e5180b6f43b7dc0d09"
+      },
+      "surface_events.csv": {
+        "bytes": 17035,
+        "sha256": "556affee7ea467a9ca090adcb494c05108158cf45588803b1518d600b2134397"
+      }
+    }
+  },
+  "finished_utc": "2026-11-02T18:39:48.590225+00:00"
+}

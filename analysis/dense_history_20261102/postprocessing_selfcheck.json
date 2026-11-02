@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "kind": "analytic sampled field, no time integration or PDE solver",
+  "frames": 101,
+  "known_full_inventory_initial": 0.0022091883092036782,
+  "known_full_inventory_final": 0.0033137824638055174,
+  "known_final_surface_mean": 0.02,
+  "independent_quadrature_relative_error": 2.6174371657225e-16
+}

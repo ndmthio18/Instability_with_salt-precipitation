@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "reason": "surface_solubility_threshold",
+  "last_accepted_time_s": 6,
+  "accepted_steps": 3,
+  "initial_diagnostics_written": true,
+  "requested_end_s": 2000,
+  "surface_threshold_low_s": 4,
+  "surface_threshold_high_s": 6,
+  "global_threshold_low_s": 4,
+  "global_threshold_high_s": 6
+}

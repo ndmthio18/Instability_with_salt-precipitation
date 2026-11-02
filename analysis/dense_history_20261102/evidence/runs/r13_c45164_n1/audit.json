@@ -1,0 +1,59 @@
+{
+  "id": "r13_c45164_n1",
+  "run_key": "frodo:diag/runs_a/shard-003/0003--case-45164--native",
+  "case_id": 45164,
+  "status": "structural_review_required",
+  "checks": {
+    "frozen_sha/case_manifest.json": true,
+    "frozen_sha/run_meta.json": true,
+    "frozen_sha/sandy--tropical--s1691--f9225--global_default_L0p5--native.input": true,
+    "frozen_sha/sandy--tropical--s1691--f9225--global_default_L0p5--native.pvd": true,
+    "frozen_sha/sandy--tropical--s1691--f9225--global_default_L0p5--native_eigenprofile.dat": true,
+    "input_matches_audit": true,
+    "sigmatop_hash": true,
+    "101_monotonic_frames": true,
+    "input_grid_shape": true,
+    "tensor_volume": true,
+    "density_matches_explicit_input": true,
+    "saturation_matches_input": true,
+    "field_top_statistics_match_record": true,
+    "frame_time_matches_diagnostics": false,
+    "independent_quadrature": true
+  },
+  "frames": 101,
+  "points_per_frame": 120801,
+  "bytes_read": 2403752288,
+  "actual_cuts": [
+    {
+      "region": "upper_0.9",
+      "requested_z_over_H": 0.9,
+      "actual_z_over_H": 0.8995154060206101
+    },
+    {
+      "region": "upper_0.75",
+      "requested_z_over_H": 0.75,
+      "actual_z_over_H": 0.7522817588955174
+    },
+    {
+      "region": "upper_0.5",
+      "requested_z_over_H": 0.5,
+      "actual_z_over_H": 0.5005319056786239
+    }
+  ],
+  "max_density_error_kg_m3": 5.073275133327115e-12,
+  "max_legacy_density_error_kg_m3": 1.8053618453892089,
+  "max_sw_error": 7.549516567451064e-15,
+  "max_sigmatop_mean_error": 4.961309141293668e-16,
+  "max_sigmatop_sigma_error": 3.6507120026660345e-19,
+  "max_quadrature_relative_error": 2.001869888568791e-16,
+  "small_file_sha256": {
+    "case_manifest.json": "ff3c96ca1004a114f97c7905b26de9fbca19d2c4d4765d6f4279071223535894",
+    "run_meta.json": "d5a45b17697b257cd4b29f81c4f800ba39fd5b7dc3722e7a747c23462d465028",
+    "sandy--tropical--s1691--f9225--global_default_L0p5--native.input": "987ff271c0b90f28aeac00df692ddcb0a02367f59bc141060f41cd72daf59ffe",
+    "sandy--tropical--s1691--f9225--global_default_L0p5--native.pvd": "9e6faf6522deb7a0967c7609353b0c400c7cf9ef6c3b0fa253ee89327333bb6d",
+    "sandy--tropical--s1691--f9225--global_default_L0p5--native_eigenprofile.dat": "032c601535af9b239fa4d1b8baab9af17b8ee0f2bcdbde5080a2272999b77fa8"
+  },
+  "sigmatop_sha256": "68029d9345d407c7a7289a5e16ef5789c2baa47ca975d210f15c60df82053710",
+  "historical_executable_identity": "not established",
+  "physical_interpretation": "inventory-derived net exchange; no independent face-flux closure, no unperturbed reference"
+}

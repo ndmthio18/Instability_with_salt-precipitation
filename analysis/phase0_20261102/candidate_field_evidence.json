@@ -1,0 +1,262 @@
+[
+  {
+    "run_key": "frodo:c1/runs_36877_nx60/shard-000/0001--case-36877--native",
+    "file": "/temp/zhixin/c1/runs_36877_nx60/shard-000/0001--case-36877--native/sandy--boreal--s1354--f1080--global_default_L0p5--native-00100.vtu",
+    "sha256": "c389fdea4a32d2028db616c5f5d97de25ac430a38343e82d594b4ef164ec7141",
+    "arrays": {
+      "pw": {
+        "count": 241401,
+        "min": 91804.3401612867,
+        "max": 93781.1601825486
+      },
+      "sw": {
+        "count": 241401,
+        "min": 0.258028617266363,
+        "max": 0.342487179003992
+      },
+      "moleFraction": {
+        "count": 241401,
+        "min": 0.00359999999999997,
+        "max": 0.0276702130159072
+      },
+      "rhoW": {
+        "count": 241401,
+        "min": 1006.02410443354,
+        "max": 1057.56446803711
+      },
+      "process rank": {
+        "count": 240000,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "velocity": {
+        "count": 720000,
+        "min": -2.57995677011837e-10,
+        "max": 4.21797447396674e-07
+      },
+      "Coordinates": {
+        "count": 724203,
+        "min": 0.0,
+        "max": 0.6
+      },
+      "connectivity": {
+        "count": 960000,
+        "min": 0.0,
+        "max": 241400.0
+      },
+      "offsets": {
+        "count": 240000,
+        "min": 4.0,
+        "max": 960000.0
+      },
+      "types": {
+        "count": 240000,
+        "min": 9.0,
+        "max": 9.0
+      }
+    },
+    "density_check": {
+      "max_abs_error_explicit_input_law_kg_m3": 5.229594535194337e-12,
+      "max_abs_error_legacy_defaults_kg_m3": 1.8479196531457092
+    },
+    "final_top_mean": 0.027667635100128495,
+    "final_top_max": 0.0276702130159072,
+    "input_text": "# Auto-generated from parameter_database; policy=native\n[Grid]\nPositions0 = 0 0.6000000000000001\nPositions1 = 0 0.2\nCells0 = 1200\nCells1 = 200\nGrading1 = -0.98\n\n[TimeLoop]\nTEnd = 225033.8899801159\nDtInitial = 375.0564833001932\nMaxTimeStepSize = 375.0564833001932\nOutputInterval = 6\n\n[Problem]\nName = sandy--boreal--s1354--f1080--global_default_L0p5--native\nPermeability = 1.261386079996293e-11\nPorosity = 0.4057687912195745\nSwr = 0.1282679353072967\nPcN = 2.98602455003942\nPcAlpha = 0.0003121789225428109\nSweL = -0.8395681012108449\nKrwMualemExponent = true\nWaterLevel = 0.6307756332876138\nEvaporationRate = 3.065544359023483e-09\nSaltDiffusivity = 1.5e-09\nReferenceViscosity = 0.0011\nSaltMoleFraction = 0.0036\nGravitationalAcceleration = 9.800000000000001\nPureWaterDensity = 998.203\nDensityLinearCoefficient = 0.670804\nDensityQuadraticCoefficient = 0.373854\nMolarMassH2O = 0.01801528\nMolarMassNaCl = 0.05844\nAmplitude = 1e-06\nWaveNumber = 60\nStandardDeviationSaltMoleFraction = 1e-06\nPerturbationType = Eigenprofile\nRandomSeed = 1\nEnableGravity = true\nPerturbationHeight = 0\nEigenprofilePath = /temp/zhixin/c1/runs_36877_nx60/shard-000/0001--case-36877--native/sandy--boreal--s1354--f1080--global_default_L0p5--native_eigenprofile.dat\n[Vtk]\nPrecision = Float64\nAddVelocity = true\n",
+    "eigenprofile_sha256": "aa0a93fdd24a1118b84f44a880b5481c733271749a0a8f13c7d5cc2905d4c4c7"
+  },
+  {
+    "run_key": "frodo:c1b/runs_600/shard-001/0017--case-36877--native",
+    "file": "/temp/zhixin/c1b/runs_600/shard-001/0017--case-36877--native/sandy--boreal--s1354--f1080--global_default_L0p5--native-00001.vtu",
+    "sha256": "6c278a85818efee5191ccbbcc3b317b6e95af4ee92a1740411b0be5a1e638486",
+    "arrays": {
+      "pw": {
+        "count": 120801,
+        "min": 91804.5365581009,
+        "max": 93781.1601825486
+      },
+      "sw": {
+        "count": 120801,
+        "min": 0.258034440745882,
+        "max": 0.342487179003992
+      },
+      "moleFraction": {
+        "count": 120801,
+        "min": 0.00359999999991919,
+        "max": 0.0194266577791475
+      },
+      "rhoW": {
+        "count": 120801,
+        "min": 1006.02410443337,
+        "max": 1040.0734561317
+      },
+      "process rank": {
+        "count": 120000,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "velocity": {
+        "count": 360000,
+        "min": -6.64284688497347e-11,
+        "max": 4.21759336928337e-07
+      },
+      "Coordinates": {
+        "count": 362403,
+        "min": 0.0,
+        "max": 0.6
+      },
+      "connectivity": {
+        "count": 480000,
+        "min": 0.0,
+        "max": 120800.0
+      },
+      "offsets": {
+        "count": 120000,
+        "min": 4.0,
+        "max": 480000.0
+      },
+      "types": {
+        "count": 120000,
+        "min": 9.0,
+        "max": 9.0
+      }
+    },
+    "density_check": {
+      "max_abs_error_explicit_input_law_kg_m3": 5.229594535194337e-12,
+      "max_abs_error_legacy_defaults_kg_m3": 1.8333576719351186
+    },
+    "final_top_mean": 0.019425542268868334,
+    "final_top_max": 0.0194266577791475,
+    "input_text": "# Auto-generated from parameter_database; policy=native\n[Grid]\nPositions0 = 0 0.6000000000000001\nPositions1 = 0 0.2\nCells0 = 600\nCells1 = 200\nGrading1 = -0.98\n\n[TimeLoop]\nTEnd = 136423.0637723484\nDtInitial = 227.3717729539139\nMaxTimeStepSize = 227.3717729539139\nOutputInterval = 100000\n\n[Problem]\nName = sandy--boreal--s1354--f1080--global_default_L0p5--native\nPermeability = 1.261386079996293e-11\nPorosity = 0.4057687912195745\nSwr = 0.1282679353072967\nPcN = 2.98602455003942\nPcAlpha = 0.0003121789225428109\nSweL = -0.8395681012108449\nKrwMualemExponent = true\nWaterLevel = 0.6307756332876138\nEvaporationRate = 3.065544359023483e-09\nSaltDiffusivity = 1.5e-09\nReferenceViscosity = 0.0011\nSaltMoleFraction = 0.0036\nGravitationalAcceleration = 9.800000000000001\nPureWaterDensity = 998.203\nDensityLinearCoefficient = 0.670804\nDensityQuadraticCoefficient = 0.373854\nMolarMassH2O = 0.01801528\nMolarMassNaCl = 0.05844\nAmplitude = 1e-06\nWaveNumber = 28\nStandardDeviationSaltMoleFraction = 1e-06\nPerturbationType = Eigenprofile\nRandomSeed = 1\nEnableGravity = true\nPerturbationHeight = 0\nEigenprofilePath = /temp/zhixin/c1b/runs_600/shard-001/0017--case-36877--native/sandy--boreal--s1354--f1080--global_default_L0p5--native_eigenprofile.dat\n[Vtk]\nPrecision = Float64\nAddVelocity = true\n",
+    "eigenprofile_sha256": "d721e605d126e555f92b43200aa73b999ed4e2b61397edd1e98c0d9fddb36575"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-019/0079--case-38852--native",
+    "file": "/temp/zhixin/hf1/runs/shard-019/0079--case-38852--native/sandy--boreal--s3170--f1079--global_default_L0p5--native-00001.vtu",
+    "sha256": "40118f0e8cad8bac109afa694b4c9a0ae44f577aeb0954bb53b4d98b904f92e0",
+    "arrays": {
+      "pw": {
+        "count": 120801,
+        "min": 89352.7208042302,
+        "max": 91441.9926157877
+      },
+      "sw": {
+        "count": 120801,
+        "min": 0.254339229021672,
+        "max": 0.292030326335487
+      },
+      "moleFraction": {
+        "count": 120801,
+        "min": 0.00359999999999999,
+        "max": 0.175928124075965
+      },
+      "rhoW": {
+        "count": 120801,
+        "min": 1007.82804171762,
+        "max": 1337.28030369029
+      },
+      "process rank": {
+        "count": 120000,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "velocity": {
+        "count": 360000,
+        "min": -3.71638380633259e-12,
+        "max": 2.41220860128232e-06
+      },
+      "Coordinates": {
+        "count": 362403,
+        "min": 0.0,
+        "max": 0.6
+      },
+      "connectivity": {
+        "count": 480000,
+        "min": 0.0,
+        "max": 120800.0
+      },
+      "offsets": {
+        "count": 120000,
+        "min": 4.0,
+        "max": 480000.0
+      },
+      "types": {
+        "count": 120000,
+        "min": 9.0,
+        "max": 9.0
+      }
+    },
+    "density_check": {
+      "max_abs_error_explicit_input_law_kg_m3": 2.0147806716161085,
+      "max_abs_error_legacy_defaults_kg_m3": 5.9117155615240335e-12
+    },
+    "final_top_mean": 0.1759270459259913,
+    "final_top_max": 0.175928124075965,
+    "input_text": "# Auto-generated from parameter_database; policy=native\n[Grid]\nPositions0 = 0 0.6000000000000001\nPositions1 = 0 0.2\nCells0 = 600\nCells1 = 200\nGrading1 = -0.98\n\n[TimeLoop]\nTEnd = 295116.6633000694\nDtInitial = 737.7916582501734\nMaxTimeStepSize = 737.7916582501734\nOutputInterval = 100000\n\n[Problem]\nName = sandy--boreal--s3170--f1079--global_default_L0p5--native\nPermeability = 3.241344364255908e-12\nPorosity = 0.2988338772988599\nSwr = 0.1633240497681339\nPcN = 2.648866708233435\nPcAlpha = 0.0003567433344406836\nSweL = -0.868324996536848\nKrwMualemExponent = true\nWaterLevel = 0.8664831930308342\nEvaporationRate = 5.207102711947411e-09\nSaltDiffusivity = 1.5e-09\nReferenceViscosity = 0.0011\nSaltMoleFraction = 0.0036\nGravitationalAcceleration = 9.800000000000001\nPureWaterDensity = 998.203\nDensityLinearCoefficient = 0.670804\nDensityQuadraticCoefficient = 0.373854\nMolarMassH2O = 0.01801528\nMolarMassNaCl = 0.05844\nAmplitude = 1e-06\nWaveNumber = 16\nStandardDeviationSaltMoleFraction = 1e-06\nPerturbationType = Eigenprofile\nRandomSeed = 1\nEnableGravity = true\nPerturbationHeight = 0\nEigenprofilePath = /temp/zhixin/hf1/runs/shard-019/0079--case-38852--native/sandy--boreal--s3170--f1079--global_default_L0p5--native_eigenprofile.dat\n[Vtk]\nPrecision = Float64\nAddVelocity = true\n",
+    "eigenprofile_sha256": "8d04a91f7c4d4e0d29bf72673f0dffe92530e45131e1f123fd139759541fe417"
+  },
+  {
+    "run_key": "frodo:paper1_wp1_paired_v2/runs/case-38852--both--nx-16",
+    "file": "/temp/zhixin/paper1_wp1_paired_v2/runs/case-38852--both--nx-16/sandy--boreal--s3170--f1079--global_default_L0p5--native-00001.vtu",
+    "sha256": "b8a4ae014429238ce76401a1c98cd3cbe07966aabd9458fa0fd41d43d0106a25",
+    "arrays": {
+      "pw": {
+        "count": 120801,
+        "min": 89373.0286125781,
+        "max": 91457.3108128995
+      },
+      "sw": {
+        "count": 120801,
+        "min": 0.254618027334862,
+        "max": 0.292392195468668
+      },
+      "moleFraction": {
+        "count": 120801,
+        "min": 0.00359999999998948,
+        "max": 0.0936897085142956
+      },
+      "rhoW": {
+        "count": 120801,
+        "min": 1006.02410443352,
+        "max": 1190.2366153072
+      },
+      "process rank": {
+        "count": 120000,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "velocity": {
+        "count": 360000,
+        "min": -3.78255452528606e-12,
+        "max": 2.39492654235213e-06
+      },
+      "Coordinates": {
+        "count": 362403,
+        "min": 0.0,
+        "max": 0.6
+      },
+      "connectivity": {
+        "count": 480000,
+        "min": 0.0,
+        "max": 120800.0
+      },
+      "offsets": {
+        "count": 120000,
+        "min": 4.0,
+        "max": 480000.0
+      },
+      "types": {
+        "count": 120000,
+        "min": 9.0,
+        "max": 9.0
+      }
+    },
+    "density_check": {
+      "max_abs_error_explicit_input_law_kg_m3": 5.229594535194337e-12,
+      "max_abs_error_legacy_defaults_kg_m3": 1.9436863081264164
+    },
+    "final_top_mean": 0.09368868121300232,
+    "final_top_max": 0.0936897085142956,
+    "input_text": "# Auto-generated from parameter_database; policy=native\n[Grid]\nPositions0 = 0 0.6000000000000001\nPositions1 = 0 0.2\nCells0 = 600\nCells1 = 200\nGrading1 = -0.98\n\n[TimeLoop]\nTEnd = 151921.368380099\nDtInitial = 379.8034209502476\nMaxTimeStepSize = 379.8034209502476\nOutputInterval = 100000\n\n[Problem]\nName = sandy--boreal--s3170--f1079--global_default_L0p5--native\nPermeability = 3.241344364255908e-12\nPorosity = 0.2988338772988599\nSwr = 0.1633240497681339\nPcN = 2.648866708233435\nPcAlpha = 0.0003567433344406836\nSweL = -0.868324996536848\nKrwMualemExponent = true\nWaterLevel = 0.8664831930308342\nEvaporationRate = 5.207102711947411e-09\nSaltDiffusivity = 1.5e-09\nReferenceViscosity = 0.0011\nSaltMoleFraction = 0.0036\nGravitationalAcceleration = 9.800000000000001\nPureWaterDensity = 998.203\nDensityLinearCoefficient = 0.670804\nDensityQuadraticCoefficient = 0.373854\nMolarMassH2O = 0.01801528\nMolarMassNaCl = 0.05844\nAmplitude = 1e-06\nWaveNumber = 16\nStandardDeviationSaltMoleFraction = 1e-06\nPerturbationType = Eigenprofile\nRandomSeed = 1\nEnableGravity = true\nPerturbationHeight = 0\nEigenprofilePath = /temp/zhixin/paper1_wp1_paired_v2/runs/case-38852--both--nx-16/sandy--boreal--s3170--f1079--global_default_L0p5--native_eigenprofile.dat\n[Vtk]\nPrecision = Float64\nAddVelocity = true\n",
+    "eigenprofile_sha256": "e1510ba291c217baeb439b1fed1de752a9415b554393e032063432e6ca8c1580"
+  }
+]

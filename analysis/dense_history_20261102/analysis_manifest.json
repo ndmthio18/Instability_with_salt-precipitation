@@ -1,0 +1,38 @@
+{
+  "created_utc": "2026-11-02T19:39:48.145129+00:00",
+  "analysis_only": true,
+  "original_VTU_read_bytes": 35402289894,
+  "scripts_sha256": {
+    "dense_history_worker.py": "060b93e59135bb398d3527d099e9ad5a196b394821093144e72e00cb490ffcbf",
+    "launch_dense_history_analysis.py": "addc98c50466d7e0b22098562e17f2ad2fb3ec9deffb78a642bee667b44056f6",
+    "retry_dense_history_analysis.py": "ff58d022e272300d9293434e45db12473610e6e2ed97839996b995b4a8d78625",
+    "collect_dense_history.py": "8c848ad85624a62997c504c69f5325ff62004331ff94281e1980d0f3cd218899",
+    "analyze_dense_history.py": "014099c7997afc9601b6ca6e2e76400236d38c50a4c5279d5d4840862616b167",
+    "check_dense_postprocessing.py": "10766128ce21a242e5997b8db5a6b694f94052db5c56cdeb7af6004d57540b34",
+    "verify_dense_history.py": "ae2434c76c6d1946b851592985532abc1992772303f9f14c17d6eb56fb4ce10e",
+    "write_dense_history_report.py": "29c0dfe7dbbdfd0bac99ace2d86a60e23fe57f2060389b269045f21ff1a0679c"
+  },
+  "deliverables_sha256": {
+    "REPORT_ZH.md": "c988901b2f3385488f591f107f2c35fc43c90aaca0f051cdb889bba99afb5e2a",
+    "METHOD_ZH.md": "dfc71027b24bd5336144733cb1572ade27213f4f9036c484dbb247b2ef26719d",
+    "run_assessment.csv": "600d19ddbbcb02ced9d6bfab9bea0b25bd95cd29760cf6c021bd16ab557f9320",
+    "inventory_summary.csv": "0f4bbff368aed0173a5e87e2e5cac6a2a13e8b469f9ce4fdce5c3a99536bedb5",
+    "inventory_timeseries.csv": "f8413a17eeb109f0e07e9612bf4f0e63944c6a690055e5b997d206d03a94bf7b",
+    "event_intervals.csv": "248535c4c01561812641e7bca3713b33415647942840d363705c9267656107ff",
+    "shared_window_comparison.csv": "ba839ef8e71662ccebcf6ce0c6335e18267eac14fc3d6dfefc3250beba45d2e5",
+    "time_reconciliation.csv": "699d9963932c83892392ed014b343cea99b1dc89b373c281dac935adc6df392a",
+    "initial_protocol_check.csv": "2983db2a027bd807385df7e237fca985825d063d5696df94e6190ad5877d2d9d",
+    "verification.json": "e1ca3df684f0beaab3af885e59da1d65e5fbf8fa903456546bd0bd7b4f55a569",
+    "figures\\case36877_n60_fields.png": "fb986832f4bce5c46430cc4ced62da8e288736f1e10dadf5682246b5e284db77",
+    "figures\\case36877_n60_profiles.png": "26af235183e275f7c19cfaa3ce1e18793f69b515d1568d9934dc80c4b63ff87f",
+    "figures\\case36877_n60_timeline.png": "86798ebf992cc79ab4dff863cf73beb5d2e1c763520e012bfd9e0969f169abf5",
+    "figures\\dense_history_diagnostics.pdf": "a7148aeee157da9cfaab0be98994bf45d36c54d44c2320f4e32132fe91b5ea9a",
+    "figures\\inventory_overview.png": "903f30688eb5bfde31c1fc8833d6496f81f328e65c27f499d7baa59b67647ae6"
+  },
+  "limitations": [
+    "no unperturbed reference in historical 14",
+    "no independent historical face-flux budget",
+    "historical executable identity unknown",
+    "separate current unperturbed trial is not included"
+  ]
+}

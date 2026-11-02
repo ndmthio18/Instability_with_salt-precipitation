@@ -1,0 +1,48 @@
+[Grid]
+Positions0 = 0 0.6000000000000001
+Positions1 = 0 0.2
+Cells0 = 1200
+Cells1 = 200
+Grading1 = -0.98
+
+[TimeLoop]
+TEnd = 65500.419762994294
+DtInitial = 29.36067352995103
+MaxTimeStepSize = 29.36067352995103
+OutputInterval = 100
+
+[Problem]
+Name = unperturbed_42929
+Permeability = 2.479267250550716e-11
+Porosity = 0.3977867046420079
+Swr = 0.1220624115356265
+PcN = 4.204316923026751
+PcAlpha = 0.0003628355319945871
+SweL = -0.8476078796206593
+KrwMualemExponent = true
+WaterLevel = 0.1414927914599025
+EvaporationRate = 1.214038508506014e-08
+SaltDiffusivity = 1.5e-09
+ReferenceViscosity = 0.0011
+SaltMoleFraction = 0.0036
+GravitationalAcceleration = 9.800000000000001
+PureWaterDensity = 998.203
+DensityLinearCoefficient = 0.670804
+DensityQuadraticCoefficient = 0.373854
+MolarMassH2O = 0.01801528
+MolarMassNaCl = 0.05844
+Amplitude = 0
+WaveNumber = 40
+StandardDeviationSaltMoleFraction = 0
+PerturbationType = Constant
+RandomSeed = 1
+EnableGravity = true
+PerturbationHeight = 0
+
+[Vtk]
+Precision = Float64
+AddVelocity = true
+
+[Transport]
+StopAtSolubility = true
+SolubilityMoleFraction = 0.1
