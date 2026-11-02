@@ -1,4 +1,4 @@
 case_id,run_role,status,LSA_reference_scope,lsa_global_critical_mode_nx,lsa_t_crit_s,lsa_observable_mode_nx_theta010,lsa_t_seed_theta010_s,initialized_mode_nx,dumux_t_detect_s,dumux_detection_class,historical_nx28_t_detect_reference_s,transport_t_eff_s,transport_t_eff_status,actual_solubility_event_s,solubility_event_status
-36877,M0,completed_background_only,case_reference_not_a_run_detection,5,31409.157792677746,28,45474.35459078279,,,not_assigned,50394.33363312911,,undefined_not_a_label,,not_observed_in_completed_window
-36877,M1,queued_resource_gate,case_reference_not_a_run_detection,5,31409.157792677746,28,45474.35459078279,28,,pending,50394.33363312911,,undefined_not_a_label,,pending
+36877,M0,sal_running_bridge,case_reference_not_a_run_detection,5,31409.157792677746,28,45474.35459078279,,,not_assigned,50394.33363312911,,undefined_not_a_label,,pending_sal_window
+36877,M1,sal_pending_M0_success,case_reference_not_a_run_detection,5,31409.157792677746,28,45474.35459078279,28,,pending,50394.33363312911,,undefined_not_a_label,,pending
 38852,prospective_pair,pending_after_36877_evaluation,case_reference_not_a_run_detection,16,147558.3316500347,16,147558.3316500347,,,not_assigned,,,undefined_not_a_label,,pending

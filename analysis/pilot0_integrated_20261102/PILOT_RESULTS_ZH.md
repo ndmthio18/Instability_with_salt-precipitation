@@ -1,7 +1,7 @@
 # Pilot-0 物理结果：等待新 M1
 
-状态：**in progress，M1 已登记并进入资源等待队列，尚未产生新物理结果**。
-执行信息见 `EXECUTION_HANDOFF_ZH.md`、`preflight.json`、`latest_status.json`。
+状态：**in progress，sal M0 桥接运行中，M1 已登记为成功依赖任务，尚未产生新物理结果**。
+执行信息见 `EXECUTION_HANDOFF_ZH.md`、`sal_migration/registration.json`、`sal_migration/latest_status.json`。
 本页将在新 M1 完成、实际初始场及正式配对接口通过后更新，不把历史检测时间或旧场当作新输出。
 
 | 科学问题 | 当前答案 |

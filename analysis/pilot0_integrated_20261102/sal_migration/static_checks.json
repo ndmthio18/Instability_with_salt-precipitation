@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "checks": {
+    "python_parse": true,
+    "sal_pair_inputs": true,
+    "unfinished_pair_rejected": true,
+    "zero_solver_exit_with_failed_wrapper_rejected": true
+  },
+  "scope": "No completed sal physical pair yet"
+}

@@ -1,0 +1,8 @@
+{
+  "root": "/tmp/zhixin_paper2_pilot0_20261102_r01",
+  "status": "prepared_sal_not_submitted",
+  "same_elf": true,
+  "support_sha256": "3de5e7629433ba987646f4e0c640df9071db5f818b130edce33e8e5b64df7151",
+  "memory_policy": "Slurm RealMemory=1M is a site configuration limitation; no memory request; 8GiB address-space limit per solver",
+  "storage_policy": "Isolated /tmp tmpfs; staged inputs backed up locally, outputs must be collected and archived after completion"
+}

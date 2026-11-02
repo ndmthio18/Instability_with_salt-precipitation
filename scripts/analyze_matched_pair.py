@@ -146,7 +146,7 @@ def validate_pair(m0, m1):
             raise ValueError('Input hash mismatch')
         stop = json.loads((p/'stop_record.json').read_text())
         finished = json.loads((p/'finished.json').read_text())
-        if finished['returncode'] != 0 or stop['reason'] not in (
+        if finished['returncode'] != 0 or finished.get('wrapper_stop_reason') or stop['reason'] not in (
                 'requested_horizon','surface_solubility_threshold','interior_solubility_threshold'):
             raise ValueError('Incomplete/failed run; retain separately')
         for name in ('transport_budget.csv','surface_events.csv','stop_record.json'):

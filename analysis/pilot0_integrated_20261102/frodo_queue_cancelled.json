@@ -1,0 +1,25 @@
+{
+  "status": "cancelled_before_solver_for_sal_migration",
+  "worker_pid": 2453288,
+  "solver_started": false,
+  "previous_state": {
+    "status": "queued_resource_gate",
+    "elapsed_queue_s": 840.2619440592825,
+    "resources": {
+      "utc": "2026-11-02T22:40:16.879534+00:00",
+      "load_1m": 9.349609375,
+      "load_5m": 19.88818359375,
+      "cpu": 24,
+      "available_memory_bytes": 22592901120,
+      "free_disk_bytes": 281845456896,
+      "active_paper2_solvers": [
+        {
+          "pid": 2416984,
+          "exe": "/temp/zhixin/paper2_transport_20261102/build-gcc-release/appl/simpleRichardsnc/paper2_transport",
+          "cwd": "/temp/zhixin/paper2_transport_20261102/highk_unperturbed_42929_20261102_r01"
+        }
+      ]
+    },
+    "reason": "Wait for existing Paper2 solver to finish and load/memory/disk gates to pass"
+  }
+}

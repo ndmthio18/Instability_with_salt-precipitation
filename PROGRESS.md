@@ -4,9 +4,9 @@
 
 - 说明: Status 只写 Not started / In progress（Done 由用户决定）；进度为科研阶段的粗略估计，仓库准备不代表研究验证完成。
 - Status: In progress
-- 阶段: Pilot-0 M1 已授权登记，等待 frodo 资源
+- 阶段: Pilot-0 已迁移 sal，M0 桥接运行中、M1 等待依赖
 - 进度: 25%
-- 下一步: 按 `command/3.md` 持续执行；frodo 已提交资源门槛包装器，等待现有 case42929 与负载释放后自动运行唯一 M1（12 h墙钟上限）。完成后由本聊天自动继续正式配对、误差/发展窗口判断和报告，不重复提交；详见 `analysis/pilot0_integrated_20261102/EXECUTION_HANDOFF_ZH.md`。
+- 下一步: 按 `command/3.md` 持续执行；sal 的 M0 job19160 完成且桥接通过后自动运行 M1 job19161，各自12 h上限。回传并归档原始场，完成同主机配对、误差/发展窗口判断和报告；禁止重复提交，详见 `analysis/pilot0_integrated_20261102/EXECUTION_HANDOFF_ZH.md`。
 - 目标期刊: 待定
 - 投稿状态: 未投稿
 
@@ -36,6 +36,8 @@
 
 - [x] 按 `command/3.md` 完成 M1 最终输入/ELF/source 核验、资源门槛与12 h包装器部署、正式配对输入和共有时刻测试；M1仍在资源队列，尚无新模拟结果。
 
+- [x] 按用户授权迁移至 sal，保留原 ELF/运行库/输入并登记同主机顺序 M0/M1；取消未启动的 frodo M1 队列。
+
 ## Log
 
 <!-- ↑ synced to Notion · ↓ not yet synced -->
@@ -62,3 +64,5 @@
 - 2026-11-02 23:09 Codex: 按合作稿 Section 2.2–2.4 冻结 onset 命名，追溯 case 36877 指定 nx28 的 manifest 路径，新增 436/84 运行标准视图并更新历史图表，保留原始 LSA/模拟证据，未启动新求解。
 
 - 2026-11-02 23:32 Codex: 已授权综合Pilot-0，严格核验M1并在frodo登记单任务资源等待队列，部署每30分钟持续检查；13项执行检查及9项共有时刻检查通过，完成嵌套网格切面预检，新增物理结果仍pending。
+
+- 2026-11-02 23:51 Codex: 已取消 frodo 未启动 M1 队列，将原 ELF、运行库及输入校验迁移至 sal，M0 job19160 已推进且早期桥接一致、M1 job19161 等待成功依赖；持续检查改为 sal，物理结果仍 pending。

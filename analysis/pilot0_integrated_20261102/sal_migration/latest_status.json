@@ -1,0 +1,68 @@
+{
+  "jobs": {
+    "host": "sal",
+    "remote": "/tmp/zhixin_paper2_pilot0_20261102_r01",
+    "M0_job_id": "19160",
+    "M1_job_id": "19161",
+    "policy": "M0 then M1, one large solver at a time on sal, each <=12h"
+  },
+  "squeue": "             JOBID       NAME     STATE       TIME     NODELIST(REASON)\n             19161      p2-M1   PENDING       0:00         (Dependency)\n             19160      p2-M0   RUNNING       4:25            localhost\n",
+  "runs": {
+    "M0": {
+      "started.json": {
+        "utc": "2026-11-02T22:46:18.960023+00:00",
+        "pid": 1325566,
+        "command": [
+          "/usr/bin/python3",
+          "/tmp/zhixin_paper2_pilot0_20261102_r01/bundle/launch_solver.py",
+          "params.input"
+        ],
+        "SLURM_JOB_ID": "19160",
+        "execution_host": "sal",
+        "elf_sha256": "d78ce5122cf69e4dee5a4d12bcc726779959f304b343246009cb45bb37e894cc",
+        "single_rank": true,
+        "solver_address_space_limit_bytes": 8589934592,
+        "affinity": [
+          0,
+          64
+        ]
+      },
+      "runtime_state.json": {
+        "status": "in_progress",
+        "role": "M0",
+        "utc": "2026-11-02T22:50:39.015741+00:00",
+        "elapsed_s": 260.066646438092,
+        "stop": {
+          "schema_version": 1,
+          "reason": "in_progress_or_interrupted",
+          "last_accepted_time_s": 2046.3459565852252,
+          "accepted_steps": 9,
+          "initial_diagnostics_written": true,
+          "requested_end_s": 136423.0637723484,
+          "surface_threshold_low_s": null,
+          "surface_threshold_high_s": null,
+          "global_threshold_low_s": null,
+          "global_threshold_high_s": null
+        }
+      },
+      "stop": {
+        "schema_version": 1,
+        "reason": "in_progress_or_interrupted",
+        "last_accepted_time_s": 2046.3459565852252,
+        "accepted_steps": 9,
+        "initial_diagnostics_written": true,
+        "requested_end_s": 136423.0637723484,
+        "surface_threshold_low_s": null,
+        "surface_threshold_high_s": null,
+        "global_threshold_low_s": null,
+        "global_threshold_high_s": null
+      }
+    },
+    "M1": {}
+  },
+  "accounting": {
+    "returncode": 1,
+    "stdout": "",
+    "stderr": "Slurm accounting storage is disabled\n"
+  }
+}

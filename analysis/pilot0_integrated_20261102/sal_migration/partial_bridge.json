@@ -1,0 +1,25 @@
+{
+  "scope": "Partial cross-host bridge, not final validation",
+  "metrics": {
+    "transport_budget.csv": {
+      "rows": 24,
+      "last_time_s": "1136.8588647695694",
+      "max_abs_difference": {
+        "inventory_salt_m": 0.0,
+        "cumulative_cut_salt_m": 0.0,
+        "salt_residual_m": 0.0
+      }
+    },
+    "surface_events.csv": {
+      "rows": 6,
+      "last_time_s": "1136.8588647695694",
+      "max_abs_difference": {
+        "x_top_area_mean": 0.0,
+        "x_top_max": 0.0,
+        "x_domain_max": 0.0,
+        "sigma_top_node": 0.0
+      }
+    }
+  },
+  "log_tail": " done, maximum relative shift = 1.1735e-04\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\nSolve: M deltax^k = r\u001b[K\nUpdate: x^(k+1) = x^k - deltax^k\u001b[K\nNewton iteration  2 done, maximum relative shift = 1.0565e-08\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\nSolve: M deltax^k = r\u001b[K\nUpdate: x^(k+1) = x^k - deltax^k\u001b[K\nNewton iteration  3 done, maximum relative shift = 2.1658e-13\nAssemble/solve/update time: 5(14.98%)/28(84.18%)/0.28(0.84%)\n[  0%] Time step 3 done in 34 seconds. Wall clock time: 107.7, time: 682.12, time step size: 227.37\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\nSolve: M deltax^k = r\u001b[K\nUpdate: x^(k+1) = x^k - deltax^k\u001b[K\nNewton iteration  1 done, maximum relative shift = 9.8476e-05\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\nSolve: M deltax^k = r\u001b[K\nUpdate: x^(k+1) = x^k - deltax^k\u001b[K\nNewton iteration  2 done, maximum relative shift = 6.4498e-09\nAssemble/solve/update time: 3.2(15.40%)/18(83.77%)/0.17(0.83%)\n[  1%] Time step 4 done in 22 seconds. Wall clock time: 129.39, time: 909.49, time step size: 227.37\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\nSolve: M deltax^k = r\u001b[K\nUpdate: x^(k+1) = x^k - deltax^k\u001b[K\nNewton iteration  1 done, maximum relative shift = 8.7108e-05\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\nSolve: M deltax^k = r\u001b[K\nUpdate: x^(k+1) = x^k - deltax^k\u001b[K\nNewton iteration  2 done, maximum relative shift = 4.4775e-09\nAssemble/solve/update time: 3.4(16.58%)/17(82.71%)/0.15(0.71%)\n[  1%] Time step 5 done in 21 seconds. Wall clock time: 150.62, time: 1136.9, time step size: 227.37\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\nSolve: M deltax^k = r\u001b[K\nUpdate: x^(k+1) = x^k - deltax^k\u001b[K\nNewton iteration  1 done, maximum relative shift = 7.9318e-05\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r"
+}
