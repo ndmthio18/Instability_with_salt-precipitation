@@ -30,6 +30,11 @@ VTK 速度缺少 krw 因子，以及 case 38852 旧场与当前输入的密度�
 高渗透率 case 42929 的延长无扰动试算正在进行；注册输入和阶段快照位于
 `analysis/highk_unperturbed_42929_20261102/`，快照不代表最终结果。
 
+已完成 [case 36877 严格配对准备审计](analysis/matched_pair_36877_20261102/AUDIT_ZH.md)及
+[最小运行计划](analysis/matched_pair_36877_20261102/MINIMAL_RUN_PLAN_ZH.md)：现有 M0 可复用，
+同一 Paper 2 ELF 的 nx=28、幅值 1e-6 M1 尚缺；待运行输入和原始 eigenprofile 已冻结。
+配对诊断经预算重算、自身相减和代数/拒绝条件检查；未定义 t_eff，未启动新增模拟。
+
 ## 仓库边界
 
 | 内容 | 位置与管理方式 |

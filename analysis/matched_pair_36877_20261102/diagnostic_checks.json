@@ -1,0 +1,14 @@
+{
+  "checks": {
+    "nonzero_initial_offset_removed": true,
+    "positive_extra_down_flux_negative_corrected_inventory": true,
+    "exact_conservation": true,
+    "self_null": true,
+    "time_mismatch_rejected": true,
+    "cut_mismatch_rejected": true,
+    "corrupt_cumulative_rejected": true,
+    "first_crossing_step_excluded": true
+  },
+  "all_passed": true,
+  "scope": "synthetic algebra/guards plus separate real M0 self-null; not M1 physical validation"
+}

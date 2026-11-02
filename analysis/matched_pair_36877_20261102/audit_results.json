@@ -1,0 +1,217 @@
+{
+  "checks": [
+    {
+      "name": "remote_executable_matches_M0",
+      "passed": true
+    },
+    {
+      "name": "source/config.h.cmake",
+      "passed": true
+    },
+    {
+      "name": "source/kiemle2023b.pc.in",
+      "passed": true
+    },
+    {
+      "name": "source/README.md",
+      "passed": true
+    },
+    {
+      "name": "source/dune.module",
+      "passed": true
+    },
+    {
+      "name": "source/CMakeLists.txt",
+      "passed": true
+    },
+    {
+      "name": "source/doc/CMakeLists.txt",
+      "passed": true
+    },
+    {
+      "name": "source/appl/CMakeLists.txt",
+      "passed": true
+    },
+    {
+      "name": "source/dune/CMakeLists.txt",
+      "passed": true
+    },
+    {
+      "name": "source/src/kiemle2023b.cc",
+      "passed": true
+    },
+    {
+      "name": "source/src/CMakeLists.txt",
+      "passed": true
+    },
+    {
+      "name": "source/doc/doxygen/CMakeLists.txt",
+      "passed": true
+    },
+    {
+      "name": "source/cmake/modules/Kiemle2023bMacros.cmake",
+      "passed": true
+    },
+    {
+      "name": "source/cmake/modules/CMakeLists.txt",
+      "passed": true
+    },
+    {
+      "name": "source/appl/simpleRichardsnc/main.cc",
+      "passed": true
+    },
+    {
+      "name": "source/appl/simpleRichardsnc/params.input",
+      "passed": true
+    },
+    {
+      "name": "source/appl/simpleRichardsnc/transportdiagnostics.hh",
+      "passed": true
+    },
+    {
+      "name": "source/appl/simpleRichardsnc/CMakeLists.txt",
+      "passed": true
+    },
+    {
+      "name": "source/appl/simpleRichardsnc/model.hh",
+      "passed": true
+    },
+    {
+      "name": "source/bin/eigenprofile/README.md",
+      "passed": true
+    },
+    {
+      "name": "source/dune/kiemle2023b/kiemle2023b.hh",
+      "passed": true
+    },
+    {
+      "name": "source/dune/kiemle2023b/CMakeLists.txt",
+      "passed": true
+    },
+    {
+      "name": "legacy_frozen/case_manifest.json",
+      "passed": true
+    },
+    {
+      "name": "legacy_frozen/run_meta.json",
+      "passed": true
+    },
+    {
+      "name": "legacy_frozen/sandy--boreal--s1354--f1080--global_default_L0p5--native.input",
+      "passed": true
+    },
+    {
+      "name": "legacy_frozen/sandy--boreal--s1354--f1080--global_default_L0p5--native_eigenprofile.dat",
+      "passed": true
+    },
+    {
+      "name": "M0_actual_remote_input_hash",
+      "passed": true
+    },
+    {
+      "name": "M0_local_input_only_line_ending_difference",
+      "passed": true
+    },
+    {
+      "name": "M0_output/transport_budget.csv",
+      "passed": true
+    },
+    {
+      "name": "M0_output/surface_events.csv",
+      "passed": true
+    },
+    {
+      "name": "M0_output/transport_metadata.json",
+      "passed": true
+    },
+    {
+      "name": "M0_output/stop_record.json",
+      "passed": true
+    },
+    {
+      "name": "M0_normal_completion",
+      "passed": true
+    },
+    {
+      "name": "legacy_initial_formula",
+      "passed": true
+    },
+    {
+      "name": "same_initial_pressure",
+      "passed": true
+    },
+    {
+      "name": "same_initial_saturation",
+      "passed": true
+    },
+    {
+      "name": "profile_normalized",
+      "passed": true
+    },
+    {
+      "name": "canonical_mode",
+      "passed": true
+    },
+    {
+      "name": "M0_accepted_time_steps",
+      "passed": true
+    },
+    {
+      "name": "M0_no_observed_threshold",
+      "passed": true
+    },
+    {
+      "name": "M0_initial_inventory_reconstruction",
+      "passed": true
+    }
+  ],
+  "all_passed": true,
+  "M0_local_raw_input_sha256": "b0160ca4f30a96e91eb05c18b5a7f3175c649f408d614e202a6ca342d943c46b",
+  "M0_actual_remote_input_sha256": "b2f8d4021918497d02dee97d46cd4af6be3f1a49f7d55dad4cc6ccf8f485aa67",
+  "M0_local_input_caveat": "Local initial writer used CRLF; remote submitted LF. Actual remote bytes separately archived; parameters identical.",
+  "M0_budgets": [
+    {
+      "region": "upper_0.900000",
+      "actual_z_over_H": 0.899515406020609,
+      "initial_inventory_m": 7.667579969819665e-06,
+      "final_inventory_m": 9.169389444255336e-06,
+      "final_cumulative_cut_m": -1.5018094744316522e-06,
+      "max_abs_budget_residual_m": 1.748170124014469e-17,
+      "max_relative_budget_residual": 2.279950298393281e-12
+    },
+    {
+      "region": "upper_0.750000",
+      "actual_z_over_H": 0.7522817588955184,
+      "initial_inventory_m": 1.923932121395369e-05,
+      "final_inventory_m": 2.0736348931571157e-05,
+      "final_cumulative_cut_m": -1.4970277175891303e-06,
+      "max_abs_budget_residual_m": 8.811509049741115e-17,
+      "max_relative_budget_residual": 4.579947988679766e-12
+    },
+    {
+      "region": "upper_0.500000",
+      "actual_z_over_H": 0.500531905678623,
+      "initial_inventory_m": 4.0064572437906085e-05,
+      "final_inventory_m": 4.1555341069032735e-05,
+      "final_cumulative_cut_m": -1.4907686311605543e-06,
+      "max_abs_budget_residual_m": 1.3791369271370837e-16,
+      "max_relative_budget_residual": 3.442285398838421e-12
+    }
+  ],
+  "M1_available": false,
+  "M1_initial_audit": "predicted_from_formula_plus_legacy_t0_not_new_M1_execution",
+  "readiness": "conditional_GO_for_one_approved_M1_only",
+  "physical_feasibility": "NO_GO_pending_pair_and_sensitivity",
+  "current_dt_min_s": 227.37177295220317,
+  "current_dt_max_s": 227.3717729539139,
+  "cost": {
+    "M0_observed_wall_s": 2492.6874599196017,
+    "legacy_M1_observed_wall_s": 19122,
+    "proposed_M1_wall_hours_range": [
+      1,
+      6
+    ],
+    "proposed_cap_hours": 12,
+    "range_is_estimate_not_measured": true
+  }
+}
