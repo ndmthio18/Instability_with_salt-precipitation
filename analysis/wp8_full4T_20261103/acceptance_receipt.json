@@ -1,0 +1,18 @@
+{
+  "command": "command/15.md",
+  "authorization_sha256": "4df1be183b1cbc0d756a10842db9985f1ac2c3f10106653be0e47a537ad576c8",
+  "elf_sha256": "216a01603e73a2ddd7ae19828aa3d75ebffc595e856b71c8099770c974e191b3",
+  "input_sha256": "668c650359c0cf42e07457ebd2995c152ccae80ba6943996b27609f81e340826",
+  "worker_sha256": "b144808da6a6b997f8dc375c3bc50d4b0f7cc73b5bc86ebec457e026162ff966",
+  "archive_sha256": "27eef214d00ada60a9167e4d52b975d799ac093512329dd4557054eb18124074",
+  "profile_sha256": "1bc70d01925db1a9cc0d7cd121806d5b398a0ec5269ed01ed67431f5571bbe6f",
+  "remote_archive": "/temp/zhixin/paper2_wp8_full4T_20261103/run/fields.tar.gz",
+  "local_archive": "D:\\3OutputFile\\1Research\\Article\\22Surrogate_model\\paper\\2\\tmp\\wp8_full4T_20261103\\run\\fields.tar.gz",
+  "accepted_state_archive_frames": 4801,
+  "every_frame_hash_verified": true,
+  "acceptance_passed": true,
+  "acceptance_checks": 48,
+  "scientific_4T_reached": true,
+  "censored_by_threshold": false,
+  "historical_runs_unchanged": true
+}

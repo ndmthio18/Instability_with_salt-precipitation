@@ -1,0 +1,52 @@
+{
+  "authorized_runs": 1,
+  "launched_runs": 1,
+  "retries": 0,
+  "restarts": 0,
+  "replays": 0,
+  "host": "frodo",
+  "cpus": 1,
+  "pinned_cpu": 13,
+  "prior_cpu_usage_at_selection": 0.0,
+  "load_at_launch": [
+    14.93310546875,
+    13.2294921875,
+    11.7978515625
+  ],
+  "solver_and_live_audit_wall_s": 291.05226254463196,
+  "total_worker_wall_s": 307.5603835582733,
+  "archive_and_post_wall_s": 16.508121013641357,
+  "wall_hard_cap_s": 900,
+  "wall_cap_used_fraction": 0.32339140282736883,
+  "preregistered_estimate_wall_s": [
+    180,
+    600
+  ],
+  "estimate_bracketed_the_outcome": true,
+  "core_hours": 0.08084785070684221,
+  "peak_solver_rss_kib": 32364,
+  "solver_address_space_cap_gib": 2,
+  "accepted_steps": 4800,
+  "frames": 4801,
+  "raw_field_bytes": 261946506,
+  "compressed_archive_bytes": 59136086,
+  "archive_cap_bytes": 262144000,
+  "archive_cap_used_fraction": 0.22558626556396486,
+  "free_disk_bytes_at_launch": 222778847232,
+  "memory_available_bytes_at_launch": 17392553984,
+  "verified_frames": 4801,
+  "seconds_per_accepted_step": 0.06063588803013166,
+  "historical_reference": {
+    "accepted_steps": 4413,
+    "solver_and_live_audit_wall_s": 156.7047984600067,
+    "seconds_per_accepted_step": 0.03550981157036182,
+    "archive_bytes": 54215837
+  },
+  "unmeasured": {
+    "network_transfer_wall_s": null,
+    "local_analysis_wall_s": null,
+    "monitor_python_peak_rss_kib": null
+  },
+  "note": "one continuous run; no diagnostic replay, restart, tolerance change or retry was used",
+  "cost_ratio_vs_historical_per_step": 1.7075812387791225
+}

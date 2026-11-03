@@ -1,0 +1,19 @@
+{
+  "returncode": 0,
+  "trigger": null,
+  "solver_and_live_audit_wall_s": 291.05226254463196,
+  "total_wall_s": 307.5603835582733,
+  "cpu": 13,
+  "peak_child_rss_kib": 32364,
+  "frames": 4801,
+  "raw_field_bytes": 261946506,
+  "archive": {
+    "path": "/temp/zhixin/paper2_wp8_full4T_20261103/run/fields.tar.gz",
+    "sha256": "27eef214d00ada60a9167e4d52b975d799ac093512329dd4557054eb18124074",
+    "bytes": 59136086
+  },
+  "archive_budget_pass": true,
+  "elf_sha256": "216a01603e73a2ddd7ae19828aa3d75ebffc595e856b71c8099770c974e191b3",
+  "input_sha256": "668c650359c0cf42e07457ebd2995c152ccae80ba6943996b27609f81e340826",
+  "worker_sha256": "b144808da6a6b997f8dc375c3bc50d4b0f7cc73b5bc86ebec457e026162ff966"
+}
