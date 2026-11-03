@@ -1,0 +1,618 @@
+{
+  "analysis/wp7_shortwave_validation_20261103/BACKGROUND_1D_VALIDATION_ZH.md": {
+    "sha256": "681535b2323f2cc3e6ab5288c0d31508819a92c272cfa160676bd20e51ad2d93",
+    "bytes": 1945
+  },
+  "analysis/wp7_shortwave_validation_20261103/background_budget_comparison.csv": {
+    "sha256": "4de194a5c4625a1ee2eace8bd1261ef837ddedaa82cb2d0c2da977dfea197463",
+    "bytes": 966
+  },
+  "analysis/wp7_shortwave_validation_20261103/background_validation.json": {
+    "sha256": "62d37ace06edf0722f86a796e299e7d5bd9b575a3e0553e821aaffe14e91fb91",
+    "bytes": 5435
+  },
+  "analysis/wp7_shortwave_validation_20261103/benchmark_admission.json": {
+    "sha256": "6e1cdb0abb032e52bcc48e0a99453aa9b1780f379aefabd9eeed309d6f149276",
+    "bytes": 597
+  },
+  "analysis/wp7_shortwave_validation_20261103/build/attempt_01/build.log": {
+    "sha256": "888a674985a58f752b8009767549346140a4471006f2729da595a71585b814cc",
+    "bytes": 2118344
+  },
+  "analysis/wp7_shortwave_validation_20261103/build/attempt_01/build_worker.py": {
+    "sha256": "27d4c333c0e3f104df024c09a94185a486f2f3e44c518b03795cc5d2460a4092",
+    "bytes": 2239
+  },
+  "analysis/wp7_shortwave_validation_20261103/build/attempt_01/configure.log": {
+    "sha256": "b9e1f9530c7717bcecd4dd562cf8c16a4dc8c7a39820df12a07ca70b83b64c83",
+    "bytes": 17748
+  },
+  "analysis/wp7_shortwave_validation_20261103/build/attempt_01/result.json": {
+    "sha256": "328b54288d8467be02c57ab374fdca0a2a7e8cca01a4ab3ef60503e927d70249",
+    "bytes": 18888
+  },
+  "analysis/wp7_shortwave_validation_20261103/build/attempt_01/staged_source_sha256.json": {
+    "sha256": "ec00b73413cc536c75ceb7d0733d342d1066257d03860602d8b992fb9c967782",
+    "bytes": 2066
+  },
+  "analysis/wp7_shortwave_validation_20261103/build/attempt_01/worker.log": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "analysis/wp7_shortwave_validation_20261103/build/attempt_01_launch.json": {
+    "sha256": "2241ef49dbe02f957339625932eec6b475c62dca827b3f3c971f450f0fef6f66",
+    "bytes": 140
+  },
+  "analysis/wp7_shortwave_validation_20261103/build/shared_source_after_build.json": {
+    "sha256": "db02193673dd4229f92818a36e3d28e281b2c317a6c3f96afcf79807c516386b",
+    "bytes": 1968
+  },
+  "analysis/wp7_shortwave_validation_20261103/decision.json": {
+    "sha256": "a31a1626dbc0c78d899bbd28b8665a25dd0e510ad4158d0dccba14d3073ce092",
+    "bytes": 749
+  },
+  "analysis/wp7_shortwave_validation_20261103/delivery_checks.json": {
+    "sha256": "ae0193e54446f88e376146013f72b4eba10fbedeb8bb35f869242f2e0a3fcb13",
+    "bytes": 1487
+  },
+  "analysis/wp7_shortwave_validation_20261103/failed_attempts/WP7-1D-background-T_job19206/eigenprofile.dat": {
+    "sha256": "d721e605d126e555f92b43200aa73b999ed4e2b61397edd1e98c0d9fddb36575",
+    "bytes": 153788
+  },
+  "analysis/wp7_shortwave_validation_20261103/failed_attempts/WP7-1D-background-T_job19206/params.input": {
+    "sha256": "b087baf513ccf92d7a69d5e1d814c364bca2361ce45526bcfec786c4d76d95d3",
+    "bytes": 1284
+  },
+  "analysis/wp7_shortwave_validation_20261103/failed_attempts/WP7-1D-background-T_job19206/plan.json": {
+    "sha256": "f4a4b50e04c093b9005eb78114fe8426d8eb2a5f5408df2e2dda80109db3017a",
+    "bytes": 850
+  },
+  "analysis/wp7_shortwave_validation_20261103/failed_attempts/WP7-1D-background-T_job19206/slurm-19206.out": {
+    "sha256": "936a05a662a419fc866356945c754c1595b3b08ea4ea739b4a25b1c1602dd8ab",
+    "bytes": 56
+  },
+  "analysis/wp7_shortwave_validation_20261103/failed_attempts/WP7-1D-background-T_job19206/solver.log": {
+    "sha256": "63cc39411afa8f9b21dd0c613a4d931170697566ec79482c5647e59dabbb81a2",
+    "bytes": 2240
+  },
+  "analysis/wp7_shortwave_validation_20261103/failed_attempts/WP7-1D-background-T_job19206/solver_finished.json": {
+    "sha256": "9339341f60e5b704a105fe0c79bb925d2bc5594881c3cc14dc41d429463f6098",
+    "bytes": 730
+  },
+  "analysis/wp7_shortwave_validation_20261103/failed_attempts/WP7-1D-background-T_job19206/started.json": {
+    "sha256": "8f61d060cbf67315817a6633f43d328deac6af79bdae75edd9c498190898d699",
+    "bytes": 351
+  },
+  "analysis/wp7_shortwave_validation_20261103/failed_attempts/WP7-R48-M1-bench10_job19205/eigenprofile.dat": {
+    "sha256": "d721e605d126e555f92b43200aa73b999ed4e2b61397edd1e98c0d9fddb36575",
+    "bytes": 153788
+  },
+  "analysis/wp7_shortwave_validation_20261103/failed_attempts/WP7-R48-M1-bench10_job19205/params.input": {
+    "sha256": "7bc3a192703068cc4c7b5a3409fc7108f7f73f8ec9cd67e0b1025f1ed785000a",
+    "bytes": 1334
+  },
+  "analysis/wp7_shortwave_validation_20261103/failed_attempts/WP7-R48-M1-bench10_job19205/plan.json": {
+    "sha256": "eedb2478149dd83cad151025f14ce0055fe1449784c417c967171006ee142a17",
+    "bytes": 852
+  },
+  "analysis/wp7_shortwave_validation_20261103/failed_attempts/WP7-R48-M1-bench10_job19205/slurm-19205.out": {
+    "sha256": "936a05a662a419fc866356945c754c1595b3b08ea4ea739b4a25b1c1602dd8ab",
+    "bytes": 56
+  },
+  "analysis/wp7_shortwave_validation_20261103/failed_attempts/WP7-R48-M1-bench10_job19205/solver.log": {
+    "sha256": "721268a3ec60bed853d432afc7ee63e203493754e84ef05250763af91d2a4d30",
+    "bytes": 2240
+  },
+  "analysis/wp7_shortwave_validation_20261103/failed_attempts/WP7-R48-M1-bench10_job19205/solver_finished.json": {
+    "sha256": "3149ee55e51bbbe4f0177d8b836697891b2f60427b0940051ee5d1e8e134f7b6",
+    "bytes": 730
+  },
+  "analysis/wp7_shortwave_validation_20261103/failed_attempts/WP7-R48-M1-bench10_job19205/started.json": {
+    "sha256": "645a0a7b5cffd85c3953f6a98a0b6a337b2591c4e6f3f68289934578a0935c0d",
+    "bytes": 351
+  },
+  "analysis/wp7_shortwave_validation_20261103/FINAL_REVIEW_ZH.md": {
+    "sha256": "2a97a18aae54c7b25c7a394cae4a9923980bbc4a5d196b0864b12198d531da79",
+    "bytes": 2007
+  },
+  "analysis/wp7_shortwave_validation_20261103/local_flux_smoke/bridge_errors.csv": {
+    "sha256": "28a677e0ebd49e68dfb2cc30813888aac8be457793b19b565d849bdcc0918a41",
+    "bytes": 7588
+  },
+  "analysis/wp7_shortwave_validation_20261103/local_flux_smoke/bridge_result.json": {
+    "sha256": "5bfd2424823f74402f341a107dda01a601f625efb0a58e44b4d21c70343d47d3",
+    "bytes": 557
+  },
+  "analysis/wp7_shortwave_validation_20261103/local_flux_smoke/eigenprofile.dat": {
+    "sha256": "d721e605d126e555f92b43200aa73b999ed4e2b61397edd1e98c0d9fddb36575",
+    "bytes": 153788
+  },
+  "analysis/wp7_shortwave_validation_20261103/local_flux_smoke/execution.json": {
+    "sha256": "ddfdfe43de8f878bf5a2a953ced2c75637faaea55df2c79e97f043a0ce750cb2",
+    "bytes": 142
+  },
+  "analysis/wp7_shortwave_validation_20261103/local_flux_smoke/local_vertical_flux.csv": {
+    "sha256": "75af3298d32c84c6c2f84ba62f597959ac295eac8b6173e0b796b6fe535fe29e",
+    "bytes": 478247
+  },
+  "analysis/wp7_shortwave_validation_20261103/local_flux_smoke/params.input": {
+    "sha256": "a396510eccea2a55236f668c4b98fc90de18e970b2abd5f14206bbd6e6f93b55",
+    "bytes": 1361
+  },
+  "analysis/wp7_shortwave_validation_20261103/local_flux_smoke/plan.json": {
+    "sha256": "b1484180d1d3f221492bfb36fa8b56739f6f8acc4fdae860a43170d227677291",
+    "bytes": 460
+  },
+  "analysis/wp7_shortwave_validation_20261103/local_flux_smoke/solver.log": {
+    "sha256": "aeac5aefa96ee1a36f9acb6928ac56d134d76c9eb605feaf564a2f5414b6dbd1",
+    "bytes": 1465
+  },
+  "analysis/wp7_shortwave_validation_20261103/local_flux_smoke/stop_record.json": {
+    "sha256": "443b7a011ba9dc9e67d6131190d3dee993a09ab33390b4b13ffaa5b539d50c0b",
+    "bytes": 348
+  },
+  "analysis/wp7_shortwave_validation_20261103/local_flux_smoke/surface_events.csv": {
+    "sha256": "61168af3fba94a168f3eaed41855862feb338d2ef6dca93c04373f678a1eb8f0",
+    "bytes": 515
+  },
+  "analysis/wp7_shortwave_validation_20261103/local_flux_smoke/transport_budget.csv": {
+    "sha256": "94846a1ff3e1129048e5e969b42d61bb0fbe10c22ffa6440a92e5e3d102523cd",
+    "bytes": 7908
+  },
+  "analysis/wp7_shortwave_validation_20261103/local_flux_smoke/transport_metadata.json": {
+    "sha256": "4282bcbaaa632b7cafb4be1d9b40a792d59cc4ab76d3f218158cc27def092ea7",
+    "bytes": 1551
+  },
+  "analysis/wp7_shortwave_validation_20261103/local_flux_smoke/weighted_online.csv": {
+    "sha256": "364376225a8e0c66d784f2ec439d8c96c6882bb5b602e44ce54f2f89a911e620",
+    "bytes": 505
+  },
+  "analysis/wp7_shortwave_validation_20261103/local_flux_smoke_E04.json": {
+    "sha256": "064a55761ba00206e227aa103183fc0db0bab17526586088ada8e05c9bf29ea7",
+    "bytes": 762
+  },
+  "analysis/wp7_shortwave_validation_20261103/local_flux_static_checks.json": {
+    "sha256": "027df15d4386a937a1a99b38ef04584ec9409463201516a349183b63bd1a0cc6",
+    "bytes": 569
+  },
+  "analysis/wp7_shortwave_validation_20261103/LOCAL_SCVF_DIAGNOSTIC_ZH.md": {
+    "sha256": "f833ddbb2fac6b8e46d36df776701079a0b1797fcc2f7be39073b00f2ae281cb",
+    "bytes": 2154
+  },
+  "analysis/wp7_shortwave_validation_20261103/local_scvf_summary.json": {
+    "sha256": "c07980cb3fd91a0b4681a6fff796139f28f732d062f60d33b20ffd4b8ff64e17",
+    "bytes": 1938
+  },
+  "analysis/wp7_shortwave_validation_20261103/preregistration.json": {
+    "sha256": "d1d9331ba7e3bd83e2fc2fa689c445a1caf3ee5ed6f2296a75561576c93862cf",
+    "bytes": 4267
+  },
+  "analysis/wp7_shortwave_validation_20261103/R24_R48_COMPARISON_ZH.md": {
+    "sha256": "d3ffa388457d799b2595dd31eed34ee2b797757643a1aee2a98e02622e32e3f0",
+    "bytes": 1519
+  },
+  "analysis/wp7_shortwave_validation_20261103/R48_PLAN_AND_ADMISSION_ZH.md": {
+    "sha256": "0534fdc8ef3fce5dea9fc7620f2bf2e9577a1c158e04220a46cb1bd10209c2de",
+    "bytes": 2403
+  },
+  "analysis/wp7_shortwave_validation_20261103/r48_preflight_summary.json": {
+    "sha256": "5cb7fa1a06d9e428f76523d0d26208019cea7d72f01c1e283cdf8b0de0c85d05",
+    "bytes": 4853
+  },
+  "analysis/wp7_shortwave_validation_20261103/README_ZH.md": {
+    "sha256": "ee6ae3ee18ccf54aabbc120513ed5779353819be63862014432802dabc725816",
+    "bytes": 831
+  },
+  "analysis/wp7_shortwave_validation_20261103/resource_amendment_E02.json": {
+    "sha256": "e540a72b5216328329501fdd0327f503ee780ae633552df65a4523be61740b01",
+    "bytes": 1359
+  },
+  "analysis/wp7_shortwave_validation_20261103/runs/WP7-1D-background-T/eigenprofile.dat": {
+    "sha256": "d721e605d126e555f92b43200aa73b999ed4e2b61397edd1e98c0d9fddb36575",
+    "bytes": 153788
+  },
+  "analysis/wp7_shortwave_validation_20261103/runs/WP7-1D-background-T/finished.json": {
+    "sha256": "95fc74f570aa6bc14a2442ef1b9d31f4c64531ceaf8ef3e1e4081ad13e300d8e",
+    "bytes": 3922
+  },
+  "analysis/wp7_shortwave_validation_20261103/runs/WP7-1D-background-T/params.input": {
+    "sha256": "b087baf513ccf92d7a69d5e1d814c364bca2361ce45526bcfec786c4d76d95d3",
+    "bytes": 1284
+  },
+  "analysis/wp7_shortwave_validation_20261103/runs/WP7-1D-background-T/plan.json": {
+    "sha256": "1de509cd60605516818481fafbc0e3f6b44f9e0fe6d7facc8494151d415ee199",
+    "bytes": 950
+  },
+  "analysis/wp7_shortwave_validation_20261103/runs/WP7-1D-background-T/post/field_audit.json": {
+    "sha256": "40049795651a8c05e56fb2334acf49536b6e79cda73d7a0b43c41006f89552c6",
+    "bytes": 725
+  },
+  "analysis/wp7_shortwave_validation_20261103/runs/WP7-1D-background-T/post/field_hashes.json": {
+    "sha256": "cf6ad5d7f1918b246212320031b102cf9a06e2f9cf677b29c01a795bc3020d86",
+    "bytes": 293137
+  },
+  "analysis/wp7_shortwave_validation_20261103/runs/WP7-1D-background-T/post/independent_checks.json": {
+    "sha256": "754553faaf7f4c559a9c6349f37269797e0666d140aa9f85029e8e6628009c73",
+    "bytes": 2345
+  },
+  "analysis/wp7_shortwave_validation_20261103/runs/WP7-1D-background-T/post/independent_inventories.csv": {
+    "sha256": "0f545a28a08109844c8487bdadbd2e558ef2c1d7fbf50af9307fa6a476a4d98e",
+    "bytes": 1221942
+  },
+  "analysis/wp7_shortwave_validation_20261103/runs/WP7-1D-background-T/post/profiles.npz": {
+    "sha256": "72e27a9bba4dc72c62638c377a5cf72da50a386ab1898c6922c499cb8a32cff1",
+    "bytes": 832404
+  },
+  "analysis/wp7_shortwave_validation_20261103/runs/WP7-1D-background-T/post/representative_fields.npz": {
+    "sha256": "87f6a83af47b471d59bd287bf9f9709818b126bf3a1f70b54be2cd36ec7c6ed2",
+    "bytes": 9945
+  },
+  "analysis/wp7_shortwave_validation_20261103/runs/WP7-1D-background-T/post/weighted_diagnostics.csv": {
+    "sha256": "81aa42aba2ad0de0f9c9b7a041fdd703457fd71de5c0c7d3b69820ee84f73bbd",
+    "bytes": 380833
+  },
+  "analysis/wp7_shortwave_validation_20261103/runs/WP7-1D-background-T/post.log": {
+    "sha256": "043d6208ae0d0936e413ef5ccc38ea199e59f2abfc55af51ccd5b49e060fbbce",
+    "bytes": 2034
+  },
+  "analysis/wp7_shortwave_validation_20261103/runs/WP7-1D-background-T/solver.log": {
+    "sha256": "c48bfdc259d940d26bceccbf4afa1b3516637fa7c38e23114736c131986fdc46",
+    "bytes": 719931
+  },
+  "analysis/wp7_shortwave_validation_20261103/runs/WP7-1D-background-T/solver_finished.json": {
+    "sha256": "0471362f023dbd8ca4309dcd3201d8dfa46971617433cf12d73f81cd93acb958",
+    "bytes": 605
+  },
+  "analysis/wp7_shortwave_validation_20261103/runs/WP7-1D-background-T/started.json": {
+    "sha256": "86e5707f06c6262329212e37012659178a90393a0165ccd9718f6edf40ecd409",
+    "bytes": 349
+  },
+  "analysis/wp7_shortwave_validation_20261103/runs/WP7-1D-background-T/stop_record.json": {
+    "sha256": "da89aa7b5d29b5fad13b438152e0faa3ea4a1a581cfef6686f9bf66ae4806b08",
+    "bytes": 349
+  },
+  "analysis/wp7_shortwave_validation_20261103/runs/WP7-1D-background-T/surface_events.csv": {
+    "sha256": "2a5fc0a57445a4376d86d182eb9b400ca5457ad8d49414ef024fb80eafd47e87",
+    "bytes": 236196
+  },
+  "analysis/wp7_shortwave_validation_20261103/runs/WP7-1D-background-T/transport_budget.csv": {
+    "sha256": "0b3b2606610efdc9e645211cad468bb9f2880356d4415cbb094b15977910692c",
+    "bytes": 5796167
+  },
+  "analysis/wp7_shortwave_validation_20261103/runs/WP7-1D-background-T/transport_metadata.json": {
+    "sha256": "6e25c4ea1bf90bf1a65400f154b0a01e83bf6d9b63d6a343c22c4f04ccce275e",
+    "bytes": 1388
+  },
+  "analysis/wp7_shortwave_validation_20261103/runs/WP7-1D-background-T/weighted_online.csv": {
+    "sha256": "ac53f171812cfe773893d5dd6c6a37945374a03a7091944cbaaff13e26afa702",
+    "bytes": 194360
+  },
+  "analysis/wp7_shortwave_validation_20261103/runs/WP7-1D-background-T/WP7-1D-background-T.pvd": {
+    "sha256": "5354ab85a645108cb4453f07562245b562ff734e3e5acbd8f026d1836ee3a551",
+    "bytes": 112534
+  },
+  "analysis/wp7_shortwave_validation_20261103/runs/WP7-1D-background-T/WP7-1D-background-T_sigmatop.csv": {
+    "sha256": "eb5954c5a3c28b9bdbd72e35f8708d1bfce7eb22042865f9f0e13363091a0ff4",
+    "bytes": 116597
+  },
+  "analysis/wp7_shortwave_validation_20261103/runs/WP7-R48-M0-4T/eigenprofile.dat": {
+    "sha256": "d721e605d126e555f92b43200aa73b999ed4e2b61397edd1e98c0d9fddb36575",
+    "bytes": 153788
+  },
+  "analysis/wp7_shortwave_validation_20261103/runs/WP7-R48-M0-4T/params.input": {
+    "sha256": "e56e029220494dfea85fc8236df2e17638ea4dc9346ea050800cc30b31d66026",
+    "bytes": 1279
+  },
+  "analysis/wp7_shortwave_validation_20261103/runs/WP7-R48-M0-4T/plan.json": {
+    "sha256": "4e9d35a926b621841d5acf7018c4cf8299b89ead7ec4ab19fe25663a011eb9c7",
+    "bytes": 702
+  },
+  "analysis/wp7_shortwave_validation_20261103/runs/WP7-R48-M1-4T/eigenprofile.dat": {
+    "sha256": "d721e605d126e555f92b43200aa73b999ed4e2b61397edd1e98c0d9fddb36575",
+    "bytes": 153788
+  },
+  "analysis/wp7_shortwave_validation_20261103/runs/WP7-R48-M1-4T/params.input": {
+    "sha256": "5a1f420f2b0cc962261ca831f2420c5c435bc9d67cc36d51d9fc10e421afa690",
+    "bytes": 1328
+  },
+  "analysis/wp7_shortwave_validation_20261103/runs/WP7-R48-M1-4T/plan.json": {
+    "sha256": "2aeb06ce4cd5caf3cf2b2ac49d406e346260f605b7a2e4dd7bf6f91adfca6cfc",
+    "bytes": 702
+  },
+  "analysis/wp7_shortwave_validation_20261103/runs/WP7-R48-M1-bench10/eigenprofile.dat": {
+    "sha256": "d721e605d126e555f92b43200aa73b999ed4e2b61397edd1e98c0d9fddb36575",
+    "bytes": 153788
+  },
+  "analysis/wp7_shortwave_validation_20261103/runs/WP7-R48-M1-bench10/finished.json": {
+    "sha256": "bed175254e4ec8c64e330ec5400c570513936035c023a2325e0f309ff228c42a",
+    "bytes": 3900
+  },
+  "analysis/wp7_shortwave_validation_20261103/runs/WP7-R48-M1-bench10/params.input": {
+    "sha256": "7bc3a192703068cc4c7b5a3409fc7108f7f73f8ec9cd67e0b1025f1ed785000a",
+    "bytes": 1334
+  },
+  "analysis/wp7_shortwave_validation_20261103/runs/WP7-R48-M1-bench10/plan.json": {
+    "sha256": "dc8ecf2064389116d3decb9d554d03542dfda2d360bda75371ce0eb9b58b0fbb",
+    "bytes": 952
+  },
+  "analysis/wp7_shortwave_validation_20261103/runs/WP7-R48-M1-bench10/post/field_audit.json": {
+    "sha256": "5f40e7f27a79cd34294c8d77ef04f846814a24d60465a7f8bed89a2bb8c3b937",
+    "bytes": 743
+  },
+  "analysis/wp7_shortwave_validation_20261103/runs/WP7-R48-M1-bench10/post/field_hashes.json": {
+    "sha256": "9f99a5495bc2a467615e9a967ecf00a63a08561418f98ab51bede3ca0a84e6d8",
+    "bytes": 2665
+  },
+  "analysis/wp7_shortwave_validation_20261103/runs/WP7-R48-M1-bench10/post/independent_checks.json": {
+    "sha256": "88823f4d772e87b2f8323dfcd95a3cd31adbc2addbb952af8d3b6f71416b38dd",
+    "bytes": 2364
+  },
+  "analysis/wp7_shortwave_validation_20261103/runs/WP7-R48-M1-bench10/post/independent_inventories.csv": {
+    "sha256": "102a3405aca23d87bfb635b42cf509b7f62b3c9c6bf436fd7d1299301fbbbf40",
+    "bytes": 11061
+  },
+  "analysis/wp7_shortwave_validation_20261103/runs/WP7-R48-M1-bench10/post/profiles.npz": {
+    "sha256": "70811f0b55e39eb3aa04999c3b6f970582b23a0552f895a91646534c116ca921",
+    "bytes": 21202
+  },
+  "analysis/wp7_shortwave_validation_20261103/runs/WP7-R48-M1-bench10/post/representative_fields.npz": {
+    "sha256": "bcbb21608d38b5f291f1b7ea02e85420c4de5780aa10f38586544bd0eb3d6575",
+    "bytes": 111248
+  },
+  "analysis/wp7_shortwave_validation_20261103/runs/WP7-R48-M1-bench10/post/weighted_diagnostics.csv": {
+    "sha256": "ed93e3f8be6203008b73831bb943bc9460c01400069f9ae31f851af18db96951",
+    "bytes": 4075
+  },
+  "analysis/wp7_shortwave_validation_20261103/runs/WP7-R48-M1-bench10/post.log": {
+    "sha256": "5f56f9e5ad2f9b440a3387a1404a4bf1a247222a7fcd4217118279f76ff0569c",
+    "bytes": 2053
+  },
+  "analysis/wp7_shortwave_validation_20261103/runs/WP7-R48-M1-bench10/solver.log": {
+    "sha256": "15a9288f877abf7f38ba3fb4b78a72a9fb45bf1bb6aaa91c15464f959e41d8af",
+    "bytes": 6912
+  },
+  "analysis/wp7_shortwave_validation_20261103/runs/WP7-R48-M1-bench10/solver_finished.json": {
+    "sha256": "40a0e3ced93e9ad9a785421c0c619270df63dcd4fe6a3cd0f8be7bcd0b364800",
+    "bytes": 603
+  },
+  "analysis/wp7_shortwave_validation_20261103/runs/WP7-R48-M1-bench10/started.json": {
+    "sha256": "362c152d7bead6d25420ad94ff90041a605a0db285775f6403611638e572009f",
+    "bytes": 349
+  },
+  "analysis/wp7_shortwave_validation_20261103/runs/WP7-R48-M1-bench10/stop_record.json": {
+    "sha256": "0314b7aa03d9e0898ee16370e3137bf00b295fb27b04a5d4c5a0e96711fb7063",
+    "bytes": 349
+  },
+  "analysis/wp7_shortwave_validation_20261103/runs/WP7-R48-M1-bench10/surface_events.csv": {
+    "sha256": "176eeddd207b91bf2734fa5ebae90a00173d37e7a1bfff7a88fc2f043a93c748",
+    "bytes": 2292
+  },
+  "analysis/wp7_shortwave_validation_20261103/runs/WP7-R48-M1-bench10/transport_budget.csv": {
+    "sha256": "e4a4ab5eda638437e282f6c721ab4da14f47a0c2a5a4b6381cce6f503afb01da",
+    "bytes": 51149
+  },
+  "analysis/wp7_shortwave_validation_20261103/runs/WP7-R48-M1-bench10/transport_metadata.json": {
+    "sha256": "6e25c4ea1bf90bf1a65400f154b0a01e83bf6d9b63d6a343c22c4f04ccce275e",
+    "bytes": 1388
+  },
+  "analysis/wp7_shortwave_validation_20261103/runs/WP7-R48-M1-bench10/weighted_online.csv": {
+    "sha256": "2402c78e6038f5316b24fabb30cca1d3a50aa3ef9520ddd110d69a0a23e1669a",
+    "bytes": 2146
+  },
+  "analysis/wp7_shortwave_validation_20261103/runs/WP7-R48-M1-bench10/WP7-R48-M1-bench10.pvd": {
+    "sha256": "876c940152c8af925cfc74c7c19869bc8e9fdf029e1470e0e94fae1c4164d847",
+    "bytes": 1150
+  },
+  "analysis/wp7_shortwave_validation_20261103/runs/WP7-R48-M1-bench10/WP7-R48-M1-bench10_sigmatop.csv": {
+    "sha256": "a2fc58f858b7c16c7873d830c980b7684ba733250de9278c7ab52cd69e320655",
+    "bytes": 1178
+  },
+  "analysis/wp7_shortwave_validation_20261103/runtime_cost.csv": {
+    "sha256": "24a4b2fc17bfcf39d93e87a3919cf2cf73167a023103e2f3b8b4f787e55e7b24",
+    "bytes": 231
+  },
+  "analysis/wp7_shortwave_validation_20261103/runtime_relocation_E03.json": {
+    "sha256": "47931fd4f4ed1e34ae911ba79a4034abb4da8062782f87a92b3b294ca559fe08",
+    "bytes": 833
+  },
+  "analysis/wp7_shortwave_validation_20261103/runtime_relocation_receipt.json": {
+    "sha256": "c87d20fc1f3dbd7ac8077ee51c295afcfeda02c159e75beecf78119fc90688e0",
+    "bytes": 462
+  },
+  "analysis/wp7_shortwave_validation_20261103/sal_collect_preflight_retry.json": {
+    "sha256": "ffc5e8960536e4b73f2085ced239da51f351255693a58418bc4109266792afde",
+    "bytes": 742
+  },
+  "analysis/wp7_shortwave_validation_20261103/sal_jobs_preflight.json": {
+    "sha256": "e447c39b6c5e30be62d0510c78e9450934af7351ae3dc865b9781a1eccfc314f",
+    "bytes": 74
+  },
+  "analysis/wp7_shortwave_validation_20261103/sal_jobs_preflight_initial.json": {
+    "sha256": "e447c39b6c5e30be62d0510c78e9450934af7351ae3dc865b9781a1eccfc314f",
+    "bytes": 74
+  },
+  "analysis/wp7_shortwave_validation_20261103/sal_jobs_preflight_retry.json": {
+    "sha256": "886202cfc93c5a3dfad7e40935acd7a9b1740905eeb0abb1dab6533e7d3e10cc",
+    "bytes": 74
+  },
+  "analysis/wp7_shortwave_validation_20261103/sal_stage_preflight.json": {
+    "sha256": "04d8b7b95c8c56841f2f1229a7768d49332c292d8190d42e233d03825124f50b",
+    "bytes": 455
+  },
+  "analysis/wp7_shortwave_validation_20261103/sal_status_preflight.json": {
+    "sha256": "c2fca16c57460a60cb53ab450f036c7b7fa96fa011f7a31372d49a73f683bd19",
+    "bytes": 133
+  },
+  "analysis/wp7_shortwave_validation_20261103/sal_status_preflight_retry.json": {
+    "sha256": "777023f3e5a56536b89cd30e8b01636b09ce15bb5e85bc9689ddbee8f8bf6e57",
+    "bytes": 2989
+  },
+  "analysis/wp7_shortwave_validation_20261103/static_checks.json": {
+    "sha256": "9ed53b2ff6aa3d0a36214e7a8aab6d86d665d1683f9a40d2782b3bd188273ef2",
+    "bytes": 1217
+  },
+  "analysis/wp7_shortwave_validation_20261103/test_results.json": {
+    "sha256": "5f517181cb29782da6433cda547ea1f81efe5f702effe2ac02f5a841704bf389",
+    "bytes": 319
+  },
+  "command/11.md": {
+    "sha256": "efffb566e64e34d5f9105bb418ab925ef3ad8c19d50811e24bed11f89cdddd21",
+    "bytes": 4508
+  },
+  "model/transport_wp7_localflux_v1/README.md": {
+    "sha256": "5a345f99d5fe200ac1e9639f2636bb5cbc53c4ee4843c2c07e96c5f4d80799f9",
+    "bytes": 2069
+  },
+  "model/transport_wp7_localflux_v1/source/appl/CMakeLists.txt": {
+    "sha256": "e4932eb4852ddaa91476d791c91d8ef7d5c13b07a6a2c81ae7033e308ae5768b",
+    "bytes": 35
+  },
+  "model/transport_wp7_localflux_v1/source/appl/simpleRichardsnc/CMakeLists.txt": {
+    "sha256": "5a9a763908e7053c80d637a3e60156ec6bd98e76b8d900655c68b1cba2ca1c00",
+    "bytes": 398
+  },
+  "model/transport_wp7_localflux_v1/source/appl/simpleRichardsnc/main.cc": {
+    "sha256": "dc7c629220fd0f3b23a6fcb6f156537d0d1d38b376550606235aeda7729dd2b4",
+    "bytes": 40653
+  },
+  "model/transport_wp7_localflux_v1/source/appl/simpleRichardsnc/model.hh": {
+    "sha256": "b59fd1718863a712a8e619f914be9152302bec990dd7ed19359daed699c118db",
+    "bytes": 10370
+  },
+  "model/transport_wp7_localflux_v1/source/appl/simpleRichardsnc/params.input": {
+    "sha256": "2cbfbc4c82e5016b8c6de0a998a0e7ce5f26293a60b75087a50e50fc7b128ad7",
+    "bytes": 687
+  },
+  "model/transport_wp7_localflux_v1/source/appl/simpleRichardsnc/transportdiagnostics.hh": {
+    "sha256": "9ac499200f41b290dcb5287d17be045aab9c2f7dfd428682895fe1bef7fc6c2b",
+    "bytes": 22420
+  },
+  "model/transport_wp7_localflux_v1/source/bin/eigenprofile/README.md": {
+    "sha256": "4565332f7edbdd59d016cccd515fb53fd07aa692f8271f19e7f3c8a84077c270",
+    "bytes": 1764
+  },
+  "model/transport_wp7_localflux_v1/source/cmake/modules/CMakeLists.txt": {
+    "sha256": "5dbd18a784411da7e200169f154d9d62b2578e1ea41e8e5c832b7f738aa2f575",
+    "bytes": 104
+  },
+  "model/transport_wp7_localflux_v1/source/cmake/modules/Kiemle2023bMacros.cmake": {
+    "sha256": "7524f6919d6e280ee968a64140a3a3c006061d29aa5426c26eaafec4ff5d97a4",
+    "bytes": 40
+  },
+  "model/transport_wp7_localflux_v1/source/CMakeLists.txt": {
+    "sha256": "a3750056e945193f32678c7246260515ad18fae14770667b8cccedca54b9fe2e",
+    "bytes": 821
+  },
+  "model/transport_wp7_localflux_v1/source/config.h.cmake": {
+    "sha256": "addc2df015faa7334b78458a92aa2cb06ac0df5662da054714ac479ca7e706f9",
+    "bytes": 1343
+  },
+  "model/transport_wp7_localflux_v1/source/doc/CMakeLists.txt": {
+    "sha256": "4fde2ae1df1e9ded71688fd731a4ab48a5bc2035c4ad4e160e034d863b02558c",
+    "bytes": 28
+  },
+  "model/transport_wp7_localflux_v1/source/doc/doxygen/CMakeLists.txt": {
+    "sha256": "d145d336814fca3994a64c7b916565975f7ed9bdff4986bccfe7809d7e1a5c35",
+    "bytes": 74
+  },
+  "model/transport_wp7_localflux_v1/source/dune/CMakeLists.txt": {
+    "sha256": "4e6273b47c6cd604f89c82ca3fa716391ac252dfa319e27b67fea01bee98e6a8",
+    "bytes": 30
+  },
+  "model/transport_wp7_localflux_v1/source/dune/kiemle2023b/CMakeLists.txt": {
+    "sha256": "154ce468ad7fc60a049449ed1867df43e15e78aabcd5c8c1caa7b605f9ca0730",
+    "bytes": 104
+  },
+  "model/transport_wp7_localflux_v1/source/dune/kiemle2023b/kiemle2023b.hh": {
+    "sha256": "afa7958833dc5acb74a6015365481c67eb666b412f7096be26c93c7d3791a6e5",
+    "bytes": 98
+  },
+  "model/transport_wp7_localflux_v1/source/dune.module": {
+    "sha256": "edd9a0bd7703bb4aff92d568d557f008d30895081e0a68d7a3cac1969ead72de",
+    "bytes": 353
+  },
+  "model/transport_wp7_localflux_v1/source/kiemle2023b.pc.in": {
+    "sha256": "54fee13aecdcfb07004dc6b4249b68c9a9ea33b7af2136bb278c1949e4a80d86",
+    "bytes": 351
+  },
+  "model/transport_wp7_localflux_v1/source/README.md": {
+    "sha256": "ef8f3fca28d26200a17fb3386fddfddfb30ad69138dfea472866cc987e9e4e61",
+    "bytes": 4508
+  },
+  "model/transport_wp7_localflux_v1/source/src/CMakeLists.txt": {
+    "sha256": "7ecedb534af8c9849450955b8242ca9e137b8ad3f03c4ab0d779804093d59ffa",
+    "bytes": 95
+  },
+  "model/transport_wp7_localflux_v1/source/src/kiemle2023b.cc": {
+    "sha256": "8ca429bfc299f9410723e3d83f7d876920b443869b00f5d198d038581db813ba",
+    "bytes": 902
+  },
+  "model/transport_wp7_localflux_v1/source_manifest.json": {
+    "sha256": "2ec5b246915f753ceba3dc60610fc04c4f1f5819ae46395e1a0a8c7b06b145f7",
+    "bytes": 2953
+  },
+  "scripts/analyze_wp7.py": {
+    "sha256": "f85e08bfbc4c8be488a33da685c23c288bf3c3c099bd1d42060694fb6dfe1cd6",
+    "bytes": 6517
+  },
+  "scripts/build_wp7_remote.py": {
+    "sha256": "f7c4ac2da1cf4e56cebaf73e045db462d10af1ed8e214deddc1ee4e08957d125",
+    "bytes": 5016
+  },
+  "scripts/check_wp7_localflux_static.py": {
+    "sha256": "753c44dbe86c0e8104546fc99ff16a5313e2f282513b70e7d9fc2cc503ac2076",
+    "bytes": 2263
+  },
+  "scripts/collect_wp7_build.py": {
+    "sha256": "b8689ad86b83d1c6274ce2ff688691504756535eb105717684db7886ad53f91b",
+    "bytes": 2206
+  },
+  "scripts/make_wp7_source_manifest.py": {
+    "sha256": "3df9a01a88dd9857c0fb0202be6e025f9faf232f6a39539097e6fea5138fd497",
+    "bytes": 618
+  },
+  "scripts/orted_relocatable.sh": {
+    "sha256": "c95fd88607a7afcfe25318655ae5b3df506e493d5cbc6d8a6e7c7a5ffa577f72",
+    "bytes": 218
+  },
+  "scripts/prepare_wp7.py": {
+    "sha256": "33ba0bb3eedd6e2b814d0ff54e78990c346094a4de168f8c504a9a36656b8218",
+    "bytes": 5762
+  },
+  "scripts/run_wp7_localflux_smoke.py": {
+    "sha256": "f4fb54cb14de5c25d831acac8856a35f258f5e1adc71e97db6a8bb896064959b",
+    "bytes": 5882
+  },
+  "scripts/verify_wp7_delivery.py": {
+    "sha256": "89cf526f735a99ae5c2a2548d10870dec2de2a5ee259b98499c208fc53609101",
+    "bytes": 4427
+  },
+  "scripts/wp7_benchmark_admission.py": {
+    "sha256": "b52f6fd74af6f05d2888ae04319bc4055c30c28b0caa91ea01be8e5b00aac14d",
+    "bytes": 1440
+  },
+  "scripts/wp7_campaign.py": {
+    "sha256": "4c5e84ecd7700c39a565f082ce5736db9ec4202be60ac5e9b3af22cf106a72e0",
+    "bytes": 6275
+  },
+  "scripts/wp7_manager.py": {
+    "sha256": "c977e84a50280556f3811f85eef06f7c4f4acd50e920c20a9a78fc0b521636a0",
+    "bytes": 2584
+  },
+  "scripts/wp7_sal_campaign.py": {
+    "sha256": "701ac31f3ecd0e3d46cd1203d9e1f3b8f04336cf34a55efe647d6cfc46d16756",
+    "bytes": 9538
+  },
+  "scripts/wp7_sal_job.sh": {
+    "sha256": "43b5fe0575728c13b6f5e2eb15533b3ec66c5804e0ed7f779695a0da2333a69e",
+    "bytes": 400
+  },
+  "scripts/wp7_sal_worker.py": {
+    "sha256": "39ce7614cdb04fb5942646e96629b9f0b1f6cf8f061e754f3552dd84e1db0057",
+    "bytes": 434
+  },
+  "scripts/wp7_worker.py": {
+    "sha256": "c7a6dbd4d61bafec3c1d743ceaa01e42453fa3e16dc2115aceb4bce0a01c0d47",
+    "bytes": 3535
+  }
+}

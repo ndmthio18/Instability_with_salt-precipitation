@@ -1,0 +1,53 @@
+{
+  "static_checks": {
+    "passed": true,
+    "checks": {
+      "main_byte_identical": true,
+      "params_byte_identical": true,
+      "integrated_budget_update_retained": true,
+      "local_identity_columns": true,
+      "local_output_opt_in": true,
+      "upwind_value_is_observation_only": true,
+      "vtk_velocity_excluded_from_local_schema": true,
+      "four_physical_flux_expressions_unchanged": true
+    },
+    "old_main_sha256": "dc7c629220fd0f3b23a6fcb6f156537d0d1d38b376550606235aeda7729dd2b4",
+    "new_main_sha256": "dc7c629220fd0f3b23a6fcb6f156537d0d1d38b376550606235aeda7729dd2b4"
+  },
+  "build": {
+    "configure_exit": 0,
+    "build_exit": 0,
+    "executable": {
+      "path": "/temp/zhixin/paper2_wp7_localflux_build_20261103/build-gcc-release/appl/simpleRichardsnc/paper2_transport",
+      "size": 1622936,
+      "sha256": "504cef7a8e95c9a3c6fe1a59c763cba43f5aceeeb169479d8781e0e7f4360387"
+    }
+  },
+  "bridge": {
+    "passed": true,
+    "comparisons": 64,
+    "max_absolute_error_m_s": 2.481541837659083e-24,
+    "max_error_to_limit": 0.00019279078231550922,
+    "rows": 1536,
+    "stop": {
+      "schema_version": 1,
+      "reason": "requested_horizon",
+      "last_accepted_time_s": 113.68588647695695,
+      "accepted_steps": 1,
+      "initial_diagnostics_written": true,
+      "requested_end_s": 113.68588647695695,
+      "surface_threshold_low_s": null,
+      "surface_threshold_high_s": null,
+      "global_threshold_low_s": null,
+      "global_threshold_high_s": null
+    }
+  },
+  "enabled_metrics": [
+    "local up/down water and advective salt flux",
+    "down-flow area fraction",
+    "area-weighted concentration-flow covariance",
+    "horizontal flux-concentration association",
+    "depth-plane penetration"
+  ],
+  "evidence_boundary": "The one-step bridge validates conservative identities only. No late-time local-flow mechanism was measured."
+}

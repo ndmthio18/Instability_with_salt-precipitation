@@ -1,0 +1,121 @@
+{
+  "schema_version": 1,
+  "id": "WP7-E01",
+  "created_utc": "2026-11-03T19:19:03.404691+00:00",
+  "authority": "command/11.md",
+  "base_commit": "2443a3478c3146652980578e866e30382b73bf00",
+  "scope": [
+    "one R48 M1 ten-step cost benchmark",
+    "one R48 M0/M1 pair from t=0 to 4T if admitted",
+    "one one-cell extruded background from t=0 to T",
+    "isolated local-SCVF diagnostic build/bridge; no 8T"
+  ],
+  "fixed": {
+    "case_id": 36877,
+    "width_m": 0.02142857142857143,
+    "physical_mode": "canonical nx28",
+    "wave_number": 1,
+    "nz": 200,
+    "dt_s": 113.68588647695695,
+    "T_s": 136423.0637723484,
+    "R48_TEnd_s": 545692.2550893936,
+    "amplitude_M1": 1e-06,
+    "amplitude_M0": 0,
+    "profile_sha256": "d721e605d126e555f92b43200aa73b999ed4e2b61397edd1e98c0d9fddb36575",
+    "elf_sha256": "112076759fdff0942000307f729c2bd3c7e96963229b43c1b67c1f12bbf9df81",
+    "cuts": [
+      {
+        "name": "upper_0.900000",
+        "requested_z_over_H": 0.9,
+        "actual_z_over_H": 0.899515406020609
+      },
+      {
+        "name": "upper_0.750000",
+        "requested_z_over_H": 0.75,
+        "actual_z_over_H": 0.7522817588955184
+      },
+      {
+        "name": "upper_0.500000",
+        "requested_z_over_H": 0.5,
+        "actual_z_over_H": 0.500531905678623
+      },
+      {
+        "name": "upper_0.995000",
+        "requested_z_over_H": 0.995,
+        "actual_z_over_H": 0.9948556471890533
+      },
+      {
+        "name": "upper_0.990000",
+        "requested_z_over_H": 0.99,
+        "actual_z_over_H": 0.9902599597326774
+      },
+      {
+        "name": "upper_0.975000",
+        "requested_z_over_H": 0.975,
+        "actual_z_over_H": 0.9747897136147182
+      },
+      {
+        "name": "upper_0.950000",
+        "requested_z_over_H": 0.95,
+        "actual_z_over_H": 0.9506615895243686
+      }
+    ]
+  },
+  "cost": {
+    "existing_reduced_package_cap_core_h": 28,
+    "R48_pair_registered_planning_cap_core_h": 4.373333333333333,
+    "hard_wall_cap_s_per_leg": 43200,
+    "new_tight_worker_limit_s": 7200,
+    "benchmark_limit_s": 600,
+    "background_limit_s": 1200,
+    "parallel_physical_cores": 2,
+    "minimum_free_disk_bytes": 214748364800,
+    "minimum_available_memory_bytes": 17179869184,
+    "admission": "10-step M1 benchmark extrapolated solver + conservative post/archive estimate <=7200 s per leg and pair <=4.373333 core-h"
+  },
+  "preregistered_metrics": {
+    "common_times": "exact accepted physical times only; focus 3T-4T",
+    "spectral": "Neumann physical k=m*pi/W; compare physical wavelength, not raw mode index",
+    "convergence": [
+      "dominant physical wavelength R48 within 10% of R24 and not shorter than 8 cells/wavelength",
+      "top three physical-mode energy ordering stable",
+      "weighted sigma/Fourier/projection within 20% over 3T-4T",
+      "M0/M1 background ratio and symmetry reported, never silently waived"
+    ],
+    "transport": [
+      "seven-plane signed advective/diffusive/total flux",
+      "initial-inventory-corrected Delta C",
+      "salt residual 1e-14 m; water residual 1e-11 m",
+      "candidate signal direction stable and change <=20% for quantitative GO"
+    ],
+    "background": [
+      "one-cell background lateral range <=1e-14",
+      "early-time mean profiles and seven inventories versus 2D M0 <=1e-6 relative or documented absolute near-zero criterion"
+    ],
+    "stopping": [
+      "x>=0.1 independent first crossing",
+      "no NaN/invalid state",
+      "no unchanged R24 8T",
+      "R96 only proposed after R48 cost and resolution evidence"
+    ]
+  },
+  "classification": {
+    "late_convection": "grid-resolved only if wavelength and growth gates pass",
+    "local_downward_transport": "pending unless conservative spatial face diagnostic is bridged and executed",
+    "t_eff": null,
+    "training_labels": false
+  },
+  "retained_failures": [
+    "R24 M0 absolute symmetry failure",
+    "R24 M1 relative symmetry failure",
+    "R24 engineering background ratio failure"
+  ],
+  "forbidden": [
+    "unchanged R24 8T",
+    "R96 execution",
+    "multiwavelength execution",
+    "large campaign",
+    "restart",
+    "Paper 1 changes"
+  ]
+}

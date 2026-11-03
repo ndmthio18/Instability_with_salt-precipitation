@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "id": "WP7-E03",
+  "timing": "after two zero-step infrastructure failures and before any WP7 simulation result",
+  "failed_jobs": [
+    "19205",
+    "19206"
+  ],
+  "observed_failure": "bundle/bin/orted used an absolute frodo loader path; MPI initialization exited before the first Newton iteration and before diagnostic initialization",
+  "correction": "replace only bundle/bin/orted with a relocatable wrapper that resolves the unchanged loader, libraries, and orted.real relative to its own bundle directory; update its runtime-manifest hash",
+  "scientific_inputs_changed": false,
+  "executable_changed": false,
+  "retry_scope": "the same R48 M1 ten-step benchmark and one-cell background-T preflight only",
+  "forbidden": "No R48 4T pair, R96, multiwave, or 8T run is authorized by this correction."
+}

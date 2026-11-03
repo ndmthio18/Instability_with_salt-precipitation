@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "id": "WP7-E02",
+  "timing": "before any WP7 simulation result",
+  "reason": "No currently reachable host satisfies the registered durable-storage condition for the R48 4T pair.",
+  "observed": {
+    "frodo_temp_free_bytes": 208519180288,
+    "frodo_temp_free_fraction_approx": 0.053,
+    "sal_temp_free_bytes": 312318169088,
+    "sal_temp_writable_by_user": false,
+    "sal_tmp_free_bytes": 120469659648,
+    "sal_tmp_storage_class": "tmpfs, non-durable",
+    "sal_home_quota": "3001 MiB used of 3001 MiB",
+    "local_D_free_bytes": 80199032832
+  },
+  "decision": {
+    "R48_M0_M1_4T": "NO-GO: retain the original 200 GiB durable-free-space and 20 percent filesystem-free gates; do not launch",
+    "R48_M1_benchmark_10_steps": "GO on sal /tmp with 20 GiB preflight floor, immediate verified local transfer, and retained Slurm evidence",
+    "one_cell_background_T": "GO on sal /tmp with 20 GiB preflight floor, immediate verified local transfer, and retained Slurm evidence",
+    "R96_multiwave_8T": "NO-GO"
+  },
+  "scope_boundary": "The reduced 20 GiB floor applies only to the two bounded preflight runs. It does not amend the production or long-window storage gate.",
+  "authority": "command/11.md permits stopping after a short benchmark and reporting the required budget when resources do not satisfy the registered plan."
+}

@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "checks": {
+    "main_byte_identical": true,
+    "params_byte_identical": true,
+    "integrated_budget_update_retained": true,
+    "local_identity_columns": true,
+    "local_output_opt_in": true,
+    "upwind_value_is_observation_only": true,
+    "vtk_velocity_excluded_from_local_schema": true,
+    "four_physical_flux_expressions_unchanged": true
+  },
+  "old_main_sha256": "dc7c629220fd0f3b23a6fcb6f156537d0d1d38b376550606235aeda7729dd2b4",
+  "new_main_sha256": "dc7c629220fd0f3b23a6fcb6f156537d0d1d38b376550606235aeda7729dd2b4"
+}

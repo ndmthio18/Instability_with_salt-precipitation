@@ -1,0 +1,120 @@
+{
+  "status": "benchmark_only; 4T pair not launched",
+  "benchmark": {
+    "admitted": true,
+    "benchmark_steps": 10,
+    "benchmark_solver_wall_s": 6.397366229444742,
+    "seconds_per_step": 0.6397366229444742,
+    "projected_solver_wall_s_per_leg": 3070.7357901334763,
+    "projected_post_archive_wall_s_per_leg": 1722.9825,
+    "projected_worker_wall_s_per_leg": 4793.718290133476,
+    "projected_pair_core_h": 2.6631768278519314,
+    "gates": {
+      "worker_limit_s": 7200,
+      "pair_planning_cap_core_h": 4.373333333333333
+    },
+    "method": "linear 10-step solver extrapolation plus 2x R24 post/archive with 25% margin; admission estimate, not confidence bound"
+  },
+  "initial_inventory_vs_R24": {
+    "inventory_salt_m": {
+      "max_absolute_difference": 1.1167282376600696e-17,
+      "global_normalized_difference": 1.3094326542868926e-13
+    },
+    "inventory_water_m": {
+      "max_absolute_difference": 1.4918621893400541e-15,
+      "global_normalized_difference": 6.297481161433084e-14
+    }
+  },
+  "field_audit": {
+    "frames": 11,
+    "vertices": 9849,
+    "cells": [
+      48,
+      200
+    ],
+    "width_m": 0.0214285714285714,
+    "height_m": 0.2,
+    "physical_wave_number": 293.2153143350477,
+    "initial_field_error": 5.204170427930421e-18,
+    "all_rho_pass": true,
+    "all_sw_pass": true,
+    "profile_sha256": "d721e605d126e555f92b43200aa73b999ed4e2b61397edd1e98c0d9fddb36575",
+    "input_sha256": "7bc3a192703068cc4c7b5a3409fc7108f7f73f8ec9cd67e0b1025f1ed785000a",
+    "postprocessor_sha256": "604ed2d5fbbe5d8aead1fba29c5da4461a5f748c1933e82cb3794cb463dbf3b4",
+    "npz_sha256": {
+      "profiles.npz": "70811f0b55e39eb3aa04999c3b6f970582b23a0552f895a91646534c116ca921",
+      "representative_fields.npz": "bcbb21608d38b5f291f1b7ea02e85420c4de5780aa10f38586544bd0eb3d6575"
+    }
+  },
+  "independent_checks": {
+    "frames": 11,
+    "max_inventory_salt_difference_m": 8.971772977317549e-18,
+    "max_inventory_water_difference_m": 1.5751289161869408e-15,
+    "online_absolute_errors": {
+      "weighted_top_mean": 2.6020852139652106e-18,
+      "weighted_top_sigma": 9.277128354802724e-19,
+      "weighted_fourier": 1.3118422770600977e-18,
+      "weighted_projection": 4.637505386217294e-19
+    },
+    "independent_budgets": {
+      "upper_0.900000": {
+        "salt_closure_m": 1.2466395998394827e-17,
+        "water_closure_m": 3.462938033149557e-15,
+        "cumulative_salt_reintegration_error": 0.0,
+        "cumulative_water_reintegration_error": 0.0
+      },
+      "upper_0.750000": {
+        "salt_closure_m": 1.538407708582862e-17,
+        "water_closure_m": 4.2729241945106775e-15,
+        "cumulative_salt_reintegration_error": 0.0,
+        "cumulative_water_reintegration_error": 0.0
+      },
+      "upper_0.500000": {
+        "salt_closure_m": 8.052649585318027e-18,
+        "water_closure_m": 2.238467098719622e-15,
+        "cumulative_salt_reintegration_error": 0.0,
+        "cumulative_water_reintegration_error": 0.0
+      },
+      "upper_0.995000": {
+        "salt_closure_m": 7.592652792316064e-18,
+        "water_closure_m": 2.1107494327595892e-15,
+        "cumulative_salt_reintegration_error": 0.0,
+        "cumulative_water_reintegration_error": 0.0
+      },
+      "upper_0.990000": {
+        "salt_closure_m": 1.917536843359804e-17,
+        "water_closure_m": 5.325199273229334e-15,
+        "cumulative_salt_reintegration_error": 0.0,
+        "cumulative_water_reintegration_error": 0.0
+      },
+      "upper_0.975000": {
+        "salt_closure_m": 9.043913052899524e-19,
+        "water_closure_m": 2.510789091234386e-16,
+        "cumulative_salt_reintegration_error": 0.0,
+        "cumulative_water_reintegration_error": 0.0
+      },
+      "upper_0.950000": {
+        "salt_closure_m": 6.3123145160656606e-18,
+        "water_closure_m": 1.7531028733223637e-15,
+        "cumulative_salt_reintegration_error": 0.0,
+        "cumulative_water_reintegration_error": 0.0
+      },
+      "free_domain": {
+        "salt_closure_m": 7.701288645210549e-18,
+        "water_closure_m": 2.136820603950264e-15,
+        "cumulative_salt_reintegration_error": 0.0,
+        "cumulative_water_reintegration_error": 0.0
+      }
+    },
+    "scope": "independent VTU storage + independent integration of recorded conservative flux; not a second flux-kernel implementation",
+    "passed": true
+  },
+  "width_m": 0.02142857142857143,
+  "dx_m": 0.0004464285714285714,
+  "canonical_cells_per_wavelength": 48,
+  "initial_physical_wavenumber_rad_m": 293.21531433504737,
+  "R24_late_m10_wavelength_m": 0.004285714285714286,
+  "R48_cells_per_R24_late_m10_wavelength": 9.6,
+  "R48_cells_per_m12_wavelength": 8.0,
+  "three_to_four_T_comparison": "not available: long pair blocked by durable-storage gate"
+}

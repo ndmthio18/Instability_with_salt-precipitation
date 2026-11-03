@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "id": "WP7-E04",
+  "timing": "before local-flux smoke result",
+  "purpose": "Bridge optional per-SCVF output to the unchanged seven-plane integrated budget.",
+  "run": "Case 36877 R48 M1, original amplitude and physical parameters, one dt only, isolated WP7 executable, one rank and one core",
+  "acceptance": {
+    "exit": "requested_horizon after exactly one accepted step",
+    "identity": "for every step and plane, sum(local integrated component)/width equals the existing budget component within 1e-20 m/s absolute plus 1e-12 relative",
+    "schema": "water, advective salt, diffusive salt and total salt all pass independently"
+  },
+  "scope": "diagnostic bridge only; not physical evidence and not an R48 convergence result"
+}

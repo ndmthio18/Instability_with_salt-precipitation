@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "comparisons": 64,
+  "max_absolute_error_m_s": 2.481541837659083e-24,
+  "max_error_to_limit": 0.00019279078231550922,
+  "rows": 1536,
+  "stop": {
+    "schema_version": 1,
+    "reason": "requested_horizon",
+    "last_accepted_time_s": 113.68588647695695,
+    "accepted_steps": 1,
+    "initial_diagnostics_written": true,
+    "requested_end_s": 113.68588647695695,
+    "surface_threshold_low_s": null,
+    "surface_threshold_high_s": null,
+    "global_threshold_low_s": null,
+    "global_threshold_high_s": null
+  }
+}

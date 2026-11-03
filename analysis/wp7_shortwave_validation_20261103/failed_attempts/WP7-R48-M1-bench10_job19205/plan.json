@@ -1,0 +1,19 @@
+{
+  "id": "WP7-R48-M1-bench10",
+  "role": "M1",
+  "stage": "preflight",
+  "case_id": 36877,
+  "nx_cells": 48,
+  "nz_cells": 200,
+  "T_s": 1136.8588647695694,
+  "dt_s": 113.68588647695695,
+  "scalar_unknowns": 19698,
+  "input_sha256": "7bc3a192703068cc4c7b5a3409fc7108f7f73f8ec9cd67e0b1025f1ed785000a",
+  "profile_sha256": "d721e605d126e555f92b43200aa73b999ed4e2b61397edd1e98c0d9fddb36575",
+  "elf_sha256": "112076759fdff0942000307f729c2bd3c7e96963229b43c1b67c1f12bbf9df81",
+  "preregistration_sha256": "d1d9331ba7e3bd83e2fc2fa689c445a1caf3ee5ed6f2296a75561576c93862cf",
+  "hard_wall_limit_s": 600,
+  "source_input_sha256": "3efe64ff862c7bf1281b5f4e8d64e021b0073b36093b8a5a423a390e7dd7e880",
+  "minimum_free_disk_bytes": 21474836480,
+  "resource_amendment_sha256": "e540a72b5216328329501fdd0327f503ee780ae633552df65a4523be61740b01"
+}

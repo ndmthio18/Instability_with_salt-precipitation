@@ -1,0 +1,57 @@
+{
+  "passed": true,
+  "legs": {
+    "WP7-R48-M0-4T": {
+      "allowed_input_diff": [
+        "Grid.Cells0",
+        "Problem.Name",
+        "TimeLoop.TEnd"
+      ],
+      "actual": [
+        "Grid.Cells0",
+        "Problem.Name"
+      ],
+      "passed": true
+    },
+    "WP7-R48-M1-4T": {
+      "allowed_input_diff": [
+        "Grid.Cells0",
+        "Problem.Name",
+        "TimeLoop.TEnd"
+      ],
+      "actual": [
+        "Grid.Cells0",
+        "Problem.Name"
+      ],
+      "passed": true
+    },
+    "WP7-R48-M1-bench10": {
+      "allowed_input_diff": [
+        "Grid.Cells0",
+        "Problem.Name",
+        "TimeLoop.TEnd"
+      ],
+      "actual": [
+        "Grid.Cells0",
+        "Problem.Name",
+        "TimeLoop.TEnd"
+      ],
+      "passed": true
+    },
+    "WP7-1D-background-T": {
+      "allowed_input_diff": [
+        "Grid.Cells0",
+        "Problem.Name",
+        "TimeLoop.TEnd"
+      ],
+      "actual": [
+        "Grid.Cells0",
+        "Problem.Name",
+        "TimeLoop.TEnd"
+      ],
+      "passed": true
+    }
+  },
+  "command_sha256": "efffb566e64e34d5f9105bb418ab925ef3ad8c19d50811e24bed11f89cdddd21",
+  "old_R24_manifest_unchanged": true
+}

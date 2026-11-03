@@ -1,0 +1,8 @@
+{
+  "command": "python -m unittest test_wp6_paired_stopping test_wp6_4t test_wp6_timestep test_single_wavelength test_post_onset (cwd scripts)",
+  "tests_run": 62,
+  "passed": true,
+  "failures": 0,
+  "errors": 0,
+  "note": "Existing tests emit ResourceWarning messages for unclosed read handles; test status is OK."
+}

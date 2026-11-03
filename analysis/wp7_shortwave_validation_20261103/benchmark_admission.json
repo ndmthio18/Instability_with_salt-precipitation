@@ -1,0 +1,15 @@
+{
+  "admitted": true,
+  "benchmark_steps": 10,
+  "benchmark_solver_wall_s": 6.397366229444742,
+  "seconds_per_step": 0.6397366229444742,
+  "projected_solver_wall_s_per_leg": 3070.7357901334763,
+  "projected_post_archive_wall_s_per_leg": 1722.9825,
+  "projected_worker_wall_s_per_leg": 4793.718290133476,
+  "projected_pair_core_h": 2.6631768278519314,
+  "gates": {
+    "worker_limit_s": 7200,
+    "pair_planning_cap_core_h": 4.373333333333333
+  },
+  "method": "linear 10-step solver extrapolation plus 2x R24 post/archive with 25% margin; admission estimate, not confidence bound"
+}

@@ -1,0 +1,30 @@
+/tmp/zhixin_paper2_wp7_shortwave_20261103_r01/bundle/bin/orted: line 2: /temp/zhixin/paper2_wp6_4T_exploratory_20261103_r01/bundle/lib/ld-linux-x86-64.so.2: No such file or directory
+[sal.iws.uni-stuttgart.de:1489106] [[INVALID],INVALID] ORTE_ERROR_LOG: Unable to start a daemon on the local node in file ../../../../../../orte/mca/ess/singleton/ess_singleton_module.c at line 716
+[sal.iws.uni-stuttgart.de:1489106] [[INVALID],INVALID] ORTE_ERROR_LOG: Unable to start a daemon on the local node in file ../../../../../../orte/mca/ess/singleton/ess_singleton_module.c at line 172
+--------------------------------------------------------------------------
+It looks like orte_init failed for some reason; your parallel process is
+likely to abort.  There are many reasons that a parallel process can
+fail during orte_init; some of which are due to configuration or
+environment problems.  This failure appears to be an internal failure;
+here's some additional information (which may only be relevant to an
+Open MPI developer):
+
+  orte_ess_init failed
+  --> Returned value Unable to start a daemon on the local node (-127) instead of ORTE_SUCCESS
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+It looks like MPI_INIT failed for some reason; your parallel process is
+likely to abort.  There are many reasons that a parallel process can
+fail during MPI_INIT; some of which are due to configuration or environment
+problems.  This failure appears to be an internal failure; here's some
+additional information (which may only be relevant to an Open MPI
+developer):
+
+  ompi_mpi_init: ompi_rte_init failed
+  --> Returned "Unable to start a daemon on the local node" (-127) instead of "Success" (0)
+--------------------------------------------------------------------------
+*** An error occurred in MPI_Init
+*** on a NULL communicator
+*** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+***    and potentially your MPI job)
+[sal.iws.uni-stuttgart.de:1489106] Local abort before MPI_INIT completed completed successfully, but am not able to aggregate error messages, and not able to guarantee that all other processes were killed!

@@ -1,0 +1,14 @@
+{
+  "scope": "command/11 only",
+  "R48_4T_pair": "NO-GO: cost admitted but registered durable-storage gate failed",
+  "R96": "NO-GO",
+  "multiwave": "NO-GO",
+  "later_8T": "NO-GO",
+  "background_model": "partially verified: profiles, budgets and closure pass; strict 1e-14 lateral-range gate fails",
+  "R24_R48_late_wavelength": "unresolved because R48 3T-4T data do not exist",
+  "local_scvf": "implementation compiled and conservative bridge passed; late-time mechanism pending",
+  "t_eff": null,
+  "crystallization_delay_label": null,
+  "training_labels_created": false,
+  "next_gate": "provide >=200 GiB durable writable storage with >=20% filesystem free, then run the frozen R48 M0/M1 4T pair and archive each leg immediately"
+}
