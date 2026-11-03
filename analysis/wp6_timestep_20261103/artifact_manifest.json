@@ -1,0 +1,246 @@
+{
+  "analysis/wp6_timestep_20261103/amendment_20261103_C01.json": {
+    "sha256": "d1bc621208c4d33b650f5eac0700250b06fb8e8adcd9ee848124ce60e52110e5",
+    "bytes": 2505
+  },
+  "analysis/wp6_timestep_20261103/clock_comparison.json": {
+    "sha256": "9029b138cf7068b458073dc54a096c8337c75d33128142cab5903ab7beca16b3",
+    "bytes": 1368
+  },
+  "analysis/wp6_timestep_20261103/DECISION_4T_ZH.md": {
+    "sha256": "08e61de50c827556920df85e49b495c1df955b5e96f74bc92cf1389a6c6cfdbb",
+    "bytes": 3230
+  },
+  "analysis/wp6_timestep_20261103/decision_checks.json": {
+    "sha256": "f5995cbcaa99b4e43365fa32dc8688809438076df74363f003bc18e674acbf5b",
+    "bytes": 1251
+  },
+  "analysis/wp6_timestep_20261103/delivery_checks.json": {
+    "sha256": "bc7878a279980319abbdd566385d21deec5e54632b0e1487b4f01fbb8edb0066",
+    "bytes": 877
+  },
+  "analysis/wp6_timestep_20261103/dt_half_archive.json": {
+    "sha256": "3a9461474b81b62c538012edf8c1a4b85eea900a28669cacf46b3355491fa6b1",
+    "bytes": 402
+  },
+  "analysis/wp6_timestep_20261103/Figure_A_growth_profiles.pdf": {
+    "sha256": "39b388faf617710b91f7c1c298a453e5a66eb321346231b87237dff4f132fd97",
+    "bytes": 23796
+  },
+  "analysis/wp6_timestep_20261103/Figure_A_growth_profiles.png": {
+    "sha256": "6b0f70ceb7bc813aa7a89d866e0263bdac07e415d6f23f780c8b7e4cd19c5eb0",
+    "bytes": 218967
+  },
+  "analysis/wp6_timestep_20261103/Figure_B_transport_sensitivity.pdf": {
+    "sha256": "910fde6ebae742ff168f9c25479789db1dad5aff017928cb5c298f194a762aa3",
+    "bytes": 83379
+  },
+  "analysis/wp6_timestep_20261103/Figure_B_transport_sensitivity.png": {
+    "sha256": "0c987689981ce10aacc3d83c5f89f412b9080f56c432816c878e1a1f27ab5f76",
+    "bytes": 299864
+  },
+  "analysis/wp6_timestep_20261103/four_leg_performance.csv": {
+    "sha256": "d748a933d992e0e6cf88bc6b8b2a90dd30a8abc388588d186b7f734d46031d57",
+    "bytes": 397
+  },
+  "analysis/wp6_timestep_20261103/frodo_dt_half_status.json": {
+    "sha256": "bb37135986f14a0f9ec99192372f63a4df0395dbba78e5a48880291b3803d224",
+    "bytes": 8144
+  },
+  "analysis/wp6_timestep_20261103/frodo_launch_dt_half.json": {
+    "sha256": "1edd5db14a42501c094d3399d1fc051e21702d83d60b8a967b274241c9b12258",
+    "bytes": 107
+  },
+  "analysis/wp6_timestep_20261103/growth_and_detection.json": {
+    "sha256": "cf84ef16772daaa13b5adf7195d5753f67dcfe27d071b614f6973d6c14b15466",
+    "bytes": 3617
+  },
+  "analysis/wp6_timestep_20261103/growth_endpoint_comparison.csv": {
+    "sha256": "93b19fc0a0a8457d4497a0f9654c81367368b447ec819c70c8c034fc415cd636",
+    "bytes": 755
+  },
+  "analysis/wp6_timestep_20261103/METHOD_AND_SCOPE_ZH.md": {
+    "sha256": "ef8ec9e257d7b314037edc2f87409632e5e751dda1825c433c77b5252c08bb33",
+    "bytes": 5031
+  },
+  "analysis/wp6_timestep_20261103/paired_timestep_sensitivity.csv": {
+    "sha256": "3d7d1ff34ddcb10ba1e0a248c77456eedb460856e51fa8ccdbe897aa465460dd",
+    "bytes": 2970376
+  },
+  "analysis/wp6_timestep_20261103/prelaunch_checks.json": {
+    "sha256": "2575a33cf8c4b0b201e38b597953d5b6d334cd69f4b93d907cf7c9da28860730",
+    "bytes": 711
+  },
+  "analysis/wp6_timestep_20261103/README_ZH.md": {
+    "sha256": "6593f22529b285431542c07e1239f21901fc4e6734e1939c4788fb9cc7268ccf",
+    "bytes": 1742
+  },
+  "analysis/wp6_timestep_20261103/refined_pair/async_stopping_checks.json": {
+    "sha256": "10d1d9113ab0fdcb39508efdb3c4fd429ca62fafa2f82ee34ceddccfab037f0f",
+    "bytes": 315597
+  },
+  "analysis/wp6_timestep_20261103/refined_pair/paired_transport.csv": {
+    "sha256": "a870b934186364949d4e76d398d3c6ea3e6091d3ee676904347c15a3f4bcde5b",
+    "bytes": 6790873
+  },
+  "analysis/wp6_timestep_20261103/refined_pair/seven_plane_review.csv": {
+    "sha256": "683a050790e83b217142f4889a6745190eb78a1705c8333d9f4a4a225b3e8511",
+    "bytes": 3556
+  },
+  "analysis/wp6_timestep_20261103/refined_pair/transport_evidence.json": {
+    "sha256": "2488bdb4f2f90dd4b139cb71e410bc8652d6a98bee5c24e2d0121a3d8aaad3b4",
+    "bytes": 9517
+  },
+  "analysis/wp6_timestep_20261103/remote_execution_source_hashes.json": {
+    "sha256": "015bf4a9af403341aa7572f6ec213fb4d8d8c9881b93086136c17dd3b51de324",
+    "bytes": 366
+  },
+  "analysis/wp6_timestep_20261103/RESULT_ZH.md": {
+    "sha256": "d639dd65a1d4c4e480a6a9fccf96d896ad2cbb63f525eebf2a1136df63c4ed0a",
+    "bytes": 6839
+  },
+  "analysis/wp6_timestep_20261103/runs/WP6-M1-dt_half/eigenprofile.dat": {
+    "sha256": "d721e605d126e555f92b43200aa73b999ed4e2b61397edd1e98c0d9fddb36575",
+    "bytes": 153788
+  },
+  "analysis/wp6_timestep_20261103/runs/WP6-M1-dt_half/finished.json": {
+    "sha256": "480470ea950cf6227e16a3a960ef7ccc40c0bba1f3b733ff382d0c58c05cd0d9",
+    "bytes": 4196
+  },
+  "analysis/wp6_timestep_20261103/runs/WP6-M1-dt_half/params.input": {
+    "sha256": "2fc19db6b69a530efad593b6f2f7390fe9b74e37d314ad209392a36f35af523f",
+    "bytes": 1329
+  },
+  "analysis/wp6_timestep_20261103/runs/WP6-M1-dt_half/plan.json": {
+    "sha256": "b2f9b8d3bfc9297bbbb4f46a04f621593ee14c7bb103489f30f53df5b89e23e5",
+    "bytes": 580
+  },
+  "analysis/wp6_timestep_20261103/runs/WP6-M1-dt_half/post/field_audit.json": {
+    "sha256": "855f353aaf17d7faffa055237df0472d33512bb5e80010a47c7a83eb8cfed12d",
+    "bytes": 745
+  },
+  "analysis/wp6_timestep_20261103/runs/WP6-M1-dt_half/post/field_hashes.json": {
+    "sha256": "248e26b0b6b99812bcace4aa9d8a42493a9f1381e84c4b9e8271a695f5a2e3f2",
+    "bytes": 565528
+  },
+  "analysis/wp6_timestep_20261103/runs/WP6-M1-dt_half/post/independent_checks.json": {
+    "sha256": "12c7c52790a738b099e7e8e859ae897f47214a30a1a150c13e85d28cab7b6a6d",
+    "bytes": 2364
+  },
+  "analysis/wp6_timestep_20261103/runs/WP6-M1-dt_half/post/independent_inventories.csv": {
+    "sha256": "00c0bf38abdd287adf8205ac4215a1168f4bcdb037b34dffff59dc1682325830",
+    "bytes": 2461909
+  },
+  "analysis/wp6_timestep_20261103/runs/WP6-M1-dt_half/post/weighted_diagnostics.csv": {
+    "sha256": "ce0d5a847d48015ec169ef005de5364bf274295ec0129e35b3067da597d38ca7",
+    "bytes": 858301
+  },
+  "analysis/wp6_timestep_20261103/runs/WP6-M1-dt_half/post.log": {
+    "sha256": "395438d1f4d5bf9a38c083f9379f656c7fb07e326c1432e381e963b2f1566e2f",
+    "bytes": 2053
+  },
+  "analysis/wp6_timestep_20261103/runs/WP6-M1-dt_half/solver.log": {
+    "sha256": "9cbdb6cbb28234bec5077332b4e75f6aa0eeba5c387c9a62002193fff54dfe5f",
+    "bytes": 1418038
+  },
+  "analysis/wp6_timestep_20261103/runs/WP6-M1-dt_half/solver_finished.json": {
+    "sha256": "ba7fd0a90221724b9cf0f2f2e4b246fa4499fd9624b50a937a25e8f437cd64ef",
+    "bytes": 763
+  },
+  "analysis/wp6_timestep_20261103/runs/WP6-M1-dt_half/started.json": {
+    "sha256": "c4712747327244c5497b04b05965ad3efb02d056837c747bab4f1640025ff944",
+    "bytes": 494
+  },
+  "analysis/wp6_timestep_20261103/runs/WP6-M1-dt_half/stop_record.json": {
+    "sha256": "7bd4205afefa7d31d80f4b56d677da9fcf9d0cb9774c507306b7f926e7db446b",
+    "bytes": 351
+  },
+  "analysis/wp6_timestep_20261103/runs/WP6-M1-dt_half/surface_events.csv": {
+    "sha256": "8ef7a6a4ce7965f80791deed0e3d256569b4319ddae773faae0766f87a56584b",
+    "bytes": 471705
+  },
+  "analysis/wp6_timestep_20261103/runs/WP6-M1-dt_half/transport_budget.csv": {
+    "sha256": "80f83666c1c6c8d178cd838625ea7631e577900af421590e7a643ff63663a4ac",
+    "bytes": 11625087
+  },
+  "analysis/wp6_timestep_20261103/runs/WP6-M1-dt_half/transport_metadata.json": {
+    "sha256": "6e25c4ea1bf90bf1a65400f154b0a01e83bf6d9b63d6a343c22c4f04ccce275e",
+    "bytes": 1388
+  },
+  "analysis/wp6_timestep_20261103/runs/WP6-M1-dt_half/weighted_online.csv": {
+    "sha256": "07a4ed9b0af6e374657e6e083d2e3c6262dd5cf8b24aa7aafe05559845dfd688",
+    "bytes": 441444
+  },
+  "analysis/wp6_timestep_20261103/runs/WP6-M1-dt_half/worker.log": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "analysis/wp6_timestep_20261103/runs/WP6-M1-dt_half/WP6-M1-dt_half_sigmatop.csv": {
+    "sha256": "7cd6e5f5356d0fe605365f83a840a829c735b902bd7e7182a141d70d03baecb1",
+    "bytes": 235398
+  },
+  "analysis/wp6_timestep_20261103/seven_plane_timestep_summary.csv": {
+    "sha256": "e8e565c89696efc54f687956785251776f977d05b3af4e818896031fe7d2d258",
+    "bytes": 4814
+  },
+  "analysis/wp6_timestep_20261103/stage_dt_half.json": {
+    "sha256": "49f2342e0ede93120d372b2508e6209edf4658b20f88532115f637460ee845b0",
+    "bytes": 289
+  },
+  "analysis/wp6_timestep_20261103/static_checks.json": {
+    "sha256": "75e84be144bef525937d32cea382da5d786deda4b34f049efe331d2c32a1a99d",
+    "bytes": 404
+  },
+  "analysis/wp6_timestep_20261103/test_results.json": {
+    "sha256": "67eaf5dd6f18ef2a1aa8807b6106613d60cf5f0a22da2d6dac3730f9aa5909cf",
+    "bytes": 3453
+  },
+  "analysis/wp6_timestep_20261103/vertical_profile_comparison.csv": {
+    "sha256": "164ce249baafec5df0b4f1dd44c8b18122e04680cea41a8629d33e0226e9768d",
+    "bytes": 41902
+  },
+  "command/9.md": {
+    "sha256": "8359dfe4bd25c63f0b839acc8e7c8928491b1c8484da493cb88b4ed4b97255a3",
+    "bytes": 4055
+  },
+  "model/transport_wp6_v1/source_manifest.json": {
+    "sha256": "c493ce02b032413be45b7e14cf003d8f8d1f53257d28b80f0dca3f63a9028ac0",
+    "bytes": 2090
+  },
+  "scripts/analyze_wp6_timestep.py": {
+    "sha256": "e66f277fe6fd9250ad6b18120bda8243ab1fab19ba95e13d798c451c9cb2fedc",
+    "bytes": 10855
+  },
+  "scripts/plot_wp6_timestep.py": {
+    "sha256": "60a351e9e7e2d48fed53cfd9a2eedcc26030cea64fbb6367fd27dd7635c05feb",
+    "bytes": 4543
+  },
+  "scripts/prepare_wp6_timestep.py": {
+    "sha256": "95aaecb26be7b54492bb862a0d3c8c0868013467a3308b376c32282ed5abc85b",
+    "bytes": 5561
+  },
+  "scripts/test_wp6_timestep.py": {
+    "sha256": "db9f9f58b43dcb7c8f821e6f4443a912683de5711a531ddb9de144bd1de22cd5",
+    "bytes": 1770
+  },
+  "scripts/verify_wp6_timestep.py": {
+    "sha256": "bd53f3f823796e1b9ed341f910429b70e21f04334a3a588cb2242f409924c083",
+    "bytes": 5098
+  },
+  "scripts/wp6_timestep_bounds.py": {
+    "sha256": "957d8415a0acb5279fd0e4d7e2ae563def827bbc1b7127e83dfeb0fc56393d27",
+    "bytes": 1879
+  },
+  "scripts/wp6_timestep_campaign.py": {
+    "sha256": "46755c47b3a95548228e93425a29d416ab14c355c8fc38f6365c347abd00157f",
+    "bytes": 7150
+  },
+  "scripts/wp6_timestep_manager.py": {
+    "sha256": "7ae78c743aafc1492c8237ea78c0e4f401a4b0e856ffbce2bad4e38489100410",
+    "bytes": 2225
+  },
+  "scripts/wp6_timestep_worker.py": {
+    "sha256": "eb9e10777990860fb92d2ec85df03375636d7023a64749e901f39a036540c203",
+    "bytes": 3948
+  }
+}

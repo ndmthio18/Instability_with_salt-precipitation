@@ -1,0 +1,30 @@
+{
+  "wall_guard_test": {
+    "returncode": -9,
+    "timed_out": true,
+    "wall_s": 0.2015028726309538,
+    "pid": 2833109,
+    "hard_limit_s": 0.2
+  },
+  "process_snapshot": [
+    "    PID PSR %CPU COMMAND",
+    "2829373   6 99.9 solver_elf",
+    "2829324   5 99.9 solver_elf",
+    "2829325   7 99.9 solver_elf",
+    "2829326   4 99.9 solver_elf",
+    "2831892   8 99.8 solver_elf",
+    "2833108  23  8.6 python3",
+    "2833059   0  2.3 sshd",
+    "1467687  13  1.2 ai-gauge",
+    "2241065   1  1.0 bun",
+    "1366631  13  0.9 Xorg",
+    "2548699  21  0.7 anydesk"
+  ],
+  "load": [
+    5.109375,
+    5.0390625,
+    4.15576171875
+  ],
+  "selected_cpu": 0,
+  "selected_sibling": 12
+}

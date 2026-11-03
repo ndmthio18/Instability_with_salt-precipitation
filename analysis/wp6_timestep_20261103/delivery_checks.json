@@ -1,0 +1,24 @@
+{
+  "single_wavelength_validation_20261103_unchanged": true,
+  "wp6_execution_20261103_unchanged": true,
+  "wp6_review_20261103_unchanged": true,
+  "initial_eigenprofile_and_density_saturation_fields": true,
+  "remote_execution_source_hashes_match": true,
+  "one_new_run_3600s_hard_limit_and_archive": {
+    "passed": true,
+    "manager_wall_s": 402.4013038277626,
+    "solver_wall_s": 337.6981252711266,
+    "cpu_s": 333.21052199999997,
+    "verified_vtu": 2401
+  },
+  "tests_passed": 31,
+  "source_compilation": true,
+  "strict_refined_pair_actual_shared_states": 2401,
+  "distinct_A_B_decisions": {
+    "A": "GO_for_proposal_only",
+    "B": "NO_GO",
+    "old_failed_gate_retained": true
+  },
+  "figure_QA": "Both PNGs visually inspected; two one-page PDFs have selectable labels",
+  "source_base_commit": "7db1dd3f5b9ee98802d46c2d5fecfaf913c5d68d"
+}

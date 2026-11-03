@@ -1,0 +1,86 @@
+{
+  "protocols": {
+    "coarse": {
+      "accepted_end_s": 272846.1275446968,
+      "weighted_sigma_end": 2.0426363736866793e-06,
+      "weighted_sigma_min": 6.640920243621972e-07,
+      "weighted_amplification": 3.075833316396857,
+      "fourier_end": 2.888723793935843e-06,
+      "surface_mean": 0.032062685290602425,
+      "surface_max": 0.0320655754021103,
+      "domain_max": 0.0320655754021103,
+      "detection": {
+        "onset_s": 50703.90536872,
+        "onset_refined_s": 50632.56210569426,
+        "onset_class": "resolved_onset",
+        "onset_low_s": 44337.49572601,
+        "onset_high_s": 56842.94323848,
+        "plateau_width_s": 12505.447512470004,
+        "plateau_samples": 56,
+        "pre_slope_per_s": -5.1759675773870894e-08,
+        "post_slope_per_s": 5.851282722782028e-08,
+        "minimum_position_fraction": 0.18515429524603835,
+        "status": "ok (interior minimum)",
+        "argmin_index": 222,
+        "n_samples": 1200,
+        "t_last_s": 272846.1275447,
+        "sigma_min": 6.762021614195e-07,
+        "sigma_first": 7.196500553787e-07,
+        "sigma_last": 2.079955276043e-06,
+        "amplification_since_min": 3.075937041781569,
+        "x_top_mean_at_min": 0.01102365668635,
+        "csv": "D:\\3OutputFile\\1Research\\Article\\22Surrogate_model\\paper\\2\\analysis\\wp6_execution_20261103\\runs\\WP6-M1-extend\\WP6-M1-extend_sigmatop.csv"
+      },
+      "max_M0_sigma_over_M1_sigma": 6.127331330325264e-07,
+      "max_M1_odd_energy": 1.1923005010417461e-13
+    },
+    "fine": {
+      "accepted_end_s": 272846.1275446852,
+      "weighted_sigma_end": 2.040298071258639e-06,
+      "weighted_sigma_min": 6.639952970202865e-07,
+      "weighted_amplification": 3.072759822870106,
+      "fourier_end": 2.885416937243755e-06,
+      "surface_mean": 0.03206279426645558,
+      "surface_max": 0.0320656810648543,
+      "domain_max": 0.0320656810648543,
+      "detection": {
+        "onset_s": 50703.90536872,
+        "onset_refined_s": 50681.767813152204,
+        "onset_class": "resolved_onset",
+        "onset_low_s": 44337.49572601,
+        "onset_high_s": 57070.31501143,
+        "plateau_width_s": 12732.819285420002,
+        "plateau_samples": 113,
+        "pre_slope_per_s": -2.651577235694209e-08,
+        "post_slope_per_s": 2.8621503034077896e-08,
+        "minimum_position_fraction": 0.1854939558149229,
+        "status": "ok (interior minimum)",
+        "argmin_index": 445,
+        "n_samples": 2400,
+        "t_last_s": 272846.1275447,
+        "sigma_min": 6.761036698457e-07,
+        "sigma_first": 7.198183039793e-07,
+        "sigma_last": 2.07757397325e-06,
+        "amplification_since_min": 3.072863032564433,
+        "x_top_mean_at_min": 0.01102460945395,
+        "csv": "D:\\3OutputFile\\1Research\\Article\\22Surrogate_model\\paper\\2\\analysis\\wp6_timestep_20261103\\runs\\WP6-M1-dt_half\\WP6-M1-dt_half_sigmatop.csv"
+      },
+      "max_M0_sigma_over_M1_sigma": 4.0672431320308367e-07,
+      "max_M1_odd_energy": 1.0480142731018886e-13
+    }
+  },
+  "profile_comparison": {
+    "latest_exact": {
+      "relative_sigma_profile_L2_error": 0.0003890445268537119,
+      "coarse_accepted_time_s": 139151.52504779716,
+      "fine_accepted_time_s": 139151.52504779716
+    },
+    "own_endpoints": {
+      "relative_sigma_profile_L2_error": 0.0011474195915891273,
+      "coarse_accepted_time_s": 272846.1275446968,
+      "fine_accepted_time_s": 272846.1275446852
+    }
+  },
+  "exact_common_report_time_s": 139151.52504779716,
+  "endpoint_time_gap_s": -1.1583324521780014e-08
+}

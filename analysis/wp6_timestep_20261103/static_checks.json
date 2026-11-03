@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "coarse_to_fine_diff": [
+    "Problem.Name",
+    "TimeLoop.DtInitial",
+    "TimeLoop.MaxTimeStepSize"
+  ],
+  "matched_M0_to_M1_diff": [
+    "Problem.Amplitude",
+    "Problem.EigenprofilePath",
+    "Problem.Name",
+    "Problem.PerturbationType",
+    "Problem.StandardDeviationSaltMoleFraction"
+  ],
+  "same_ELF": true,
+  "same_profile": true,
+  "hard_wall_s": 3600
+}

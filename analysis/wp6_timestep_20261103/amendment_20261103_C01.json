@@ -1,0 +1,55 @@
+{
+  "id": "20261103-C01",
+  "created_utc": "2026-11-03T17:16:39.270220+00:00",
+  "authority": "command/9.md",
+  "base_commit": "7db1dd3f5b9ee98802d46c2d5fecfaf913c5d68d",
+  "allowed_new_solver_runs": 1,
+  "role": "M1",
+  "T_s": 272846.1275446968,
+  "dt_s": 113.68588647695695,
+  "wall_limit_s": 3600,
+  "source_M1_input_sha256": "ef33111b035c7d1d94898d7109e66099879817b742f72b7ecc0efd9e936760cf",
+  "matched_M0_input_sha256": "eb5684c6a1916214ab701f0007a03ca1739188db1ea256396294ea53b78b3c9f",
+  "elf_sha256": "112076759fdff0942000307f729c2bd3c7e96963229b43c1b67c1f12bbf9df81",
+  "original_endpoint_gate": {
+    "threshold": 1e-12,
+    "baseline_status": "failed_retained",
+    "changed": false
+  },
+  "exploratory_A": {
+    "scope": "growth/structure exploration only; not quantitative transport validation",
+    "registration_context": "after known M0 noise audit, before new refined M1 outcome; engineering screening, not physical accuracy theorem",
+    "relative_sigma_fourier_amplification_tolerance": 0.05,
+    "vertical_sigma_profile_relative_L2_tolerance": 0.05,
+    "relative_surface_mean_max_tolerance": 0.001,
+    "detection_time_tolerance": "max(2 coarse dt, 2% coarse detection time)",
+    "background_sigma_over_M1_sigma_limit": 0.001,
+    "justification": "5% distinguishes robust exploratory growth/shape from protocol-dependent changes; 0.1% surface-state agreement is stricter for mean background; noise must be at least 1000 times smaller than resolved perturbation, following the existing relative symmetry margin. These criteria do not bound tiny paired flux error.",
+    "required": [
+      "independent hashes and budget checks",
+      "strict within-protocol pairing",
+      "M1 original relative symmetry screen",
+      "no extrapolation beyond solubility",
+      "retain absolute M0 gate as historical failed"
+    ]
+  },
+  "quantitative_B": {
+    "required": [
+      "paired timestep sensitivity does not cover signal",
+      "vertical and horizontal and domain errors bounded",
+      "solubility time intervals informative"
+    ],
+    "unknown_errors": [
+      "U_z",
+      "U_x",
+      "U_domain"
+    ]
+  },
+  "timing_rule": "Use exactly shared coarse/fine accepted times where available. Endpoint gaps must be reported and bounded with local conservative flux; no interpolation of cumulative flux.",
+  "forbidden": [
+    "4T launch",
+    "8T launch",
+    "additional solver runs",
+    "amplitude or physics change"
+  ]
+}

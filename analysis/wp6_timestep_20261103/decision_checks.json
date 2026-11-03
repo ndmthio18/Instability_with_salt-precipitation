@@ -1,0 +1,35 @@
+{
+  "exploratory_A": "GO_for_proposal_only",
+  "exploratory_checks": {
+    "coarse_M1_symmetry": true,
+    "coarse_background_signal_separation": true,
+    "fine_M1_symmetry": true,
+    "fine_background_signal_separation": true,
+    "weighted_sigma_end_5percent": true,
+    "weighted_amplification_5percent": true,
+    "fourier_end_5percent": true,
+    "surface_mean_0p1percent": true,
+    "surface_max_0p1percent": true,
+    "domain_max_0p1percent": true,
+    "detection_consistency": true,
+    "latest_exact_vertical_profile_5percent": true,
+    "own_endpoints_vertical_profile_5percent": true
+  },
+  "quantitative_B": "NO_GO",
+  "quantitative_reason": "U_z/U_x/U_domain unknown; no observed solubility events; a single timestep refinement cannot validate tiny transport or delay",
+  "original_M0_absolute_screen": "failed_retained",
+  "alternative_criterion_registration": "20261103-C01, before new M1 fine result, engineering scope only",
+  "refined_surface_event_difference": {
+    "status": "both_right_censored",
+    "lower_s": null,
+    "upper_s": null,
+    "bounds": "difference unidentified"
+  },
+  "unknown_errors": [
+    "U_z",
+    "U_x",
+    "U_domain"
+  ],
+  "t_eff": null,
+  "four_T_started": false
+}
