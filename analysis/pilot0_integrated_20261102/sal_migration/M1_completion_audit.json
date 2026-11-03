@@ -1,0 +1,75 @@
+{
+  "utc": "2026-11-03T02:03:34.738762+00:00",
+  "passed": true,
+  "checks": {
+    "completed_requested_horizon": true,
+    "600_accepted_steps": true,
+    "actual_initial_field": true,
+    "input_hash": true,
+    "601_events_and_three_region_budgets": true
+  },
+  "wall_s": 9523.213517472148,
+  "finished_utc": "2026-11-03T01:38:12.839232+00:00",
+  "stop": {
+    "schema_version": 1,
+    "reason": "requested_horizon",
+    "last_accepted_time_s": 136423.0637723484,
+    "accepted_steps": 600,
+    "initial_diagnostics_written": true,
+    "requested_end_s": 136423.0637723484,
+    "surface_threshold_low_s": null,
+    "surface_threshold_high_s": null,
+    "global_threshold_low_s": null,
+    "global_threshold_high_s": null
+  },
+  "locally_verified_files": [
+    "stop_record.json",
+    "initial_field_check.json",
+    "matched_36877_nx28_sigmatop.csv",
+    "matched_36877_nx28.pvd",
+    "transport_metadata.json",
+    "surface_events.csv",
+    "transport_budget.csv",
+    "started.json",
+    "solver.log",
+    "slurm-19161.log",
+    "plan.json",
+    "eigenprofile.dat",
+    "params.input"
+  ],
+  "regions": {
+    "upper_0.900000": {
+      "max_abs_salt_residual_m": 1.5128034907741406e-17,
+      "initial_inventory_m": 7.667579969820837e-06
+    },
+    "upper_0.750000": {
+      "max_abs_salt_residual_m": 2.92466712401517e-17,
+      "initial_inventory_m": 1.9239321213950942e-05
+    },
+    "upper_0.500000": {
+      "max_abs_salt_residual_m": 5.302129788280381e-17,
+      "initial_inventory_m": 4.006457243784929e-05
+    }
+  },
+  "max_domain_x": 0.019426657779147462,
+  "final_surface_mean_x": 0.019425540409684652,
+  "final_sigma": 7.906964109633317e-07,
+  "scope": "Single completed M1 integrity and budget checks only; same-host M0 and formal pair validation still pending",
+  "archived_files_verified_against_finished_manifest": [
+    "matched_36877_nx28-00012.vtu",
+    "matched_36877_nx28-00011.vtu",
+    "matched_36877_nx28-00010.vtu",
+    "matched_36877_nx28-00009.vtu",
+    "matched_36877_nx28-00008.vtu",
+    "matched_36877_nx28-00007.vtu",
+    "matched_36877_nx28-00006.vtu",
+    "matched_36877_nx28-00005.vtu",
+    "matched_36877_nx28-00004.vtu",
+    "matched_36877_nx28-00003.vtu",
+    "matched_36877_nx28-00002.vtu",
+    "matched_36877_nx28-00001.vtu",
+    "matched_36877_nx28-00000.vtu"
+  ],
+  "archive_sha256": "fbb811aac75596d07af1a0c9c6863e5503134178eaf82a63fd09a04fbb399a36",
+  "archive_verified": true
+}

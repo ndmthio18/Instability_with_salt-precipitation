@@ -1,0 +1,18 @@
+{
+  "utc": "2026-11-02T22:59:29.630076+00:00",
+  "pid": 1327168,
+  "command": [
+    "/usr/bin/python3",
+    "/tmp/zhixin_paper2_pilot0_20261102_r01/bundle/launch_solver.py",
+    "params.input"
+  ],
+  "SLURM_JOB_ID": "19161",
+  "execution_host": "sal",
+  "elf_sha256": "d78ce5122cf69e4dee5a4d12bcc726779959f304b343246009cb45bb37e894cc",
+  "single_rank": true,
+  "solver_address_space_limit_bytes": 8589934592,
+  "affinity": [
+    1,
+    65
+  ]
+}

@@ -1,13 +1,13 @@
 # command/3.md 持续执行交接
 
-状态：**sal M0 running / M1 running, authorized parallel pair**，不是已完成的 Pilot 结果。
+状态：**sal M0 running / M1 completed and archived, pair analysis pending**，不是已完成的 Pilot 结果。
 用户已授权 command/3 全工作包，并授权使用 cxhpc 或 sal。已迁移至 sal；用户最新明确授权 M0/M1 各一个核并行，覆盖原串行限制。
 
 ## 当前执行身份
 
 - 本仓库：`D:/3OutputFile/1Research/Article/22Surrogate_model/paper/2`，分支 `codex/paper2-main`。
 - sal：`/tmp/zhixin_paper2_pilot0_20261102_r01`。
-- **M0 Slurm job 19160，M1 Slurm job 19161，均已 RUNNING**；原 afterok 依赖已解除，没有新提交或重复模拟。
+- **M0 Slurm job 19160 仍在运行，M1 job19161 已正常完成600步并归档**；原 afterok 依赖已解除，没有新提交或重复模拟。
 - 两条腿同时运行，各 1 rank、1 个物理核心、BLAS/OMP/MKL=1、墙钟上限 12 h；M1 启动检查 CPU 亲和性与 M0 不重叠。
 - frodo worker 2453288 已在启动 M1 前取消；`frodo_queue_cancelled.json` 留存证据。禁止恢复该队列。
 - frodo 原 case42929 未修改，继续运行。sal 不必等待它。
@@ -77,3 +77,7 @@ python scripts/analyze_matched_pair.py --m0 analysis/pilot0_integrated_20261102/
 
 `execution_checks.json`：13 项执行门槛、正式输入接口、实际 M0 预算和自身相减检查通过。
 未完成的 U_dt/U_z/U_cut/U_x 均为 unknown，不填 0；不注册任何 1%/3%/5% t_eff 阈值。
+
+## M1 完成里程碑
+
+2026-11-03 03:02 CET 已回传 M1 完整小文件和13帧原始场，SHA与完成清单一致；单腿预算检查通过，详见 `sal_migration/M1_COMPLETION_ZH.md`。M0尚未完成，不能用旧frodo M0代替正式新sal配对。
