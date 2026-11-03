@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "legs": {
+    "M0": {
+      "allowed_input_diff": [
+        "Problem.Name",
+        "TimeLoop.TEnd"
+      ],
+      "profile_unchanged": true
+    },
+    "M1": {
+      "allowed_input_diff": [
+        "Problem.Name",
+        "TimeLoop.TEnd"
+      ],
+      "profile_unchanged": true
+    }
+  },
+  "exactly_two_runs": true
+}

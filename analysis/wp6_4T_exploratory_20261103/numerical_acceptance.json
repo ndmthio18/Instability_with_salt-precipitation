@@ -1,0 +1,158 @@
+{
+  "checks": {
+    "M0_independent_quadrature": true,
+    "M0_initial_fields": true,
+    "M0_salt_closure": true,
+    "M0_whole_salt_closure": true,
+    "M0_water_closure": true,
+    "M0_whole_water_closure": true,
+    "M0_original_absolute_endpoint": false,
+    "M1_independent_quadrature": true,
+    "M1_initial_fields": true,
+    "M1_salt_closure": true,
+    "M1_whole_salt_closure": true,
+    "M1_water_closure": true,
+    "M1_whole_water_closure": true,
+    "M1_original_absolute_endpoint": false,
+    "M1_original_relative_symmetry": false,
+    "core_numerical_acceptance": true,
+    "engineering_noise_signal_margin": false
+  },
+  "metrics": {
+    "M0": {
+      "end_actual_s": 545692.2550893656,
+      "accepted_steps": 4800,
+      "stop": {
+        "schema_version": 1,
+        "reason": "requested_horizon",
+        "last_accepted_time_s": 545692.2550893656,
+        "accepted_steps": 4800,
+        "initial_diagnostics_written": true,
+        "requested_end_s": 545692.2550893936,
+        "surface_threshold_low_s": null,
+        "surface_threshold_high_s": null,
+        "global_threshold_low_s": null,
+        "global_threshold_high_s": null
+      },
+      "surface_mean": 0.05696770041078563,
+      "surface_max": 0.0573407985393584,
+      "domain_max": 0.0573407985393584,
+      "max_sigma": 0.00018693999597379674,
+      "max_endpoint": 5.8693599101398986e-05,
+      "max_mirror": 0.0003897098101477009,
+      "max_salt_residual_m": 2.448501199969061e-16,
+      "max_water_residual_m": 3.863971776108696e-14
+    },
+    "M1": {
+      "end_actual_s": 545692.2550893656,
+      "accepted_steps": 4800,
+      "stop": {
+        "schema_version": 1,
+        "reason": "requested_horizon",
+        "last_accepted_time_s": 545692.2550893656,
+        "accepted_steps": 4800,
+        "initial_diagnostics_written": true,
+        "requested_end_s": 545692.2550893936,
+        "surface_threshold_low_s": null,
+        "surface_threshold_high_s": null,
+        "global_threshold_low_s": null,
+        "global_threshold_high_s": null
+      },
+      "surface_mean": 0.05640221858255567,
+      "surface_max": 0.063839674435513,
+      "domain_max": 0.063839674435513,
+      "max_sigma": 0.003661766803033945,
+      "max_endpoint": 0.00015821246560499685,
+      "max_mirror": 0.0001898193454751007,
+      "max_salt_residual_m": 1.317322580228833e-16,
+      "max_water_residual_m": 1.3617641053648636e-14,
+      "weighted_amplification": 5514.748100575884,
+      "sigma_min": 6.639952970202865e-07,
+      "sigma_end": 0.003661766803033945,
+      "fourier_end": 0.00012084445939848176,
+      "projection_end": 0.0002034191466624224,
+      "relative_sigma_end": 0.06492238949207704,
+      "detection": {
+        "onset_s": 50703.90536872,
+        "onset_refined_s": 50681.767813152204,
+        "onset_class": "resolved_onset",
+        "onset_low_s": 44337.49572601,
+        "onset_high_s": 57070.31501143,
+        "plateau_width_s": 12732.819285420002,
+        "plateau_samples": 113,
+        "pre_slope_per_s": -2.651577235694209e-08,
+        "post_slope_per_s": 2.8621503034077896e-08,
+        "minimum_position_fraction": 0.0927276515940821,
+        "status": "ok (interior minimum)",
+        "argmin_index": 445,
+        "n_samples": 4800,
+        "t_last_s": 545692.2550894,
+        "sigma_min": 6.761036698457e-07,
+        "sigma_first": 7.198183039793e-07,
+        "sigma_last": 0.003870245674099,
+        "amplification_since_min": 5724.337622634507,
+        "x_top_mean_at_min": 0.01102460945395,
+        "csv": "D:\\3OutputFile\\1Research\\Article\\22Surrogate_model\\paper\\2\\analysis\\wp6_4T_exploratory_20261103\\runs\\WP6-M1-explore4T\\WP6-M1-explore4T_sigmatop.csv"
+      },
+      "max_odd_energy": 0.0002617059319598934,
+      "amplitude_extrema": {
+        "weighted_top_sigma": {
+          "minimum": 6.639952970202865e-07,
+          "minimum_actual_s": 50703.90536872319,
+          "maximum": 0.003661766803033945,
+          "maximum_actual_s": 545692.2550893656,
+          "final_over_minimum": 5514.748100575884,
+          "final_over_initial": 5178.520275100134,
+          "final_over_peak": 1.0
+        },
+        "weighted_fourier": {
+          "minimum": 9.390311541556926e-07,
+          "minimum_actual_s": 50703.90536872319,
+          "maximum": 0.00017847409330332524,
+          "maximum_actual_s": 538188.9865818834,
+          "final_over_minimum": 128.69057524202822,
+          "final_over_initial": 120.8444593985275,
+          "final_over_peak": 0.6770980435412597
+        },
+        "weighted_projection": {
+          "minimum": 9.407771620611698e-07,
+          "minimum_actual_s": 47520.70054736831,
+          "maximum": 0.0002137341049624401,
+          "maximum_actual_s": 542167.9926085785,
+          "final_over_minimum": 216.22457991725355,
+          "final_over_initial": 203.41914666248957,
+          "final_over_peak": 0.9517392963475325
+        }
+      }
+    }
+  },
+  "max_M0_sigma_over_M1_sigma": 0.05105185721245499,
+  "diagnostic_alert_intervals": {
+    "background_ratio": {
+      "low_s": 458267.8083885835,
+      "high_s": 458381.4942750604,
+      "threshold": 0.001,
+      "meaning": "sampled diagnostic alert, not a physical onset label"
+    },
+    "M1_odd_energy": {
+      "low_s": 470545.8841280936,
+      "high_s": 470659.57001457055,
+      "threshold": 1e-06,
+      "meaning": "sampled diagnostic alert, not a physical onset label"
+    },
+    "M0_absolute_endpoint": {
+      "low_s": 313773.0466763856,
+      "high_s": 313886.73256286257,
+      "threshold": 1e-12,
+      "meaning": "sampled diagnostic alert, not a physical onset label"
+    }
+  },
+  "historical_M0_absolute_screen": "failed_retained",
+  "errors": {
+    "U_dt_4T": "unknown; dt/2 verified only through 2T",
+    "U_z": "unknown",
+    "U_x": "unknown",
+    "U_domain": "unknown"
+  },
+  "t_eff": null
+}

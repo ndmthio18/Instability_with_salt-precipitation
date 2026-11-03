@@ -1,0 +1,51 @@
+{
+  "id": "20261103-D01",
+  "created_utc": "2026-11-03T17:50:05.366014+00:00",
+  "authority": "command/10.md",
+  "base_commit": "c9241f2c1f769b7e7fa263b1488d1fa16bc2db21",
+  "scope": "two dt/2 exploratory 4T legs from t=0 only",
+  "T_s": 545692.2550893936,
+  "dt_s": 113.68588647695695,
+  "wall_s_per_leg": 3600,
+  "total_core_hours_cap": 2,
+  "source_inputs": {
+    "M0": "eb5684c6a1916214ab701f0007a03ca1739188db1ea256396294ea53b78b3c9f",
+    "M1": "2fc19db6b69a530efad593b6f2f7390fe9b74e37d314ad209392a36f35af523f"
+  },
+  "elf_sha256": "112076759fdff0942000307f729c2bd3c7e96963229b43c1b67c1f12bbf9df81",
+  "retained_history": [
+    "original failed M0 absolute endpoint screen 1e-12",
+    "C01 engineering exploration separated from quantitative claims",
+    "unknown U_z U_x U_domain",
+    "no t_eff or surrogate labels"
+  ],
+  "analysis": {
+    "log_sigma_fit_windows_T": [
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        3,
+        4
+      ]
+    ],
+    "T_base_s": 136423.0637723484,
+    "energy_depth": "90% and 99% of vertically integrated horizontal anomaly variance, measured from surface",
+    "harmonics": "Neumann m=2 fundamental; m=4,6 are second/third harmonic; odd m diagnose symmetry",
+    "initial_structure_control": "compare anomaly, normalized vertical profile and modal shape with t=0; inherited eigenprofile is not evidence of newly grown fingers",
+    "nonlinearity": "descriptive relative amplitude/harmonic/shape evolution, not a universal nonlinear threshold"
+  },
+  "forbidden": [
+    "8T",
+    "nx60",
+    "full domain",
+    "other cases",
+    "restart",
+    "source physics change"
+  ]
+}

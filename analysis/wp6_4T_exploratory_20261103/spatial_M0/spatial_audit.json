@@ -1,0 +1,94 @@
+{
+  "frames": 4801,
+  "selected": [
+    {
+      "frame": 0,
+      "actual_time_s": 0.0,
+      "nominal_target_s": 0,
+      "source_path": "/temp/zhixin/paper2_wp6_4T_exploratory_20261103_r01/runs/WP6-M0-explore4T/WP6-M0-explore4T-00000.vtu",
+      "sha256": "1e52993f1fca399dc98d14d46e50c26cac871ad3605c296f99a85021120d93c3"
+    },
+    {
+      "frame": 1200,
+      "actual_time_s": 136423.06377235046,
+      "nominal_target_s": 136423.0637723484,
+      "source_path": "/temp/zhixin/paper2_wp6_4T_exploratory_20261103_r01/runs/WP6-M0-explore4T/WP6-M0-explore4T-01200.vtu",
+      "sha256": "ad591fc0dd15bbe500591752c57889450ade1dc71fb4015baa6f4a45a156c59c"
+    },
+    {
+      "frame": 2400,
+      "actual_time_s": 272846.1275446852,
+      "nominal_target_s": 272846.1275446968,
+      "source_path": "/temp/zhixin/paper2_wp6_4T_exploratory_20261103_r01/runs/WP6-M0-explore4T/WP6-M0-explore4T-02400.vtu",
+      "sha256": "63eee83e547da2ed61414e927824dccc9ce24ef644416921a1bcb18005ee5750"
+    },
+    {
+      "frame": 3600,
+      "actual_time_s": 409269.1913170199,
+      "nominal_target_s": 409269.1913170452,
+      "source_path": "/temp/zhixin/paper2_wp6_4T_exploratory_20261103_r01/runs/WP6-M0-explore4T/WP6-M0-explore4T-03600.vtu",
+      "sha256": "887481730178cb285883cff7006424d09e1b631fd56fcd57f02de648b08ca1ce"
+    },
+    {
+      "frame": 4800,
+      "actual_time_s": 545692.2550893656,
+      "nominal_target_s": 545692.2550893936,
+      "source_path": "/temp/zhixin/paper2_wp6_4T_exploratory_20261103_r01/runs/WP6-M0-explore4T/WP6-M0-explore4T-04800.vtu",
+      "sha256": "cf8cf9dff2f92b3491f54bf8fb7b6d709260d5c48b4903dbe984cb6fe0847588"
+    }
+  ],
+  "all_field_hashes_verified": true,
+  "script_sha256": "bc446a8fb4aa12ebaf52839a9a61708dd2ff7477a74179b06b93b5d3adb7cc6c",
+  "metrics_helper_sha256": "db454748834cfdee82c3101d7e597e0e8cd0b6eb85c5e50341e69edad7aff062",
+  "field_manifest_sha256": "da3f7be2fc225c0ead2046938d9f5e57edf7aa29a3774826d6aa24f4983d9916",
+  "npz_sha256": "a5dc55bfc593ca072a4dcf6528b7fdae746f66e6dcdadf815286503adc519b73",
+  "initial": {
+    "frame": 0,
+    "time_s": 0.0,
+    "top_sigma": 0.0,
+    "top_relative_sigma": 0.0,
+    "volume_anomaly_rms": 0.0,
+    "energy_relative_initial": null,
+    "fundamental_volume_energy_fraction": null,
+    "second_harmonic_volume_energy_fraction": null,
+    "third_harmonic_volume_energy_fraction": null,
+    "even_higher_harmonic_fraction": null,
+    "odd_neumann_energy_fraction": null,
+    "dominant_neumann_mode": null,
+    "dominant_cells_per_wavelength": null,
+    "energy_fraction_at_four_or_fewer_cells_per_wavelength": null,
+    "top_fundamental_amplitude": 0.0,
+    "eigenmode_projection": 0.0,
+    "initial_shape_relative_residual": null,
+    "max_relative_anomaly": 0.0,
+    "depth90_mm": null,
+    "depth99_mm": null,
+    "max_mirror_difference": 0.0,
+    "max_endpoint_difference": 0.0
+  },
+  "final": {
+    "frame": 4800,
+    "time_s": 545692.2550893656,
+    "top_sigma": 0.00018693999597379674,
+    "top_relative_sigma": 0.0032815085500344965,
+    "volume_anomaly_rms": 1.063282515082008e-05,
+    "energy_relative_initial": null,
+    "fundamental_volume_energy_fraction": 9.094789144519452e-07,
+    "second_harmonic_volume_energy_fraction": 2.4648453819805714e-06,
+    "third_harmonic_volume_energy_fraction": 4.1295202378106804e-08,
+    "even_higher_harmonic_fraction": 0.6331868478876195,
+    "odd_neumann_energy_fraction": 0.3668122426334568,
+    "dominant_neumann_mode": 12,
+    "dominant_cells_per_wavelength": 4.0,
+    "energy_fraction_at_four_or_fewer_cells_per_wavelength": 0.723087997911835,
+    "top_fundamental_amplitude": 3.802764640691e-07,
+    "eigenmode_projection": 1.0453233977482184e-07,
+    "initial_shape_relative_residual": null,
+    "max_relative_anomaly": 0.008393279136826267,
+    "depth90_mm": 1.0754305081830118,
+    "depth99_mm": 1.7827093307550002,
+    "max_mirror_difference": 0.0003897098101477009,
+    "max_endpoint_difference": 5.8693599101398986e-05
+  },
+  "convention": "Neumann m=2 fundamental; initial shape residual also includes linear profile evolution, not proof of nonlinearity"
+}

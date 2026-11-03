@@ -1,0 +1,58 @@
+{
+  "single_wavelength_validation_20261103_unchanged": true,
+  "wp6_execution_20261103_unchanged": true,
+  "wp6_review_20261103_unchanged": true,
+  "wp6_timestep_20261103_unchanged": true,
+  "physics_sources_unchanged": true,
+  "two_independent_legs": {
+    "WP6-M0-explore4T": {
+      "accepted_steps": 4800,
+      "accepted_time_s": 545692.2550893656,
+      "stop_reason": "requested_horizon",
+      "core": 3
+    },
+    "WP6-M1-explore4T": {
+      "accepted_steps": 4800,
+      "accepted_time_s": 545692.2550893656,
+      "stop_reason": "requested_horizon",
+      "core": 9
+    }
+  },
+  "archive_verified_vtu": 9602,
+  "allocated_core_hours_including_post": 0.7835630016122014,
+  "solver_cpu_hours": 0.38626632083333334,
+  "including_additional_spatial_analysis_core_hour_upper_bound": 1.2835630016122013,
+  "additional_spatial_analysis_cpu_s": null,
+  "additional_spatial_analysis_budget_note": "Two successful post-only calls, each limited to 900 s on one freed physical core; CPU usage not separately recorded",
+  "spatial_source_and_products_verified": true,
+  "tests_passed": 41,
+  "numerical_acceptance_with_separate_symmetry_flags": {
+    "M0_independent_quadrature": true,
+    "M0_initial_fields": true,
+    "M0_salt_closure": true,
+    "M0_whole_salt_closure": true,
+    "M0_water_closure": true,
+    "M0_whole_water_closure": true,
+    "M0_original_absolute_endpoint": false,
+    "M1_independent_quadrature": true,
+    "M1_initial_fields": true,
+    "M1_salt_closure": true,
+    "M1_whole_salt_closure": true,
+    "M1_water_closure": true,
+    "M1_whole_water_closure": true,
+    "M1_original_absolute_endpoint": false,
+    "M1_original_relative_symmetry": false,
+    "core_numerical_acceptance": true,
+    "engineering_noise_signal_margin": false
+  },
+  "shared_prethreshold_states": 4801,
+  "event_difference": {
+    "status": "both_right_censored",
+    "lower_s": null,
+    "upper_s": null,
+    "bounds": "difference unidentified"
+  },
+  "figure_QA": "Five PNG groups visually inspected; five PDF pages checked for selectable labels",
+  "source_base_commit": "c9241f2c1f769b7e7fa263b1488d1fa16bc2db21",
+  "execution_scope": "4T decision point only; no 8T, other cases or wavelength domains"
+}

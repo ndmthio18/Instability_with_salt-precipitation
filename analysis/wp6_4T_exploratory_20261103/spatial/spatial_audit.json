@@ -1,0 +1,94 @@
+{
+  "frames": 4801,
+  "selected": [
+    {
+      "frame": 0,
+      "actual_time_s": 0.0,
+      "nominal_target_s": 0,
+      "source_path": "/temp/zhixin/paper2_wp6_4T_exploratory_20261103_r01/runs/WP6-M1-explore4T/WP6-M1-explore4T-00000.vtu",
+      "sha256": "2eae3e0c03d2b572cf292efe1589bd7b7c6ac7551a42d87cf3ae7bb42b76026b"
+    },
+    {
+      "frame": 1200,
+      "actual_time_s": 136423.06377235046,
+      "nominal_target_s": 136423.0637723484,
+      "source_path": "/temp/zhixin/paper2_wp6_4T_exploratory_20261103_r01/runs/WP6-M1-explore4T/WP6-M1-explore4T-01200.vtu",
+      "sha256": "ff3af5d128a8b0704076fff0ac44886a18b75ae84f5e6d5058607119f4c4abde"
+    },
+    {
+      "frame": 2400,
+      "actual_time_s": 272846.1275446852,
+      "nominal_target_s": 272846.1275446968,
+      "source_path": "/temp/zhixin/paper2_wp6_4T_exploratory_20261103_r01/runs/WP6-M1-explore4T/WP6-M1-explore4T-02400.vtu",
+      "sha256": "0cb92485b092a77c8340a759d9e0050f74b1113950675f643ef3ff2021b3f8c2"
+    },
+    {
+      "frame": 3600,
+      "actual_time_s": 409269.1913170199,
+      "nominal_target_s": 409269.1913170452,
+      "source_path": "/temp/zhixin/paper2_wp6_4T_exploratory_20261103_r01/runs/WP6-M1-explore4T/WP6-M1-explore4T-03600.vtu",
+      "sha256": "8a81e31fe20673f39911c57ca8a87c187181f75b31db6fa3f408cd6296308ba1"
+    },
+    {
+      "frame": 4800,
+      "actual_time_s": 545692.2550893656,
+      "nominal_target_s": 545692.2550893936,
+      "source_path": "/temp/zhixin/paper2_wp6_4T_exploratory_20261103_r01/runs/WP6-M1-explore4T/WP6-M1-explore4T-04800.vtu",
+      "sha256": "07c028c044bd67b9ec52efdc4aba6ae3c9f5c581df91c2fbc8398a324eade8c6"
+    }
+  ],
+  "all_field_hashes_verified": true,
+  "script_sha256": "bc446a8fb4aa12ebaf52839a9a61708dd2ff7477a74179b06b93b5d3adb7cc6c",
+  "metrics_helper_sha256": "db454748834cfdee82c3101d7e597e0e8cd0b6eb85c5e50341e69edad7aff062",
+  "field_manifest_sha256": "7f3db9021935848332fe0c36979a5787d42769d4f922280f1e441c29331f64c9",
+  "npz_sha256": "35590915faa8f1132846ba2ee12668c30289dd99ca36587cd7c8876b63f6aa97",
+  "initial": {
+    "frame": 0,
+    "time_s": 0.0,
+    "top_sigma": 7.071067811862799e-07,
+    "top_relative_sigma": 0.0001964185503295222,
+    "volume_anomaly_rms": 3.766383705518184e-08,
+    "energy_relative_initial": 1.0,
+    "fundamental_volume_energy_fraction": 0.9999999999999998,
+    "second_harmonic_volume_energy_fraction": 7.678824888597608e-24,
+    "third_harmonic_volume_energy_fraction": 1.1476843367020017e-21,
+    "even_higher_harmonic_fraction": 4.310040244382019e-21,
+    "odd_neumann_energy_fraction": 5.088183631907847e-28,
+    "dominant_neumann_mode": 2,
+    "dominant_cells_per_wavelength": 24.0,
+    "energy_fraction_at_four_or_fewer_cells_per_wavelength": 2.4352748816754052e-21,
+    "top_fundamental_amplitude": 9.999999999996215e-07,
+    "eigenmode_projection": 9.999999999996698e-07,
+    "initial_shape_relative_residual": 3.495787911687792e-16,
+    "max_relative_anomaly": 0.00027777777777781464,
+    "depth90_mm": 1.2674102938300125,
+    "depth99_mm": 2.473868997364015,
+    "max_mirror_difference": 0.0,
+    "max_endpoint_difference": 0.0
+  },
+  "final": {
+    "frame": 4800,
+    "time_s": 545692.2550893656,
+    "top_sigma": 0.003661766803033945,
+    "top_relative_sigma": 0.06492238949207704,
+    "volume_anomaly_rms": 0.0002322819447224178,
+    "energy_relative_initial": 38034856.51477439,
+    "fundamental_volume_energy_fraction": 0.0013714091979062704,
+    "second_harmonic_volume_energy_fraction": 0.0019251884258575432,
+    "third_harmonic_volume_energy_fraction": 0.01199562983886254,
+    "even_higher_harmonic_fraction": 0.9983668848701287,
+    "odd_neumann_energy_fraction": 0.00026170593195989336,
+    "dominant_neumann_mode": 10,
+    "dominant_cells_per_wavelength": 4.8,
+    "energy_fraction_at_four_or_fewer_cells_per_wavelength": 0.04968987088364218,
+    "top_fundamental_amplitude": 0.00012076606375829476,
+    "eigenmode_projection": 0.0002034191466624224,
+    "initial_shape_relative_residual": 0.9994558858159284,
+    "max_relative_anomaly": 0.22068347060761118,
+    "depth90_mm": 1.2674102938300125,
+    "depth99_mm": 1.8921638903870164,
+    "max_mirror_difference": 0.0001898193454751007,
+    "max_endpoint_difference": 0.00015821246560499685
+  },
+  "convention": "Neumann m=2 fundamental; initial shape residual also includes linear profile evolution, not proof of nonlinearity"
+}

@@ -1,0 +1,24 @@
+{
+  "scope": "command/10 only: Case 36877 nx28 dt/2 exploratory 4T pair",
+  "execution": "completed",
+  "archive": "verified",
+  "conservation": "passed",
+  "original_absolute_background_screen": "failed_retained",
+  "current_background_and_symmetry": "failed",
+  "exploratory_growth": "observed strong growth and shallow short-wave structures",
+  "physical_nonlinear_convection": "inconclusive",
+  "quantitative_effective_transport": "NO-GO",
+  "solubility_events": "both_right_censored",
+  "solubility_time_difference": "unidentified",
+  "extend_unchanged_to_8T": "NO-GO",
+  "next_step": "paired time/horizontal/vertical grid and background control, then matched 2/4 wavelength and bounded full-domain validation; proposal only",
+  "additional_simulations_launched": false,
+  "unknown_errors": [
+    "U_dt_4T",
+    "U_z",
+    "U_x",
+    "U_domain"
+  ],
+  "t_eff": null,
+  "surrogate_training_labels_created": false
+}

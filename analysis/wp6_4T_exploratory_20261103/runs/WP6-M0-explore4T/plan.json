@@ -1,0 +1,15 @@
+{
+  "id": "WP6-M0-explore4T",
+  "role": "M0",
+  "stage": "explore4T",
+  "T_s": 545692.2550893936,
+  "input_sha256": "8510c713758f2c73000f4080a2ed24d2e47fdf2c32f28941811710df09be9a74",
+  "profile_sha256": "d721e605d126e555f92b43200aa73b999ed4e2b61397edd1e98c0d9fddb36575",
+  "elf_sha256": "112076759fdff0942000307f729c2bd3c7e96963229b43c1b67c1f12bbf9df81",
+  "preregistration_sha256": "86233bc5e7ba1eb9a6b19f09525197e2d9ee6b070d31e30bed33bd01aafbf9a5",
+  "nx_cells": 24,
+  "nz_cells": 200,
+  "DOF_vertices": 5025,
+  "scalar_unknowns": 10050,
+  "hard_wall_limit_s": 3600
+}

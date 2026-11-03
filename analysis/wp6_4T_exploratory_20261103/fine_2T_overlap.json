@@ -1,0 +1,30 @@
+{
+  "M0": {
+    "reference": "analysis\\wp6_review_20261103\\runs\\WP6-M0-dt_half",
+    "exact_shared_states": 2401,
+    "reference_states": 2401,
+    "identical_VTU_hashes": 2401,
+    "maximum_absolute_differences": {
+      "weighted_top_mean": 0.0,
+      "weighted_top_sigma": 0.0,
+      "weighted_fourier": 0.0,
+      "weighted_projection": 0.0,
+      "whole_salt_m": 0.0
+    },
+    "latest_exact_overlap_s": 272846.1275446852
+  },
+  "M1": {
+    "reference": "analysis\\wp6_timestep_20261103\\runs\\WP6-M1-dt_half",
+    "exact_shared_states": 2401,
+    "reference_states": 2401,
+    "identical_VTU_hashes": 2401,
+    "maximum_absolute_differences": {
+      "weighted_top_mean": 0.0,
+      "weighted_top_sigma": 0.0,
+      "weighted_fourier": 0.0,
+      "weighted_projection": 0.0,
+      "whole_salt_m": 0.0
+    },
+    "latest_exact_overlap_s": 272846.1275446852
+  }
+}
