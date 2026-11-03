@@ -1,5 +1,5 @@
 """Offline WP6 registration only. No SSH, compiler, scheduler, or solver calls."""
-import csv,hashlib,json,math
+import argparse,csv,hashlib,json,math
 from pathlib import Path
 import numpy as np
 from single_wavelength_post import params
@@ -11,6 +11,8 @@ def writecsv(name,rows):
     with (OUT/name).open('w',newline='',encoding='utf-8') as f:
         w=csv.DictWriter(f,fieldnames=list(rows[0]));w.writeheader();w.writerows(rows)
 def main():
+    if OUT.resolve()==(ROOT/'analysis/wp6_bounded_nonlinear_plan_20261103').resolve() or OUT.exists():
+        raise RuntimeError('Frozen/existing planning products cannot be overwritten; use verification or a new scratch directory')
     OUT.mkdir(exist_ok=True,parents=True)
     for p,h in json.loads((WP5/'reference_hashes.json').read_text()).items():assert sha(ROOT/p)==h
     p=params(WP5/'runs/R24-M1-full/params.input');T=float(p['TimeLoop.TEnd']);dt=float(p['TimeLoop.MaxTimeStepSize'])
@@ -61,4 +63,18 @@ def main():
     manifest={str(q.relative_to(ROOT)).replace('\\','/'):dict(sha256=sha(q),bytes=q.stat().st_size) for q in sorted([q for q in OUT.iterdir() if q.is_file() and q.name!='artifact_manifest.json']+[Path(__file__)])}
     (OUT/'artifact_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     print(json.dumps(dict(checks=checks,planes=cuts,costs=cost),indent=2))
-if __name__=='__main__':main()
+if __name__=='__main__':
+    parser=argparse.ArgumentParser(description='Frozen plan is immutable; default is read-only verification.')
+    parser.add_argument('--verify',action='store_true')
+    parser.add_argument('--restore-reference',action='store_true')
+    parser.add_argument('--recreate-to',type=Path,help='New ignored scratch directory; never the frozen registration')
+    a=parser.parse_args()
+    from wp6_plan_integrity import verify,restore
+    if a.restore_reference:restore()
+    else:verify()
+    if a.recreate_to:
+        target=a.recreate_to.resolve();scratch=(ROOT/'tmp').resolve()
+        if not target.is_relative_to(scratch) or target==scratch or target.exists():
+            raise SystemExit('Recreation requires a NEW directory strictly inside paper/2/tmp')
+        OUT=target
+        main()

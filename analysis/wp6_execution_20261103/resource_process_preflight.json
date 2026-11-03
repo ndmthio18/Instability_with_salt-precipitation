@@ -1,0 +1,9 @@
+{
+  "processes": [
+    "    PID PSR %CPU %MEM COMMAND",
+    "2794494   7 99.3  0.1 /temp/zhixin/v13_bottom_boundary_campaign_20261103/track2d/build/solver /temp/zhixin/v13_bottom_boundary_campaign_20261103/track2d/raw/runs/B3/B3.input",
+    "2794492   6 99.2  0.1 /temp/zhixin/v13_bottom_boundary_campaign_20261103/track2d/build/solver /temp/zhixin/v13_bottom_boundary_campaign_20261103/track2d/raw/runs/B2/B2.input"
+  ],
+  "cores": "# The following is the parsable format, which can be fed to other\n# programs. Each different item in every column has an unique ID\n# starting usually from zero.\n# CPU,Core,Socket\n0,0,0\n1,1,0\n2,2,0\n3,3,0\n4,4,0\n5,5,0\n6,6,0\n7,7,0\n8,8,0\n9,9,0\n10,10,0\n11,11,0\n12,0,0\n13,1,0\n14,2,0\n15,3,0\n16,4,0\n17,5,0\n18,6,0\n19,7,0\n20,8,0\n21,9,0\n22,10,0\n23,11,0\n",
+  "note": "Only competing compute processes retained; they use logical CPUs 6/7, distinct physical cores from planned 0/1."
+}

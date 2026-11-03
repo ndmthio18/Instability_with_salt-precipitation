@@ -1,0 +1,386 @@
+{
+  "runs": {
+    "WP6-crossing-smoke": {
+      "started.json": {
+        "utc": "2026-11-03T16:07:54.284639+00:00",
+        "job": "frodo-managed-WP6-crossing-smoke",
+        "affinity": [
+          0
+        ],
+        "load": [
+          2.94677734375,
+          3.7060546875,
+          3.99462890625
+        ],
+        "available_memory_bytes": 23653527552,
+        "elf_sha256": "112076759fdff0942000307f729c2bd3c7e96963229b43c1b67c1f12bbf9df81",
+        "postprocessor_sha256": "95acc0de925089f7392081dc854687275cb65573813892ef5f2df09e1b53540c",
+        "launcher_sha256": "2fbe5ca9f2891010c67be135a06bc7d3a48c5b60d98e2a2f150ca4febbf1a672"
+      },
+      "stop_record.json": {
+        "schema_version": 1,
+        "reason": "surface_solubility_threshold",
+        "last_accepted_time_s": 227.3717729539139,
+        "accepted_steps": 1,
+        "initial_diagnostics_written": true,
+        "requested_end_s": 454.74354590782804,
+        "surface_threshold_low_s": 0,
+        "surface_threshold_high_s": 227.3717729539139,
+        "global_threshold_low_s": 0,
+        "global_threshold_high_s": 227.3717729539139
+      },
+      "solver_finished.json": {
+        "returncode": 0,
+        "reason": null,
+        "wall_s": 0.7097930386662483,
+        "cpu_s": 0.339163,
+        "peak_rss_kib": 45040,
+        "stop": {
+          "schema_version": 1,
+          "reason": "surface_solubility_threshold",
+          "last_accepted_time_s": 227.3717729539139,
+          "accepted_steps": 1,
+          "initial_diagnostics_written": true,
+          "requested_end_s": 454.74354590782804,
+          "surface_threshold_low_s": 0,
+          "surface_threshold_high_s": 227.3717729539139,
+          "global_threshold_low_s": 0,
+          "global_threshold_high_s": 227.3717729539139
+        },
+        "newton_iterations": 3,
+        "linear_iterations": null,
+        "linear_iterations_status": "not emitted by unchanged executable",
+        "failure_or_retry_log_lines": [
+          " -- Newton.RetryTimeStepReductionFactor = 0.5"
+        ],
+        "solver_output_bytes": 1980254
+      },
+      "finished.json": {
+        "solver": {
+          "returncode": 0,
+          "reason": null,
+          "wall_s": 0.7097930386662483,
+          "cpu_s": 0.339163,
+          "peak_rss_kib": 45040,
+          "stop": {
+            "schema_version": 1,
+            "reason": "surface_solubility_threshold",
+            "last_accepted_time_s": 227.3717729539139,
+            "accepted_steps": 1,
+            "initial_diagnostics_written": true,
+            "requested_end_s": 454.74354590782804,
+            "surface_threshold_low_s": 0,
+            "surface_threshold_high_s": 227.3717729539139,
+            "global_threshold_low_s": 0,
+            "global_threshold_high_s": 227.3717729539139
+          },
+          "newton_iterations": 3,
+          "linear_iterations": null,
+          "linear_iterations_status": "not emitted by unchanged executable",
+          "failure_or_retry_log_lines": [
+            " -- Newton.RetryTimeStepReductionFactor = 0.5"
+          ],
+          "solver_output_bytes": 1980254
+        },
+        "post_wall_s": 0.15484911762177944,
+        "archive": {
+          "path": "/temp/zhixin/paper2_wp6_execution_20261103_r01/WP6-crossing-smoke_fields.tar.gz",
+          "bytes": 342691,
+          "sha256": "45072fef2efd6df982c5e287fb8408e54213d7677963251e9cd8d3896549033f"
+        },
+        "files": {
+          "worker.log": {
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "bytes": 0
+          },
+          "solver_finished.json": {
+            "sha256": "d4d56c500f58a66ca2389d3e3701a4969501da798bffb4e14a924a18febe3f53",
+            "bytes": 777
+          },
+          "stop_record.json": {
+            "sha256": "54af2015b1aaecb5842cc5bdd4ad75f4f063a16940fc760bf47e60211d9467a5",
+            "bytes": 378
+          },
+          "solver.log": {
+            "sha256": "c5f3829c2058b1f54b8eb6878a440cb057a83ec61927fabc1f49c9f30d054bac",
+            "bytes": 1462
+          },
+          "eigenprofile.dat": {
+            "sha256": "d721e605d126e555f92b43200aa73b999ed4e2b61397edd1e98c0d9fddb36575",
+            "bytes": 153788
+          },
+          "transport_metadata.json": {
+            "sha256": "036b6ac6864e7bcf021bf8d2bb2063c96e0153239761bbcf1262cab672ab5ed5",
+            "bytes": 1390
+          },
+          "transport_budget.csv": {
+            "sha256": "c30f1224b1e53bbac05a76cbcb070b854d9fea4be455ca5fa07834892f33aa8a",
+            "bytes": 7910
+          },
+          "weighted_online.csv": {
+            "sha256": "c3040531f27790e7d59b7e2159797601f34bf94787f86c9f9c3a8eebfd9cbb60",
+            "bytes": 503
+          },
+          "params.input": {
+            "sha256": "fab4f0d161a938c13f6212f436bc0d054ca15f1e041f9004d1646feee03f3c9a",
+            "bytes": 1336
+          },
+          "started.json": {
+            "sha256": "fcb122e203d8f8615398ffcc73396faf112010ec4135356ed364aed627ff93f3",
+            "bytes": 499
+          },
+          "plan.json": {
+            "sha256": "8a25eed21b656b663f689a9b87df388d92921cb8075c1ea0f6a853509e237a9f",
+            "bytes": 553
+          },
+          "WP6-crossing-smoke_sigmatop.csv": {
+            "sha256": "8be0dee0bd991fc3d6ebe26f523e23258d8dfded3a31bb7bccbefb32f18a7358",
+            "bytes": 296
+          },
+          "WP6-crossing-smoke.pvd": {
+            "sha256": "5c1076c5be2be6b6c4f9e4f163bc0b7c0c00527c8b819abacb6b03a2443371dc",
+            "bytes": 313
+          },
+          "surface_events.csv": {
+            "sha256": "d9b1a80cece3c10c65cca5d1c522ff4576b2bf354c7f9e302ebd95b865bb1738",
+            "bytes": 512
+          },
+          "post.log": {
+            "sha256": "a83c9c50e41511407ac7ae0a65f021b672a1bfbdae29d9ef33a43f81c943fa60",
+            "bytes": 2055
+          },
+          "post/independent_checks.json": {
+            "sha256": "3f17f5ed5dd3e0307cf7225404f17d3107aa08061378db79a43ed67d819d26b4",
+            "bytes": 2366
+          },
+          "post/representative_fields.npz": {
+            "sha256": "f121e75fa80a84743af2e375801446e4fc46df21020df52a0f6f8d552a01989d",
+            "bytes": 34635
+          },
+          "post/field_hashes.json": {
+            "sha256": "7e4b7e8f3beeb7577ed17bf989c2af405e306e97a2c142c8838a4d4d20871fac",
+            "bytes": 486
+          },
+          "post/independent_inventories.csv": {
+            "sha256": "c191a9c8bdbcaa7b37c28ba375d931841a458d9aecff7165070549114e722120",
+            "bytes": 1993
+          },
+          "post/profiles.npz": {
+            "sha256": "fa7939e901f95ac382c91233cc94a4036e1392326e371e1572f1a381a5194c92",
+            "bytes": 5059
+          },
+          "post/weighted_diagnostics.csv": {
+            "sha256": "1c3cbf6c7b19dc8c202034917fef1e0835cc5103d05dc8e80fa4fe94e28fe06a",
+            "bytes": 895
+          },
+          "post/field_audit.json": {
+            "sha256": "35d3371714745156910f17534573ce94bc54f73b6411243f523f91ba82aaca1f",
+            "bytes": 742
+          }
+        }
+      }
+    },
+    "WP6-initial-smoke": {
+      "started.json": {
+        "utc": "2026-11-03T16:07:54.284639+00:00",
+        "job": "frodo-managed-WP6-initial-smoke",
+        "affinity": [
+          1
+        ],
+        "load": [
+          2.94677734375,
+          3.7060546875,
+          3.99462890625
+        ],
+        "available_memory_bytes": 23653527552,
+        "elf_sha256": "112076759fdff0942000307f729c2bd3c7e96963229b43c1b67c1f12bbf9df81",
+        "postprocessor_sha256": "95acc0de925089f7392081dc854687275cb65573813892ef5f2df09e1b53540c",
+        "launcher_sha256": "2fbe5ca9f2891010c67be135a06bc7d3a48c5b60d98e2a2f150ca4febbf1a672"
+      },
+      "stop_record.json": {
+        "schema_version": 1,
+        "reason": "surface_solubility_threshold",
+        "last_accepted_time_s": 0,
+        "accepted_steps": 0,
+        "initial_diagnostics_written": true,
+        "requested_end_s": 454.74354590782804,
+        "surface_threshold_low_s": 0,
+        "surface_threshold_high_s": 0,
+        "global_threshold_low_s": 0,
+        "global_threshold_high_s": 0
+      },
+      "solver_finished.json": {
+        "returncode": 0,
+        "reason": null,
+        "wall_s": 0.5063537415117025,
+        "cpu_s": 0.131277,
+        "peak_rss_kib": 40892,
+        "stop": {
+          "schema_version": 1,
+          "reason": "surface_solubility_threshold",
+          "last_accepted_time_s": 0,
+          "accepted_steps": 0,
+          "initial_diagnostics_written": true,
+          "requested_end_s": 454.74354590782804,
+          "surface_threshold_low_s": 0,
+          "surface_threshold_high_s": 0,
+          "global_threshold_low_s": 0,
+          "global_threshold_high_s": 0
+        },
+        "newton_iterations": 0,
+        "linear_iterations": null,
+        "linear_iterations_status": "not emitted by unchanged executable",
+        "failure_or_retry_log_lines": [],
+        "solver_output_bytes": 979667
+      },
+      "finished.json": {
+        "solver": {
+          "returncode": 0,
+          "reason": null,
+          "wall_s": 0.5063537415117025,
+          "cpu_s": 0.131277,
+          "peak_rss_kib": 40892,
+          "stop": {
+            "schema_version": 1,
+            "reason": "surface_solubility_threshold",
+            "last_accepted_time_s": 0,
+            "accepted_steps": 0,
+            "initial_diagnostics_written": true,
+            "requested_end_s": 454.74354590782804,
+            "surface_threshold_low_s": 0,
+            "surface_threshold_high_s": 0,
+            "global_threshold_low_s": 0,
+            "global_threshold_high_s": 0
+          },
+          "newton_iterations": 0,
+          "linear_iterations": null,
+          "linear_iterations_status": "not emitted by unchanged executable",
+          "failure_or_retry_log_lines": [],
+          "solver_output_bytes": 979667
+        },
+        "post_wall_s": 0.1312436256557703,
+        "archive": {
+          "path": "/temp/zhixin/paper2_wp6_execution_20261103_r01/WP6-initial-smoke_fields.tar.gz",
+          "bytes": 102384,
+          "sha256": "97f5ecf71d356c6daa1fc2d07f25e7716250af15b992792e8689ca04f752fbae"
+        },
+        "files": {
+          "worker.log": {
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "bytes": 0
+          },
+          "solver_finished.json": {
+            "sha256": "f15b5948ad6ec1682d3bfa5534031295222556018d4937b6ae7b757444355aad",
+            "bytes": 673
+          },
+          "stop_record.json": {
+            "sha256": "c938264381b2b0fcf043569957c5785ec5e2801fc705d6366604922c5c16629b",
+            "bytes": 330
+          },
+          "solver.log": {
+            "sha256": "865c2119a9523f84b9e278f09aba89d636aabd44149210f9ecffeaa9a67e4c4a",
+            "bytes": 200
+          },
+          "eigenprofile.dat": {
+            "sha256": "d721e605d126e555f92b43200aa73b999ed4e2b61397edd1e98c0d9fddb36575",
+            "bytes": 153788
+          },
+          "WP6-initial-smoke.pvd": {
+            "sha256": "f248937ff5c9b058845c1cecf140034c493f5e61eb4ed9bdc1ebd5f801109a72",
+            "bytes": 219
+          },
+          "transport_metadata.json": {
+            "sha256": "f1e11a9bbc0d9afbab3fae695c0e2627eef18c19652fc84e7d7871c0e5d239f3",
+            "bytes": 1390
+          },
+          "WP6-initial-smoke_sigmatop.csv": {
+            "sha256": "563123631f9064dac1432f323c73c36a818013b5c0987539f92ef58f530027fe",
+            "bytes": 198
+          },
+          "transport_budget.csv": {
+            "sha256": "9719de063de5d25d4e7f35c4ddd7750479dd726d54ccdc2f517eb1623dbaba2d",
+            "bytes": 3098
+          },
+          "weighted_online.csv": {
+            "sha256": "6cd2ad1de9bb8692968617a8ae7f71652c4c1a00bf58833eba2de85060304f37",
+            "bytes": 301
+          },
+          "params.input": {
+            "sha256": "e3fb8dba643cef22b5f4e3f3382838b538672c550b7b9146ceaab721a759dd6a",
+            "bytes": 1288
+          },
+          "started.json": {
+            "sha256": "724714c3b27d2b4e051ee87c2d461633c9612d11b3e992d394978b213b8df29e",
+            "bytes": 498
+          },
+          "plan.json": {
+            "sha256": "51e7bd87385b0b71709741d238689ec9a0fcffd81eea9936450a8fdae6bb8742",
+            "bytes": 552
+          },
+          "surface_events.csv": {
+            "sha256": "898859433ea07e2222910c5012d4d99017aaf1ae17b9592aa6a409bc3fe40f45",
+            "bytes": 345
+          },
+          "post.log": {
+            "sha256": "9159d7659b1b3037e1734b5ffb601419f77087a3f20ead41b39d45704b773a32",
+            "bytes": 1736
+          },
+          "post/independent_checks.json": {
+            "sha256": "c93a048a8947baf2b8c0a5fd0499e1544620ee83e84a8605a686c3bd2273dbe0",
+            "bytes": 2047
+          },
+          "post/representative_fields.npz": {
+            "sha256": "40c3a201e7184d48ab535f00bcf672082546cd4195d4eb8d96da773e84053d3c",
+            "bytes": 4084
+          },
+          "post/field_hashes.json": {
+            "sha256": "5574b3e933ebb9f37a1dc8c602488c37788fa5866fbece8bfe7cc1aeefc1cb13",
+            "bytes": 242
+          },
+          "post/independent_inventories.csv": {
+            "sha256": "002e2b819caa354fc96d8949982c4c07b0ed14bb70a3819ecdb6d6a5d7a94a25",
+            "bytes": 967
+          },
+          "post/profiles.npz": {
+            "sha256": "8afceec5ac3c860558cd930f5fa4bffb5b5951bc8ed072c7b17fd2a03c287aa3",
+            "bytes": 2350
+          },
+          "post/weighted_diagnostics.csv": {
+            "sha256": "025a0987b8b3cce76cd50b450f0f2589dc19fccd47191b2597f451711ac5fe54",
+            "bytes": 429
+          },
+          "post/field_audit.json": {
+            "sha256": "6c1e31c330d652e47591aabda78de7e3d9e3a6c7ea3259bf9efb53d06e0a1921",
+            "bytes": 724
+          }
+        }
+      }
+    }
+  },
+  "manager": {
+    "state": {
+      "active": {},
+      "waiting": [],
+      "finished": {
+        "WP6-crossing-smoke": 0,
+        "WP6-initial-smoke": 0
+      }
+    },
+    "resources": {
+      "cpus": [
+        0,
+        1
+      ],
+      "load": [
+        2.94677734375,
+        3.7060546875,
+        3.99462890625
+      ],
+      "lscpu": "# The following is the parsable format, which can be fed to other\n# programs. Each different item in every column has an unique ID\n# starting usually from zero.\n# CPU,Core,Socket\n0,0,0\n1,1,0\n2,2,0\n3,3,0\n4,4,0\n5,5,0\n6,6,0\n7,7,0\n8,8,0\n9,9,0\n10,10,0\n11,11,0\n12,0,0\n13,1,0\n14,2,0\n15,3,0\n16,4,0\n17,5,0\n18,6,0\n19,7,0\n20,8,0\n21,9,0\n22,10,0\n23,11,0\n"
+    },
+    "finished": {
+      "WP6-crossing-smoke": 0,
+      "WP6-initial-smoke": 0
+    }
+  }
+}

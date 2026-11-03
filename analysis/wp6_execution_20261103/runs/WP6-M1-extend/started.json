@@ -1,0 +1,16 @@
+{
+  "utc": "2026-11-03T16:12:24.735245+00:00",
+  "job": "frodo-managed-WP6-M1-extend",
+  "affinity": [
+    1
+  ],
+  "load": [
+    0.4052734375,
+    2.22998046875,
+    3.3408203125
+  ],
+  "available_memory_bytes": 23844667392,
+  "elf_sha256": "112076759fdff0942000307f729c2bd3c7e96963229b43c1b67c1f12bbf9df81",
+  "postprocessor_sha256": "95acc0de925089f7392081dc854687275cb65573813892ef5f2df09e1b53540c",
+  "launcher_sha256": "2fbe5ca9f2891010c67be135a06bc7d3a48c5b60d98e2a2f150ca4febbf1a672"
+}

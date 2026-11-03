@@ -1,0 +1,136 @@
+--- transport_v1/transportdiagnostics.hh
++++ transport_wp6_v1/transportdiagnostics.hh
+@@ -42,9 +42,11 @@
+     const Problem& problem_;
+     const GG& gg_;
+     GV& gv_;
+-    std::vector<double> dofZ_;
++    std::vector<double> dofZ_, dofX_;
++    std::vector<std::size_t> dofLevel_;
++    std::size_t levelCount_ = 0;
+     std::vector<Region> regions_;
+-    std::ofstream budget_, surface_;
++    std::ofstream budget_, surface_, weighted_;
+     double bottom_, top_, width_, height_, tolerance_, threshold_;
+     double lastTime_ = 0, initialAllSalt_ = 0, previousDirSalt_ = 0;
+     double initialAllWater_ = 0, previousDirWater_ = 0;
+@@ -94,32 +96,42 @@
+             throw std::runtime_error("Invalid geometry or solubility threshold");
+         if (!getParam<bool>("Problem.KrwMualemExponent", false))
+             throw std::runtime_error("Paper 2 requires exponent-form krw");
+-        for (const auto* name : {"transport_budget.csv", "surface_events.csv", "stop_record.json", "transport_metadata.json"})
++        for (const auto* name : {"transport_budget.csv", "surface_events.csv", "stop_record.json", "transport_metadata.json", "weighted_online.csv"})
+             if (std::filesystem::exists(name))
+                 throw std::runtime_error(std::string("Refusing to overwrite diagnostic: ")+name);
+ 
+         std::vector<double> levels;
+-        dofZ_.resize(gg.numDofs());
++        dofZ_.resize(gg.numDofs()); dofX_.resize(gg.numDofs()); dofLevel_.resize(gg.numDofs());
+         for (const auto& v : vertices(gg.gridView())) {
+             const auto z = v.geometry().center()[1];
+             levels.push_back(z); dofZ_[gg.vertexMapper().index(v)] = z;
++            dofX_[gg.vertexMapper().index(v)] = v.geometry().center()[0];
+         }
+         std::sort(levels.begin(), levels.end());
+         levels.erase(std::unique(levels.begin(), levels.end(), [this](double a, double b) {
+             return std::abs(a-b) < tolerance_;
+         }), levels.end());
+         if (levels.size() < 3) throw std::runtime_error("Need at least three vertical vertex layers");
+-        for (double fraction : {0.9, 0.75, 0.5}) {
+-            const double target = bottom_+fraction*height_;
++        levelCount_ = levels.size();
++        for (std::size_t d=0; d<dofZ_.size(); ++d)
++            dofLevel_[d] = std::lower_bound(levels.begin(), levels.end(), dofZ_[d])-levels.begin();
++        const auto lockedCuts = getParam<std::vector<double>>("Transport.CutCoordinates");
++        if (lockedCuts.size()!=7) throw std::runtime_error("WP6 requires seven locked cut coordinates");
++        std::size_t cutIndex=0;
++        for (double fraction : {0.9, 0.75, 0.5, 0.995, 0.99, 0.975, 0.95}) {
++            const double target = lockedCuts[cutIndex++];
+             double best = 0.5*(levels[0]+levels[1]);
+             for (std::size_t i = 1; i+1 < levels.size(); ++i) {
+                 const double candidate = 0.5*(levels[i]+levels[i+1]);
+                 if (std::abs(candidate-target) < std::abs(best-target)) best = candidate;
+             }
++            if (std::abs(best-target)>1e-12) throw std::runtime_error("Locked WP6 cut is not a conservative BOX face");
+             regions_.push_back({"upper_"+std::to_string(fraction), fraction, best});
+         }
+         regions_.push_back({"free_domain", 0.0, 0.5*(levels[0]+levels[1])});
+         budget_.open("transport_budget.csv"); surface_.open("surface_events.csv");
++        weighted_.open("weighted_online.csv"); weighted_ << std::setprecision(17);
++        weighted_ << "step,time_s,weighted_top_mean,weighted_top_sigma,weighted_fourier,weighted_projection,volume_perturbation_rms,harmonic2_top,harmonic3_top,projection_defined\n";
+         budget_ << std::setprecision(17);
+         surface_ << std::setprecision(17);
+         budget_ << "step,time_s,dt_s,region,requested_z_over_H,actual_z_over_H,inventory_salt_m,inventory_initial_salt_m,inventory_water_m,"
+@@ -132,7 +144,7 @@
+                     "top_area_per_unit_thickness_m,surface_threshold_reached,global_threshold_reached\n";
+         std::ofstream meta("transport_metadata.json");
+         meta << std::setprecision(17)
+-             << "{\"schema_version\":1,\"inventory\":\"phi*Sw*x, per horizontal area\","
++             << "{\"schema_version\":2,\"inventory\":\"phi*Sw*x, per horizontal area\","
+                 "\"salt_inventory_unit\":\"m\",\"salt_flux_unit\":\"m/s\","
+                 "\"geometry\":\"2D rectangular BOX, unit out-of-plane thickness\","
+                 "\"time_integration\":\"accepted-step backward Euler endpoint flux\","
+@@ -173,6 +185,7 @@
+         std::vector<Budget> b(regions_.size());
+         double allSalt=0, allWater=0, dirSalt=0, dirWater=0;
+         double topWeighted=0, topArea=0;
++        std::vector<double> topWeight(x.size(),0.0), volumeWeight(x.size(),0.0);
+         double externalSalt=0, externalWater=0;
+         double topMax=-std::numeric_limits<double>::infinity(), domainMax=topMax;
+         double domainMin=std::numeric_limits<double>::infinity(), nodeSum=0;
+@@ -196,6 +209,7 @@
+                 const double salt=storage[1]*scv.volume()/width_;
+                 if (!std::isfinite(salt) || !std::isfinite(water))
+                     throw std::runtime_error("Non-finite control-volume inventory");
++                volumeWeight[scv.dofIndex()]+=scv.volume()/width_;
+                 const double z=dofZ_[scv.dofIndex()];
+                 allSalt+=salt; allWater+=water;
+                 if (std::abs(z-bottom_) < tolerance_) { dirSalt+=salt; dirWater+=water; }
+@@ -217,6 +231,7 @@
+                     }
+                     if (std::abs(face.ipGlobal()[1]-top_) < tolerance_) {
+                         topArea+=face.area(); topWeighted+=face.area()*x[inside.dofIndex()][1];
++                        topWeight[inside.dofIndex()]+=face.area();
+                     }
+                     continue;
+                 }
+@@ -275,6 +290,39 @@
+         surface_ << step_ << ',' << time << ',' << dt << ',' << topWeighted/topArea << ',' << topMax << ',' << domainMax
+                  << ',' << domainMin << ',' << nodeMean << ',' << std::sqrt(variance/nodeCount) << ',' << topArea
+                  << ',' << int(surfaceHigh_>=0) << ',' << int(globalHigh_>=0) << '\n';
++        // Read-only weighted statistics; never enter the physical residual.
++        const double mean=topWeighted/topArea;
++        std::vector<double> rowSum(levelCount_,0.0), rowWeight(levelCount_,0.0);
++        for (std::size_t d=0;d<x.size();++d) {
++            rowSum[dofLevel_[d]]+=volumeWeight[d]*x[d][1];
++            rowWeight[dofLevel_[d]]+=volumeWeight[d];
++        }
++        for (std::size_t l=0;l<levelCount_;++l) rowSum[l]/=rowWeight[l];
++        double wvar=0, re=0, im=0, proj=0, den=0, rms=0, volume=0;
++        std::array<double,2> hre={0,0}, him={0,0};
++        const double k=2*std::acos(-1.0)*problem_.waveNumber()/width_;
++        for (std::size_t d=0;d<x.size();++d) {
++            const double phase=k*(dofX_[d]-gg_.bBoxMin()[0]);
++            const double v=x[d][1]-mean;
++            wvar+=topWeight[d]*v*v; re+=topWeight[d]*v*std::cos(phase); im-=topWeight[d]*v*std::sin(phase);
++            for (std::size_t j=0;j<2;++j) {
++                hre[j]+=topWeight[d]*v*std::cos((j+2)*phase);
++                him[j]-=topWeight[d]*v*std::sin((j+2)*phase);
++            }
++            const double anomaly=x[d][1]-rowSum[dofLevel_[d]];
++            rms+=volumeWeight[d]*anomaly*anomaly; volume+=volumeWeight[d];
++            if (problem_.hasEigenprofile()) {
++                const double basis=problem_.eigenAmplitudeAt(dofZ_[d])*std::cos(phase);
++                proj+=volumeWeight[d]*anomaly*basis; den+=volumeWeight[d]*basis*basis;
++            }
++        }
++        weighted_ << step_ << ',' << time << ',' << mean << ',' << std::sqrt(wvar/topArea)
++                  << ',' << 2*std::hypot(re,im)/width_ << ',';
++        if (den>0) weighted_ << proj/den; // Background projection is undefined, not zero.
++        weighted_ << ',' << std::sqrt(rms/volume)
++                  << ',' << 2*std::hypot(hre[0],him[0])/width_ << ',' << 2*std::hypot(hre[1],him[1])/width_
++                  << ',' << int(den>0) << '\n';
++        weighted_.flush(); checkStream(weighted_);
+         budget_.flush(); surface_.flush(); checkStream(budget_); checkStream(surface_);
+         previousDirSalt_=dirSalt; previousDirWater_=dirWater; lastTime_=time; initialized_=true;
+         writeStop("in_progress_or_interrupted");

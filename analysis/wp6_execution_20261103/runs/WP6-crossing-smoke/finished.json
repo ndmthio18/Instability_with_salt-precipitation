@@ -1,0 +1,124 @@
+{
+  "solver": {
+    "returncode": 0,
+    "reason": null,
+    "wall_s": 0.7097930386662483,
+    "cpu_s": 0.339163,
+    "peak_rss_kib": 45040,
+    "stop": {
+      "schema_version": 1,
+      "reason": "surface_solubility_threshold",
+      "last_accepted_time_s": 227.3717729539139,
+      "accepted_steps": 1,
+      "initial_diagnostics_written": true,
+      "requested_end_s": 454.74354590782804,
+      "surface_threshold_low_s": 0,
+      "surface_threshold_high_s": 227.3717729539139,
+      "global_threshold_low_s": 0,
+      "global_threshold_high_s": 227.3717729539139
+    },
+    "newton_iterations": 3,
+    "linear_iterations": null,
+    "linear_iterations_status": "not emitted by unchanged executable",
+    "failure_or_retry_log_lines": [
+      " -- Newton.RetryTimeStepReductionFactor = 0.5"
+    ],
+    "solver_output_bytes": 1980254
+  },
+  "post_wall_s": 0.15484911762177944,
+  "archive": {
+    "path": "/temp/zhixin/paper2_wp6_execution_20261103_r01/WP6-crossing-smoke_fields.tar.gz",
+    "bytes": 342691,
+    "sha256": "45072fef2efd6df982c5e287fb8408e54213d7677963251e9cd8d3896549033f"
+  },
+  "files": {
+    "worker.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "solver_finished.json": {
+      "sha256": "d4d56c500f58a66ca2389d3e3701a4969501da798bffb4e14a924a18febe3f53",
+      "bytes": 777
+    },
+    "stop_record.json": {
+      "sha256": "54af2015b1aaecb5842cc5bdd4ad75f4f063a16940fc760bf47e60211d9467a5",
+      "bytes": 378
+    },
+    "solver.log": {
+      "sha256": "c5f3829c2058b1f54b8eb6878a440cb057a83ec61927fabc1f49c9f30d054bac",
+      "bytes": 1462
+    },
+    "eigenprofile.dat": {
+      "sha256": "d721e605d126e555f92b43200aa73b999ed4e2b61397edd1e98c0d9fddb36575",
+      "bytes": 153788
+    },
+    "transport_metadata.json": {
+      "sha256": "036b6ac6864e7bcf021bf8d2bb2063c96e0153239761bbcf1262cab672ab5ed5",
+      "bytes": 1390
+    },
+    "transport_budget.csv": {
+      "sha256": "c30f1224b1e53bbac05a76cbcb070b854d9fea4be455ca5fa07834892f33aa8a",
+      "bytes": 7910
+    },
+    "weighted_online.csv": {
+      "sha256": "c3040531f27790e7d59b7e2159797601f34bf94787f86c9f9c3a8eebfd9cbb60",
+      "bytes": 503
+    },
+    "params.input": {
+      "sha256": "fab4f0d161a938c13f6212f436bc0d054ca15f1e041f9004d1646feee03f3c9a",
+      "bytes": 1336
+    },
+    "started.json": {
+      "sha256": "fcb122e203d8f8615398ffcc73396faf112010ec4135356ed364aed627ff93f3",
+      "bytes": 499
+    },
+    "plan.json": {
+      "sha256": "8a25eed21b656b663f689a9b87df388d92921cb8075c1ea0f6a853509e237a9f",
+      "bytes": 553
+    },
+    "WP6-crossing-smoke_sigmatop.csv": {
+      "sha256": "8be0dee0bd991fc3d6ebe26f523e23258d8dfded3a31bb7bccbefb32f18a7358",
+      "bytes": 296
+    },
+    "WP6-crossing-smoke.pvd": {
+      "sha256": "5c1076c5be2be6b6c4f9e4f163bc0b7c0c00527c8b819abacb6b03a2443371dc",
+      "bytes": 313
+    },
+    "surface_events.csv": {
+      "sha256": "d9b1a80cece3c10c65cca5d1c522ff4576b2bf354c7f9e302ebd95b865bb1738",
+      "bytes": 512
+    },
+    "post.log": {
+      "sha256": "a83c9c50e41511407ac7ae0a65f021b672a1bfbdae29d9ef33a43f81c943fa60",
+      "bytes": 2055
+    },
+    "post/independent_checks.json": {
+      "sha256": "3f17f5ed5dd3e0307cf7225404f17d3107aa08061378db79a43ed67d819d26b4",
+      "bytes": 2366
+    },
+    "post/representative_fields.npz": {
+      "sha256": "f121e75fa80a84743af2e375801446e4fc46df21020df52a0f6f8d552a01989d",
+      "bytes": 34635
+    },
+    "post/field_hashes.json": {
+      "sha256": "7e4b7e8f3beeb7577ed17bf989c2af405e306e97a2c142c8838a4d4d20871fac",
+      "bytes": 486
+    },
+    "post/independent_inventories.csv": {
+      "sha256": "c191a9c8bdbcaa7b37c28ba375d931841a458d9aecff7165070549114e722120",
+      "bytes": 1993
+    },
+    "post/profiles.npz": {
+      "sha256": "fa7939e901f95ac382c91233cc94a4036e1392326e371e1572f1a381a5194c92",
+      "bytes": 5059
+    },
+    "post/weighted_diagnostics.csv": {
+      "sha256": "1c3cbf6c7b19dc8c202034917fef1e0835cc5103d05dc8e80fa4fe94e28fe06a",
+      "bytes": 895
+    },
+    "post/field_audit.json": {
+      "sha256": "35d3371714745156910f17534573ce94bc54f73b6411243f523f91ba82aaca1f",
+      "bytes": 742
+    }
+  }
+}

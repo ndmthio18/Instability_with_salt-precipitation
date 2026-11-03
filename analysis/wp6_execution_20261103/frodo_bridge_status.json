@@ -1,0 +1,390 @@
+{
+  "runs": {
+    "WP6-M0-bridge": {
+      "started.json": {
+        "utc": "2026-11-03T16:08:25.204717+00:00",
+        "job": "frodo-managed-WP6-M0-bridge",
+        "affinity": [
+          0
+        ],
+        "load": [
+          2.48193359375,
+          3.51318359375,
+          3.919921875
+        ],
+        "available_memory_bytes": 23666098176,
+        "elf_sha256": "112076759fdff0942000307f729c2bd3c7e96963229b43c1b67c1f12bbf9df81",
+        "postprocessor_sha256": "95acc0de925089f7392081dc854687275cb65573813892ef5f2df09e1b53540c",
+        "launcher_sha256": "2fbe5ca9f2891010c67be135a06bc7d3a48c5b60d98e2a2f150ca4febbf1a672"
+      },
+      "stop_record.json": {
+        "schema_version": 1,
+        "reason": "requested_horizon",
+        "last_accepted_time_s": 136423.0637723484,
+        "accepted_steps": 600,
+        "initial_diagnostics_written": true,
+        "requested_end_s": 136423.0637723484,
+        "surface_threshold_low_s": null,
+        "surface_threshold_high_s": null,
+        "global_threshold_low_s": null,
+        "global_threshold_high_s": null
+      },
+      "solver_finished.json": {
+        "returncode": 0,
+        "reason": null,
+        "wall_s": 85.70242712646723,
+        "cpu_s": 83.098254,
+        "peak_rss_kib": 45088,
+        "stop": {
+          "schema_version": 1,
+          "reason": "requested_horizon",
+          "last_accepted_time_s": 136423.0637723484,
+          "accepted_steps": 600,
+          "initial_diagnostics_written": true,
+          "requested_end_s": 136423.0637723484,
+          "surface_threshold_low_s": null,
+          "surface_threshold_high_s": null,
+          "global_threshold_low_s": null,
+          "global_threshold_high_s": null
+        },
+        "newton_iterations": 1203,
+        "linear_iterations": null,
+        "linear_iterations_status": "not emitted by unchanged executable",
+        "failure_or_retry_log_lines": [
+          " -- Newton.RetryTimeStepReductionFactor = 0.5"
+        ],
+        "solver_output_bytes": 531799043
+      },
+      "finished.json": {
+        "solver": {
+          "returncode": 0,
+          "reason": null,
+          "wall_s": 85.70242712646723,
+          "cpu_s": 83.098254,
+          "peak_rss_kib": 45088,
+          "stop": {
+            "schema_version": 1,
+            "reason": "requested_horizon",
+            "last_accepted_time_s": 136423.0637723484,
+            "accepted_steps": 600,
+            "initial_diagnostics_written": true,
+            "requested_end_s": 136423.0637723484,
+            "surface_threshold_low_s": null,
+            "surface_threshold_high_s": null,
+            "global_threshold_low_s": null,
+            "global_threshold_high_s": null
+          },
+          "newton_iterations": 1203,
+          "linear_iterations": null,
+          "linear_iterations_status": "not emitted by unchanged executable",
+          "failure_or_retry_log_lines": [
+            " -- Newton.RetryTimeStepReductionFactor = 0.5"
+          ],
+          "solver_output_bytes": 531799043
+        },
+        "post_wall_s": 13.60128309763968,
+        "archive": {
+          "path": "/temp/zhixin/paper2_wp6_execution_20261103_r01/WP6-M0-bridge_fields.tar.gz",
+          "bytes": 78323459,
+          "sha256": "e430cc7fa658e6b8c5eef7dcad38bfd49780c81673941f88b5026947e2ba37db"
+        },
+        "files": {
+          "worker.log": {
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "bytes": 0
+          },
+          "solver_finished.json": {
+            "sha256": "343740166424f246de1776c26d7944d648fd3bb69eb83156f5c21c27d587b7e7",
+            "bytes": 752
+          },
+          "stop_record.json": {
+            "sha256": "e6544f78930587bd8607d955a4d751aa59e59ee6b5b26f7fa1ada1b6b108d7c6",
+            "bytes": 348
+          },
+          "WP6-M0-bridge.pvd": {
+            "sha256": "020c982e52aafbddbd773f12c0d99bacf256dcdaafbc8f387cdb366202164457",
+            "bytes": 52770
+          },
+          "solver.log": {
+            "sha256": "0a78042f5c79b0b3efa58f389453025257136e35b08ca22697918c1e59aac23f",
+            "bytes": 353253
+          },
+          "eigenprofile.dat": {
+            "sha256": "d721e605d126e555f92b43200aa73b999ed4e2b61397edd1e98c0d9fddb36575",
+            "bytes": 153788
+          },
+          "transport_metadata.json": {
+            "sha256": "6e25c4ea1bf90bf1a65400f154b0a01e83bf6d9b63d6a343c22c4f04ccce275e",
+            "bytes": 1388
+          },
+          "transport_budget.csv": {
+            "sha256": "306156601a07a17a1533b12075c92e4bf71685a1fff9ed103e53f6f6efc80d0a",
+            "bytes": 2887911
+          },
+          "weighted_online.csv": {
+            "sha256": "f708aa0d4d3a4430be1ef2e4eb0e6085a68633e18ad69f3e6d0194a4eb8a6b4a",
+            "bytes": 97146
+          },
+          "params.input": {
+            "sha256": "e42085e2d309a4afeac54c3fbaef531fa9bd5b6eacd4f76c7d4ffdc5eec6e498",
+            "bytes": 1277
+          },
+          "started.json": {
+            "sha256": "d92de798000211bc2c36eebb24b8009c70af3a2df3d092b46ff121dda1fffeab",
+            "bytes": 493
+          },
+          "plan.json": {
+            "sha256": "fa635be63f03044242c9bdcb9f49252540f1e9207a8fc07e63d264fd79a3b4e6",
+            "bytes": 548
+          },
+          "WP6-M0-bridge_sigmatop.csv": {
+            "sha256": "8b80ec15ef258275367e9af2b65658382f8bb6c3125c173aa594706eec372397",
+            "bytes": 58998
+          },
+          "surface_events.csv": {
+            "sha256": "b1b20f496f083f08d3e0b201e0b8b2240d0f498c44a53873a22825f9735105af",
+            "bytes": 117514
+          },
+          "post.log": {
+            "sha256": "2e1c3e424a45ff7539ad8f1a2a89b5c90d4c3c83f0c9eca465ac0a79bc90cdc8",
+            "bytes": 2032
+          },
+          "post/independent_checks.json": {
+            "sha256": "65c541bc941f3b351a04559589c8684d5a20aa8f89d34a1fee00fff65f9f4f67",
+            "bytes": 2343
+          },
+          "post/representative_fields.npz": {
+            "sha256": "e89c24d018bc90b0f3227712c8f92bce73d4fbaf3f0aca420657bdbbad250e5f",
+            "bytes": 18689
+          },
+          "post/field_hashes.json": {
+            "sha256": "07d00c02709b7082d880ffab4784d2aadb6311ad4efdbbc83a746c421d37b1a5",
+            "bytes": 140526
+          },
+          "post/independent_inventories.csv": {
+            "sha256": "cf65024cddadfa6714daec5018306979ff87f6019bb4735d27d71c2253893a59",
+            "bytes": 613056
+          },
+          "post/profiles.npz": {
+            "sha256": "83d84975b8418305766b3ed2833f3a03896ab2f1630d25a421d593c03001ad1a",
+            "bytes": 591776
+          },
+          "post/weighted_diagnostics.csv": {
+            "sha256": "34e5d37a28ab6f0d092e9aba4a341f49df13ea460a1120fbef48f510076032c2",
+            "bytes": 190801
+          },
+          "post/field_audit.json": {
+            "sha256": "766d99617b8331854fe8d15b39a8b213cc58826e0583262c9673cd61f65ac7b8",
+            "bytes": 726
+          }
+        }
+      }
+    },
+    "WP6-M1-bridge": {
+      "started.json": {
+        "utc": "2026-11-03T16:08:25.204717+00:00",
+        "job": "frodo-managed-WP6-M1-bridge",
+        "affinity": [
+          1
+        ],
+        "load": [
+          2.48193359375,
+          3.51318359375,
+          3.919921875
+        ],
+        "available_memory_bytes": 23666098176,
+        "elf_sha256": "112076759fdff0942000307f729c2bd3c7e96963229b43c1b67c1f12bbf9df81",
+        "postprocessor_sha256": "95acc0de925089f7392081dc854687275cb65573813892ef5f2df09e1b53540c",
+        "launcher_sha256": "2fbe5ca9f2891010c67be135a06bc7d3a48c5b60d98e2a2f150ca4febbf1a672"
+      },
+      "stop_record.json": {
+        "schema_version": 1,
+        "reason": "requested_horizon",
+        "last_accepted_time_s": 136423.0637723484,
+        "accepted_steps": 600,
+        "initial_diagnostics_written": true,
+        "requested_end_s": 136423.0637723484,
+        "surface_threshold_low_s": null,
+        "surface_threshold_high_s": null,
+        "global_threshold_low_s": null,
+        "global_threshold_high_s": null
+      },
+      "solver_finished.json": {
+        "returncode": 0,
+        "reason": null,
+        "wall_s": 86.55907011963427,
+        "cpu_s": 83.613304,
+        "peak_rss_kib": 44956,
+        "stop": {
+          "schema_version": 1,
+          "reason": "requested_horizon",
+          "last_accepted_time_s": 136423.0637723484,
+          "accepted_steps": 600,
+          "initial_diagnostics_written": true,
+          "requested_end_s": 136423.0637723484,
+          "surface_threshold_low_s": null,
+          "surface_threshold_high_s": null,
+          "global_threshold_low_s": null,
+          "global_threshold_high_s": null
+        },
+        "newton_iterations": 1204,
+        "linear_iterations": null,
+        "linear_iterations_status": "not emitted by unchanged executable",
+        "failure_or_retry_log_lines": [
+          " -- Newton.RetryTimeStepReductionFactor = 0.5"
+        ],
+        "solver_output_bytes": 554484103
+      },
+      "finished.json": {
+        "solver": {
+          "returncode": 0,
+          "reason": null,
+          "wall_s": 86.55907011963427,
+          "cpu_s": 83.613304,
+          "peak_rss_kib": 44956,
+          "stop": {
+            "schema_version": 1,
+            "reason": "requested_horizon",
+            "last_accepted_time_s": 136423.0637723484,
+            "accepted_steps": 600,
+            "initial_diagnostics_written": true,
+            "requested_end_s": 136423.0637723484,
+            "surface_threshold_low_s": null,
+            "surface_threshold_high_s": null,
+            "global_threshold_low_s": null,
+            "global_threshold_high_s": null
+          },
+          "newton_iterations": 1204,
+          "linear_iterations": null,
+          "linear_iterations_status": "not emitted by unchanged executable",
+          "failure_or_retry_log_lines": [
+            " -- Newton.RetryTimeStepReductionFactor = 0.5"
+          ],
+          "solver_output_bytes": 554484103
+        },
+        "post_wall_s": 14.503319585695863,
+        "archive": {
+          "path": "/temp/zhixin/paper2_wp6_execution_20261103_r01/WP6-M1-bridge_fields.tar.gz",
+          "bytes": 116584225,
+          "sha256": "0ed7da7c04539cbf7850a8a101ff6a73ca709bb836ee08bbbf7707c403905cbe"
+        },
+        "files": {
+          "WP6-M1-bridge_sigmatop.csv": {
+            "sha256": "652630f850e19fb6380d6791bf404f0f63a81ba2d57f50749f7d34d476a4860c",
+            "bytes": 58998
+          },
+          "worker.log": {
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "bytes": 0
+          },
+          "solver_finished.json": {
+            "sha256": "442eaf209246c56322b838dfdc9c7db2acfb1655ac9dfce75dcd195851762a06",
+            "bytes": 752
+          },
+          "stop_record.json": {
+            "sha256": "e6544f78930587bd8607d955a4d751aa59e59ee6b5b26f7fa1ada1b6b108d7c6",
+            "bytes": 348
+          },
+          "solver.log": {
+            "sha256": "75c64af9f7547dc663cbe56c72aa199bf8771bae163293f9c16d1722d69e6c88",
+            "bytes": 353401
+          },
+          "eigenprofile.dat": {
+            "sha256": "d721e605d126e555f92b43200aa73b999ed4e2b61397edd1e98c0d9fddb36575",
+            "bytes": 153788
+          },
+          "transport_metadata.json": {
+            "sha256": "6e25c4ea1bf90bf1a65400f154b0a01e83bf6d9b63d6a343c22c4f04ccce275e",
+            "bytes": 1388
+          },
+          "transport_budget.csv": {
+            "sha256": "409c47f02ede1a21c17743db06a11c370a703ce885b88bd1943d6d2631744236",
+            "bytes": 2900946
+          },
+          "WP6-M1-bridge.pvd": {
+            "sha256": "66e84febed75c4a7aba92719e9d26cde307f1448247e9c14e4aa07ead3c088de",
+            "bytes": 52770
+          },
+          "weighted_online.csv": {
+            "sha256": "557c75dc723225c88da9e615cbadb781eb98327b4af6fa76397c6174cc4d822f",
+            "bytes": 110254
+          },
+          "params.input": {
+            "sha256": "659ddd755317caf80ecba6f9648357cff61524e1baa74039e7655a99771a8449",
+            "bytes": 1326
+          },
+          "started.json": {
+            "sha256": "43feadd83fa4947dcf8b1451c4b28dadb924882462cf78dc73ed8d1d60691866",
+            "bytes": 493
+          },
+          "plan.json": {
+            "sha256": "69a0a68082b22fcef9175a1fea96d3d0fc7909a01563f3ea3f0921e391ed3317",
+            "bytes": 548
+          },
+          "surface_events.csv": {
+            "sha256": "0b10f6a704daf399b0c62fabf19f84b12c957231c132db607a8c0fd710352290",
+            "bytes": 117461
+          },
+          "post.log": {
+            "sha256": "49965bd049698b2268f7b7ad3eedde6b1e3c395a638634e578c02e9c7247c97b",
+            "bytes": 2055
+          },
+          "post/independent_checks.json": {
+            "sha256": "a3d7479b943ddafa6e562ff7fd2a785fe4fef2b5c93e2e6de5a467b5dd509467",
+            "bytes": 2366
+          },
+          "post/representative_fields.npz": {
+            "sha256": "899b65712167c59b85681cab357249aa7b237f3b973e0e80cb52b74a8e226c0e",
+            "bytes": 55086
+          },
+          "post/field_hashes.json": {
+            "sha256": "0140113e9614967061f52646f9dd913e38541ccb064235766707ca929fbad41b",
+            "bytes": 140526
+          },
+          "post/independent_inventories.csv": {
+            "sha256": "5bc572faa1f1e841d1d178cc36778770d5fa9aa03c9b1709675ab1ef1951a2d4",
+            "bytes": 612827
+          },
+          "post/profiles.npz": {
+            "sha256": "2d68c1f6b1b944fe2573238335107b01cff4ff75b677abac9f088d9d157c1294",
+            "bytes": 865167
+          },
+          "post/weighted_diagnostics.csv": {
+            "sha256": "4e51486940ab73fa851bcaa946c74133dcfa870fa97d0c12a1e7e9a96abcb495",
+            "bytes": 213589
+          },
+          "post/field_audit.json": {
+            "sha256": "aac78d48232933a8edc04647661605185d9331458e69e7987dfee9bfb295f7d6",
+            "bytes": 744
+          }
+        }
+      }
+    }
+  },
+  "manager": {
+    "state": {
+      "active": {},
+      "waiting": [],
+      "finished": {
+        "WP6-M0-bridge": 0,
+        "WP6-M1-bridge": 0
+      }
+    },
+    "resources": {
+      "cpus": [
+        0,
+        1
+      ],
+      "load": [
+        2.48193359375,
+        3.51318359375,
+        3.919921875
+      ],
+      "lscpu": "# The following is the parsable format, which can be fed to other\n# programs. Each different item in every column has an unique ID\n# starting usually from zero.\n# CPU,Core,Socket\n0,0,0\n1,1,0\n2,2,0\n3,3,0\n4,4,0\n5,5,0\n6,6,0\n7,7,0\n8,8,0\n9,9,0\n10,10,0\n11,11,0\n12,0,0\n13,1,0\n14,2,0\n15,3,0\n16,4,0\n17,5,0\n18,6,0\n19,7,0\n20,8,0\n21,9,0\n22,10,0\n23,11,0\n"
+    },
+    "finished": {
+      "WP6-M0-bridge": 0,
+      "WP6-M1-bridge": 0
+    }
+  }
+}

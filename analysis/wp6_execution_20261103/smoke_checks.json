@@ -1,0 +1,13 @@
+{
+  "checks": {
+    "initial/returncode": true,
+    "initial/first_crossing_stop": true,
+    "initial/independent_budgets": true,
+    "initial/threshold_bracket": true,
+    "crossing/returncode": true,
+    "crossing/first_crossing_stop": true,
+    "crossing/independent_budgets": true,
+    "crossing/threshold_bracket": true
+  },
+  "passed": true
+}

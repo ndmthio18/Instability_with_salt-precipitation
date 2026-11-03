@@ -1,0 +1,390 @@
+{
+  "runs": {
+    "WP6-M0-extend": {
+      "started.json": {
+        "utc": "2026-11-03T16:12:24.735246+00:00",
+        "job": "frodo-managed-WP6-M0-extend",
+        "affinity": [
+          0
+        ],
+        "load": [
+          0.4052734375,
+          2.22998046875,
+          3.3408203125
+        ],
+        "available_memory_bytes": 23844667392,
+        "elf_sha256": "112076759fdff0942000307f729c2bd3c7e96963229b43c1b67c1f12bbf9df81",
+        "postprocessor_sha256": "95acc0de925089f7392081dc854687275cb65573813892ef5f2df09e1b53540c",
+        "launcher_sha256": "2fbe5ca9f2891010c67be135a06bc7d3a48c5b60d98e2a2f150ca4febbf1a672"
+      },
+      "stop_record.json": {
+        "schema_version": 1,
+        "reason": "requested_horizon",
+        "last_accepted_time_s": 272846.1275446968,
+        "accepted_steps": 1200,
+        "initial_diagnostics_written": true,
+        "requested_end_s": 272846.1275446968,
+        "surface_threshold_low_s": null,
+        "surface_threshold_high_s": null,
+        "global_threshold_low_s": null,
+        "global_threshold_high_s": null
+      },
+      "solver_finished.json": {
+        "returncode": 0,
+        "reason": null,
+        "wall_s": 187.7386285495013,
+        "cpu_s": 161.224394,
+        "peak_rss_kib": 45096,
+        "stop": {
+          "schema_version": 1,
+          "reason": "requested_horizon",
+          "last_accepted_time_s": 272846.1275446968,
+          "accepted_steps": 1200,
+          "initial_diagnostics_written": true,
+          "requested_end_s": 272846.1275446968,
+          "surface_threshold_low_s": null,
+          "surface_threshold_high_s": null,
+          "global_threshold_low_s": null,
+          "global_threshold_high_s": null
+        },
+        "newton_iterations": 2403,
+        "linear_iterations": null,
+        "linear_iterations_status": "not emitted by unchanged executable",
+        "failure_or_retry_log_lines": [
+          " -- Newton.RetryTimeStepReductionFactor = 0.5"
+        ],
+        "solver_output_bytes": 1067157190
+      },
+      "finished.json": {
+        "solver": {
+          "returncode": 0,
+          "reason": null,
+          "wall_s": 187.7386285495013,
+          "cpu_s": 161.224394,
+          "peak_rss_kib": 45096,
+          "stop": {
+            "schema_version": 1,
+            "reason": "requested_horizon",
+            "last_accepted_time_s": 272846.1275446968,
+            "accepted_steps": 1200,
+            "initial_diagnostics_written": true,
+            "requested_end_s": 272846.1275446968,
+            "surface_threshold_low_s": null,
+            "surface_threshold_high_s": null,
+            "global_threshold_low_s": null,
+            "global_threshold_high_s": null
+          },
+          "newton_iterations": 2403,
+          "linear_iterations": null,
+          "linear_iterations_status": "not emitted by unchanged executable",
+          "failure_or_retry_log_lines": [
+            " -- Newton.RetryTimeStepReductionFactor = 0.5"
+          ],
+          "solver_output_bytes": 1067157190
+        },
+        "post_wall_s": 32.92513122037053,
+        "archive": {
+          "path": "/temp/zhixin/paper2_wp6_execution_20261103_r01/WP6-M0-extend_fields.tar.gz",
+          "bytes": 159128730,
+          "sha256": "e666675f416a91649a375b7d15cb247c4b9842bba5918741be3cc84a63a13b64"
+        },
+        "files": {
+          "worker.log": {
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "bytes": 0
+          },
+          "solver_finished.json": {
+            "sha256": "beda15879758f07cd35975c961ba674c6c8cdfa36cb61b9cbb3ad042161b5d69",
+            "bytes": 755
+          },
+          "stop_record.json": {
+            "sha256": "47575de060bed63a9d6005ecec81434b3e96a23bbb4c9359296c31a4698d7f34",
+            "bytes": 351
+          },
+          "WP6-M0-extend_sigmatop.csv": {
+            "sha256": "5754c91bf65448871c25b718ce9ef26e147ae0b7289b0faf516b65f607b09333",
+            "bytes": 117798
+          },
+          "solver.log": {
+            "sha256": "b0f3d4385523e9bb7569dfa4d3343154c1ef24d738a8aa8d0983135c8930143e",
+            "bytes": 707736
+          },
+          "eigenprofile.dat": {
+            "sha256": "d721e605d126e555f92b43200aa73b999ed4e2b61397edd1e98c0d9fddb36575",
+            "bytes": 153788
+          },
+          "transport_metadata.json": {
+            "sha256": "6e25c4ea1bf90bf1a65400f154b0a01e83bf6d9b63d6a343c22c4f04ccce275e",
+            "bytes": 1388
+          },
+          "transport_budget.csv": {
+            "sha256": "f3040e871046631b22f14a3ea0f3cbc42b3255b8ade1d4c2d333f66684366167",
+            "bytes": 5774644
+          },
+          "weighted_online.csv": {
+            "sha256": "0cca31e193257eec342b0f4e8d5f6df621f4f20fc7ee1e21a65c9e24f122d17c",
+            "bytes": 194064
+          },
+          "params.input": {
+            "sha256": "65b33f57bf4e58aeb0061753bc6cfda76e2cd653e966902a05534badc7d16bc7",
+            "bytes": 1277
+          },
+          "started.json": {
+            "sha256": "dca2b7ec5fe53b2890b8588fe402e567cb5d95fcf412ade042ef66353304cd23",
+            "bytes": 493
+          },
+          "plan.json": {
+            "sha256": "f5714c36704aa280248a2f95ecf6556594edf537702c2278a02aea2b234ae21a",
+            "bytes": 548
+          },
+          "surface_events.csv": {
+            "sha256": "770d3b82fc6f19764e28a737961c55eb6f4a49e9de2bcd15c49fa19e26b73fbc",
+            "bytes": 234311
+          },
+          "WP6-M0-extend.pvd": {
+            "sha256": "a0b40a311481886054588981adbaa97cdc7a68a3e7478207b7bffca7905d4ff9",
+            "bytes": 104970
+          },
+          "post.log": {
+            "sha256": "c09361b141f078380dde697750d90f998f3c1cc37975c51e80592430bdecf33f",
+            "bytes": 2032
+          },
+          "post/independent_checks.json": {
+            "sha256": "a054e1d66cf4637c152c31b4cefb8470d16d6c2d896d9e5809a4a2c7307e4949",
+            "bytes": 2343
+          },
+          "post/representative_fields.npz": {
+            "sha256": "49bbbb3f587cd70fe0bcabaefcc840bee481ad71ed82b9e94b871830b74d751a",
+            "bytes": 20533
+          },
+          "post/field_hashes.json": {
+            "sha256": "d26fc1cfd4cc08140ba8d33ac586c65b9d40ebe3189ef4b380d9e22d9b158139",
+            "bytes": 281127
+          },
+          "post/independent_inventories.csv": {
+            "sha256": "7a2aa6da8bd8060d09b0ea0c2e6420ffb4058c68b5eb66cb20247e2e28103f69",
+            "bytes": 1228251
+          },
+          "post/profiles.npz": {
+            "sha256": "3f0f6296eee619ed4de7e66fe69a31863d05545c0104306aabb1e3af154408d0",
+            "bytes": 1372093
+          },
+          "post/weighted_diagnostics.csv": {
+            "sha256": "03798cb42b34b2e4d9d01b5a72fe0a5a7e9bfdddf135b969d4ba7be8f6787442",
+            "bytes": 382372
+          },
+          "post/field_audit.json": {
+            "sha256": "d4b6e7eafe61075600284e419402a197595ea7e91104bf4e62ab8c054022c05f",
+            "bytes": 727
+          }
+        }
+      }
+    },
+    "WP6-M1-extend": {
+      "started.json": {
+        "utc": "2026-11-03T16:12:24.735245+00:00",
+        "job": "frodo-managed-WP6-M1-extend",
+        "affinity": [
+          1
+        ],
+        "load": [
+          0.4052734375,
+          2.22998046875,
+          3.3408203125
+        ],
+        "available_memory_bytes": 23844667392,
+        "elf_sha256": "112076759fdff0942000307f729c2bd3c7e96963229b43c1b67c1f12bbf9df81",
+        "postprocessor_sha256": "95acc0de925089f7392081dc854687275cb65573813892ef5f2df09e1b53540c",
+        "launcher_sha256": "2fbe5ca9f2891010c67be135a06bc7d3a48c5b60d98e2a2f150ca4febbf1a672"
+      },
+      "stop_record.json": {
+        "schema_version": 1,
+        "reason": "requested_horizon",
+        "last_accepted_time_s": 272846.1275446968,
+        "accepted_steps": 1200,
+        "initial_diagnostics_written": true,
+        "requested_end_s": 272846.1275446968,
+        "surface_threshold_low_s": null,
+        "surface_threshold_high_s": null,
+        "global_threshold_low_s": null,
+        "global_threshold_high_s": null
+      },
+      "solver_finished.json": {
+        "returncode": 0,
+        "reason": null,
+        "wall_s": 188.6385479066521,
+        "cpu_s": 161.327965,
+        "peak_rss_kib": 45044,
+        "stop": {
+          "schema_version": 1,
+          "reason": "requested_horizon",
+          "last_accepted_time_s": 272846.1275446968,
+          "accepted_steps": 1200,
+          "initial_diagnostics_written": true,
+          "requested_end_s": 272846.1275446968,
+          "surface_threshold_low_s": null,
+          "surface_threshold_high_s": null,
+          "global_threshold_low_s": null,
+          "global_threshold_high_s": null
+        },
+        "newton_iterations": 2404,
+        "linear_iterations": null,
+        "linear_iterations_status": "not emitted by unchanged executable",
+        "failure_or_retry_log_lines": [
+          " -- Newton.RetryTimeStepReductionFactor = 0.5"
+        ],
+        "solver_output_bytes": 1105669440
+      },
+      "finished.json": {
+        "solver": {
+          "returncode": 0,
+          "reason": null,
+          "wall_s": 188.6385479066521,
+          "cpu_s": 161.327965,
+          "peak_rss_kib": 45044,
+          "stop": {
+            "schema_version": 1,
+            "reason": "requested_horizon",
+            "last_accepted_time_s": 272846.1275446968,
+            "accepted_steps": 1200,
+            "initial_diagnostics_written": true,
+            "requested_end_s": 272846.1275446968,
+            "surface_threshold_low_s": null,
+            "surface_threshold_high_s": null,
+            "global_threshold_low_s": null,
+            "global_threshold_high_s": null
+          },
+          "newton_iterations": 2404,
+          "linear_iterations": null,
+          "linear_iterations_status": "not emitted by unchanged executable",
+          "failure_or_retry_log_lines": [
+            " -- Newton.RetryTimeStepReductionFactor = 0.5"
+          ],
+          "solver_output_bytes": 1105669440
+        },
+        "post_wall_s": 38.16429653018713,
+        "archive": {
+          "path": "/temp/zhixin/paper2_wp6_execution_20261103_r01/WP6-M1-extend_fields.tar.gz",
+          "bytes": 234797540,
+          "sha256": "9d9b307d60999e4fedb201a04f3d276e4f3b512768f69819c8699a7679c256f2"
+        },
+        "files": {
+          "worker.log": {
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "bytes": 0
+          },
+          "solver_finished.json": {
+            "sha256": "9726e36055fe11ff34ffd2dd2bb2f079988ec9883d12f283c4ce89b75f3994c3",
+            "bytes": 755
+          },
+          "stop_record.json": {
+            "sha256": "47575de060bed63a9d6005ecec81434b3e96a23bbb4c9359296c31a4698d7f34",
+            "bytes": 351
+          },
+          "solver.log": {
+            "sha256": "f4fad3867c52053306f465328208d38be945e44ffb8a230d78158784f33d0532",
+            "bytes": 707939
+          },
+          "eigenprofile.dat": {
+            "sha256": "d721e605d126e555f92b43200aa73b999ed4e2b61397edd1e98c0d9fddb36575",
+            "bytes": 153788
+          },
+          "WP6-M1-extend.pvd": {
+            "sha256": "d0ed186453c0df2d20a2f930fb8b2d28d83c68831ff92fb773779214b4a3f8d5",
+            "bytes": 104970
+          },
+          "transport_metadata.json": {
+            "sha256": "6e25c4ea1bf90bf1a65400f154b0a01e83bf6d9b63d6a343c22c4f04ccce275e",
+            "bytes": 1388
+          },
+          "transport_budget.csv": {
+            "sha256": "61765921940e1ed62bc7d81b30456838655010e75f30e519367152000798a594",
+            "bytes": 5800026
+          },
+          "weighted_online.csv": {
+            "sha256": "75392764d59e54ba521c918b9780699e74ec1bf73d6a7954584594511e7d28c0",
+            "bytes": 220300
+          },
+          "params.input": {
+            "sha256": "ef33111b035c7d1d94898d7109e66099879817b742f72b7ecc0efd9e936760cf",
+            "bytes": 1326
+          },
+          "started.json": {
+            "sha256": "0e450e1132ca63cf964f9fa389e6af9d70e0c7c89067cf59743eb08ec4216fa0",
+            "bytes": 493
+          },
+          "plan.json": {
+            "sha256": "200668bcc117e09e075c9d451b5b75f65431dd14018d6695284c6de22bdd3d5a",
+            "bytes": 548
+          },
+          "WP6-M1-extend_sigmatop.csv": {
+            "sha256": "007e91034b3cac2d11ed0739b3bac0f922874e7f7ea58ba47c97bc8592ae5f8f",
+            "bytes": 117798
+          },
+          "surface_events.csv": {
+            "sha256": "d977b686d9445fcbf24b422416d16cfc92f27e7bb85f72d196416b5588184890",
+            "bytes": 234202
+          },
+          "post.log": {
+            "sha256": "1d609a28932a6c2b3612858e23f32e88320e3396be967f145c5ce83d7970e264",
+            "bytes": 2057
+          },
+          "post/independent_checks.json": {
+            "sha256": "e99b9ca4f6659f71135ef9f6605db19e3777743ca5090790390fa312eb0a75cd",
+            "bytes": 2368
+          },
+          "post/representative_fields.npz": {
+            "sha256": "c07c3747e2832864cff31f5c3924821afcf94bf88f1c7cf95c3c0d457809f62d",
+            "bytes": 56675
+          },
+          "post/field_hashes.json": {
+            "sha256": "87a703bb45e312e8d46abfa3735eb0d75ed03811653e68ddffeda4dad943aabe",
+            "bytes": 281127
+          },
+          "post/independent_inventories.csv": {
+            "sha256": "e7442205fe57d3ca98075f35ce11fc6b922f97a3f9e59551b81f9854ba818004",
+            "bytes": 1227841
+          },
+          "post/profiles.npz": {
+            "sha256": "f58e904e3e4a9715ff393a045e051d22916d335cc594e3f4915c579f500ff42c",
+            "bytes": 1790524
+          },
+          "post/weighted_diagnostics.csv": {
+            "sha256": "93445cbc05958443a97a8c7f7b394dd892f671a35e66a7de43570c21b1dd7118",
+            "bytes": 428333
+          },
+          "post/field_audit.json": {
+            "sha256": "b1baefcfa5388d412bd623c553e2baf8f7b2ae2e1e1c7f9bac0cd5e25a0bc06c",
+            "bytes": 745
+          }
+        }
+      }
+    }
+  },
+  "manager": {
+    "state": {
+      "active": {},
+      "waiting": [],
+      "finished": {
+        "WP6-M0-extend": 0,
+        "WP6-M1-extend": 0
+      }
+    },
+    "resources": {
+      "cpus": [
+        0,
+        1
+      ],
+      "load": [
+        0.4052734375,
+        2.22998046875,
+        3.3408203125
+      ],
+      "lscpu": "# The following is the parsable format, which can be fed to other\n# programs. Each different item in every column has an unique ID\n# starting usually from zero.\n# CPU,Core,Socket\n0,0,0\n1,1,0\n2,2,0\n3,3,0\n4,4,0\n5,5,0\n6,6,0\n7,7,0\n8,8,0\n9,9,0\n10,10,0\n11,11,0\n12,0,0\n13,1,0\n14,2,0\n15,3,0\n16,4,0\n17,5,0\n18,6,0\n19,7,0\n20,8,0\n21,9,0\n22,10,0\n23,11,0\n"
+    },
+    "finished": {
+      "WP6-M0-extend": 0,
+      "WP6-M1-extend": 0
+    }
+  }
+}

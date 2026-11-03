@@ -1,0 +1,24 @@
+{
+  "returncode": 0,
+  "reason": null,
+  "wall_s": 0.5063537415117025,
+  "cpu_s": 0.131277,
+  "peak_rss_kib": 40892,
+  "stop": {
+    "schema_version": 1,
+    "reason": "surface_solubility_threshold",
+    "last_accepted_time_s": 0,
+    "accepted_steps": 0,
+    "initial_diagnostics_written": true,
+    "requested_end_s": 454.74354590782804,
+    "surface_threshold_low_s": 0,
+    "surface_threshold_high_s": 0,
+    "global_threshold_low_s": 0,
+    "global_threshold_high_s": 0
+  },
+  "newton_iterations": 0,
+  "linear_iterations": null,
+  "linear_iterations_status": "not emitted by unchanged executable",
+  "failure_or_retry_log_lines": [],
+  "solver_output_bytes": 979667
+}

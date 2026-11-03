@@ -1,0 +1,5 @@
+{
+  "stage": "before any WP6 solver launch",
+  "error": "Remote staging Python wrapper string had unescaped newline; parse failed before executing any statement",
+  "fix": "raw-string staging payload; no solver or physical changes"
+}

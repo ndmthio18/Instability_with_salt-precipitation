@@ -1,0 +1,63 @@
+{
+  "frames": 601,
+  "max_inventory_salt_difference_m": 6.5865281978494394e-18,
+  "max_inventory_water_difference_m": 1.547373340571312e-15,
+  "online_absolute_errors": {
+    "weighted_top_mean": 2.0816681711721685e-17,
+    "weighted_top_sigma": 1.6049897921929703e-17,
+    "weighted_fourier": 2.269878892052074e-17,
+    "weighted_projection": 8.44407145117812e-18
+  },
+  "independent_budgets": {
+    "upper_0.900000": {
+      "salt_closure_m": 1.8922980739457087e-17,
+      "water_closure_m": 5.2465563801275e-15,
+      "cumulative_salt_reintegration_error": 0.0,
+      "cumulative_water_reintegration_error": 0.0
+    },
+    "upper_0.750000": {
+      "salt_closure_m": 3.2155170622786156e-17,
+      "water_closure_m": 8.918689846029596e-15,
+      "cumulative_salt_reintegration_error": 0.0,
+      "cumulative_water_reintegration_error": 0.0
+    },
+    "upper_0.500000": {
+      "salt_closure_m": 2.0941195554968067e-17,
+      "water_closure_m": 5.808446273600481e-15,
+      "cumulative_salt_reintegration_error": 0.0,
+      "cumulative_water_reintegration_error": 0.0
+    },
+    "upper_0.995000": {
+      "salt_closure_m": 1.0935280052347743e-16,
+      "water_closure_m": 1.9267314587941435e-14,
+      "cumulative_salt_reintegration_error": 0.0,
+      "cumulative_water_reintegration_error": 0.0
+    },
+    "upper_0.990000": {
+      "salt_closure_m": 3.9617425008978135e-17,
+      "water_closure_m": 1.0293473407629597e-14,
+      "cumulative_salt_reintegration_error": 0.0,
+      "cumulative_water_reintegration_error": 0.0
+    },
+    "upper_0.975000": {
+      "salt_closure_m": 2.6164000707738083e-17,
+      "water_closure_m": 7.205233779171568e-15,
+      "cumulative_salt_reintegration_error": 0.0,
+      "cumulative_water_reintegration_error": 0.0
+    },
+    "upper_0.950000": {
+      "salt_closure_m": 2.4531768218379046e-17,
+      "water_closure_m": 6.792935727535209e-15,
+      "cumulative_salt_reintegration_error": 0.0,
+      "cumulative_water_reintegration_error": 0.0
+    },
+    "free_domain": {
+      "salt_closure_m": 1.814683386197613e-17,
+      "water_closure_m": 5.064564998662809e-15,
+      "cumulative_salt_reintegration_error": 0.0,
+      "cumulative_water_reintegration_error": 0.0
+    }
+  },
+  "scope": "independent VTU storage + independent integration of recorded conservative flux; not a second flux-kernel implementation",
+  "passed": true
+}

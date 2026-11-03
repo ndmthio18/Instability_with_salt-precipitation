@@ -1,0 +1,33 @@
+{
+  "id": "20261103-A01",
+  "created_utc": "2026-11-03T16:06:20.650032+00:00",
+  "authority": "command/7.md",
+  "prior_commit": "314d75d9e96be24ee956b5677cb22c8e7bc0b989",
+  "frozen_preregistration_sha256": "50a6b5fd01015bd9921c9fc0b7e2dfd9697bb7c4ad54f9b6d118e34bca27521c",
+  "authorized_stages": [
+    "two micro event fixtures",
+    "T bridge M0/M1",
+    "2T M0/M1 if bridge passes"
+  ],
+  "forbidden": [
+    "4T",
+    "8T",
+    "full domain",
+    "multiwavelength execution",
+    "nx60 execution"
+  ],
+  "diagnostic_schema": 2,
+  "cut_coordinates": [
+    0.17990308120412202,
+    0.1504563517791035,
+    0.1001063811357248,
+    0.19897112943781048,
+    0.1980519919465355,
+    0.19495794272294398,
+    0.190132317904874
+  ],
+  "elf_sha256": "112076759fdff0942000307f729c2bd3c7e96963229b43c1b67c1f12bbf9df81",
+  "per_leg_wall_s": 43200,
+  "reference_restoration": "hash-verified original field archives; regenerate ignored cache only",
+  "immutable_plan_policy": "default verification; recreation only in fresh tmp directory; changes require dated amendment"
+}

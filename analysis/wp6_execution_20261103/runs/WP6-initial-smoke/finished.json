@@ -1,0 +1,122 @@
+{
+  "solver": {
+    "returncode": 0,
+    "reason": null,
+    "wall_s": 0.5063537415117025,
+    "cpu_s": 0.131277,
+    "peak_rss_kib": 40892,
+    "stop": {
+      "schema_version": 1,
+      "reason": "surface_solubility_threshold",
+      "last_accepted_time_s": 0,
+      "accepted_steps": 0,
+      "initial_diagnostics_written": true,
+      "requested_end_s": 454.74354590782804,
+      "surface_threshold_low_s": 0,
+      "surface_threshold_high_s": 0,
+      "global_threshold_low_s": 0,
+      "global_threshold_high_s": 0
+    },
+    "newton_iterations": 0,
+    "linear_iterations": null,
+    "linear_iterations_status": "not emitted by unchanged executable",
+    "failure_or_retry_log_lines": [],
+    "solver_output_bytes": 979667
+  },
+  "post_wall_s": 0.1312436256557703,
+  "archive": {
+    "path": "/temp/zhixin/paper2_wp6_execution_20261103_r01/WP6-initial-smoke_fields.tar.gz",
+    "bytes": 102384,
+    "sha256": "97f5ecf71d356c6daa1fc2d07f25e7716250af15b992792e8689ca04f752fbae"
+  },
+  "files": {
+    "worker.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "solver_finished.json": {
+      "sha256": "f15b5948ad6ec1682d3bfa5534031295222556018d4937b6ae7b757444355aad",
+      "bytes": 673
+    },
+    "stop_record.json": {
+      "sha256": "c938264381b2b0fcf043569957c5785ec5e2801fc705d6366604922c5c16629b",
+      "bytes": 330
+    },
+    "solver.log": {
+      "sha256": "865c2119a9523f84b9e278f09aba89d636aabd44149210f9ecffeaa9a67e4c4a",
+      "bytes": 200
+    },
+    "eigenprofile.dat": {
+      "sha256": "d721e605d126e555f92b43200aa73b999ed4e2b61397edd1e98c0d9fddb36575",
+      "bytes": 153788
+    },
+    "WP6-initial-smoke.pvd": {
+      "sha256": "f248937ff5c9b058845c1cecf140034c493f5e61eb4ed9bdc1ebd5f801109a72",
+      "bytes": 219
+    },
+    "transport_metadata.json": {
+      "sha256": "f1e11a9bbc0d9afbab3fae695c0e2627eef18c19652fc84e7d7871c0e5d239f3",
+      "bytes": 1390
+    },
+    "WP6-initial-smoke_sigmatop.csv": {
+      "sha256": "563123631f9064dac1432f323c73c36a818013b5c0987539f92ef58f530027fe",
+      "bytes": 198
+    },
+    "transport_budget.csv": {
+      "sha256": "9719de063de5d25d4e7f35c4ddd7750479dd726d54ccdc2f517eb1623dbaba2d",
+      "bytes": 3098
+    },
+    "weighted_online.csv": {
+      "sha256": "6cd2ad1de9bb8692968617a8ae7f71652c4c1a00bf58833eba2de85060304f37",
+      "bytes": 301
+    },
+    "params.input": {
+      "sha256": "e3fb8dba643cef22b5f4e3f3382838b538672c550b7b9146ceaab721a759dd6a",
+      "bytes": 1288
+    },
+    "started.json": {
+      "sha256": "724714c3b27d2b4e051ee87c2d461633c9612d11b3e992d394978b213b8df29e",
+      "bytes": 498
+    },
+    "plan.json": {
+      "sha256": "51e7bd87385b0b71709741d238689ec9a0fcffd81eea9936450a8fdae6bb8742",
+      "bytes": 552
+    },
+    "surface_events.csv": {
+      "sha256": "898859433ea07e2222910c5012d4d99017aaf1ae17b9592aa6a409bc3fe40f45",
+      "bytes": 345
+    },
+    "post.log": {
+      "sha256": "9159d7659b1b3037e1734b5ffb601419f77087a3f20ead41b39d45704b773a32",
+      "bytes": 1736
+    },
+    "post/independent_checks.json": {
+      "sha256": "c93a048a8947baf2b8c0a5fd0499e1544620ee83e84a8605a686c3bd2273dbe0",
+      "bytes": 2047
+    },
+    "post/representative_fields.npz": {
+      "sha256": "40c3a201e7184d48ab535f00bcf672082546cd4195d4eb8d96da773e84053d3c",
+      "bytes": 4084
+    },
+    "post/field_hashes.json": {
+      "sha256": "5574b3e933ebb9f37a1dc8c602488c37788fa5866fbece8bfe7cc1aeefc1cb13",
+      "bytes": 242
+    },
+    "post/independent_inventories.csv": {
+      "sha256": "002e2b819caa354fc96d8949982c4c07b0ed14bb70a3819ecdb6d6a5d7a94a25",
+      "bytes": 967
+    },
+    "post/profiles.npz": {
+      "sha256": "8afceec5ac3c860558cd930f5fa4bffb5b5951bc8ed072c7b17fd2a03c287aa3",
+      "bytes": 2350
+    },
+    "post/weighted_diagnostics.csv": {
+      "sha256": "025a0987b8b3cce76cd50b450f0f2589dc19fccd47191b2597f451711ac5fe54",
+      "bytes": 429
+    },
+    "post/field_audit.json": {
+      "sha256": "6c1e31c330d652e47591aabda78de7e3d9e3a6c7ea3259bf9efb53d06e0a1921",
+      "bytes": 724
+    }
+  }
+}

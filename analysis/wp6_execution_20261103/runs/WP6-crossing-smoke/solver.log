@@ -1,0 +1,22 @@
+Reading parameters from file params.input.
+Computed bounding box tree with 9599 nodes for 4800 grid entities in 0.00108934 seconds.
+Writing output for problem "WP6-crossing-smoke". Took 0.024 seconds.
+Colored 4800 elements with 4 colors in 0.000928509 seconds.
+
+Newton solver configured with the following options and parameters:
+ -- Newton.EnableShiftCriterion = true (relative shift convergence criterion)
+ -- Newton.MaxRelativeShift = 1e-08
+ -- Newton.MinSteps = 2
+ -- Newton.MaxSteps = 18
+ -- Newton.TargetSteps = 10
+ -- Newton.RetryTimeStepReductionFactor = 0.5
+ -- Newton.MaxTimeStepDivisions = 10
+
+Assemble: r(x^k) = dS/dt + div F - q;   M = grad rSolve: M deltax^k = r[KUpdate: x^(k+1) = x^k - deltax^k[KNewton iteration  1 done, maximum relative shift = 2.5829e-04
+Assemble: r(x^k) = dS/dt + div F - q;   M = grad rSolve: M deltax^k = r[KUpdate: x^(k+1) = x^k - deltax^k[KNewton iteration  2 done, maximum relative shift = 7.2190e-06
+Assemble: r(x^k) = dS/dt + div F - q;   M = grad rSolve: M deltax^k = r[KUpdate: x^(k+1) = x^k - deltax^k[KNewton iteration  3 done, maximum relative shift = 6.8994e-09
+Assemble/solve/update time: 0.11(67.58%)/0.049(29.35%)/0.0051(3.06%)
+Writing output for problem "WP6-crossing-smoke". Took 0.024 seconds.
+[ 50%] Time step 1 done in 0.17 seconds. Wall clock time: 0.19956, time: 227.37, time step size: 227.37
+Simulation took 0.19967 seconds on 1 processes.
+The cumulative CPU time was 0.19967 seconds.

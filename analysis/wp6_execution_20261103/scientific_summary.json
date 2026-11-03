@@ -1,0 +1,37 @@
+{
+  "end_time_s": 272846.1275447,
+  "weighted_growth_since_min": 3.075833316396857,
+  "raw_growth_since_min": 3.075937041781569,
+  "max_harmonic23_energy_fraction": 1.8602452347047144e-07,
+  "end_harmonic23_energy_fraction": 1.8602452347047144e-07,
+  "odd_neumann_energy_fraction": 1.1923005010417461e-13,
+  "relative_sigma_end": 6.370758890508077e-05,
+  "max_shallow_relative_excess": 7.026129260930525e-09,
+  "any_persistent_candidate": false,
+  "solubility_events": {
+    "M0": {
+      "schema_version": 1,
+      "reason": "requested_horizon",
+      "last_accepted_time_s": 272846.1275446968,
+      "accepted_steps": 1200,
+      "initial_diagnostics_written": true,
+      "requested_end_s": 272846.1275446968,
+      "surface_threshold_low_s": null,
+      "surface_threshold_high_s": null,
+      "global_threshold_low_s": null,
+      "global_threshold_high_s": null
+    },
+    "M1": {
+      "schema_version": 1,
+      "reason": "requested_horizon",
+      "last_accepted_time_s": 272846.1275446968,
+      "accepted_steps": 1200,
+      "initial_diagnostics_written": true,
+      "requested_end_s": 272846.1275446968,
+      "surface_threshold_low_s": null,
+      "surface_threshold_high_s": null,
+      "global_threshold_low_s": null,
+      "global_threshold_high_s": null
+    }
+  }
+}
