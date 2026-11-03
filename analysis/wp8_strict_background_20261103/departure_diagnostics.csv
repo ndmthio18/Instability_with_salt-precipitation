@@ -1,0 +1,13 @@
+run,observable,status,low_s,high_s,confirmed_s,threshold,consecutive_states,lower_bound_s
+R24_M0,max_depth_absolute_mean_difference,observed_diagnostic,478390.21029500285,478503.8961814798,478958.6397273876,1e-12,5,
+R24_M0,max_depth_absolute_mean_difference,not_observed,,,,1e-10,5,501695.8170227767
+R24_M0,max_depth_absolute_mean_difference,not_observed,,,,1e-08,5,501695.8170227767
+R24_M1,max_depth_absolute_mean_difference,observed_diagnostic,2614.7753889700098,2728.4612754469667,3183.2048213547946,1e-12,5,
+R24_M1,max_depth_absolute_mean_difference,observed_diagnostic,307520.3229201536,307634.00880663056,308088.75235253834,1e-10,5,
+R24_M1,max_depth_absolute_mean_difference,observed_diagnostic,464406.84625833854,464520.5321448155,464975.27569072327,1e-08,5,
+R48_M0,max_depth_absolute_mean_difference,observed_diagnostic,500672.6440444842,500786.32993096113,501241.0734768689,1e-12,5,
+R48_M0,max_depth_absolute_mean_difference,not_observed,,,,1e-10,5,501695.8170227767
+R48_M0,max_depth_absolute_mean_difference,not_observed,,,,1e-08,5,501695.8170227767
+R48_M1,max_depth_absolute_mean_difference,observed_diagnostic,2614.7753889700098,2728.4612754469667,3183.2048213547946,1e-12,5,
+R48_M1,max_depth_absolute_mean_difference,observed_diagnostic,307975.0664660614,308088.75235253834,308543.4958984461,1e-10,5,
+R48_M1,max_depth_absolute_mean_difference,observed_diagnostic,465088.9615772002,465202.64746367716,465657.39100958494,1e-08,5,

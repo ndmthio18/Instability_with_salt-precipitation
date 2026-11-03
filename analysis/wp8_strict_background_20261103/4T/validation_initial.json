@@ -1,0 +1,99 @@
+{
+  "passed": false,
+  "stage": "4T",
+  "checks": {
+    "successful_exit": false,
+    "accepted_times_and_stopping": false,
+    "all_accepted_fields": true,
+    "frozen_uniformity": true,
+    "exact_equality": true,
+    "salt_closure": true,
+    "water_closure": true,
+    "input_hash": true,
+    "elf_hash": true,
+    "worker_hash": true,
+    "archive_verified": true,
+    "wall_budget": true,
+    "archive_budget": true,
+    "memory_budget": true,
+    "one_Newton_success_per_step": true,
+    "no_hidden_failed_Newton": false,
+    "fixed_accepted_dt": true,
+    "field_event_maxima": true,
+    "storage_reconstruction": true,
+    "flux_reintegration": true,
+    "initial_x": true,
+    "initial_p": true,
+    "common_states_present": true,
+    "same_vertical_nodes": true,
+    "profile_bridge": true,
+    "inventory_bridge": true,
+    "total_flux_bridge": true,
+    "initial_inventory": true,
+    "first_T_fields_byte_identical": true,
+    "first_T_budgets_identical": true,
+    "frozen_physics": true
+  },
+  "metrics": {
+    "max_horizontal_x_range": 0.0,
+    "max_horizontal_p_range": 0.0,
+    "salt_residual_m": 9.92146631777907e-16,
+    "water_residual_m": 6.846596414855693e-14,
+    "max_Newton_iterations": 17,
+    "storage_reconstruction_salt_m": 6.903318520122548e-19,
+    "storage_reconstruction_water_m": 1.2836953722228372e-16,
+    "flux_reintegration_m": 0.0,
+    "initial_x_error": 0.0,
+    "initial_p_error_Pa": 5.820766091346741e-11,
+    "shared_reference_states": 1200,
+    "reference_comparison_last_s": 136309.37788587352,
+    "profile_bridge_error": 0.0,
+    "initial_inventory_relative_error": 0.0,
+    "first_T_equal_field_hashes": 1200
+  },
+  "bridge_reference": "accepted_T_run",
+  "bridge_absolute_errors": {
+    "inventory_salt_m": 0.0,
+    "inventory_water_m": 0.0,
+    "cut_salt_adv_down_m_s": 0.0,
+    "cut_salt_diff_down_m_s": 0.0,
+    "cut_salt_total_down_m_s": 0.0,
+    "cumulative_cut_salt_m": 0.0
+  },
+  "events": {
+    "status": "failed",
+    "reason": "solver exit unsuccessful"
+  },
+  "issues": [
+    "solver exit unsuccessful"
+  ],
+  "cost": {
+    "returncode": 1,
+    "trigger": null,
+    "solver_and_live_audit_wall_s": 156.7047984600067,
+    "total_wall_s": 171.2920970916748,
+    "cpu": 0,
+    "peak_child_rss_kib": 32396,
+    "frames": 4414,
+    "raw_field_bytes": 240335884,
+    "archive": {
+      "path": "/temp/zhixin/paper2_wp8_strict_background_20261103/4T/fields.tar.gz",
+      "sha256": "37e673298d5cded74ca5ca7cc3e3230ccd9c01e13ba0588d48a6bf777d28163a",
+      "bytes": 54215837
+    },
+    "archive_budget_pass": true,
+    "elf_sha256": "8cf2d5a410bf467059c3f2fb036a7ffa0f24c15c486d20e231a9e590f0195407",
+    "input_sha256": "11351a01f50a8b068f3fa563251f5da7162fea877d73b238d1b9b71fd9e6700d",
+    "worker_sha256": "b144808da6a6b997f8dc375c3bc50d4b0f7cc73b5bc86ebec457e026162ff966"
+  },
+  "changed_input_keys": [
+    "TimeLoop.TEnd",
+    "Problem.Name"
+  ],
+  "failures": [
+    "successful_exit",
+    "accepted_times_and_stopping",
+    "no_hidden_failed_Newton"
+  ],
+  "no_automatic_retry": true
+}

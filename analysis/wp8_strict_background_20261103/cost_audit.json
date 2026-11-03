@@ -1,0 +1,40 @@
+{
+  "runs": [
+    {
+      "stage": "T",
+      "completed": true,
+      "accepted_steps": 1200,
+      "accepted_end_s": 136423.0637723484,
+      "wall_with_monitor_s": 43.66318416595459,
+      "wall_with_archive_s": 47.587920904159546,
+      "archive_MiB": 13.585531234741211,
+      "raw_fields_MiB": 61.214468002319336,
+      "solver_peak_RSS_MiB": 31.33203125,
+      "wall_cap_s": 900,
+      "archive_cap_MiB": 250,
+      "timeout": false,
+      "core_hours_including_archive": 0.013218866917822095
+    },
+    {
+      "stage": "4T",
+      "completed": false,
+      "accepted_steps": 4413,
+      "accepted_end_s": 501695.8170227767,
+      "wall_with_monitor_s": 156.7047984600067,
+      "wall_with_archive_s": 171.2920970916748,
+      "archive_MiB": 51.704251289367676,
+      "raw_fields_MiB": 229.2021598815918,
+      "solver_peak_RSS_MiB": 31.63671875,
+      "wall_cap_s": 900,
+      "archive_cap_MiB": 250,
+      "timeout": false,
+      "core_hours_including_archive": 0.04758113808102078
+    }
+  ],
+  "one_core_per_run": true,
+  "sequential": true,
+  "total_core_hours_including_archive": 0.060800004998842874,
+  "wrapper_peak_memory": "not_measured",
+  "new_runs": 2,
+  "retries": 0
+}

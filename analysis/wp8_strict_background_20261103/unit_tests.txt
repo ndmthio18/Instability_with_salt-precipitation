@@ -1,0 +1,19 @@
+test_conservative_nonlinear_step (test_wp8.TestWP8.test_conservative_nonlinear_step) ... ok
+test_constraint_exact_uniform (test_wp8.TestWP8.test_constraint_exact_uniform) ... ok
+test_constraint_nonlinear_derivative (test_wp8.TestWP8.test_constraint_nonlinear_derivative) ... ok
+test_covariance_cannot_be_dropped (test_wp8.TestWP8.test_covariance_cannot_be_dropped) ... ok
+test_dirichlet_and_failed_newton (test_wp8.TestWP8.test_dirichlet_and_failed_newton) ... ok
+test_exact_time_no_interpolation (test_wp8.TestWP8.test_exact_time_no_interpolation) ... ok
+test_initial_correction_and_identity (test_wp8.TestWP8.test_initial_correction_and_identity) ... ok
+test_neumann_energy_and_physical_k (test_wp8.TestWP8.test_neumann_energy_and_physical_k) ... ok
+test_reduced_jacobian_and_conservation (test_wp8.TestWP8.test_reduced_jacobian_and_conservation) ... ok
+test_reject_posthoc_projection (test_wp8.TestWP8.test_reject_posthoc_projection) ... ok
+test_departure_bracket_and_confirmation (test_wp8_strict.TestStrictDiagnostics.test_departure_bracket_and_confirmation) ... ok
+test_exact_shared_window_excludes_clipped_endpoint (test_wp8_strict.TestStrictDiagnostics.test_exact_shared_window_excludes_clipped_endpoint) ... ok
+test_isolated_noise_not_persistent_departure (test_wp8_strict.TestStrictDiagnostics.test_isolated_noise_not_persistent_departure) ... ok
+test_saved_prefix_keeps_rejected_step_out (test_wp8_strict.TestStrictDiagnostics.test_saved_prefix_keeps_rejected_step_out) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 0.313s
+
+OK
