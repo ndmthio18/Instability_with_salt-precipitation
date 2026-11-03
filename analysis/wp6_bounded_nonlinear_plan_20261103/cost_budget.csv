@@ -1,0 +1,10 @@
+task,runs,reference_T_units,nominal_core_h,planning_core_h,formula,status
+bridge,2,1,0.04555555555555556,0.22777777777777777,2 legs * multiplier * 82 s; planning factor 5,not_started
+N28_2T,2,2,0.09111111111111111,0.45555555555555555,2 legs * multiplier * 82 s; planning factor 5,not_started
+N28_4T,2,4,0.18222222222222223,0.9111111111111111,2 legs * multiplier * 82 s; planning factor 5,not_started
+N28_8T,2,8,0.36444444444444446,1.8222222222222222,2 legs * multiplier * 82 s; planning factor 5,not_started
+trigger_dt_half,2,8,0.7288888888888889,3.6444444444444444,worst trigger at 8T; per-leg cost factor 2; planning factor 5,conditional_not_started
+trigger_vertical_nested600,2,8,2.1866666666666665,10.933333333333334,worst trigger at 8T; per-leg cost factor 6; planning factor 5,conditional_not_started
+trigger_R48,2,8,0.8746666666666666,4.373333333333333,worst trigger at 8T; per-leg cost factor 2.4; planning factor 5,conditional_not_started
+full_domain_audit,2,signal_window <= 8T,,24,12 h per leg hard cap; admission requires forecast <= 9.6 h/leg,conditional_budget_admission
+nx60_short_package,4 + at most 2 full-domain 10-step timing controls,0.5,,4,"unmeasured mode-specific throughput; reserved cap, not ETA",prepare_after_canonical_review

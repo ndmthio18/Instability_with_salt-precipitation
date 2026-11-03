@@ -1,0 +1,46 @@
+{
+  "Grid.Positions0": {
+    "nx28": "0 0.021428571428571432",
+    "nx60": "0 0.6000000000000001"
+  },
+  "Grid.Cells0": {
+    "nx28": "24",
+    "nx60": "1200"
+  },
+  "TimeLoop.TEnd": {
+    "nx28": "136423.0637723484",
+    "nx60": "225033.8899801159"
+  },
+  "TimeLoop.DtInitial": {
+    "nx28": "227.3717729539139",
+    "nx60": "375.0564833001932"
+  },
+  "TimeLoop.MaxTimeStepSize": {
+    "nx28": "227.3717729539139",
+    "nx60": "375.0564833001932"
+  },
+  "TimeLoop.OutputInterval": {
+    "nx28": "1",
+    "nx60": "6"
+  },
+  "Problem.Name": {
+    "nx28": "R24-M1-full",
+    "nx60": "sandy--boreal--s1354--f1080--global_default_L0p5--native"
+  },
+  "Problem.WaveNumber": {
+    "nx28": "1",
+    "nx60": "60"
+  },
+  "Problem.EigenprofilePath": {
+    "nx28": "eigenprofile.dat",
+    "nx60": "/temp/zhixin/c1/runs_36877_nx60/shard-000/0001--case-36877--native/sandy--boreal--s1354--f1080--global_default_L0p5--native_eigenprofile.dat"
+  },
+  "Transport.StopAtSolubility": {
+    "nx28": "true",
+    "nx60": null
+  },
+  "Transport.SolubilityMoleFraction": {
+    "nx28": "0.1",
+    "nx60": null
+  }
+}

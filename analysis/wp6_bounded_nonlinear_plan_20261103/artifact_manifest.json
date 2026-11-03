@@ -1,0 +1,58 @@
+{
+  "analysis/wp6_bounded_nonlinear_plan_20261103/cost_budget.csv": {
+    "sha256": "407eb0f26fe62c3bc8346b94c6d527360da36aa517714ecdd859cb8ba6517a02",
+    "bytes": 1263
+  },
+  "analysis/wp6_bounded_nonlinear_plan_20261103/COST_BUDGET_ZH.md": {
+    "sha256": "d43a135af0bb008489a9c32352bdf000b295a7f8409ab1d7018dc5778636a3aa",
+    "bytes": 4919
+  },
+  "analysis/wp6_bounded_nonlinear_plan_20261103/GO_NO_GO_ZH.md": {
+    "sha256": "decc6f93e14b58a9be463411c0459933e83653fd34b4fe33bda7519bb7751034",
+    "bytes": 6018
+  },
+  "analysis/wp6_bounded_nonlinear_plan_20261103/nx60_input_differences.json": {
+    "sha256": "33de99cf117686ca2a45670c50afff23c00a22676b0dab760a719e97e43bf6aa",
+    "bytes": 1138
+  },
+  "analysis/wp6_bounded_nonlinear_plan_20261103/observation_planes.csv": {
+    "sha256": "1f23c7b25129b3a562a668d3447ef4cc3ee232317e357949a1fc5813987ec36e",
+    "bytes": 867
+  },
+  "analysis/wp6_bounded_nonlinear_plan_20261103/plan_checks.json": {
+    "sha256": "53cdb65896089dcd9cceed8aa683ee0f38e8d3ed9bfa372599a441ea20e4edd4",
+    "bytes": 321
+  },
+  "analysis/wp6_bounded_nonlinear_plan_20261103/preregistration.json": {
+    "sha256": "50a6b5fd01015bd9921c9fc0b7e2dfd9697bb7c4ad54f9b6d118e34bca27521c",
+    "bytes": 5216
+  },
+  "analysis/wp6_bounded_nonlinear_plan_20261103/README.md": {
+    "sha256": "be98c6b6c03cc97322dbe684fa095132e1fb8c1fb12fd7ebfcba54562d67f9af",
+    "bytes": 1501
+  },
+  "analysis/wp6_bounded_nonlinear_plan_20261103/RUN_PLAN_ZH.md": {
+    "sha256": "5f8629c09a305fbbb19998cdd5280a42b10342b6cf3dc2d927978f4bed76e65b",
+    "bytes": 10410
+  },
+  "analysis/wp6_bounded_nonlinear_plan_20261103/source_hashes.json": {
+    "sha256": "7d88c4fbee68eb1e2124403d39618acdfaf8113f7b6696d30dde6647750807be",
+    "bytes": 1817
+  },
+  "analysis/wp6_bounded_nonlinear_plan_20261103/stage_schedule.csv": {
+    "sha256": "4cb9b578a145cfb00934d655c148b7c7505379d2305396874054299adec19bfc",
+    "bytes": 603
+  },
+  "analysis/wp6_bounded_nonlinear_plan_20261103/vertical_grid_200_vertices.csv": {
+    "sha256": "4253e61e36756e76e1983e34fc897cff15eb29ff95c822977946e304f94a368c",
+    "bytes": 4518
+  },
+  "analysis/wp6_bounded_nonlinear_plan_20261103/vertical_grid_600_nested_vertices.csv": {
+    "sha256": "6d1badd76dcb126fe8ab18dfe7614d8b5dbae552ac86515f80880841ad3ca881",
+    "bytes": 14325
+  },
+  "scripts/prepare_wp6_plan.py": {
+    "sha256": "e2525bf9d0ea9babca962554ad1bd6fd580eb7196b3b51b4dec0fd68706e6c7d",
+    "bytes": 7948
+  }
+}

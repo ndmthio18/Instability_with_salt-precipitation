@@ -1,0 +1,5 @@
+id,multiplier,pairs,physical_end_s,physical_days,steps_per_leg,entry
+bridge,1,1,136423.0637723484,1.5789706455132917,600,isolated diagnostic build and static tests pass
+N28_2T,2,1,272846.1275446968,3.1579412910265834,1200,previous stage accepted; no threshold; no unresolved validation trigger; budget remaining
+N28_4T,4,1,545692.2550893936,6.315882582053167,2400,previous stage accepted; no threshold; no unresolved validation trigger; budget remaining
+N28_8T,8,1,1091384.5101787872,12.631765164106334,4800,previous stage accepted; no threshold; no unresolved validation trigger; budget remaining
