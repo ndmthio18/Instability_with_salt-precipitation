@@ -1,0 +1,1886 @@
+{
+  "reason": "growth leaders, relative-amplitude leaders, near-threshold negative and known provenance-conflict comparator; dense cases reused separately",
+  "runs": [
+    {
+      "run_key": "frodo:c1b/runs_gseed_hi/shard-004/0004--case-25748--native",
+      "path": "/temp/zhixin/c1b/runs_gseed_hi/shard-004/0004--case-25748--native",
+      "exists": true,
+      "files": [
+        "case_manifest.json",
+        "loamy--temperate--s926--f7326--global_default_L0p5--native-00000.vtu",
+        "loamy--temperate--s926--f7326--global_default_L0p5--native-00001.vtu",
+        "loamy--temperate--s926--f7326--global_default_L0p5--native.input",
+        "loamy--temperate--s926--f7326--global_default_L0p5--native.log",
+        "loamy--temperate--s926--f7326--global_default_L0p5--native.pvd",
+        "loamy--temperate--s926--f7326--global_default_L0p5--native_eigenprofile.dat",
+        "loamy--temperate--s926--f7326--global_default_L0p5--native_sigmatop.csv",
+        "run_meta.json"
+      ],
+      "small_file_hashes": {
+        "case_manifest.json": "f3e868142a8a58c3879aef51f1fadb4c215be4ea02a7377ff685b43d8ec6f808",
+        "loamy--temperate--s926--f7326--global_default_L0p5--native.input": "76355168cb8f42a142b194099b26e37e71fa90ad2ef90e89c6323a739c7ba865",
+        "loamy--temperate--s926--f7326--global_default_L0p5--native.pvd": "692b51f6025ff732116299ec51e979c244124e2e8047282f32015d35d4619756",
+        "loamy--temperate--s926--f7326--global_default_L0p5--native_eigenprofile.dat": "70ead9149ca84546cd1db2cf3da5ba88a14fc2414152944b6834d4d7c5562d00",
+        "run_meta.json": "9532907b7a71ba518dd3d47ade214e6e1651e1070aa1d4e53b3dc616490d06db"
+      },
+      "parameters": {
+        "Grid.Positions0": "0 0.6000000000000001",
+        "Grid.Positions1": "0 0.2",
+        "Grid.Cells0": "600",
+        "Grid.Cells1": "200",
+        "Grid.Grading1": "-0.98",
+        "TimeLoop.TEnd": "1693308.689246403",
+        "TimeLoop.DtInitial": "2822.181148744005",
+        "TimeLoop.MaxTimeStepSize": "2822.181148744005",
+        "TimeLoop.OutputInterval": "100000",
+        "Problem.Name": "loamy--temperate--s926--f7326--global_default_L0p5--native",
+        "Problem.Permeability": "1.06356325361286e-11",
+        "Problem.Porosity": "0.6357792153746533",
+        "Problem.Swr": "0.1535755967258083",
+        "Problem.PcN": "1.541317046324455",
+        "Problem.PcAlpha": "2.896014875742636e-05",
+        "Problem.SweL": "0.4255893913592774",
+        "Problem.KrwMualemExponent": "true",
+        "Problem.WaterLevel": "0.823661043722432",
+        "Problem.EvaporationRate": "1.575344611247216e-08",
+        "Problem.SaltDiffusivity": "1.5e-09",
+        "Problem.ReferenceViscosity": "0.0011",
+        "Problem.SaltMoleFraction": "0.0036",
+        "Problem.GravitationalAcceleration": "9.800000000000001",
+        "Problem.PureWaterDensity": "998.203",
+        "Problem.DensityLinearCoefficient": "0.670804",
+        "Problem.DensityQuadraticCoefficient": "0.373854",
+        "Problem.MolarMassH2O": "0.01801528",
+        "Problem.MolarMassNaCl": "0.05844",
+        "Problem.Amplitude": "1e-06",
+        "Problem.WaveNumber": "3",
+        "Problem.StandardDeviationSaltMoleFraction": "1e-06",
+        "Problem.PerturbationType": "Eigenprofile",
+        "Problem.RandomSeed": "1",
+        "Problem.EnableGravity": "true",
+        "Problem.PerturbationHeight": "0",
+        "Problem.EigenprofilePath": "/temp/zhixin/c1b/runs_gseed_hi/shard-004/0004--case-25748--native/loamy--temperate--s926--f7326--global_default_L0p5--native_eigenprofile.dat",
+        "Vtk.Precision": "Float64",
+        "Vtk.AddVelocity": "true"
+      },
+      "pvd_times_s": [
+        0.0,
+        1693310.0
+      ],
+      "vtu_count": 2,
+      "vtu_header_arrays": {
+        "loamy--temperate--s926--f7326--global_default_L0p5--native-00000.vtu": [
+          "pw"
+        ],
+        "loamy--temperate--s926--f7326--global_default_L0p5--native-00001.vtu": [
+          "pw"
+        ]
+      },
+      "sigmatop_sha256": "ed4c97bb8972378933fec69a0eb56de31e5797bb58c72fbcd06e6814f50e7770",
+      "sigmatop_header": [
+        "# time[s] x_top_mean[mol/mol] sigma_top[mol/mol] n_top_dofs fourier_top[mol/mol] mode_proj[mol/mol]"
+      ],
+      "sigmatop_n": 601,
+      "sigmatop_first": [
+        0.0,
+        0.003600001663894,
+        7.076928558448e-07,
+        601.0,
+        1.001658356428e-06,
+        9.999944721146e-07
+      ],
+      "sigmatop_last": [
+        1693308.689246,
+        0.009955442206197,
+        1.057930638201e-06,
+        601.0,
+        1.497379820728e-06,
+        1.549776136797e-06
+      ],
+      "sigmatop_column_min": [
+        0.0,
+        0.003600001663894,
+        5.441822805983e-07,
+        601.0,
+        7.702278166968e-07,
+        7.672216050295e-07
+      ],
+      "sigmatop_column_max": [
+        1693308.689246,
+        0.009955442206197,
+        1.057930638201e-06,
+        601.0,
+        1.497379820728e-06,
+        1.549776136797e-06
+      ],
+      "first_top_mean_ge_0p1_s": null,
+      "first_top_max_ge_0p1_s": null,
+      "top_max_status": "not_recorded_in_sigmatop",
+      "case_manifest.json": {
+        "dumux": {
+          "onset": {
+            "amplification_since_min": 1.944074027985366,
+            "argmin_index": 223,
+            "csv": "/temp/zhixin/c1b/runs_gseed_hi/shard-004/0004--case-25748--native/loamy--temperate--s926--f7326--global_default_L0p5--native_sigmatop.csv",
+            "minimum_position_fraction": 0.3722871452420701,
+            "n_samples": 600,
+            "onset_class": "resolved_onset",
+            "onset_high_s": 668856.9322523,
+            "onset_low_s": 592658.0412362,
+            "onset_refined_s": 631073.5706914533,
+            "onset_s": 632168.5773187,
+            "plateau_samples": 28,
+            "plateau_width_s": 76198.89101609995,
+            "post_slope_per_s": 1.950699981870504e-08,
+            "pre_slope_per_s": -1.679590649861837e-08,
+            "sigma_first": 7.071054854946e-07,
+            "sigma_last": 1.057930638201e-06,
+            "sigma_min": 5.441822805983e-07,
+            "status": "ok (interior minimum)",
+            "t_last_s": 1693308.689246,
+            "x_top_mean_at_min": 0.00691173689491
+          },
+          "run": {
+            "executable": "/temp/zhixin/surrogate/code/dumux_kiemle2023b_unsat/kiemle2023b-main/build-cmake/appl/simpleRichardsnc/test_model_salt",
+            "executable_sha256_16": "15bc6613e1915e00",
+            "input": "/temp/zhixin/c1b/runs_gseed_hi/shard-004/0004--case-25748--native/loamy--temperate--s926--f7326--global_default_L0p5--native.input",
+            "log": "/temp/zhixin/c1b/runs_gseed_hi/shard-004/0004--case-25748--native/loamy--temperate--s926--f7326--global_default_L0p5--native.log",
+            "returncode": 0,
+            "sigmatop_csv": "/temp/zhixin/c1b/runs_gseed_hi/shard-004/0004--case-25748--native/loamy--temperate--s926--f7326--global_default_L0p5--native_sigmatop.csv"
+          }
+        },
+        "dumux_numerics": {
+          "case_resolved": {
+            "cells_x": 600,
+            "cells_y": 200,
+            "drain_time_fraction": 2.0,
+            "grading_y": -0.98,
+            "initial_dt_hat": 6.6e-06,
+            "lsa_onset_safety_factor": 3.0,
+            "max_dt_hat": 6.6e-06,
+            "samples_to_t_end": 600,
+            "t_end_hat": 0.20978546123204667,
+            "vtk_output_interval": 100000
+          },
+          "physical": {
+            "cells_x": 600,
+            "cells_y": 200,
+            "grading_y": -0.98,
+            "initial_dt_s": 2822.181148744005,
+            "max_dt_s": 2822.181148744005,
+            "samples_to_t_end": 600,
+            "t_end_s": 1693308.689246403,
+            "top_cell_height_m": 7.307273655507489e-05,
+            "vtk_output_interval": 100000
+          },
+          "requested": {
+            "cells_x": 600,
+            "cells_y": 200,
+            "drain_time_fraction": 2.0,
+            "grading_y": -0.98,
+            "initial_dt_hat": 6.6e-06,
+            "lsa_onset_safety_factor": 3.0,
+            "max_dt_hat": 6.6e-06,
+            "samples_to_t_end": 600,
+            "t_end_hat": 0.0,
+            "vtk_output_interval": 100000
+          }
+        },
+        "constitutive_audit": {
+          "branch": "surrogate_consistent_v1",
+          "dumux_density_at_x0_kg_m3": 1006.0241044335427,
+          "dumux_gravity_m_s2": 9.8,
+          "group_relative_errors": {
+            "beta": 0.0,
+            "gamma": 0.0,
+            "mualem_l": 0.0,
+            "p_hat_b": 0.0,
+            "r_e": 1.503040365462354e-16,
+            "residual_saturation": 0.0,
+            "vg_n": 0.0,
+            "width_over_height": 1.4802973661668753e-16
+          },
+          "krw_mualem_exponent": true,
+          "max_group_relative_error": 1.503040365462354e-16,
+          "max_krw_relative_error": 5.413896507136695e-15,
+          "max_saturation_absolute_error": 2.220446049250313e-16,
+          "reference_density_kg_m3": 1006.0241044335427
+        }
+      },
+      "run_meta.json": {
+        "returncode": 0,
+        "input": "/temp/zhixin/c1b/runs_gseed_hi/shard-004/0004--case-25748--native/loamy--temperate--s926--f7326--global_default_L0p5--native.input",
+        "log": "/temp/zhixin/c1b/runs_gseed_hi/shard-004/0004--case-25748--native/loamy--temperate--s926--f7326--global_default_L0p5--native.log",
+        "sigmatop_csv": "/temp/zhixin/c1b/runs_gseed_hi/shard-004/0004--case-25748--native/loamy--temperate--s926--f7326--global_default_L0p5--native_sigmatop.csv",
+        "executable": "/temp/zhixin/surrogate/code/dumux_kiemle2023b_unsat/kiemle2023b-main/build-cmake/appl/simpleRichardsnc/test_model_salt",
+        "executable_sha256_16": "15bc6613e1915e00"
+      },
+      "log_tail": "e: 0.12(2.64%)/4.3(97.17%)/0.0081(0.18%)\n[ 99%] Time step 593 done in 4.5 seconds. Wall clock time: 9144.6, time: 1.6736e+06, time step size: 2822.2\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  1 done, maximum relative shift = 7.4171e-06\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  2 done, maximum relative shift = 6.3884e-11\nAssemble/solve/update time: 0.12(2.65%)/4.4(97.16%)/0.0082(0.18%)\n[ 99%] Time step 594 done in 4.5 seconds. Wall clock time: 9149.1, time: 1.6764e+06, time step size: 2822.2\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  1 done, maximum relative shift = 7.4148e-06\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  2 done, maximum relative shift = 6.1244e-11\nAssemble/solve/update time: 0.12(2.67%)/4.3(97.15%)/0.0082(0.19%)\n[ 99%] Time step 595 done in 4.4 seconds. Wall clock time: 9153.5, time: 1.6792e+06, time step size: 2822.2\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  1 done, maximum relative shift = 7.4125e-06\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  2 done, maximum relative shift = 6.0827e-11\nAssemble/solve/update time: 0.12(2.47%)/4.7(97.36%)/0.0082(0.17%)\n[ 99%] Time step 596 done in 4.8 seconds. Wall clock time: 9158.4, time: 1.682e+06, time step size: 2822.2\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  1 done, maximum relative shift = 7.4103e-06\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  2 done, maximum relative shift = 5.8649e-11\nAssemble/solve/update time: 0.12(2.52%)/4.6(97.30%)/0.0083(0.17%)\n[ 99%] Time step 597 done in 4.8 seconds. Wall clock time: 9163.1, time: 1.6848e+06, time step size: 2822.2\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  1 done, maximum relative shift = 7.4080e-06\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  2 done, maximum relative shift = 6.6313e-11\nAssemble/solve/update time: 0.12(2.70%)/4.2(97.11%)/0.0082(0.19%)\n[100%] Time step 598 done in 4.4 seconds. Wall clock time: 9167.5, time: 1.6877e+06, time step size: 2822.2\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  1 done, maximum relative shift = 7.4058e-06\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  2 done, maximum relative shift = 6.8499e-11\nAssemble/solve/update time: 0.12(2.80%)/4.1(97.00%)/0.0083(0.20%)\n[100%] Time step 599 done in 4.3 seconds. Wall clock time: 9171.7, time: 1.6905e+06, time step size: 2822.2\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  1 done, maximum relative shift = 7.4036e-06\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  2 done, maximum relative shift = 5.9326e-11\nAssemble/solve/update time: 0.12(2.59%)/4.4(97.24%)/0.008(0.17%)\nWriting output for problem \"loamy--temperate--s926--f7326--global_default_L0p5--native\". Took 0.57 seconds.\n[100%] Time step 600 done in 4.6 seconds. Wall clock time: 9176.9, time: 1.6933e+06, time step size: 2822.2\nSimulation took 9176.9 seconds on 1 processes.\nThe cumulative CPU time was 9176.9 seconds.\n"
+    },
+    {
+      "run_key": "frodo:c72fill/runs_7/shard-001/0001--case-27710--native",
+      "path": "/temp/zhixin/c72fill/runs_7/shard-001/0001--case-27710--native",
+      "exists": true,
+      "files": [
+        "case_manifest.json",
+        "loamy--temperate--s886--f8524--global_default_L0p5--native-00000.vtu",
+        "loamy--temperate--s886--f8524--global_default_L0p5--native-00001.vtu",
+        "loamy--temperate--s886--f8524--global_default_L0p5--native.input",
+        "loamy--temperate--s886--f8524--global_default_L0p5--native.log",
+        "loamy--temperate--s886--f8524--global_default_L0p5--native.pvd",
+        "loamy--temperate--s886--f8524--global_default_L0p5--native_eigenprofile.dat",
+        "loamy--temperate--s886--f8524--global_default_L0p5--native_sigmatop.csv",
+        "run_meta.json"
+      ],
+      "small_file_hashes": {
+        "case_manifest.json": "f05a66e2a62e6f33ee1acdce41098cfb74ebaf68d0f5d043744319139655cb72",
+        "loamy--temperate--s886--f8524--global_default_L0p5--native.input": "46f37a8620335458b2f50d07d453782ba9fdfa5671e813aa5d672b1a1c8b7d5b",
+        "loamy--temperate--s886--f8524--global_default_L0p5--native.pvd": "7ee60e8f3a8eae0ccd697f6c3020e1de056e8cd05c731d6dbb15801eaef656ea",
+        "loamy--temperate--s886--f8524--global_default_L0p5--native_eigenprofile.dat": "e8e61beae40724cee42ac65b82b4a4b0510317efd0a6df1c4d2c535d78f989b2",
+        "run_meta.json": "3f1d1d5757fb4500f11497684b90f9d3cfc97c9548eeadf43b47106dd6bf1020"
+      },
+      "parameters": {
+        "Grid.Positions0": "0 0.6000000000000001",
+        "Grid.Positions1": "0 0.2",
+        "Grid.Cells0": "600",
+        "Grid.Cells1": "200",
+        "Grid.Grading1": "-0.98",
+        "TimeLoop.TEnd": "3028175.202157389",
+        "TimeLoop.DtInitial": "5046.958670262316",
+        "TimeLoop.MaxTimeStepSize": "5046.958670262316",
+        "TimeLoop.OutputInterval": "100000",
+        "Problem.Name": "loamy--temperate--s886--f8524--global_default_L0p5--native",
+        "Problem.Permeability": "9.62262086039988e-13",
+        "Problem.Porosity": "0.3974671543130464",
+        "Problem.Swr": "0.1423020897670426",
+        "Problem.PcN": "1.611622511296976",
+        "Problem.PcAlpha": "5.197808133474043e-05",
+        "Problem.SweL": "0.2659634939313338",
+        "Problem.KrwMualemExponent": "true",
+        "Problem.WaterLevel": "0.7971458578368265",
+        "Problem.EvaporationRate": "2.476407861896936e-08",
+        "Problem.SaltDiffusivity": "1.5e-09",
+        "Problem.ReferenceViscosity": "0.0011",
+        "Problem.SaltMoleFraction": "0.0036",
+        "Problem.GravitationalAcceleration": "9.800000000000001",
+        "Problem.PureWaterDensity": "998.203",
+        "Problem.DensityLinearCoefficient": "0.670804",
+        "Problem.DensityQuadraticCoefficient": "0.373854",
+        "Problem.MolarMassH2O": "0.01801528",
+        "Problem.MolarMassNaCl": "0.05844",
+        "Problem.Amplitude": "1e-06",
+        "Problem.WaveNumber": "2",
+        "Problem.StandardDeviationSaltMoleFraction": "1e-06",
+        "Problem.PerturbationType": "Eigenprofile",
+        "Problem.RandomSeed": "1",
+        "Problem.EnableGravity": "true",
+        "Problem.PerturbationHeight": "0",
+        "Problem.EigenprofilePath": "/temp/zhixin/c72fill/runs_7/shard-001/0001--case-27710--native/loamy--temperate--s886--f8524--global_default_L0p5--native_eigenprofile.dat",
+        "Vtk.Precision": "Float64",
+        "Vtk.AddVelocity": "true"
+      },
+      "pvd_times_s": [
+        0.0,
+        3028180.0
+      ],
+      "vtu_count": 2,
+      "vtu_header_arrays": {
+        "loamy--temperate--s886--f8524--global_default_L0p5--native-00000.vtu": [
+          "pw"
+        ],
+        "loamy--temperate--s886--f8524--global_default_L0p5--native-00001.vtu": [
+          "pw"
+        ]
+      },
+      "sigmatop_sha256": "e585d38fae16d4a1c90dfe36e01ac5bce83a53eceda8fe8bea5bb3b525ad8440",
+      "sigmatop_header": [
+        "# time[s] x_top_mean[mol/mol] sigma_top[mol/mol] n_top_dofs fourier_top[mol/mol] mode_proj[mol/mol]"
+      ],
+      "sigmatop_n": 601,
+      "sigmatop_first": [
+        0.0,
+        0.003600001663894,
+        7.076928558448e-07,
+        601.0,
+        1.001658356428e-06,
+        9.999944721146e-07
+      ],
+      "sigmatop_last": [
+        3028175.202157,
+        0.07449476583531,
+        1.067635873048e-06,
+        601.0,
+        1.511116557989e-06,
+        1.518279205799e-06
+      ],
+      "sigmatop_column_min": [
+        0.0,
+        0.003600001663894,
+        6.026221665707e-07,
+        601.0,
+        8.529428040708e-07,
+        8.520884998532e-07
+      ],
+      "sigmatop_column_max": [
+        3028175.202157,
+        0.07449476583531,
+        1.067635873048e-06,
+        601.0,
+        1.511116557989e-06,
+        1.518279205799e-06
+      ],
+      "first_top_mean_ge_0p1_s": null,
+      "first_top_max_ge_0p1_s": null,
+      "top_max_status": "not_recorded_in_sigmatop",
+      "case_manifest.json": {
+        "dumux": {
+          "onset": {
+            "amplification_since_min": 1.7716505171449652,
+            "argmin_index": 207,
+            "csv": "/temp/zhixin/c72fill/runs_7/shard-001/0001--case-27710--native/loamy--temperate--s886--f8524--global_default_L0p5--native_sigmatop.csv",
+            "minimum_position_fraction": 0.34557595993322204,
+            "n_samples": 600,
+            "onset_class": "resolved_onset",
+            "onset_high_s": 1130518.742139,
+            "onset_low_s": 969016.0646904,
+            "onset_refined_s": 1050176.6412814634,
+            "onset_s": 1049767.403415,
+            "plateau_samples": 33,
+            "plateau_width_s": 161502.67744859995,
+            "post_slope_per_s": 7.344327736826427e-09,
+            "pre_slope_per_s": -7.593141365794723e-09,
+            "sigma_first": 7.071414288369e-07,
+            "sigma_last": 1.067635873048e-06,
+            "sigma_min": 6.026221665707e-07,
+            "status": "ok (interior minimum)",
+            "t_last_s": 3028175.202157,
+            "x_top_mean_at_min": 0.03050988728734
+          },
+          "run": {
+            "executable": "/temp/zhixin/surrogate/code/dumux_kiemle2023b_unsat/kiemle2023b-main/build-cmake/appl/simpleRichardsnc/test_model_salt",
+            "executable_sha256_16": "15bc6613e1915e00",
+            "input": "/temp/zhixin/c72fill/runs_7/shard-001/0001--case-27710--native/loamy--temperate--s886--f8524--global_default_L0p5--native.input",
+            "log": "/temp/zhixin/c72fill/runs_7/shard-001/0001--case-27710--native/loamy--temperate--s886--f8524--global_default_L0p5--native.log",
+            "returncode": 0,
+            "sigmatop_csv": "/temp/zhixin/c72fill/runs_7/shard-001/0001--case-27710--native/loamy--temperate--s886--f8524--global_default_L0p5--native_sigmatop.csv"
+          }
+        },
+        "dumux_numerics": {
+          "case_resolved": {
+            "cells_x": 600,
+            "cells_y": 200,
+            "drain_time_fraction": 2.0,
+            "grading_y": -0.98,
+            "initial_dt_hat": 6.6e-06,
+            "lsa_onset_safety_factor": 3.0,
+            "max_dt_hat": 6.6e-06,
+            "samples_to_t_end": 600,
+            "t_end_hat": 0.9433479969916795,
+            "vtk_output_interval": 100000
+          },
+          "physical": {
+            "cells_x": 600,
+            "cells_y": 200,
+            "grading_y": -0.98,
+            "initial_dt_s": 5046.9586702623155,
+            "max_dt_s": 5046.9586702623155,
+            "samples_to_t_end": 600,
+            "t_end_s": 3028175.2021573894,
+            "top_cell_height_m": 7.307273655507489e-05,
+            "vtk_output_interval": 100000
+          },
+          "requested": {
+            "cells_x": 600,
+            "cells_y": 200,
+            "drain_time_fraction": 2.0,
+            "grading_y": -0.98,
+            "initial_dt_hat": 6.6e-06,
+            "lsa_onset_safety_factor": 3.0,
+            "max_dt_hat": 6.6e-06,
+            "samples_to_t_end": 600,
+            "t_end_hat": 0.0,
+            "vtk_output_interval": 100000
+          }
+        },
+        "constitutive_audit": {
+          "branch": "surrogate_consistent_v1",
+          "dumux_density_at_x0_kg_m3": 1006.0241044335427,
+          "dumux_gravity_m_s2": 9.8,
+          "group_relative_errors": {
+            "beta": 0.0,
+            "gamma": 0.0,
+            "mualem_l": 0.0,
+            "p_hat_b": 1.1141981244314926e-16,
+            "r_e": 0.0,
+            "residual_saturation": 0.0,
+            "vg_n": 0.0,
+            "width_over_height": 1.4802973661668753e-16
+          },
+          "krw_mualem_exponent": true,
+          "max_group_relative_error": 1.4802973661668753e-16,
+          "max_krw_relative_error": 1.5485042880530503e-15,
+          "max_saturation_absolute_error": 1.1102230246251565e-16,
+          "reference_density_kg_m3": 1006.0241044335427
+        }
+      },
+      "run_meta.json": {
+        "returncode": 0,
+        "input": "/temp/zhixin/c72fill/runs_7/shard-001/0001--case-27710--native/loamy--temperate--s886--f8524--global_default_L0p5--native.input",
+        "log": "/temp/zhixin/c72fill/runs_7/shard-001/0001--case-27710--native/loamy--temperate--s886--f8524--global_default_L0p5--native.log",
+        "sigmatop_csv": "/temp/zhixin/c72fill/runs_7/shard-001/0001--case-27710--native/loamy--temperate--s886--f8524--global_default_L0p5--native_sigmatop.csv",
+        "executable": "/temp/zhixin/surrogate/code/dumux_kiemle2023b_unsat/kiemle2023b-main/build-cmake/appl/simpleRichardsnc/test_model_salt",
+        "executable_sha256_16": "15bc6613e1915e00"
+      },
+      "log_tail": "= 2.5576e-10\nAssemble/solve/update time: 0.16(2.05%)/7.4(97.80%)/0.011(0.14%)\n[ 99%] Time step 593 done in 7.6 seconds. Wall clock time: 11750, time: 2.9928e+06, time step size: 5047\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  1 done, maximum relative shift = 1.1203e-04\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  2 done, maximum relative shift = 2.3676e-10\nAssemble/solve/update time: 0.14(1.90%)/7.3(97.96%)/0.01(0.14%)\n[ 99%] Time step 594 done in 7.5 seconds. Wall clock time: 11758, time: 2.9979e+06, time step size: 5047\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  1 done, maximum relative shift = 1.1203e-04\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  2 done, maximum relative shift = 2.5007e-10\nAssemble/solve/update time: 0.15(2.38%)/6.1(97.44%)/0.012(0.18%)\n[ 99%] Time step 595 done in 6.3 seconds. Wall clock time: 11764, time: 3.0029e+06, time step size: 5047\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  1 done, maximum relative shift = 1.1203e-04\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  2 done, maximum relative shift = 2.4095e-10\nAssemble/solve/update time: 0.14(2.67%)/5(97.15%)/0.009(0.17%)\n[ 99%] Time step 596 done in 5.2 seconds. Wall clock time: 11769, time: 3.008e+06, time step size: 5047\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  1 done, maximum relative shift = 1.1203e-04\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  2 done, maximum relative shift = 2.4636e-10\nAssemble/solve/update time: 0.12(2.49%)/4.9(97.34%)/0.0087(0.17%)\n[ 99%] Time step 597 done in 5 seconds. Wall clock time: 11774, time: 3.013e+06, time step size: 5047\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  1 done, maximum relative shift = 1.1203e-04\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  2 done, maximum relative shift = 2.1486e-10\nAssemble/solve/update time: 0.12(2.47%)/4.9(97.34%)/0.0092(0.18%)\n[100%] Time step 598 done in 5 seconds. Wall clock time: 11779, time: 3.0181e+06, time step size: 5047\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  1 done, maximum relative shift = 1.1203e-04\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  2 done, maximum relative shift = 2.4971e-10\nAssemble/solve/update time: 0.13(2.86%)/4.3(96.94%)/0.0089(0.20%)\n[100%] Time step 599 done in 4.5 seconds. Wall clock time: 11784, time: 3.0231e+06, time step size: 5047\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  1 done, maximum relative shift = 1.1203e-04\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  2 done, maximum relative shift = 2.4655e-10\nAssemble/solve/update time: 0.13(2.59%)/4.8(97.23%)/0.009(0.18%)\nWriting output for problem \"loamy--temperate--s886--f8524--global_default_L0p5--native\". Took 0.59 seconds.\n[100%] Time step 600 done in 4.9 seconds. Wall clock time: 11789, time: 3.0282e+06, time step size: 5047\nSimulation took 11789 seconds on 1 processes.\nThe cumulative CPU time was 11789 seconds.\n"
+    },
+    {
+      "run_key": "frodo:c72fill/runs_600/shard-010/0010--case-31932--native",
+      "path": "/temp/zhixin/c72fill/runs_600/shard-010/0010--case-31932--native",
+      "exists": true,
+      "files": [
+        "case_manifest.json",
+        "loamy--tropical--s3169--f8728--global_default_L0p5--native-00000.vtu",
+        "loamy--tropical--s3169--f8728--global_default_L0p5--native-00001.vtu",
+        "loamy--tropical--s3169--f8728--global_default_L0p5--native.input",
+        "loamy--tropical--s3169--f8728--global_default_L0p5--native.log",
+        "loamy--tropical--s3169--f8728--global_default_L0p5--native.pvd",
+        "loamy--tropical--s3169--f8728--global_default_L0p5--native_eigenprofile.dat",
+        "loamy--tropical--s3169--f8728--global_default_L0p5--native_sigmatop.csv",
+        "run_meta.json"
+      ],
+      "small_file_hashes": {
+        "case_manifest.json": "bfad3b0c6f83c9985b89fff9c77e9a10b8c31680de94e29b9bbd258ae7a0d37a",
+        "loamy--tropical--s3169--f8728--global_default_L0p5--native.input": "2a4bacaf940e9988c764de093dad856aa699d5d96abc65c3546386268c07a892",
+        "loamy--tropical--s3169--f8728--global_default_L0p5--native.pvd": "b9623219907b8a3516d2e5fe2cb7d660f7402fbea205e6282cbd9bef1765faf4",
+        "loamy--tropical--s3169--f8728--global_default_L0p5--native_eigenprofile.dat": "9829dfd9972bf3de0914556b1876c87e4b7c77c0a33230b32cbd301c1f1f6df1",
+        "run_meta.json": "4ef6b7f192131b0ebed86cc1438303f8ad3e396358e5ee249ea805dab07615bb"
+      },
+      "parameters": {
+        "Grid.Positions0": "0 0.6000000000000001",
+        "Grid.Positions1": "0 0.2",
+        "Grid.Cells0": "600",
+        "Grid.Cells1": "200",
+        "Grid.Grading1": "-0.98",
+        "TimeLoop.TEnd": "2741915.132254475",
+        "TimeLoop.DtInitial": "4569.858553757458",
+        "TimeLoop.MaxTimeStepSize": "4569.858553757458",
+        "TimeLoop.OutputInterval": "100000",
+        "Problem.Name": "loamy--tropical--s3169--f8728--global_default_L0p5--native",
+        "Problem.Permeability": "8.870597082519213e-13",
+        "Problem.Porosity": "0.3846780351205128",
+        "Problem.Swr": "0.1603122007550691",
+        "Problem.PcN": "1.553924047177741",
+        "Problem.PcAlpha": "0.0001774319640652322",
+        "Problem.SweL": "-0.7241458969646779",
+        "Problem.KrwMualemExponent": "true",
+        "Problem.WaterLevel": "0.0929304316049529",
+        "Problem.EvaporationRate": "2.802759774138041e-08",
+        "Problem.SaltDiffusivity": "1.5e-09",
+        "Problem.ReferenceViscosity": "0.0011",
+        "Problem.SaltMoleFraction": "0.0036",
+        "Problem.GravitationalAcceleration": "9.800000000000001",
+        "Problem.PureWaterDensity": "998.203",
+        "Problem.DensityLinearCoefficient": "0.670804",
+        "Problem.DensityQuadraticCoefficient": "0.373854",
+        "Problem.MolarMassH2O": "0.01801528",
+        "Problem.MolarMassNaCl": "0.05844",
+        "Problem.Amplitude": "1e-06",
+        "Problem.WaveNumber": "2",
+        "Problem.StandardDeviationSaltMoleFraction": "1e-06",
+        "Problem.PerturbationType": "Eigenprofile",
+        "Problem.RandomSeed": "1",
+        "Problem.EnableGravity": "true",
+        "Problem.PerturbationHeight": "0",
+        "Problem.EigenprofilePath": "/temp/zhixin/c72fill/runs_600/shard-010/0010--case-31932--native/loamy--tropical--s3169--f8728--global_default_L0p5--native_eigenprofile.dat",
+        "Vtk.Precision": "Float64",
+        "Vtk.AddVelocity": "true"
+      },
+      "pvd_times_s": [
+        0.0,
+        2741920.0
+      ],
+      "vtu_count": 2,
+      "vtu_header_arrays": {
+        "loamy--tropical--s3169--f8728--global_default_L0p5--native-00000.vtu": [
+          "pw"
+        ],
+        "loamy--tropical--s3169--f8728--global_default_L0p5--native-00001.vtu": [
+          "pw"
+        ]
+      },
+      "sigmatop_sha256": "6c74d863e0ff7c38fedfb5a10a41525cccf5d9a13e76bd80e0ce3c6e11369ec3",
+      "sigmatop_header": [
+        "# time[s] x_top_mean[mol/mol] sigma_top[mol/mol] n_top_dofs fourier_top[mol/mol] mode_proj[mol/mol]"
+      ],
+      "sigmatop_n": 601,
+      "sigmatop_first": [
+        0.0,
+        0.003600001663894,
+        7.076928558448e-07,
+        601.0,
+        1.001658356428e-06,
+        9.999944721146e-07
+      ],
+      "sigmatop_last": [
+        2741915.132254,
+        0.08972079293561,
+        1.076875083448e-06,
+        601.0,
+        1.524193604878e-06,
+        1.527451201221e-06
+      ],
+      "sigmatop_column_min": [
+        0.0,
+        0.003600001663894,
+        6.162719784698e-07,
+        601.0,
+        8.72262552815e-07,
+        8.703022307954e-07
+      ],
+      "sigmatop_column_max": [
+        2741915.132254,
+        0.08972079293561,
+        1.076875083448e-06,
+        601.0,
+        1.524193604878e-06,
+        1.527451201221e-06
+      ],
+      "first_top_mean_ge_0p1_s": null,
+      "first_top_max_ge_0p1_s": null,
+      "top_max_status": "not_recorded_in_sigmatop",
+      "case_manifest.json": {
+        "dumux": {
+          "onset": {
+            "amplification_since_min": 1.7474023175966478,
+            "argmin_index": 200,
+            "csv": "/temp/zhixin/c72fill/runs_600/shard-010/0010--case-31932--native/loamy--tropical--s3169--f8728--global_default_L0p5--native_sigmatop.csv",
+            "minimum_position_fraction": 0.333889816360601,
+            "n_samples": 600,
+            "onset_class": "resolved_onset",
+            "onset_high_s": 991659.3061654,
+            "onset_low_s": 840853.9738914,
+            "onset_refined_s": 917201.2052862797,
+            "onset_s": 918541.5693052,
+            "plateau_samples": 34,
+            "plateau_width_s": 150805.33227399993,
+            "post_slope_per_s": 8.2299567683576e-09,
+            "pre_slope_per_s": -7.324338286374594e-09,
+            "sigma_first": 7.075846248064e-07,
+            "sigma_last": 1.076875083448e-06,
+            "sigma_min": 6.162719784698e-07,
+            "status": "ok (interior minimum)",
+            "t_last_s": 2741915.132254,
+            "x_top_mean_at_min": 0.03488493493224
+          },
+          "run": {
+            "executable": "/temp/zhixin/surrogate/code/dumux_kiemle2023b_unsat/kiemle2023b-main/build-cmake/appl/simpleRichardsnc/test_model_salt",
+            "executable_sha256_16": "15bc6613e1915e00",
+            "input": "/temp/zhixin/c72fill/runs_600/shard-010/0010--case-31932--native/loamy--tropical--s3169--f8728--global_default_L0p5--native.input",
+            "log": "/temp/zhixin/c72fill/runs_600/shard-010/0010--case-31932--native/loamy--tropical--s3169--f8728--global_default_L0p5--native.log",
+            "returncode": 0,
+            "sigmatop_csv": "/temp/zhixin/c72fill/runs_600/shard-010/0010--case-31932--native/loamy--tropical--s3169--f8728--global_default_L0p5--native_sigmatop.csv"
+          }
+        },
+        "dumux_numerics": {
+          "case_resolved": {
+            "cells_x": 600,
+            "cells_y": 200,
+            "drain_time_fraction": 2.0,
+            "grading_y": -0.98,
+            "initial_dt_hat": 6.6e-06,
+            "lsa_onset_safety_factor": 3.0,
+            "max_dt_hat": 6.6e-06,
+            "samples_to_t_end": 600,
+            "t_end_hat": 0.9988781182132838,
+            "vtk_output_interval": 100000
+          },
+          "physical": {
+            "cells_x": 600,
+            "cells_y": 200,
+            "grading_y": -0.98,
+            "initial_dt_s": 4569.858553757458,
+            "max_dt_s": 4569.858553757458,
+            "samples_to_t_end": 600,
+            "t_end_s": 2741915.132254475,
+            "top_cell_height_m": 7.307273655507489e-05,
+            "vtk_output_interval": 100000
+          },
+          "requested": {
+            "cells_x": 600,
+            "cells_y": 200,
+            "drain_time_fraction": 2.0,
+            "grading_y": -0.98,
+            "initial_dt_hat": 6.6e-06,
+            "lsa_onset_safety_factor": 3.0,
+            "max_dt_hat": 6.6e-06,
+            "samples_to_t_end": 600,
+            "t_end_hat": 0.0,
+            "vtk_output_interval": 100000
+          }
+        },
+        "constitutive_audit": {
+          "branch": "surrogate_consistent_v1",
+          "dumux_density_at_x0_kg_m3": 1006.0241044335427,
+          "dumux_gravity_m_s2": 9.8,
+          "group_relative_errors": {
+            "beta": 0.0,
+            "gamma": 1.5866601571836719e-16,
+            "mualem_l": 0.0,
+            "p_hat_b": 1.1946818770246465e-16,
+            "r_e": 0.0,
+            "residual_saturation": 0.0,
+            "vg_n": 0.0,
+            "width_over_height": 1.4802973661668753e-16
+          },
+          "krw_mualem_exponent": true,
+          "max_group_relative_error": 1.5866601571836719e-16,
+          "max_krw_relative_error": 2.6043316773928273e-15,
+          "max_saturation_absolute_error": 1.1102230246251565e-16,
+          "reference_density_kg_m3": 1006.0241044335427
+        }
+      },
+      "run_meta.json": {
+        "returncode": 0,
+        "input": "/temp/zhixin/c72fill/runs_600/shard-010/0010--case-31932--native/loamy--tropical--s3169--f8728--global_default_L0p5--native.input",
+        "log": "/temp/zhixin/c72fill/runs_600/shard-010/0010--case-31932--native/loamy--tropical--s3169--f8728--global_default_L0p5--native.log",
+        "sigmatop_csv": "/temp/zhixin/c72fill/runs_600/shard-010/0010--case-31932--native/loamy--tropical--s3169--f8728--global_default_L0p5--native_sigmatop.csv",
+        "executable": "/temp/zhixin/surrogate/code/dumux_kiemle2023b_unsat/kiemle2023b-main/build-cmake/appl/simpleRichardsnc/test_model_salt",
+        "executable_sha256_16": "15bc6613e1915e00"
+      },
+      "log_tail": "766e-10\nAssemble/solve/update time: 0.42(1.47%)/28(98.44%)/0.025(0.09%)\n[ 99%] Time step 593 done in 29 seconds. Wall clock time: 19238, time: 2.7099e+06, time step size: 4569.9\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  1 done, maximum relative shift = 1.3740e-04\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  2 done, maximum relative shift = 3.9724e-10\nAssemble/solve/update time: 0.35(1.15%)/30(98.76%)/0.026(0.09%)\n[ 99%] Time step 594 done in 30 seconds. Wall clock time: 19268, time: 2.7145e+06, time step size: 4569.9\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  1 done, maximum relative shift = 1.3740e-04\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  2 done, maximum relative shift = 4.4620e-10\nAssemble/solve/update time: 0.33(1.18%)/28(98.74%)/0.024(0.09%)\n[ 99%] Time step 595 done in 28 seconds. Wall clock time: 19296, time: 2.7191e+06, time step size: 4569.9\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  1 done, maximum relative shift = 1.3740e-04\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  2 done, maximum relative shift = 4.4206e-10\nAssemble/solve/update time: 0.36(1.35%)/26(98.55%)/0.025(0.10%)\n[ 99%] Time step 596 done in 27 seconds. Wall clock time: 19323, time: 2.7236e+06, time step size: 4569.9\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  1 done, maximum relative shift = 1.3740e-04\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  2 done, maximum relative shift = 4.5899e-10\nAssemble/solve/update time: 0.44(1.57%)/27(98.31%)/0.033(0.12%)\n[ 99%] Time step 597 done in 28 seconds. Wall clock time: 19351, time: 2.7282e+06, time step size: 4569.9\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  1 done, maximum relative shift = 1.3740e-04\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  2 done, maximum relative shift = 4.6205e-10\nAssemble/solve/update time: 0.33(1.10%)/30(98.81%)/0.028(0.09%)\n[100%] Time step 598 done in 31 seconds. Wall clock time: 19382, time: 2.7328e+06, time step size: 4569.9\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  1 done, maximum relative shift = 1.3741e-04\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  2 done, maximum relative shift = 4.6024e-10\nAssemble/solve/update time: 0.37(1.22%)/30(98.68%)/0.03(0.10%)\n[100%] Time step 599 done in 30 seconds. Wall clock time: 19412, time: 2.7373e+06, time step size: 4569.9\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  1 done, maximum relative shift = 1.3741e-04\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  2 done, maximum relative shift = 4.3062e-10\nAssemble/solve/update time: 0.38(1.36%)/28(98.52%)/0.035(0.12%)\nWriting output for problem \"loamy--tropical--s3169--f8728--global_default_L0p5--native\". Took 0.67 seconds.\n[100%] Time step 600 done in 28 seconds. Wall clock time: 19441, time: 2.7419e+06, time step size: 4569.9\nSimulation took 19441 seconds on 1 processes.\nThe cumulative CPU time was 19441 seconds.\n"
+    },
+    {
+      "run_key": "frodo:c72fill/runs_600/shard-003/0003--case-30858--native",
+      "path": "/temp/zhixin/c72fill/runs_600/shard-003/0003--case-30858--native",
+      "exists": true,
+      "files": [
+        "loamy--tropical--s2289--f9209--global_default_L0p5--native-00000.vtu",
+        "loamy--tropical--s2289--f9209--global_default_L0p5--native.input",
+        "loamy--tropical--s2289--f9209--global_default_L0p5--native.log",
+        "loamy--tropical--s2289--f9209--global_default_L0p5--native.pvd",
+        "loamy--tropical--s2289--f9209--global_default_L0p5--native_eigenprofile.dat",
+        "loamy--tropical--s2289--f9209--global_default_L0p5--native_sigmatop.csv"
+      ],
+      "small_file_hashes": {
+        "loamy--tropical--s2289--f9209--global_default_L0p5--native.input": "cf5ff234e026c122ae12afac925de50d5c3e3a4eefbb81dd31716f092f53ae19",
+        "loamy--tropical--s2289--f9209--global_default_L0p5--native.pvd": "98f370dec88b1a4824f6c37989de7dfefd78bf417c7c45c7829c27e1b31a94ef",
+        "loamy--tropical--s2289--f9209--global_default_L0p5--native_eigenprofile.dat": "3b2e3f6d9e0368dce8d69dd3fe5f661e9239642a5548069ecd69aefc4d85d231"
+      },
+      "parameters": {
+        "Grid.Positions0": "0 0.6000000000000001",
+        "Grid.Positions1": "0 0.2",
+        "Grid.Cells0": "600",
+        "Grid.Cells1": "200",
+        "Grid.Grading1": "-0.98",
+        "TimeLoop.TEnd": "13506682.95537954",
+        "TimeLoop.DtInitial": "10941.4726022445",
+        "TimeLoop.MaxTimeStepSize": "10941.4726022445",
+        "TimeLoop.OutputInterval": "100000",
+        "Problem.Name": "loamy--tropical--s2289--f9209--global_default_L0p5--native",
+        "Problem.Permeability": "3.90485836828428e-13",
+        "Problem.Porosity": "0.3579513152963379",
+        "Problem.Swr": "0.1948266918428255",
+        "Problem.PcN": "1.464721733857185",
+        "Problem.PcAlpha": "0.0001942407865457334",
+        "Problem.SweL": "-1.049431003819689",
+        "Problem.KrwMualemExponent": "true",
+        "Problem.WaterLevel": "0.05128813408378452",
+        "Problem.EvaporationRate": "1.335702043253026e-08",
+        "Problem.SaltDiffusivity": "1.5e-09",
+        "Problem.ReferenceViscosity": "0.0011",
+        "Problem.SaltMoleFraction": "0.0036",
+        "Problem.GravitationalAcceleration": "9.800000000000001",
+        "Problem.PureWaterDensity": "998.203",
+        "Problem.DensityLinearCoefficient": "0.670804",
+        "Problem.DensityQuadraticCoefficient": "0.373854",
+        "Problem.MolarMassH2O": "0.01801528",
+        "Problem.MolarMassNaCl": "0.05844",
+        "Problem.Amplitude": "1e-06",
+        "Problem.WaveNumber": "1",
+        "Problem.StandardDeviationSaltMoleFraction": "1e-06",
+        "Problem.PerturbationType": "Eigenprofile",
+        "Problem.RandomSeed": "1",
+        "Problem.EnableGravity": "true",
+        "Problem.PerturbationHeight": "0",
+        "Problem.EigenprofilePath": "/temp/zhixin/c72fill/runs_600/shard-003/0003--case-30858--native/loamy--tropical--s2289--f9209--global_default_L0p5--native_eigenprofile.dat",
+        "Vtk.Precision": "Float64",
+        "Vtk.AddVelocity": "true"
+      },
+      "pvd_times_s": [
+        0.0
+      ],
+      "vtu_count": 1,
+      "vtu_header_arrays": {
+        "loamy--tropical--s2289--f9209--global_default_L0p5--native-00000.vtu": [
+          "pw"
+        ]
+      },
+      "sigmatop_sha256": "bc0a4937f509870ee835a07c3147a7a23fa3ec7bb2ba9b134492001f42d0ec43",
+      "sigmatop_header": [
+        "# time[s] x_top_mean[mol/mol] sigma_top[mol/mol] n_top_dofs fourier_top[mol/mol] mode_proj[mol/mol]"
+      ],
+      "sigmatop_n": 1061,
+      "sigmatop_first": [
+        0.0,
+        0.003600001663894,
+        7.076928558448e-07,
+        601.0,
+        1.001658356428e-06,
+        9.999944721146e-07
+      ],
+      "sigmatop_last": [
+        11597960.95838,
+        0.09487699465295,
+        9.809691154615e-07,
+        601.0,
+        1.388449668855e-06,
+        1.387332475845e-06
+      ],
+      "sigmatop_column_min": [
+        0.0,
+        0.003600001663894,
+        6.025416690541e-07,
+        601.0,
+        8.528288690533e-07,
+        8.499260854008e-07
+      ],
+      "sigmatop_column_max": [
+        11597960.95838,
+        0.09487699465295,
+        9.809691154615e-07,
+        601.0,
+        1.388449668855e-06,
+        1.387332475845e-06
+      ],
+      "first_top_mean_ge_0p1_s": null,
+      "first_top_max_ge_0p1_s": null,
+      "top_max_status": "not_recorded_in_sigmatop",
+      "log_tail": ".65%)/0.018(0.10%)\n[ 85%] Time step 1053 done in 19 seconds. Wall clock time: 27689, time: 1.1521e+07, time step size: 10941\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  1 done, maximum relative shift = 8.2600e-05\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  2 done, maximum relative shift = 2.3616e-10\nAssemble/solve/update time: 0.23(1.35%)/17(98.56%)/0.016(0.09%)\n[ 85%] Time step 1054 done in 17 seconds. Wall clock time: 27706, time: 1.1532e+07, time step size: 10941\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  1 done, maximum relative shift = 8.2600e-05\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  2 done, maximum relative shift = 2.2182e-10\nAssemble/solve/update time: 0.21(1.64%)/13(98.24%)/0.016(0.12%)\n[ 85%] Time step 1055 done in 13 seconds. Wall clock time: 27719, time: 1.1543e+07, time step size: 10941\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  1 done, maximum relative shift = 8.2601e-05\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  2 done, maximum relative shift = 2.1647e-10\nAssemble/solve/update time: 0.29(2.20%)/13(97.68%)/0.016(0.12%)\n[ 86%] Time step 1056 done in 13 seconds. Wall clock time: 27732, time: 1.1554e+07, time step size: 10941\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  1 done, maximum relative shift = 8.2601e-05\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  2 done, maximum relative shift = 2.2682e-10\nAssemble/solve/update time: 0.24(1.68%)/14(98.20%)/0.016(0.12%)\n[ 86%] Time step 1057 done in 14 seconds. Wall clock time: 27747, time: 1.1565e+07, time step size: 10941\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  1 done, maximum relative shift = 8.2601e-05\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  2 done, maximum relative shift = 2.4405e-10\nAssemble/solve/update time: 0.25(1.70%)/15(98.19%)/0.016(0.11%)\n[ 86%] Time step 1058 done in 15 seconds. Wall clock time: 27762, time: 1.1576e+07, time step size: 10941\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  1 done, maximum relative shift = 8.2601e-05\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  2 done, maximum relative shift = 2.2758e-10\nAssemble/solve/update time: 0.29(2.04%)/14(97.84%)/0.017(0.12%)\n[ 86%] Time step 1059 done in 15 seconds. Wall clock time: 27776, time: 1.1587e+07, time step size: 10941\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  1 done, maximum relative shift = 8.2602e-05\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  2 done, maximum relative shift = 2.3537e-10\nAssemble/solve/update time: 0.33(1.87%)/17(98.03%)/0.018(0.10%)\n[ 86%] Time step 1060 done in 18 seconds. Wall clock time: 27794, time: 1.1598e+07, time step size: 10941\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  1 done, maximum relative shift = 8.2602e-05\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K"
+    },
+    {
+      "run_key": "frodo:c1b/runs_600/shard-011/0011--case-47647--native",
+      "path": "/temp/zhixin/c1b/runs_600/shard-011/0011--case-47647--native",
+      "exists": true,
+      "files": [
+        "case_manifest.json",
+        "run_meta.json",
+        "sandy--tropical--s2188--f9947--global_default_L0p5--native-00000.vtu",
+        "sandy--tropical--s2188--f9947--global_default_L0p5--native-00001.vtu",
+        "sandy--tropical--s2188--f9947--global_default_L0p5--native.input",
+        "sandy--tropical--s2188--f9947--global_default_L0p5--native.log",
+        "sandy--tropical--s2188--f9947--global_default_L0p5--native.pvd",
+        "sandy--tropical--s2188--f9947--global_default_L0p5--native_eigenprofile.dat",
+        "sandy--tropical--s2188--f9947--global_default_L0p5--native_sigmatop.csv"
+      ],
+      "small_file_hashes": {
+        "case_manifest.json": "72fcb80c4882baaa611b5df4adced74abd2503ac5c7d5e3e18e2cf1165376f83",
+        "run_meta.json": "1b107758432434b34e3eb13e3335551cfe1401a8d62dbb0515482b7af4bab6e5",
+        "sandy--tropical--s2188--f9947--global_default_L0p5--native.input": "1df481062232e33ad169a84d6b6ce2dbcfb8c3aab6d37f077d1c1192475eff05",
+        "sandy--tropical--s2188--f9947--global_default_L0p5--native.pvd": "04ff57c0a088effcca4a058f750167078e7b3241cf68a0d770d1b061922c05f4",
+        "sandy--tropical--s2188--f9947--global_default_L0p5--native_eigenprofile.dat": "1b10d4f0ac3572190da438c2f320723dad58a388f03f076bd91e3e05320b4cd6"
+      },
+      "parameters": {
+        "Grid.Positions0": "0 0.6000000000000001",
+        "Grid.Positions1": "0 0.2",
+        "Grid.Cells0": "600",
+        "Grid.Cells1": "200",
+        "Grid.Grading1": "-0.98",
+        "TimeLoop.TEnd": "1208463.50314198",
+        "TimeLoop.DtInitial": "2014.105838569967",
+        "TimeLoop.MaxTimeStepSize": "2014.105838569967",
+        "TimeLoop.OutputInterval": "100000",
+        "Problem.Name": "sandy--tropical--s2188--f9947--global_default_L0p5--native",
+        "Problem.Permeability": "5.313448547814871e-12",
+        "Problem.Porosity": "0.5498004231622328",
+        "Problem.Swr": "0.1256677948769901",
+        "Problem.PcN": "1.625183196248074",
+        "Problem.PcAlpha": "0.0001724631296779875",
+        "Problem.SweL": "-0.2173603775003517",
+        "Problem.KrwMualemExponent": "true",
+        "Problem.WaterLevel": "0.08234426859375131",
+        "Problem.EvaporationRate": "2.512183929660254e-08",
+        "Problem.SaltDiffusivity": "1.5e-09",
+        "Problem.ReferenceViscosity": "0.0011",
+        "Problem.SaltMoleFraction": "0.0036",
+        "Problem.GravitationalAcceleration": "9.800000000000001",
+        "Problem.PureWaterDensity": "998.203",
+        "Problem.DensityLinearCoefficient": "0.670804",
+        "Problem.DensityQuadraticCoefficient": "0.373854",
+        "Problem.MolarMassH2O": "0.01801528",
+        "Problem.MolarMassNaCl": "0.05844",
+        "Problem.Amplitude": "1e-06",
+        "Problem.WaveNumber": "3",
+        "Problem.StandardDeviationSaltMoleFraction": "1e-06",
+        "Problem.PerturbationType": "Eigenprofile",
+        "Problem.RandomSeed": "1",
+        "Problem.EnableGravity": "true",
+        "Problem.PerturbationHeight": "0",
+        "Problem.EigenprofilePath": "/temp/zhixin/c1b/runs_600/shard-011/0011--case-47647--native/sandy--tropical--s2188--f9947--global_default_L0p5--native_eigenprofile.dat",
+        "Vtk.Precision": "Float64",
+        "Vtk.AddVelocity": "true"
+      },
+      "pvd_times_s": [
+        0.0,
+        1208460.0
+      ],
+      "vtu_count": 2,
+      "vtu_header_arrays": {
+        "sandy--tropical--s2188--f9947--global_default_L0p5--native-00000.vtu": [
+          "pw"
+        ],
+        "sandy--tropical--s2188--f9947--global_default_L0p5--native-00001.vtu": [
+          "pw"
+        ]
+      },
+      "sigmatop_sha256": "25be73b7f9f13cf6021e38a47b02c0e49b2b0b116282f1256bfec5c8b0ae1737",
+      "sigmatop_header": [
+        "# time[s] x_top_mean[mol/mol] sigma_top[mol/mol] n_top_dofs fourier_top[mol/mol] mode_proj[mol/mol]"
+      ],
+      "sigmatop_n": 601,
+      "sigmatop_first": [
+        0.0,
+        0.003600001663894,
+        7.076928558448e-07,
+        601.0,
+        1.001658356428e-06,
+        9.999944721146e-07
+      ],
+      "sigmatop_last": [
+        1208463.503142,
+        0.01873544988619,
+        9.7508327999e-07,
+        601.0,
+        1.38011892694e-06,
+        1.402829302668e-06
+      ],
+      "sigmatop_column_min": [
+        0.0,
+        0.003600001663894,
+        6.01121676132e-07,
+        601.0,
+        8.508190303656e-07,
+        8.488620625263e-07
+      ],
+      "sigmatop_column_max": [
+        1208463.503142,
+        0.01873544988619,
+        9.7508327999e-07,
+        601.0,
+        1.38011892694e-06,
+        1.402829302668e-06
+      ],
+      "first_top_mean_ge_0p1_s": null,
+      "first_top_max_ge_0p1_s": null,
+      "top_max_status": "not_recorded_in_sigmatop",
+      "case_manifest.json": {
+        "dumux": {
+          "onset": {
+            "amplification_since_min": 1.622106336714236,
+            "argmin_index": 219,
+            "csv": "/temp/zhixin/c1b/runs_600/shard-011/0011--case-47647--native/sandy--tropical--s2188--f9947--global_default_L0p5--native_sigmatop.csv",
+            "minimum_position_fraction": 0.3656093489148581,
+            "n_samples": 600,
+            "onset_class": "resolved_onset",
+            "onset_high_s": 475328.9779025,
+            "onset_low_s": 408863.4852297,
+            "onset_refined_s": 442238.44372085296,
+            "onset_s": 443103.2844854,
+            "plateau_samples": 34,
+            "plateau_width_s": 66465.49267280003,
+            "post_slope_per_s": 1.8697840653882233e-08,
+            "pre_slope_per_s": -1.578489716765765e-08,
+            "sigma_first": 7.073291307049e-07,
+            "sigma_last": 9.7508327999e-07,
+            "sigma_min": 6.01121676132e-07,
+            "status": "ok (interior minimum)",
+            "t_last_s": 1208463.503142,
+            "x_top_mean_at_min": 0.01069879386674
+          },
+          "run": {
+            "executable": "/temp/zhixin/surrogate/code/dumux_kiemle2023b_unsat/kiemle2023b-main/build-cmake/appl/simpleRichardsnc/test_model_salt",
+            "executable_sha256_16": "15bc6613e1915e00",
+            "input": "/temp/zhixin/c1b/runs_600/shard-011/0011--case-47647--native/sandy--tropical--s2188--f9947--global_default_L0p5--native.input",
+            "log": "/temp/zhixin/c1b/runs_600/shard-011/0011--case-47647--native/sandy--tropical--s2188--f9947--global_default_L0p5--native.log",
+            "returncode": 0,
+            "sigmatop_csv": "/temp/zhixin/c1b/runs_600/shard-011/0011--case-47647--native/sandy--tropical--s2188--f9947--global_default_L0p5--native_sigmatop.csv"
+          }
+        },
+        "dumux_numerics": {
+          "case_resolved": {
+            "cells_x": 600,
+            "cells_y": 200,
+            "drain_time_fraction": 2.0,
+            "grading_y": -0.98,
+            "initial_dt_hat": 6.6e-06,
+            "lsa_onset_safety_factor": 3.0,
+            "max_dt_hat": 6.6e-06,
+            "samples_to_t_end": 600,
+            "t_end_hat": 0.27608951032749574,
+            "vtk_output_interval": 100000
+          },
+          "physical": {
+            "cells_x": 600,
+            "cells_y": 200,
+            "grading_y": -0.98,
+            "initial_dt_s": 2014.1058385699666,
+            "max_dt_s": 2014.1058385699666,
+            "samples_to_t_end": 600,
+            "t_end_s": 1208463.50314198,
+            "top_cell_height_m": 7.307273655507489e-05,
+            "vtk_output_interval": 100000
+          },
+          "requested": {
+            "cells_x": 600,
+            "cells_y": 200,
+            "drain_time_fraction": 2.0,
+            "grading_y": -0.98,
+            "initial_dt_hat": 6.6e-06,
+            "lsa_onset_safety_factor": 3.0,
+            "max_dt_hat": 6.6e-06,
+            "samples_to_t_end": 600,
+            "t_end_hat": 0.0,
+            "vtk_output_interval": 100000
+          }
+        },
+        "constitutive_audit": {
+          "branch": "surrogate_consistent_v1",
+          "dumux_density_at_x0_kg_m3": 1006.0241044335427,
+          "dumux_gravity_m_s2": 9.8,
+          "group_relative_errors": {
+            "beta": 0.0,
+            "gamma": 0.0,
+            "mualem_l": 0.0,
+            "p_hat_b": 0.0,
+            "r_e": 0.0,
+            "residual_saturation": 0.0,
+            "vg_n": 0.0,
+            "width_over_height": 1.4802973661668753e-16
+          },
+          "krw_mualem_exponent": true,
+          "max_group_relative_error": 1.4802973661668753e-16,
+          "max_krw_relative_error": 2.273268413714127e-15,
+          "max_saturation_absolute_error": 1.1102230246251565e-16,
+          "reference_density_kg_m3": 1006.0241044335427
+        }
+      },
+      "run_meta.json": {
+        "returncode": 0,
+        "input": "/temp/zhixin/c1b/runs_600/shard-011/0011--case-47647--native/sandy--tropical--s2188--f9947--global_default_L0p5--native.input",
+        "log": "/temp/zhixin/c1b/runs_600/shard-011/0011--case-47647--native/sandy--tropical--s2188--f9947--global_default_L0p5--native.log",
+        "sigmatop_csv": "/temp/zhixin/c1b/runs_600/shard-011/0011--case-47647--native/sandy--tropical--s2188--f9947--global_default_L0p5--native_sigmatop.csv",
+        "executable": "/temp/zhixin/surrogate/code/dumux_kiemle2023b_unsat/kiemle2023b-main/build-cmake/appl/simpleRichardsnc/test_model_salt",
+        "executable_sha256_16": "15bc6613e1915e00"
+      },
+      "log_tail": ".1983e-11\nAssemble/solve/update time: 0.66(0.88%)/75(99.04%)/0.06(0.08%)\n[ 99%] Time step 593 done in 75 seconds. Wall clock time: 44215, time: 1.1944e+06, time step size: 2014.1\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  1 done, maximum relative shift = 2.0268e-05\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  2 done, maximum relative shift = 4.8880e-11\nAssemble/solve/update time: 0.6(1.01%)/59(98.87%)/0.069(0.12%)\n[ 99%] Time step 594 done in 60 seconds. Wall clock time: 44274, time: 1.1964e+06, time step size: 2014.1\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  1 done, maximum relative shift = 2.0265e-05\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  2 done, maximum relative shift = 5.0630e-11\nAssemble/solve/update time: 0.71(1.14%)/61(98.76%)/0.063(0.10%)\n[ 99%] Time step 595 done in 62 seconds. Wall clock time: 44337, time: 1.1984e+06, time step size: 2014.1\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  1 done, maximum relative shift = 2.0263e-05\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  2 done, maximum relative shift = 5.6717e-11\nAssemble/solve/update time: 0.73(0.98%)/74(98.93%)/0.072(0.10%)\n[ 99%] Time step 596 done in 75 seconds. Wall clock time: 44412, time: 1.2004e+06, time step size: 2014.1\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  1 done, maximum relative shift = 2.0260e-05\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  2 done, maximum relative shift = 5.2537e-11\nAssemble/solve/update time: 0.67(0.99%)/67(98.92%)/0.057(0.08%)\n[ 99%] Time step 597 done in 68 seconds. Wall clock time: 44480, time: 1.2024e+06, time step size: 2014.1\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  1 done, maximum relative shift = 2.0257e-05\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  2 done, maximum relative shift = 4.9009e-11\nAssemble/solve/update time: 0.75(1.13%)/65(98.76%)/0.073(0.11%)\n[100%] Time step 598 done in 66 seconds. Wall clock time: 44546, time: 1.2044e+06, time step size: 2014.1\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  1 done, maximum relative shift = 2.0255e-05\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  2 done, maximum relative shift = 5.7715e-11\nAssemble/solve/update time: 0.58(0.86%)/67(99.07%)/0.048(0.07%)\n[100%] Time step 599 done in 68 seconds. Wall clock time: 44614, time: 1.2064e+06, time step size: 2014.1\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  1 done, maximum relative shift = 2.0252e-05\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  2 done, maximum relative shift = 5.4757e-11\nAssemble/solve/update time: 0.77(1.08%)/70(98.85%)/0.054(0.08%)\nWriting output for problem \"sandy--tropical--s2188--f9947--global_default_L0p5--native\". Took 1.8 seconds.\n[100%] Time step 600 done in 71 seconds. Wall clock time: 44687, time: 1.2085e+06, time step size: 2014.1\nSimulation took 44687 seconds on 1 processes.\nThe cumulative CPU time was 44687 seconds.\n"
+    },
+    {
+      "run_key": "frodo:c72fill/runs_7/shard-004/0004--case-45164--native",
+      "path": "/temp/zhixin/c72fill/runs_7/shard-004/0004--case-45164--native",
+      "exists": true,
+      "files": [
+        "case_manifest.json",
+        "run_meta.json",
+        "sandy--tropical--s1691--f9225--global_default_L0p5--native-00000.vtu",
+        "sandy--tropical--s1691--f9225--global_default_L0p5--native-00001.vtu",
+        "sandy--tropical--s1691--f9225--global_default_L0p5--native.input",
+        "sandy--tropical--s1691--f9225--global_default_L0p5--native.log",
+        "sandy--tropical--s1691--f9225--global_default_L0p5--native.pvd",
+        "sandy--tropical--s1691--f9225--global_default_L0p5--native_eigenprofile.dat",
+        "sandy--tropical--s1691--f9225--global_default_L0p5--native_sigmatop.csv"
+      ],
+      "small_file_hashes": {
+        "case_manifest.json": "0e0b363cd9784434d79bb7e52bc9d3a2fa6df566591b7b802c9bac7a59d91eff",
+        "run_meta.json": "18fb1d832619c5e6f7878dd7728257b0d0b7b936ae4aba8635ecd2a5920ebd29",
+        "sandy--tropical--s1691--f9225--global_default_L0p5--native.input": "de21e899cd2e8b9962ca99dbdd5a11a653216fb61a584053e1b274aa708cee5a",
+        "sandy--tropical--s1691--f9225--global_default_L0p5--native.pvd": "e98ee0cb264f8b12c192a335199ec89e072d19758ad402755edfff34c9fa8f80",
+        "sandy--tropical--s1691--f9225--global_default_L0p5--native_eigenprofile.dat": "87476fb3a4760dc154aafb8b5389bd607f0ac62d6166ba6173cc8f01cb0dc1d2"
+      },
+      "parameters": {
+        "Grid.Positions0": "0 0.6000000000000001",
+        "Grid.Positions1": "0 0.2",
+        "Grid.Cells0": "600",
+        "Grid.Cells1": "200",
+        "Grid.Grading1": "-0.98",
+        "TimeLoop.TEnd": "3034924.144810786",
+        "TimeLoop.DtInitial": "5058.206908017976",
+        "TimeLoop.MaxTimeStepSize": "5058.206908017976",
+        "TimeLoop.OutputInterval": "100000",
+        "Problem.Name": "sandy--tropical--s1691--f9225--global_default_L0p5--native",
+        "Problem.Permeability": "1.02009278311813e-11",
+        "Problem.Porosity": "0.4008956033531376",
+        "Problem.Swr": "0.1289997838510178",
+        "Problem.PcN": "2.770198448620865",
+        "Problem.PcAlpha": "0.0003033922301316187",
+        "Problem.SweL": "-0.8221792538500331",
+        "Problem.KrwMualemExponent": "true",
+        "Problem.WaterLevel": "0.06540573975185322",
+        "Problem.EvaporationRate": "1.014606774850485e-09",
+        "Problem.SaltDiffusivity": "1.5e-09",
+        "Problem.ReferenceViscosity": "0.0011",
+        "Problem.SaltMoleFraction": "0.0036",
+        "Problem.GravitationalAcceleration": "9.800000000000001",
+        "Problem.PureWaterDensity": "998.203",
+        "Problem.DensityLinearCoefficient": "0.670804",
+        "Problem.DensityQuadraticCoefficient": "0.373854",
+        "Problem.MolarMassH2O": "0.01801528",
+        "Problem.MolarMassNaCl": "0.05844",
+        "Problem.Amplitude": "1e-06",
+        "Problem.WaveNumber": "2",
+        "Problem.StandardDeviationSaltMoleFraction": "1e-06",
+        "Problem.PerturbationType": "Eigenprofile",
+        "Problem.RandomSeed": "1",
+        "Problem.EnableGravity": "true",
+        "Problem.PerturbationHeight": "0",
+        "Problem.EigenprofilePath": "/temp/zhixin/c72fill/runs_7/shard-004/0004--case-45164--native/sandy--tropical--s1691--f9225--global_default_L0p5--native_eigenprofile.dat",
+        "Vtk.Precision": "Float64",
+        "Vtk.AddVelocity": "true"
+      },
+      "pvd_times_s": [
+        0.0,
+        3034920.0
+      ],
+      "vtu_count": 2,
+      "vtu_header_arrays": {
+        "sandy--tropical--s1691--f9225--global_default_L0p5--native-00000.vtu": [
+          "pw"
+        ],
+        "sandy--tropical--s1691--f9225--global_default_L0p5--native-00001.vtu": [
+          "pw"
+        ]
+      },
+      "sigmatop_sha256": "2a55135f11d20d51a3319c1aafe76f52a507f990d6cbdfea2c09253bbd8c40de",
+      "sigmatop_header": [
+        "# time[s] x_top_mean[mol/mol] sigma_top[mol/mol] n_top_dofs fourier_top[mol/mol] mode_proj[mol/mol]"
+      ],
+      "sigmatop_n": 601,
+      "sigmatop_first": [
+        0.0,
+        0.003600001663894,
+        7.076928558448e-07,
+        601.0,
+        1.001658356428e-06,
+        9.999944721145e-07
+      ],
+      "sigmatop_last": [
+        3034924.144811,
+        0.004601227137762,
+        8.062714092941e-07,
+        601.0,
+        1.141182667556e-06,
+        1.189811302645e-06
+      ],
+      "sigmatop_column_min": [
+        0.0,
+        0.003600001663894,
+        6.130239378065e-07,
+        601.0,
+        8.676649639715e-07,
+        8.634052537114e-07
+      ],
+      "sigmatop_column_max": [
+        3034924.144811,
+        0.004601227137762,
+        8.062714092941e-07,
+        601.0,
+        1.141182667556e-06,
+        1.189811302645e-06
+      ],
+      "first_top_mean_ge_0p1_s": null,
+      "first_top_max_ge_0p1_s": null,
+      "top_max_status": "not_recorded_in_sigmatop",
+      "case_manifest.json": {
+        "dumux": {
+          "onset": {
+            "amplification_since_min": 1.315236419933406,
+            "argmin_index": 238,
+            "csv": "/temp/zhixin/c72fill/runs_7/shard-004/0004--case-45164--native/sandy--tropical--s1691--f9225--global_default_L0p5--native_sigmatop.csv",
+            "minimum_position_fraction": 0.3973288814691152,
+            "n_samples": 600,
+            "onset_class": "resolved_onset",
+            "onset_high_s": 1310075.589177,
+            "onset_low_s": 1107747.312856,
+            "onset_refined_s": 1209946.7723389047,
+            "onset_s": 1208911.451016,
+            "plateau_samples": 41,
+            "plateau_width_s": 202328.2763210002,
+            "post_slope_per_s": 4.5455998136043554e-09,
+            "pre_slope_per_s": -4.975084335363405e-09,
+            "sigma_first": 7.074541269875e-07,
+            "sigma_last": 8.062714092941e-07,
+            "sigma_min": 6.130239378065e-07,
+            "status": "ok (interior minimum)",
+            "t_last_s": 3034924.144811,
+            "x_top_mean_at_min": 0.00422687015124
+          },
+          "run": {
+            "executable": "/temp/zhixin/surrogate/code/dumux_kiemle2023b_unsat/kiemle2023b-main/build-cmake/appl/simpleRichardsnc/test_model_salt",
+            "executable_sha256_16": "15bc6613e1915e00",
+            "input": "/temp/zhixin/c72fill/runs_7/shard-004/0004--case-45164--native/sandy--tropical--s1691--f9225--global_default_L0p5--native.input",
+            "log": "/temp/zhixin/c72fill/runs_7/shard-004/0004--case-45164--native/sandy--tropical--s1691--f9225--global_default_L0p5--native.log",
+            "returncode": 0,
+            "sigmatop_csv": "/temp/zhixin/c72fill/runs_7/shard-004/0004--case-45164--native/sandy--tropical--s1691--f9225--global_default_L0p5--native_sigmatop.csv"
+          }
+        },
+        "dumux_numerics": {
+          "case_resolved": {
+            "cells_x": 600,
+            "cells_y": 200,
+            "drain_time_fraction": 2.0,
+            "grading_y": -0.98,
+            "initial_dt_hat": 6.6e-06,
+            "lsa_onset_safety_factor": 3.0,
+            "max_dt_hat": 6.6e-06,
+            "samples_to_t_end": 600,
+            "t_end_hat": 0.03840469404911269,
+            "vtk_output_interval": 100000
+          },
+          "physical": {
+            "cells_x": 600,
+            "cells_y": 200,
+            "grading_y": -0.98,
+            "initial_dt_s": 5058.206908017976,
+            "max_dt_s": 5058.206908017976,
+            "samples_to_t_end": 600,
+            "t_end_s": 3034924.144810786,
+            "top_cell_height_m": 7.307273655507489e-05,
+            "vtk_output_interval": 100000
+          },
+          "requested": {
+            "cells_x": 600,
+            "cells_y": 200,
+            "drain_time_fraction": 2.0,
+            "grading_y": -0.98,
+            "initial_dt_hat": 6.6e-06,
+            "lsa_onset_safety_factor": 3.0,
+            "max_dt_hat": 6.6e-06,
+            "samples_to_t_end": 600,
+            "t_end_hat": 0.0,
+            "vtk_output_interval": 100000
+          }
+        },
+        "constitutive_audit": {
+          "branch": "surrogate_consistent_v1",
+          "dumux_density_at_x0_kg_m3": 1006.0241044335427,
+          "dumux_gravity_m_s2": 9.8,
+          "group_relative_errors": {
+            "beta": 0.0,
+            "gamma": 1.8558433607282367e-16,
+            "mualem_l": 0.0,
+            "p_hat_b": 0.0,
+            "r_e": 0.0,
+            "residual_saturation": 0.0,
+            "vg_n": 0.0,
+            "width_over_height": 1.4802973661668753e-16
+          },
+          "krw_mualem_exponent": true,
+          "max_group_relative_error": 1.8558433607282367e-16,
+          "max_krw_relative_error": 1.1411151548475116e-15,
+          "max_saturation_absolute_error": 2.220446049250313e-16,
+          "reference_density_kg_m3": 1006.0241044335427
+        }
+      },
+      "run_meta.json": {
+        "returncode": 0,
+        "input": "/temp/zhixin/c72fill/runs_7/shard-004/0004--case-45164--native/sandy--tropical--s1691--f9225--global_default_L0p5--native.input",
+        "log": "/temp/zhixin/c72fill/runs_7/shard-004/0004--case-45164--native/sandy--tropical--s1691--f9225--global_default_L0p5--native.log",
+        "sigmatop_csv": "/temp/zhixin/c72fill/runs_7/shard-004/0004--case-45164--native/sandy--tropical--s1691--f9225--global_default_L0p5--native_sigmatop.csv",
+        "executable": "/temp/zhixin/surrogate/code/dumux_kiemle2023b_unsat/kiemle2023b-main/build-cmake/appl/simpleRichardsnc/test_model_salt",
+        "executable_sha256_16": "15bc6613e1915e00"
+      },
+      "log_tail": "\nAssemble/solve/update time: 0.14(1.99%)/7.1(97.87%)/0.01(0.14%)\n[ 99%] Time step 593 done in 7.3 seconds. Wall clock time: 11715, time: 2.9995e+06, time step size: 5058.2\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  1 done, maximum relative shift = 8.5735e-07\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  2 done, maximum relative shift = 1.9167e-11\nAssemble/solve/update time: 0.15(2.04%)/7.1(97.82%)/0.01(0.14%)\n[ 99%] Time step 594 done in 7.3 seconds. Wall clock time: 11722, time: 3.0046e+06, time step size: 5058.2\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  1 done, maximum relative shift = 8.5666e-07\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  2 done, maximum relative shift = 1.9820e-11\nAssemble/solve/update time: 0.14(2.00%)/7(97.84%)/0.012(0.16%)\n[ 99%] Time step 595 done in 7.2 seconds. Wall clock time: 11729, time: 3.0096e+06, time step size: 5058.2\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  1 done, maximum relative shift = 8.5597e-07\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  2 done, maximum relative shift = 1.9386e-11\nAssemble/solve/update time: 0.15(2.02%)/7.4(97.82%)/0.012(0.15%)\n[ 99%] Time step 596 done in 7.6 seconds. Wall clock time: 11737, time: 3.0147e+06, time step size: 5058.2\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  1 done, maximum relative shift = 8.5529e-07\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  2 done, maximum relative shift = 1.9651e-11\nAssemble/solve/update time: 0.15(2.18%)/6.6(97.66%)/0.011(0.16%)\n[ 99%] Time step 597 done in 6.8 seconds. Wall clock time: 11744, time: 3.0197e+06, time step size: 5058.2\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  1 done, maximum relative shift = 8.5460e-07\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  2 done, maximum relative shift = 1.9218e-11\nAssemble/solve/update time: 0.15(2.11%)/6.9(97.73%)/0.011(0.16%)\n[100%] Time step 598 done in 7.1 seconds. Wall clock time: 11751, time: 3.0248e+06, time step size: 5058.2\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  1 done, maximum relative shift = 8.5392e-07\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  2 done, maximum relative shift = 1.9351e-11\nAssemble/solve/update time: 0.14(2.01%)/7(97.85%)/0.01(0.14%)\n[100%] Time step 599 done in 7.2 seconds. Wall clock time: 11758, time: 3.0299e+06, time step size: 5058.2\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  1 done, maximum relative shift = 8.5324e-07\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  2 done, maximum relative shift = 1.9460e-11\nAssemble/solve/update time: 0.15(2.10%)/6.8(97.75%)/0.01(0.15%)\nWriting output for problem \"sandy--tropical--s1691--f9225--global_default_L0p5--native\". Took 0.59 seconds.\n[100%] Time step 600 done in 7 seconds. Wall clock time: 11766, time: 3.0349e+06, time step size: 5058.2\nSimulation took 11766 seconds on 1 processes.\nThe cumulative CPU time was 11766 seconds.\n"
+    },
+    {
+      "run_key": "frodo:c72fill/runs_600/shard-009/0009--case-29422--native",
+      "path": "/temp/zhixin/c72fill/runs_600/shard-009/0009--case-29422--native",
+      "exists": true,
+      "files": [
+        "loamy--tropical--s2433--f9912--global_default_L0p5--native-00000.vtu",
+        "loamy--tropical--s2433--f9912--global_default_L0p5--native.input",
+        "loamy--tropical--s2433--f9912--global_default_L0p5--native.log",
+        "loamy--tropical--s2433--f9912--global_default_L0p5--native.pvd",
+        "loamy--tropical--s2433--f9912--global_default_L0p5--native_eigenprofile.dat",
+        "loamy--tropical--s2433--f9912--global_default_L0p5--native_sigmatop.csv"
+      ],
+      "small_file_hashes": {
+        "loamy--tropical--s2433--f9912--global_default_L0p5--native.input": "a4715c0cc609c58edf97caf1b79c39703669017d2228fad08f2ef1dc8e029c49",
+        "loamy--tropical--s2433--f9912--global_default_L0p5--native.pvd": "f65c483afe9e960c9d397a144470c0fe65a92c78c44ab3468857777cd3c05c1e",
+        "loamy--tropical--s2433--f9912--global_default_L0p5--native_eigenprofile.dat": "aeff42791ee1d5b383d2427b37558a097edde98158bef6dc17c36f957129578a"
+      },
+      "parameters": {
+        "Grid.Positions0": "0 0.6000000000000001",
+        "Grid.Positions1": "0 0.2",
+        "Grid.Cells0": "600",
+        "Grid.Cells1": "200",
+        "Grid.Grading1": "-0.98",
+        "TimeLoop.TEnd": "10057318.90532206",
+        "TimeLoop.DtInitial": "6152.508500182807",
+        "TimeLoop.MaxTimeStepSize": "6152.508500182807",
+        "TimeLoop.OutputInterval": "100000",
+        "Problem.Name": "loamy--tropical--s2433--f9912--global_default_L0p5--native",
+        "Problem.Permeability": "1.258470229041097e-12",
+        "Problem.Porosity": "0.4522096398475257",
+        "Problem.Swr": "0.1718412358281221",
+        "Problem.PcN": "1.476189555077514",
+        "Problem.PcAlpha": "0.000138138104327419",
+        "Problem.SweL": "-0.5082828533181083",
+        "Problem.KrwMualemExponent": "true",
+        "Problem.WaterLevel": "0.6471273004902539",
+        "Problem.EvaporationRate": "2.375380271409742e-08",
+        "Problem.SaltDiffusivity": "1.5e-09",
+        "Problem.ReferenceViscosity": "0.0011",
+        "Problem.SaltMoleFraction": "0.0036",
+        "Problem.GravitationalAcceleration": "9.800000000000001",
+        "Problem.PureWaterDensity": "998.203",
+        "Problem.DensityLinearCoefficient": "0.670804",
+        "Problem.DensityQuadraticCoefficient": "0.373854",
+        "Problem.MolarMassH2O": "0.01801528",
+        "Problem.MolarMassNaCl": "0.05844",
+        "Problem.Amplitude": "1e-06",
+        "Problem.WaveNumber": "2",
+        "Problem.StandardDeviationSaltMoleFraction": "1e-06",
+        "Problem.PerturbationType": "Eigenprofile",
+        "Problem.RandomSeed": "1",
+        "Problem.EnableGravity": "true",
+        "Problem.PerturbationHeight": "0",
+        "Problem.EigenprofilePath": "/temp/zhixin/c72fill/runs_600/shard-009/0009--case-29422--native/loamy--tropical--s2433--f9912--global_default_L0p5--native_eigenprofile.dat",
+        "Vtk.Precision": "Float64",
+        "Vtk.AddVelocity": "true"
+      },
+      "pvd_times_s": [
+        0.0
+      ],
+      "vtu_count": 1,
+      "vtu_header_arrays": {
+        "loamy--tropical--s2433--f9912--global_default_L0p5--native-00000.vtu": [
+          "pw"
+        ]
+      },
+      "sigmatop_sha256": "8fa117a0d1fba67d522f43300b955062cb75882fce69f9a81536cb8824716f53",
+      "sigmatop_header": [
+        "# time[s] x_top_mean[mol/mol] sigma_top[mol/mol] n_top_dofs fourier_top[mol/mol] mode_proj[mol/mol]"
+      ],
+      "sigmatop_n": 1109,
+      "sigmatop_first": [
+        0.0,
+        0.003600001663894,
+        7.076928558448e-07,
+        601.0,
+        1.001658356428e-06,
+        9.999944721146e-07
+      ],
+      "sigmatop_last": [
+        6816979.418203,
+        0.177768453023,
+        7.695494087794e-07,
+        601.0,
+        1.089209237427e-06,
+        1.08726372062e-06
+      ],
+      "sigmatop_column_min": [
+        0.0,
+        0.003600001663894,
+        4.759850514535e-07,
+        601.0,
+        6.737024407912e-07,
+        6.710693237788e-07
+      ],
+      "sigmatop_column_max": [
+        6816979.418203,
+        0.177768453023,
+        7.695494087794e-07,
+        601.0,
+        1.089209237427e-06,
+        1.08726372062e-06
+      ],
+      "first_top_mean_ge_0p1_s": 3709962.62561,
+      "first_top_max_ge_0p1_s": null,
+      "top_max_status": "not_recorded_in_sigmatop",
+      "log_tail": ".016(0.10%)\n[ 67%] Time step 1101 done in 17 seconds. Wall clock time: 27682, time: 6.7739e+06, time step size: 6152.5\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  1 done, maximum relative shift = 1.5407e-04\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  2 done, maximum relative shift = 4.3509e-10\nAssemble/solve/update time: 0.29(2.06%)/14(97.83%)/0.017(0.12%)\n[ 67%] Time step 1102 done in 14 seconds. Wall clock time: 27696, time: 6.7801e+06, time step size: 6152.5\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  1 done, maximum relative shift = 1.5407e-04\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  2 done, maximum relative shift = 3.8514e-10\nAssemble/solve/update time: 0.24(1.48%)/16(98.41%)/0.017(0.11%)\n[ 67%] Time step 1103 done in 16 seconds. Wall clock time: 27712, time: 6.7862e+06, time step size: 6152.5\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  1 done, maximum relative shift = 1.5407e-04\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  2 done, maximum relative shift = 4.0861e-10\nAssemble/solve/update time: 0.26(1.40%)/18(98.50%)/0.018(0.10%)\n[ 68%] Time step 1104 done in 19 seconds. Wall clock time: 27731, time: 6.7924e+06, time step size: 6152.5\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  1 done, maximum relative shift = 1.5407e-04\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  2 done, maximum relative shift = 4.2797e-10\nAssemble/solve/update time: 0.24(1.46%)/16(98.42%)/0.019(0.12%)\n[ 68%] Time step 1105 done in 17 seconds. Wall clock time: 27747, time: 6.7985e+06, time step size: 6152.5\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  1 done, maximum relative shift = 1.5407e-04\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  2 done, maximum relative shift = 4.3081e-10\nAssemble/solve/update time: 0.23(1.39%)/16(98.51%)/0.016(0.10%)\n[ 68%] Time step 1106 done in 16 seconds. Wall clock time: 27764, time: 6.8047e+06, time step size: 6152.5\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  1 done, maximum relative shift = 1.5407e-04\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  2 done, maximum relative shift = 4.1285e-10\nAssemble/solve/update time: 0.23(1.44%)/16(98.45%)/0.018(0.11%)\n[ 68%] Time step 1107 done in 16 seconds. Wall clock time: 27780, time: 6.8108e+06, time step size: 6152.5\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  1 done, maximum relative shift = 1.5407e-04\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  2 done, maximum relative shift = 3.8684e-10\nAssemble/solve/update time: 0.23(1.54%)/15(98.34%)/0.018(0.12%)\n[ 68%] Time step 1108 done in 15 seconds. Wall clock time: 27795, time: 6.817e+06, time step size: 6152.5\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  1 done, maximum relative shift = 1.5407e-04\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K"
+    },
+    {
+      "run_key": "frodo:hf1/runs/shard-002/0002--case-35733--native",
+      "path": "/temp/zhixin/hf1/runs/shard-002/0002--case-35733--native",
+      "exists": true,
+      "files": [
+        "case_manifest.json",
+        "run_meta.json",
+        "sandy--arid--s1701--f9711--global_default_L0p5--native-00000.vtu",
+        "sandy--arid--s1701--f9711--global_default_L0p5--native-00001.vtu",
+        "sandy--arid--s1701--f9711--global_default_L0p5--native.input",
+        "sandy--arid--s1701--f9711--global_default_L0p5--native.log",
+        "sandy--arid--s1701--f9711--global_default_L0p5--native.pvd",
+        "sandy--arid--s1701--f9711--global_default_L0p5--native_eigenprofile.dat",
+        "sandy--arid--s1701--f9711--global_default_L0p5--native_sigmatop.csv"
+      ],
+      "small_file_hashes": {
+        "case_manifest.json": "7ee45b81dbac468a4835e5ee2038fe882d40b76933b309ef12676b48bb5fb6eb",
+        "run_meta.json": "6ced6e2d9cf124bb4aa508be3f8aa7277deebfd91a2fb8feef2cef6933262545",
+        "sandy--arid--s1701--f9711--global_default_L0p5--native.input": "ab2eaa6ff9000db5887c51c2c9b55fb17111672a29ccfe3743d88c0e51881681",
+        "sandy--arid--s1701--f9711--global_default_L0p5--native.pvd": "98bfe2f80b64dde6ed226d7f87fceadcf74e84745f25745b23dc99c9f2f5a95d",
+        "sandy--arid--s1701--f9711--global_default_L0p5--native_eigenprofile.dat": "bb68d9c54fa91657e92ad044ea8945f7d9867ff37719f0f96a43476c3e412e2a"
+      },
+      "parameters": {
+        "Grid.Positions0": "0 0.6000000000000001",
+        "Grid.Positions1": "0 0.2",
+        "Grid.Cells0": "600",
+        "Grid.Cells1": "200",
+        "Grid.Grading1": "-0.98",
+        "TimeLoop.TEnd": "4488751.800544866",
+        "TimeLoop.DtInitial": "11221.87950136217",
+        "TimeLoop.MaxTimeStepSize": "11221.87950136217",
+        "TimeLoop.OutputInterval": "100000",
+        "Problem.Name": "sandy--arid--s1701--f9711--global_default_L0p5--native",
+        "Problem.Permeability": "1.898424089480219e-11",
+        "Problem.Porosity": "0.3629755160829093",
+        "Problem.Swr": "0.1280167879573959",
+        "Problem.PcN": "4.193278114836908",
+        "Problem.PcAlpha": "0.0003799090388382214",
+        "Problem.SweL": "-0.8549434769738311",
+        "Problem.KrwMualemExponent": "true",
+        "Problem.WaterLevel": "0.05232526255987695",
+        "Problem.EvaporationRate": "1.501554529657916e-10",
+        "Problem.SaltDiffusivity": "1.5e-09",
+        "Problem.ReferenceViscosity": "0.0011",
+        "Problem.SaltMoleFraction": "0.0036",
+        "Problem.GravitationalAcceleration": "9.800000000000001",
+        "Problem.PureWaterDensity": "998.203",
+        "Problem.DensityLinearCoefficient": "0.670804",
+        "Problem.DensityQuadraticCoefficient": "0.373854",
+        "Problem.MolarMassH2O": "0.01801528",
+        "Problem.MolarMassNaCl": "0.05844",
+        "Problem.Amplitude": "1e-06",
+        "Problem.WaveNumber": "1",
+        "Problem.StandardDeviationSaltMoleFraction": "1e-06",
+        "Problem.PerturbationType": "Eigenprofile",
+        "Problem.RandomSeed": "1",
+        "Problem.EnableGravity": "true",
+        "Problem.PerturbationHeight": "0",
+        "Problem.EigenprofilePath": "/temp/zhixin/hf1/runs/shard-002/0002--case-35733--native/sandy--arid--s1701--f9711--global_default_L0p5--native_eigenprofile.dat",
+        "Vtk.Precision": "Float64",
+        "Vtk.AddVelocity": "true"
+      },
+      "pvd_times_s": [
+        0.0,
+        4488750.0
+      ],
+      "vtu_count": 2,
+      "vtu_header_arrays": {
+        "sandy--arid--s1701--f9711--global_default_L0p5--native-00000.vtu": [
+          "pw"
+        ],
+        "sandy--arid--s1701--f9711--global_default_L0p5--native-00001.vtu": [
+          "pw"
+        ]
+      },
+      "sigmatop_sha256": "9d2f2b5bef6a9b79fbb23fa2cbba6d2653190d2c28a5046d88515dd59772b17a",
+      "sigmatop_header": [
+        "# time[s] x_top_mean[mol/mol] sigma_top[mol/mol] n_top_dofs"
+      ],
+      "sigmatop_n": 401,
+      "sigmatop_first": [
+        0.0,
+        0.003600001663894,
+        7.076928558448e-07,
+        601.0
+      ],
+      "sigmatop_last": [
+        4488751.800545,
+        0.003836444837783,
+        6.610753500673e-07,
+        601.0
+      ],
+      "sigmatop_column_min": [
+        0.0,
+        0.003600001663894,
+        6.347325167761e-07,
+        601.0
+      ],
+      "sigmatop_column_max": [
+        4488751.800545,
+        0.003836444837783,
+        7.076928558448e-07,
+        601.0
+      ],
+      "first_top_mean_ge_0p1_s": null,
+      "first_top_max_ge_0p1_s": null,
+      "top_max_status": "not_recorded_in_sigmatop",
+      "case_manifest.json": {
+        "dumux": {
+          "onset": {
+            "amplification_since_min": 1.041502258975165,
+            "argmin_index": 240,
+            "csv": "/temp/zhixin/hf1/runs/shard-002/0002--case-35733--native/sandy--arid--s1701--f9711--global_default_L0p5--native_sigmatop.csv",
+            "n_samples": 400,
+            "onset_s": 2704472.959828,
+            "sigma_first": 7.075391402578e-07,
+            "sigma_last": 6.610753500673e-07,
+            "sigma_min": 6.347325167761e-07,
+            "status": "ok (interior minimum)",
+            "t_last_s": 4488751.800545,
+            "x_top_mean_at_min": 0.003789860491487
+          },
+          "run": {
+            "input": "/temp/zhixin/hf1/runs/shard-002/0002--case-35733--native/sandy--arid--s1701--f9711--global_default_L0p5--native.input",
+            "log": "/temp/zhixin/hf1/runs/shard-002/0002--case-35733--native/sandy--arid--s1701--f9711--global_default_L0p5--native.log",
+            "returncode": 0,
+            "sigmatop_csv": "/temp/zhixin/hf1/runs/shard-002/0002--case-35733--native/sandy--arid--s1701--f9711--global_default_L0p5--native_sigmatop.csv"
+          }
+        },
+        "dumux_numerics": {
+          "case_resolved": {
+            "cells_x": 600,
+            "cells_y": 200,
+            "drain_time_fraction": 2.0,
+            "grading_y": -0.98,
+            "initial_dt_hat": 6.6e-06,
+            "lsa_onset_safety_factor": 2.0,
+            "max_dt_hat": 6.6e-06,
+            "samples_to_t_end": 400,
+            "t_end_hat": 0.00928451823879868,
+            "vtk_output_interval": 100000
+          },
+          "physical": {
+            "cells_x": 600,
+            "cells_y": 200,
+            "grading_y": -0.98,
+            "initial_dt_s": 11221.879501362166,
+            "max_dt_s": 11221.879501362166,
+            "samples_to_t_end": 400,
+            "t_end_s": 4488751.800544866,
+            "top_cell_height_m": 7.307273655507489e-05,
+            "vtk_output_interval": 100000
+          },
+          "requested": {
+            "cells_x": 600,
+            "cells_y": 200,
+            "drain_time_fraction": 2.0,
+            "grading_y": -0.98,
+            "initial_dt_hat": 6.6e-06,
+            "lsa_onset_safety_factor": 2.0,
+            "max_dt_hat": 6.6e-06,
+            "samples_to_t_end": 400,
+            "t_end_hat": 0.0,
+            "vtk_output_interval": 100000
+          }
+        },
+        "constitutive_audit": {
+          "branch": "surrogate_consistent_v1",
+          "dumux_density_at_x0_kg_m3": 1006.0241044335427,
+          "dumux_gravity_m_s2": 9.8,
+          "group_relative_errors": {
+            "beta": 0.0,
+            "gamma": 1.4820612263086054e-16,
+            "mualem_l": 0.0,
+            "p_hat_b": 0.0,
+            "r_e": 0.0,
+            "residual_saturation": 0.0,
+            "vg_n": 0.0,
+            "width_over_height": 1.4802973661668753e-16
+          },
+          "krw_mualem_exponent": true,
+          "max_group_relative_error": 1.4820612263086054e-16,
+          "max_krw_relative_error": 1.2075818022524052e-15,
+          "max_saturation_absolute_error": 2.220446049250313e-16,
+          "reference_density_kg_m3": 1006.0241044335427
+        }
+      },
+      "run_meta.json": {
+        "returncode": 0,
+        "input": "/temp/zhixin/hf1/runs/shard-002/0002--case-35733--native/sandy--arid--s1701--f9711--global_default_L0p5--native.input",
+        "log": "/temp/zhixin/hf1/runs/shard-002/0002--case-35733--native/sandy--arid--s1701--f9711--global_default_L0p5--native.log",
+        "sigmatop_csv": "/temp/zhixin/hf1/runs/shard-002/0002--case-35733--native/sandy--arid--s1701--f9711--global_default_L0p5--native_sigmatop.csv"
+      },
+      "log_tail": ".4931e-07\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  3 done, maximum relative shift = 3.0598e-09\nAssemble/solve/update time: 0.82(0.86%)/95(99.06%)/0.081(0.08%)\n[ 99%] Time step 395 done in 96 seconds. Wall clock time: 38027, time: 4.4326e+06, time step size: 11222\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  1 done, maximum relative shift = 3.9996e-07\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  2 done, maximum relative shift = 1.4927e-07\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  3 done, maximum relative shift = 3.0592e-09\nAssemble/solve/update time: 0.85(0.87%)/97(99.06%)/0.073(0.07%)\n[ 99%] Time step 396 done in 98 seconds. Wall clock time: 38125, time: 4.4439e+06, time step size: 11222\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  1 done, maximum relative shift = 3.9951e-07\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  2 done, maximum relative shift = 1.4923e-07\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  3 done, maximum relative shift = 3.0587e-09\nAssemble/solve/update time: 0.82(0.84%)/96(99.08%)/0.075(0.08%)\n[ 99%] Time step 397 done in 97 seconds. Wall clock time: 38222, time: 4.4551e+06, time step size: 11222\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  1 done, maximum relative shift = 3.9907e-07\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  2 done, maximum relative shift = 1.4919e-07\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  3 done, maximum relative shift = 3.0580e-09\nAssemble/solve/update time: 0.84(0.95%)/87(98.96%)/0.076(0.09%)\n[100%] Time step 398 done in 88 seconds. Wall clock time: 38310, time: 4.4663e+06, time step size: 11222\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  1 done, maximum relative shift = 3.9862e-07\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  2 done, maximum relative shift = 1.4915e-07\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  3 done, maximum relative shift = 3.0574e-09\nAssemble/solve/update time: 0.86(0.87%)/97(99.02%)/0.099(0.10%)\n[100%] Time step 399 done in 98 seconds. Wall clock time: 38408, time: 4.4775e+06, time step size: 11222\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  1 done, maximum relative shift = 3.9817e-07\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  2 done, maximum relative shift = 1.4911e-07\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  3 done, maximum relative shift = 3.0565e-09\nAssemble/solve/update time: 0.91(0.96%)/94(98.96%)/0.078(0.08%)\nWriting output for problem \"sandy--arid--s1701--f9711--global_default_L0p5--native\". Took 1.6 seconds.\n[100%] Time step 400 done in 95 seconds. Wall clock time: 38505, time: 4.4888e+06, time step size: 11222\nSimulation took 38505 seconds on 1 processes.\nThe cumulative CPU time was 38505 seconds.\n"
+    },
+    {
+      "run_key": "frodo:hf1/runs/shard-018/0018--case-19674--native",
+      "path": "/temp/zhixin/hf1/runs/shard-018/0018--case-19674--native",
+      "exists": true,
+      "files": [
+        "case_manifest.json",
+        "loamy--arid--s1063--f10027--global_default_L0p5--native-00000.vtu",
+        "loamy--arid--s1063--f10027--global_default_L0p5--native-00001.vtu",
+        "loamy--arid--s1063--f10027--global_default_L0p5--native.input",
+        "loamy--arid--s1063--f10027--global_default_L0p5--native.log",
+        "loamy--arid--s1063--f10027--global_default_L0p5--native.pvd",
+        "loamy--arid--s1063--f10027--global_default_L0p5--native_eigenprofile.dat",
+        "loamy--arid--s1063--f10027--global_default_L0p5--native_sigmatop.csv",
+        "run_meta.json"
+      ],
+      "small_file_hashes": {
+        "case_manifest.json": "738b55b0932f3ceb9ff1416f9fae5cbd1bd5b4f6e8fbe4803d4339a102fb9d9b",
+        "loamy--arid--s1063--f10027--global_default_L0p5--native.input": "00e61dad81bacf54a1f605598ff8587800b82f252db98297b794db2ff6fc67da",
+        "loamy--arid--s1063--f10027--global_default_L0p5--native.pvd": "3b41eee5253fd6e0772773b550c1424b77fcdb76f4d9092169b7d7065d8ecbaf",
+        "loamy--arid--s1063--f10027--global_default_L0p5--native_eigenprofile.dat": "632b0464b61cfd2483545f4b0c23933a15e6a595f43527bab4599a0b8cd85929",
+        "run_meta.json": "17790c5eb843a1e8e4f07b0d7812da4e0852bc414a14122b6edf1c183b2fbc23"
+      },
+      "parameters": {
+        "Grid.Positions0": "0 0.6000000000000001",
+        "Grid.Positions1": "0 0.2",
+        "Grid.Cells0": "600",
+        "Grid.Cells1": "200",
+        "Grid.Grading1": "-0.98",
+        "TimeLoop.TEnd": "4756282.435184495",
+        "TimeLoop.DtInitial": "5221.861668776914",
+        "TimeLoop.MaxTimeStepSize": "5221.861668776914",
+        "TimeLoop.OutputInterval": "100000",
+        "Problem.Name": "loamy--arid--s1063--f10027--global_default_L0p5--native",
+        "Problem.Permeability": "6.158963998107164e-13",
+        "Problem.Porosity": "0.3947847117113028",
+        "Problem.Swr": "0.1660920060918488",
+        "Problem.PcN": "1.482399658502254",
+        "Problem.PcAlpha": "0.0001188368223851577",
+        "Problem.SweL": "-0.4794692610982442",
+        "Problem.KrwMualemExponent": "true",
+        "Problem.WaterLevel": "0.3603611517101822",
+        "Problem.EvaporationRate": "2.798723566041545e-08",
+        "Problem.SaltDiffusivity": "1.5e-09",
+        "Problem.ReferenceViscosity": "0.0011",
+        "Problem.SaltMoleFraction": "0.0036",
+        "Problem.GravitationalAcceleration": "9.800000000000001",
+        "Problem.PureWaterDensity": "998.203",
+        "Problem.DensityLinearCoefficient": "0.670804",
+        "Problem.DensityQuadraticCoefficient": "0.373854",
+        "Problem.MolarMassH2O": "0.01801528",
+        "Problem.MolarMassNaCl": "0.05844",
+        "Problem.Amplitude": "1e-06",
+        "Problem.WaveNumber": "2",
+        "Problem.StandardDeviationSaltMoleFraction": "1e-06",
+        "Problem.PerturbationType": "Eigenprofile",
+        "Problem.RandomSeed": "1",
+        "Problem.EnableGravity": "true",
+        "Problem.PerturbationHeight": "0",
+        "Problem.EigenprofilePath": "/temp/zhixin/hf1/runs/shard-018/0018--case-19674--native/loamy--arid--s1063--f10027--global_default_L0p5--native_eigenprofile.dat",
+        "Vtk.Precision": "Float64",
+        "Vtk.AddVelocity": "true"
+      },
+      "pvd_times_s": [
+        0.0,
+        4756280.0
+      ],
+      "vtu_count": 2,
+      "vtu_header_arrays": {
+        "loamy--arid--s1063--f10027--global_default_L0p5--native-00000.vtu": [
+          "pw"
+        ],
+        "loamy--arid--s1063--f10027--global_default_L0p5--native-00001.vtu": [
+          "pw"
+        ]
+      },
+      "sigmatop_sha256": "34c7446ed98548f0d6f178005bb62e2d6567f1adba70aca082a8b0d1c5f4ca87",
+      "sigmatop_header": [
+        "# time[s] x_top_mean[mol/mol] sigma_top[mol/mol] n_top_dofs"
+      ],
+      "sigmatop_n": 912,
+      "sigmatop_first": [
+        0.0,
+        0.003600001663894,
+        7.076928558448e-07,
+        601.0
+      ],
+      "sigmatop_last": [
+        4756282.435184,
+        0.1586917621519,
+        7.360755142735e-07,
+        601.0
+      ],
+      "sigmatop_column_min": [
+        0.0,
+        0.003600001663894,
+        5.06415900467e-07,
+        601.0
+      ],
+      "sigmatop_column_max": [
+        4756282.435184,
+        0.1586917621519,
+        7.360755142735e-07,
+        601.0
+      ],
+      "first_top_mean_ge_0p1_s": 2913798.811177,
+      "first_top_max_ge_0p1_s": null,
+      "top_max_status": "not_recorded_in_sigmatop",
+      "case_manifest.json": {
+        "dumux": {
+          "onset": {
+            "amplification_since_min": 1.4535000058148164,
+            "argmin_index": 440,
+            "csv": "/temp/zhixin/hf1/runs/shard-018/0018--case-19674--native/loamy--arid--s1063--f10027--global_default_L0p5--native_sigmatop.csv",
+            "n_samples": 911,
+            "onset_s": 2302840.995931,
+            "sigma_first": 7.08286232524e-07,
+            "sigma_last": 7.360755142735e-07,
+            "sigma_min": 5.06415900467e-07,
+            "status": "ok (interior minimum)",
+            "t_last_s": 4756282.435184,
+            "x_top_mean_at_min": 0.08056645549347
+          },
+          "run": {
+            "input": "/temp/zhixin/hf1/runs/shard-018/0018--case-19674--native/loamy--arid--s1063--f10027--global_default_L0p5--native.input",
+            "log": "/temp/zhixin/hf1/runs/shard-018/0018--case-19674--native/loamy--arid--s1063--f10027--global_default_L0p5--native.log",
+            "returncode": 0,
+            "sigmatop_csv": "/temp/zhixin/hf1/runs/shard-018/0018--case-19674--native/loamy--arid--s1063--f10027--global_default_L0p5--native_sigmatop.csv"
+          }
+        },
+        "dumux_numerics": {
+          "case_resolved": {
+            "cells_x": 600,
+            "cells_y": 200,
+            "drain_time_fraction": 2.0,
+            "grading_y": -0.98,
+            "initial_dt_hat": 6.6e-06,
+            "lsa_onset_safety_factor": 2.0,
+            "max_dt_hat": 6.6e-06,
+            "samples_to_t_end": 400,
+            "t_end_hat": 1.6859213823653243,
+            "vtk_output_interval": 100000
+          },
+          "physical": {
+            "cells_x": 600,
+            "cells_y": 200,
+            "grading_y": -0.98,
+            "initial_dt_s": 5221.861668776914,
+            "max_dt_s": 5221.861668776914,
+            "samples_to_t_end": 400,
+            "t_end_s": 4756282.435184495,
+            "top_cell_height_m": 7.307273655507489e-05,
+            "vtk_output_interval": 100000
+          },
+          "requested": {
+            "cells_x": 600,
+            "cells_y": 200,
+            "drain_time_fraction": 2.0,
+            "grading_y": -0.98,
+            "initial_dt_hat": 6.6e-06,
+            "lsa_onset_safety_factor": 2.0,
+            "max_dt_hat": 6.6e-06,
+            "samples_to_t_end": 400,
+            "t_end_hat": 0.0,
+            "vtk_output_interval": 100000
+          }
+        },
+        "constitutive_audit": {
+          "branch": "surrogate_consistent_v1",
+          "dumux_density_at_x0_kg_m3": 1006.0241044335427,
+          "dumux_gravity_m_s2": 9.8,
+          "group_relative_errors": {
+            "beta": 0.0,
+            "gamma": 1.184499140681796e-16,
+            "mualem_l": 0.0,
+            "p_hat_b": 0.0,
+            "r_e": 0.0,
+            "residual_saturation": 0.0,
+            "vg_n": 0.0,
+            "width_over_height": 1.4802973661668753e-16
+          },
+          "krw_mualem_exponent": true,
+          "max_group_relative_error": 1.4802973661668753e-16,
+          "max_krw_relative_error": 3.4660884090579228e-15,
+          "max_saturation_absolute_error": 2.220446049250313e-16,
+          "reference_density_kg_m3": 1006.0241044335427
+        }
+      },
+      "run_meta.json": {
+        "returncode": 0,
+        "input": "/temp/zhixin/hf1/runs/shard-018/0018--case-19674--native/loamy--arid--s1063--f10027--global_default_L0p5--native.input",
+        "log": "/temp/zhixin/hf1/runs/shard-018/0018--case-19674--native/loamy--arid--s1063--f10027--global_default_L0p5--native.log",
+        "sigmatop_csv": "/temp/zhixin/hf1/runs/shard-018/0018--case-19674--native/loamy--arid--s1063--f10027--global_default_L0p5--native_sigmatop.csv"
+      },
+      "log_tail": " = 5.0529e-10\nAssemble/solve/update time: 0.53(1.04%)/50(98.84%)/0.058(0.11%)\n[ 99%] Time step 904 done in 51 seconds. Wall clock time: 49074, time: 4.7206e+06, time step size: 5221.9\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  1 done, maximum relative shift = 1.6640e-04\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  2 done, maximum relative shift = 4.1832e-10\nAssemble/solve/update time: 0.52(1.04%)/49(98.86%)/0.051(0.10%)\n[ 99%] Time step 905 done in 50 seconds. Wall clock time: 49124, time: 4.7258e+06, time step size: 5221.9\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  1 done, maximum relative shift = 1.6640e-04\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  2 done, maximum relative shift = 4.5752e-10\nAssemble/solve/update time: 0.63(1.16%)/54(98.76%)/0.047(0.09%)\n[ 99%] Time step 906 done in 55 seconds. Wall clock time: 49179, time: 4.731e+06, time step size: 5221.9\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  1 done, maximum relative shift = 1.6640e-04\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  2 done, maximum relative shift = 4.1323e-10\nAssemble/solve/update time: 0.59(1.19%)/49(98.71%)/0.053(0.11%)\n[100%] Time step 907 done in 50 seconds. Wall clock time: 49228, time: 4.7362e+06, time step size: 5221.9\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  1 done, maximum relative shift = 1.6641e-04\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  2 done, maximum relative shift = 5.0454e-10\nAssemble/solve/update time: 0.57(1.10%)/51(98.80%)/0.05(0.10%)\n[100%] Time step 908 done in 52 seconds. Wall clock time: 49280, time: 4.7415e+06, time step size: 5221.9\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  1 done, maximum relative shift = 1.6641e-04\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  2 done, maximum relative shift = 4.4361e-10\nAssemble/solve/update time: 0.55(1.13%)/48(98.76%)/0.05(0.10%)\n[100%] Time step 909 done in 49 seconds. Wall clock time: 49329, time: 4.7467e+06, time step size: 5221.9\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  1 done, maximum relative shift = 1.6641e-04\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  2 done, maximum relative shift = 4.0943e-10\nAssemble/solve/update time: 0.55(0.97%)/56(98.93%)/0.057(0.10%)\n[100%] Time step 910 done in 57 seconds. Wall clock time: 49386, time: 4.7519e+06, time step size: 5221.9\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  1 done, maximum relative shift = 1.3984e-04\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  2 done, maximum relative shift = 3.6544e-10\nAssemble/solve/update time: 0.57(1.17%)/48(98.72%)/0.051(0.11%)\nWriting output for problem \"loamy--arid--s1063--f10027--global_default_L0p5--native\". Took 1.1 seconds.\n[100%] Time step 911 done in 49 seconds. Wall clock time: 49436, time: 4.7563e+06, time step size: 4388.3\nSimulation took 49436 seconds on 1 processes.\nThe cumulative CPU time was 49436 seconds.\n"
+    },
+    {
+      "run_key": "frodo:hf1/runs/shard-019/0079--case-38852--native",
+      "path": "/temp/zhixin/hf1/runs/shard-019/0079--case-38852--native",
+      "exists": true,
+      "files": [
+        "case_manifest.json",
+        "run_meta.json",
+        "sandy--boreal--s3170--f1079--global_default_L0p5--native-00000.vtu",
+        "sandy--boreal--s3170--f1079--global_default_L0p5--native-00001.vtu",
+        "sandy--boreal--s3170--f1079--global_default_L0p5--native.input",
+        "sandy--boreal--s3170--f1079--global_default_L0p5--native.log",
+        "sandy--boreal--s3170--f1079--global_default_L0p5--native.pvd",
+        "sandy--boreal--s3170--f1079--global_default_L0p5--native_eigenprofile.dat",
+        "sandy--boreal--s3170--f1079--global_default_L0p5--native_sigmatop.csv"
+      ],
+      "small_file_hashes": {
+        "case_manifest.json": "5801546f0510ce55ebf7d94429003aa6f897174af41555cbc2a02310eba7e28a",
+        "run_meta.json": "d475a3178d307b935c3703513690b60e9f57c174f31088c374661fa9c9687df9",
+        "sandy--boreal--s3170--f1079--global_default_L0p5--native.input": "94df3effe8af655ef177a2c61410d8e8719589bb120aec50e16b9fe0dfc20f4d",
+        "sandy--boreal--s3170--f1079--global_default_L0p5--native.pvd": "e49a7d88c74b8bf1a45f0314fa0b3d99be168bfd63a0810a28f9386bd0abcc77",
+        "sandy--boreal--s3170--f1079--global_default_L0p5--native_eigenprofile.dat": "8d04a91f7c4d4e0d29bf72673f0dffe92530e45131e1f123fd139759541fe417"
+      },
+      "parameters": {
+        "Grid.Positions0": "0 0.6000000000000001",
+        "Grid.Positions1": "0 0.2",
+        "Grid.Cells0": "600",
+        "Grid.Cells1": "200",
+        "Grid.Grading1": "-0.98",
+        "TimeLoop.TEnd": "295116.6633000694",
+        "TimeLoop.DtInitial": "737.7916582501734",
+        "TimeLoop.MaxTimeStepSize": "737.7916582501734",
+        "TimeLoop.OutputInterval": "100000",
+        "Problem.Name": "sandy--boreal--s3170--f1079--global_default_L0p5--native",
+        "Problem.Permeability": "3.241344364255908e-12",
+        "Problem.Porosity": "0.2988338772988599",
+        "Problem.Swr": "0.1633240497681339",
+        "Problem.PcN": "2.648866708233435",
+        "Problem.PcAlpha": "0.0003567433344406836",
+        "Problem.SweL": "-0.868324996536848",
+        "Problem.KrwMualemExponent": "true",
+        "Problem.WaterLevel": "0.8664831930308342",
+        "Problem.EvaporationRate": "5.207102711947411e-09",
+        "Problem.SaltDiffusivity": "1.5e-09",
+        "Problem.ReferenceViscosity": "0.0011",
+        "Problem.SaltMoleFraction": "0.0036",
+        "Problem.GravitationalAcceleration": "9.800000000000001",
+        "Problem.PureWaterDensity": "998.203",
+        "Problem.DensityLinearCoefficient": "0.670804",
+        "Problem.DensityQuadraticCoefficient": "0.373854",
+        "Problem.MolarMassH2O": "0.01801528",
+        "Problem.MolarMassNaCl": "0.05844",
+        "Problem.Amplitude": "1e-06",
+        "Problem.WaveNumber": "16",
+        "Problem.StandardDeviationSaltMoleFraction": "1e-06",
+        "Problem.PerturbationType": "Eigenprofile",
+        "Problem.RandomSeed": "1",
+        "Problem.EnableGravity": "true",
+        "Problem.PerturbationHeight": "0",
+        "Problem.EigenprofilePath": "/temp/zhixin/hf1/runs/shard-019/0079--case-38852--native/sandy--boreal--s3170--f1079--global_default_L0p5--native_eigenprofile.dat",
+        "Vtk.Precision": "Float64",
+        "Vtk.AddVelocity": "true"
+      },
+      "pvd_times_s": [
+        0.0,
+        295117.0
+      ],
+      "vtu_count": 2,
+      "vtu_header_arrays": {
+        "sandy--boreal--s3170--f1079--global_default_L0p5--native-00000.vtu": [
+          "pw"
+        ],
+        "sandy--boreal--s3170--f1079--global_default_L0p5--native-00001.vtu": [
+          "pw"
+        ]
+      },
+      "sigmatop_sha256": "7916e5487ede655603cf410267a95af9f791441e05ea3362a8dd1f66df4ac194",
+      "sigmatop_header": [
+        "# time[s] x_top_mean[mol/mol] sigma_top[mol/mol] n_top_dofs"
+      ],
+      "sigmatop_n": 401,
+      "sigmatop_first": [
+        0.0,
+        0.003600001663894,
+        7.076928558448e-07,
+        601.0
+      ],
+      "sigmatop_last": [
+        295116.6633001,
+        0.175927045926,
+        7.642679724151e-07,
+        601.0
+      ],
+      "sigmatop_column_min": [
+        0.0,
+        0.003600001663894,
+        7.076928558448e-07,
+        601.0
+      ],
+      "sigmatop_column_max": [
+        295116.6633001,
+        0.175927045926,
+        7.648382930899e-07,
+        601.0
+      ],
+      "first_top_mean_ge_0p1_s": 162314.164815,
+      "first_top_max_ge_0p1_s": null,
+      "top_max_status": "not_recorded_in_sigmatop",
+      "case_manifest.json": {
+        "dumux": {
+          "onset": {
+            "amplification_since_min": 1.0581963296814916,
+            "argmin_index": 192,
+            "csv": "/temp/zhixin/hf1/runs/shard-019/0079--case-38852--native/sandy--boreal--s3170--f1079--global_default_L0p5--native_sigmatop.csv",
+            "n_samples": 400,
+            "onset_s": 142393.7900423,
+            "sigma_first": 7.547711515604e-07,
+            "sigma_last": 7.642679724151e-07,
+            "sigma_min": 7.222364612105e-07,
+            "status": "ok (interior minimum)",
+            "t_last_s": 295116.6633001,
+            "x_top_mean_at_min": 0.08862862770251
+          },
+          "run": {
+            "input": "/temp/zhixin/hf1/runs/shard-019/0079--case-38852--native/sandy--boreal--s3170--f1079--global_default_L0p5--native.input",
+            "log": "/temp/zhixin/hf1/runs/shard-019/0079--case-38852--native/sandy--boreal--s3170--f1079--global_default_L0p5--native.log",
+            "returncode": 0,
+            "sigmatop_csv": "/temp/zhixin/hf1/runs/shard-019/0079--case-38852--native/sandy--boreal--s3170--f1079--global_default_L0p5--native_sigmatop.csv"
+          }
+        },
+        "dumux_numerics": {
+          "case_resolved": {
+            "cells_x": 600,
+            "cells_y": 200,
+            "drain_time_fraction": 2.0,
+            "grading_y": -0.98,
+            "initial_dt_hat": 6.6e-06,
+            "lsa_onset_safety_factor": 2.0,
+            "max_dt_hat": 6.6e-06,
+            "samples_to_t_end": 400,
+            "t_end_hat": 0.0257116561164487,
+            "vtk_output_interval": 100000
+          },
+          "physical": {
+            "cells_x": 600,
+            "cells_y": 200,
+            "grading_y": -0.98,
+            "initial_dt_s": 737.7916582501734,
+            "max_dt_s": 737.7916582501734,
+            "samples_to_t_end": 400,
+            "t_end_s": 295116.6633000694,
+            "top_cell_height_m": 7.307273655507489e-05,
+            "vtk_output_interval": 100000
+          },
+          "requested": {
+            "cells_x": 600,
+            "cells_y": 200,
+            "drain_time_fraction": 2.0,
+            "grading_y": -0.98,
+            "initial_dt_hat": 6.6e-06,
+            "lsa_onset_safety_factor": 2.0,
+            "max_dt_hat": 6.6e-06,
+            "samples_to_t_end": 400,
+            "t_end_hat": 0.0,
+            "vtk_output_interval": 100000
+          }
+        },
+        "constitutive_audit": {
+          "branch": "surrogate_consistent_v1",
+          "dumux_density_at_x0_kg_m3": 1006.0241044335427,
+          "dumux_gravity_m_s2": 9.8,
+          "group_relative_errors": {
+            "beta": 0.0,
+            "gamma": 0.0,
+            "mualem_l": 0.0,
+            "p_hat_b": 0.0,
+            "r_e": 0.0,
+            "residual_saturation": 0.0,
+            "vg_n": 0.0,
+            "width_over_height": 1.4802973661668753e-16
+          },
+          "krw_mualem_exponent": true,
+          "max_group_relative_error": 1.4802973661668753e-16,
+          "max_krw_relative_error": 1.0023099466877168e-14,
+          "max_saturation_absolute_error": 5.551115123125783e-17,
+          "reference_density_kg_m3": 1006.0241044335427
+        }
+      },
+      "run_meta.json": {
+        "returncode": 0,
+        "input": "/temp/zhixin/hf1/runs/shard-019/0079--case-38852--native/sandy--boreal--s3170--f1079--global_default_L0p5--native.input",
+        "log": "/temp/zhixin/hf1/runs/shard-019/0079--case-38852--native/sandy--boreal--s3170--f1079--global_default_L0p5--native.log",
+        "sigmatop_csv": "/temp/zhixin/hf1/runs/shard-019/0079--case-38852--native/sandy--boreal--s3170--f1079--global_default_L0p5--native_sigmatop.csv"
+      },
+      "log_tail": "-10\nAssemble/solve/update time: 0.5(2.33%)/21(97.44%)/0.05(0.23%)\n[ 98%] Time step 393 done in 22 seconds. Wall clock time: 9780.8, time: 2.8995e+05, time step size: 737.79\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  1 done, maximum relative shift = 4.2176e-04\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  2 done, maximum relative shift = 3.6367e-10\nAssemble/solve/update time: 0.53(2.49%)/21(97.21%)/0.065(0.30%)\n[ 99%] Time step 394 done in 22 seconds. Wall clock time: 9802.5, time: 2.9069e+05, time step size: 737.79\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  1 done, maximum relative shift = 4.2176e-04\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  2 done, maximum relative shift = 3.6893e-10\nAssemble/solve/update time: 0.65(3.09%)/20(96.63%)/0.06(0.28%)\n[ 99%] Time step 395 done in 21 seconds. Wall clock time: 9823.8, time: 2.9143e+05, time step size: 737.79\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  1 done, maximum relative shift = 4.2176e-04\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  2 done, maximum relative shift = 3.4018e-10\nAssemble/solve/update time: 0.58(2.51%)/22(97.28%)/0.048(0.21%)\n[ 99%] Time step 396 done in 23 seconds. Wall clock time: 9846.9, time: 2.9217e+05, time step size: 737.79\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  1 done, maximum relative shift = 4.2176e-04\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  2 done, maximum relative shift = 3.4753e-10\nAssemble/solve/update time: 0.56(2.64%)/21(97.13%)/0.051(0.24%)\n[ 99%] Time step 397 done in 22 seconds. Wall clock time: 9868.5, time: 2.929e+05, time step size: 737.79\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  1 done, maximum relative shift = 4.2176e-04\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  2 done, maximum relative shift = 3.6940e-10\nAssemble/solve/update time: 0.61(2.66%)/22(97.10%)/0.054(0.23%)\n[100%] Time step 398 done in 23 seconds. Wall clock time: 9891.7, time: 2.9364e+05, time step size: 737.79\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  1 done, maximum relative shift = 4.2176e-04\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  2 done, maximum relative shift = 3.2409e-10\nAssemble/solve/update time: 0.53(2.48%)/21(97.32%)/0.044(0.21%)\n[100%] Time step 399 done in 21 seconds. Wall clock time: 9913.2, time: 2.9438e+05, time step size: 737.79\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  1 done, maximum relative shift = 4.2176e-04\nAssemble: r(x^k) = dS/dt + div F - q;   M = grad r\rSolve: M deltax^k = r\u001b[K\rUpdate: x^(k+1) = x^k - deltax^k\u001b[K\rNewton iteration  2 done, maximum relative shift = 3.5120e-10\nAssemble/solve/update time: 0.53(2.33%)/22(97.44%)/0.053(0.23%)\nWriting output for problem \"sandy--boreal--s3170--f1079--global_default_L0p5--native\". Took 1.7 seconds.\n[100%] Time step 400 done in 23 seconds. Wall clock time: 9937.6, time: 2.9512e+05, time step size: 737.79\nSimulation took 9937.6 seconds on 1 processes.\nThe cumulative CPU time was 9937.6 seconds.\n"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "utc": "2026-11-03T13:24:37.917296+00:00",
+  "checks": {
+    "234_recomputed_G_match_frozen": true,
+    "404_series_sha_match": true,
+    "t_eff_undefined": true,
+    "no_fake_resolved_detection": true,
+    "initial_profile_checks_pass": true,
+    "tests_passed": true,
+    "seven_single_page_pdfs": true,
+    "seven_pngs": true,
+    "scripts_compile": true
+  },
+  "pdf_checks": [
+    {
+      "path": "figure1_amplification.pdf",
+      "pages": 1,
+      "text_characters": 534,
+      "bytes": 22767
+    },
+    {
+      "path": "figure2_observation_window.pdf",
+      "pages": 1,
+      "text_characters": 423,
+      "bytes": 21706
+    },
+    {
+      "path": "figure3_physical_associations.pdf",
+      "pages": 1,
+      "text_characters": 587,
+      "bytes": 33516
+    },
+    {
+      "path": "figure4_relative_magnitude.pdf",
+      "pages": 1,
+      "text_characters": 441,
+      "bytes": 22481
+    },
+    {
+      "path": "figure5_depth_structure.pdf",
+      "pages": 1,
+      "text_characters": 726,
+      "bytes": 17636
+    },
+    {
+      "path": "figure6_dense_evolution.pdf",
+      "pages": 1,
+      "text_characters": 633,
+      "bytes": 26645
+    },
+    {
+      "path": "figure7_field_anomalies.pdf",
+      "pages": 1,
+      "text_characters": 347,
+      "bytes": 270384
+    }
+  ],
+  "visual_QA": "Figures 1-6 contact sheet and Figure7 individually inspected; explicit shallow crop and absolute shared anomaly scale; labels legible",
+  "simulations_started": 0,
+  "lsa_solves": 0,
+  "remote_original_writes": 0,
+  "all_passed": true
+}

@@ -1,0 +1,162 @@
+[
+  {
+    "path": "command/4.md",
+    "sha256": "93ecdc048de540c917f79ac0ecdfee8b7db59ea595d1d662e36ca27ba2887b1c",
+    "bytes": 15965
+  },
+  {
+    "path": "paper1_sources.lock.json",
+    "sha256": "1a60e259f45b2e4c8ce0bc6a9efb8919324ecbae1a94676e96bd65e58a7e7c30",
+    "bytes": 5520
+  },
+  {
+    "path": "analysis/onset_semantics_20261102/CONTRACT_ZH.md",
+    "sha256": "65ef61d04654a81f5df007dee782654d3b02821be659cbc9a74ff81fffd9a78e",
+    "bytes": 7989
+  },
+  {
+    "path": "analysis/onset_semantics_20261102/views/run_audit.csv",
+    "sha256": "ad53f12f0c4465436a81958a49faeaf8205e0d2c40f27ff9d354d344b8c0a223",
+    "bytes": 771969
+  },
+  {
+    "path": "analysis/onset_semantics_20261102/views/wp1_supplement_audit.csv",
+    "sha256": "30b04c0e548667f75d9a482dbd297926a837778b3ee3394c4df6a071d2b510c9",
+    "bytes": 130161
+  },
+  {
+    "path": "analysis/phase0_20261102/remote_frodo_inventory.json",
+    "sha256": "49226a613c8961236bca92685786e9415437267e48c176413ade92318bb5184a",
+    "bytes": 5491765
+  },
+  {
+    "path": "analysis/dense_history_20261102/plan.json",
+    "sha256": "0aef26139122765ff3ec9bf6d5001489c33e965a56c81e475b605a9bb889d3c6",
+    "bytes": 116873
+  },
+  {
+    "path": "analysis/dense_history_20261102/time_reconciliation.csv",
+    "sha256": "699d9963932c83892392ed014b343cea99b1dc89b373c281dac935adc6df392a",
+    "bytes": 115276
+  },
+  {
+    "path": "analysis/dense_history_20261102/run_assessment.csv",
+    "sha256": "bbc664fdcde75f66af0e73c8de7ad753253dd8bc3c1dc2b12c584b1f8509f552",
+    "bytes": 17163
+  },
+  {
+    "path": "analysis/dense_history_20261102/inventory_summary.csv",
+    "sha256": "0f4bbff368aed0173a5e87e2e5cac6a2a13e8b469f9ce4fdce5c3a99536bedb5",
+    "bytes": 9210
+  },
+  {
+    "path": "analysis/dense_history_20261102/evidence/product_manifest.json",
+    "sha256": "a9ddab37441341ab4bded2eefb5dbc4c9e4c1bb4a5a6991c6a19934a085071a5",
+    "bytes": 21938
+  },
+  {
+    "path": "analysis/pilot0_integrated_20261102/provenance/extract_onset_2025.py",
+    "sha256": "51e75a7f6225b2526de584ea9865208457a3d818a7c3b381cadc09af3f67fbe0",
+    "bytes": 8237
+  },
+  {
+    "path": "scripts/analyze_post_onset.py",
+    "sha256": "904110a91700bf225789be5027448a37bf7f8393b51e33a1915280988207cf75",
+    "bytes": 8328
+  },
+  {
+    "path": "scripts/analyze_post_onset_fields.py",
+    "sha256": "bf662ed4f097f74ef43ca9e26ba63b3547b53eef572cda1239d787a25c0621c8",
+    "bytes": 7255
+  },
+  {
+    "path": "scripts/collect_post_onset.py",
+    "sha256": "52b49690d8bd4bf7895e0be587994848ad4268c58b5759984966a6e027d3d35e",
+    "bytes": 2755
+  },
+  {
+    "path": "scripts/collect_post_onset_fields.py",
+    "sha256": "098265adaf8345b570ed2325098f5a2759e3e303216f1109f20791bad1a1c663",
+    "bytes": 1667
+  },
+  {
+    "path": "scripts/plot_post_onset.py",
+    "sha256": "45b6294638193f7824845ea8c926ffb31b07afc2dac92778a9232863c789d1a3",
+    "bytes": 8199
+  },
+  {
+    "path": "scripts/post_onset_field_worker.py",
+    "sha256": "b1a1dfe9471a4bde95366b5afbd434e26d6550b6b41398db64f2dd5aa08e8c1a",
+    "bytes": 3907
+  },
+  {
+    "path": "scripts/report_post_onset.py",
+    "sha256": "999de52e4c04b4852d0eace6a218d330215bbf196fb5b967eb800d046ba1c0ba",
+    "bytes": 29010
+  },
+  {
+    "path": "scripts/summarize_post_onset.py",
+    "sha256": "18e6fdb4dabb628b52e1cb29d710807689e7c70bde367cc46423f1e7a8c8d730",
+    "bytes": 10898
+  },
+  {
+    "path": "scripts/test_post_onset.py",
+    "sha256": "f398a2eb25cd8ee3cf9889c058c7ca17554d356c7762f9f0d5d7424ad3acd5b2",
+    "bytes": 3806
+  },
+  {
+    "path": "scripts/verify_post_onset.py",
+    "sha256": "33a9197a29b5784ae7c7b5a97183aa49d66c56e2813ce52894d2229b1a32687c",
+    "bytes": 3415
+  },
+  {
+    "path": "data/external/paper1/158395f3d25a/handoff/arrays.npz",
+    "sha256": "fe487c9d74ecc37f29b5be6a9cb537f3ec6d218b4849df7c4f422e8fa8e93157",
+    "bytes": 5266727
+  },
+  {
+    "path": "data/external/paper1/158395f3d25a/handoff/cases.csv",
+    "sha256": "f75e11336674ce92804a55f64572b9a954adc997f1722800229191c4596d15b7",
+    "bytes": 43295477
+  },
+  {
+    "path": "data/external/paper1/158395f3d25a/handoff/data_dictionary.csv",
+    "sha256": "905b2b1801d820df471a291f8b195bb5b4a537c9116e0897073a1ca0cc795717",
+    "bytes": 15977
+  },
+  {
+    "path": "data/external/paper1/158395f3d25a/handoff/dumux_onsets.csv",
+    "sha256": "70d611f2e343d1f68915ce16b9a3c5ed5f6ec66f5f55f03692e8c20103d347b3",
+    "bytes": 201394
+  },
+  {
+    "path": "data/external/paper1/158395f3d25a/handoff/manifest.json",
+    "sha256": "24ee271522bbdeb156a9fe9867237e4501567992bf7560efd7f5afa59f8258fd",
+    "bytes": 6091
+  },
+  {
+    "path": "data/external/paper1/158395f3d25a/handoff/observations.csv",
+    "sha256": "bd13ca41330d722aa12fc0aeb768654dd7e77eb22b307e7373025115b9146e7f",
+    "bytes": 26174415
+  },
+  {
+    "path": "data/external/paper1/158395f3d25a/handoff/protocols.csv",
+    "sha256": "f04dd85752ea2dc619774e4b891589989318f24da7711f139db261e75f889094",
+    "bytes": 1347
+  },
+  {
+    "path": "data/external/paper1/158395f3d25a/handoff/quality_issues.csv",
+    "sha256": "a747d708332cd2233937b17f967be76f71ebfe3ac4033b454d79a4b3b56144d6",
+    "bytes": 755323
+  },
+  {
+    "path": "data/external/paper1/158395f3d25a/handoff/seeded_modes.csv",
+    "sha256": "f147118f19333a620ebb4a9e7c5ecdcf9d93618951eb7fe41785007b68aee7be",
+    "bytes": 4234985
+  },
+  {
+    "path": "data/external/paper1/158395f3d25a/handoff/splits.csv",
+    "sha256": "7eb9aa092efd83b28e258fb357b79b56615747b67fdad6290f14e446c681e5fa",
+    "bytes": 1729841
+  }
+]

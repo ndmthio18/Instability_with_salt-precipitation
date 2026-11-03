@@ -1,0 +1,2426 @@
+[
+  {
+    "run_key": "frodo:hf1/runs/shard-002/0042--case-6499--native",
+    "path": "/temp/zhixin/hf1/runs/shard-002/0042--case-6499--native/clayey--boreal--s998--f892--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "c3502ec9a4ef9522483c3685f4db917fe0221399c4553645e52d528dcb5375ef",
+    "local": "tmp/post_onset_amplification_20261103/series/c9eedc785b0ab54f6b35.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-013/0133--case-9478--native",
+    "path": "/temp/zhixin/hf1/runs/shard-013/0133--case-9478--native/clayey--temperate--s764--f6221--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "198e15d59cd55000799e84422d758c2826f1e2326d68f5c68c807ea6f2deb299",
+    "local": "tmp/post_onset_amplification_20261103/series/46f6d1ee73471b0e87c2.csv"
+  },
+  {
+    "run_key": "frodo:topup/runs/shard-000/0015--case-9478--native",
+    "path": "/temp/zhixin/topup/runs/shard-000/0015--case-9478--native/clayey--temperate--s764--f6221--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "c03d604eb9ae073825873ffa04936351ae041d9c81de45787b3cbcbabf1fd698",
+    "local": "tmp/post_onset_amplification_20261103/series/55772e96c4208e642a7a.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-005/0005--case-12550--native",
+    "path": "/temp/zhixin/hf1/runs/shard-005/0005--case-12550--native/clayey--tropical--s209--f9932--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "2ee63d7b7b8d6e6a3a12453158e2db5f32836d3e49e1b119b45831a9f99317b4",
+    "local": "tmp/post_onset_amplification_20261103/series/26a1bc434b25696613fa.csv"
+  },
+  {
+    "run_key": "frodo:c72fill/runs_600/shard-001/0001--case-12884--native",
+    "path": "/temp/zhixin/c72fill/runs_600/shard-001/0001--case-12884--native/clayey--tropical--s190--f9392--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "fd1b8256ebcfb2689ba5a75a5ce4503c282f3f3f6023d27bc37cea9e7ec190d0",
+    "local": "tmp/post_onset_amplification_20261103/series/e0201f4e0f13c88972d1.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-006/0006--case-12884--native",
+    "path": "/temp/zhixin/hf1/runs/shard-006/0006--case-12884--native/clayey--tropical--s190--f9392--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "2fce1211c4c9c2a6884268766729a7e4d5b4472e8b4154e58b0412d5c1ba3357",
+    "local": "tmp/post_onset_amplification_20261103/series/30991dbc4abe658ead3f.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-018/0118--case-13822--native",
+    "path": "/temp/zhixin/hf1/runs/shard-018/0118--case-13822--native/clayey--tropical--s190--f9918--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "8ff7bcf1e21bbe5f63bd90987c7c57ef85f508ecbe4bd385bd2ba42d1dd0ea64",
+    "local": "tmp/post_onset_amplification_20261103/series/1548ade0e86daaec8c8b.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-008/0068--case-15210--native",
+    "path": "/temp/zhixin/hf1/runs/shard-008/0068--case-15210--native/clayey--tropical--s202--f9580--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "56444870b895a10e23421edda9a6596b20b112e31e26a37e244c5a5d3ba8d95a",
+    "local": "tmp/post_onset_amplification_20261103/series/dd1961e2397192c1d523.csv"
+  },
+  {
+    "run_key": "frodo:validation/runs/shard-001/0009--case-15467--native",
+    "path": "/temp/zhixin/validation/runs/shard-001/0009--case-15467--native/clayey--tropical--s1008--f8679--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "7e571bf704fcc5b50251138338a6017ff9d7f0037e77f350331fb5b8083a39b5",
+    "local": "tmp/post_onset_amplification_20261103/series/7357e98c263713eb9188.csv"
+  },
+  {
+    "run_key": "frodo:valtail/runs/shard-001/0001--case-15467--native",
+    "path": "/temp/zhixin/valtail/runs/shard-001/0001--case-15467--native/clayey--tropical--s1008--f8679--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "7e571bf704fcc5b50251138338a6017ff9d7f0037e77f350331fb5b8083a39b5",
+    "local": "tmp/post_onset_amplification_20261103/series/18cfa69d653c13a94dfb.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-004/0064--case-16305--native",
+    "path": "/temp/zhixin/hf1/runs/shard-004/0064--case-16305--native/loamy--arid--s851--f10081--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "5969e8e3e886c10af1f273fc36f923e468fa766bda1b0d70d7ac4372c9214ed4",
+    "local": "tmp/post_onset_amplification_20261103/series/38ae1f9bd434df2c11ae.csv"
+  },
+  {
+    "run_key": "frodo:validation/runs/shard-002/0002--case-16386--native",
+    "path": "/temp/zhixin/validation/runs/shard-002/0002--case-16386--native/loamy--arid--s399--f658--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "433331c057dd7a6dc3e4ec93c3974cfc7e124772e4016fee1d466790bfd7c49b",
+    "local": "tmp/post_onset_amplification_20261103/series/b8ee4333e890fa685f26.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-012/0132--case-16681--native",
+    "path": "/temp/zhixin/hf1/runs/shard-012/0132--case-16681--native/loamy--arid--s808--f10303--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "8f52fc240f2481fb73bb8818b004e5cedfb1cc398174f942a8307f76342d373c",
+    "local": "tmp/post_onset_amplification_20261103/series/101969ecd4689c9883f4.csv"
+  },
+  {
+    "run_key": "frodo:topup/runs/shard-001/0016--case-16681--native",
+    "path": "/temp/zhixin/topup/runs/shard-001/0016--case-16681--native/loamy--arid--s808--f10303--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "1dc0ec8829b339e936c17dd0f7ec0132e4dcd07ab77cfd14ce9cfd76ebd9894e",
+    "local": "tmp/post_onset_amplification_20261103/series/eee631e6ba115fe7c7eb.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-011/0051--case-16960--native",
+    "path": "/temp/zhixin/hf1/runs/shard-011/0051--case-16960--native/loamy--arid--s1458--f672--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "380a9f10cb2993685fca8fe47eb786925c5ef69e750b978f9a500a32a0ccd1d7",
+    "local": "tmp/post_onset_amplification_20261103/series/39b401c13a88944e1002.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-016/0036--case-17155--native",
+    "path": "/temp/zhixin/hf1/runs/shard-016/0036--case-17155--native/loamy--arid--s285--f9973--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "0c8d31e8f30262eeb3e87c009a2353d977d6e517bb3457c71fc21b7fdc1be0df",
+    "local": "tmp/post_onset_amplification_20261103/series/b41e8ef7a6f2023270a5.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-016/0016--case-17328--native",
+    "path": "/temp/zhixin/hf1/runs/shard-016/0016--case-17328--native/loamy--arid--s189--f10329--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "5da6150435a393ad0aeac01f41d69e2af061ece45e417de5c9166acb9c907ca3",
+    "local": "tmp/post_onset_amplification_20261103/series/7ee1f28e46114b2ff26b.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-009/0029--case-17475--native",
+    "path": "/temp/zhixin/hf1/runs/shard-009/0029--case-17475--native/loamy--arid--s166--f10272--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "33141f67f8ff2b1147872345a59563090d3d0116e77ccbc5703063c350d252e3",
+    "local": "tmp/post_onset_amplification_20261103/series/4bbf4f9e39c6ed1a69e2.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-012/0012--case-17641--native",
+    "path": "/temp/zhixin/hf1/runs/shard-012/0012--case-17641--native/loamy--arid--s613--f10529--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "f6a882ca3fe91467a3fa9adacaf0e559dc7b87d5c8db0403f8658c8c10e49fb2",
+    "local": "tmp/post_onset_amplification_20261103/series/fa612bd3cb7bf2087824.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-008/0148--case-17665--native",
+    "path": "/temp/zhixin/hf1/runs/shard-008/0148--case-17665--native/loamy--arid--s614--f10166--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "14d389416ccc76cfa8d57b41b397083a36581341a26ac0571e22d838748f92a5",
+    "local": "tmp/post_onset_amplification_20261103/series/d52dc81c5fb4f4d4420f.csv"
+  },
+  {
+    "run_key": "frodo:topup/runs/shard-003/0003--case-17665--native",
+    "path": "/temp/zhixin/topup/runs/shard-003/0003--case-17665--native/loamy--arid--s614--f10166--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "14d389416ccc76cfa8d57b41b397083a36581341a26ac0571e22d838748f92a5",
+    "local": "tmp/post_onset_amplification_20261103/series/8b8361ba3be8be8bdb2d.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-000/0060--case-17860--native",
+    "path": "/temp/zhixin/hf1/runs/shard-000/0060--case-17860--native/loamy--arid--s1249--f10390--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "402e58cee333e8d2f966fffd81f10df0af0580720a9dfa3cd22e0e98ce8b6093",
+    "local": "tmp/post_onset_amplification_20261103/series/d92ae68f8c0fe5dbfacb.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-006/0026--case-18063--native",
+    "path": "/temp/zhixin/hf1/runs/shard-006/0026--case-18063--native/loamy--arid--s16--f10490--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "d7f038d586fe3d0c93f214f9a83cb34e5e8d02571497d92640e1995661c3dd90",
+    "local": "tmp/post_onset_amplification_20261103/series/ab3a21e1c6e7cc91df83.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-006/0086--case-18450--native",
+    "path": "/temp/zhixin/hf1/runs/shard-006/0086--case-18450--native/loamy--arid--s495--f10434--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "a930a4e9479b0f5785904b20472cb59eb9e982c946b40db505c7218b3b9608d9",
+    "local": "tmp/post_onset_amplification_20261103/series/d18cf1195df5070db9b3.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-018/0138--case-18762--native",
+    "path": "/temp/zhixin/hf1/runs/shard-018/0138--case-18762--native/loamy--arid--s1955--f9642--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "d3551022ff230de8606ffa4759a1b812062c9da341d15e473dbb666266ed9100",
+    "local": "tmp/post_onset_amplification_20261103/series/4b6ae1a092ecfe599883.csv"
+  },
+  {
+    "run_key": "frodo:topup/runs/shard-002/0012--case-18762--native",
+    "path": "/temp/zhixin/topup/runs/shard-002/0012--case-18762--native/loamy--arid--s1955--f9642--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "4f048ba47da3785cddeccc780c6d20a3e6e6dfcd6159e8eabbc69d4283c24cb3",
+    "local": "tmp/post_onset_amplification_20261103/series/1f1cf4be1cba5969c9fd.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-015/0095--case-18807--native",
+    "path": "/temp/zhixin/hf1/runs/shard-015/0095--case-18807--native/loamy--arid--s3081--f10402--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "547bc8341d876d4bf36712983a5df84b98c3b2b91369602b06c5b71ca4e1ea6a",
+    "local": "tmp/post_onset_amplification_20261103/series/f7109cfb40c4b442c04b.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-015/0135--case-19269--native",
+    "path": "/temp/zhixin/hf1/runs/shard-015/0135--case-19269--native/loamy--arid--s1985--f10493--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "d5ec3de830674b0c0a689a3a99f06783a9505571d7c5c58bea25e18256a34ab7",
+    "local": "tmp/post_onset_amplification_20261103/series/0a8881b8bdfb34803e0d.csv"
+  },
+  {
+    "run_key": "frodo:topup/runs/shard-004/0014--case-19269--native",
+    "path": "/temp/zhixin/topup/runs/shard-004/0014--case-19269--native/loamy--arid--s1985--f10493--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "c1ee0e264b00471eca2b08e5d161e77a2de5baa3875f57b1d2484c397b27d516",
+    "local": "tmp/post_onset_amplification_20261103/series/ca7d67b27f0d52495ce9.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-019/0059--case-19616--native",
+    "path": "/temp/zhixin/hf1/runs/shard-019/0059--case-19616--native/loamy--arid--s1901--f10213--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "7a3577436ec39bda9a3aaa4c9b1f37dc524652bf239df31fdd47cbf3915773e5",
+    "local": "tmp/post_onset_amplification_20261103/series/e23975762f5a6f5b5dfc.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-018/0018--case-19674--native",
+    "path": "/temp/zhixin/hf1/runs/shard-018/0018--case-19674--native/loamy--arid--s1063--f10027--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "34c7446ed98548f0d6f178005bb62e2d6567f1adba70aca082a8b0d1c5f4ca87",
+    "local": "tmp/post_onset_amplification_20261103/series/e418ea0769066b4e910d.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-014/0034--case-20197--native",
+    "path": "/temp/zhixin/hf1/runs/shard-014/0034--case-20197--native/loamy--boreal--s945--f881--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "0fa737273bd062d295e1d86058ab089e5c3b0cc8e22c177f1bdd81439952f19e",
+    "local": "tmp/post_onset_amplification_20261103/series/47c334984a453a1cb0a4.csv"
+  },
+  {
+    "run_key": "frodo:c1b/runs_600/shard-007/0007--case-20654--native",
+    "path": "/temp/zhixin/c1b/runs_600/shard-007/0007--case-20654--native/loamy--boreal--s554--f1085--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "fb2bb98616e9bc998f22c50be5f8ad1512adb95c79af6fac71010189dbfabd2e",
+    "local": "tmp/post_onset_amplification_20261103/series/ccdc0855bdc79adcaf71.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-009/0069--case-20654--native",
+    "path": "/temp/zhixin/hf1/runs/shard-009/0069--case-20654--native/loamy--boreal--s554--f1085--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "3f5b92950f3c1aebb26a868f699d61c30b58071318cd8f2e5d20583130f4f5e0",
+    "local": "tmp/post_onset_amplification_20261103/series/4a24bee3dcd7b35d6052.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-008/0108--case-20680--native",
+    "path": "/temp/zhixin/hf1/runs/shard-008/0108--case-20680--native/loamy--boreal--s221--f792--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "d47b73e32b46b3a107d3ffa21965436f35d3cc72ff43defa2409cb7d758ddfb3",
+    "local": "tmp/post_onset_amplification_20261103/series/d090c9bf14025572161a.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-000/0080--case-21031--native",
+    "path": "/temp/zhixin/hf1/runs/shard-000/0080--case-21031--native/loamy--boreal--s260--f987--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "2a7e0636581bc1bd95daf159b5553979e80cb3cecf44a52c92f14048f7d75d3e",
+    "local": "tmp/post_onset_amplification_20261103/series/418f0294ab5c5f114504.csv"
+  },
+  {
+    "run_key": "frodo:c1b/runs_600/shard-004/0036--case-21202--native",
+    "path": "/temp/zhixin/c1b/runs_600/shard-004/0036--case-21202--native/loamy--boreal--s498--f955--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "9a24960a8e7102ddcfaa07f9e0248b191dad11123ede54d220a981d2d4c1dffa",
+    "local": "tmp/post_onset_amplification_20261103/series/92f557887c2b28c2d711.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-003/0043--case-21202--native",
+    "path": "/temp/zhixin/hf1/runs/shard-003/0043--case-21202--native/loamy--boreal--s498--f955--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "46ae616c2f22595f63e2de1af259db54adbfda7ca67813e7df6d8e88fee6f2eb",
+    "local": "tmp/post_onset_amplification_20261103/series/7943d8cd136934c436ff.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-004/0104--case-21304--native",
+    "path": "/temp/zhixin/hf1/runs/shard-004/0104--case-21304--native/loamy--boreal--s1418--f886--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "c6c7fa2a47db8be0889ba9d277f499e3dc9280ed84555db452456ea10d9495b8",
+    "local": "tmp/post_onset_amplification_20261103/series/cfd295ac3e51e654831c.csv"
+  },
+  {
+    "run_key": "frodo:c72fill/runs_600/shard-007/0007--case-21432--native",
+    "path": "/temp/zhixin/c72fill/runs_600/shard-007/0007--case-21432--native/loamy--boreal--s1273--f961--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "1be840379ace45ee7b92b04e9583f52941a736a5a530ee406f5051beebc03a52",
+    "local": "tmp/post_onset_amplification_20261103/series/1641f5dff25b22375db7.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-003/0103--case-22062--native",
+    "path": "/temp/zhixin/hf1/runs/shard-003/0103--case-22062--native/loamy--boreal--s155--f890--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "f3d50bc493ce1aacc96830da803021079cd131c4784e51e7abec38aff4d32558",
+    "local": "tmp/post_onset_amplification_20261103/series/2b07275d5fbae8e359b6.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-005/0085--case-22083--native",
+    "path": "/temp/zhixin/hf1/runs/shard-005/0085--case-22083--native/loamy--boreal--s161--f966--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "c47dbad84066227030e71f1f25d97ef5f0cc1a74efa4d91742665d5b615dd848",
+    "local": "tmp/post_onset_amplification_20261103/series/8f435a42b1a7e7cf74f8.csv"
+  },
+  {
+    "run_key": "frodo:c1b/runs_slow/shard-000/0002--case-22586--native",
+    "path": "/temp/zhixin/c1b/runs_slow/shard-000/0002--case-22586--native/loamy--boreal--s159--f964--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "ccf428f89c93bb7b22874a993964ed3d06b6bf8301d509202d48c98992229d83",
+    "local": "tmp/post_onset_amplification_20261103/series/36a8dfc5c2cc73f2ccb9.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-003/0143--case-22586--native",
+    "path": "/temp/zhixin/hf1/runs/shard-003/0143--case-22586--native/loamy--boreal--s159--f964--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "bf6c329bfafe24365a2e2cfc6774ebd69f5215b2d0034180a8d5874ca9081657",
+    "local": "tmp/post_onset_amplification_20261103/series/25e0df315464423fe3ef.csv"
+  },
+  {
+    "run_key": "frodo:topup/runs/shard-003/0008--case-22586--native",
+    "path": "/temp/zhixin/topup/runs/shard-003/0008--case-22586--native/loamy--boreal--s159--f964--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "bf6c329bfafe24365a2e2cfc6774ebd69f5215b2d0034180a8d5874ca9081657",
+    "local": "tmp/post_onset_amplification_20261103/series/595483ce0bc7f62102a9.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-000/0140--case-22589--native",
+    "path": "/temp/zhixin/hf1/runs/shard-000/0140--case-22589--native/loamy--boreal--s123--f875--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "f40fa1c918251af4ec4806ac6c6e02530217611a5a415f25258f31a27c85ba9e",
+    "local": "tmp/post_onset_amplification_20261103/series/f63e9666cfe3e799423d.csv"
+  },
+  {
+    "run_key": "frodo:topup/runs/shard-001/0011--case-22589--native",
+    "path": "/temp/zhixin/topup/runs/shard-001/0011--case-22589--native/loamy--boreal--s123--f875--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "f40fa1c918251af4ec4806ac6c6e02530217611a5a415f25258f31a27c85ba9e",
+    "local": "tmp/post_onset_amplification_20261103/series/9c2dd4536f1c42af0bd3.csv"
+  },
+  {
+    "run_key": "frodo:c1b/runs_slow/shard-000/0001--case-22702--native",
+    "path": "/temp/zhixin/c1b/runs_slow/shard-000/0001--case-22702--native/loamy--boreal--s616--f1075--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "0f65dfdc5a6b23330cc9b1b62b0d0d5a0b62d43466316dab56b53252acfa07e0",
+    "local": "tmp/post_onset_amplification_20261103/series/a9f1abeaeaa7dda62db4.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-013/0113--case-22702--native",
+    "path": "/temp/zhixin/hf1/runs/shard-013/0113--case-22702--native/loamy--boreal--s616--f1075--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "146878230d08e2d78a05fc097db52b19b75d83bad5254e7a42e7549f91f6ec2c",
+    "local": "tmp/post_onset_amplification_20261103/series/444994606a2ec30e0ecf.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-017/0017--case-22792--native",
+    "path": "/temp/zhixin/hf1/runs/shard-017/0017--case-22792--native/loamy--boreal--s163--f975--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "38bb65dcb3b4c14516dc1972d89a99d2b05c00b83e97479c8e415aea9319cffa",
+    "local": "tmp/post_onset_amplification_20261103/series/d241502445298cafb111.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-009/0149--case-23367--native",
+    "path": "/temp/zhixin/hf1/runs/shard-009/0149--case-23367--native/loamy--boreal--s650--f780--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "4b9e67f440c5367cc919f1a319b3009dc076cc3ffdd5f4e981ce5b4be876f45a",
+    "local": "tmp/post_onset_amplification_20261103/series/c0ab473a48eacc3dee63.csv"
+  },
+  {
+    "run_key": "frodo:topup/runs/shard-002/0002--case-23367--native",
+    "path": "/temp/zhixin/topup/runs/shard-002/0002--case-23367--native/loamy--boreal--s650--f780--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "963f8a0e8807a253f7c60f73e9b1d2bef32b05d97a8f364596d73ed4a1952d17",
+    "local": "tmp/post_onset_amplification_20261103/series/16a974da4dec89316e2f.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-017/0117--case-23468--native",
+    "path": "/temp/zhixin/hf1/runs/shard-017/0117--case-23468--native/loamy--boreal--s763--f1075--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "5d882e1c45c78b02b430a461ab9a124dcc366303ea0761c69c35288a6a57ca46",
+    "local": "tmp/post_onset_amplification_20261103/series/44a77c0e87026cc8bb0b.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-007/0107--case-23509--native",
+    "path": "/temp/zhixin/hf1/runs/shard-007/0107--case-23509--native/loamy--boreal--s623--f891--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "ce5594be297dd58f5554fd1cbca4a2c94da823e9dfc277aefc03e6b1bcfd12c6",
+    "local": "tmp/post_onset_amplification_20261103/series/9f1e1c8714e35101f5c4.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-007/0127--case-23727--native",
+    "path": "/temp/zhixin/hf1/runs/shard-007/0127--case-23727--native/loamy--boreal--s146--f791--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "5737e8255b06d4732a2c7eb41dfd4a23a4ab42016b713d7e07145689d6ab51e0",
+    "local": "tmp/post_onset_amplification_20261103/series/670b3a1a7c1e2eedaaf7.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-001/0021--case-24336--native",
+    "path": "/temp/zhixin/hf1/runs/shard-001/0021--case-24336--native/loamy--temperate--s2344--f1666--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "78389004a83850adfa1c656796901339389c147debf152f29ee7144b42220ff7",
+    "local": "tmp/post_onset_amplification_20261103/series/f159ad8e22b628c454de.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-018/0058--case-24425--native",
+    "path": "/temp/zhixin/hf1/runs/shard-018/0058--case-24425--native/loamy--temperate--s3250--f8428--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "554afc17045579899314914f5a32ea0c36cf6cff2aa131eca179c76e27816157",
+    "local": "tmp/post_onset_amplification_20261103/series/1bd7d9e527c0890ee6da.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-002/0082--case-24426--native",
+    "path": "/temp/zhixin/hf1/runs/shard-002/0082--case-24426--native/loamy--temperate--s414--f3506--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "936e394b8aa0e4cb5bd8f4f8e44babdc4289fdc7268a95587030e8ce435a7275",
+    "local": "tmp/post_onset_amplification_20261103/series/97e669f70e208964408c.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-010/0030--case-24485--native",
+    "path": "/temp/zhixin/hf1/runs/shard-010/0030--case-24485--native/loamy--temperate--s3222--f5394--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "a6b103c4532e9fa4129265027d7e028df4c7e75a1db10804eca1743638de073d",
+    "local": "tmp/post_onset_amplification_20261103/series/b1ccae010e09460e1414.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-009/0129--case-24614--native",
+    "path": "/temp/zhixin/hf1/runs/shard-009/0129--case-24614--native/loamy--temperate--s711--f2234--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "fdcfab78d66487406724d574cde971ff16074a6896e8801da4632cab1d16e8fd",
+    "local": "tmp/post_onset_amplification_20261103/series/1c7abbdd8a65ce3ebe68.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-005/0065--case-24720--native",
+    "path": "/temp/zhixin/hf1/runs/shard-005/0065--case-24720--native/loamy--temperate--s161--f2318--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "e92160f86ba06c91797431599a88ae09d3f5a38b0a8dd77f5006d77e0000f841",
+    "local": "tmp/post_onset_amplification_20261103/series/50b8f9027728e481bd4b.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-010/0090--case-24731--native",
+    "path": "/temp/zhixin/hf1/runs/shard-010/0090--case-24731--native/loamy--temperate--s94--f5814--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "57f78329771281d359537ae2f9984617837a0fa7120944c6cbd4223a65abb01f",
+    "local": "tmp/post_onset_amplification_20261103/series/466857bb1d8edef811af.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-004/0124--case-24746--native",
+    "path": "/temp/zhixin/hf1/runs/shard-004/0124--case-24746--native/loamy--temperate--s320--f2899--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "761e12d0ac9e8f2a8ba061c1126e218af1487c5ae11e86dc8ddf1861d6d4a658",
+    "local": "tmp/post_onset_amplification_20261103/series/df09d966e52d4b72c8d6.csv"
+  },
+  {
+    "run_key": "frodo:topup/runs/shard-003/0023--case-24746--native",
+    "path": "/temp/zhixin/topup/runs/shard-003/0023--case-24746--native/loamy--temperate--s320--f2899--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "c26a23130d18fe04d51bebc10e12ba9546e42a694353b8ddbfa242dcb6216005",
+    "local": "tmp/post_onset_amplification_20261103/series/cf3251fde2e551a0aa28.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-004/0044--case-24749--native",
+    "path": "/temp/zhixin/hf1/runs/shard-004/0044--case-24749--native/loamy--temperate--s925--f291--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "aad34eb6bad91e3e76055d792a76ad6b6ac671b7044ed435979e561e1d8456b7",
+    "local": "tmp/post_onset_amplification_20261103/series/a13ff29afff07cc9b6a2.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-002/0142--case-24995--native",
+    "path": "/temp/zhixin/hf1/runs/shard-002/0142--case-24995--native/loamy--temperate--s244--f3068--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "50f443800fadafae9cca9be52fe12c643e32a7507d8889e9f3039d8e8c068b7d",
+    "local": "tmp/post_onset_amplification_20261103/series/70b683b8c9491c5bf749.csv"
+  },
+  {
+    "run_key": "frodo:topup/runs/shard-004/0009--case-24995--native",
+    "path": "/temp/zhixin/topup/runs/shard-004/0009--case-24995--native/loamy--temperate--s244--f3068--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "da5159fce8e30fc479bb1b38bb07b4cdd95ac454d4df37bd9ec3cce6bcc766d0",
+    "local": "tmp/post_onset_amplification_20261103/series/f132f2da61967a450cb3.csv"
+  },
+  {
+    "run_key": "frodo:validation/runs/shard-003/0003--case-25091--native",
+    "path": "/temp/zhixin/validation/runs/shard-003/0003--case-25091--native/loamy--temperate--s613--f8824--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "3af432c09f67f65efdcce1618c1f054da3fc8a4dc5ae30b33ff68bcdb8d520ac",
+    "local": "tmp/post_onset_amplification_20261103/series/1378741b5e48e4355081.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-006/0146--case-25107--native",
+    "path": "/temp/zhixin/hf1/runs/shard-006/0146--case-25107--native/loamy--temperate--s3081--f1844--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "0633968f77c3a4e512c7120f45c062b1f5ff6c4172bf255a69878794b457d742",
+    "local": "tmp/post_onset_amplification_20261103/series/1057ea51eb3f5c3dd7c7.csv"
+  },
+  {
+    "run_key": "frodo:topup/runs/shard-000/0005--case-25107--native",
+    "path": "/temp/zhixin/topup/runs/shard-000/0005--case-25107--native/loamy--temperate--s3081--f1844--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "0633968f77c3a4e512c7120f45c062b1f5ff6c4172bf255a69878794b457d742",
+    "local": "tmp/post_onset_amplification_20261103/series/fccfd355894ddd9d102f.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-015/0015--case-25127--native",
+    "path": "/temp/zhixin/hf1/runs/shard-015/0015--case-25127--native/loamy--temperate--s391--f1254--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "3760157ae4546f95449aa86c7e07f185ffceab117672aebd17abe32bc0ccae4e",
+    "local": "tmp/post_onset_amplification_20261103/series/a8d1095949a121375176.csv"
+  },
+  {
+    "run_key": "frodo:validation/runs/shard-002/0006--case-25200--native",
+    "path": "/temp/zhixin/validation/runs/shard-002/0006--case-25200--native/loamy--temperate--s169--f6309--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "5953dfc3d424fb01848d4093a6212753d21ec02011fc28e74780e5476c1ae38a",
+    "local": "tmp/post_onset_amplification_20261103/series/452627894f06151a1b16.csv"
+  },
+  {
+    "run_key": "frodo:c72fill/runs_600/shard-008/0008--case-25478--native",
+    "path": "/temp/zhixin/c72fill/runs_600/shard-008/0008--case-25478--native/loamy--temperate--s92--f6374--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "f4880706cc8a660ab16abe3f136fa4092f9789db7d7e131c637b0491d28c571f",
+    "local": "tmp/post_onset_amplification_20261103/series/7d1581b905a124850d9a.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-008/0088--case-25622--native",
+    "path": "/temp/zhixin/hf1/runs/shard-008/0088--case-25622--native/loamy--temperate--s554--f5951--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "5bf7ca38f51b1952ba46b3f5f12577789f34e87a86e524a9468a3eadc55ccfc4",
+    "local": "tmp/post_onset_amplification_20261103/series/6088f02a391857aaef70.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-007/0007--case-25695--native",
+    "path": "/temp/zhixin/hf1/runs/shard-007/0007--case-25695--native/loamy--temperate--s611--f3968--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "53c724736496e64aa435993fd7f5b320a10d949149d5e3428195acf29904946a",
+    "local": "tmp/post_onset_amplification_20261103/series/a7337d810fdcfd91c0a2.csv"
+  },
+  {
+    "run_key": "frodo:c1b/runs_600/shard-001/0001--case-25748--native",
+    "path": "/temp/zhixin/c1b/runs_600/shard-001/0001--case-25748--native/loamy--temperate--s926--f7326--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "aa2db8647bc1b8f1d2d9cb9b9648fddc9b2183bacafb123a2a47eda6b7f28a86",
+    "local": "tmp/post_onset_amplification_20261103/series/b45cee7d7520d129ff99.csv"
+  },
+  {
+    "run_key": "frodo:c1b/runs_gseed_hi/shard-004/0004--case-25748--native",
+    "path": "/temp/zhixin/c1b/runs_gseed_hi/shard-004/0004--case-25748--native/loamy--temperate--s926--f7326--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "ed4c97bb8972378933fec69a0eb56de31e5797bb58c72fbcd06e6814f50e7770",
+    "local": "tmp/post_onset_amplification_20261103/series/3321f11a7ccaa08fbbf2.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-001/0001--case-25748--native",
+    "path": "/temp/zhixin/hf1/runs/shard-001/0001--case-25748--native/loamy--temperate--s926--f7326--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "649c7ca0edc7fca1649ba4cbaece224e5d80dcf9aefbfd8581d96173acf57a5b",
+    "local": "tmp/post_onset_amplification_20261103/series/c3c938fac0b629078d9f.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-003/0083--case-26084--native",
+    "path": "/temp/zhixin/hf1/runs/shard-003/0083--case-26084--native/loamy--temperate--s3083--f3432--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "612bc0e9f79fd7609bea5a54d0b561566d15b45ece3e750dca3d90f2edde16db",
+    "local": "tmp/post_onset_amplification_20261103/series/a6df297fb4e610cf39bb.csv"
+  },
+  {
+    "run_key": "frodo:c1b/runs_600/shard-002/0018--case-26442--native",
+    "path": "/temp/zhixin/c1b/runs_600/shard-002/0018--case-26442--native/loamy--temperate--s408--f558--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "f4d3b09cc0922d7e53cefedeb3503713b39fc31a2e96cb1d116d5fe90e9d485f",
+    "local": "tmp/post_onset_amplification_20261103/series/eaa78c4abafd276c7a6e.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-010/0130--case-26442--native",
+    "path": "/temp/zhixin/hf1/runs/shard-010/0130--case-26442--native/loamy--temperate--s408--f558--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "5a9d3a6c76dee858e99672764b84a8bb1e6d4fda2de695a5c3851b91fc1ea61f",
+    "local": "tmp/post_onset_amplification_20261103/series/fa4aa5070064a5bf4d8b.csv"
+  },
+  {
+    "run_key": "frodo:topup/runs/shard-003/0018--case-26442--native",
+    "path": "/temp/zhixin/topup/runs/shard-003/0018--case-26442--native/loamy--temperate--s408--f558--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "5a9d3a6c76dee858e99672764b84a8bb1e6d4fda2de695a5c3851b91fc1ea61f",
+    "local": "tmp/post_onset_amplification_20261103/series/cee33a872f37d65344e2.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-009/0089--case-26957--native",
+    "path": "/temp/zhixin/hf1/runs/shard-009/0089--case-26957--native/loamy--temperate--s498--f7405--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "4fcce67807452e6afd89bc793750c6f9348723e2b10a1ef64bc6e5beabe53f0c",
+    "local": "tmp/post_onset_amplification_20261103/series/4b82e82a534b949766a6.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-002/0062--case-27124--native",
+    "path": "/temp/zhixin/hf1/runs/shard-002/0062--case-27124--native/loamy--temperate--s123--f7268--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "a3528989fbac38212e1f891e9a1e54de71ec7da166b38405355e4a1616326e77",
+    "local": "tmp/post_onset_amplification_20261103/series/4b507560f5b87a7bb8d2.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-014/0054--case-27168--native",
+    "path": "/temp/zhixin/hf1/runs/shard-014/0054--case-27168--native/loamy--temperate--s903--f7412--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "ab2d3d4f3850263eddfad9f93c522d1f2c40a8f1465ef68023fccd91ea11fa0a",
+    "local": "tmp/post_onset_amplification_20261103/series/9fff08bcca07aa0f3fe8.csv"
+  },
+  {
+    "run_key": "frodo:c72fill/runs_600/shard-002/0002--case-27363--native",
+    "path": "/temp/zhixin/c72fill/runs_600/shard-002/0002--case-27363--native/loamy--temperate--s542--f8539--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "5c1b0e6c8e1ebc2f721be1b5ac12a52ddcef684c6f09830e8ff7d729ae82ab1f",
+    "local": "tmp/post_onset_amplification_20261103/series/a54111141e7410d01e90.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-007/0027--case-27363--native",
+    "path": "/temp/zhixin/hf1/runs/shard-007/0027--case-27363--native/loamy--temperate--s542--f8539--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "c61b95c41041db884820ed40560532ad98dce794c1ab7fccbc8b3161ba4ffd2c",
+    "local": "tmp/post_onset_amplification_20261103/series/a20c06a695a6120c6d8f.csv"
+  },
+  {
+    "run_key": "frodo:c72fill/runs_7/shard-001/0001--case-27710--native",
+    "path": "/temp/zhixin/c72fill/runs_7/shard-001/0001--case-27710--native/loamy--temperate--s886--f8524--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "e585d38fae16d4a1c90dfe36e01ac5bce83a53eceda8fe8bea5bb3b525ad8440",
+    "local": "tmp/post_onset_amplification_20261103/series/103bf9d9b7f8619d81e8.csv"
+  },
+  {
+    "run_key": "frodo:c1b/runs_600/shard-002/0034--case-28003--native",
+    "path": "/temp/zhixin/c1b/runs_600/shard-002/0034--case-28003--native/loamy--tropical--s3057--f8606--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "c4da8bee171f532e8e35e754dcf79f6444291bd6f2ffb165045fb9b6dfaf9370",
+    "local": "tmp/post_onset_amplification_20261103/series/a397390d3612bb7aa196.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-003/0123--case-28003--native",
+    "path": "/temp/zhixin/hf1/runs/shard-003/0123--case-28003--native/loamy--tropical--s3057--f8606--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "5aff0ecf41336d6bed2db9ca14207c1f5cf38216db9c5661d23f5fff95317280",
+    "local": "tmp/post_onset_amplification_20261103/series/d7f9ffb2f68eace953d6.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-013/0073--case-28065--native",
+    "path": "/temp/zhixin/hf1/runs/shard-013/0073--case-28065--native/loamy--tropical--s522--f9604--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "7e381b8c6d81ca414091778cb29ae18958252a857e301a14908f7537deeadde0",
+    "local": "tmp/post_onset_amplification_20261103/series/3ec897b27697c87e2541.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-006/0106--case-28067--native",
+    "path": "/temp/zhixin/hf1/runs/shard-006/0106--case-28067--native/loamy--tropical--s3259--f9166--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "a47a9133a224835becedd866a89b22a00c2f3f75386a205f6e31a4245a770f98",
+    "local": "tmp/post_onset_amplification_20261103/series/ee4844bd8d3360ff34c0.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-000/0100--case-28126--native",
+    "path": "/temp/zhixin/hf1/runs/shard-000/0100--case-28126--native/loamy--tropical--s1289--f9394--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "2bed9f5d0a122906c2d9d121358c453f857c1f40b35abef816c43bfac6919c5b",
+    "local": "tmp/post_onset_amplification_20261103/series/f3ad9e59d6ce772fe22c.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-002/0122--case-28374--native",
+    "path": "/temp/zhixin/hf1/runs/shard-002/0122--case-28374--native/loamy--tropical--s551--f9888--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "fb275feb97185198de602c627b429fd52bc07e713bc8d7dd1113867c515b6a46",
+    "local": "tmp/post_onset_amplification_20261103/series/79e017d82a659fceed73.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-001/0081--case-28414--native",
+    "path": "/temp/zhixin/hf1/runs/shard-001/0081--case-28414--native/loamy--tropical--s924--f8369--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "71456f2fcf781a811c50dd30d4bbd6ca4ef9d4081a86bf267236df56b9a7d6d8",
+    "local": "tmp/post_onset_amplification_20261103/series/76bd9e6f6bb0fc633bbe.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-007/0087--case-28771--native",
+    "path": "/temp/zhixin/hf1/runs/shard-007/0087--case-28771--native/loamy--tropical--s148--f9197--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "950f4b3776a65a987c6cffa18b8b133f43a4e91677d2823259922a370a123b12",
+    "local": "tmp/post_onset_amplification_20261103/series/b916d5784b2fcb6e96a7.csv"
+  },
+  {
+    "run_key": "frodo:c1b/runs_600/shard-011/0043--case-28851--native",
+    "path": "/temp/zhixin/c1b/runs_600/shard-011/0043--case-28851--native/loamy--tropical--s582--f8874--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "68fd14a11a24d59e48786eb93aed920dc21fdbd4b931024b63e7fc503c2e4b4a",
+    "local": "tmp/post_onset_amplification_20261103/series/b761b303c6f381714cad.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-016/0076--case-28851--native",
+    "path": "/temp/zhixin/hf1/runs/shard-016/0076--case-28851--native/loamy--tropical--s582--f8874--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "b814111ef5483065a93d5bf983000f9f5b58dfb239afa661b3b225cbe44da7a8",
+    "local": "tmp/post_onset_amplification_20261103/series/f1d20d51d63672799b16.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-010/0110--case-29148--native",
+    "path": "/temp/zhixin/hf1/runs/shard-010/0110--case-29148--native/loamy--tropical--s613--f9881--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "dfd6bc7404e779cb5a08fdb5a4902c57e9aa4f293a91c6580d94cd12ee912908",
+    "local": "tmp/post_onset_amplification_20261103/series/7ac106d7c8091992ff9e.csv"
+  },
+  {
+    "run_key": "frodo:c72fill/runs_600/shard-009/0009--case-29422--native",
+    "path": "/temp/zhixin/c72fill/runs_600/shard-009/0009--case-29422--native/loamy--tropical--s2433--f9912--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "8fa117a0d1fba67d522f43300b955062cb75882fce69f9a81536cb8824716f53",
+    "local": "tmp/post_onset_amplification_20261103/series/0c49c2bf1189ab0928d2.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-011/0111--case-29588--native",
+    "path": "/temp/zhixin/hf1/runs/shard-011/0111--case-29588--native/loamy--tropical--s615--f9489--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "03f7c8d550e57d7eab73d4d82053d8fc22c2e3a013ed2cc924ddc72e404ffd53",
+    "local": "tmp/post_onset_amplification_20261103/series/58cfdcc2c54dd7c7179f.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-005/0045--case-29920--native",
+    "path": "/temp/zhixin/hf1/runs/shard-005/0045--case-29920--native/loamy--tropical--s867--f8730--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "4eb61b371247410079c8a809c99d700eef5b20c18a0d1c3e8e0a52dedc70f853",
+    "local": "tmp/post_onset_amplification_20261103/series/3f83a823b5dc345d92f6.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-007/0047--case-30043--native",
+    "path": "/temp/zhixin/hf1/runs/shard-007/0047--case-30043--native/loamy--tropical--s410--f9882--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "7c51a565d7a6b594817966071a6fbe746dece0fbe5b8f79edb3c2d57ab1d32d5",
+    "local": "tmp/post_onset_amplification_20261103/series/7c23d50362e0574b5177.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-005/0025--case-30097--native",
+    "path": "/temp/zhixin/hf1/runs/shard-005/0025--case-30097--native/loamy--tropical--s499--f7894--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "4cb7c7eb832cee5d7f619b0ceb28cb19e572c3b04b741752cf671ee19e8afe3a",
+    "local": "tmp/post_onset_amplification_20261103/series/dc5b93064eb83e1a0a6d.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-013/0033--case-30322--native",
+    "path": "/temp/zhixin/hf1/runs/shard-013/0033--case-30322--native/loamy--tropical--s3030--f8359--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "a8d0413b2c0dd3b3509255fe676a456d860bdb9993fbe1399feddc58df2ec568",
+    "local": "tmp/post_onset_amplification_20261103/series/ab6d05c56b501d97d555.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-003/0023--case-30411--native",
+    "path": "/temp/zhixin/hf1/runs/shard-003/0023--case-30411--native/loamy--tropical--s824--f8907--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "6f339875b2ef5b81c3b3c345b1ca594a46373990364383c2011b0340888c4e65",
+    "local": "tmp/post_onset_amplification_20261103/series/53c983b95c7c54b2362a.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-017/0077--case-30465--native",
+    "path": "/temp/zhixin/hf1/runs/shard-017/0077--case-30465--native/loamy--tropical--s422--f9672--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "9468c3520048910e9439453a8dd9808051bef8b5495b88ba03a66d1627c17fff",
+    "local": "tmp/post_onset_amplification_20261103/series/dd574e5380ea0917b8e2.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-016/0116--case-30853--native",
+    "path": "/temp/zhixin/hf1/runs/shard-016/0116--case-30853--native/loamy--tropical--s420--f8562--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "d5e1cd7bfd4cb70625a6b8e5308e7bd919cace51ec9daef806c25e52cece7010",
+    "local": "tmp/post_onset_amplification_20261103/series/23c94fb9bac3a128856a.csv"
+  },
+  {
+    "run_key": "frodo:c72fill/runs_600/shard-003/0003--case-30858--native",
+    "path": "/temp/zhixin/c72fill/runs_600/shard-003/0003--case-30858--native/loamy--tropical--s2289--f9209--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "bc0a4937f509870ee835a07c3147a7a23fa3ec7bb2ba9b134492001f42d0ec43",
+    "local": "tmp/post_onset_amplification_20261103/series/a81a64c6f074da9e5b95.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-012/0072--case-31117--native",
+    "path": "/temp/zhixin/hf1/runs/shard-012/0072--case-31117--native/loamy--tropical--s811--f9437--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "d657b986b77432e723fd1ed5b642148e4bf615580757d5438edff542d1909244",
+    "local": "tmp/post_onset_amplification_20261103/series/81a4e996e798f0802fc5.csv"
+  },
+  {
+    "run_key": "frodo:c1b/runs_600/shard-014/0030--case-31297--native",
+    "path": "/temp/zhixin/c1b/runs_600/shard-014/0030--case-31297--native/loamy--tropical--s778--f9603--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "478d1c7e41547bf93198b716435e0977e1f0f405f0e130f30b96522aa11f3cdc",
+    "local": "tmp/post_onset_amplification_20261103/series/ee7925ed07e1fa9da56f.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-013/0013--case-31297--native",
+    "path": "/temp/zhixin/hf1/runs/shard-013/0013--case-31297--native/loamy--tropical--s778--f9603--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "9ce38aa09cd86152d739567f02225c63a2950eb8b3e29ccaf37537d45385efbe",
+    "local": "tmp/post_onset_amplification_20261103/series/a538aaaef29efe0334b9.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-011/0131--case-31401--native",
+    "path": "/temp/zhixin/hf1/runs/shard-011/0131--case-31401--native/loamy--tropical--s943--f8251--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "a19ef749db9fdb6cf9836c75dbe13b76340323f7c7f785bbcbc296474c05c0ad",
+    "local": "tmp/post_onset_amplification_20261103/series/723951d212ae970652cd.csv"
+  },
+  {
+    "run_key": "frodo:validation/runs/shard-001/0005--case-31422--native",
+    "path": "/temp/zhixin/validation/runs/shard-001/0005--case-31422--native/loamy--tropical--s657--f7794--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "8485cac9628c25c56bea87c9a3789d711f949ee8bd64b7f35e76528375c2f4b2",
+    "local": "tmp/post_onset_amplification_20261103/series/2fc3731d36db060e4278.csv"
+  },
+  {
+    "run_key": "frodo:validation/runs/shard-002/0010--case-31538--native",
+    "path": "/temp/zhixin/validation/runs/shard-002/0010--case-31538--native/loamy--tropical--s3069--f9489--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "4e9465407de9cb8ef043c3f7d6928d39a332f10105c204985440834780a204f8",
+    "local": "tmp/post_onset_amplification_20261103/series/870e24b6b2246318dd5d.csv"
+  },
+  {
+    "run_key": "frodo:valtail/runs/shard-000/0002--case-31538--native",
+    "path": "/temp/zhixin/valtail/runs/shard-000/0002--case-31538--native/loamy--tropical--s3069--f9489--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "4e9465407de9cb8ef043c3f7d6928d39a332f10105c204985440834780a204f8",
+    "local": "tmp/post_onset_amplification_20261103/series/eb11d0e1d914f1d57fd5.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-001/0041--case-31827--native",
+    "path": "/temp/zhixin/hf1/runs/shard-001/0041--case-31827--native/loamy--tropical--s1609--f9156--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "e75937ba42767306f1a22e933a749107c12221e984d4cc079e3b4f8d44708d00",
+    "local": "tmp/post_onset_amplification_20261103/series/78b7e34912a0c9cfdff6.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-013/0053--case-31854--native",
+    "path": "/temp/zhixin/hf1/runs/shard-013/0053--case-31854--native/loamy--tropical--s103--f8745--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "9e97639ffe198cb228bcf22d8d4b8a4eed08aecf7603b21b0624e5c2cfd6dfd2",
+    "local": "tmp/post_onset_amplification_20261103/series/d84d91a586f96f64f896.csv"
+  },
+  {
+    "run_key": "frodo:c72fill/runs_600/shard-010/0010--case-31932--native",
+    "path": "/temp/zhixin/c72fill/runs_600/shard-010/0010--case-31932--native/loamy--tropical--s3169--f8728--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "6c74d863e0ff7c38fedfb5a10a41525cccf5d9a13e76bd80e0ce3c6e11369ec3",
+    "local": "tmp/post_onset_amplification_20261103/series/c944b9a7c86ca7990b7d.csv"
+  },
+  {
+    "run_key": "frodo:c1b/runs_slow/shard-000/0003--case-32176--native",
+    "path": "/temp/zhixin/c1b/runs_slow/shard-000/0003--case-32176--native/sandy--arid--s274--f10394--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "9d95db23ef478578610c6a029c6fcbbb70a8b79aebe58307e6fe47e993ca1132",
+    "local": "tmp/post_onset_amplification_20261103/series/be9e604ebbd30d63f052.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-011/0071--case-32176--native",
+    "path": "/temp/zhixin/hf1/runs/shard-011/0071--case-32176--native/sandy--arid--s274--f10394--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "c88e1983e9fe0a654d3d210d87f24b64cb9c9af6b83421c9fc71e7146111eda2",
+    "local": "tmp/post_onset_amplification_20261103/series/df0aba92976c4be23a47.csv"
+  },
+  {
+    "run_key": "frodo:c1b/runs_600/shard-004/0004--case-32294--native",
+    "path": "/temp/zhixin/c1b/runs_600/shard-004/0004--case-32294--native/sandy--arid--s1025--f10369--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "11831fae8a2bc173f0691f17539028a1425dddb8d42cb06343c1c414afd9a35b",
+    "local": "tmp/post_onset_amplification_20261103/series/f61452e7617c9036d4e4.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-005/0105--case-32294--native",
+    "path": "/temp/zhixin/hf1/runs/shard-005/0105--case-32294--native/sandy--arid--s1025--f10369--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "bc145dc68c88d8ec286a53daf87ce4675d514ce5c75d06582966ddb7c85ecd54",
+    "local": "tmp/post_onset_amplification_20261103/series/ef2b6437271fac2e6e00.csv"
+  },
+  {
+    "run_key": "frodo:c72fill/runs_600/shard-004/0004--case-32339--native",
+    "path": "/temp/zhixin/c72fill/runs_600/shard-004/0004--case-32339--native/sandy--arid--s2276--f655--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "8d0d5c938c94c083d964c2129a948da45ff18b6d94e1936edd018fa509abcfdb",
+    "local": "tmp/post_onset_amplification_20261103/series/ed6852ad26ae7f488e6b.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-011/0011--case-32339--native",
+    "path": "/temp/zhixin/hf1/runs/shard-011/0011--case-32339--native/sandy--arid--s2276--f655--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "76b6f9d36a0599846d71f6ac171a490f12b553515e60e5bed5203a92124be3d3",
+    "local": "tmp/post_onset_amplification_20261103/series/61584862e5525daa0f6f.csv"
+  },
+  {
+    "run_key": "frodo:c1b/runs_1200/shard-005/0005--case-33014--native",
+    "path": "/temp/zhixin/c1b/runs_1200/shard-005/0005--case-33014--native/sandy--arid--s1888--f10117--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "028f7d2fe01c4749a72bbe1a7789c798bb8d72ddb4d6f4c1e984e068d3be6af0",
+    "local": "tmp/post_onset_amplification_20261103/series/e153957ab748097957b1.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-017/0037--case-33014--native",
+    "path": "/temp/zhixin/hf1/runs/shard-017/0037--case-33014--native/sandy--arid--s1888--f10117--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "d1b49dee632f0e800408dcb088c50e2ce61c94755fee72d8a5aa4d216caedcca",
+    "local": "tmp/post_onset_amplification_20261103/series/17ac32b778ab4aae9c16.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-007/0147--case-33197--native",
+    "path": "/temp/zhixin/hf1/runs/shard-007/0147--case-33197--native/sandy--arid--s996--f10084--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "4b4ca1c75f59eab6607bee29627c017dd00716ec468010921303af4e38162d80",
+    "local": "tmp/post_onset_amplification_20261103/series/96cf85c72925ee3e1450.csv"
+  },
+  {
+    "run_key": "frodo:topup/runs/shard-004/0004--case-33197--native",
+    "path": "/temp/zhixin/topup/runs/shard-004/0004--case-33197--native/sandy--arid--s996--f10084--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "4b4ca1c75f59eab6607bee29627c017dd00716ec468010921303af4e38162d80",
+    "local": "tmp/post_onset_amplification_20261103/series/0e816fa36383bbbebdc8.csv"
+  },
+  {
+    "run_key": "frodo:c72fill/runs_1200/shard-000/0001--case-33203--native",
+    "path": "/temp/zhixin/c72fill/runs_1200/shard-000/0001--case-33203--native/sandy--arid--s1915--f10491--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "403752e158ae32cca3938a75822e7e1141c9c1d6719926536ab52dac205d754e",
+    "local": "tmp/post_onset_amplification_20261103/series/76f32520527fcae220ec.csv"
+  },
+  {
+    "run_key": "frodo:cluster/runs/shard-003/0003--case-33203--native",
+    "path": "/temp/zhixin/cluster/runs/shard-003/0003--case-33203--native/sandy--arid--s1915--f10491--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "2e7015689d9dd0878b91675ca27f2e4682feb35dd3b5cf2eaff555288a0200ab",
+    "local": "tmp/post_onset_amplification_20261103/series/f991effb36a7f0281f01.csv"
+  },
+  {
+    "run_key": "frodo:c72fill/runs_600/shard-000/0011--case-33445--native",
+    "path": "/temp/zhixin/c72fill/runs_600/shard-000/0011--case-33445--native/sandy--arid--s1381--f1072--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "44bebb57e996fc243e0dd3c8e5c740d93b46aeaebd85ff3fb75f5c1af2007fad",
+    "local": "tmp/post_onset_amplification_20261103/series/e1fe62c43697c5af73f4.csv"
+  },
+  {
+    "run_key": "frodo:c1b/runs_600/shard-005/0005--case-33462--native",
+    "path": "/temp/zhixin/c1b/runs_600/shard-005/0005--case-33462--native/sandy--arid--s1957--f625--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "022663524ae4532e9894dc6c3abb8796edad2048f87b78f3b52392f3ef4134b7",
+    "local": "tmp/post_onset_amplification_20261103/series/b224cb2a75c6193dda91.csv"
+  },
+  {
+    "run_key": "frodo:cluster/runs/shard-011/0011--case-33462--native",
+    "path": "/temp/zhixin/cluster/runs/shard-011/0011--case-33462--native/sandy--arid--s1957--f625--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "91e40a3d60a345cec7e4108601647a592a5b000236df59ebcbe9f06efc1eb409",
+    "local": "tmp/post_onset_amplification_20261103/series/bdba547b364d79b0e15b.csv"
+  },
+  {
+    "run_key": "frodo:c1b/runs_600/shard-008/0024--case-33497--native",
+    "path": "/temp/zhixin/c1b/runs_600/shard-008/0024--case-33497--native/sandy--arid--s1399--f9652--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "de974a0690a344dbf7c98897e1461476fb719eb7fe9b6aac3101c4de5971e9b2",
+    "local": "tmp/post_onset_amplification_20261103/series/9826e8e883f51799f98a.csv"
+  },
+  {
+    "run_key": "frodo:c1b/runs_gseed_hi/shard-000/0008--case-33497--native",
+    "path": "/temp/zhixin/c1b/runs_gseed_hi/shard-000/0008--case-33497--native/sandy--arid--s1399--f9652--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "51935b2398f3ec6dc919aefbe041d29ca99eed8ae748a3c2c7e42a16fc3fe468",
+    "local": "tmp/post_onset_amplification_20261103/series/2c8ba795a07a8df67145.csv"
+  },
+  {
+    "run_key": "frodo:c1b/runs_gseed_lo/shard-000/0006--case-33497--native",
+    "path": "/temp/zhixin/c1b/runs_gseed_lo/shard-000/0006--case-33497--native/sandy--arid--s1399--f9652--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "2f9d249595d6df60e6fbdc362cd1c12d0fffbeb78e49d9cce277c8f9ca5ce28a",
+    "local": "tmp/post_onset_amplification_20261103/series/63dd5a8cddb700f3dddc.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-019/0099--case-33497--native",
+    "path": "/temp/zhixin/hf1/runs/shard-019/0099--case-33497--native/sandy--arid--s1399--f9652--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "9c9d160b2b6ba85c79f13df7536c4fc3b19c6dabe60dffd10c5134bd0d991f7e",
+    "local": "tmp/post_onset_amplification_20261103/series/4ad83ebe06552e3eb922.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-001/0121--case-33544--native",
+    "path": "/temp/zhixin/hf1/runs/shard-001/0121--case-33544--native/sandy--arid--s1376--f10516--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "ea61f6c5684d5c31231e702e016f17878e59a0a904368fca14dc3b375011af44",
+    "local": "tmp/post_onset_amplification_20261103/series/d0857ac5761b66dab91f.csv"
+  },
+  {
+    "run_key": "frodo:c1b/runs_600/shard-005/0021--case-33569--native",
+    "path": "/temp/zhixin/c1b/runs_600/shard-005/0021--case-33569--native/sandy--arid--s1913--f1056--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "bf0747306710b0c9190546c3f95c8a8384c492dbe97897acd0b25dad75083203",
+    "local": "tmp/post_onset_amplification_20261103/series/22cb88fef54af9b97ebd.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-005/0125--case-33569--native",
+    "path": "/temp/zhixin/hf1/runs/shard-005/0125--case-33569--native/sandy--arid--s1913--f1056--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "e7a7d1b5345c1783e35240160b085097dc67c6ee959d6e5adc00aa29d60ec38f",
+    "local": "tmp/post_onset_amplification_20261103/series/ad9c82cdd7abc17ca8d6.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-000/0020--case-33628--native",
+    "path": "/temp/zhixin/hf1/runs/shard-000/0020--case-33628--native/sandy--arid--s1676--f10419--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "609630ba2c33ecbc213273a95cc5703976c4c795e9c467e1d7db3a8cbff31172",
+    "local": "tmp/post_onset_amplification_20261103/series/46d3bf8fec5288b5bc29.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-002/0022--case-33698--native",
+    "path": "/temp/zhixin/hf1/runs/shard-002/0022--case-33698--native/sandy--arid--s1998--f9704--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "80ef90b0e6c8d9e1dc877eba0f7ee77b806bf6aab2444e76b2ec2b76b8775358",
+    "local": "tmp/post_onset_amplification_20261103/series/9c309963e38bd32d0729.csv"
+  },
+  {
+    "run_key": "frodo:c1b/runs_600/shard-003/0003--case-33985--native",
+    "path": "/temp/zhixin/c1b/runs_600/shard-003/0003--case-33985--native/sandy--arid--s1462--f10089--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "1bb1d36d9f7f7f47d7d60a2b2e3e495e2203767131a5eb36008c47786f92d2a9",
+    "local": "tmp/post_onset_amplification_20261103/series/e082d4597688fa58aaa5.csv"
+  },
+  {
+    "run_key": "frodo:c1b/runs_gseed_hi/shard-002/0002--case-33985--native",
+    "path": "/temp/zhixin/c1b/runs_gseed_hi/shard-002/0002--case-33985--native/sandy--arid--s1462--f10089--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "20e2a5973a26b675b34ca06f38490919e1845e57d6b275e9ee8f4b23d9288e69",
+    "local": "tmp/post_onset_amplification_20261103/series/7d02d5c975f528ac8990.csv"
+  },
+  {
+    "run_key": "frodo:c1b/runs_gseed_lo/shard-002/0002--case-33985--native",
+    "path": "/temp/zhixin/c1b/runs_gseed_lo/shard-002/0002--case-33985--native/sandy--arid--s1462--f10089--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "c7b3eca309d0cd5125b191c3d61814508702b463fa632b4b6d7e0a9335b63b46",
+    "local": "tmp/post_onset_amplification_20261103/series/d1a17fc2617e843e87d1.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-012/0052--case-33985--native",
+    "path": "/temp/zhixin/hf1/runs/shard-012/0052--case-33985--native/sandy--arid--s1462--f10089--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "313a69e40611a4680a3d6a8913f035aa6223a6809237a69b371d78dd997c9a4a",
+    "local": "tmp/post_onset_amplification_20261103/series/48ff8ee5ce844fc4fdaa.csv"
+  },
+  {
+    "run_key": "frodo:c72fill/runs_34066/shard-000/0001--case-34066--native",
+    "path": "/temp/zhixin/c72fill/runs_34066/shard-000/0001--case-34066--native/sandy--arid--s1531--f10464--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "d358499613256e18c5d831f8e50a9c205601f55e22eb54fd8f02dc9beee37e59",
+    "local": "tmp/post_onset_amplification_20261103/series/7cf4da88fb61365aeee6.csv"
+  },
+  {
+    "run_key": "frodo:c1b/runs_600/shard-014/0014--case-34298--native",
+    "path": "/temp/zhixin/c1b/runs_600/shard-014/0014--case-34298--native/sandy--arid--s1223--f1004--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "b4f7e351772ff602aee5d3716b388c466ff6f5a8fe2efe27b9fc38a3cc8734a1",
+    "local": "tmp/post_onset_amplification_20261103/series/370c7c781e5ce9fef001.csv"
+  },
+  {
+    "run_key": "frodo:cluster/runs/shard-001/0001--case-34298--native",
+    "path": "/temp/zhixin/cluster/runs/shard-001/0001--case-34298--native/sandy--arid--s1223--f1004--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "3a673a4afab99f18a7b46345d7a1bc3db63f0cf57bb0e4b898358cb879beae98",
+    "local": "tmp/post_onset_amplification_20261103/series/57eeaeeb0db43c35727b.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-018/0078--case-34420--native",
+    "path": "/temp/zhixin/hf1/runs/shard-018/0078--case-34420--native/sandy--arid--s2039--f10464--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "9bf30db7cc383d638721c1ecb95ea027936bbea9df8277666104d6e288274b88",
+    "local": "tmp/post_onset_amplification_20261103/series/2a35d562c1a6a24e4fa5.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-001/0101--case-34494--native",
+    "path": "/temp/zhixin/hf1/runs/shard-001/0101--case-34494--native/sandy--arid--s3171--f10136--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "be509cdb620f54dcec27c3f8556cb3b37bdb63990d3aba4c32e88530b295fc94",
+    "local": "tmp/post_onset_amplification_20261103/series/f65b9b392ebde39645cb.csv"
+  },
+  {
+    "run_key": "frodo:c1b/runs_600/shard-013/0013--case-34587--native",
+    "path": "/temp/zhixin/c1b/runs_600/shard-013/0013--case-34587--native/sandy--arid--s1381--f10215--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "322aeef187eaeeade9e472b2226aa882a94039ebc31ff206e6fc7ebac84ae541",
+    "local": "tmp/post_onset_amplification_20261103/series/2258a057009c97f6ba83.csv"
+  },
+  {
+    "run_key": "frodo:cluster/runs/shard-012/0012--case-34587--native",
+    "path": "/temp/zhixin/cluster/runs/shard-012/0012--case-34587--native/sandy--arid--s1381--f10215--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "6de60969eedb2d7b3db837caf957690261bf86f343a90dd85d62aa82ed43cbbe",
+    "local": "tmp/post_onset_amplification_20261103/series/c0d800ab39cd1d2a29e0.csv"
+  },
+  {
+    "run_key": "frodo:cluster/runs/shard-014/0014--case-34596--native",
+    "path": "/temp/zhixin/cluster/runs/shard-014/0014--case-34596--native/sandy--arid--s1416--f9853--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "415c483ea3ae5f30bc130a5736f590634fc2504f11b12acb9ffeac44e869f844",
+    "local": "tmp/post_onset_amplification_20261103/series/6e0fdf3277522b9f6b2b.csv"
+  },
+  {
+    "run_key": "frodo:diag/runs_a/shard-002/0002--case-34596--native",
+    "path": "/temp/zhixin/diag/runs_a/shard-002/0002--case-34596--native/sandy--arid--s1416--f9853--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "7be6ad6e567d633b3e1314775b7c54c6a7acd3b05db886f2da37abc82bf5a39c",
+    "local": "tmp/post_onset_amplification_20261103/series/20c222d681004b2f9046.csv"
+  },
+  {
+    "run_key": "frodo:cluster/runs/shard-000/0030--case-34627--native",
+    "path": "/temp/zhixin/cluster/runs/shard-000/0030--case-34627--native/sandy--arid--s1074--f10514--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "e1abab8a2abbf7c815435c1a8bd257c5bc3ef784096a0a075e9ea59adefe45f1",
+    "local": "tmp/post_onset_amplification_20261103/series/61b254d0a83c08ad7319.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-009/0009--case-34634--native",
+    "path": "/temp/zhixin/hf1/runs/shard-009/0009--case-34634--native/sandy--arid--s1741--f711--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "63037c9fb193a746c096fad5f957498b7618c4e48ddae9b73e4984f0b1a26818",
+    "local": "tmp/post_onset_amplification_20261103/series/d1ba25001d0f9885ea09.csv"
+  },
+  {
+    "run_key": "frodo:selfcheck/runs/shard-001/0001--case-34634--native",
+    "path": "/temp/zhixin/selfcheck/runs/shard-001/0001--case-34634--native/sandy--arid--s1741--f711--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "63037c9fb193a746c096fad5f957498b7618c4e48ddae9b73e4984f0b1a26818",
+    "local": "tmp/post_onset_amplification_20261103/series/18ef302d7f24d7778f7d.csv"
+  },
+  {
+    "run_key": "frodo:c72fill/runs_600/shard-006/0006--case-34788--native",
+    "path": "/temp/zhixin/c72fill/runs_600/shard-006/0006--case-34788--native/sandy--arid--s1766--f641--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "f080f77e61017aee55b010e5e7bb20cada3a75de160bfd65000591dcbfe2971c",
+    "local": "tmp/post_onset_amplification_20261103/series/95c1d457389670724520.csv"
+  },
+  {
+    "run_key": "frodo:cluster/runs/shard-007/0022--case-34830--native",
+    "path": "/temp/zhixin/cluster/runs/shard-007/0022--case-34830--native/sandy--arid--s1656--f10169--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "b2f3337122db0db603e2c5613f4803bec6971e5f224040447cfe6bb59258c397",
+    "local": "tmp/post_onset_amplification_20261103/series/4d41fa5c52b2f3d55994.csv"
+  },
+  {
+    "run_key": "frodo:diag/runs_a/shard-005/0005--case-34830--native",
+    "path": "/temp/zhixin/diag/runs_a/shard-005/0005--case-34830--native/sandy--arid--s1656--f10169--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "cac5725eefdb8c06f7e654fa9694d2955dcd707aeb4d8eccaeb910d30fe135c3",
+    "local": "tmp/post_onset_amplification_20261103/series/a6bc2878bee1ccbffe6c.csv"
+  },
+  {
+    "run_key": "frodo:c1b/runs_600/shard-010/0010--case-34882--native",
+    "path": "/temp/zhixin/c1b/runs_600/shard-010/0010--case-34882--native/sandy--arid--s50--f10518--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "b1aac1c368449c4cd992e3637a4da4844e5f8d92f9dd10f02dc33831674a5c93",
+    "local": "tmp/post_onset_amplification_20261103/series/64b27cdf9c080d256159.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-014/0074--case-34882--native",
+    "path": "/temp/zhixin/hf1/runs/shard-014/0074--case-34882--native/sandy--arid--s50--f10518--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "ff12e550a2fee6d89421996ed2b21528a6e7ba836d3c9ac8d35b8a0f0d70be30",
+    "local": "tmp/post_onset_amplification_20261103/series/831537a1909b3270401b.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-008/0028--case-35437--native",
+    "path": "/temp/zhixin/hf1/runs/shard-008/0028--case-35437--native/sandy--arid--s154--f10379--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "0955358b2881b6f7df0f5ffa1aebaa230a2da155af4ab4f1289302776284f4ec",
+    "local": "tmp/post_onset_amplification_20261103/series/dc8021c7c7a7821df5fd.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-003/0063--case-35593--native",
+    "path": "/temp/zhixin/hf1/runs/shard-003/0063--case-35593--native/sandy--arid--s1053--f10348--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "8987cd3fe79f9519a4b123838cde9e9ef021ec81db93bbc42d50ec4057a75eb5",
+    "local": "tmp/post_onset_amplification_20261103/series/48d048c58a72e0fa6267.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-006/0046--case-35599--native",
+    "path": "/temp/zhixin/hf1/runs/shard-006/0046--case-35599--native/sandy--arid--s1263--f10007--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "13473c89490b90643bfc2e9f2c381661746d4ba7b1a4a53e79bd2c9bf8deba0a",
+    "local": "tmp/post_onset_amplification_20261103/series/87884f5100ea05168a0d.csv"
+  },
+  {
+    "run_key": "frodo:c1b/runs_600/shard-012/0044--case-35714--native",
+    "path": "/temp/zhixin/c1b/runs_600/shard-012/0044--case-35714--native/sandy--arid--s1127--f10158--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "e5e30ab9e63b4d29077bc419ff7348d38610ea01594875d347805637aedc584e",
+    "local": "tmp/post_onset_amplification_20261103/series/dc330defd4076c61d893.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-003/0003--case-35714--native",
+    "path": "/temp/zhixin/hf1/runs/shard-003/0003--case-35714--native/sandy--arid--s1127--f10158--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "b5e18cc7d05e8b11aae6df9d0a0581f534678486e2aff7838ffeaddfe5c2ea75",
+    "local": "tmp/post_onset_amplification_20261103/series/17fc9c683941733365db.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-002/0002--case-35733--native",
+    "path": "/temp/zhixin/hf1/runs/shard-002/0002--case-35733--native/sandy--arid--s1701--f9711--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "9d2f2b5bef6a9b79fbb23fa2cbba6d2653190d2c28a5046d88515dd59772b17a",
+    "local": "tmp/post_onset_amplification_20261103/series/9395af6d0587af54850b.csv"
+  },
+  {
+    "run_key": "frodo:c1b/runs_600/shard-006/0054--case-36227--native",
+    "path": "/temp/zhixin/c1b/runs_600/shard-006/0054--case-36227--native/sandy--boreal--s2975--f790--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "1ce7deb5538c139d913daf56a7868d9809c4df319de30a128cf626273d9fa361",
+    "local": "tmp/post_onset_amplification_20261103/series/8f0eb5533ae82eebbc26.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-005/0145--case-36227--native",
+    "path": "/temp/zhixin/hf1/runs/shard-005/0145--case-36227--native/sandy--boreal--s2975--f790--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "87b9195615809fdfb805b33bd3cb9624a409cabcd8fb3bcc832ae7fcfda63607",
+    "local": "tmp/post_onset_amplification_20261103/series/9b3c315d068009ec5a22.csv"
+  },
+  {
+    "run_key": "frodo:topup/runs/shard-001/0006--case-36227--native",
+    "path": "/temp/zhixin/topup/runs/shard-001/0006--case-36227--native/sandy--boreal--s2975--f790--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "87b9195615809fdfb805b33bd3cb9624a409cabcd8fb3bcc832ae7fcfda63607",
+    "local": "tmp/post_onset_amplification_20261103/series/8de311f850f7afec2296.csv"
+  },
+  {
+    "run_key": "frodo:cluster/runs/shard-006/0021--case-36545--native",
+    "path": "/temp/zhixin/cluster/runs/shard-006/0021--case-36545--native/sandy--boreal--s1354--f877--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "bc2a499700de533a8575f46bbdc0db72649674a3f6f2efde25e1e2fc5e335341",
+    "local": "tmp/post_onset_amplification_20261103/series/98ef8b88a2a5de03380a.csv"
+  },
+  {
+    "run_key": "frodo:diag/runs_a/shard-004/0004--case-36545--native",
+    "path": "/temp/zhixin/diag/runs_a/shard-004/0004--case-36545--native/sandy--boreal--s1354--f877--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "d8eeea59da873c7e0e12757502619b4fb19b251fd4806c87ba02c183c45843a5",
+    "local": "tmp/post_onset_amplification_20261103/series/753658a61caffdeeab1e.csv"
+  },
+  {
+    "run_key": "frodo:surrogate/data/parameter_database/hf_batch1/diag_vtu/case-36545-canonical",
+    "path": "/temp/zhixin/surrogate/data/parameter_database/hf_batch1/diag_vtu/case-36545-canonical/sandy--boreal--s1354--f877--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "d8eeea59da873c7e0e12757502619b4fb19b251fd4806c87ba02c183c45843a5",
+    "local": "tmp/post_onset_amplification_20261103/series/eca2d25e339dc9786fb3.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-017/0137--case-36633--native",
+    "path": "/temp/zhixin/hf1/runs/shard-017/0137--case-36633--native/sandy--boreal--s1532--f891--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "7c488f763cecf31ce387e7d5d6f1058264eb4169b129f44d1aa3f0b3b25c121d",
+    "local": "tmp/post_onset_amplification_20261103/series/50f5bed6bfaccc44ac96.csv"
+  },
+  {
+    "run_key": "frodo:cluster/runs/shard-008/0008--case-36656--native",
+    "path": "/temp/zhixin/cluster/runs/shard-008/0008--case-36656--native/sandy--boreal--s1957--f1092--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "054765db1664dccc2c240995506a9ecf8603afc12e14eb762af45e472fa74103",
+    "local": "tmp/post_onset_amplification_20261103/series/516d5a0a23055ebf5ee0.csv"
+  },
+  {
+    "run_key": "frodo:diag/runs_a/shard-001/0001--case-36656--native",
+    "path": "/temp/zhixin/diag/runs_a/shard-001/0001--case-36656--native/sandy--boreal--s1957--f1092--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "b62afa011a02e09a5753a95e61551c8ac2bae46242d82d85e0cf098dbfe104bb",
+    "local": "tmp/post_onset_amplification_20261103/series/b022b78e368ee2c22596.csv"
+  },
+  {
+    "run_key": "frodo:c1b/runs_600/shard-000/0032--case-36854--native",
+    "path": "/temp/zhixin/c1b/runs_600/shard-000/0032--case-36854--native/sandy--boreal--s1760--f1073--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "b161e5670f0148b4b48aba4e0c2aa1cd30bba737c2567798849fed0b97ca1298",
+    "local": "tmp/post_onset_amplification_20261103/series/bb65288cf8b8b4e24f57.csv"
+  },
+  {
+    "run_key": "frodo:cluster/runs/shard-004/0019--case-36854--native",
+    "path": "/temp/zhixin/cluster/runs/shard-004/0019--case-36854--native/sandy--boreal--s1760--f1073--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "16897756aced218881b6f43552d15dbdf8cbf206124236d03e33b6e523072bf2",
+    "local": "tmp/post_onset_amplification_20261103/series/388c4f2bba9bd5a32d5a.csv"
+  },
+  {
+    "run_key": "frodo:c1/runs_36877_nx30/shard-000/0001--case-36877--native",
+    "path": "/temp/zhixin/c1/runs_36877_nx30/shard-000/0001--case-36877--native/sandy--boreal--s1354--f1080--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "b5160a67e2d7b887b55c1b290a1bd2727fd6c62955bca34a3afe9ed1ab427285",
+    "local": "tmp/post_onset_amplification_20261103/series/fbda3d1379215844d269.csv"
+  },
+  {
+    "run_key": "frodo:c1/runs_36877_nx60/shard-000/0001--case-36877--native",
+    "path": "/temp/zhixin/c1/runs_36877_nx60/shard-000/0001--case-36877--native/sandy--boreal--s1354--f1080--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "b7324fd1718d6acf414610edbec612236fd764b9335c56f6aa8d1dc4a7920f98",
+    "local": "tmp/post_onset_amplification_20261103/series/de26c3390a8a295305cf.csv"
+  },
+  {
+    "run_key": "frodo:c1b/runs_600/shard-001/0017--case-36877--native",
+    "path": "/temp/zhixin/c1b/runs_600/shard-001/0017--case-36877--native/sandy--boreal--s1354--f1080--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "db84b9ed8338272139baf98a4ae0d11afc9489d84f681101e453512f7485c4e7",
+    "local": "tmp/post_onset_amplification_20261103/series/61864e398e944da07868.csv"
+  },
+  {
+    "run_key": "frodo:cluster/runs/shard-013/0013--case-36877--native",
+    "path": "/temp/zhixin/cluster/runs/shard-013/0013--case-36877--native/sandy--boreal--s1354--f1080--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "b009811c3421e02b1ecf3665de74b31eb40621bc1bcc4d7c078f166a9c130756",
+    "local": "tmp/post_onset_amplification_20261103/series/2ff17f0560fdcebbb35a.csv"
+  },
+  {
+    "run_key": "frodo:diag/runs_b/shard-001/0001--case-36877--native",
+    "path": "/temp/zhixin/diag/runs_b/shard-001/0001--case-36877--native/sandy--boreal--s1354--f1080--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "cd74a9b5faaa7523d148d928cd4e5aea94cc048a58755c554b151154f9051b07",
+    "local": "tmp/post_onset_amplification_20261103/series/b06766ee47c18c8795fe.csv"
+  },
+  {
+    "run_key": "frodo:diag/runs_c/shard-001/0001--case-36877--native",
+    "path": "/temp/zhixin/diag/runs_c/shard-001/0001--case-36877--native/sandy--boreal--s1354--f1080--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "0a857754462785519d0e0599de8f39f471e75c4e1cc8e811cb7ef696f011ed9c",
+    "local": "tmp/post_onset_amplification_20261103/series/0eb172c7272b22b69913.csv"
+  },
+  {
+    "run_key": "frodo:surrogate/data/parameter_database/hf_batch1/diag_vtu/case-36877-B-4x-window",
+    "path": "/temp/zhixin/surrogate/data/parameter_database/hf_batch1/diag_vtu/case-36877-B-4x-window/sandy--boreal--s1354--f1080--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "cd74a9b5faaa7523d148d928cd4e5aea94cc048a58755c554b151154f9051b07",
+    "local": "tmp/post_onset_amplification_20261103/series/78adc1428288a7e5e9f8.csv"
+  },
+  {
+    "run_key": "frodo:validation/runs/shard-003/0007--case-36988--native",
+    "path": "/temp/zhixin/validation/runs/shard-003/0007--case-36988--native/sandy--boreal--s1295--f883--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "3d42003525cfc415923ff81e2fd34281a9b93af81d750b6f2349ab308da18c1b",
+    "local": "tmp/post_onset_amplification_20261103/series/f425edf83fc392686591.csv"
+  },
+  {
+    "run_key": "frodo:cluster/runs/shard-004/0004--case-37586--native",
+    "path": "/temp/zhixin/cluster/runs/shard-004/0004--case-37586--native/sandy--boreal--s3211--f784--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "6c3427d19e8d273e65b763c03907f48da2f62e0c445f4729ef067d904e51bf9e",
+    "local": "tmp/post_onset_amplification_20261103/series/71fb0fb2ee941c608220.csv"
+  },
+  {
+    "run_key": "frodo:c1b/runs_600/shard-006/0038--case-37608--native",
+    "path": "/temp/zhixin/c1b/runs_600/shard-006/0038--case-37608--native/sandy--boreal--s1593--f877--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "b1b7390e3ac76104dad58981690edb6fa0a1f4583c874f91ac63537994d427d2",
+    "local": "tmp/post_onset_amplification_20261103/series/9e03df9fb487bfadff69.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-004/0144--case-37608--native",
+    "path": "/temp/zhixin/hf1/runs/shard-004/0144--case-37608--native/sandy--boreal--s1593--f877--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "1eeed1e216f1d4aff2ae745e691aa4720df7364338954b0daa35b7f05531cf50",
+    "local": "tmp/post_onset_amplification_20261103/series/d7319ab6c2afc6a24e16.csv"
+  },
+  {
+    "run_key": "frodo:topup/runs/shard-002/0007--case-37608--native",
+    "path": "/temp/zhixin/topup/runs/shard-002/0007--case-37608--native/sandy--boreal--s1593--f877--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "1eeed1e216f1d4aff2ae745e691aa4720df7364338954b0daa35b7f05531cf50",
+    "local": "tmp/post_onset_amplification_20261103/series/9554c3c6c8d4bbfbbc7d.csv"
+  },
+  {
+    "run_key": "frodo:c1b/runs_600/shard-015/0015--case-37706--native",
+    "path": "/temp/zhixin/c1b/runs_600/shard-015/0015--case-37706--native/sandy--boreal--s1726--f968--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "91aefba95320a3abcd8550f51977d8ae351d486a5e1ff0d315587bf92a09f5ac",
+    "local": "tmp/post_onset_amplification_20261103/series/a3d836d34570600bac81.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-016/0136--case-37706--native",
+    "path": "/temp/zhixin/hf1/runs/shard-016/0136--case-37706--native/sandy--boreal--s1726--f968--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "7d5ba8013d577a3b24224bc1140e1e96dd1b6a46c91bc000bfa618693f3d2ce1",
+    "local": "tmp/post_onset_amplification_20261103/series/8c6f6b2ac603880a0aef.csv"
+  },
+  {
+    "run_key": "frodo:topup/runs/shard-003/0013--case-37706--native",
+    "path": "/temp/zhixin/topup/runs/shard-003/0013--case-37706--native/sandy--boreal--s1726--f968--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "7d5ba8013d577a3b24224bc1140e1e96dd1b6a46c91bc000bfa618693f3d2ce1",
+    "local": "tmp/post_onset_amplification_20261103/series/affdf408b936dbe288fd.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-004/0004--case-37729--native",
+    "path": "/temp/zhixin/hf1/runs/shard-004/0004--case-37729--native/sandy--boreal--s1263--f964--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "3063c0b2b446b7edf1af5e2f144debaa4a9d71aa8412110da29fee8218e6b296",
+    "local": "tmp/post_onset_amplification_20261103/series/77263ff9c5039216687b.csv"
+  },
+  {
+    "run_key": "frodo:c1b/runs_600/shard-010/0026--case-38246--native",
+    "path": "/temp/zhixin/c1b/runs_600/shard-010/0026--case-38246--native/sandy--boreal--s2307--f882--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "942144c044fdc970936d1b7846de79bda6fa7adf15747e4e19ec2bdd85eba574",
+    "local": "tmp/post_onset_amplification_20261103/series/7883844716e698db441b.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-017/0097--case-38246--native",
+    "path": "/temp/zhixin/hf1/runs/shard-017/0097--case-38246--native/sandy--boreal--s2307--f882--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "f8c946d6a10c2ec4a48c82ab3ea92aa830f70fe89b8ffbe1808eb96a8e9ff79a",
+    "local": "tmp/post_onset_amplification_20261103/series/368e6dc8e20409a091ca.csv"
+  },
+  {
+    "run_key": "frodo:selfcheck/runs/shard-000/0002--case-38246--native",
+    "path": "/temp/zhixin/selfcheck/runs/shard-000/0002--case-38246--native/sandy--boreal--s2307--f882--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "f8c946d6a10c2ec4a48c82ab3ea92aa830f70fe89b8ffbe1808eb96a8e9ff79a",
+    "local": "tmp/post_onset_amplification_20261103/series/841a4232ecd09a2fe460.csv"
+  },
+  {
+    "run_key": "frodo:c1b/runs_600/shard-015/0031--case-38247--native",
+    "path": "/temp/zhixin/c1b/runs_600/shard-015/0031--case-38247--native/sandy--boreal--s1214--f1077--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "81c3438b53d41d75fd983949b2fc01eb7139d204dc31848c8a81559c0a12d554",
+    "local": "tmp/post_onset_amplification_20261103/series/5cf5f3d9a9a4195b4839.csv"
+  },
+  {
+    "run_key": "frodo:cluster/runs/shard-009/0024--case-38247--native",
+    "path": "/temp/zhixin/cluster/runs/shard-009/0024--case-38247--native/sandy--boreal--s1214--f1077--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "df86bab9aec5c64e2bfd147b98f511e35ea144914f8df99e16a52028e78f3f0d",
+    "local": "tmp/post_onset_amplification_20261103/series/670ef45c53cd3e6d723b.csv"
+  },
+  {
+    "run_key": "frodo:diag/runs_a/shard-006/0006--case-38247--native",
+    "path": "/temp/zhixin/diag/runs_a/shard-006/0006--case-38247--native/sandy--boreal--s1214--f1077--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "316be758575cf34e87f4cb28d30ac7ff9bca9fd936ba0a21370d82413fbdf089",
+    "local": "tmp/post_onset_amplification_20261103/series/0f55dbfe54a81fd84346.csv"
+  },
+  {
+    "run_key": "frodo:c1b/runs_600/shard-009/0025--case-38350--native",
+    "path": "/temp/zhixin/c1b/runs_600/shard-009/0025--case-38350--native/sandy--boreal--s1836--f890--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "c9c632e8c3e195a4ffeed99e763a726f217565b5e7fb16b36f3b07c334f9df69",
+    "local": "tmp/post_onset_amplification_20261103/series/31f0f61467a4cbff6d76.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-012/0092--case-38350--native",
+    "path": "/temp/zhixin/hf1/runs/shard-012/0092--case-38350--native/sandy--boreal--s1836--f890--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "ba91244e04017d1e5d82cee85dde04f47568f9da2487cf71cc0f695d15174129",
+    "local": "tmp/post_onset_amplification_20261103/series/ba05a8ec4ab24385cfe3.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-019/0119--case-38639--native",
+    "path": "/temp/zhixin/hf1/runs/shard-019/0119--case-38639--native/sandy--boreal--s1259--f1085--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "5420e710d5bec6dcd9ebdd0d315f10c5d39d0fcd2843e16ef498d928deb17197",
+    "local": "tmp/post_onset_amplification_20261103/series/6faafd6ed586d694c21e.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-019/0079--case-38852--native",
+    "path": "/temp/zhixin/hf1/runs/shard-019/0079--case-38852--native/sandy--boreal--s3170--f1079--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "7916e5487ede655603cf410267a95af9f791441e05ea3362a8dd1f66df4ac194",
+    "local": "tmp/post_onset_amplification_20261103/series/bb2a0892b434ab27ae1b.csv"
+  },
+  {
+    "run_key": "frodo:c1b/runs_600/shard-011/0027--case-38948--native",
+    "path": "/temp/zhixin/c1b/runs_600/shard-011/0027--case-38948--native/sandy--boreal--s1336--f887--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "53e9d47d44a1513207a2982203f8ecd2ce5359adc515d9f56748373540669457",
+    "local": "tmp/post_onset_amplification_20261103/series/089d892f54f2bdcdcc00.csv"
+  },
+  {
+    "run_key": "frodo:cluster/runs/shard-006/0006--case-38948--native",
+    "path": "/temp/zhixin/cluster/runs/shard-006/0006--case-38948--native/sandy--boreal--s1336--f887--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "041f50f6c56919e4e9a1913cbcbe01d2577a8e5796267fc7281702cbe4695322",
+    "local": "tmp/post_onset_amplification_20261103/series/e0227d6408cba359336b.csv"
+  },
+  {
+    "run_key": "frodo:c1b/runs_600/shard-001/0033--case-38952--native",
+    "path": "/temp/zhixin/c1b/runs_600/shard-001/0033--case-38952--native/sandy--boreal--s1810--f783--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "ac8ee203a9a818d7197504ab69352ed40e528e2342a3a803304c39ea562b682d",
+    "local": "tmp/post_onset_amplification_20261103/series/9666467d2f9a402d3877.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-006/0066--case-38952--native",
+    "path": "/temp/zhixin/hf1/runs/shard-006/0066--case-38952--native/sandy--boreal--s1810--f783--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "42858a089075c022a46bd753b14f09e1be7c879d40eaa332a2d31f1611950fb5",
+    "local": "tmp/post_onset_amplification_20261103/series/c63dd84ae6b7a3cf8811.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-008/0008--case-39597--native",
+    "path": "/temp/zhixin/hf1/runs/shard-008/0008--case-39597--native/sandy--boreal--s1173--f1083--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "13fe055a187e98962c0d9c2540119daca7b0a13071895bea64d9a0bd2b8f06b6",
+    "local": "tmp/post_onset_amplification_20261103/series/f0e4c3ee306878e42ab9.csv"
+  },
+  {
+    "run_key": "frodo:cluster/runs/shard-010/0025--case-39811--native",
+    "path": "/temp/zhixin/cluster/runs/shard-010/0025--case-39811--native/sandy--boreal--s1703--f1086--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "e1e238547c986529ac175067d4634e91f7b457ecd598d440f65e5bd4117110d4",
+    "local": "tmp/post_onset_amplification_20261103/series/e30265cb3c1b314c175f.csv"
+  },
+  {
+    "run_key": "frodo:validation/runs/shard-000/0008--case-39961--native",
+    "path": "/temp/zhixin/validation/runs/shard-000/0008--case-39961--native/sandy--boreal--s2032--f1075--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "725f9364f413060b497d17c19cd724c3327be18af73ab60e19e238c75a60e3c5",
+    "local": "tmp/post_onset_amplification_20261103/series/7fa094a4524fa194e371.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-012/0032--case-40338--native",
+    "path": "/temp/zhixin/hf1/runs/shard-012/0032--case-40338--native/sandy--temperate--s1110--f3868--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "feaea5666a01d2f4db7c3b092c8aa121942f35d01ca00cee7ee770987e454b66",
+    "local": "tmp/post_onset_amplification_20261103/series/b300786914d69339f6cd.csv"
+  },
+  {
+    "run_key": "frodo:c1b/runs_600/shard-009/0009--case-40486--native",
+    "path": "/temp/zhixin/c1b/runs_600/shard-009/0009--case-40486--native/sandy--temperate--s3170--f4450--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "f6e8924e7165c9baae14dd1749295868001007cf81681d39ecfe173ac32518b7",
+    "local": "tmp/post_onset_amplification_20261103/series/4e75203b3b407e913056.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-014/0014--case-40486--native",
+    "path": "/temp/zhixin/hf1/runs/shard-014/0014--case-40486--native/sandy--temperate--s3170--f4450--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "d686753a7884c796736a0d6863aac83a9ce06ae1a5aeb5a5f87d69bb96eaef25",
+    "local": "tmp/post_onset_amplification_20261103/series/bc4f4dc5a16eebdd3aa6.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-014/0094--case-40925--native",
+    "path": "/temp/zhixin/hf1/runs/shard-014/0094--case-40925--native/sandy--temperate--s2047--f4920--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "1da2c7b636fe1569c6864f61d6a5fdc7ce0126fa68b2cc6d3751e57ff318bf3b",
+    "local": "tmp/post_onset_amplification_20261103/series/32077a4f1def30c58b7b.csv"
+  },
+  {
+    "run_key": "frodo:c1b/runs_600/shard-004/0020--case-41060--native",
+    "path": "/temp/zhixin/c1b/runs_600/shard-004/0020--case-41060--native/sandy--temperate--s1575--f2072--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "ffac8592d255d2e7fbaa47847a1185bd5e817cc020ca0871248ad25244c7dfa4",
+    "local": "tmp/post_onset_amplification_20261103/series/c8b8c5849ae4ef39d4c5.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-004/0084--case-41060--native",
+    "path": "/temp/zhixin/hf1/runs/shard-004/0084--case-41060--native/sandy--temperate--s1575--f2072--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "976ce7c4d0eef00043445ae469ee9c5dc5dd42fd277183ca556631586ae8b273",
+    "local": "tmp/post_onset_amplification_20261103/series/a0f96fcfc6918bfd2fbf.csv"
+  },
+  {
+    "run_key": "frodo:c1b/runs_600/shard-005/0053--case-41445--native",
+    "path": "/temp/zhixin/c1b/runs_600/shard-005/0053--case-41445--native/sandy--temperate--s3173--f7010--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "131ba3268fc7a323bba438af5fb9f804211d69fa5bd59328756474e60b7e770b",
+    "local": "tmp/post_onset_amplification_20261103/series/166166eec12dd1ba06b7.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-018/0038--case-41445--native",
+    "path": "/temp/zhixin/hf1/runs/shard-018/0038--case-41445--native/sandy--temperate--s3173--f7010--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "7e105e08ac3ba5b8412bf00702f3aed74bb0504c88ac7b7d764353b30ef20ab6",
+    "local": "tmp/post_onset_amplification_20261103/series/cc1075f639f7ece87609.csv"
+  },
+  {
+    "run_key": "frodo:c1b/runs_600/shard-007/0023--case-41506--native",
+    "path": "/temp/zhixin/c1b/runs_600/shard-007/0023--case-41506--native/sandy--temperate--s2996--f3685--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "4e32628390ada9df183c55807a098f1a0af521db9510f7004de97e4152c6f2b4",
+    "local": "tmp/post_onset_amplification_20261103/series/8b1182db14bc6373f384.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-000/0040--case-41506--native",
+    "path": "/temp/zhixin/hf1/runs/shard-000/0040--case-41506--native/sandy--temperate--s2996--f3685--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "31e8db257c776f6a3357e543030fce290ae8e8337610a32ed5ab0e87a206c614",
+    "local": "tmp/post_onset_amplification_20261103/series/53ef44deb6d5fd9d4785.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-015/0055--case-41514--native",
+    "path": "/temp/zhixin/hf1/runs/shard-015/0055--case-41514--native/sandy--temperate--s1221--f7145--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "f78607d8268cf3945ed937457ab9c73dd324ca47a26d5c2701d4df39bfc89171",
+    "local": "tmp/post_onset_amplification_20261103/series/87d0a32e748fcdbddf7c.csv"
+  },
+  {
+    "run_key": "frodo:c1b/runs_600/shard-004/0052--case-41570--native",
+    "path": "/temp/zhixin/c1b/runs_600/shard-004/0052--case-41570--native/sandy--temperate--s1223--f4063--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "f8e53a8e2775da3d2c0690d87617ab63ad431dd3c253f416570c07799fd45ec5",
+    "local": "tmp/post_onset_amplification_20261103/series/3664e1df960b6ee2a2df.csv"
+  },
+  {
+    "run_key": "frodo:cluster/runs/shard-008/0023--case-41570--native",
+    "path": "/temp/zhixin/cluster/runs/shard-008/0023--case-41570--native/sandy--temperate--s1223--f4063--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "189551c6fa3f98d5666368834c97cb8257f2408ae821117b470f032308cbe9fa",
+    "local": "tmp/post_onset_amplification_20261103/series/2f1efb83468b8540d4fd.csv"
+  },
+  {
+    "run_key": "frodo:c1b/runs_600/shard-003/0035--case-41634--native",
+    "path": "/temp/zhixin/c1b/runs_600/shard-003/0035--case-41634--native/sandy--temperate--s1761--f5662--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "04e4b10a706cc784c6da78b7440201d8765e8c90bbfe5957d41a5327852a01cb",
+    "local": "tmp/post_onset_amplification_20261103/series/891e196639f529d52efe.csv"
+  },
+  {
+    "run_key": "frodo:cluster/runs/shard-014/0029--case-41634--native",
+    "path": "/temp/zhixin/cluster/runs/shard-014/0029--case-41634--native/sandy--temperate--s1761--f5662--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "5009ef08b16e1964582d17d7442bae854ed8554d6aca8950fe807797b4f322cd",
+    "local": "tmp/post_onset_amplification_20261103/series/a42d5099e195f8a89f36.csv"
+  },
+  {
+    "run_key": "frodo:diag/runs_b/shard-000/0002--case-41634--native",
+    "path": "/temp/zhixin/diag/runs_b/shard-000/0002--case-41634--native/sandy--temperate--s1761--f5662--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "90d2a1bb669a78b2e6618f85d2f157e825daff87f1b848fd0e87d3e3224ed463",
+    "local": "tmp/post_onset_amplification_20261103/series/a76a19aea5f1c907c010.csv"
+  },
+  {
+    "run_key": "frodo:diag/runs_c/shard-000/0002--case-41634--native",
+    "path": "/temp/zhixin/diag/runs_c/shard-000/0002--case-41634--native/sandy--temperate--s1761--f5662--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "2f436ba5889e2947a2721cbb67d5096cbe99e312b6ac26a1d4414bcf16034437",
+    "local": "tmp/post_onset_amplification_20261103/series/5cb64129a20965227865.csv"
+  },
+  {
+    "run_key": "frodo:c1b/runs_600/shard-012/0028--case-41933--native",
+    "path": "/temp/zhixin/c1b/runs_600/shard-012/0028--case-41933--native/sandy--temperate--s1223--f9284--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "b3287a85efb59b0094eeb5f3d39634f8512c119e8ccee55a784c577baa699d97",
+    "local": "tmp/post_onset_amplification_20261103/series/2b3b5a87e91031a74409.csv"
+  },
+  {
+    "run_key": "frodo:cluster/runs/shard-007/0007--case-41933--native",
+    "path": "/temp/zhixin/cluster/runs/shard-007/0007--case-41933--native/sandy--temperate--s1223--f9284--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "14c0158e65e7f26827b18b0c1f84c6a7855c6674d1a9836bc54a09989e5278e8",
+    "local": "tmp/post_onset_amplification_20261103/series/f37de29861aad7181efc.csv"
+  },
+  {
+    "run_key": "frodo:cluster/runs/shard-012/0027--case-42048--native",
+    "path": "/temp/zhixin/cluster/runs/shard-012/0027--case-42048--native/sandy--temperate--s1223--f8922--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "a8bf08aec53a0a6614537874aa0b295887aea1d0e0f7fd7fbc7e48ff90bfd404",
+    "local": "tmp/post_onset_amplification_20261103/series/c7d737f402f9064bb97b.csv"
+  },
+  {
+    "run_key": "frodo:diag/runs_a/shard-000/0008--case-42048--native",
+    "path": "/temp/zhixin/diag/runs_a/shard-000/0008--case-42048--native/sandy--temperate--s1223--f8922--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "b0022f2d88d6583c7da8ec8e2cb3e96e3fad4db165df7f6aac7c805d929c537c",
+    "local": "tmp/post_onset_amplification_20261103/series/3f807f0ae423b85810dd.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-019/0039--case-42230--native",
+    "path": "/temp/zhixin/hf1/runs/shard-019/0039--case-42230--native/sandy--temperate--s50--f1831--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "554bc8a4e14ec93c8afdf456a4e31d5e41781d8cbbf5df984fa3478a2f8fb4ed",
+    "local": "tmp/post_onset_amplification_20261103/series/5a9840a7e2ef32362124.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-013/0093--case-42288--native",
+    "path": "/temp/zhixin/hf1/runs/shard-013/0093--case-42288--native/sandy--temperate--s1708--f5362--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "70997d9c34c4a01e5650bcec835ee84245ed198fa2c8a008ebefcc99df4e69cf",
+    "local": "tmp/post_onset_amplification_20261103/series/d5051d4ab02db3220158.csv"
+  },
+  {
+    "run_key": "frodo:c72fill/runs_7/shard-002/0002--case-42427--native",
+    "path": "/temp/zhixin/c72fill/runs_7/shard-002/0002--case-42427--native/sandy--temperate--s1660--f3203--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "65ae4ba45ba105c5c1f410eeedec88e9ce8ee2afb4388d44c55a4871ff30f63a",
+    "local": "tmp/post_onset_amplification_20261103/series/7b6ecc5e063a68f4ca2e.csv"
+  },
+  {
+    "run_key": "frodo:cluster/runs/shard-010/0010--case-42716--native",
+    "path": "/temp/zhixin/cluster/runs/shard-010/0010--case-42716--native/sandy--temperate--s1223--f6260--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "2f92ff85c8378c5fa1b16ca763d564bff2840d6708257f8864563582cd4ad6a1",
+    "local": "tmp/post_onset_amplification_20261103/series/b4822272fd9f0a0a2605.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-001/0141--case-42745--native",
+    "path": "/temp/zhixin/hf1/runs/shard-001/0141--case-42745--native/sandy--temperate--s1271--f1332--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "13c350d8da40dd84f23103ba2625b8ce804a6c7474a45a20a222bc00cf0c08e0",
+    "local": "tmp/post_onset_amplification_20261103/series/e000b2e38437ddbc4b96.csv"
+  },
+  {
+    "run_key": "frodo:topup/runs/shard-000/0010--case-42745--native",
+    "path": "/temp/zhixin/topup/runs/shard-000/0010--case-42745--native/sandy--temperate--s1271--f1332--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "13c350d8da40dd84f23103ba2625b8ce804a6c7474a45a20a222bc00cf0c08e0",
+    "local": "tmp/post_onset_amplification_20261103/series/ea0aa844c87649c4dfaf.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-012/0112--case-42783--native",
+    "path": "/temp/zhixin/hf1/runs/shard-012/0112--case-42783--native/sandy--temperate--s3072--f7037--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "459be798e8ab7401758af979b73720c3e0847f773085b48cf8e62fe3e6fe801e",
+    "local": "tmp/post_onset_amplification_20261103/series/cd7f8fb9777246d494a6.csv"
+  },
+  {
+    "run_key": "frodo:c1b/runs_1200/shard-000/0006--case-42929--native",
+    "path": "/temp/zhixin/c1b/runs_1200/shard-000/0006--case-42929--native/sandy--temperate--s1514--f7187--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "a82f197b35fb0a0f9ede959cb242ca3c393f2f4aeb738bb4ac851e9dd15b6ee2",
+    "local": "tmp/post_onset_amplification_20261103/series/d4cafdb2dae24ddee5f2.csv"
+  },
+  {
+    "run_key": "frodo:validation/runs/shard-003/0011--case-42929--native",
+    "path": "/temp/zhixin/validation/runs/shard-003/0011--case-42929--native/sandy--temperate--s1514--f7187--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "b9c03ce4ddd1eca30ef1269d827226be61aeec72add9335e1e8e270d543bf230",
+    "local": "tmp/post_onset_amplification_20261103/series/c85f20b586d98ca415b1.csv"
+  },
+  {
+    "run_key": "frodo:c1b/runs_600/shard-005/0037--case-43108--native",
+    "path": "/temp/zhixin/c1b/runs_600/shard-005/0037--case-43108--native/sandy--temperate--s2183--f4079--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "b7f55ecc7c0848e7461d6b994e8412075d8c61f0d0aab1178cdbd2647d13ad54",
+    "local": "tmp/post_onset_amplification_20261103/series/ba6cad195767160a0486.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-014/0134--case-43108--native",
+    "path": "/temp/zhixin/hf1/runs/shard-014/0134--case-43108--native/sandy--temperate--s2183--f4079--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "4992ceb5e56f2ff9d3af7aa9a64bcdd5c945110f61d62cd6e30b9b873128a02f",
+    "local": "tmp/post_onset_amplification_20261103/series/df864fcf42d2e8377613.csv"
+  },
+  {
+    "run_key": "frodo:cluster/runs/shard-005/0005--case-43244--native",
+    "path": "/temp/zhixin/cluster/runs/shard-005/0005--case-43244--native/sandy--temperate--s1381--f597--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "04b16cf2e8b5589708f28d81dfa1e4ba63c4f5d606206841b5b083b4d6bfbb5b",
+    "local": "tmp/post_onset_amplification_20261103/series/f852c0bb86a93aa127ee.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-008/0048--case-43295--native",
+    "path": "/temp/zhixin/hf1/runs/shard-008/0048--case-43295--native/sandy--temperate--s1810--f4262--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "f6a88dd916479007fb69207da0da6da8ebb5ddd6dd472ff9fc80307427c8e0f8",
+    "local": "tmp/post_onset_amplification_20261103/series/9f6a25241d95b2c382eb.csv"
+  },
+  {
+    "run_key": "frodo:c1b/runs_600/shard-009/0041--case-43374--native",
+    "path": "/temp/zhixin/c1b/runs_600/shard-009/0041--case-43374--native/sandy--temperate--s1077--f4888--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "d377e148abc82cddeab94e5da40ee5eaf09c00ce6c7fccd3697a562aa37e29f3",
+    "local": "tmp/post_onset_amplification_20261103/series/e971ebc8e2f2440f6e72.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-015/0075--case-43374--native",
+    "path": "/temp/zhixin/hf1/runs/shard-015/0075--case-43374--native/sandy--temperate--s1077--f4888--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "2597688714b8811ed50661ea8dab5e4594ba407ad902734ecdc6496272d798cd",
+    "local": "tmp/post_onset_amplification_20261103/series/085b9e251cf394f06224.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-019/0139--case-43375--native",
+    "path": "/temp/zhixin/hf1/runs/shard-019/0139--case-43375--native/sandy--temperate--s1558--f5755--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "8433764e8da9ca933ee8d8d123cb6fd4c057adb2cd2430331ce4652d1b03ef58",
+    "local": "tmp/post_onset_amplification_20261103/series/d953f488c8224a3601b1.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-002/0102--case-43416--native",
+    "path": "/temp/zhixin/hf1/runs/shard-002/0102--case-43416--native/sandy--temperate--s2102--f1015--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "d397d9e5c1321b43474c56af16adbe803b4a28fac41038aa5fba3396f732f4af",
+    "local": "tmp/post_onset_amplification_20261103/series/111cedb9fdde5991cde5.csv"
+  },
+  {
+    "run_key": "frodo:c1b/runs_1200/shard-002/0005--case-43447--native",
+    "path": "/temp/zhixin/c1b/runs_1200/shard-002/0005--case-43447--native/sandy--temperate--s2146--f4974--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "52160f50e06cc92f92bb6ff3c07ba11aadb96501b679532da0ed8f849929009f",
+    "local": "tmp/post_onset_amplification_20261103/series/ca31d680a96668ee4806.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-006/0126--case-43447--native",
+    "path": "/temp/zhixin/hf1/runs/shard-006/0126--case-43447--native/sandy--temperate--s2146--f4974--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "45e1c5ac85863b88ce64c2596c108df17b0f4f82a30399fea6b948d6da15f58f",
+    "local": "tmp/post_onset_amplification_20261103/series/a6e2eb6f2da7504f9d5f.csv"
+  },
+  {
+    "run_key": "frodo:c1b/runs_600/shard-003/0019--case-43607--native",
+    "path": "/temp/zhixin/c1b/runs_600/shard-003/0019--case-43607--native/sandy--temperate--s1263--f6034--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "05cd794c186aa1792f7eb4344ab92594ffc3de7f7cb6383d5e65c3edd4d2028a",
+    "local": "tmp/post_onset_amplification_20261103/series/9636870613565354e30f.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-011/0031--case-43607--native",
+    "path": "/temp/zhixin/hf1/runs/shard-011/0031--case-43607--native/sandy--temperate--s1263--f6034--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "61cbb0a7b2052b971f57d7f1bf9e9596256a1638d9650388870fb5a1da0b73c9",
+    "local": "tmp/post_onset_amplification_20261103/series/ce3d07ede517c20cd706.csv"
+  },
+  {
+    "run_key": "frodo:c1b/runs_600/shard-007/0055--case-43742--native",
+    "path": "/temp/zhixin/c1b/runs_600/shard-007/0055--case-43742--native/sandy--temperate--s1472--f2105--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "f68e183b81ad2a2204f077e46b52a513c0f940c1523726117f111c05c0171bf2",
+    "local": "tmp/post_onset_amplification_20261103/series/6b3487ef12ca1175da44.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-015/0115--case-43742--native",
+    "path": "/temp/zhixin/hf1/runs/shard-015/0115--case-43742--native/sandy--temperate--s1472--f2105--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "1f4fd3efe8ac73b8ecd4265b26c32996c6a59178fb134689102849000c8333a8",
+    "local": "tmp/post_onset_amplification_20261103/series/f70c1a697b393ee7c5bf.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-016/0096--case-43785--native",
+    "path": "/temp/zhixin/hf1/runs/shard-016/0096--case-43785--native/sandy--temperate--s2264--f4998--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "f25fc3e7d0da054bb52ec7f0d95905ab3e613aae1a1c7a5d66fed7fd59c6db50",
+    "local": "tmp/post_onset_amplification_20261103/series/e2e0599eddaeac42154a.csv"
+  },
+  {
+    "run_key": "frodo:c72fill/runs_7/shard-003/0003--case-43829--native",
+    "path": "/temp/zhixin/c72fill/runs_7/shard-003/0003--case-43829--native/sandy--temperate--s39--f7582--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "c3075fc5e6abb2b06b27fe898457d862f65a7acb5bccbebacaa6971373cbd984",
+    "local": "tmp/post_onset_amplification_20261103/series/852d8995d54169f96551.csv"
+  },
+  {
+    "run_key": "frodo:c1b/runs_600/shard-001/0049--case-43846--native",
+    "path": "/temp/zhixin/c1b/runs_600/shard-001/0049--case-43846--native/sandy--temperate--s1938--f5656--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "a014315ffc89b5475a765292a033c4f2cccfa929b7586563cfe885bf7c20a9e9",
+    "local": "tmp/post_onset_amplification_20261103/series/a0c5284d5da1e444c441.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-010/0150--case-43846--native",
+    "path": "/temp/zhixin/hf1/runs/shard-010/0150--case-43846--native/sandy--temperate--s1938--f5656--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "b1e8e4829c75f9f31069d70ca3802c0daa29267003547f73cb03ee5061891bfd",
+    "local": "tmp/post_onset_amplification_20261103/series/78f58bb9e38e25949296.csv"
+  },
+  {
+    "run_key": "frodo:topup/runs/shard-001/0001--case-43846--native",
+    "path": "/temp/zhixin/topup/runs/shard-001/0001--case-43846--native/sandy--temperate--s1938--f5656--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "b1e8e4829c75f9f31069d70ca3802c0daa29267003547f73cb03ee5061891bfd",
+    "local": "tmp/post_onset_amplification_20261103/series/805f3c8231bb1e85febe.csv"
+  },
+  {
+    "run_key": "frodo:cluster/runs/shard-000/0015--case-43899--native",
+    "path": "/temp/zhixin/cluster/runs/shard-000/0015--case-43899--native/sandy--temperate--s1488--f4113--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "0f78e818eb978edd99de2d84f54df399d7872c6fd1c9a60e6b3f126e46b7b99f",
+    "local": "tmp/post_onset_amplification_20261103/series/e93ad870b10e62d82c07.csv"
+  },
+  {
+    "run_key": "frodo:c1b/runs_600/shard-006/0006--case-43963--native",
+    "path": "/temp/zhixin/c1b/runs_600/shard-006/0006--case-43963--native/sandy--temperate--s1915--f4773--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "e92b341211509d9f467ffd4ddb673e195c5f8e0dd8d99353b7cf5cfe50e3e0d1",
+    "local": "tmp/post_onset_amplification_20261103/series/6e3757b7e51ee74ff3d5.csv"
+  },
+  {
+    "run_key": "frodo:cluster/runs/shard-003/0018--case-43963--native",
+    "path": "/temp/zhixin/cluster/runs/shard-003/0018--case-43963--native/sandy--temperate--s1915--f4773--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "f4e942416cdd58524ae3de4e0d897ffb5b4973828bbee65e164259ea2cfb151b",
+    "local": "tmp/post_onset_amplification_20261103/series/3802984f3b560f09734f.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-009/0049--case-44511--native",
+    "path": "/temp/zhixin/hf1/runs/shard-009/0049--case-44511--native/sandy--tropical--s130--f9533--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "114e9153995e08bc2472797d73a66a0f15e57bccd59ff94ee98f0ea397d475a2",
+    "local": "tmp/post_onset_amplification_20261103/series/8f8952c1882786958f46.csv"
+  },
+  {
+    "run_key": "frodo:c1b/runs_600/shard-015/0047--case-44596--native",
+    "path": "/temp/zhixin/c1b/runs_600/shard-015/0047--case-44596--native/sandy--tropical--s2307--f9390--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "e2ed4e487f10f01a12450e5183e2258aec5514173f81d0c8d422694db93b1a56",
+    "local": "tmp/post_onset_amplification_20261103/series/507638d983d2470a239b.csv"
+  },
+  {
+    "run_key": "frodo:c1b/runs_gseed_hi/shard-007/0007--case-44596--native",
+    "path": "/temp/zhixin/c1b/runs_gseed_hi/shard-007/0007--case-44596--native/sandy--tropical--s2307--f9390--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "cc48d4f8fc1065da94da30ad6f6bcdf943c603366cc9fbe76216d53d54489f41",
+    "local": "tmp/post_onset_amplification_20261103/series/dd41873693325ff6325f.csv"
+  },
+  {
+    "run_key": "frodo:c1b/runs_gseed_lo/shard-005/0005--case-44596--native",
+    "path": "/temp/zhixin/c1b/runs_gseed_lo/shard-005/0005--case-44596--native/sandy--tropical--s2307--f9390--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "f03bdc22c32982366ec3e179e98c7f847c1dd6a4f713d7e55aead030b61c6675",
+    "local": "tmp/post_onset_amplification_20261103/series/84e2f8e6c71701fb94b6.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-017/0057--case-44596--native",
+    "path": "/temp/zhixin/hf1/runs/shard-017/0057--case-44596--native/sandy--tropical--s2307--f9390--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "dca14f51a264518f8c45eb08b18303c1efd85a5bf095489df7e793f6bde351e5",
+    "local": "tmp/post_onset_amplification_20261103/series/d7325f73e0939bdddcf1.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-010/0050--case-44634--native",
+    "path": "/temp/zhixin/hf1/runs/shard-010/0050--case-44634--native/sandy--tropical--s3151--f9332--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "c8c368e537b664176dd6382eb8cfb4a53b4d7dec3a3a6a6d6e68ee5e5a91c1c7",
+    "local": "tmp/post_onset_amplification_20261103/series/ca34127365f209c36b8f.csv"
+  },
+  {
+    "run_key": "frodo:c1b/runs_600/shard-013/0029--case-44637--native",
+    "path": "/temp/zhixin/c1b/runs_600/shard-013/0029--case-44637--native/sandy--tropical--s3125--f9431--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "74e9cbb022cc5a5032e7cb255da06fb83ae27fa9d0e7b8b27a41d28a1cdc60e9",
+    "local": "tmp/post_onset_amplification_20261103/series/5b757eb5d9b524c28c94.csv"
+  },
+  {
+    "run_key": "frodo:validation/runs/shard-000/0004--case-44637--native",
+    "path": "/temp/zhixin/validation/runs/shard-000/0004--case-44637--native/sandy--tropical--s3125--f9431--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "e0ab8f2f59eb72909f1c0186f89cd2097ea16e3ce26982727c71b2107d2d869a",
+    "local": "tmp/post_onset_amplification_20261103/series/aabd3c38b82299933f28.csv"
+  },
+  {
+    "run_key": "frodo:c1b/runs_1800/shard-000/0001--case-44643--native",
+    "path": "/temp/zhixin/c1b/runs_1800/shard-000/0001--case-44643--native/sandy--tropical--s1019--f8357--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "daa80f04106664ae2fa18bf34ad032ccea9e24789ba8088b737b440ac09e4cb0",
+    "local": "tmp/post_onset_amplification_20261103/series/7cf08d9812fc5f4fc3fb.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-007/0067--case-44643--native",
+    "path": "/temp/zhixin/hf1/runs/shard-007/0067--case-44643--native/sandy--tropical--s1019--f8357--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "a4cebaf1714da641d69a7fcfcd294b4f2dd4278d2419530eb988fcbe9b4708ce",
+    "local": "tmp/post_onset_amplification_20261103/series/b517f2895a1784a83b0a.csv"
+  },
+  {
+    "run_key": "frodo:c1b/runs_600/shard-007/0039--case-44653--native",
+    "path": "/temp/zhixin/c1b/runs_600/shard-007/0039--case-44653--native/sandy--tropical--s1434--f9755--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "4b8cbd576360d7a86609c8bdaa85533b4ae8e61e07b1dc3fbba1bc3be861f15b",
+    "local": "tmp/post_onset_amplification_20261103/series/531818b736a7ebbe3262.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-016/0056--case-44653--native",
+    "path": "/temp/zhixin/hf1/runs/shard-016/0056--case-44653--native/sandy--tropical--s1434--f9755--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "e918d47121e56a2b79e7e1ad6b1e33267e3e34cdfe9361b09f65063d6ea676c8",
+    "local": "tmp/post_onset_amplification_20261103/series/1d77f7eb31954d0c9ad3.csv"
+  },
+  {
+    "run_key": "frodo:c1b/runs_600/shard-000/0048--case-44677--native",
+    "path": "/temp/zhixin/c1b/runs_600/shard-000/0048--case-44677--native/sandy--tropical--s1669--f9481--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "5a2abb7db14e1b2c1525d81272d6dd92a3a502e7aee3f1cf23bf0b76b49d83df",
+    "local": "tmp/post_onset_amplification_20261103/series/081ec44990dff3037897.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-008/0128--case-44677--native",
+    "path": "/temp/zhixin/hf1/runs/shard-008/0128--case-44677--native/sandy--tropical--s1669--f9481--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "77eecc2eaa5444b668acfa10a0c930029370c476ea313c9e9bab81e3f6e67f4a",
+    "local": "tmp/post_onset_amplification_20261103/series/0291e9f0ac9eed36aa50.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-010/0070--case-45018--native",
+    "path": "/temp/zhixin/hf1/runs/shard-010/0070--case-45018--native/sandy--tropical--s3036--f8592--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "37f1225b74854a4d31c2a7c931507b97ef32f5a2c3ba47a39510433e6a729d04",
+    "local": "tmp/post_onset_amplification_20261103/series/7615deb63071fc2c1963.csv"
+  },
+  {
+    "run_key": "frodo:c72fill/runs_7/shard-004/0004--case-45164--native",
+    "path": "/temp/zhixin/c72fill/runs_7/shard-004/0004--case-45164--native/sandy--tropical--s1691--f9225--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "2a55135f11d20d51a3319c1aafe76f52a507f990d6cbdfea2c09253bbd8c40de",
+    "local": "tmp/post_onset_amplification_20261103/series/76f2103af5881a2351ce.csv"
+  },
+  {
+    "run_key": "frodo:cluster/runs/shard-001/0016--case-45164--native",
+    "path": "/temp/zhixin/cluster/runs/shard-001/0016--case-45164--native/sandy--tropical--s1691--f9225--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "7093ccd2112e4597fc2abce8df3f05030fb94043efe4776073859a1a2864af7c",
+    "local": "tmp/post_onset_amplification_20261103/series/c2d26ded7f399ce92790.csv"
+  },
+  {
+    "run_key": "frodo:diag/runs_a/shard-003/0003--case-45164--native",
+    "path": "/temp/zhixin/diag/runs_a/shard-003/0003--case-45164--native/sandy--tropical--s1691--f9225--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "68029d9345d407c7a7289a5e16ef5789c2baa47ca975d210f15c60df82053710",
+    "local": "tmp/post_onset_amplification_20261103/series/2c236e320f957845d59f.csv"
+  },
+  {
+    "run_key": "frodo:c1b/runs_600/shard-002/0050--case-45280--native",
+    "path": "/temp/zhixin/c1b/runs_600/shard-002/0050--case-45280--native/sandy--tropical--s1732--f9335--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "6fc4e25bbf1fab994d7e4488463bf97944c8fa9990cea3d6ae2834278432f39b",
+    "local": "tmp/post_onset_amplification_20261103/series/7ca1141eabe76438b283.csv"
+  },
+  {
+    "run_key": "frodo:c1b/runs_gseed_hi/shard-006/0006--case-45280--native",
+    "path": "/temp/zhixin/c1b/runs_gseed_hi/shard-006/0006--case-45280--native/sandy--tropical--s1732--f9335--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "e82bc3d8e6150365538b1a490f11f87cb4a01a79cc83856d3be29da4d461cc40",
+    "local": "tmp/post_onset_amplification_20261103/series/89b4be2c4dbb3e140bfb.csv"
+  },
+  {
+    "run_key": "frodo:c1b/runs_gseed_lo/shard-004/0004--case-45280--native",
+    "path": "/temp/zhixin/c1b/runs_gseed_lo/shard-004/0004--case-45280--native/sandy--tropical--s1732--f9335--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "9f5c5ea69adc900022c46e6f56dd54c1c334839a18344bb75cf5b2a9e65be5f8",
+    "local": "tmp/post_onset_amplification_20261103/series/25b9f11905a631c49f58.csv"
+  },
+  {
+    "run_key": "frodo:cluster/runs/shard-002/0017--case-45280--native",
+    "path": "/temp/zhixin/cluster/runs/shard-002/0017--case-45280--native/sandy--tropical--s1732--f9335--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "251a716643fecc22e9f7dc7d9f6ec3b7309f67983cd8483ce4970b7cbc4ba0b9",
+    "local": "tmp/post_onset_amplification_20261103/series/ddd3210529d1d741b0de.csv"
+  },
+  {
+    "run_key": "frodo:c72fill/runs_7/shard-005/0005--case-45383--native",
+    "path": "/temp/zhixin/c72fill/runs_7/shard-005/0005--case-45383--native/sandy--tropical--s1223--f8564--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "a15c11238ead963f253ec2f571fa74ef89c50014087a5000a5d41c70427de234",
+    "local": "tmp/post_onset_amplification_20261103/series/ae31db3a261584666b30.csv"
+  },
+  {
+    "run_key": "frodo:cluster/runs/shard-009/0009--case-45460--native",
+    "path": "/temp/zhixin/cluster/runs/shard-009/0009--case-45460--native/sandy--tropical--s1760--f9673--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "00f2806226eb6793194333e8873732d92f00359e72c277fadf7698f2c9364e8a",
+    "local": "tmp/post_onset_amplification_20261103/series/9e3ef97a27fc7e2bc562.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-001/0061--case-45541--native",
+    "path": "/temp/zhixin/hf1/runs/shard-001/0061--case-45541--native/sandy--tropical--s2970--f9530--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "e9e21e6711fd3703f6de252f8b5d95e03a47e014fb4122e36f948ef2d5236159",
+    "local": "tmp/post_onset_amplification_20261103/series/2e53130282dc4870b48d.csv"
+  },
+  {
+    "run_key": "frodo:cluster/runs/shard-011/0026--case-45558--native",
+    "path": "/temp/zhixin/cluster/runs/shard-011/0026--case-45558--native/sandy--tropical--s459--f8257--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "5f9095eb128c5b4bf98102fc7f9b22a007a3fe742ed0c250f68e06f8b24ad3a4",
+    "local": "tmp/post_onset_amplification_20261103/series/9d3ec6925c1291d2e59e.csv"
+  },
+  {
+    "run_key": "frodo:diag/runs_a/shard-007/0007--case-45558--native",
+    "path": "/temp/zhixin/diag/runs_a/shard-007/0007--case-45558--native/sandy--tropical--s459--f8257--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "2aed658b4f7411ab8943f31d1baa77c680963c908729bb2cd447f7ae3a25da03",
+    "local": "tmp/post_onset_amplification_20261103/series/dc9b6c86091e6ddae7ac.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-015/0035--case-45707--native",
+    "path": "/temp/zhixin/hf1/runs/shard-015/0035--case-45707--native/sandy--tropical--s1897--f9598--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "432407ccbce5abce3002cb196cf96591a3a7bdeca60f973619285a8b867c26fa",
+    "local": "tmp/post_onset_amplification_20261103/series/47d5738fa73272e1b7c7.csv"
+  },
+  {
+    "run_key": "frodo:c1b/runs_600/shard-010/0042--case-45813--native",
+    "path": "/temp/zhixin/c1b/runs_600/shard-010/0042--case-45813--native/sandy--tropical--s2145--f9216--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "52f7df9ae0980c4671b32510e66824fdc44933641f83cec2e6f19830d00375dd",
+    "local": "tmp/post_onset_amplification_20261103/series/d0d0325ccaae4b58c356.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-000/0120--case-45813--native",
+    "path": "/temp/zhixin/hf1/runs/shard-000/0120--case-45813--native/sandy--tropical--s2145--f9216--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "0dfa78c215a6185c84ca53e62e6c4798620d7597419b46b4c74cbf37355f4d6e",
+    "local": "tmp/post_onset_amplification_20261103/series/c5bc550f16f4fdde04c0.csv"
+  },
+  {
+    "run_key": "frodo:c72fill/runs_7/shard-006/0006--case-46040--native",
+    "path": "/temp/zhixin/c72fill/runs_7/shard-006/0006--case-46040--native/sandy--tropical--s2038--f9741--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "9ea8147230d3370a866cb1927a7e9c7492616f1b6815da1aa7f6ba371f359b32",
+    "local": "tmp/post_onset_amplification_20261103/series/0758f0e127c90124ff47.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-011/0091--case-46078--native",
+    "path": "/temp/zhixin/hf1/runs/shard-011/0091--case-46078--native/sandy--tropical--s1755--f9922--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "fdae0ce581569c19a622ec2abc1876e11849e0842ad346111f7f4dc44532caae",
+    "local": "tmp/post_onset_amplification_20261103/series/6fefdcd4516e2e748e21.csv"
+  },
+  {
+    "run_key": "frodo:c72fill/runs_7/shard-000/0007--case-46252--native",
+    "path": "/temp/zhixin/c72fill/runs_7/shard-000/0007--case-46252--native/sandy--tropical--s1466--f9578--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "f32f472dacf3cdff933b207bdbf87adb3de03c8a3bcc180d9b5daeff22205268",
+    "local": "tmp/post_onset_amplification_20261103/series/905be138fcba20b2a86f.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-014/0114--case-46379--native",
+    "path": "/temp/zhixin/hf1/runs/shard-014/0114--case-46379--native/sandy--tropical--s3167--f9724--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "8b7cc22fad9948542d8482cc0ff6bfd9a6b417aab5bbf4efeac36ffee4f7a3e7",
+    "local": "tmp/post_onset_amplification_20261103/series/396021e3063abb907fb5.csv"
+  },
+  {
+    "run_key": "frodo:c1b/runs_600/shard-006/0022--case-46458--native",
+    "path": "/temp/zhixin/c1b/runs_600/shard-006/0022--case-46458--native/sandy--tropical--s2090--f9631--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "c1ba930cbd1db517327a384f81ee35dc1762604a4724e37f83e5529678f80cfa",
+    "local": "tmp/post_onset_amplification_20261103/series/3dca72d6b697cfce53bc.csv"
+  },
+  {
+    "run_key": "frodo:validation/runs/shard-001/0001--case-46458--native",
+    "path": "/temp/zhixin/validation/runs/shard-001/0001--case-46458--native/sandy--tropical--s2090--f9631--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "a64ae073192fcfcee7c0c344300db15a7e835f5c0ab5884be313e61fbf9425af",
+    "local": "tmp/post_onset_amplification_20261103/series/ee22b8348061fc7b2961.csv"
+  },
+  {
+    "run_key": "frodo:c1b/runs_600/shard-013/0045--case-46608--native",
+    "path": "/temp/zhixin/c1b/runs_600/shard-013/0045--case-46608--native/sandy--tropical--s3211--f9817--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "7737dbf5965796f6773f49f82d7d880b0a6783a0c3361056584921b1d0a46d70",
+    "local": "tmp/post_onset_amplification_20261103/series/8e88b592cc3c8dc24789.csv"
+  },
+  {
+    "run_key": "frodo:c1b/runs_gseed_hi/shard-003/0003--case-46608--native",
+    "path": "/temp/zhixin/c1b/runs_gseed_hi/shard-003/0003--case-46608--native/sandy--tropical--s3211--f9817--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "68ad5dc4225299806381fb7f711c33a50b795f2d7735ed17294267abe5220062",
+    "local": "tmp/post_onset_amplification_20261103/series/3ae459365ae6b193f872.csv"
+  },
+  {
+    "run_key": "frodo:c1b/runs_gseed_lo/shard-003/0003--case-46608--native",
+    "path": "/temp/zhixin/c1b/runs_gseed_lo/shard-003/0003--case-46608--native/sandy--tropical--s3211--f9817--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "c05d583f1d6f2abe071546f8ac030311601d13b7d0a712758056107b7d4f748c",
+    "local": "tmp/post_onset_amplification_20261103/series/82e52344d9a9f8b91ac9.csv"
+  },
+  {
+    "run_key": "frodo:cluster/runs/shard-002/0002--case-46608--native",
+    "path": "/temp/zhixin/cluster/runs/shard-002/0002--case-46608--native/sandy--tropical--s3211--f9817--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "7ec8a44a38cd8b82ff85d367a6cafe1703d39533d1d85c534161ff38fbc75e81",
+    "local": "tmp/post_onset_amplification_20261103/series/ff5e228091ec3269b302.csv"
+  },
+  {
+    "run_key": "frodo:c1b/runs_600/shard-002/0002--case-46846--native",
+    "path": "/temp/zhixin/c1b/runs_600/shard-002/0002--case-46846--native/sandy--tropical--s2145--f9353--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "6d8dcd9112a93584f4a52e78947d7a8cfe1ccfd511cbd9dbcc40d16bf3727a8c",
+    "local": "tmp/post_onset_amplification_20261103/series/ab4b89ca7c79368ab77b.csv"
+  },
+  {
+    "run_key": "frodo:c1b/runs_gseed_hi/shard-001/0001--case-46846--native",
+    "path": "/temp/zhixin/c1b/runs_gseed_hi/shard-001/0001--case-46846--native/sandy--tropical--s2145--f9353--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "ced5336b536a86fe39d09bb47ef78802e3108e0ed2ebf66690bd79f9215a376d",
+    "local": "tmp/post_onset_amplification_20261103/series/1f8c49281693e7f6d291.csv"
+  },
+  {
+    "run_key": "frodo:c1b/runs_gseed_lo/shard-001/0001--case-46846--native",
+    "path": "/temp/zhixin/c1b/runs_gseed_lo/shard-001/0001--case-46846--native/sandy--tropical--s2145--f9353--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "1693e498aeb70bf0a68f2dfecb124b48de0dc507e97c5fe1e2ef11e22b65db7a",
+    "local": "tmp/post_onset_amplification_20261103/series/4802c297f2a038e646a8.csv"
+  },
+  {
+    "run_key": "frodo:cluster/runs/shard-005/0020--case-46846--native",
+    "path": "/temp/zhixin/cluster/runs/shard-005/0020--case-46846--native/sandy--tropical--s2145--f9353--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "3575dc1917776fdc5a1f9f4353dfd0fd23218b1d1e017f68a4fb0fba349673fa",
+    "local": "tmp/post_onset_amplification_20261103/series/59f3b6c26a7ac5a1a101.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-009/0109--case-46960--native",
+    "path": "/temp/zhixin/hf1/runs/shard-009/0109--case-46960--native/sandy--tropical--s1726--f9001--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "c582b9091466df7c60d44c011e61c74f82b77a5bd184373f0f8443258bbdcb26",
+    "local": "tmp/post_onset_amplification_20261103/series/07437fa9a8f798588681.csv"
+  },
+  {
+    "run_key": "frodo:c1b/runs_600/shard-012/0012--case-47057--native",
+    "path": "/temp/zhixin/c1b/runs_600/shard-012/0012--case-47057--native/sandy--tropical--s1076--f9773--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "2bee898adc326b15f6fd7537aeeedceba1c61ad30888df4017286ac115553621",
+    "local": "tmp/post_onset_amplification_20261103/series/1ee88e0b8711cfb401ac.csv"
+  },
+  {
+    "run_key": "frodo:cluster/runs/shard-013/0028--case-47057--native",
+    "path": "/temp/zhixin/cluster/runs/shard-013/0028--case-47057--native/sandy--tropical--s1076--f9773--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "a30c06878bd5dd75de6f69fe105f2553378553c79b114f06f1733a998ee8d5a2",
+    "local": "tmp/post_onset_amplification_20261103/series/8f709e2368a78e2163d6.csv"
+  },
+  {
+    "run_key": "frodo:validation/runs/shard-000/0012--case-47128--native",
+    "path": "/temp/zhixin/validation/runs/shard-000/0012--case-47128--native/sandy--tropical--s2097--f8189--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "0c868c46a214065abdb1f0d2c6fee009af278b07d6364a8eccc3e3a9a444622c",
+    "local": "tmp/post_onset_amplification_20261103/series/9ba24f10e567e4de9c32.csv"
+  },
+  {
+    "run_key": "frodo:c1b/runs_600/shard-000/0016--case-47315--native",
+    "path": "/temp/zhixin/c1b/runs_600/shard-000/0016--case-47315--native/sandy--tropical--s1672--f9790--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "acf75228162d5ed0d5a8b0e98a79f9b522fe0c2c8ec4b8aff8878fd12e5bfe8f",
+    "local": "tmp/post_onset_amplification_20261103/series/730233dbba74bc1be762.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-004/0024--case-47315--native",
+    "path": "/temp/zhixin/hf1/runs/shard-004/0024--case-47315--native/sandy--tropical--s1672--f9790--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "7b12ea6be4e4f5d286f5510958674e1010ba4fbf346c67d1f5bd08ccf4c9d2da",
+    "local": "tmp/post_onset_amplification_20261103/series/484917bc6357f046c732.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-019/0019--case-47504--native",
+    "path": "/temp/zhixin/hf1/runs/shard-019/0019--case-47504--native/sandy--tropical--s1920--f7909--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "0bbfc5d969d2898df3ce482285bd2fb3b265427252ef5e4ad7441a38f6065e33",
+    "local": "tmp/post_onset_amplification_20261103/series/8368e22ee625296b6580.csv"
+  },
+  {
+    "run_key": "frodo:c1b/runs_600/shard-011/0011--case-47647--native",
+    "path": "/temp/zhixin/c1b/runs_600/shard-011/0011--case-47647--native/sandy--tropical--s2188--f9947--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "25be73b7f9f13cf6021e38a47b02c0e49b2b0b116282f1256bfec5c8b0ae1737",
+    "local": "tmp/post_onset_amplification_20261103/series/28c2e9e3cf60e7c1fecd.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-018/0098--case-47647--native",
+    "path": "/temp/zhixin/hf1/runs/shard-018/0098--case-47647--native/sandy--tropical--s2188--f9947--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "20ad10cad356dc240a527a83075a5533eb6a103d50344e04cf9fe4c1f438b548",
+    "local": "tmp/post_onset_amplification_20261103/series/ae5019c7eb776a8df151.csv"
+  },
+  {
+    "run_key": "frodo:hf1/runs/shard-010/0010--case-47738--native",
+    "path": "/temp/zhixin/hf1/runs/shard-010/0010--case-47738--native/sandy--tropical--s1664--f9609--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "bef077902c819036763dc3b4b981a0e4c569518eeaa86e82145e4640f81ed8d9",
+    "local": "tmp/post_onset_amplification_20261103/series/48d42ddce5baad58f674.csv"
+  },
+  {
+    "run_key": "frodo:paper1_wp1_paired_v2/runs/case-14789--both--nx-1",
+    "path": "/temp/zhixin/paper1_wp1_paired_v2/runs/case-14789--both--nx-1/clayey--tropical--s2376--f9445--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "5309c76fa148be6569e6617b9c9cf57435d2b4c64a89171311a62cf886714eba",
+    "local": "tmp/post_onset_amplification_20261103/series/7b3befe7b68f02665d7b.csv"
+  },
+  {
+    "run_key": "frodo:paper1_wp1_paired_v2/runs/case-16499--critical--nx-1",
+    "path": "/temp/zhixin/paper1_wp1_paired_v2/runs/case-16499--critical--nx-1/loamy--arid--s499--f10251--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "d540176c40066a9aa62cb8ab10f96d0b5ae4d2d5c8cf6b96ce3e842e1e6391e7",
+    "local": "tmp/post_onset_amplification_20261103/series/be833d8548a449967feb.csv"
+  },
+  {
+    "run_key": "frodo:paper1_wp1_paired_v2/runs/case-16499--seeded--nx-2",
+    "path": "/temp/zhixin/paper1_wp1_paired_v2/runs/case-16499--seeded--nx-2/loamy--arid--s499--f10251--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "b32095cb6dfd38510662843fd2419041a91fe4f3da3f6c3217959f053a65b8d9",
+    "local": "tmp/post_onset_amplification_20261103/series/e9a84699fdb5496c957e.csv"
+  },
+  {
+    "run_key": "frodo:paper1_wp1_paired_v2/runs/case-18160--critical--nx-1",
+    "path": "/temp/zhixin/paper1_wp1_paired_v2/runs/case-18160--critical--nx-1/loamy--arid--s89--f10062--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "f7b799f1b98348bf1ace106f4311cbe4a2a22fb9895bb98e2566db94827172d6",
+    "local": "tmp/post_onset_amplification_20261103/series/ec9cdec6732d29401ade.csv"
+  },
+  {
+    "run_key": "frodo:paper1_wp1_paired_v2/runs/case-18160--seeded--nx-2",
+    "path": "/temp/zhixin/paper1_wp1_paired_v2/runs/case-18160--seeded--nx-2/loamy--arid--s89--f10062--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "ad4faa39f233f8ba96c5f8eebd1e02723d9696b5dd9254756e571d556d50a2f6",
+    "local": "tmp/post_onset_amplification_20261103/series/ec0b7e5da4d172351c7a.csv"
+  },
+  {
+    "run_key": "frodo:paper1_wp1_paired_v2/runs/case-18871--critical--nx-1",
+    "path": "/temp/zhixin/paper1_wp1_paired_v2/runs/case-18871--critical--nx-1/loamy--arid--s613--f10297--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "7b826269901eb250cef1385f821cee93f8e4aae83b92eb9a9c8a40ea5f8e9d62",
+    "local": "tmp/post_onset_amplification_20261103/series/b9759a1e29349dc2a5cb.csv"
+  },
+  {
+    "run_key": "frodo:paper1_wp1_paired_v2/runs/case-18871--seeded--nx-2",
+    "path": "/temp/zhixin/paper1_wp1_paired_v2/runs/case-18871--seeded--nx-2/loamy--arid--s613--f10297--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "a0860bae5cdd46af7f86373951cd2c82872c6bad4c7d7e8cd6dad24f3b746149",
+    "local": "tmp/post_onset_amplification_20261103/series/0e99e71eccdc809d74ad.csv"
+  },
+  {
+    "run_key": "frodo:paper1_wp1_paired_v2/runs/case-24934--critical--nx-1",
+    "path": "/temp/zhixin/paper1_wp1_paired_v2/runs/case-24934--critical--nx-1/loamy--temperate--s924--f6610--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "c260a475b80220870fcbfd0facc796007dff3b90b877a0829336422f96cec3cb",
+    "local": "tmp/post_onset_amplification_20261103/series/e2c0ec4b7640a6ac311d.csv"
+  },
+  {
+    "run_key": "frodo:paper1_wp1_paired_v2/runs/case-24934--seeded--nx-2",
+    "path": "/temp/zhixin/paper1_wp1_paired_v2/runs/case-24934--seeded--nx-2/loamy--temperate--s924--f6610--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "4cfa8a942b19cba12beda51ce234df53c796e3277301d288119ce75bd1e4b9b9",
+    "local": "tmp/post_onset_amplification_20261103/series/714705a446456337dd70.csv"
+  },
+  {
+    "run_key": "frodo:paper1_wp1_paired_v2/runs/case-25091--both--nx-1",
+    "path": "/temp/zhixin/paper1_wp1_paired_v2/runs/case-25091--both--nx-1/loamy--temperate--s613--f8824--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "3613d82d6e8ac2ccb87c14c1834d98976fead58591679e0d797b92155d0b21de",
+    "local": "tmp/post_onset_amplification_20261103/series/b59f258b21a2880c4d5b.csv"
+  },
+  {
+    "run_key": "frodo:paper1_wp1_paired_v2/runs/case-26439--critical--nx-1",
+    "path": "/temp/zhixin/paper1_wp1_paired_v2/runs/case-26439--critical--nx-1/loamy--temperate--s162--f8985--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "802662899d79568df73e83f928904238d23b9fe0770f56eb841a6974f98ffcb5",
+    "local": "tmp/post_onset_amplification_20261103/series/55f635d74eb72d89fbe8.csv"
+  },
+  {
+    "run_key": "frodo:paper1_wp1_paired_v2/runs/case-26439--seeded--nx-2",
+    "path": "/temp/zhixin/paper1_wp1_paired_v2/runs/case-26439--seeded--nx-2/loamy--temperate--s162--f8985--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "f2c74e1dbd883d3d548ddbdc7667d06a126a6568bd031762b02818c0378589e3",
+    "local": "tmp/post_onset_amplification_20261103/series/0733c0108a83a2315f15.csv"
+  },
+  {
+    "run_key": "frodo:paper1_wp1_paired_v2/runs/case-26554--critical--nx-1",
+    "path": "/temp/zhixin/paper1_wp1_paired_v2/runs/case-26554--critical--nx-1/loamy--temperate--s699--f4711--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "713d7f71626d9a31a5ad70111f535bbf5bb1773e31aae9039559b8252fb80c37",
+    "local": "tmp/post_onset_amplification_20261103/series/4bfca64143e2e272a0ec.csv"
+  },
+  {
+    "run_key": "frodo:paper1_wp1_paired_v2/runs/case-26554--seeded--nx-2",
+    "path": "/temp/zhixin/paper1_wp1_paired_v2/runs/case-26554--seeded--nx-2/loamy--temperate--s699--f4711--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "d60f896e0dfdb66ed1fed501cde52276844563df847d26b5669d2a586da7b8f2",
+    "local": "tmp/post_onset_amplification_20261103/series/bc3bdf1faea7ec0a13ef.csv"
+  },
+  {
+    "run_key": "frodo:paper1_wp1_paired_v2/runs/case-30032--both--nx-1",
+    "path": "/temp/zhixin/paper1_wp1_paired_v2/runs/case-30032--both--nx-1/loamy--tropical--s776--f8570--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "0186e62afa94ee1e7d73f9b47df5a552a26ec3a4fb7ba6c0776d6c8867ddb64d",
+    "local": "tmp/post_onset_amplification_20261103/series/51e67517485bd496636e.csv"
+  },
+  {
+    "run_key": "frodo:paper1_wp1_paired_v2/runs/case-30143--critical--nx-1",
+    "path": "/temp/zhixin/paper1_wp1_paired_v2/runs/case-30143--critical--nx-1/loamy--tropical--s3080--f9332--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "3ea819a09536a67c750f570e739f13705dd8a44406bef621b3252d7c568ab42c",
+    "local": "tmp/post_onset_amplification_20261103/series/047a663a6ad065698eae.csv"
+  },
+  {
+    "run_key": "frodo:paper1_wp1_paired_v2/runs/case-30143--seeded--nx-2",
+    "path": "/temp/zhixin/paper1_wp1_paired_v2/runs/case-30143--seeded--nx-2/loamy--tropical--s3080--f9332--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "1a3a763eb4c9546becdd421afbe0bbc32093db86f10d68bab78605c8b0eed5e7",
+    "local": "tmp/post_onset_amplification_20261103/series/dad0b5312aa12a02e286.csv"
+  },
+  {
+    "run_key": "frodo:paper1_wp1_paired_v2/runs/case-31455--critical--nx-1",
+    "path": "/temp/zhixin/paper1_wp1_paired_v2/runs/case-31455--critical--nx-1/loamy--tropical--s45--f8594--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "ceab2b1ec1197ec2ab5bdfd64cfe3a9bd75efe73c9e68965dcdf0d12afcffa32",
+    "local": "tmp/post_onset_amplification_20261103/series/4d7db055a5d95d950786.csv"
+  },
+  {
+    "run_key": "frodo:paper1_wp1_paired_v2/runs/case-31455--seeded--nx-2",
+    "path": "/temp/zhixin/paper1_wp1_paired_v2/runs/case-31455--seeded--nx-2/loamy--tropical--s45--f8594--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "ff06631f362d519afab03600bf433d15f4348e10fe292c8852feb23e4f4154b2",
+    "local": "tmp/post_onset_amplification_20261103/series/1c5fdd258a92a7f23b20.csv"
+  },
+  {
+    "run_key": "frodo:paper1_wp1_paired_v2/runs/case-32021--critical--nx-1",
+    "path": "/temp/zhixin/paper1_wp1_paired_v2/runs/case-32021--critical--nx-1/sandy--arid--s1735--f636--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "7a5fd3b9d8b79146a97eeb0a314d755e87f52da848664dca04e7c7c239d0627c",
+    "local": "tmp/post_onset_amplification_20261103/series/8f67f8f2c7da1e2ab0bc.csv"
+  },
+  {
+    "run_key": "frodo:paper1_wp1_paired_v2/runs/case-32021--seeded--nx-2",
+    "path": "/temp/zhixin/paper1_wp1_paired_v2/runs/case-32021--seeded--nx-2/sandy--arid--s1735--f636--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "8a4a1b23972c7dba3343dcc0bb21f188620e5a9c4cb859360071c686f87c206c",
+    "local": "tmp/post_onset_amplification_20261103/series/dd7ef5c435dbf396b49b.csv"
+  },
+  {
+    "run_key": "frodo:paper1_wp1_paired_v2/runs/case-33050--critical--nx-3",
+    "path": "/temp/zhixin/paper1_wp1_paired_v2/runs/case-33050--critical--nx-3/sandy--arid--s1315--f9705--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "5f0251ff257ed740d933b2eb197d98fa1b2fdda14d05e63cb314112937227538",
+    "local": "tmp/post_onset_amplification_20261103/series/b6c2d6a05f20c55f6847.csv"
+  },
+  {
+    "run_key": "frodo:paper1_wp1_paired_v2/runs/case-33050--seeded--nx-11",
+    "path": "/temp/zhixin/paper1_wp1_paired_v2/runs/case-33050--seeded--nx-11/sandy--arid--s1315--f9705--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "e4261c546ce5e4d10483a4d580cc635f5b694d6cd4c7986cb1119c3aacac2776",
+    "local": "tmp/post_onset_amplification_20261103/series/9b09087d82153a03fe22.csv"
+  },
+  {
+    "run_key": "frodo:paper1_wp1_paired_v2/runs/case-33149--critical--nx-2",
+    "path": "/temp/zhixin/paper1_wp1_paired_v2/runs/case-33149--critical--nx-2/sandy--arid--s76--f10415--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "e3326ff9ab4e7bec9239b6a154fd6c5bf8a1727bfb8fff5a86167b4543cb4b64",
+    "local": "tmp/post_onset_amplification_20261103/series/2128c08a1af87f0ac0e5.csv"
+  },
+  {
+    "run_key": "frodo:paper1_wp1_paired_v2/runs/case-33149--seeded--nx-3",
+    "path": "/temp/zhixin/paper1_wp1_paired_v2/runs/case-33149--seeded--nx-3/sandy--arid--s76--f10415--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "0179a73a707fff14fcc332534ffb0d0a5610022b04acc42606f39603f46d77b7",
+    "local": "tmp/post_onset_amplification_20261103/series/e8374f3927eb4150ee18.csv"
+  },
+  {
+    "run_key": "frodo:paper1_wp1_paired_v2/runs/case-33220--both--nx-3",
+    "path": "/temp/zhixin/paper1_wp1_paired_v2/runs/case-33220--both--nx-3/sandy--arid--s2264--f630--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "fc9e6dac4c759faecab0caf8e62efe53390b33761f2604d74804ac027ea4d43d",
+    "local": "tmp/post_onset_amplification_20261103/series/7faacb73ca51c3f26b8a.csv"
+  },
+  {
+    "run_key": "frodo:paper1_wp1_paired_v2/runs/case-33511--critical--nx-2",
+    "path": "/temp/zhixin/paper1_wp1_paired_v2/runs/case-33511--critical--nx-2/sandy--arid--s1606--f10153--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "d73c492ab2f7e63df944750e3783bb877677ee929e8ccc2b2170ccb9a0a1a5de",
+    "local": "tmp/post_onset_amplification_20261103/series/09d39c34c80c66b9dea4.csv"
+  },
+  {
+    "run_key": "frodo:paper1_wp1_paired_v2/runs/case-33511--seeded--nx-3",
+    "path": "/temp/zhixin/paper1_wp1_paired_v2/runs/case-33511--seeded--nx-3/sandy--arid--s1606--f10153--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "b07ad20e3c8e7d8ab37551c2e0689ad25ac18df633951825fcf7acf90be0fddf",
+    "local": "tmp/post_onset_amplification_20261103/series/99c5fc3977945ad4db38.csv"
+  },
+  {
+    "run_key": "frodo:paper1_wp1_paired_v2/runs/case-34306--critical--nx-1",
+    "path": "/temp/zhixin/paper1_wp1_paired_v2/runs/case-34306--critical--nx-1/sandy--arid--s1682--f10157--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "58057013ace3228d25f0ec3bebfdd2f05688abfbad485d9781369d62b4d4e824",
+    "local": "tmp/post_onset_amplification_20261103/series/fdb488b1098783326b78.csv"
+  },
+  {
+    "run_key": "frodo:paper1_wp1_paired_v2/runs/case-34306--seeded--nx-4",
+    "path": "/temp/zhixin/paper1_wp1_paired_v2/runs/case-34306--seeded--nx-4/sandy--arid--s1682--f10157--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "4c6029242b59b8a009c92865088e75e2b8b46cf2c2075563d045a971d1388af0",
+    "local": "tmp/post_onset_amplification_20261103/series/5c9cdaa252baade33d2c.csv"
+  },
+  {
+    "run_key": "frodo:paper1_wp1_paired_v2/runs/case-34494--critical--nx-23",
+    "path": "/temp/zhixin/paper1_wp1_paired_v2/runs/case-34494--critical--nx-23/sandy--arid--s3171--f10136--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "228a5f431d8ec51a7a57f54303c0e1dab1128df6f69bc294d31cbd0038b7f73c",
+    "local": "tmp/post_onset_amplification_20261103/series/3709d8a553935d583290.csv"
+  },
+  {
+    "run_key": "frodo:paper1_wp1_paired_v2/runs/case-34494--seeded--nx-30",
+    "path": "/temp/zhixin/paper1_wp1_paired_v2/runs/case-34494--seeded--nx-30/sandy--arid--s3171--f10136--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "d4123e8d32d620618d56bd53cd48616abdc5bef06ef56e2090af132723808a83",
+    "local": "tmp/post_onset_amplification_20261103/series/378a71956c7b43769fe5.csv"
+  },
+  {
+    "run_key": "frodo:paper1_wp1_paired_v2/runs/case-34634--both--nx-2",
+    "path": "/temp/zhixin/paper1_wp1_paired_v2/runs/case-34634--both--nx-2/sandy--arid--s1741--f711--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "54c4bb6e3d0f40d0cbddf961cc5c806bffbb7e4612ee2e553a3e64c5e11e84ac",
+    "local": "tmp/post_onset_amplification_20261103/series/91438996efb9ce03a759.csv"
+  },
+  {
+    "run_key": "frodo:paper1_wp1_paired_v2/runs/case-35733--both--nx-1",
+    "path": "/temp/zhixin/paper1_wp1_paired_v2/runs/case-35733--both--nx-1/sandy--arid--s1701--f9711--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "016b087dc2d18bdafb682417ca1b528e82007110dabf9540bfc21ed37d456f81",
+    "local": "tmp/post_onset_amplification_20261103/series/2cf6a43cd90a93ca8213.csv"
+  },
+  {
+    "run_key": "frodo:paper1_wp1_paired_v2/runs/case-36114--critical--nx-2",
+    "path": "/temp/zhixin/paper1_wp1_paired_v2/runs/case-36114--critical--nx-2/sandy--boreal--s1761--f777--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "c15661056bad98c0cbf61624afacbbe36d89dc09997d3de3ae26fb99e35fdcb6",
+    "local": "tmp/post_onset_amplification_20261103/series/0bd2782c55c324ea0242.csv"
+  },
+  {
+    "run_key": "frodo:paper1_wp1_paired_v2/runs/case-36114--seeded--nx-16",
+    "path": "/temp/zhixin/paper1_wp1_paired_v2/runs/case-36114--seeded--nx-16/sandy--boreal--s1761--f777--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "4b6d40c963c7912d069c5fc2ec7f4050e15b1a13590b907b2d9dce78e194935c",
+    "local": "tmp/post_onset_amplification_20261103/series/aa01c07fe2b37bcecae2.csv"
+  },
+  {
+    "run_key": "frodo:paper1_wp1_paired_v2/runs/case-36173--critical--nx-11",
+    "path": "/temp/zhixin/paper1_wp1_paired_v2/runs/case-36173--critical--nx-11/sandy--boreal--s1744--f975--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "383956893e5af2ee489a7071d5a11a38997210f96e176b6028a8edd5cfeaf7c5",
+    "local": "tmp/post_onset_amplification_20261103/series/ebcef9ad6f2154189576.csv"
+  },
+  {
+    "run_key": "frodo:paper1_wp1_paired_v2/runs/case-36173--seeded--nx-15",
+    "path": "/temp/zhixin/paper1_wp1_paired_v2/runs/case-36173--seeded--nx-15/sandy--boreal--s1744--f975--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "0c8540a3556beab8426dc4702261822ca38bb5d9a49c12076d13c8458ec1f96b",
+    "local": "tmp/post_onset_amplification_20261103/series/f6bf5db9296d7c7aecda.csv"
+  },
+  {
+    "run_key": "frodo:paper1_wp1_paired_v2/runs/case-36747--critical--nx-1",
+    "path": "/temp/zhixin/paper1_wp1_paired_v2/runs/case-36747--critical--nx-1/sandy--boreal--s876--f888--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "0835a1ee50dd07ae3575f5a8ef40b61cd036ed47d55c0453b311a3287679de25",
+    "local": "tmp/post_onset_amplification_20261103/series/6be838ccd3dcf891a4b7.csv"
+  },
+  {
+    "run_key": "frodo:paper1_wp1_paired_v2/runs/case-36747--seeded--nx-3",
+    "path": "/temp/zhixin/paper1_wp1_paired_v2/runs/case-36747--seeded--nx-3/sandy--boreal--s876--f888--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "87991a1c4cf600b0b043da97b8583d63505496d674185795933805fe064d72fa",
+    "local": "tmp/post_onset_amplification_20261103/series/08b565977326c8181f71.csv"
+  },
+  {
+    "run_key": "frodo:paper1_wp1_paired_v2/runs/case-36896--critical--nx-18",
+    "path": "/temp/zhixin/paper1_wp1_paired_v2/runs/case-36896--critical--nx-18/sandy--boreal--s1051--f981--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "84fd2c355098e67f4b3fad814a9836a2f32ac5a40bb30b81ee9374de443acc1f",
+    "local": "tmp/post_onset_amplification_20261103/series/4da51abfba94a460d892.csv"
+  },
+  {
+    "run_key": "frodo:paper1_wp1_paired_v2/runs/case-36896--seeded--nx-29",
+    "path": "/temp/zhixin/paper1_wp1_paired_v2/runs/case-36896--seeded--nx-29/sandy--boreal--s1051--f981--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "e6dccfacd440b7de68933934f3d5642547986bb9401dfffa3798a85dde80a64f",
+    "local": "tmp/post_onset_amplification_20261103/series/a7270ee6a17360d0ce21.csv"
+  },
+  {
+    "run_key": "frodo:paper1_wp1_paired_v2/runs/case-36998--critical--nx-19",
+    "path": "/temp/zhixin/paper1_wp1_paired_v2/runs/case-36998--critical--nx-19/sandy--boreal--s1037--f978--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "e6038b2270f45f0906338407c7f5ddc3f63e494526896422ebeb9483a9ad511a",
+    "local": "tmp/post_onset_amplification_20261103/series/4e68ca33a25cdefb3cfd.csv"
+  },
+  {
+    "run_key": "frodo:paper1_wp1_paired_v2/runs/case-36998--seeded--nx-120",
+    "path": "/temp/zhixin/paper1_wp1_paired_v2/runs/case-36998--seeded--nx-120/sandy--boreal--s1037--f978--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "993fd4cf7d583b141290b8cf67aa22001b431c9d63809cec35c17e745ee5b58c",
+    "local": "tmp/post_onset_amplification_20261103/series/50712e320fce1ecd9c95.csv"
+  },
+  {
+    "run_key": "frodo:paper1_wp1_paired_v2/runs/case-37067--critical--nx-5",
+    "path": "/temp/zhixin/paper1_wp1_paired_v2/runs/case-37067--critical--nx-5/sandy--boreal--s1891--f1082--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "ac48b35fb77fb8eaa78809c1efacaab5f91337a72763dc84798573fbd001c47b",
+    "local": "tmp/post_onset_amplification_20261103/series/873f83b10516f70b62af.csv"
+  },
+  {
+    "run_key": "frodo:paper1_wp1_paired_v2/runs/case-37067--seeded--nx-40",
+    "path": "/temp/zhixin/paper1_wp1_paired_v2/runs/case-37067--seeded--nx-40/sandy--boreal--s1891--f1082--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "d4084dfc7a410216796d4f530ea33df780881f3734544c4adea72d74a7c17ac0",
+    "local": "tmp/post_onset_amplification_20261103/series/4cda025da29c4177a987.csv"
+  },
+  {
+    "run_key": "frodo:paper1_wp1_paired_v2/runs/case-37170--critical--nx-10",
+    "path": "/temp/zhixin/paper1_wp1_paired_v2/runs/case-37170--critical--nx-10/sandy--boreal--s1308--f963--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "b5084481acd017c2583faf7c8b8cb510e7d6905544166d0cbffef02baa7bb8d8",
+    "local": "tmp/post_onset_amplification_20261103/series/e7ffbbe3583a3005a83f.csv"
+  },
+  {
+    "run_key": "frodo:paper1_wp1_paired_v2/runs/case-37170--seeded--nx-22",
+    "path": "/temp/zhixin/paper1_wp1_paired_v2/runs/case-37170--seeded--nx-22/sandy--boreal--s1308--f963--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "072fa55b2a5d0af252a64359d75859a505b0e1afc642960b6fcc4b5934c6bd51",
+    "local": "tmp/post_onset_amplification_20261103/series/47997e34352665679ef5.csv"
+  },
+  {
+    "run_key": "frodo:paper1_wp1_paired_v2/runs/case-37681--both--nx-1",
+    "path": "/temp/zhixin/paper1_wp1_paired_v2/runs/case-37681--both--nx-1/sandy--boreal--s291--f789--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "a5fe0590cba267e406d080388ee3b87bfd8a22e1017385782a763ba125e9177f",
+    "local": "tmp/post_onset_amplification_20261103/series/fd9c66d0edca98607412.csv"
+  },
+  {
+    "run_key": "frodo:paper1_wp1_paired_v2/runs/case-37729--critical--nx-2",
+    "path": "/temp/zhixin/paper1_wp1_paired_v2/runs/case-37729--critical--nx-2/sandy--boreal--s1263--f964--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "d818fd3bec2815ae62f13271f6dd6b11adce657488777902d7d2c53f4c69803f",
+    "local": "tmp/post_onset_amplification_20261103/series/44d05dc86db2ea498f8f.csv"
+  },
+  {
+    "run_key": "frodo:paper1_wp1_paired_v2/runs/case-37729--seeded--nx-3",
+    "path": "/temp/zhixin/paper1_wp1_paired_v2/runs/case-37729--seeded--nx-3/sandy--boreal--s1263--f964--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "2bf2b3fd4fc742e032f711f2a6c3bbe63d3b9d4efcdc917f40ea76d026f830e4",
+    "local": "tmp/post_onset_amplification_20261103/series/c7e3c11d2ce12697a0cf.csv"
+  },
+  {
+    "run_key": "frodo:paper1_wp1_paired_v2/runs/case-37906--critical--nx-9",
+    "path": "/temp/zhixin/paper1_wp1_paired_v2/runs/case-37906--critical--nx-9/sandy--boreal--s3173--f789--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "1a0aee2c662f6473bae1de20e256b53835d5cb812ac5abf2dec19b5c08ae7f82",
+    "local": "tmp/post_onset_amplification_20261103/series/e364a2795c30bb4de1c3.csv"
+  },
+  {
+    "run_key": "frodo:paper1_wp1_paired_v2/runs/case-37906--seeded--nx-17",
+    "path": "/temp/zhixin/paper1_wp1_paired_v2/runs/case-37906--seeded--nx-17/sandy--boreal--s3173--f789--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "db6cc59d43d846ee8f384bca4b2de5087d4bc98acd41f602dadd1e3fbdde9a2c",
+    "local": "tmp/post_onset_amplification_20261103/series/54a1dfd15ed42de85838.csv"
+  },
+  {
+    "run_key": "frodo:paper1_wp1_paired_v2/runs/case-38744--critical--nx-14",
+    "path": "/temp/zhixin/paper1_wp1_paired_v2/runs/case-38744--critical--nx-14/sandy--boreal--s188--f1085--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "ebbdd4f82ea892ea7f225d6ddcb853023a0eb6cbd3560abb6791dde729863f04",
+    "local": "tmp/post_onset_amplification_20261103/series/821737bf6e6e54076a78.csv"
+  },
+  {
+    "run_key": "frodo:paper1_wp1_paired_v2/runs/case-38744--seeded--nx-15",
+    "path": "/temp/zhixin/paper1_wp1_paired_v2/runs/case-38744--seeded--nx-15/sandy--boreal--s188--f1085--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "ed783ac86dbec3f0e004bfb2f117d8f172847378712162587aae1ce9192f8528",
+    "local": "tmp/post_onset_amplification_20261103/series/9f1d8e4cbe51b8681795.csv"
+  },
+  {
+    "run_key": "frodo:paper1_wp1_paired_v2/runs/case-38852--both--nx-16",
+    "path": "/temp/zhixin/paper1_wp1_paired_v2/runs/case-38852--both--nx-16/sandy--boreal--s3170--f1079--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "c22cf928cb28fed7b794c107f09441bb019b4389a3a34f3806d1abc242b45944",
+    "local": "tmp/post_onset_amplification_20261103/series/8b390466e9a687704785.csv"
+  },
+  {
+    "run_key": "frodo:paper1_wp1_paired_v2/runs/case-39096--critical--nx-3",
+    "path": "/temp/zhixin/paper1_wp1_paired_v2/runs/case-39096--critical--nx-3/sandy--boreal--s1876--f962--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "b3660ad39dd8504af3e6c25c48163f0c6d057b35ad24416dab3785dada9e8527",
+    "local": "tmp/post_onset_amplification_20261103/series/35517566c723e64f2c48.csv"
+  },
+  {
+    "run_key": "frodo:paper1_wp1_paired_v2/runs/case-39096--seeded--nx-7",
+    "path": "/temp/zhixin/paper1_wp1_paired_v2/runs/case-39096--seeded--nx-7/sandy--boreal--s1876--f962--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "34032512e43f480a3d00ab916f5f0afe3c4ba41c34acfc14f6bda0b447116f2b",
+    "local": "tmp/post_onset_amplification_20261103/series/d80c4b7392433d2e88ff.csv"
+  },
+  {
+    "run_key": "frodo:paper1_wp1_paired_v2/runs/case-39137--both--nx-6",
+    "path": "/temp/zhixin/paper1_wp1_paired_v2/runs/case-39137--both--nx-6/sandy--boreal--s3158--f873--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "86d4b42070301331f0c4cd84bc2b4380526033efb79b1769e997525ef3615ed8",
+    "local": "tmp/post_onset_amplification_20261103/series/30788f12a9974ac13494.csv"
+  },
+  {
+    "run_key": "frodo:paper1_wp1_paired_v2/runs/case-39631--critical--nx-5",
+    "path": "/temp/zhixin/paper1_wp1_paired_v2/runs/case-39631--critical--nx-5/sandy--boreal--s3136--f787--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "9e28d2b5b04c9a8f4f5e293ce57fcee5399f77d1b3ac729c26b57652c652b213",
+    "local": "tmp/post_onset_amplification_20261103/series/dd217df0f975f12d5381.csv"
+  },
+  {
+    "run_key": "frodo:paper1_wp1_paired_v2/runs/case-39631--seeded--nx-8",
+    "path": "/temp/zhixin/paper1_wp1_paired_v2/runs/case-39631--seeded--nx-8/sandy--boreal--s3136--f787--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "99e6c06ec3ecbc0ed7d5b776fe067025e73db66929ab429bc4e997f6899cac32",
+    "local": "tmp/post_onset_amplification_20261103/series/94db35788f100d665a10.csv"
+  },
+  {
+    "run_key": "frodo:paper1_wp1_paired_v2/runs/case-39649--critical--nx-3",
+    "path": "/temp/zhixin/paper1_wp1_paired_v2/runs/case-39649--critical--nx-3/sandy--boreal--s1243--f965--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "d5e08f56738527b0f3bde7b7d2111bf914c577c781bb651a52591bd62422c5ff",
+    "local": "tmp/post_onset_amplification_20261103/series/a9b8d977eac94365a2e8.csv"
+  },
+  {
+    "run_key": "frodo:paper1_wp1_paired_v2/runs/case-39649--seeded--nx-4",
+    "path": "/temp/zhixin/paper1_wp1_paired_v2/runs/case-39649--seeded--nx-4/sandy--boreal--s1243--f965--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "2325e80ad38750d001db5102aa422836f85909225f5f6b870545bd89308cd2bd",
+    "local": "tmp/post_onset_amplification_20261103/series/f6cbf1d750dd48a3cece.csv"
+  },
+  {
+    "run_key": "frodo:paper1_wp1_paired_v2/runs/case-43013--critical--nx-1",
+    "path": "/temp/zhixin/paper1_wp1_paired_v2/runs/case-43013--critical--nx-1/sandy--temperate--s2022--f3236--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "c1522daac5ed31c79e40eed8976d53d9b44952ef3473caaf48a280b802e7de5d",
+    "local": "tmp/post_onset_amplification_20261103/series/320d2847878d513f9af0.csv"
+  },
+  {
+    "run_key": "frodo:paper1_wp1_paired_v2/runs/case-43013--seeded--nx-2",
+    "path": "/temp/zhixin/paper1_wp1_paired_v2/runs/case-43013--seeded--nx-2/sandy--temperate--s2022--f3236--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "4bdbf67d1c476219de41ad77b8a9fdec689e875e545d1a558dd4afe4f8b208ec",
+    "local": "tmp/post_onset_amplification_20261103/series/03f28e2e71c89106eee6.csv"
+  },
+  {
+    "run_key": "frodo:paper1_wp1_paired_v2/runs/case-43164--critical--nx-2",
+    "path": "/temp/zhixin/paper1_wp1_paired_v2/runs/case-43164--critical--nx-2/sandy--temperate--s2169--f1441--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "078e8400046f4bd4e6c738cc0aee1245a3bb3ba3c3eaadc47e27670a66780e01",
+    "local": "tmp/post_onset_amplification_20261103/series/f0a4751e3c04733ce874.csv"
+  },
+  {
+    "run_key": "frodo:paper1_wp1_paired_v2/runs/case-43164--seeded--nx-9",
+    "path": "/temp/zhixin/paper1_wp1_paired_v2/runs/case-43164--seeded--nx-9/sandy--temperate--s2169--f1441--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "64a5f3c596614462cd9372e03e36c6fb10d41a3a02209fb5deb081791eaf1d7d",
+    "local": "tmp/post_onset_amplification_20261103/series/3825e8bb41b6f2435ac5.csv"
+  },
+  {
+    "run_key": "frodo:paper1_wp1_paired_v2/runs/case-43702--both--nx-3",
+    "path": "/temp/zhixin/paper1_wp1_paired_v2/runs/case-43702--both--nx-3/sandy--temperate--s1888--f1488--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "bd833a005f00278a40221551cd8ceffcfc400c75d24a8c0e0c39c61edc58f986",
+    "local": "tmp/post_onset_amplification_20261103/series/dec8bbb89766ffe9280e.csv"
+  },
+  {
+    "run_key": "frodo:paper1_wp1_paired_v2/runs/case-43732--critical--nx-3",
+    "path": "/temp/zhixin/paper1_wp1_paired_v2/runs/case-43732--critical--nx-3/sandy--temperate--s2022--f5037--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "c3629a6264eab89e5e9e901d87233efb5fff0886eb376aa99c7b4396d006f5f3",
+    "local": "tmp/post_onset_amplification_20261103/series/65225ce15443a13d7ed1.csv"
+  },
+  {
+    "run_key": "frodo:paper1_wp1_paired_v2/runs/case-43732--seeded--nx-4",
+    "path": "/temp/zhixin/paper1_wp1_paired_v2/runs/case-43732--seeded--nx-4/sandy--temperate--s2022--f5037--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "49ef2688e3216e7b4673879a8cb2e5ec694e8c16aa7f6bb0a49b874419faa38e",
+    "local": "tmp/post_onset_amplification_20261103/series/1ca0c06b835c95b104dc.csv"
+  },
+  {
+    "run_key": "frodo:paper1_wp1_paired_v2/runs/case-44148--critical--nx-4",
+    "path": "/temp/zhixin/paper1_wp1_paired_v2/runs/case-44148--critical--nx-4/sandy--tropical--s1016--f7932--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "956a5c57df2e194956b307beb8b224e2b77ad55903f34f24c325f92d689a8ce9",
+    "local": "tmp/post_onset_amplification_20261103/series/82209c136d7153a47a2a.csv"
+  },
+  {
+    "run_key": "frodo:paper1_wp1_paired_v2/runs/case-44148--seeded--nx-8",
+    "path": "/temp/zhixin/paper1_wp1_paired_v2/runs/case-44148--seeded--nx-8/sandy--tropical--s1016--f7932--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "df438fbc28f6c9f2633567dedfa3116788808a22e33cdfb61b1d9163599052f6",
+    "local": "tmp/post_onset_amplification_20261103/series/91cff13d27398024dd17.csv"
+  },
+  {
+    "run_key": "frodo:paper1_wp1_paired_v2/runs/case-45097--critical--nx-6",
+    "path": "/temp/zhixin/paper1_wp1_paired_v2/runs/case-45097--critical--nx-6/sandy--tropical--s129--f8891--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "b1203e043696556b3e986cb0b3e6896fbf0f49912b8bf78c8b2e40ccbb176afb",
+    "local": "tmp/post_onset_amplification_20261103/series/eef872eb3e95f41b2548.csv"
+  },
+  {
+    "run_key": "frodo:paper1_wp1_paired_v2/runs/case-45097--seeded--nx-7",
+    "path": "/temp/zhixin/paper1_wp1_paired_v2/runs/case-45097--seeded--nx-7/sandy--tropical--s129--f8891--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "f9b3109a92de8ed0e16555e60ef609b6dc173a927133769e6787fec9840a1290",
+    "local": "tmp/post_onset_amplification_20261103/series/bc129978af6e63417a28.csv"
+  },
+  {
+    "run_key": "frodo:paper1_wp1_paired_v2/runs/case-45939--both--nx-14",
+    "path": "/temp/zhixin/paper1_wp1_paired_v2/runs/case-45939--both--nx-14/sandy--tropical--s1423--f8600--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "d213025c106425698d7b5e34cb99f225e2d060c7eeac50747299e7e46c0d2527",
+    "local": "tmp/post_onset_amplification_20261103/series/6644e71bb44532c12e1e.csv"
+  },
+  {
+    "run_key": "frodo:paper1_wp1_paired_v2/runs/case-46309--both--nx-5",
+    "path": "/temp/zhixin/paper1_wp1_paired_v2/runs/case-46309--both--nx-5/sandy--tropical--s1222--f8622--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "a1f22c9e5d0d356e3a1f16e7266a6f07d0aa9feeb9ffc9a025e0c6c66e88ec9c",
+    "local": "tmp/post_onset_amplification_20261103/series/a0f8b52fe69fd6c70b49.csv"
+  },
+  {
+    "run_key": "frodo:paper1_wp1_paired_v2/runs/case-46392--critical--nx-1",
+    "path": "/temp/zhixin/paper1_wp1_paired_v2/runs/case-46392--critical--nx-1/sandy--tropical--s252--f9925--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "af3a703163be268db280ecfa3381a32af5963c282fa27524863b2dc09fafa27a",
+    "local": "tmp/post_onset_amplification_20261103/series/0592a22fef5e83e76c7e.csv"
+  },
+  {
+    "run_key": "frodo:paper1_wp1_paired_v2/runs/case-46392--seeded--nx-2",
+    "path": "/temp/zhixin/paper1_wp1_paired_v2/runs/case-46392--seeded--nx-2/sandy--tropical--s252--f9925--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "9a8d9a11f45ae404afb6f0ed9b28e9331697a1cd82fbec4dd7e596d340b794b8",
+    "local": "tmp/post_onset_amplification_20261103/series/c4639b90392c5e20b997.csv"
+  },
+  {
+    "run_key": "frodo:paper1_wp1_paired_v2/runs/case-46683--critical--nx-12",
+    "path": "/temp/zhixin/paper1_wp1_paired_v2/runs/case-46683--critical--nx-12/sandy--tropical--s1628--f8270--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "90586af31cc2fbc9d212733fced29462446e2c7f5decbe09569b6643ed7efa5f",
+    "local": "tmp/post_onset_amplification_20261103/series/1c4619a53fece9f5526d.csv"
+  },
+  {
+    "run_key": "frodo:paper1_wp1_paired_v2/runs/case-46683--seeded--nx-22",
+    "path": "/temp/zhixin/paper1_wp1_paired_v2/runs/case-46683--seeded--nx-22/sandy--tropical--s1628--f8270--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "de8e37aba233add7e746cc6f4d5dacc810261bdfd56622e944c260f230a6a08a",
+    "local": "tmp/post_onset_amplification_20261103/series/3f53ea1435c3a8cb5b91.csv"
+  },
+  {
+    "run_key": "frodo:paper1_wp1_paired_v2/runs/case-47611--critical--nx-4",
+    "path": "/temp/zhixin/paper1_wp1_paired_v2/runs/case-47611--critical--nx-4/sandy--tropical--s1791--f9364--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "31605ea02852c14b7334aed6385478b80016c20369daadda5c9ecc1d0310a75b",
+    "local": "tmp/post_onset_amplification_20261103/series/d71ddeed4389be34a733.csv"
+  },
+  {
+    "run_key": "frodo:paper1_wp1_paired_v2/runs/case-47611--seeded--nx-5",
+    "path": "/temp/zhixin/paper1_wp1_paired_v2/runs/case-47611--seeded--nx-5/sandy--tropical--s1791--f9364--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "576e1d0a4dcf3259099266a7898427328b8e41d5409e3dc6d7600a60cacbbcd7",
+    "local": "tmp/post_onset_amplification_20261103/series/b13e52dd41788a736f17.csv"
+  },
+  {
+    "run_key": "frodo:paper1_wp1_paired_v2/runs/case-47622--critical--nx-1",
+    "path": "/temp/zhixin/paper1_wp1_paired_v2/runs/case-47622--critical--nx-1/sandy--tropical--s1007--f8908--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "21430f341f8d5463b4d6259835ea76a87545712be444724d1990e73984dc8f90",
+    "local": "tmp/post_onset_amplification_20261103/series/8422bcabb9cc6e44b3a3.csv"
+  },
+  {
+    "run_key": "frodo:paper1_wp1_paired_v2/runs/case-47622--seeded--nx-2",
+    "path": "/temp/zhixin/paper1_wp1_paired_v2/runs/case-47622--seeded--nx-2/sandy--tropical--s1007--f8908--global_default_L0p5--native_sigmatop.csv",
+    "sha256": "bd62b36a792e5e79e79c44b0c7ad5fcdaee61a0a893074515faa6bdb269169d8",
+    "local": "tmp/post_onset_amplification_20261103/series/b0132f90208e619dea4c.csv"
+  }
+]
