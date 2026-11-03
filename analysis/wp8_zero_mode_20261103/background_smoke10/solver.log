@@ -1,0 +1,15 @@
+Reading parameters from file params.input.
+Computed bounding box tree with 399 nodes for 200 grid entities in 4.1919e-05 seconds.
+Writing output for problem "WP8-constrained-smoke10". Took 0.0025 seconds.
+Colored 200 elements with 2 colors in 8.3508e-05 seconds.
+
+Newton solver configured with the following options and parameters:
+ -- Newton.EnableShiftCriterion = true (relative shift convergence criterion)
+ -- Newton.MaxRelativeShift = 1e-08
+ -- Newton.MinSteps = 2
+ -- Newton.MaxSteps = 18
+ -- Newton.TargetSteps = 10
+ -- Newton.RetryTimeStepReductionFactor = 0.5
+ -- Newton.MaxTimeStepDivisions = 10
+
+Paper 2 run failed: WP8 reduced Newton failed; no accepted step

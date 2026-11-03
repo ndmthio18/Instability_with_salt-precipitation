@@ -1,0 +1,55 @@
+{
+  "passed": true,
+  "checks": {
+    "exit": true,
+    "ten_steps": true,
+    "requested_horizon": true,
+    "exact_uniform_concentration": true,
+    "exact_uniform_pressure": true,
+    "salt_closure": true,
+    "water_closure": true,
+    "inventory_bridge": true,
+    "flux_bridge": true,
+    "initial_x": true,
+    "initial_pressure": true,
+    "profile_bridge": true,
+    "storage_reconstruction": true,
+    "flux_reintegration": true,
+    "inputs_preserved": true
+  },
+  "max_horizontal_x_range": 0.0,
+  "max_horizontal_pressure_range": 0.0,
+  "max_salt_residual_m": 2.0977796642712314e-17,
+  "max_water_residual_m": 5.8273027622535785e-15,
+  "bridge_absolute_errors": {
+    "inventory_salt_m": 1.4907779871675686e-19,
+    "inventory_water_m": 3.8163916471489756e-17,
+    "cut_salt_total_down_m_s": 1.4851276488813638e-19,
+    "salt_residual_m": 5.013555423882069e-17,
+    "water_residual_m": 1.3926684657431618e-14
+  },
+  "stop": {
+    "schema_version": 1,
+    "reason": "requested_horizon",
+    "last_accepted_time_s": 1136.8588647695694,
+    "accepted_steps": 10,
+    "initial_diagnostics_written": true,
+    "requested_end_s": 1136.8588647695694,
+    "surface_threshold_low_s": null,
+    "surface_threshold_high_s": null,
+    "global_threshold_low_s": null,
+    "global_threshold_high_s": null
+  },
+  "wall_s": 1.1675703525543213,
+  "long_run_validated": false,
+  "initial_x_error": 0.0,
+  "initial_pressure_error_Pa": 5.820766091346741e-11,
+  "profile_max_error": 4.5146178462296405e-15,
+  "storage_reconstruction_salt_error_m": 2.846030702774449e-19,
+  "storage_reconstruction_water_error_m": 7.28583859910259e-17,
+  "flux_reintegration_error_m": 0.0,
+  "changed_inputs": [
+    "TimeLoop.TEnd",
+    "Problem.Name"
+  ]
+}

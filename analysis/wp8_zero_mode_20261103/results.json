@@ -1,0 +1,285 @@
+{
+  "audit": {
+    "R24_M0": {
+      "frames": 4801,
+      "end_s": 545692.2550893656,
+      "nx": 24,
+      "nz": 200
+    },
+    "R24_M1": {
+      "frames": 4801,
+      "end_s": 545692.2550893656,
+      "nx": 24,
+      "nz": 200
+    },
+    "R48_M0": {
+      "frames": 4801,
+      "end_s": 545692.2550893656,
+      "nx": 48,
+      "nz": 200
+    },
+    "R48_M1": {
+      "frames": 4801,
+      "end_s": 545692.2550893656,
+      "nx": 48,
+      "nz": 200
+    },
+    "B": {
+      "frames": 1201,
+      "end_s": 136423.0637723484,
+      "nx": 1,
+      "nz": 200
+    },
+    "background_gate": {
+      "interpretation": "one-cell horizontal extrusion of the same 2D equations, retained separately from 2D M0",
+      "exact_common_frames": 1200,
+      "last_exact_common_time_s": 136309.3778859,
+      "terminal_time_difference_s": -1.00000761449337e-07,
+      "profile_max_absolute_difference": 3.877106968808164e-15,
+      "profile_global_normalized_difference": 1.996947861043792e-13,
+      "one_cell_max_lateral_sigma": 1.944971961265196e-14,
+      "one_cell_max_lateral_range": 3.889943922530392e-14,
+      "lateral_range_method": "two equal-width endpoint vertices: range=2*sigma",
+      "lateral_uniformity_gate": false,
+      "profile_gate": true,
+      "budget_comparisons": {
+        "inventory_salt_m": {
+          "max_absolute_difference": 1.3349239248727773e-17,
+          "reference_max_absolute": 8.676779473203164e-05,
+          "global_normalized_difference": 1.5385016168677272e-13
+        },
+        "inventory_water_m": {
+          "max_absolute_difference": 2.6298407895808396e-15,
+          "reference_max_absolute": 0.023689823773931848,
+          "global_normalized_difference": 1.1101141210154134e-13
+        },
+        "cut_salt_adv_down_m_s": {
+          "max_absolute_difference": 1.7597246480997044e-19,
+          "reference_max_absolute": 2.6036069156934887e-11,
+          "global_normalized_difference": 6.758795413750042e-09
+        },
+        "cut_salt_diff_down_m_s": {
+          "max_absolute_difference": 9.596587575322235e-25,
+          "reference_max_absolute": 1.9340575658337537e-11,
+          "global_normalized_difference": 4.961893453872061e-14
+        },
+        "cut_salt_total_down_m_s": {
+          "max_absolute_difference": 1.7597234444872896e-19,
+          "reference_max_absolute": 1.1035894101258445e-11,
+          "global_normalized_difference": 1.5945454245402962e-08
+        },
+        "cut_water_down_m_s": {
+          "max_absolute_difference": 2.735965967750082e-17,
+          "reference_max_absolute": 3.0655296020829518e-09,
+          "global_normalized_difference": 8.924937361201995e-09
+        },
+        "cumulative_cut_salt_m": {
+          "max_absolute_difference": 2.8147942452620787e-16,
+          "reference_max_absolute": 1.5024064943771646e-06,
+          "global_normalized_difference": 1.873523747265866e-10
+        },
+        "cumulative_net_water_out_m": {
+          "max_absolute_difference": 6.683014799514696e-14,
+          "reference_max_absolute": 5.521015049736291e-06,
+          "global_normalized_difference": 1.2104684988739357e-08
+        },
+        "salt_residual_m": {
+          "max_absolute_difference": 2.8147455408676116e-16,
+          "reference_max_absolute": 1.14905525009203e-16,
+          "global_normalized_difference": 2.449617231758154
+        },
+        "water_residual_m": {
+          "max_absolute_difference": 6.683182850851431e-14,
+          "reference_max_absolute": 1.78020571674616e-14,
+          "global_normalized_difference": 3.7541632340485216
+        }
+      },
+      "independent_storage_and_budget_checks": {
+        "frames": 1201,
+        "max_inventory_salt_difference_m": 4.607859233063394e-19,
+        "max_inventory_water_difference_m": 1.1449174941446927e-16,
+        "online_absolute_errors": {
+          "weighted_top_mean": 4.85722573273506e-17,
+          "weighted_top_sigma": 4.944008892529757e-17,
+          "weighted_fourier": 6.9388939039038896e-18,
+          "weighted_projection": 0
+        },
+        "independent_budgets": {
+          "upper_0.900000": {
+            "salt_closure_m": 1.2682624319238639e-17,
+            "water_closure_m": 3.5384703962759462e-15,
+            "cumulative_salt_reintegration_error": 0.0,
+            "cumulative_water_reintegration_error": 0.0
+          },
+          "upper_0.750000": {
+            "salt_closure_m": 2.085246885374318e-17,
+            "water_closure_m": 5.812989758329553e-15,
+            "cumulative_salt_reintegration_error": 0.0,
+            "cumulative_water_reintegration_error": 0.0
+          },
+          "upper_0.500000": {
+            "salt_closure_m": 6.730735557119484e-18,
+            "water_closure_m": 1.887122490879748e-15,
+            "cumulative_salt_reintegration_error": 0.0,
+            "cumulative_water_reintegration_error": 0.0
+          },
+          "upper_0.995000": {
+            "salt_closure_m": 2.8548641976231274e-16,
+            "water_closure_m": 4.815432358170435e-14,
+            "cumulative_salt_reintegration_error": 0.0,
+            "cumulative_water_reintegration_error": 0.0
+          },
+          "upper_0.990000": {
+            "salt_closure_m": 2.51833694888781e-16,
+            "water_closure_m": 5.846026299821182e-14,
+            "cumulative_salt_reintegration_error": 0.0,
+            "cumulative_water_reintegration_error": 0.0
+          },
+          "upper_0.975000": {
+            "salt_closure_m": 5.5403154530482904e-17,
+            "water_closure_m": 1.5355983649946155e-14,
+            "cumulative_salt_reintegration_error": 0.0,
+            "cumulative_water_reintegration_error": 0.0
+          },
+          "upper_0.950000": {
+            "salt_closure_m": 4.969817587248838e-17,
+            "water_closure_m": 1.3825542815627812e-14,
+            "cumulative_salt_reintegration_error": 0.0,
+            "cumulative_water_reintegration_error": 0.0
+          },
+          "free_domain": {
+            "salt_closure_m": 6.464978969918447e-18,
+            "water_closure_m": 1.7979638028517604e-15,
+            "cumulative_salt_reintegration_error": 0.0,
+            "cumulative_water_reintegration_error": 0.0
+          }
+        },
+        "scope": "independent VTU storage + independent integration of recorded conservative flux; not a second flux-kernel implementation",
+        "passed": true
+      },
+      "closure_gate": true,
+      "overall_preregistered_gate": false
+    }
+  },
+  "comparisons": {
+    "R24_A": {
+      "shared_states": 4801,
+      "end_s": 545692.2550893656,
+      "final": {
+        "comparison": "R24_A",
+        "time_s": 545692.2550893656,
+        "mean_response_top": -0.0005654818282299634,
+        "mean_response_Linf": 0.0005654818282299634,
+        "mean_response_L2": 2.3016384988389595e-05,
+        "salt_response_Linf": 5.9203069039357424e-05,
+        "integrated_covariance_difference_m": -4.792081823434072e-13
+      },
+      "max_mean_response_Linf": 0.0005654818282299634
+    },
+    "R24_B": {
+      "shared_states": 1200,
+      "end_s": 136309.37788587352,
+      "final": {
+        "comparison": "R24_B",
+        "time_s": 136309.37788587352,
+        "mean_response_top": -7.28583859910259e-17,
+        "mean_response_Linf": 7.806255641895632e-17,
+        "mean_response_L2": 8.732292229032586e-18,
+        "salt_response_Linf": 1.0408340855860843e-17,
+        "integrated_covariance_difference_m": -1.338286587390849e-32
+      },
+      "max_mean_response_Linf": 3.877106968808164e-15
+    },
+    "R24_C": {
+      "shared_states": 1200,
+      "end_s": 136309.37788587352,
+      "final": {
+        "comparison": "R24_C",
+        "time_s": 136309.37788587352,
+        "mean_response_top": -8.629166825535606e-12,
+        "mean_response_Linf": 8.629166825535606e-12,
+        "mean_response_L2": 3.8909927925069514e-13,
+        "salt_response_Linf": 9.036382753180305e-13,
+        "integrated_covariance_difference_m": -6.04013629281297e-20
+      },
+      "max_mean_response_Linf": 8.629166825535606e-12
+    },
+    "R48_A": {
+      "shared_states": 4801,
+      "end_s": 545692.2550893656,
+      "final": {
+        "comparison": "R48_A",
+        "time_s": 545692.2550893656,
+        "mean_response_top": -1.4807320913232114e-06,
+        "mean_response_Linf": 1.4807320913232114e-06,
+        "mean_response_L2": 6.00798348501677e-08,
+        "salt_response_Linf": 1.5503237963190863e-07,
+        "integrated_covariance_difference_m": -4.9851975342605544e-15
+      },
+      "max_mean_response_Linf": 1.4807320913232114e-06
+    },
+    "R48_B": {
+      "shared_states": 1200,
+      "end_s": 136309.37788587352,
+      "final": {
+        "comparison": "R48_B",
+        "time_s": 136309.37788587352,
+        "mean_response_top": 4.0245584642661925e-16,
+        "mean_response_Linf": 4.163336342344337e-16,
+        "mean_response_L2": 2.516940193457779e-17,
+        "salt_response_Linf": 4.445228907190568e-17,
+        "integrated_covariance_difference_m": -1.2581943057785952e-32
+      },
+      "max_mean_response_Linf": 3.930883396563445e-15
+    },
+    "R48_C": {
+      "shared_states": 1200,
+      "end_s": 136309.37788587352,
+      "final": {
+        "comparison": "R48_C",
+        "time_s": 136309.37788587352,
+        "mean_response_top": -8.602042689265232e-12,
+        "mean_response_Linf": 8.602042689265232e-12,
+        "mean_response_L2": 3.8828920425183805e-13,
+        "salt_response_Linf": 9.007881246470006e-13,
+        "integrated_covariance_difference_m": -5.967397158880318e-20
+      },
+      "max_mean_response_Linf": 8.602042689265232e-12
+    }
+  },
+  "max_identity_error_m": 6.352747104407253e-22,
+  "t_eff": null,
+  "background_after_T": "unavailable",
+  "source_hashes": {
+    "analysis\\wp6_4T_exploratory_20261103\\runs\\WP6-M0-explore4T\\params.input": "8510c713758f2c73000f4080a2ed24d2e47fdf2c32f28941811710df09be9a74",
+    "analysis\\wp6_4T_exploratory_20261103\\runs\\WP6-M0-explore4T\\finished.json": "4cdcd78733e311532c04730ba4121fdf55df849eff50a0d985077f5989dcdda4",
+    "analysis\\wp6_4T_exploratory_20261103\\runs\\WP6-M0-explore4T\\transport_budget.csv": "e48b71bc6d79ed19cea282929cc60b5bd8a22e059b532365f5ee21b51aee2da0",
+    "analysis\\wp6_4T_exploratory_20261103\\runs\\WP6-M0-explore4T\\transport_metadata.json": "6e25c4ea1bf90bf1a65400f154b0a01e83bf6d9b63d6a343c22c4f04ccce275e",
+    "analysis\\wp6_4T_exploratory_20261103\\runs\\WP6-M0-explore4T\\surface_events.csv": "27ceca8dbaffa97d16c9db1c6b03589ed1610f2a09dac20f895195682fff244e",
+    "analysis\\wp6_4T_exploratory_20261103\\runs\\WP6-M0-explore4T\\post\\field_hashes.json": "da3f7be2fc225c0ead2046938d9f5e57edf7aa29a3774826d6aa24f4983d9916",
+    "analysis\\wp6_4T_exploratory_20261103\\runs\\WP6-M1-explore4T\\params.input": "3efe64ff862c7bf1281b5f4e8d64e021b0073b36093b8a5a423a390e7dd7e880",
+    "analysis\\wp6_4T_exploratory_20261103\\runs\\WP6-M1-explore4T\\finished.json": "b02631abaf93f4d3159113557442dd37df62bea40263f635aae308f3d3478159",
+    "analysis\\wp6_4T_exploratory_20261103\\runs\\WP6-M1-explore4T\\transport_budget.csv": "aac2210405d62973ca4cae8e96c3827f8c066eac9c1c3c6aedc2ba303a87c76b",
+    "analysis\\wp6_4T_exploratory_20261103\\runs\\WP6-M1-explore4T\\transport_metadata.json": "6e25c4ea1bf90bf1a65400f154b0a01e83bf6d9b63d6a343c22c4f04ccce275e",
+    "analysis\\wp6_4T_exploratory_20261103\\runs\\WP6-M1-explore4T\\surface_events.csv": "9434e7eb1636dd2e2d1102ba0d6be9eb5a0a21e8bfeb1b2a468842f3f8958b29",
+    "analysis\\wp6_4T_exploratory_20261103\\runs\\WP6-M1-explore4T\\post\\field_hashes.json": "7f3db9021935848332fe0c36979a5787d42769d4f922280f1e441c29331f64c9",
+    "analysis\\wp7_shortwave_validation_20261103\\runs\\WP7-R48-M0-4T\\params.input": "e56e029220494dfea85fc8236df2e17638ea4dc9346ea050800cc30b31d66026",
+    "analysis\\wp7_shortwave_validation_20261103\\runs\\WP7-R48-M0-4T\\finished.json": "bd6bb573eee830d77c89b1d10e8c3eb2731d10f31696efb4fe866e7c1a5b17c3",
+    "analysis\\wp7_shortwave_validation_20261103\\runs\\WP7-R48-M0-4T\\transport_budget.csv": "2fb245f7a57735097cdc9cb01a93706e8f97fa70a92f9944c5547c54e9d5c2dd",
+    "analysis\\wp7_shortwave_validation_20261103\\runs\\WP7-R48-M0-4T\\transport_metadata.json": "6e25c4ea1bf90bf1a65400f154b0a01e83bf6d9b63d6a343c22c4f04ccce275e",
+    "analysis\\wp7_shortwave_validation_20261103\\runs\\WP7-R48-M0-4T\\surface_events.csv": "1e91f6b704449a3885cb0d91a70a42f24bdbd7921a99916122a106e140c11986",
+    "analysis\\wp7_shortwave_validation_20261103\\runs\\WP7-R48-M0-4T\\post\\field_hashes.json": "d71ff67cbb6d7199230b353c8b687ddde0fdb4f59bbfa0b786038b926b9d6ab7",
+    "analysis\\wp7_shortwave_validation_20261103\\runs\\WP7-R48-M1-4T\\params.input": "5a1f420f2b0cc962261ca831f2420c5c435bc9d67cc36d51d9fc10e421afa690",
+    "analysis\\wp7_shortwave_validation_20261103\\runs\\WP7-R48-M1-4T\\finished.json": "91c8d7db4acceb00211ac671056e0f4ad19553697d7358216f84ae7540fcf820",
+    "analysis\\wp7_shortwave_validation_20261103\\runs\\WP7-R48-M1-4T\\transport_budget.csv": "31c28fc20ec380fbe8b17e2aef098c897b38eeea0acdc7a207f1bc1d9f37f71f",
+    "analysis\\wp7_shortwave_validation_20261103\\runs\\WP7-R48-M1-4T\\transport_metadata.json": "6e25c4ea1bf90bf1a65400f154b0a01e83bf6d9b63d6a343c22c4f04ccce275e",
+    "analysis\\wp7_shortwave_validation_20261103\\runs\\WP7-R48-M1-4T\\surface_events.csv": "a2e6db2cbfae49187ad6783dbf8aeb1f55837a4475462b9b2b49232326845590",
+    "analysis\\wp7_shortwave_validation_20261103\\runs\\WP7-R48-M1-4T\\post\\field_hashes.json": "5f408f8b1b779fbf35a7296920934ab620661a0e3e897b4affcfc4ce89b8a647",
+    "analysis\\wp7_shortwave_validation_20261103\\runs\\WP7-1D-background-T\\params.input": "b087baf513ccf92d7a69d5e1d814c364bca2361ce45526bcfec786c4d76d95d3",
+    "analysis\\wp7_shortwave_validation_20261103\\runs\\WP7-1D-background-T\\finished.json": "95fc74f570aa6bc14a2442ef1b9d31f4c64531ceaf8ef3e1e4081ad13e300d8e",
+    "analysis\\wp7_shortwave_validation_20261103\\runs\\WP7-1D-background-T\\transport_budget.csv": "0b3b2606610efdc9e645211cad468bb9f2880356d4415cbb094b15977910692c",
+    "analysis\\wp7_shortwave_validation_20261103\\runs\\WP7-1D-background-T\\transport_metadata.json": "6e25c4ea1bf90bf1a65400f154b0a01e83bf6d9b63d6a343c22c4f04ccce275e",
+    "analysis\\wp7_shortwave_validation_20261103\\runs\\WP7-1D-background-T\\surface_events.csv": "2a5fc0a57445a4376d86d182eb9b400ca5457ad8d49414ef024fb80eafd47e87",
+    "analysis\\wp7_shortwave_validation_20261103\\runs\\WP7-1D-background-T\\post\\field_hashes.json": "cf6ad5d7f1918b246212320031b102cf9a06e2f9cf677b29c01a795bc3020d86"
+  }
+}

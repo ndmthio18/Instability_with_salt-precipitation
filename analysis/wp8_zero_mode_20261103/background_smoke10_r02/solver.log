@@ -1,0 +1,36 @@
+Reading parameters from file params.input.
+Computed bounding box tree with 399 nodes for 200 grid entities in 4.3101e-05 seconds.
+Writing output for problem "WP8-constrained-smoke10". Took 0.0023 seconds.
+Colored 200 elements with 2 colors in 6.4302e-05 seconds.
+
+Newton solver configured with the following options and parameters:
+ -- Newton.EnableShiftCriterion = true (relative shift convergence criterion)
+ -- Newton.MaxRelativeShift = 1e-08
+ -- Newton.MinSteps = 2
+ -- Newton.MaxSteps = 18
+ -- Newton.TargetSteps = 10
+ -- Newton.RetryTimeStepReductionFactor = 0.5
+ -- Newton.MaxTimeStepDivisions = 10
+
+WP8_ITER 0 residual=6.569024e-11 shift=1.000000e+00
+WP8_ITER 1 residual=9.221494e-12 shift=4.694903e-02
+WP8_ITER 2 residual=6.558793e-15 shift=5.127613e-04
+WP8_ITER 3 residual=7.722312e-19 shift=4.573897e-07
+WP8_ITER 4 residual=7.164164e-19 shift=1.907309e-13
+WP8_ITER 5 residual=6.913733e-19 shift=8.022924e-16
+WP8_ITER 6 residual=6.942993e-19 shift=5.550632e-16
+WP8_ITER 7 residual=5.601106e-19 shift=8.061190e-16
+WP8_ITER 8 residual=1.190348e-18 shift=8.875275e-16
+WP8_ITER 9 residual=6.913335e-19 shift=1.266646e-15
+WP8_ITER 10 residual=7.429599e-19 shift=1.557276e-15
+WP8_ITER 11 residual=1.043739e-18 shift=1.243644e-15
+WP8_ITER 12 residual=6.589398e-19 shift=9.185570e-16
+WP8_ITER 13 residual=5.873512e-19 shift=1.122902e-15
+WP8_ITER 14 residual=7.896290e-19 shift=1.068213e-15
+WP8_ITER 15 residual=8.477962e-19 shift=7.788002e-16
+WP8_ITER 16 residual=8.417043e-19 shift=1.384735e-15
+WP8_ITER 17 residual=5.679861e-19 shift=1.648181e-15
+WP8_ITER 18 residual=5.261228e-19 shift=1.244140e-15
+WP8_ITER 19 residual=9.904834e-19 shift=1.062230e-15
+WP8_ITER 20 residual=7.164215e-19 shift=5.781272e-16
+Paper 2 run failed: WP8 reduced Newton failed; no accepted step

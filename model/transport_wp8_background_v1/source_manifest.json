@@ -1,0 +1,90 @@
+{
+  "CMakeLists.txt": {
+    "bytes": 821,
+    "sha256": "a3750056e945193f32678c7246260515ad18fae14770667b8cccedca54b9fe2e"
+  },
+  "config.h.cmake": {
+    "bytes": 1343,
+    "sha256": "addc2df015faa7334b78458a92aa2cb06ac0df5662da054714ac479ca7e706f9"
+  },
+  "dune.module": {
+    "bytes": 353,
+    "sha256": "edd9a0bd7703bb4aff92d568d557f008d30895081e0a68d7a3cac1969ead72de"
+  },
+  "kiemle2023b.pc.in": {
+    "bytes": 351,
+    "sha256": "54fee13aecdcfb07004dc6b4249b68c9a9ea33b7af2136bb278c1949e4a80d86"
+  },
+  "README.md": {
+    "bytes": 4508,
+    "sha256": "ef8f3fca28d26200a17fb3386fddfddfb30ad69138dfea472866cc987e9e4e61"
+  },
+  "appl/CMakeLists.txt": {
+    "bytes": 35,
+    "sha256": "e4932eb4852ddaa91476d791c91d8ef7d5c13b07a6a2c81ae7033e308ae5768b"
+  },
+  "doc/CMakeLists.txt": {
+    "bytes": 28,
+    "sha256": "4fde2ae1df1e9ded71688fd731a4ab48a5bc2035c4ad4e160e034d863b02558c"
+  },
+  "dune/CMakeLists.txt": {
+    "bytes": 30,
+    "sha256": "4e6273b47c6cd604f89c82ca3fa716391ac252dfa319e27b67fea01bee98e6a8"
+  },
+  "src/CMakeLists.txt": {
+    "bytes": 95,
+    "sha256": "7ecedb534af8c9849450955b8242ca9e137b8ad3f03c4ab0d779804093d59ffa"
+  },
+  "src/kiemle2023b.cc": {
+    "bytes": 902,
+    "sha256": "8ca429bfc299f9410723e3d83f7d876920b443869b00f5d198d038581db813ba"
+  },
+  "appl/simpleRichardsnc/CMakeLists.txt": {
+    "bytes": 398,
+    "sha256": "5a9a763908e7053c80d637a3e60156ec6bd98e76b8d900655c68b1cba2ca1c00"
+  },
+  "appl/simpleRichardsnc/main.cc": {
+    "bytes": 40695,
+    "sha256": "f21e0127afc7c9d45e099b5f6500cd9e117323dd6be0bf46c8869d750f911d44"
+  },
+  "appl/simpleRichardsnc/model.hh": {
+    "bytes": 10370,
+    "sha256": "b59fd1718863a712a8e619f914be9152302bec990dd7ed19359daed699c118db"
+  },
+  "appl/simpleRichardsnc/params.input": {
+    "bytes": 687,
+    "sha256": "2cbfbc4c82e5016b8c6de0a998a0e7ce5f26293a60b75087a50e50fc7b128ad7"
+  },
+  "appl/simpleRichardsnc/transportdiagnostics.hh": {
+    "bytes": 22420,
+    "sha256": "9ac499200f41b290dcb5287d17be045aab9c2f7dfd428682895fe1bef7fc6c2b"
+  },
+  "bin/eigenprofile/README.md": {
+    "bytes": 1764,
+    "sha256": "4565332f7edbdd59d016cccd515fb53fd07aa692f8271f19e7f3c8a84077c270"
+  },
+  "cmake/modules/CMakeLists.txt": {
+    "bytes": 104,
+    "sha256": "5dbd18a784411da7e200169f154d9d62b2578e1ea41e8e5c832b7f738aa2f575"
+  },
+  "cmake/modules/Kiemle2023bMacros.cmake": {
+    "bytes": 40,
+    "sha256": "7524f6919d6e280ee968a64140a3a3c006061d29aa5426c26eaafec4ff5d97a4"
+  },
+  "doc/doxygen/CMakeLists.txt": {
+    "bytes": 74,
+    "sha256": "d145d336814fca3994a64c7b916565975f7ed9bdff4986bccfe7809d7e1a5c35"
+  },
+  "dune/kiemle2023b/CMakeLists.txt": {
+    "bytes": 104,
+    "sha256": "154ce468ad7fc60a049449ed1867df43e15e78aabcd5c8c1caa7b605f9ca0730"
+  },
+  "dune/kiemle2023b/kiemle2023b.hh": {
+    "bytes": 98,
+    "sha256": "afa7958833dc5acb74a6015365481c67eb666b412f7096be26c93c7d3791a6e5"
+  },
+  "appl/simpleRichardsnc/wp8_equal_height.hh": {
+    "bytes": 4593,
+    "sha256": "4ff54c0430f5649660b0decb25d4d75cf3c2251642eab24a42edfd82456b542c"
+  }
+}

@@ -1,0 +1,87 @@
+Reading parameters from file params.input.
+Computed bounding box tree with 399 nodes for 200 grid entities in 3.7331e-05 seconds.
+Writing output for problem "WP8-constrained-smoke10". Took 0.0016 seconds.
+Colored 200 elements with 2 colors in 4.3102e-05 seconds.
+
+Newton solver configured with the following options and parameters:
+ -- Newton.EnableShiftCriterion = true (relative shift convergence criterion)
+ -- Newton.MaxRelativeShift = 1e-08
+ -- Newton.MinSteps = 2
+ -- Newton.MaxSteps = 18
+ -- Newton.TargetSteps = 10
+ -- Newton.RetryTimeStepReductionFactor = 0.5
+ -- Newton.MaxTimeStepDivisions = 10
+
+WP8_ITER 0 water_residual=6.569024e-11 salt_residual=2.216954e-21 shift=1.000000e+00
+WP8_ITER 1 water_residual=9.221494e-12 salt_residual=3.728670e-14 shift=4.694903e-02
+WP8_ITER 2 water_residual=6.558793e-15 salt_residual=2.406454e-17 shift=5.127613e-04
+WP8_ITER 3 water_residual=7.722312e-19 salt_residual=2.781842e-21 shift=4.573897e-07
+WP8_ITER 4 water_residual=7.164164e-19 salt_residual=2.605435e-21 shift=1.907309e-13
+WP8_CONSTRAINT iterations=4 residual=7.164164e-19 shift=1.907309e-13
+Writing output for problem "WP8-constrained-smoke10". Took 0.0019 seconds.
+[ 10%] Time step 1 done in 0.041 seconds. Wall clock time: 0.35569, time: 113.69, time step size: 113.69
+WP8_ITER 0 water_residual=5.423395e-13 salt_residual=1.230293e-13 shift=1.000000e+00
+WP8_ITER 1 water_residual=3.710085e-14 salt_residual=1.330905e-16 shift=2.921096e-02
+WP8_ITER 2 water_residual=9.715933e-18 salt_residual=3.498645e-20 shift=3.032175e-06
+WP8_ITER 3 water_residual=5.773141e-19 salt_residual=2.078331e-21 shift=7.337423e-12
+WP8_CONSTRAINT iterations=3 residual=5.773141e-19 shift=7.337423e-12
+Writing output for problem "WP8-constrained-smoke10". Took 0.024 seconds.
+[ 20%] Time step 2 done in 0.35 seconds. Wall clock time: 0.41029, time: 227.37, time step size: 113.69
+WP8_ITER 0 water_residual=5.913671e-13 salt_residual=8.996185e-14 shift=1.000000e+00
+WP8_ITER 1 water_residual=5.330000e-14 salt_residual=1.920653e-16 shift=2.137614e-02
+WP8_ITER 2 water_residual=2.000928e-18 salt_residual=7.241836e-21 shift=1.337256e-06
+WP8_ITER 3 water_residual=5.711588e-19 salt_residual=2.056179e-21 shift=1.472110e-12
+WP8_CONSTRAINT iterations=3 residual=5.711588e-19 shift=1.472110e-12
+Writing output for problem "WP8-constrained-smoke10". Took 0.0016 seconds.
+[ 30%] Time step 3 done in 0.055 seconds. Wall clock time: 0.44294, time: 341.06, time step size: 113.69
+WP8_ITER 0 water_residual=6.101500e-13 salt_residual=8.619544e-14 shift=1.000000e+00
+WP8_ITER 1 water_residual=1.680793e-14 salt_residual=6.046953e-17 shift=1.733622e-02
+WP8_ITER 2 water_residual=1.732635e-18 salt_residual=6.237497e-21 shift=8.005960e-07
+WP8_ITER 3 water_residual=6.312587e-19 salt_residual=2.304170e-21 shift=1.089112e-12
+WP8_CONSTRAINT iterations=3 residual=6.312587e-19 shift=1.089112e-12
+Writing output for problem "WP8-constrained-smoke10". Took 0.0018 seconds.
+[ 40%] Time step 4 done in 0.032 seconds. Wall clock time: 0.50325, time: 454.74, time step size: 113.69
+WP8_ITER 0 water_residual=6.165060e-13 salt_residual=7.961768e-14 shift=1.000000e+00
+WP8_ITER 1 water_residual=2.193780e-14 salt_residual=8.040095e-17 shift=1.490601e-02
+WP8_ITER 2 water_residual=1.196478e-18 salt_residual=4.307329e-21 shift=5.522140e-07
+WP8_ITER 3 water_residual=6.373049e-19 salt_residual=2.311695e-21 shift=2.270632e-12
+WP8_CONSTRAINT iterations=3 residual=6.373049e-19 shift=2.270632e-12
+Writing output for problem "WP8-constrained-smoke10". Took 0.017 seconds.
+[ 50%] Time step 5 done in 0.06 seconds. Wall clock time: 0.55058, time: 568.43, time step size: 113.69
+WP8_ITER 0 water_residual=6.133182e-13 salt_residual=7.346221e-14 shift=1.000000e+00
+WP8_ITER 1 water_residual=1.549275e-14 salt_residual=5.577390e-17 shift=1.326524e-02
+WP8_ITER 2 water_residual=2.031122e-18 salt_residual=7.911583e-21 shift=4.133197e-07
+WP8_ITER 3 water_residual=5.130066e-19 salt_residual=1.846824e-21 shift=2.094326e-12
+WP8_CONSTRAINT iterations=3 residual=5.130066e-19 shift=2.094326e-12
+Writing output for problem "WP8-constrained-smoke10". Took 0.0017 seconds.
+[ 60%] Time step 6 done in 0.047 seconds. Wall clock time: 0.58307, time: 682.12, time step size: 113.69
+WP8_ITER 0 water_residual=6.009688e-13 salt_residual=6.829263e-14 shift=1.000000e+00
+WP8_ITER 1 water_residual=1.499085e-14 salt_residual=5.423288e-17 shift=1.206469e-02
+WP8_ITER 2 water_residual=9.737362e-19 salt_residual=3.505450e-21 shift=3.252881e-07
+WP8_ITER 3 water_residual=5.858064e-19 salt_residual=2.108903e-21 shift=8.503214e-13
+WP8_CONSTRAINT iterations=3 residual=5.858064e-19 shift=8.503214e-13
+Writing output for problem "WP8-constrained-smoke10". Took 0.0017 seconds.
+[ 70%] Time step 7 done in 0.033 seconds. Wall clock time: 0.61568, time: 795.8, time step size: 113.69
+WP8_ITER 0 water_residual=5.806195e-13 salt_residual=6.403322e-14 shift=1.000000e+00
+WP8_ITER 1 water_residual=2.061513e-14 salt_residual=8.004654e-17 shift=1.113637e-02
+WP8_ITER 2 water_residual=9.959688e-19 salt_residual=3.613801e-21 shift=2.649739e-07
+WP8_ITER 3 water_residual=1.139077e-18 salt_residual=4.131082e-21 shift=1.545391e-12
+WP8_CONSTRAINT iterations=3 residual=1.139077e-18 shift=1.545391e-12
+Writing output for problem "WP8-constrained-smoke10". Took 0.0017 seconds.
+[ 80%] Time step 8 done in 0.033 seconds. Wall clock time: 0.64843, time: 909.49, time step size: 113.69
+WP8_ITER 0 water_residual=5.542106e-13 salt_residual=6.050161e-14 shift=1.000000e+00
+WP8_ITER 1 water_residual=1.218591e-14 salt_residual=4.722432e-17 shift=1.039009e-02
+WP8_ITER 2 water_residual=1.032635e-18 salt_residual=3.806902e-21 shift=2.208365e-07
+WP8_ITER 3 water_residual=7.019401e-19 salt_residual=2.551869e-21 shift=2.934652e-13
+WP8_CONSTRAINT iterations=3 residual=7.019401e-19 shift=2.934652e-13
+Writing output for problem "WP8-constrained-smoke10". Took 0.0017 seconds.
+[ 90%] Time step 9 done in 0.034 seconds. Wall clock time: 0.68296, time: 1023.2, time step size: 113.69
+WP8_ITER 0 water_residual=5.240716e-13 salt_residual=5.753403e-14 shift=1.000000e+00
+WP8_ITER 1 water_residual=1.263986e-14 salt_residual=4.550344e-17 shift=9.772811e-03
+WP8_ITER 2 water_residual=7.916246e-19 salt_residual=2.994137e-21 shift=1.873067e-07
+WP8_ITER 3 water_residual=4.951040e-19 salt_residual=1.793203e-21 shift=5.564640e-13
+WP8_CONSTRAINT iterations=3 residual=4.951040e-19 shift=5.564640e-13
+Writing output for problem "WP8-constrained-smoke10". Took 0.0017 seconds.
+[100%] Time step 10 done in 0.032 seconds. Wall clock time: 0.74395, time: 1136.9, time step size: 113.69
+Simulation took 0.74403 seconds on 1 processes.
+The cumulative CPU time was 0.74403 seconds.

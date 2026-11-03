@@ -1,0 +1,308 @@
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Setting dune-common_LIBRARIES=Dune::Common
+-- The C compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Found PkgConfig: /usr/bin/pkg-config (found version "1.8.1") 
+-- Dependencies for kiemle2023b: dune-common;dune-geometry;dune-grid;dune-localfunctions;dune-istl;dumux
+-- Setting dune-geometry_LIBRARIES=Dune::Geometry
+-- Setting dune-uggrid_LIBRARIES=Dune::UGGrid
+-- Setting dune-grid_LIBRARIES=Dune::Grid
+-- Setting dune-localfunctions_LIBRARIES=Dune::LocalFunctions
+-- Setting dune-istl_LIBRARIES=Dune::ISTL
+-- Setting dune-alugrid_LIBRARIES=Dune::ALUGrid
+-- Setting dumux_LIBRARIES=Dune::dumux;Dune::dumux_fmt
+-- Performing Test DUNE_HAVE_CXX_EXPERIMENTAL_IS_DETECTED
+-- Performing Test DUNE_HAVE_CXX_EXPERIMENTAL_IS_DETECTED - Success
+-- Performing Test DUNE_HAVE_CXX_UNEVALUATED_CONTEXT_LAMBDA
+-- Performing Test DUNE_HAVE_CXX_UNEVALUATED_CONTEXT_LAMBDA - Failed
+-- Performing Test DUNE_HAVE_CXX_STD_IDENTITY
+-- Performing Test DUNE_HAVE_CXX_STD_IDENTITY - Failed
+-- Found LATEX: /usr/bin/latex   
+-- Could NOT find LatexMk (missing: LATEXMK_EXECUTABLE) 
+-- Found Sphinx: /usr/bin/sphinx-build  
+-- Found Doxygen: /usr/bin/doxygen (found version "1.9.8") found components: doxygen dot 
+-- Performing tests for dune-common (from /home/zhixin/dumux/dumux/dune-common/cmake/modules/DuneCommonMacros.cmake)
+-- Setting the Dune debug stream minimal verbosity level to 4 (warn)
+-- Looking for sgemm_
+-- Looking for sgemm_ - not found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Looking for sgemm_
+-- Looking for sgemm_ - found
+-- Found BLAS: /usr/lib/x86_64-linux-gnu/libopenblas.so  
+-- Looking for cheev_
+-- Looking for cheev_ - found
+-- Found LAPACK: /usr/lib/x86_64-linux-gnu/libopenblas.so;-lm;-ldl  
+-- Looking for dsyev_
+-- Looking for dsyev_ - found
+-- Found GMP: /usr/lib/x86_64-linux-gnu/libgmpxx.so  
+-- Performing Test QuadMath_COMPILES
+-- Performing Test QuadMath_COMPILES - Success
+-- Found QuadMath: (Supported by compiler)  
+-- Found MPI_C: /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so (found suitable version "3.1", minimum required is "3.0") 
+-- Found MPI: TRUE (found suitable version "3.1", minimum required is "3.0") found components: C 
+-- Found TBB: using configuration from TBB_DIR=/usr/lib/x86_64-linux-gnu/cmake/TBB (found version "2021.11.0")
+-- Found PTScotch: /usr/lib/x86_64-linux-gnu/libscotch.so (found version "7.0.4")  
+-- Found METIS: /usr/lib/x86_64-linux-gnu/libmetis.so (found version "5.1") 
+-- Found MPI_C: /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so (found version "3.1") 
+-- Found MPI: TRUE (found version "3.1") found components: C 
+-- Could NOT find ParMETIS (missing: PARMETIS_LIBRARY PARMETIS_INCLUDE_DIR) (Required is at least version "4.0")
+-- Found SuiteSparse: /usr/local/lib/libsuitesparseconfig.so (found version "7.8.3") found components: CHOLMOD LDL SPQR UMFPACK 
+CMake Warning (dev) at /usr/lib/cmake/Vc/VcMacros.cmake:77 (exec_program):
+  Policy CMP0153 is not set: The exec_program command should not be called.
+  Run "cmake --help-policy CMP0153" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+
+  Use execute_process() instead.
+Call Stack (most recent call first):
+  /usr/lib/cmake/Vc/VcMacros.cmake:170 (vc_determine_compiler)
+  /usr/lib/cmake/Vc/VcConfig.cmake:51 (vc_set_preferred_compiler_flags)
+  /home/zhixin/dumux/dumux/dune-common/cmake/modules/DuneCommonMacros.cmake:51 (find_package)
+  /home/zhixin/dumux/dumux/dune-common/cmake/modules/DuneModuleDependencies.cmake:176 (include)
+  /home/zhixin/dumux/dumux/dune-common/cmake/modules/DuneProject.cmake:183 (dune_process_dependency_macros)
+  CMakeLists.txt:19 (dune_project)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Detected Compiler: GCC 13
+-- Performing Test Vc_HAVE_SSE_SINCOS
+-- Performing Test Vc_HAVE_SSE_SINCOS - Success
+-- Performing Test Vc_HAVE_AVX_SINCOS
+-- Performing Test Vc_HAVE_AVX_SINCOS - Success
+-- Performing Test check_cxx_compiler_flag__Wabi
+-- Performing Test check_cxx_compiler_flag__Wabi - Success
+-- Performing Test check_cxx_compiler_flag__fabi_version_0
+-- Performing Test check_cxx_compiler_flag__fabi_version_0 - Success
+-- Performing Test check_cxx_compiler_flag__fabi_compat_version_0
+-- Performing Test check_cxx_compiler_flag__fabi_compat_version_0 - Success
+CMake Warning (dev) at /usr/lib/cmake/Vc/VcMacros.cmake:147 (exec_program):
+  Policy CMP0153 is not set: The exec_program command should not be called.
+  Run "cmake --help-policy CMP0153" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+
+  Use execute_process() instead.
+Call Stack (most recent call first):
+  /usr/lib/cmake/Vc/VcMacros.cmake:291 (vc_check_assembler)
+  /usr/lib/cmake/Vc/VcConfig.cmake:51 (vc_set_preferred_compiler_flags)
+  /home/zhixin/dumux/dumux/dune-common/cmake/modules/DuneCommonMacros.cmake:51 (find_package)
+  /home/zhixin/dumux/dumux/dune-common/cmake/modules/DuneModuleDependencies.cmake:176 (include)
+  /home/zhixin/dumux/dumux/dune-common/cmake/modules/DuneProject.cmake:183 (dune_process_dependency_macros)
+  CMakeLists.txt:19 (dune_project)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at /usr/lib/cmake/Vc/VcMacros.cmake:152 (exec_program):
+  Policy CMP0153 is not set: The exec_program command should not be called.
+  Run "cmake --help-policy CMP0153" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+
+  Use execute_process() instead.
+Call Stack (most recent call first):
+  /usr/lib/cmake/Vc/VcMacros.cmake:291 (vc_check_assembler)
+  /usr/lib/cmake/Vc/VcConfig.cmake:51 (vc_set_preferred_compiler_flags)
+  /home/zhixin/dumux/dumux/dune-common/cmake/modules/DuneCommonMacros.cmake:51 (find_package)
+  /home/zhixin/dumux/dumux/dune-common/cmake/modules/DuneModuleDependencies.cmake:176 (include)
+  /home/zhixin/dumux/dumux/dune-common/cmake/modules/DuneProject.cmake:183 (dune_process_dependency_macros)
+  CMakeLists.txt:19 (dune_project)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Performing Test check_cxx_compiler_flag__ffp_contract_fast
+-- Performing Test check_cxx_compiler_flag__ffp_contract_fast - Success
+-- target changed from "" to "auto"
+-- Detected CPU: zen
+-- Performing Test check_cxx_compiler_flag__march_znver1
+-- Performing Test check_cxx_compiler_flag__march_znver1 - Success
+-- Performing Test check_cxx_compiler_flag__msse2
+-- Performing Test check_cxx_compiler_flag__msse2 - Success
+-- Performing Test check_cxx_compiler_flag__msse3
+-- Performing Test check_cxx_compiler_flag__msse3 - Success
+-- Looking for C++ include pmmintrin.h
+-- Looking for C++ include pmmintrin.h - found
+-- Performing Test check_cxx_compiler_flag__mssse3
+-- Performing Test check_cxx_compiler_flag__mssse3 - Success
+-- Looking for C++ include tmmintrin.h
+-- Looking for C++ include tmmintrin.h - found
+-- Performing Test check_cxx_compiler_flag__msse4_1
+-- Performing Test check_cxx_compiler_flag__msse4_1 - Success
+-- Looking for C++ include smmintrin.h
+-- Looking for C++ include smmintrin.h - found
+-- Performing Test check_cxx_compiler_flag__msse4_2
+-- Performing Test check_cxx_compiler_flag__msse4_2 - Success
+-- Performing Test check_cxx_compiler_flag__msse4a
+-- Performing Test check_cxx_compiler_flag__msse4a - Success
+-- Looking for C++ include ammintrin.h
+-- Looking for C++ include ammintrin.h - found
+-- Performing Test check_cxx_compiler_flag__mavx
+-- Performing Test check_cxx_compiler_flag__mavx - Success
+-- Looking for C++ include immintrin.h
+-- Looking for C++ include immintrin.h - found
+-- Performing Test check_cxx_compiler_flag__mfma
+-- Performing Test check_cxx_compiler_flag__mfma - Success
+-- Performing Test check_cxx_compiler_flag__mbmi2
+-- Performing Test check_cxx_compiler_flag__mbmi2 - Success
+-- Performing Test check_cxx_compiler_flag__mavx2
+-- Performing Test check_cxx_compiler_flag__mavx2 - Success
+-- Performing Test check_cxx_compiler_flag__mno_xop
+-- Performing Test check_cxx_compiler_flag__mno_xop - Success
+-- Performing Test check_cxx_compiler_flag__mno_fma4
+-- Performing Test check_cxx_compiler_flag__mno_fma4 - Success
+-- Performing Test check_cxx_compiler_flag__mno_avx512f
+-- Performing Test check_cxx_compiler_flag__mno_avx512f - Success
+-- Performing Test check_cxx_compiler_flag__mno_avx512vl
+-- Performing Test check_cxx_compiler_flag__mno_avx512vl - Success
+-- Performing Test check_cxx_compiler_flag__mno_avx512pf
+-- Performing Test check_cxx_compiler_flag__mno_avx512pf - Success
+-- Performing Test check_cxx_compiler_flag__mno_avx512er
+-- Performing Test check_cxx_compiler_flag__mno_avx512er - Success
+-- Performing Test check_cxx_compiler_flag__mno_avx512cd
+-- Performing Test check_cxx_compiler_flag__mno_avx512cd - Success
+-- Performing Test check_cxx_compiler_flag__mno_avx512dq
+-- Performing Test check_cxx_compiler_flag__mno_avx512dq - Success
+-- Performing Test check_cxx_compiler_flag__mno_avx512bw
+-- Performing Test check_cxx_compiler_flag__mno_avx512bw - Success
+-- Performing Test check_cxx_compiler_flag__mno_avx512ifma
+-- Performing Test check_cxx_compiler_flag__mno_avx512ifma - Success
+-- Performing Test check_cxx_compiler_flag__mno_avx512vbmi
+-- Performing Test check_cxx_compiler_flag__mno_avx512vbmi - Success
+-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development Development.Module Development.Embed 
+-- Found pip_/usr/bin/python3: TRUE  
+-- Using existing virtualenv in /home/zhixin/dumux/dumux/dune-common/build-cmake/dune-env
+-- Found pip_/home/zhixin/dumux/dumux/dune-common/build-cmake/dune-env/bin/python: TRUE  
+-- Setting dune-common_INCLUDE_DIRS=/home/zhixin/dumux/dumux/dune-common;/home/zhixin/dumux/dumux/dune-common/build-cmake/include
+-- No module specific tests for module 'dune-geometry' ('DuneGeometryMacros.cmake' not found)
+-- Setting dune-geometry_INCLUDE_DIRS=/home/zhixin/dumux/dumux/dune-geometry;/home/zhixin/dumux/dumux/dune-geometry/build-cmake/include
+-- Performing tests for dune-uggrid (from /home/zhixin/dumux/dumux/dune-uggrid/cmake/modules/DuneUggridMacros.cmake)
+-- Setting dune-uggrid_INCLUDE_DIRS=/home/zhixin/dumux/dumux/dune-uggrid;/home/zhixin/dumux/dumux/dune-uggrid/build-cmake/include
+-- Performing tests for dune-grid (from /home/zhixin/dumux/dumux/dune-grid/cmake/modules/DuneGridMacros.cmake)
+-- Looking for mkstemp
+-- Looking for mkstemp - found
+-- Could NOT find ParMETIS (missing: PARMETIS_LIBRARY PARMETIS_INCLUDE_DIR) 
+-- Checking for module 'alberta-grid_1d>=3.0'
+--   Package 'alberta-grid_1d', required by 'virtual:world', not found
+-- Checking for module 'alberta-grid_2d>=3.0'
+--   Package 'alberta-grid_2d', required by 'virtual:world', not found
+-- Checking for module 'alberta-grid_3d>=3.0'
+--   Package 'alberta-grid_3d', required by 'virtual:world', not found
+-- Could NOT find Alberta (set PKG_CONFIG_PATH to include the location of the alberta-grid_[n]d.pc files) (missing: ALBERTA_GRID_PREFIX) (Required is at least version "3.0")
+-- Setting dune-grid_INCLUDE_DIRS=/home/zhixin/dumux/dumux/dune-grid;/home/zhixin/dumux/dumux/dune-grid/build-cmake/include
+-- No module specific tests for module 'dune-localfunctions' ('DuneLocalfunctionsMacros.cmake' not found)
+-- Setting dune-localfunctions_INCLUDE_DIRS=/home/zhixin/dumux/dumux/dune-localfunctions;/home/zhixin/dumux/dumux/dune-localfunctions/build-cmake/include
+-- Performing tests for dune-istl (from /home/zhixin/dumux/dumux/dune-istl/cmake/modules/DuneIstlMacros.cmake)
+-- Could NOT find ParMETIS (missing: PARMETIS_LIBRARY PARMETIS_INCLUDE_DIR) 
+-- Found SuperLU: /usr/lib/x86_64-linux-gnu/libsuperlu.so (found suitable version "6.0.1", minimum required is "5.0") 
+-- Found ARPACK: /usr/lib/x86_64-linux-gnu/libarpack.so  
+-- Found ARPACKPP: TRUE  
+-- Setting dune-istl_INCLUDE_DIRS=/home/zhixin/dumux/dumux/dune-istl;/home/zhixin/dumux/dumux/dune-istl/build-cmake/include
+-- Performing tests for dune-alugrid (from /home/zhixin/dumux/dumux/dune-alugrid/cmake/modules/DuneAlugridMacros.cmake)
+-- Found ZLIB: /usr/lib/x86_64-linux-gnu/libz.so (found version "1.3")  
+-- Looking for include file sion.h
+-- Looking for include file sion.h - not found
+-- Could NOT find SIONlib (missing: SIONLIB_INCLUDE_DIR SIONLIB_LIBRARY SIONLIB_HEADER_USABLE SIONLIB_LIB_WORKS SIONLIB_LIB_SIONSER_WORKS) 
+-- Could NOT find DLMalloc (missing: DLMALLOC_INCLUDE_DIR DLMALLOC_SOURCE_INCLUDE) 
+-- Performing Test DUNE_CV_PTHREAD_TLS_COMPILES
+-- Performing Test DUNE_CV_PTHREAD_TLS_COMPILES - Failed
+-- Not enabling torture-tests
+-- Setting dune-alugrid_INCLUDE_DIRS=/home/zhixin/dumux/dumux/dune-alugrid;/home/zhixin/dumux/dumux/dune-alugrid/build-cmake/include
+-- Performing tests for dune-foamgrid (from /home/zhixin/dumux/dumux/dune-foamgrid/cmake/modules/DuneFoamgridMacros.cmake)
+-- Setting dune-foamgrid_INCLUDE_DIRS=/home/zhixin/dumux/dumux/dune-foamgrid;/home/zhixin/dumux/dumux/dune-foamgrid/build-cmake/include
+-- Performing tests for dune-subgrid (from /home/zhixin/dumux/dumux/dune-subgrid/cmake/modules/DuneSubgridMacros.cmake)
+-- Setting dune-subgrid_INCLUDE_DIRS=/home/zhixin/dumux/dumux/dune-subgrid;/home/zhixin/dumux/dumux/dune-subgrid/build-cmake/include
+-- Performing tests for dumux (from /home/zhixin/dumux/dumux/dumux/cmake/modules/DumuxMacros.cmake)
+-- Looking for __cpp_lib_format
+-- Looking for __cpp_lib_format - not found
+-- Found TBB: using configuration from TBB_DIR=/usr/lib/x86_64-linux-gnu/cmake/TBB (found version "2021.11.0")
+-- Looking for std::execution::par_unseq
+-- Looking for std::execution::par_unseq - not found
+-- Dumux multithreading backend: TBB
+-- Setting dumux_INCLUDE_DIRS=/home/zhixin/dumux/dumux/dumux;/home/zhixin/dumux/dumux/dumux/build-cmake/include
+-- Performing tests for kiemle2023b (from /temp/zhixin/paper2_wp8_background_build_20261103_r03/source/cmake/modules/Kiemle2023bMacros.cmake)
+-- Using scripts from /home/zhixin/dumux/dumux/dune-common/cmake/scripts for creating doxygen stuff.
+-- using /home/zhixin/dumux/dumux/dune-common/doc/doxygen/Doxystyle to create doxystyle file
+-- using C macro definitions from /home/zhixin/dumux/dumux/dune-common/doc/doxygen/doxygen-macros for Doxygen
+CMake Deprecation Warning at /home/zhixin/dumux/dumux/dune-common/cmake/modules/DuneProject.cmake:232 (message):
+  Passing arguments to finalize_dune_project is no longer needed.
+Call Stack (most recent call first):
+  CMakeLists.txt:30 (finalize_dune_project)
+
+
+-- Adding custom target for config.h generation
+-- The following OPTIONAL packages have been found:
+
+ * LATEX
+ * Sphinx, Documentation generator, <www.sphinx-doc.org>
+   To generate the documentation from CMake and Python sources
+ * Doxygen, Class documentation generator, <www.doxygen.org>
+   To generate the class documentation from C++ sources
+ * GMP, GNU multi-precision library, <https://gmplib.org>
+ * QuadMath, GCC Quad-Precision Math Library, <https://gcc.gnu.org/onlinedocs/libquadmath>
+ * Inkscape, converts SVG images, <www.inkscape.org>
+   To generate the documentation with LaTeX
+ * LAPACK, fast linear algebra routines
+ * SuiteSparse, A suite of sparse matrix software, <http://faculty.cse.tamu.edu/davis/suitesparse.html>
+ * Vc, C++ Vectorization library, <https://github.com/VcDevel/Vc>
+   For use of SIMD instructions
+ * Python3
+ * UnixCommands
+ * Threads, Multi-threading library
+ * BLAS, fast linear algebra routines
+ * SuperLU (required version >= 5.0), Supernodal LU
+   Direct solver for linear system, based on LU decomposition
+ * ARPACK, ARnoldi PACKage
+   Solve large scale eigenvalue problems
+ * ARPACKPP, ARPACK++
+   C++ interface for ARPACK
+ * ZLIB
+ * METIS, Serial Graph Partitioning, <http://glaros.dtc.umn.edu/gkhome/metis/metis/overview>
+ * Gnuplot
+ * Gmsh, Meshing tool
+   Generate structured and unstructured grids
+ * PkgConfig, Unified interface for querying installed libraries
+   To find Dune module dependencies
+ * MPI, Message Passing Interface library
+   Parallel programming on multiple processors
+ * PTScotch, Sequential and Parallel Graph Partitioning, <https://gitlab.inria.fr/scotch/scotch>
+ * PVPython, ParaView python client
+   Extract data over line or time in post-processing
+ * TBB, Intel's Threading Building Blocks, <https://github.com/oneapi-src/oneTBB>
+ * OpenMP
+
+-- The following REQUIRED packages have been found:
+
+ * dune-common
+ * dune-geometry
+ * dune-grid
+ * dune-localfunctions
+ * dune-istl
+ * dumux
+
+-- The following OPTIONAL packages have not been found:
+
+ * dune-functions
+ * opm-common
+ * opm-grid
+ * dune-spgrid
+ * dune-mmesh
+ * LatexMk
+ * Alberta (required version >= 3.0), An adaptive hierarchical finite element toolbox and grid manager, <https://gitlab.com/alberta-fem/alberta3>
+   Provides the grid manager AlbertaGrid and file reader AlbertaReader
+ * ParMETIS, Parallel Graph Partitioning, <http://glaros.dtc.umn.edu/gkhome/metis/parmetis/overview>
+ * SIONlib
+ * DLMalloc
+ * ZOLTAN
+ * GLPK, GNU Linear Programming Kit
+ * Gstat, Geostatistic library
+   Generate random permeability and porosity fields
+ * NLOPT, Library for nonlinear optimization
+ * Kokkos
+
+-- Configuring done (12.9s)
+-- Generating done (0.0s)
+-- Build files have been written to: /temp/zhixin/paper2_wp8_background_build_20261103_r03/build-gcc-release

@@ -1,0 +1,120 @@
+{
+  "status": "native_DuMuX_compiled_ten_step_bridge_passed_long_validation_pending",
+  "launch_authorized": false,
+  "base_commit": "323fd639c81e47b201ecb0ae8b52ba8449892a59",
+  "base_input_sha256": "b087baf513ccf92d7a69d5e1d814c364bca2361ce45526bcfec786c4d76d95d3",
+  "source_main_sha256": "dc7c629220fd0f3b23a6fcb6f156537d0d1d38b376550606235aeda7729dd2b4",
+  "geometry": {
+    "width_m": 0.02142857142857143,
+    "height_m": 0.2,
+    "cells_x": 1,
+    "cells_z": 200,
+    "grading_z": -0.98
+  },
+  "formulation": "same BOX residual F(Pu); reduced P^T F and P^T J P; one pressure and concentration per exact height",
+  "input_changes_allowed": {
+    "Problem.Name": "WP8-constrained-background-4T",
+    "TimeLoop.TEnd": 545692.2550893936
+  },
+  "dt_s": 113.68588647695695,
+  "stop": {
+    "surface_or_domain_max_mole_fraction": 0.1,
+    "check_each_accepted_step": true,
+    "record_bracket": true
+  },
+  "gates": {
+    "lateral_range_max": 1e-14,
+    "expected_lateral_range": 0.0,
+    "initial_x_abs": 1e-14,
+    "initial_pressure_Pa": 1e-08,
+    "initial_storage_relative": 1e-12,
+    "profile_T_abs": 1e-10,
+    "salt_residual_m": 1e-12,
+    "water_residual_m": 1e-10,
+    "storage_reconstruction_salt_m": 1e-14,
+    "flux_total_abs_m_s": 1e-17,
+    "inventory_match_abs_m": 1e-12,
+    "flux_reintegration_abs_m": 1e-14
+  },
+  "budget": {
+    "short_validation_steps": 10,
+    "short_validation_wall_cap_s": 120,
+    "long_window_stages_T": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "long_run_wall_cap_s": 900,
+    "cpus": 1,
+    "memory_gib": 2,
+    "local_and_remote_archive_cap_mib_each": 250,
+    "restart": "no claim of restart equivalence; prefer one continuous run with stage checkpoints",
+    "authorization": "required for new long run; no submission script supplied",
+    "measured_native_10step_wall_s": 1.1675703525543213,
+    "linear_4800step_estimate_s": 560.4337692260742
+  },
+  "native_short_validation": {
+    "passed": true,
+    "checks": {
+      "exit": true,
+      "ten_steps": true,
+      "requested_horizon": true,
+      "exact_uniform_concentration": true,
+      "exact_uniform_pressure": true,
+      "salt_closure": true,
+      "water_closure": true,
+      "inventory_bridge": true,
+      "flux_bridge": true,
+      "initial_x": true,
+      "initial_pressure": true,
+      "profile_bridge": true,
+      "storage_reconstruction": true,
+      "flux_reintegration": true,
+      "inputs_preserved": true
+    },
+    "max_horizontal_x_range": 0.0,
+    "max_horizontal_pressure_range": 0.0,
+    "max_salt_residual_m": 2.0977796642712314e-17,
+    "max_water_residual_m": 5.8273027622535785e-15,
+    "bridge_absolute_errors": {
+      "inventory_salt_m": 1.4907779871675686e-19,
+      "inventory_water_m": 3.8163916471489756e-17,
+      "cut_salt_total_down_m_s": 1.4851276488813638e-19,
+      "salt_residual_m": 5.013555423882069e-17,
+      "water_residual_m": 1.3926684657431618e-14
+    },
+    "stop": {
+      "schema_version": 1,
+      "reason": "requested_horizon",
+      "last_accepted_time_s": 1136.8588647695694,
+      "accepted_steps": 10,
+      "initial_diagnostics_written": true,
+      "requested_end_s": 1136.8588647695694,
+      "surface_threshold_low_s": null,
+      "surface_threshold_high_s": null,
+      "global_threshold_low_s": null,
+      "global_threshold_high_s": null
+    },
+    "wall_s": 1.1675703525543213,
+    "long_run_validated": false,
+    "initial_x_error": 0.0,
+    "initial_pressure_error_Pa": 5.820766091346741e-11,
+    "profile_max_error": 4.5146178462296405e-15,
+    "storage_reconstruction_salt_error_m": 2.846030702774449e-19,
+    "storage_reconstruction_water_error_m": 7.28583859910259e-17,
+    "flux_reintegration_error_m": 0.0,
+    "changed_inputs": [
+      "TimeLoop.TEnd",
+      "Problem.Name"
+    ]
+  },
+  "native_build": "build/r03_attempt_01/result.json",
+  "internal_Newton": {
+    "water_residual_max": 2e-18,
+    "salt_residual_max": 2e-20,
+    "relative_shift_max": 1e-10,
+    "max_iterations": 20,
+    "failure": "abort; no timestep restart implemented"
+  }
+}

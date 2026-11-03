@@ -1,0 +1,22 @@
+{
+  "executable_sha256": "0e6fa420afe4c97b21f1f7a9a6542583d5b1d4f1a6b699d7c3b87579a28525c8",
+  "input_sha256": "3993d05c9e0a074d887ce3e696139e201ed4c928d49256efa2a07de20833355a",
+  "source_manifest_sha256": "995568ce2f4122057215bdf0cba85e1b141dc642a914ee895f659ad206cf25e4",
+  "short_steps": 10,
+  "wall_limit_s": 120,
+  "gates": {
+    "lateral_range_max": 1e-14,
+    "expected_lateral_range": 0.0,
+    "initial_x_abs": 1e-14,
+    "initial_pressure_Pa": 1e-08,
+    "initial_storage_relative": 1e-12,
+    "profile_T_abs": 1e-10,
+    "salt_residual_m": 1e-12,
+    "water_residual_m": 1e-10,
+    "storage_reconstruction_salt_m": 1e-14,
+    "flux_total_abs_m_s": 1e-17,
+    "inventory_match_abs_m": 1e-12,
+    "flux_reintegration_abs_m": 1e-14
+  },
+  "long_simulation_authorized": false
+}
