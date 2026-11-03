@@ -1,0 +1,49 @@
+[Grid]
+Positions0 = 0 0.6000000000000001
+Positions1 = 0 0.2
+Cells0 = 600
+Cells1 = 200
+Grading1 = -0.98
+
+[TimeLoop]
+TEnd = 151921.368380099
+DtInitial = 94.9508552375619
+MaxTimeStepSize = 94.9508552375619
+OutputInterval = 10
+
+[Problem]
+Name = pilot0_design_38852_M1
+Permeability = 3.241344364255908e-12
+Porosity = 0.2988338772988599
+Swr = 0.1633240497681339
+PcN = 2.648866708233435
+PcAlpha = 0.0003567433344406836
+SweL = -0.868324996536848
+KrwMualemExponent = true
+WaterLevel = 0.8664831930308342
+EvaporationRate = 5.207102711947411e-09
+SaltDiffusivity = 1.5e-09
+ReferenceViscosity = 0.0011
+SaltMoleFraction = 0.0036
+GravitationalAcceleration = 9.800000000000001
+PureWaterDensity = 998.203
+DensityLinearCoefficient = 0.670804
+DensityQuadraticCoefficient = 0.373854
+MolarMassH2O = 0.01801528
+MolarMassNaCl = 0.05844
+Amplitude = 1e-06
+WaveNumber = 16
+StandardDeviationSaltMoleFraction = 1e-06
+PerturbationType = Eigenprofile
+RandomSeed = 1
+EnableGravity = true
+PerturbationHeight = 0
+EigenprofilePath = eigenprofile.dat
+
+[Vtk]
+Precision = Float64
+AddVelocity = true
+
+[Transport]
+StopAtSolubility = true
+SolubilityMoleFraction = 0.1

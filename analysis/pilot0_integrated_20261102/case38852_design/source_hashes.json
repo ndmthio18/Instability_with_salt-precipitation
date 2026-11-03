@@ -1,0 +1,12 @@
+{
+  "status": "verified_by_semantic_manifest_and_physical_mapping",
+  "initial_exact_manifest_hash_check": "failed_due_to_serialization_difference; preserved source bytes",
+  "frozen_manifest_sha256": "f54d6cf75a93204203906cd2de54c162fbfc735c2dd0b3e50d8c5f14f1560070",
+  "remote_manifest_sha256": "16ce200c7e38537edbabf48301a6e6176aeb2af42c5f48a702ec23339946127f",
+  "manifest_json_semantically_equal": true,
+  "sha256": {
+    "case_manifest.json": "16ce200c7e38537edbabf48301a6e6176aeb2af42c5f48a702ec23339946127f",
+    "sandy--boreal--s3170--f1079--global_default_L0p5--native.input": "8d43737e7a7385c3b0bece7d690734e7dc77634cd4e7dabbb92995c35d688d18",
+    "sandy--boreal--s3170--f1079--global_default_L0p5--native_eigenprofile.dat": "e1510ba291c217baeb439b1fed1de752a9415b554393e032063432e6ca8c1580"
+  }
+}

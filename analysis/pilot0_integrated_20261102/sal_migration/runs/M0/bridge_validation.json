@@ -1,0 +1,26 @@
+{
+  "passed": true,
+  "checks": {
+    "transport_budget.csv/row_count": true,
+    "transport_budget.csv/time_and_region": true,
+    "transport_budget.csv/inventory_salt_m": true,
+    "transport_budget.csv/cumulative_cut_salt_m": true,
+    "transport_budget.csv/salt_residual_m": true,
+    "surface_events.csv/row_count": true,
+    "surface_events.csv/time_and_region": true,
+    "surface_events.csv/x_top_area_mean": true,
+    "surface_events.csv/x_top_max": true,
+    "surface_events.csv/x_domain_max": true,
+    "surface_events.csv/sigma_top_node": true
+  },
+  "max_abs_differences": {
+    "transport_budget.csv/inventory_salt_m": 0.0,
+    "transport_budget.csv/cumulative_cut_salt_m": 0.0,
+    "transport_budget.csv/salt_residual_m": 0.0,
+    "surface_events.csv/x_top_area_mean": 0.0,
+    "surface_events.csv/x_top_max": 0.0,
+    "surface_events.csv/x_domain_max": 0.0,
+    "surface_events.csv/sigma_top_node": 0.0
+  },
+  "scope": "Host/runtime bridge only; final physical pair uses two new sal legs. These thresholds are not transport-effectiveness thresholds."
+}

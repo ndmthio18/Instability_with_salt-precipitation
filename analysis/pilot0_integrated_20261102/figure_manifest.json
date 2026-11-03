@@ -1,0 +1,54 @@
+{
+  "destination": "Provisional internal research report; journal/width requirements pending",
+  "matplotlib": "3.9.2",
+  "numpy": "2.0.0",
+  "source_hashes": {
+    "analysis\\pilot0_integrated_20261102\\transport_timeseries.csv": "7dc98ea48711bc656a90c9043d6438e1978cd205e5507cf5ba66af15319bb919",
+    "analysis\\pilot0_integrated_20261102\\field_common_mode_timeseries.csv": "0b1635ece3f2bda9a504d2978a9085906c9d9ac15db1ff84500f1dff8cfaba77",
+    "analysis\\pilot0_integrated_20261102\\field_depth_profiles.csv": "80804ac7c32934b77553990dda7f186723b320c98d8801f76847600dd7c723f0",
+    "analysis\\pilot0_integrated_20261102\\new_M1_detection.json": "0e53575787ae5c678c9584f9561b1090fad1abcd07304570cf7c4a9823f1f62e",
+    "scripts\\analyze_pilot0_baseline.py": "17be0260e4aabbf4d8fc6ce1136a220d0c55fb9fad78707995b90ee019a0b101"
+  },
+  "transformations": [
+    "No budget interpolation",
+    "Exact accepted times replace rounded PVD labels after output-step and rounding checks",
+    "Native nodal field display; row-mean anomaly explicitly disclosed",
+    "Common nx28 basis recomputed for both legs",
+    "No smoothing except frozen onset extractor five-point edge-padded boxcar"
+  ],
+  "uncertainty": "Budget closure envelope only; sensitivity errors unknown",
+  "exports": [
+    {
+      "path": "analysis\\pilot0_integrated_20261102\\figures\\Figure_A_timeline.png",
+      "sha256": "863605f656404131ae136ca3727f82ab8dd9eb3bb617d9f4f08f3f64799d0374"
+    },
+    {
+      "path": "analysis\\pilot0_integrated_20261102\\figures\\Figure_A_timeline.pdf",
+      "sha256": "c6e8baae9787e47c24df61153b8f275b529ba3379fc0da90d10c2e3500118623"
+    },
+    {
+      "path": "analysis\\pilot0_integrated_20261102\\figures\\Figure_B_transport.png",
+      "sha256": "6b813a1d961c39d45ec1426df247083215ea2625e477db130f63b8ab050d6ed5"
+    },
+    {
+      "path": "analysis\\pilot0_integrated_20261102\\figures\\Figure_B_transport.pdf",
+      "sha256": "91c24c4a52358c3841a8cbc3e6cf6cdce0d21dc23d8c2fb33cc8f5ca68259ee8"
+    },
+    {
+      "path": "analysis\\pilot0_integrated_20261102\\figures\\Figure_C_fields.png",
+      "sha256": "1fed6b79da81048ba388cb39a67d1169a33f400af313821dd9451989ee29f1d4"
+    },
+    {
+      "path": "analysis\\pilot0_integrated_20261102\\figures\\Figure_C_fields.pdf",
+      "sha256": "ad78f9c6fcad3c7c53f781f850bc9b292a6075762fcc5b758a68044aee5f911a"
+    },
+    {
+      "path": "analysis\\pilot0_integrated_20261102\\figures\\Figure_D_surface_transport.png",
+      "sha256": "6fb6e95fd3f787645c04e6b1bfa8791b02906eb08d8bf1b5964e8a5351e1df4f"
+    },
+    {
+      "path": "analysis\\pilot0_integrated_20261102\\figures\\Figure_D_surface_transport.pdf",
+      "sha256": "ebfc38209bb4ccff4a1ce8a9a5c6a1fb0c94702695c928232e656711d9f40a2c"
+    }
+  ]
+}

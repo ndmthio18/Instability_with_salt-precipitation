@@ -1,0 +1,78 @@
+{
+  "passed": true,
+  "checks": {
+    "four_png_pdf_pairs": true,
+    "1803_rows_601_common_times_identity": true,
+    "python_sources_parse": true,
+    "26_field_snapshots_common_basis": true,
+    "six_required_deliverables_present": true,
+    "WP1_design_checks": true
+  },
+  "figures": [
+    {
+      "name": "Figure_A_timeline",
+      "png_pixels": [
+        1800,
+        1800
+      ],
+      "pdf_pages": 1,
+      "pdf_size_points": [
+        0.0,
+        0.0,
+        648.0,
+        648.0
+      ],
+      "pdf_text_chars": 544,
+      "visual_review": "PNG visually inspected; labels, legends, units and colorbars readable; no clipping observed"
+    },
+    {
+      "name": "Figure_B_transport",
+      "png_pixels": [
+        2800,
+        2000
+      ],
+      "pdf_pages": 1,
+      "pdf_size_points": [
+        0.0,
+        0.0,
+        1008.0,
+        720.0
+      ],
+      "pdf_text_chars": 868,
+      "visual_review": "PNG visually inspected; labels, legends, units and colorbars readable; no clipping observed"
+    },
+    {
+      "name": "Figure_C_fields",
+      "png_pixels": [
+        2600,
+        1400
+      ],
+      "pdf_pages": 1,
+      "pdf_size_points": [
+        0.0,
+        0.0,
+        936.0,
+        504.0
+      ],
+      "pdf_text_chars": 820,
+      "visual_review": "PNG visually inspected; labels, legends, units and colorbars readable; no clipping observed"
+    },
+    {
+      "name": "Figure_D_surface_transport",
+      "png_pixels": [
+        2200,
+        1600
+      ],
+      "pdf_pages": 1,
+      "pdf_size_points": [
+        0.0,
+        0.0,
+        792.0,
+        576.0
+      ],
+      "pdf_text_chars": 760,
+      "visual_review": "PNG visually inspected; labels, legends, units and colorbars readable; no clipping observed"
+    }
+  ],
+  "limitations": "Internal report figures only; no journal-specific compliance claim; numerical convergence not tested"
+}

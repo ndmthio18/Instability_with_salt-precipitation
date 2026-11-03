@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "physical_mapping_to_WP1": true,
+  "reference_density_verified": true,
+  "pair_differences_limited_to_initialization": true,
+  "solver_executed": false,
+  "nx": 16,
+  "dt_s": 94.9508552375619,
+  "sample_steps_expected": 1600,
+  "profile_sha256": "e1510ba291c217baeb439b1fed1de752a9415b554393e032063432e6ca8c1580",
+  "scope": "Input design checks only; no initial-field or transport validation of case38852"
+}

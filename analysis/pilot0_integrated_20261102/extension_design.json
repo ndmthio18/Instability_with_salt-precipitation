@@ -1,0 +1,46 @@
+{
+  "status": "costed_design_not_executed",
+  "reason": "Weak localized growth and residual-scale deep transport do not justify an automatic long rerun",
+  "t_end_candidate_s": 272846.1275446968,
+  "from_t0_required": true,
+  "amplitude": 1e-06,
+  "nx": 28,
+  "grid": [
+    600,
+    200
+  ],
+  "dt_max_s": 227.3717729539139,
+  "stop_x": 0.1,
+  "cost_scenarios_hours": {
+    "2": {
+      "M0": 7.745666007529945,
+      "M1": 5.2906741763734155
+    },
+    "3": {
+      "M0": 11.618499011294917,
+      "M1": 7.936011264560123
+    },
+    "4": {
+      "M0": 15.49133201505989,
+      "M1": 10.581348352746831
+    }
+  },
+  "growth_scenarios": {
+    "0.25": {
+      "fit_fraction": 0.25,
+      "slope_per_s": 3.1823203957971207e-06,
+      "doubling_s": 217811.87760835845,
+      "conditional_sigma_at_2T": 1.2205489411650382e-06,
+      "conditional_total_time_for_10x_current_sigma_s": 859978.459399722
+    },
+    "0.5": {
+      "fit_fraction": 0.5,
+      "slope_per_s": 2.4154325015194657e-06,
+      "doubling_s": 286966.07341497234,
+      "conditional_sigma_at_2T": 1.0993064854624687e-06,
+      "conditional_total_time_for_10x_current_sigma_s": 1089703.7253290545
+    }
+  },
+  "no_guaranteed_nonlinear_transition": true,
+  "guard": "Do not execute 4T M0: baseline-scaled15.49h exceeds12h; do not bypass by unvalidated restart"
+}
