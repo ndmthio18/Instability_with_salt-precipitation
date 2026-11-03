@@ -1,0 +1,5 @@
+run,host,stage,cells_x,vertices,scalar_unknowns,accepted_steps,wall_s,cpu_s,peak_rss_kib,newton_iterations,linear_iterations,linear_iterations_status,logged_failure_retry_lines,output_bytes,loop_first10_s,loop_total_s,post_and_archive_s
+R24-M0-short,frodo,short,24,5025,10050,300,40.51411875709891,39.791095,44960,603,,not printed by unchanged ELF,0,264864180,1.4592,40.056,4.445288611575961
+R24-M1-short,frodo,short,24,5025,10050,300,40.815081717446446,40.071367,45048,604,,not printed by unchanged ELF,0,278407571,1.5101,40.31,4.903958497568965
+R48-M0-short,frodo,short,48,9849,19698,300,97.0280721206218,94.70512599999999,61928,603,,not printed by unchanged ELF,0,522364815,3.5467,96.545,8.477165741845965
+R48-M1-short,frodo,short,48,9849,19698,300,97.37988493219018,94.823292,61976,604,,not printed by unchanged ELF,0,550273762,3.649,96.776,9.439037457108498

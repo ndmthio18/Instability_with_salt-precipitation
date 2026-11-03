@@ -1,0 +1,10 @@
+{
+  "utc": "2026-11-03T14:25:47.981371+00:00",
+  "old_remote": "/temp/zhixin/paper2_wp5_20261103_r01",
+  "new_remote": "/temp/zhixin/paper2_wp5_20261103_r02",
+  "reason": "bundle tar has orted.real but no generated bin/orted launcher; MPI startup exits before first accepted state",
+  "all_four_old_solver_returncodes": 1,
+  "old_accepted_steps": 0,
+  "correction": "Create equivalent path-local orted loader wrapper, check executable, freeze hash. New isolated run directories, unchanged ELF/input.",
+  "retry_scope": "Diagnosed environment repair, not an unchanged solver retry"
+}

@@ -1,0 +1,22 @@
+{
+  "returncode": 1,
+  "reason": null,
+  "wall_s": 0.03388141840696335,
+  "cpu_s": 0.027028,
+  "peak_rss_kib": 12836,
+  "stop": null,
+  "newton_iterations": 0,
+  "linear_iterations": null,
+  "linear_iterations_status": "not emitted by unchanged executable",
+  "failure_or_retry_log_lines": [
+    "It looks like orte_init failed for some reason; your parallel process is",
+    "fail during orte_init; some of which are due to configuration or",
+    "environment problems.  This failure appears to be an internal failure;",
+    "  orte_ess_init failed",
+    "It looks like MPI_INIT failed for some reason; your parallel process is",
+    "fail during MPI_INIT; some of which are due to configuration or environment",
+    "problems.  This failure appears to be an internal failure; here's some",
+    "  ompi_mpi_init: ompi_rte_init failed"
+  ],
+  "solver_output_bytes": 158313
+}

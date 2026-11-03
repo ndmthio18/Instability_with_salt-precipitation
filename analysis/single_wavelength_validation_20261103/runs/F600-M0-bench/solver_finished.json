@@ -1,0 +1,26 @@
+{
+  "returncode": 0,
+  "reason": null,
+  "wall_s": 62.27256785519421,
+  "cpu_s": 61.911848,
+  "peak_rss_kib": 445640,
+  "stop": {
+    "schema_version": 1,
+    "reason": "requested_horizon",
+    "last_accepted_time_s": 2273.717729539139,
+    "accepted_steps": 10,
+    "initial_diagnostics_written": true,
+    "requested_end_s": 2273.717729539139,
+    "surface_threshold_low_s": null,
+    "surface_threshold_high_s": null,
+    "global_threshold_low_s": null,
+    "global_threshold_high_s": null
+  },
+  "newton_iterations": 23,
+  "linear_iterations": null,
+  "linear_iterations_status": "not emitted by unchanged executable",
+  "failure_or_retry_log_lines": [
+    " -- Newton.RetryTimeStepReductionFactor = 0.5"
+  ],
+  "solver_output_bytes": 241148450
+}

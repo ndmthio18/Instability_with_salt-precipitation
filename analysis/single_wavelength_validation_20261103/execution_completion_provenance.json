@@ -1,0 +1,20 @@
+{
+  "orted_wrapper": "#!/bin/sh\nexec /temp/zhixin/paper2_wp5_20261103_r02/bundle/lib/ld-linux-x86-64.so.2 --library-path /temp/zhixin/paper2_wp5_20261103_r02/bundle/lib /temp/zhixin/paper2_wp5_20261103_r02/bundle/bin/orted.real \"$@\"\n",
+  "orted_wrapper_sha256": "217001e8596dc0d9c55e9452e5bd15560ccd0af4a12f6ca53c05cfe32b306f5e",
+  "stages": {
+    "short": {
+      "R24-M0-short": 0,
+      "R24-M1-short": 0,
+      "R48-M0-short": 0,
+      "R48-M1-short": 0
+    },
+    "bench": {
+      "F600-M0-bench": 0,
+      "F600-M1-bench": 0
+    },
+    "full": {
+      "R24-M0-full": 0,
+      "R24-M1-full": 0
+    }
+  }
+}

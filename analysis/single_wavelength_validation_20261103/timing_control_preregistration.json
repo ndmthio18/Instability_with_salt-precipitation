@@ -1,0 +1,9 @@
+{
+  "utc": "2026-11-03T14:28:06.685780+00:00",
+  "purpose": "Task5 required fair hardware comparison after sal had no free physical cores; two 10-step original-width controls only, no new physical case",
+  "steps": 10,
+  "T_s": 2273.717729539139,
+  "output_interval": 1,
+  "comparison": "Internal elapsed time for the same first 10 accepted steps, including VTU each step; same frodo CPU cores and original ELF. Excludes startup. Does not claim measured full-window M1 speedup.",
+  "authorized_scope": "command/5.md necessary limited-scale simulations and Task5 performance verification"
+}

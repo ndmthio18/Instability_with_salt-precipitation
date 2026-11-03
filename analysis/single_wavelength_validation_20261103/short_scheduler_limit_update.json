@@ -1,0 +1,8 @@
+{
+  "returncode": 0,
+  "stdout": "",
+  "stderr": "",
+  "queue": "             JOBID PARTITION     NAME     USER ST          START_TIME  NODES SCHEDNODES           NODELIST(REASON)\n     19194_[0-3%2]     debug P2-WP5-s   zhixin PD 2026-11-03T21:13:54      1 localhost            (None)\n",
+  "reason": "Short R24/R48 models estimated from DOF reduction to take minutes; tighten scheduler limit to 30 min for backfill. No physics/input changes and no duplicate submission.",
+  "updated_utc": "2026-11-03T14:17:14.602450+00:00"
+}

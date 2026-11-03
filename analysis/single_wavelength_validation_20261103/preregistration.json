@@ -1,0 +1,32 @@
+{
+  "created_utc": "2026-11-03T14:13:17.463603+00:00",
+  "reference_commit": "d2d42978a9d16a526186b809a845feb1e0faffe9",
+  "short_T_s": 68211.5318861742,
+  "full_T_s": 136423.0637723484,
+  "thresholds": {
+    "background_surface_relative": 1e-06,
+    "mean_and_storage_relative": 1e-06,
+    "weighted_mode_relative_full": 0.05,
+    "weighted_mode_relative_R24_R48": 0.03,
+    "depth_sigma_L2_relative": 0.05,
+    "profile_mean_relative": 1e-06,
+    "local_max_relative": 1e-06,
+    "salt_residual_absolute_m": 1e-14,
+    "water_residual_absolute_m": 1e-11,
+    "cut_flux_relative": 1e-05,
+    "cut_flux_absolute_m_s": 1e-16,
+    "cumulative_cut_relative": 1e-05,
+    "cumulative_cut_absolute_m": 1e-12,
+    "initial_inventory_difference_m": 1e-15,
+    "odd_neumann_mode_energy_fraction": 1e-06,
+    "endpoint_difference_relative_to_seed": 0.001,
+    "speedup_minimum": 2.0,
+    "onset_relative_full_window": 0.05
+  },
+  "threshold_scope": "Engineering screening tolerances, not universal physics thresholds. Near-zero paired differences unresolved using residual/absolute floors; time and vertical grid errors remain unknown.",
+  "accepted_step_output": "VTU every accepted step for reduced models; weighted diagnostics generated from each state by isolated postprocessor; original ELF unchanged. Full reference weighted comparisons only at its saved frames.",
+  "performance": "Same sal hardware and original ELF; report differing load and output cadence, elapsed/core CPU separately; historical comparisons are observed timing, not a controlled machine-isolated benchmark.",
+  "concurrency": 2,
+  "per_run_wall_limit_s": 43200,
+  "solver_executed": false
+}

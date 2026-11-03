@@ -1,0 +1,366 @@
+{
+  "runs": {
+    "F600-M0-bench": {
+      "started.json": {
+        "utc": "2026-11-03T14:31:06.272302+00:00",
+        "job": "frodo-managed-F600-M0-bench",
+        "affinity": [
+          0
+        ],
+        "load": [
+          0.54541015625,
+          0.7470703125,
+          0.44482421875
+        ],
+        "available_memory_bytes": 23947755520,
+        "elf_sha256": "d78ce5122cf69e4dee5a4d12bcc726779959f304b343246009cb45bb37e894cc",
+        "postprocessor_sha256": "604ed2d5fbbe5d8aead1fba29c5da4461a5f748c1933e82cb3794cb463dbf3b4",
+        "launcher_sha256": "2fbe5ca9f2891010c67be135a06bc7d3a48c5b60d98e2a2f150ca4febbf1a672"
+      },
+      "stop_record.json": {
+        "schema_version": 1,
+        "reason": "requested_horizon",
+        "last_accepted_time_s": 2273.717729539139,
+        "accepted_steps": 10,
+        "initial_diagnostics_written": true,
+        "requested_end_s": 2273.717729539139,
+        "surface_threshold_low_s": null,
+        "surface_threshold_high_s": null,
+        "global_threshold_low_s": null,
+        "global_threshold_high_s": null
+      },
+      "solver_finished.json": {
+        "returncode": 0,
+        "reason": null,
+        "wall_s": 62.27256785519421,
+        "cpu_s": 61.911848,
+        "peak_rss_kib": 445640,
+        "stop": {
+          "schema_version": 1,
+          "reason": "requested_horizon",
+          "last_accepted_time_s": 2273.717729539139,
+          "accepted_steps": 10,
+          "initial_diagnostics_written": true,
+          "requested_end_s": 2273.717729539139,
+          "surface_threshold_low_s": null,
+          "surface_threshold_high_s": null,
+          "global_threshold_low_s": null,
+          "global_threshold_high_s": null
+        },
+        "newton_iterations": 23,
+        "linear_iterations": null,
+        "linear_iterations_status": "not emitted by unchanged executable",
+        "failure_or_retry_log_lines": [
+          " -- Newton.RetryTimeStepReductionFactor = 0.5"
+        ],
+        "solver_output_bytes": 241148450
+      },
+      "finished.json": {
+        "solver": {
+          "returncode": 0,
+          "reason": null,
+          "wall_s": 62.27256785519421,
+          "cpu_s": 61.911848,
+          "peak_rss_kib": 445640,
+          "stop": {
+            "schema_version": 1,
+            "reason": "requested_horizon",
+            "last_accepted_time_s": 2273.717729539139,
+            "accepted_steps": 10,
+            "initial_diagnostics_written": true,
+            "requested_end_s": 2273.717729539139,
+            "surface_threshold_low_s": null,
+            "surface_threshold_high_s": null,
+            "global_threshold_low_s": null,
+            "global_threshold_high_s": null
+          },
+          "newton_iterations": 23,
+          "linear_iterations": null,
+          "linear_iterations_status": "not emitted by unchanged executable",
+          "failure_or_retry_log_lines": [
+            " -- Newton.RetryTimeStepReductionFactor = 0.5"
+          ],
+          "solver_output_bytes": 241148450
+        },
+        "post_wall_s": 4.292950676754117,
+        "archive": {
+          "path": "/temp/zhixin/paper2_wp5_20261103_r02/F600-M0-bench_fields.tar.gz",
+          "bytes": 35044922,
+          "sha256": "dd0b841a93967d1b3073e46c8917df1743bb597ea0994d790a2e32bec9b34d82"
+        },
+        "files": {
+          "worker.log": {
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "bytes": 0
+          },
+          "solver_finished.json": {
+            "sha256": "4a578a24698ae9e15aad2879932b9b690d7b78756e77c2c6947c4820f83f43de",
+            "bytes": 750
+          },
+          "stop_record.json": {
+            "sha256": "ce9dedabc2eccf8dbab582741c5f3c3031a92fc41c10fcbb5c941be09ff55412",
+            "bytes": 349
+          },
+          "solver.log": {
+            "sha256": "5f3d6eba32f96b5b2538911432742afa592a6aa39b8b57ce44615e844d03dc2c",
+            "bytes": 6990
+          },
+          "eigenprofile.dat": {
+            "sha256": "d721e605d126e555f92b43200aa73b999ed4e2b61397edd1e98c0d9fddb36575",
+            "bytes": 153788
+          },
+          "transport_metadata.json": {
+            "sha256": "a34804046a2c9bbb693d4ccbd25889c5f6572211e8b4ef7937b0812cbcd113d6",
+            "bytes": 982
+          },
+          "transport_budget.csv": {
+            "sha256": "d624fe8533b0573d72276c6f2ac597b02b795a91abfd3fe121834fe7befba726",
+            "bytes": 25641
+          },
+          "params.input": {
+            "sha256": "566b57b3cb45af4c38fa045a3c2bd62edc9ed9f4f67f1ca1bf98988b7fbc019e",
+            "bytes": 1122
+          },
+          "started.json": {
+            "sha256": "3ff7593069f8329b885791d060eb5b86d13f9b33476d1bb90c94e6a2faa8d34c",
+            "bytes": 494
+          },
+          "F600-M0-bench_sigmatop.csv": {
+            "sha256": "e4fb2c9f306cdaf591596cd535c1c45585b61879015e6e01c8338544b66bb24f",
+            "bytes": 1189
+          },
+          "plan.json": {
+            "sha256": "07ccf300b8dc7626d6053d97b0e2e087fe7c06328fcd712d2db7c8c939132662",
+            "bytes": 686
+          },
+          "F600-M0-bench.pvd": {
+            "sha256": "1182d6f92dcaaa46656e005615f67014b05b90d3fb6ccbc707a9d5d1fed718bb",
+            "bytes": 1094
+          },
+          "surface_events.csv": {
+            "sha256": "ff2800cfdae2aff4f222cb3cb0974ce4de9b455fa3b19af91395b5bc4aa85225",
+            "bytes": 2296
+          },
+          "post.log": {
+            "sha256": "81f12fecf36ad71589721fa3d92c628f2fe3fa8a02c595b2e4544e909f0eec51",
+            "bytes": 663
+          },
+          "post/representative_fields.npz": {
+            "sha256": "7b10f6e3942261ed8de49a3aa44ad866161332b91aaa36cca8a6f8806f4ba1ba",
+            "bytes": 317101
+          },
+          "post/field_hashes.json": {
+            "sha256": "aa80cfe7cacd2b39425b3aaf604d11a103381b839eaaafecc408fe7ad62c6cae",
+            "bytes": 2467
+          },
+          "post/profiles.npz": {
+            "sha256": "7119417afcf36f72a95a6e8c7b62eab9b2f4670d798f4e273dd3ada222c22ebe",
+            "bytes": 6805
+          },
+          "post/weighted_diagnostics.csv": {
+            "sha256": "ddc20e7a8f8a7ce12d4a7b57ab8aea3bf25679e799b70de134633a31cb453fbe",
+            "bytes": 3681
+          },
+          "post/field_audit.json": {
+            "sha256": "8198e2c874d9209e59e797765a85e35304f8c12642f3f1f025200fba32077e86",
+            "bytes": 714
+          }
+        }
+      }
+    },
+    "F600-M1-bench": {
+      "started.json": {
+        "utc": "2026-11-03T14:31:06.272302+00:00",
+        "job": "frodo-managed-F600-M1-bench",
+        "affinity": [
+          1
+        ],
+        "load": [
+          0.54541015625,
+          0.7470703125,
+          0.44482421875
+        ],
+        "available_memory_bytes": 23947755520,
+        "elf_sha256": "d78ce5122cf69e4dee5a4d12bcc726779959f304b343246009cb45bb37e894cc",
+        "postprocessor_sha256": "604ed2d5fbbe5d8aead1fba29c5da4461a5f748c1933e82cb3794cb463dbf3b4",
+        "launcher_sha256": "2fbe5ca9f2891010c67be135a06bc7d3a48c5b60d98e2a2f150ca4febbf1a672"
+      },
+      "stop_record.json": {
+        "schema_version": 1,
+        "reason": "requested_horizon",
+        "last_accepted_time_s": 2273.717729539139,
+        "accepted_steps": 10,
+        "initial_diagnostics_written": true,
+        "requested_end_s": 2273.717729539139,
+        "surface_threshold_low_s": null,
+        "surface_threshold_high_s": null,
+        "global_threshold_low_s": null,
+        "global_threshold_high_s": null
+      },
+      "solver_finished.json": {
+        "returncode": 0,
+        "reason": null,
+        "wall_s": 66.33245548792183,
+        "cpu_s": 65.918768,
+        "peak_rss_kib": 445660,
+        "stop": {
+          "schema_version": 1,
+          "reason": "requested_horizon",
+          "last_accepted_time_s": 2273.717729539139,
+          "accepted_steps": 10,
+          "initial_diagnostics_written": true,
+          "requested_end_s": 2273.717729539139,
+          "surface_threshold_low_s": null,
+          "surface_threshold_high_s": null,
+          "global_threshold_low_s": null,
+          "global_threshold_high_s": null
+        },
+        "newton_iterations": 25,
+        "linear_iterations": null,
+        "linear_iterations_status": "not emitted by unchanged executable",
+        "failure_or_retry_log_lines": [
+          " -- Newton.RetryTimeStepReductionFactor = 0.5"
+        ],
+        "solver_output_bytes": 254575874
+      },
+      "finished.json": {
+        "solver": {
+          "returncode": 0,
+          "reason": null,
+          "wall_s": 66.33245548792183,
+          "cpu_s": 65.918768,
+          "peak_rss_kib": 445660,
+          "stop": {
+            "schema_version": 1,
+            "reason": "requested_horizon",
+            "last_accepted_time_s": 2273.717729539139,
+            "accepted_steps": 10,
+            "initial_diagnostics_written": true,
+            "requested_end_s": 2273.717729539139,
+            "surface_threshold_low_s": null,
+            "surface_threshold_high_s": null,
+            "global_threshold_low_s": null,
+            "global_threshold_high_s": null
+          },
+          "newton_iterations": 25,
+          "linear_iterations": null,
+          "linear_iterations_status": "not emitted by unchanged executable",
+          "failure_or_retry_log_lines": [
+            " -- Newton.RetryTimeStepReductionFactor = 0.5"
+          ],
+          "solver_output_bytes": 254575874
+        },
+        "post_wall_s": 4.559728832915425,
+        "archive": {
+          "path": "/temp/zhixin/paper2_wp5_20261103_r02/F600-M1-bench_fields.tar.gz",
+          "bytes": 45487926,
+          "sha256": "5c23ea4f37d0c295632954860fae44a7e76e0d6119ea202c6925af65f39b12f4"
+        },
+        "files": {
+          "worker.log": {
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "bytes": 0
+          },
+          "F600-M1-bench.pvd": {
+            "sha256": "7893b79e7d98981cc6a97e0dba9a374645937362ff4a5ac05626f7a3e9dfe275",
+            "bytes": 1094
+          },
+          "solver_finished.json": {
+            "sha256": "a5d41b36e52aceb96b258e866ad04a62e81589f0b4d6669f3ed95c5ae4961100",
+            "bytes": 750
+          },
+          "stop_record.json": {
+            "sha256": "ce9dedabc2eccf8dbab582741c5f3c3031a92fc41c10fcbb5c941be09ff55412",
+            "bytes": 349
+          },
+          "solver.log": {
+            "sha256": "d918373895d81a87e4fd9438cfb29dd18aeafe7b08477b55d7522afde435d585",
+            "bytes": 7335
+          },
+          "eigenprofile.dat": {
+            "sha256": "d721e605d126e555f92b43200aa73b999ed4e2b61397edd1e98c0d9fddb36575",
+            "bytes": 153788
+          },
+          "transport_metadata.json": {
+            "sha256": "a34804046a2c9bbb693d4ccbd25889c5f6572211e8b4ef7937b0812cbcd113d6",
+            "bytes": 982
+          },
+          "transport_budget.csv": {
+            "sha256": "15d9f9abf8a99c03d42f2e2b70b4ef89a52f8551af9564f714a7c11c2520b8ad",
+            "bytes": 25639
+          },
+          "params.input": {
+            "sha256": "23af8175969b9269b2935a187ccc76497c3c11a5389cfed0680cd28af8ff4a7d",
+            "bytes": 1171
+          },
+          "started.json": {
+            "sha256": "6c24b1b962d806bc38b5b1a1092585a05ab5e86df03832ed54816c30284abd4c",
+            "bytes": 494
+          },
+          "F600-M1-bench_sigmatop.csv": {
+            "sha256": "a393d190bcd62efd73fedf55eb95de0cfe4732ed9b7c976148c03e1d577ed3fe",
+            "bytes": 1189
+          },
+          "plan.json": {
+            "sha256": "9bf0a31c8f16f5030f1c9722464539c230b7155b25e76a36d56db182804d93b2",
+            "bytes": 686
+          },
+          "surface_events.csv": {
+            "sha256": "45883b2c08953378da65727cbdd439b21b92b9b9ef040ad03fe7adaee8c69f60",
+            "bytes": 2269
+          },
+          "post.log": {
+            "sha256": "d800edb18bfc0b2617271c57a9c7fc29224fdea12bbf4f4d8fa263ec85af9f48",
+            "bytes": 681
+          },
+          "post/representative_fields.npz": {
+            "sha256": "d1788eddc29a1ba1dd86745d6deed500da92930d803111e632a447750009fb9d",
+            "bytes": 967335
+          },
+          "post/field_hashes.json": {
+            "sha256": "7be5dcc43741979d83b96eee0a5473de6186447995e569b7549b9b92f9865e3f",
+            "bytes": 2467
+          },
+          "post/profiles.npz": {
+            "sha256": "59badf40ab4a3410c2e5d2d404b6c066d6b27a173ca0829c3c6564ac6428d1a9",
+            "bytes": 22312
+          },
+          "post/weighted_diagnostics.csv": {
+            "sha256": "7f4097479d995ff2eb3a2b9097f99053925045bdb04ea310f40247368965a58d",
+            "bytes": 3882
+          },
+          "post/field_audit.json": {
+            "sha256": "dc61dbece5dd697f689f69959dddd0340c16c1bfb880f0df510ad943137010e9",
+            "bytes": 732
+          }
+        }
+      }
+    }
+  },
+  "manager": {
+    "state": {
+      "active": {},
+      "waiting": [],
+      "finished": {
+        "F600-M0-bench": 0,
+        "F600-M1-bench": 0
+      }
+    },
+    "resources": {
+      "cpus": [
+        0,
+        1
+      ],
+      "load": [
+        0.54541015625,
+        0.7470703125,
+        0.44482421875
+      ],
+      "lscpu": "# The following is the parsable format, which can be fed to other\n# programs. Each different item in every column has an unique ID\n# starting usually from zero.\n# CPU,Core,Socket\n0,0,0\n1,1,0\n2,2,0\n3,3,0\n4,4,0\n5,5,0\n6,6,0\n7,7,0\n8,8,0\n9,9,0\n10,10,0\n11,11,0\n12,0,0\n13,1,0\n14,2,0\n15,3,0\n16,4,0\n17,5,0\n18,6,0\n19,7,0\n20,8,0\n21,9,0\n22,10,0\n23,11,0\n"
+    },
+    "finished": {
+      "F600-M0-bench": 0,
+      "F600-M1-bench": 0
+    }
+  }
+}

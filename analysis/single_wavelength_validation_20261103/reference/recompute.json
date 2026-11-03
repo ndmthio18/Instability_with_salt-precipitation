@@ -1,0 +1,44 @@
+{
+  "M0": {
+    "frames": 13,
+    "vertices": 120801,
+    "cells": [
+      600,
+      200
+    ],
+    "width_m": 0.6,
+    "height_m": 0.2,
+    "physical_wave_number": 293.21531433504737,
+    "initial_field_error": 0.0,
+    "all_rho_pass": true,
+    "all_sw_pass": true,
+    "profile_sha256": "d721e605d126e555f92b43200aa73b999ed4e2b61397edd1e98c0d9fddb36575",
+    "input_sha256": "b2f8d4021918497d02dee97d46cd4af6be3f1a49f7d55dad4cc6ccf8f485aa67",
+    "postprocessor_sha256": "604ed2d5fbbe5d8aead1fba29c5da4461a5f748c1933e82cb3794cb463dbf3b4",
+    "npz_sha256": {
+      "profiles.npz": "0e49b748f3a82ceeafa2b21debc9e2fe5a8c872338ecb4fa786372c984a26b73",
+      "representative_fields.npz": "9808ad57dc53cbcfdbbf013e1c4e80ffb26bb1486b3aef1797cde39bf657a984"
+    }
+  },
+  "M1": {
+    "frames": 13,
+    "vertices": 120801,
+    "cells": [
+      600,
+      200
+    ],
+    "width_m": 0.6,
+    "height_m": 0.2,
+    "physical_wave_number": 293.21531433504737,
+    "initial_field_error": 5.637851296924623e-18,
+    "all_rho_pass": true,
+    "all_sw_pass": true,
+    "profile_sha256": "d721e605d126e555f92b43200aa73b999ed4e2b61397edd1e98c0d9fddb36575",
+    "input_sha256": "cdb9780397f7faeb820abe7bb1d0d28d5d20b4b752f97a5fd34de2b3addea8ad",
+    "postprocessor_sha256": "604ed2d5fbbe5d8aead1fba29c5da4461a5f748c1933e82cb3794cb463dbf3b4",
+    "npz_sha256": {
+      "profiles.npz": "b6b7ed0c347a4d202f6dc79576386429c22f2b5d7fc0b68b382040625c103482",
+      "representative_fields.npz": "26accbdd50787b3eee5f9253f2d2713ccf998b8b6962dbcd8dad6521c7e5272a"
+    }
+  }
+}

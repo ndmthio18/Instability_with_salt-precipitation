@@ -1,0 +1,3 @@
+run,host,stage,cells_x,vertices,scalar_unknowns,accepted_steps,wall_s,cpu_s,peak_rss_kib,newton_iterations,linear_iterations,linear_iterations_status,logged_failure_retry_lines,output_bytes,loop_first10_s,loop_total_s,post_and_archive_s
+R24-M0-full,frodo,full,24,5025,10050,600,81.22429629229009,79.660325,44812,1203,,not printed by unchanged ELF,0,530244071,1.4734,80.767,9.038738943636417
+R24-M1-full,frodo,full,24,5025,10050,600,81.67490650340915,80.19546100000001,45204,1204,,not printed by unchanged ELF,0,552909229,1.5236,81.228,10.031386025249958

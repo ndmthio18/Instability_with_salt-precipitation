@@ -1,0 +1,15 @@
+{
+  "retained_claim": {
+    "pid": 2784091,
+    "stage": "short",
+    "host": "frodo",
+    "names": [
+      "R24-M0-short",
+      "R24-M1-short",
+      "R48-M0-short",
+      "R48-M1-short"
+    ]
+  },
+  "log": "/usr/bin/python3: can't open file '/temp/zhixin/paper2_wp5_20261103_r02/single_wavelength_manager.py': [Errno 2] No such file or directory\n",
+  "orted": "#!/bin/sh\nexec /temp/zhixin/paper2_wp5_20261103_r02/bundle/lib/ld-linux-x86-64.so.2 --library-path /temp/zhixin/paper2_wp5_20261103_r02/bundle/lib /temp/zhixin/paper2_wp5_20261103_r02/bundle/bin/orted.real \"$@\"\n"
+}

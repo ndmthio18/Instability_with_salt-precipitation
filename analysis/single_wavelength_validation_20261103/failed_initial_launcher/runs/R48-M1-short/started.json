@@ -1,0 +1,16 @@
+{
+  "utc": "2026-11-03T14:22:33.300698+00:00",
+  "job": "frodo-managed-R48-M1-short",
+  "affinity": [
+    1
+  ],
+  "load": [
+    0.12109375,
+    0.1572265625,
+    0.17724609375
+  ],
+  "available_memory_bytes": 23811735552,
+  "elf_sha256": "d78ce5122cf69e4dee5a4d12bcc726779959f304b343246009cb45bb37e894cc",
+  "postprocessor_sha256": "604ed2d5fbbe5d8aead1fba29c5da4461a5f748c1933e82cb3794cb463dbf3b4",
+  "launcher_sha256": "2fbe5ca9f2891010c67be135a06bc7d3a48c5b60d98e2a2f150ca4febbf1a672"
+}

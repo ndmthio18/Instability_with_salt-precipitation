@@ -1,0 +1,954 @@
+{
+  "analysis/single_wavelength_validation_20261103/bench_archive.json": {
+    "sha256": "fb56bba2c7ffeacf272521e41e2e19f23aa33ca1aa581e140e2ade014daeada8",
+    "bytes": 803
+  },
+  "analysis/single_wavelength_validation_20261103/configuration_checks.json": {
+    "sha256": "8fff151652a454d44ca1c442d2c1e79eaa0e110e444d86e8a12017e0f751caec",
+    "bytes": 2477
+  },
+  "analysis/single_wavelength_validation_20261103/delivery_checks.json": {
+    "sha256": "d4845228246626dccfe47c42a6cd075178b4317eb991ad5eb58e1ab4fff8f4c8",
+    "bytes": 532
+  },
+  "analysis/single_wavelength_validation_20261103/execution_completion_provenance.json": {
+    "sha256": "41e9b7d80a97dea775533ca03918add3b57f38dc3b1bd195022b3c62822fad2a",
+    "bytes": 635
+  },
+  "analysis/single_wavelength_validation_20261103/failed_initial_launcher/frodo_launch_short.json": {
+    "sha256": "baee6316e6e8744dd6ae4804c81fe813badab37daafdb6046487bf256bda48e0",
+    "bytes": 166
+  },
+  "analysis/single_wavelength_validation_20261103/failed_initial_launcher/frodo_short_status.json": {
+    "sha256": "4b3b62f83da51d0066b3369362996096daf451f265515915605816c999e79222",
+    "bytes": 7767
+  },
+  "analysis/single_wavelength_validation_20261103/failed_initial_launcher/runs/R24-M0-short/eigenprofile.dat": {
+    "sha256": "d721e605d126e555f92b43200aa73b999ed4e2b61397edd1e98c0d9fddb36575",
+    "bytes": 153788
+  },
+  "analysis/single_wavelength_validation_20261103/failed_initial_launcher/runs/R24-M0-short/params.input": {
+    "sha256": "08f778a8baf6f1002c5fbf66f31e5f67b08861a50ed773e28c8aff838ee30217",
+    "bytes": 1121
+  },
+  "analysis/single_wavelength_validation_20261103/failed_initial_launcher/runs/R24-M0-short/plan.json": {
+    "sha256": "721a0bdab3409c167f7c0a4722e2e877a4054b0fd20dc50f021ca97b794915e0",
+    "bytes": 677
+  },
+  "analysis/single_wavelength_validation_20261103/failed_initial_launcher/runs/R24-M0-short/solver.log": {
+    "sha256": "3a7140631c2629ab906fcc8217382a7ad3f816684c7518c0e4541687dc9dd231",
+    "bytes": 2188
+  },
+  "analysis/single_wavelength_validation_20261103/failed_initial_launcher/runs/R24-M0-short/solver_finished.json": {
+    "sha256": "8ff96e1254fd28a9be2b6ca5cd179c772f895e01f4b6eadc5affdf14a91c3ec3",
+    "bytes": 887
+  },
+  "analysis/single_wavelength_validation_20261103/failed_initial_launcher/runs/R24-M0-short/started.json": {
+    "sha256": "7e4e44a98d6ae7bad8e6a70a2181d0821b9816f4234c29dd9dd15ba315e34015",
+    "bytes": 490
+  },
+  "analysis/single_wavelength_validation_20261103/failed_initial_launcher/runs/R24-M0-short/worker.log": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "analysis/single_wavelength_validation_20261103/failed_initial_launcher/runs/R24-M1-short/eigenprofile.dat": {
+    "sha256": "d721e605d126e555f92b43200aa73b999ed4e2b61397edd1e98c0d9fddb36575",
+    "bytes": 153788
+  },
+  "analysis/single_wavelength_validation_20261103/failed_initial_launcher/runs/R24-M1-short/params.input": {
+    "sha256": "5ab5db1a98d35bde8565e0f308661aaed54c03073dc2f9e60d5bbad86aa93bdc",
+    "bytes": 1170
+  },
+  "analysis/single_wavelength_validation_20261103/failed_initial_launcher/runs/R24-M1-short/plan.json": {
+    "sha256": "17f54af726ac04b3616308f66eb315d14b6507b8ce79ea518f1d1d9577db1bd1",
+    "bytes": 677
+  },
+  "analysis/single_wavelength_validation_20261103/failed_initial_launcher/runs/R24-M1-short/solver.log": {
+    "sha256": "929f1b5801f51e188c43719a7100e1a879737ce99cad3d5be9c0f9d3e66bd8a9",
+    "bytes": 2188
+  },
+  "analysis/single_wavelength_validation_20261103/failed_initial_launcher/runs/R24-M1-short/solver_finished.json": {
+    "sha256": "21019c3a54ed7c4a335a555b7a9a8023a64bb33a38afd5822872d3ef5d10e2e6",
+    "bytes": 874
+  },
+  "analysis/single_wavelength_validation_20261103/failed_initial_launcher/runs/R24-M1-short/started.json": {
+    "sha256": "9af80229014f4180a9200527b306e8ebe405a6b98eb47d49eb73767bc18ae44c",
+    "bytes": 490
+  },
+  "analysis/single_wavelength_validation_20261103/failed_initial_launcher/runs/R24-M1-short/worker.log": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "analysis/single_wavelength_validation_20261103/failed_initial_launcher/runs/R48-M0-short/eigenprofile.dat": {
+    "sha256": "d721e605d126e555f92b43200aa73b999ed4e2b61397edd1e98c0d9fddb36575",
+    "bytes": 153788
+  },
+  "analysis/single_wavelength_validation_20261103/failed_initial_launcher/runs/R48-M0-short/params.input": {
+    "sha256": "69c22f44aa56aaecf87d8b1aa73b0a4ea98af4c3bb685482d483cd3c1af9d70b",
+    "bytes": 1121
+  },
+  "analysis/single_wavelength_validation_20261103/failed_initial_launcher/runs/R48-M0-short/plan.json": {
+    "sha256": "0f24f3c1cbc380410d171ec160ec424cc9f9fa5f8551f2f74cf158ccc12d4300",
+    "bytes": 677
+  },
+  "analysis/single_wavelength_validation_20261103/failed_initial_launcher/runs/R48-M0-short/solver.log": {
+    "sha256": "cfe9f2d4bf03cdd908405bb60efcb6c10934b2cd98fb6d9b29a48a71e9b49c1d",
+    "bytes": 2188
+  },
+  "analysis/single_wavelength_validation_20261103/failed_initial_launcher/runs/R48-M0-short/solver_finished.json": {
+    "sha256": "a6ade668274ec19fec6e1ee427eb9d8e28386f16e1c01212836021b3bc8c6d93",
+    "bytes": 872
+  },
+  "analysis/single_wavelength_validation_20261103/failed_initial_launcher/runs/R48-M0-short/started.json": {
+    "sha256": "43f179b13003265a8b91aea68942e482b1139012361998206f69813956a6ab03",
+    "bytes": 490
+  },
+  "analysis/single_wavelength_validation_20261103/failed_initial_launcher/runs/R48-M0-short/worker.log": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "analysis/single_wavelength_validation_20261103/failed_initial_launcher/runs/R48-M1-short/eigenprofile.dat": {
+    "sha256": "d721e605d126e555f92b43200aa73b999ed4e2b61397edd1e98c0d9fddb36575",
+    "bytes": 153788
+  },
+  "analysis/single_wavelength_validation_20261103/failed_initial_launcher/runs/R48-M1-short/params.input": {
+    "sha256": "54adbb998e20fe60f3ca4aab16aabbfd21663e1ed92394fe557805332ca7e5cb",
+    "bytes": 1170
+  },
+  "analysis/single_wavelength_validation_20261103/failed_initial_launcher/runs/R48-M1-short/plan.json": {
+    "sha256": "abb8478fbf1b5a4fc0d41879549b1aaedd6b676fd0ba1b9677d247cb2b020ff9",
+    "bytes": 677
+  },
+  "analysis/single_wavelength_validation_20261103/failed_initial_launcher/runs/R48-M1-short/solver.log": {
+    "sha256": "05508d3d3caa7b61f7f46db0e07690cf1612998bfbf633488813211beeb04ff0",
+    "bytes": 2188
+  },
+  "analysis/single_wavelength_validation_20261103/failed_initial_launcher/runs/R48-M1-short/solver_finished.json": {
+    "sha256": "269d89f39f2357ebd252309c4ad7c9f14710f518b9a8115d20bb2376817be34d",
+    "bytes": 874
+  },
+  "analysis/single_wavelength_validation_20261103/failed_initial_launcher/runs/R48-M1-short/started.json": {
+    "sha256": "5eaf438237ed4dcda63bfbd93023c3db02051860ba3f05022233518755f2e1dc",
+    "bytes": 490
+  },
+  "analysis/single_wavelength_validation_20261103/failed_initial_launcher/runs/R48-M1-short/worker.log": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "analysis/single_wavelength_validation_20261103/Figure1_growth.pdf": {
+    "sha256": "9f33e9bf1a4aed5e411913214d77e87acd83413b0c8a6cd30e494f2755c7bba1",
+    "bytes": 20559
+  },
+  "analysis/single_wavelength_validation_20261103/Figure1_growth.png": {
+    "sha256": "404d32db3c122f353baf3b82cdfb79be110f3d91f651c682800a83482847217d",
+    "bytes": 204514
+  },
+  "analysis/single_wavelength_validation_20261103/Figure2_transport.pdf": {
+    "sha256": "c918b017cff57c89f33411f8ddf26f08b5dadec031530adfa961850eb22ac0d3",
+    "bytes": 50798
+  },
+  "analysis/single_wavelength_validation_20261103/Figure2_transport.png": {
+    "sha256": "b6aabc7f9c1116e66e4f9c44c71152da980221acc2b18c4768f353195a8f29bc",
+    "bytes": 374358
+  },
+  "analysis/single_wavelength_validation_20261103/Figure3_cost_accuracy.pdf": {
+    "sha256": "536ef1dea739e4e21f84f91af59e53136d57ef35d818c432fb139501aea3b9bb",
+    "bytes": 17001
+  },
+  "analysis/single_wavelength_validation_20261103/Figure3_cost_accuracy.png": {
+    "sha256": "e1c5a55556f0d0cb9cc75ee8260710410a720f73289b220cc64cd1074eaa896f",
+    "bytes": 159134
+  },
+  "analysis/single_wavelength_validation_20261103/frodo_bench_status.json": {
+    "sha256": "3f592a48f02ed692c4f592f30aea6d5fe95df538746baf5a0ece44c3857d67fb",
+    "bytes": 13982
+  },
+  "analysis/single_wavelength_validation_20261103/frodo_bundle_staged.json": {
+    "sha256": "af7dcb57b30311b916ed4e8e145818c10e150970b9fcbf3aa00f68f20f9d2a45",
+    "bytes": 216
+  },
+  "analysis/single_wavelength_validation_20261103/frodo_bundle_staged_r02.json": {
+    "sha256": "dc5a15fc778c563d10d6dcc7744460b8bf969f0354199fe85118904089a910ba",
+    "bytes": 216
+  },
+  "analysis/single_wavelength_validation_20261103/frodo_full_status.json": {
+    "sha256": "6690b4e942a72bd4d1e1625df793ade46b8fa381faeac0a4a600d439b901d7d6",
+    "bytes": 13998
+  },
+  "analysis/single_wavelength_validation_20261103/frodo_launch_bench.json": {
+    "sha256": "061959d640974c9187b23cfad4774234cb9c1e665cda71de16e24cd45e40da71",
+    "bytes": 126
+  },
+  "analysis/single_wavelength_validation_20261103/frodo_launch_full.json": {
+    "sha256": "50aa1454cc9d52e2ac3a694e6dfe0173f8a88ed5e8d4d7b7dc9612b8872b3bf2",
+    "bytes": 121
+  },
+  "analysis/single_wavelength_validation_20261103/frodo_launch_short.json": {
+    "sha256": "308a28baa2ed1a7db3ce41f2ead8db6813b2009d49db4f78a99518a6f3e9aada",
+    "bytes": 166
+  },
+  "analysis/single_wavelength_validation_20261103/frodo_short_status.json": {
+    "sha256": "c39036d4a865161d69ec9c4f2da50347f776c120386e258367a4fce0151d1ce0",
+    "bytes": 27251
+  },
+  "analysis/single_wavelength_validation_20261103/full_archive.json": {
+    "sha256": "7cd4992c9536821f804aa91dc4555deb86087600733984081120c606dfee07e9",
+    "bytes": 794
+  },
+  "analysis/single_wavelength_validation_20261103/full_differences.csv": {
+    "sha256": "9045f861029eb8435707a95bc49043d148791f695720ddf2c56e5a6477104ddc",
+    "bytes": 19539
+  },
+  "analysis/single_wavelength_validation_20261103/full_paired_transport.csv": {
+    "sha256": "270f6c106e13ef82283e1216aaf35328e9e459ee82e23dd7c446cefd733362de",
+    "bytes": 363064
+  },
+  "analysis/single_wavelength_validation_20261103/full_performance.csv": {
+    "sha256": "6916e35b9742670e88dcc247e342469922d31bd6f92f14309144a102027a7413",
+    "bytes": 557
+  },
+  "analysis/single_wavelength_validation_20261103/full_validation.json": {
+    "sha256": "349be0141f6fe4f21e88aadc479fa598a08eab54f28b38ccb112b61c45737cf8",
+    "bytes": 8210
+  },
+  "analysis/single_wavelength_validation_20261103/FULL_WINDOW_VALIDATION_ZH.md": {
+    "sha256": "e270825ea2578d5355c98f8ec400650e2e020d3fe36cc324b9592a8b1a07b4cf",
+    "bytes": 1407
+  },
+  "analysis/single_wavelength_validation_20261103/initial_sampling_bias.csv": {
+    "sha256": "490aef2907687247bdf87a4218222c32e3dfd00bc0ed42b9ace459f19ec9b58a",
+    "bytes": 430
+  },
+  "analysis/single_wavelength_validation_20261103/launcher_failure_diagnosis.json": {
+    "sha256": "a256bbefb910730db883a4edee6f9ff4fc86d233d1722fefa8fcf7c9966c515f",
+    "bytes": 591
+  },
+  "analysis/single_wavelength_validation_20261103/MATHEMATICAL_EQUIVALENCE_ZH.md": {
+    "sha256": "b3792c057b60c094a2603ef72e52ec429043361c14366b487e8f7499e956fcca",
+    "bytes": 2764
+  },
+  "analysis/single_wavelength_validation_20261103/MODEL_CONFIGURATION_ZH.md": {
+    "sha256": "dc6610d1d7b317bf7b6ae0e2cbeda8d51060b9cee529b7d304f656d67e90b6fc",
+    "bytes": 3315
+  },
+  "analysis/single_wavelength_validation_20261103/NEXT_STAGE_GO_NO_GO_ZH.md": {
+    "sha256": "ca0f8e536422da06cfb72a3de652f3613f6f9079ddb6fbf093e5b7ea67d8be77",
+    "bytes": 2869
+  },
+  "analysis/single_wavelength_validation_20261103/NUMERICAL_ACCURACY_ZH.md": {
+    "sha256": "e9f07e3abd7a7706997a837ce4bc455f78d60bd7872fdf63bc13fd581bc7c10e",
+    "bytes": 2196
+  },
+  "analysis/single_wavelength_validation_20261103/performance_all_runs.csv": {
+    "sha256": "7209e808aed526c3f5cd0f2f97cec4ca21f5ebf7b9c0f183f07b40863ad98b7f",
+    "bytes": 1608
+  },
+  "analysis/single_wavelength_validation_20261103/PERFORMANCE_BENCHMARK_ZH.md": {
+    "sha256": "292d28e225457919672b10bfdb19d7c8baace2c3d862b5e04f5c2592e6083389",
+    "bytes": 2265
+  },
+  "analysis/single_wavelength_validation_20261103/preregistration.json": {
+    "sha256": "0b578aead91dee3dd58138e0764f23079c7e4ebc3239a049df275beae79dc441",
+    "bytes": 1689
+  },
+  "analysis/single_wavelength_validation_20261103/reference/M0/field_audit.json": {
+    "sha256": "171d4f0831063ba4f277896f0c5350263dfd9159d78ee3e88bed51e102539c70",
+    "bytes": 734
+  },
+  "analysis/single_wavelength_validation_20261103/reference/M0/field_hashes.json": {
+    "sha256": "37a725f8eecba3aea95902fe1b764ab747b140118fc5dab81bf2f4039d3ca5b4",
+    "bytes": 3945
+  },
+  "analysis/single_wavelength_validation_20261103/reference/M0/weighted_diagnostics.csv": {
+    "sha256": "d1e9d8af1d675b8b4cdb5305b7e2e9191fd6592e3dccbcd9cfbc0d5e65322947",
+    "bytes": 4307
+  },
+  "analysis/single_wavelength_validation_20261103/reference/M1/field_audit.json": {
+    "sha256": "c73c0d86387c8742f0f6973ee1fdb969df97a5dcff84779f9534dc5644140f6f",
+    "bytes": 752
+  },
+  "analysis/single_wavelength_validation_20261103/reference/M1/field_hashes.json": {
+    "sha256": "cb8837e56228f0a08e12f702433f2801a89b74ed0abcfcb5dc73fa1e1c4d9e87",
+    "bytes": 3958
+  },
+  "analysis/single_wavelength_validation_20261103/reference/M1/weighted_diagnostics.csv": {
+    "sha256": "12a9e466643ac7530c3528e8fd701a3987433f01c1fd078df77336e6eb55ba14",
+    "bytes": 4539
+  },
+  "analysis/single_wavelength_validation_20261103/reference/recompute.json": {
+    "sha256": "605d5306fdb628d51e87a264b8953fc0e49252cda1d8f367e4453dec4d060abb",
+    "bytes": 1591
+  },
+  "analysis/single_wavelength_validation_20261103/reference_hashes.json": {
+    "sha256": "953188171cd56d9337000f3b27335bce092012421b83b9e391891b7c945f30bc",
+    "bytes": 1987
+  },
+  "analysis/single_wavelength_validation_20261103/runs/F600-M0-bench/eigenprofile.dat": {
+    "sha256": "d721e605d126e555f92b43200aa73b999ed4e2b61397edd1e98c0d9fddb36575",
+    "bytes": 153788
+  },
+  "analysis/single_wavelength_validation_20261103/runs/F600-M0-bench/F600-M0-bench_sigmatop.csv": {
+    "sha256": "e4fb2c9f306cdaf591596cd535c1c45585b61879015e6e01c8338544b66bb24f",
+    "bytes": 1189
+  },
+  "analysis/single_wavelength_validation_20261103/runs/F600-M0-bench/finished.json": {
+    "sha256": "ebb9025fd960a29ba033e475ae03e36dd205dcb1ff3b34910d9cb7ba6f5b495d",
+    "bytes": 3703
+  },
+  "analysis/single_wavelength_validation_20261103/runs/F600-M0-bench/params.input": {
+    "sha256": "566b57b3cb45af4c38fa045a3c2bd62edc9ed9f4f67f1ca1bf98988b7fbc019e",
+    "bytes": 1122
+  },
+  "analysis/single_wavelength_validation_20261103/runs/F600-M0-bench/plan.json": {
+    "sha256": "07ccf300b8dc7626d6053d97b0e2e087fe7c06328fcd712d2db7c8c939132662",
+    "bytes": 686
+  },
+  "analysis/single_wavelength_validation_20261103/runs/F600-M0-bench/post/field_audit.json": {
+    "sha256": "8198e2c874d9209e59e797765a85e35304f8c12642f3f1f025200fba32077e86",
+    "bytes": 714
+  },
+  "analysis/single_wavelength_validation_20261103/runs/F600-M0-bench/post/field_hashes.json": {
+    "sha256": "aa80cfe7cacd2b39425b3aaf604d11a103381b839eaaafecc408fe7ad62c6cae",
+    "bytes": 2467
+  },
+  "analysis/single_wavelength_validation_20261103/runs/F600-M0-bench/post/weighted_diagnostics.csv": {
+    "sha256": "ddc20e7a8f8a7ce12d4a7b57ab8aea3bf25679e799b70de134633a31cb453fbe",
+    "bytes": 3681
+  },
+  "analysis/single_wavelength_validation_20261103/runs/F600-M0-bench/post.log": {
+    "sha256": "81f12fecf36ad71589721fa3d92c628f2fe3fa8a02c595b2e4544e909f0eec51",
+    "bytes": 663
+  },
+  "analysis/single_wavelength_validation_20261103/runs/F600-M0-bench/solver.log": {
+    "sha256": "5f3d6eba32f96b5b2538911432742afa592a6aa39b8b57ce44615e844d03dc2c",
+    "bytes": 6990
+  },
+  "analysis/single_wavelength_validation_20261103/runs/F600-M0-bench/solver_finished.json": {
+    "sha256": "4a578a24698ae9e15aad2879932b9b690d7b78756e77c2c6947c4820f83f43de",
+    "bytes": 750
+  },
+  "analysis/single_wavelength_validation_20261103/runs/F600-M0-bench/started.json": {
+    "sha256": "3ff7593069f8329b885791d060eb5b86d13f9b33476d1bb90c94e6a2faa8d34c",
+    "bytes": 494
+  },
+  "analysis/single_wavelength_validation_20261103/runs/F600-M0-bench/stop_record.json": {
+    "sha256": "ce9dedabc2eccf8dbab582741c5f3c3031a92fc41c10fcbb5c941be09ff55412",
+    "bytes": 349
+  },
+  "analysis/single_wavelength_validation_20261103/runs/F600-M0-bench/surface_events.csv": {
+    "sha256": "ff2800cfdae2aff4f222cb3cb0974ce4de9b455fa3b19af91395b5bc4aa85225",
+    "bytes": 2296
+  },
+  "analysis/single_wavelength_validation_20261103/runs/F600-M0-bench/transport_budget.csv": {
+    "sha256": "d624fe8533b0573d72276c6f2ac597b02b795a91abfd3fe121834fe7befba726",
+    "bytes": 25641
+  },
+  "analysis/single_wavelength_validation_20261103/runs/F600-M0-bench/transport_metadata.json": {
+    "sha256": "a34804046a2c9bbb693d4ccbd25889c5f6572211e8b4ef7937b0812cbcd113d6",
+    "bytes": 982
+  },
+  "analysis/single_wavelength_validation_20261103/runs/F600-M0-bench/worker.log": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "analysis/single_wavelength_validation_20261103/runs/F600-M1-bench/eigenprofile.dat": {
+    "sha256": "d721e605d126e555f92b43200aa73b999ed4e2b61397edd1e98c0d9fddb36575",
+    "bytes": 153788
+  },
+  "analysis/single_wavelength_validation_20261103/runs/F600-M1-bench/F600-M1-bench_sigmatop.csv": {
+    "sha256": "a393d190bcd62efd73fedf55eb95de0cfe4732ed9b7c976148c03e1d577ed3fe",
+    "bytes": 1189
+  },
+  "analysis/single_wavelength_validation_20261103/runs/F600-M1-bench/finished.json": {
+    "sha256": "17b22fea1184aaef48416d76992d73181576fa2bfe2ce8ad70eb90f4e73d1af9",
+    "bytes": 3704
+  },
+  "analysis/single_wavelength_validation_20261103/runs/F600-M1-bench/params.input": {
+    "sha256": "23af8175969b9269b2935a187ccc76497c3c11a5389cfed0680cd28af8ff4a7d",
+    "bytes": 1171
+  },
+  "analysis/single_wavelength_validation_20261103/runs/F600-M1-bench/plan.json": {
+    "sha256": "9bf0a31c8f16f5030f1c9722464539c230b7155b25e76a36d56db182804d93b2",
+    "bytes": 686
+  },
+  "analysis/single_wavelength_validation_20261103/runs/F600-M1-bench/post/field_audit.json": {
+    "sha256": "dc61dbece5dd697f689f69959dddd0340c16c1bfb880f0df510ad943137010e9",
+    "bytes": 732
+  },
+  "analysis/single_wavelength_validation_20261103/runs/F600-M1-bench/post/field_hashes.json": {
+    "sha256": "7be5dcc43741979d83b96eee0a5473de6186447995e569b7549b9b92f9865e3f",
+    "bytes": 2467
+  },
+  "analysis/single_wavelength_validation_20261103/runs/F600-M1-bench/post/weighted_diagnostics.csv": {
+    "sha256": "7f4097479d995ff2eb3a2b9097f99053925045bdb04ea310f40247368965a58d",
+    "bytes": 3882
+  },
+  "analysis/single_wavelength_validation_20261103/runs/F600-M1-bench/post.log": {
+    "sha256": "d800edb18bfc0b2617271c57a9c7fc29224fdea12bbf4f4d8fa263ec85af9f48",
+    "bytes": 681
+  },
+  "analysis/single_wavelength_validation_20261103/runs/F600-M1-bench/solver.log": {
+    "sha256": "d918373895d81a87e4fd9438cfb29dd18aeafe7b08477b55d7522afde435d585",
+    "bytes": 7335
+  },
+  "analysis/single_wavelength_validation_20261103/runs/F600-M1-bench/solver_finished.json": {
+    "sha256": "a5d41b36e52aceb96b258e866ad04a62e81589f0b4d6669f3ed95c5ae4961100",
+    "bytes": 750
+  },
+  "analysis/single_wavelength_validation_20261103/runs/F600-M1-bench/started.json": {
+    "sha256": "6c24b1b962d806bc38b5b1a1092585a05ab5e86df03832ed54816c30284abd4c",
+    "bytes": 494
+  },
+  "analysis/single_wavelength_validation_20261103/runs/F600-M1-bench/stop_record.json": {
+    "sha256": "ce9dedabc2eccf8dbab582741c5f3c3031a92fc41c10fcbb5c941be09ff55412",
+    "bytes": 349
+  },
+  "analysis/single_wavelength_validation_20261103/runs/F600-M1-bench/surface_events.csv": {
+    "sha256": "45883b2c08953378da65727cbdd439b21b92b9b9ef040ad03fe7adaee8c69f60",
+    "bytes": 2269
+  },
+  "analysis/single_wavelength_validation_20261103/runs/F600-M1-bench/transport_budget.csv": {
+    "sha256": "15d9f9abf8a99c03d42f2e2b70b4ef89a52f8551af9564f714a7c11c2520b8ad",
+    "bytes": 25639
+  },
+  "analysis/single_wavelength_validation_20261103/runs/F600-M1-bench/transport_metadata.json": {
+    "sha256": "a34804046a2c9bbb693d4ccbd25889c5f6572211e8b4ef7937b0812cbcd113d6",
+    "bytes": 982
+  },
+  "analysis/single_wavelength_validation_20261103/runs/F600-M1-bench/worker.log": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "analysis/single_wavelength_validation_20261103/runs/R24-M0-full/eigenprofile.dat": {
+    "sha256": "d721e605d126e555f92b43200aa73b999ed4e2b61397edd1e98c0d9fddb36575",
+    "bytes": 153788
+  },
+  "analysis/single_wavelength_validation_20261103/runs/R24-M0-full/finished.json": {
+    "sha256": "dab19e058c0cd4fa4242d66def4f888ceb766d6186121c2ee618dfbe1b383298",
+    "bytes": 3712
+  },
+  "analysis/single_wavelength_validation_20261103/runs/R24-M0-full/params.input": {
+    "sha256": "ff055858f9b8f681849d4f738cac446bc4062c6be6a8ccbc7a05c5ec5ee51235",
+    "bytes": 1119
+  },
+  "analysis/single_wavelength_validation_20261103/runs/R24-M0-full/plan.json": {
+    "sha256": "ee45e4e2140f373312480ac5ddf2034fbbbd72833d90bd5c3ad4b03af9c4e7f9",
+    "bytes": 842
+  },
+  "analysis/single_wavelength_validation_20261103/runs/R24-M0-full/post/field_audit.json": {
+    "sha256": "3de9d0ad28dd8e31b7bd66b244d39c492fd97661219e3d6c12d89ae208d89c62",
+    "bytes": 726
+  },
+  "analysis/single_wavelength_validation_20261103/runs/R24-M0-full/post/field_hashes.json": {
+    "sha256": "dbf1b4609ccfdbce1081477d36c610857526ae8d95ea5f7846d66023af3f27ba",
+    "bytes": 132112
+  },
+  "analysis/single_wavelength_validation_20261103/runs/R24-M0-full/post/weighted_diagnostics.csv": {
+    "sha256": "34e5d37a28ab6f0d092e9aba4a341f49df13ea460a1120fbef48f510076032c2",
+    "bytes": 190801
+  },
+  "analysis/single_wavelength_validation_20261103/runs/R24-M0-full/post.log": {
+    "sha256": "cd8cd0e55b84bea85d9cf112851d5bdfdd72f86f6eee6989733a62e7fa633a4e",
+    "bytes": 675
+  },
+  "analysis/single_wavelength_validation_20261103/runs/R24-M0-full/R24-M0-full_sigmatop.csv": {
+    "sha256": "8b80ec15ef258275367e9af2b65658382f8bb6c3125c173aa594706eec372397",
+    "bytes": 58998
+  },
+  "analysis/single_wavelength_validation_20261103/runs/R24-M0-full/solver.log": {
+    "sha256": "76b5fb6f8d8d4acdcf2528b0e287cd719aeedc09a64da4652363639cd70a9124",
+    "bytes": 352147
+  },
+  "analysis/single_wavelength_validation_20261103/runs/R24-M0-full/solver_finished.json": {
+    "sha256": "0f63b64f2202e811f28b8df71c125580576d22507b1352901eccd68f170f1ab3",
+    "bytes": 752
+  },
+  "analysis/single_wavelength_validation_20261103/runs/R24-M0-full/started.json": {
+    "sha256": "0a5c476ae8842e26ec4de55dad924784be5527ad04cdd2521e403d5e26017ea7",
+    "bytes": 489
+  },
+  "analysis/single_wavelength_validation_20261103/runs/R24-M0-full/stop_record.json": {
+    "sha256": "e6544f78930587bd8607d955a4d751aa59e59ee6b5b26f7fa1ada1b6b108d7c6",
+    "bytes": 348
+  },
+  "analysis/single_wavelength_validation_20261103/runs/R24-M0-full/surface_events.csv": {
+    "sha256": "b1b20f496f083f08d3e0b201e0b8b2240d0f498c44a53873a22825f9735105af",
+    "bytes": 117514
+  },
+  "analysis/single_wavelength_validation_20261103/runs/R24-M0-full/transport_budget.csv": {
+    "sha256": "f594e79732be5b98aefdfaecf28f2efcd133c7ed600b169b2dec20db03858729",
+    "bytes": 1432667
+  },
+  "analysis/single_wavelength_validation_20261103/runs/R24-M0-full/transport_metadata.json": {
+    "sha256": "a34804046a2c9bbb693d4ccbd25889c5f6572211e8b4ef7937b0812cbcd113d6",
+    "bytes": 982
+  },
+  "analysis/single_wavelength_validation_20261103/runs/R24-M0-full/worker.log": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "analysis/single_wavelength_validation_20261103/runs/R24-M0-short/eigenprofile.dat": {
+    "sha256": "d721e605d126e555f92b43200aa73b999ed4e2b61397edd1e98c0d9fddb36575",
+    "bytes": 153788
+  },
+  "analysis/single_wavelength_validation_20261103/runs/R24-M0-short/finished.json": {
+    "sha256": "894d4548c4b6f8d0b69aeb9da02654bfcd8f283e90db645d073dfff6be68b117",
+    "bytes": 3709
+  },
+  "analysis/single_wavelength_validation_20261103/runs/R24-M0-short/params.input": {
+    "sha256": "08f778a8baf6f1002c5fbf66f31e5f67b08861a50ed773e28c8aff838ee30217",
+    "bytes": 1121
+  },
+  "analysis/single_wavelength_validation_20261103/runs/R24-M0-short/plan.json": {
+    "sha256": "721a0bdab3409c167f7c0a4722e2e877a4054b0fd20dc50f021ca97b794915e0",
+    "bytes": 677
+  },
+  "analysis/single_wavelength_validation_20261103/runs/R24-M0-short/post/field_audit.json": {
+    "sha256": "36cf655283b9e67cb2433d372369744fb465e8b6f4a4549928088306baa46974",
+    "bytes": 726
+  },
+  "analysis/single_wavelength_validation_20261103/runs/R24-M0-short/post/field_hashes.json": {
+    "sha256": "c304f22c9281c18ed9674f55e8b81d006d2f2a4220701b519f52a283a7189bbd",
+    "bytes": 66714
+  },
+  "analysis/single_wavelength_validation_20261103/runs/R24-M0-short/post/weighted_diagnostics.csv": {
+    "sha256": "960816c2819b8327422de47cbae35fea4c1e39714d06945c238a0e7e6d612863",
+    "bytes": 95706
+  },
+  "analysis/single_wavelength_validation_20261103/runs/R24-M0-short/post.log": {
+    "sha256": "04f22f7b99d879c7e64be010ee7abfedf056bd4daf01e09529e8f6e30f45acfe",
+    "bytes": 675
+  },
+  "analysis/single_wavelength_validation_20261103/runs/R24-M0-short/R24-M0-short_sigmatop.csv": {
+    "sha256": "0b8a0f7d339108679a61e2e99ceac898c357a09ea84799753f5f73dd13be9b05",
+    "bytes": 29598
+  },
+  "analysis/single_wavelength_validation_20261103/runs/R24-M0-short/solver.log": {
+    "sha256": "d4091c4858a3b70605c78d16113d836a3458bb183380082f18fced3db8fb7b52",
+    "bytes": 176557
+  },
+  "analysis/single_wavelength_validation_20261103/runs/R24-M0-short/solver_finished.json": {
+    "sha256": "7209ced3a01659581b029a0c7d73495fffd34b712d6d40417e5b855496ebfaf9",
+    "bytes": 750
+  },
+  "analysis/single_wavelength_validation_20261103/runs/R24-M0-short/started.json": {
+    "sha256": "1cbe2aa5763e09a637cb9b3e61444abbf3f4d6b3646e09ffe05a37a632354541",
+    "bytes": 490
+  },
+  "analysis/single_wavelength_validation_20261103/runs/R24-M0-short/stop_record.json": {
+    "sha256": "00df58929890f9f9f96b1c5f3d21bd0705b15886355e968db0d450c6847d61fa",
+    "bytes": 350
+  },
+  "analysis/single_wavelength_validation_20261103/runs/R24-M0-short/surface_events.csv": {
+    "sha256": "3cd0139775e630abd09abd4f1726ec0e3bc5097f576378506a60afc35846595d",
+    "bytes": 59255
+  },
+  "analysis/single_wavelength_validation_20261103/runs/R24-M0-short/transport_budget.csv": {
+    "sha256": "93198488002d0f11b257873bd0f73d13f09ce61b93d87c3827eaa332baf0234a",
+    "bytes": 717183
+  },
+  "analysis/single_wavelength_validation_20261103/runs/R24-M0-short/transport_metadata.json": {
+    "sha256": "a34804046a2c9bbb693d4ccbd25889c5f6572211e8b4ef7937b0812cbcd113d6",
+    "bytes": 982
+  },
+  "analysis/single_wavelength_validation_20261103/runs/R24-M0-short/worker.log": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "analysis/single_wavelength_validation_20261103/runs/R24-M1-full/eigenprofile.dat": {
+    "sha256": "d721e605d126e555f92b43200aa73b999ed4e2b61397edd1e98c0d9fddb36575",
+    "bytes": 153788
+  },
+  "analysis/single_wavelength_validation_20261103/runs/R24-M1-full/finished.json": {
+    "sha256": "65aea5670d341693f48c4227ac3d10679d3f32ef53c7e925fb10dfc38f459aff",
+    "bytes": 3722
+  },
+  "analysis/single_wavelength_validation_20261103/runs/R24-M1-full/params.input": {
+    "sha256": "33b5d680cc2407e2f341485e7c0f149767e31a3da0509587c83f2a6130b56924",
+    "bytes": 1168
+  },
+  "analysis/single_wavelength_validation_20261103/runs/R24-M1-full/plan.json": {
+    "sha256": "02c9a7d0831303305da0a0d7e8319f6511c8a38272454cafe1ed7c921a75fa68",
+    "bytes": 842
+  },
+  "analysis/single_wavelength_validation_20261103/runs/R24-M1-full/post/field_audit.json": {
+    "sha256": "1a28846dbb9525514a280f20312de0ad0ac9a04c2e20a7a505640526703d6095",
+    "bytes": 744
+  },
+  "analysis/single_wavelength_validation_20261103/runs/R24-M1-full/post/field_hashes.json": {
+    "sha256": "1d48f5c21558ca6442aefe06fecb31b326963a192543d2dc735c764d153f1533",
+    "bytes": 132112
+  },
+  "analysis/single_wavelength_validation_20261103/runs/R24-M1-full/post/weighted_diagnostics.csv": {
+    "sha256": "4e51486940ab73fa851bcaa946c74133dcfa870fa97d0c12a1e7e9a96abcb495",
+    "bytes": 213589
+  },
+  "analysis/single_wavelength_validation_20261103/runs/R24-M1-full/post.log": {
+    "sha256": "11f64c7d2725a605dbb5b63d978fb7b6128ca560325562fce9294ca24ae7c0ab",
+    "bytes": 693
+  },
+  "analysis/single_wavelength_validation_20261103/runs/R24-M1-full/R24-M1-full_sigmatop.csv": {
+    "sha256": "652630f850e19fb6380d6791bf404f0f63a81ba2d57f50749f7d34d476a4860c",
+    "bytes": 58998
+  },
+  "analysis/single_wavelength_validation_20261103/runs/R24-M1-full/solver.log": {
+    "sha256": "9127d14da80cffd90b252455753082ba3b889fe9236e3d4b8a486462e7d6d5ce",
+    "bytes": 352250
+  },
+  "analysis/single_wavelength_validation_20261103/runs/R24-M1-full/solver_finished.json": {
+    "sha256": "9ceece1b2d456638e3b8c0b82cab37f6642f924a0eeb6f0c101e29345e6ef99e",
+    "bytes": 760
+  },
+  "analysis/single_wavelength_validation_20261103/runs/R24-M1-full/started.json": {
+    "sha256": "c20a46d0a4cc6ccf236a38695bf430b1bb1c5e907885262003481d81da66513b",
+    "bytes": 489
+  },
+  "analysis/single_wavelength_validation_20261103/runs/R24-M1-full/stop_record.json": {
+    "sha256": "e6544f78930587bd8607d955a4d751aa59e59ee6b5b26f7fa1ada1b6b108d7c6",
+    "bytes": 348
+  },
+  "analysis/single_wavelength_validation_20261103/runs/R24-M1-full/surface_events.csv": {
+    "sha256": "0b10f6a704daf399b0c62fabf19f84b12c957231c132db607a8c0fd710352290",
+    "bytes": 117461
+  },
+  "analysis/single_wavelength_validation_20261103/runs/R24-M1-full/transport_budget.csv": {
+    "sha256": "fdc5c7c08baf8bf4390d649d8c8dcddcb838bc6949b676a7187d564a1b5cc86b",
+    "bytes": 1438953
+  },
+  "analysis/single_wavelength_validation_20261103/runs/R24-M1-full/transport_metadata.json": {
+    "sha256": "a34804046a2c9bbb693d4ccbd25889c5f6572211e8b4ef7937b0812cbcd113d6",
+    "bytes": 982
+  },
+  "analysis/single_wavelength_validation_20261103/runs/R24-M1-full/worker.log": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "analysis/single_wavelength_validation_20261103/runs/R24-M1-short/eigenprofile.dat": {
+    "sha256": "d721e605d126e555f92b43200aa73b999ed4e2b61397edd1e98c0d9fddb36575",
+    "bytes": 153788
+  },
+  "analysis/single_wavelength_validation_20261103/runs/R24-M1-short/finished.json": {
+    "sha256": "c2e4e5b068bc5dc24c4d33eb3d4304bf2d2d47c393ef2c7daf3ff7e8fb7900d4",
+    "bytes": 3711
+  },
+  "analysis/single_wavelength_validation_20261103/runs/R24-M1-short/params.input": {
+    "sha256": "5ab5db1a98d35bde8565e0f308661aaed54c03073dc2f9e60d5bbad86aa93bdc",
+    "bytes": 1170
+  },
+  "analysis/single_wavelength_validation_20261103/runs/R24-M1-short/plan.json": {
+    "sha256": "17f54af726ac04b3616308f66eb315d14b6507b8ce79ea518f1d1d9577db1bd1",
+    "bytes": 677
+  },
+  "analysis/single_wavelength_validation_20261103/runs/R24-M1-short/post/field_audit.json": {
+    "sha256": "1d9c82e089dc246d41a6850e316867092ba1fccc95a171e92ad88510bbbb72b5",
+    "bytes": 744
+  },
+  "analysis/single_wavelength_validation_20261103/runs/R24-M1-short/post/field_hashes.json": {
+    "sha256": "b6e4940b28f9e22816d55843d445f5f14751d73248563cc0f458c2c6524dc220",
+    "bytes": 66714
+  },
+  "analysis/single_wavelength_validation_20261103/runs/R24-M1-short/post/weighted_diagnostics.csv": {
+    "sha256": "f8a5e5215acf8303924f75d5891042d6489035a3b38969c14779c5bdfb518a77",
+    "bytes": 106872
+  },
+  "analysis/single_wavelength_validation_20261103/runs/R24-M1-short/post.log": {
+    "sha256": "7ef4646c1b6783ccf8cf29896e457678e916bf28b1ad62d4ac3d7cae2272b204",
+    "bytes": 693
+  },
+  "analysis/single_wavelength_validation_20261103/runs/R24-M1-short/R24-M1-short_sigmatop.csv": {
+    "sha256": "fae1ee155aaf8614a3f3a96f6e82552a9775b0a85df386b4145db9369f00a72f",
+    "bytes": 29598
+  },
+  "analysis/single_wavelength_validation_20261103/runs/R24-M1-short/solver.log": {
+    "sha256": "e578336267924808ce86d545ea9c73541e100c001bc91a17a052a8a7b932d26b",
+    "bytes": 176717
+  },
+  "analysis/single_wavelength_validation_20261103/runs/R24-M1-short/solver_finished.json": {
+    "sha256": "46a35b82bd0bb73f3e1a4aefb46a99a4e9578b488f3a6e1293bcf43567fa805b",
+    "bytes": 751
+  },
+  "analysis/single_wavelength_validation_20261103/runs/R24-M1-short/started.json": {
+    "sha256": "6cf56eae0ccb0fe43275268873850fb4f3675c07d36fc43ac5fedb449f5afff8",
+    "bytes": 490
+  },
+  "analysis/single_wavelength_validation_20261103/runs/R24-M1-short/stop_record.json": {
+    "sha256": "00df58929890f9f9f96b1c5f3d21bd0705b15886355e968db0d450c6847d61fa",
+    "bytes": 350
+  },
+  "analysis/single_wavelength_validation_20261103/runs/R24-M1-short/surface_events.csv": {
+    "sha256": "5e27d6b461f9ba44ae08652a8f794e1cab2ae99fa33a2bcd2c23fccde60e358c",
+    "bytes": 59186
+  },
+  "analysis/single_wavelength_validation_20261103/runs/R24-M1-short/transport_budget.csv": {
+    "sha256": "8b86be4c9cdabe561e4e73cf8af274818de3b0e14a7c3530477978fc138df400",
+    "bytes": 720430
+  },
+  "analysis/single_wavelength_validation_20261103/runs/R24-M1-short/transport_metadata.json": {
+    "sha256": "a34804046a2c9bbb693d4ccbd25889c5f6572211e8b4ef7937b0812cbcd113d6",
+    "bytes": 982
+  },
+  "analysis/single_wavelength_validation_20261103/runs/R24-M1-short/worker.log": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "analysis/single_wavelength_validation_20261103/runs/R48-M0-short/eigenprofile.dat": {
+    "sha256": "d721e605d126e555f92b43200aa73b999ed4e2b61397edd1e98c0d9fddb36575",
+    "bytes": 153788
+  },
+  "analysis/single_wavelength_validation_20261103/runs/R48-M0-short/finished.json": {
+    "sha256": "0674206f75547101fb4315207164b6565eece277a504b01f03e00b0da0e2eb49",
+    "bytes": 3716
+  },
+  "analysis/single_wavelength_validation_20261103/runs/R48-M0-short/params.input": {
+    "sha256": "69c22f44aa56aaecf87d8b1aa73b0a4ea98af4c3bb685482d483cd3c1af9d70b",
+    "bytes": 1121
+  },
+  "analysis/single_wavelength_validation_20261103/runs/R48-M0-short/plan.json": {
+    "sha256": "0f24f3c1cbc380410d171ec160ec424cc9f9fa5f8551f2f74cf158ccc12d4300",
+    "bytes": 677
+  },
+  "analysis/single_wavelength_validation_20261103/runs/R48-M0-short/post/field_audit.json": {
+    "sha256": "3ee765c7dda4e758b994bc01dfb950c867cc18b56329c11315ac08b6e5f1e8c2",
+    "bytes": 726
+  },
+  "analysis/single_wavelength_validation_20261103/runs/R48-M0-short/post/field_hashes.json": {
+    "sha256": "7ecd73862a96d7de35b35b1a1ae4e7dc32ef7af364c9047d49cba1fc66cf73b4",
+    "bytes": 67015
+  },
+  "analysis/single_wavelength_validation_20261103/runs/R48-M0-short/post/weighted_diagnostics.csv": {
+    "sha256": "757a959bc396c40ad02b0416d628400d16a8bc2cbda880987046c04921a31590",
+    "bytes": 95852
+  },
+  "analysis/single_wavelength_validation_20261103/runs/R48-M0-short/post.log": {
+    "sha256": "98673963d8a0241b69b7441a694bcc340fd0b356183a8df95941139f9a794082",
+    "bytes": 675
+  },
+  "analysis/single_wavelength_validation_20261103/runs/R48-M0-short/R48-M0-short_sigmatop.csv": {
+    "sha256": "c834decae631f685554c24bff02c47b7e8083b53ba4213e8d450de6f08523d6b",
+    "bytes": 29598
+  },
+  "analysis/single_wavelength_validation_20261103/runs/R48-M0-short/solver.log": {
+    "sha256": "b8884da5ae79d122fa3e210d38b0ef5294fa582e10fda347d69e51f013723e46",
+    "bytes": 176012
+  },
+  "analysis/single_wavelength_validation_20261103/runs/R48-M0-short/solver_finished.json": {
+    "sha256": "76042abd5e044f31c7bf1ba366c4544e75f28cdff14b8d7e118397482bbeed95",
+    "bytes": 757
+  },
+  "analysis/single_wavelength_validation_20261103/runs/R48-M0-short/started.json": {
+    "sha256": "b8f43a172b8aa2b333cd74ac3596e91740083972851a528a134ef7946e7f8b5d",
+    "bytes": 492
+  },
+  "analysis/single_wavelength_validation_20261103/runs/R48-M0-short/stop_record.json": {
+    "sha256": "00df58929890f9f9f96b1c5f3d21bd0705b15886355e968db0d450c6847d61fa",
+    "bytes": 350
+  },
+  "analysis/single_wavelength_validation_20261103/runs/R48-M0-short/surface_events.csv": {
+    "sha256": "4763bf52a505035cfd220faba5b72061a1007e278404f735093cd65e24fc8917",
+    "bytes": 59252
+  },
+  "analysis/single_wavelength_validation_20261103/runs/R48-M0-short/transport_budget.csv": {
+    "sha256": "f9f8df8231f871890ce6ac7665459353ac269162a83fc36c2377224268db8679",
+    "bytes": 717893
+  },
+  "analysis/single_wavelength_validation_20261103/runs/R48-M0-short/transport_metadata.json": {
+    "sha256": "a34804046a2c9bbb693d4ccbd25889c5f6572211e8b4ef7937b0812cbcd113d6",
+    "bytes": 982
+  },
+  "analysis/single_wavelength_validation_20261103/runs/R48-M0-short/worker.log": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "analysis/single_wavelength_validation_20261103/runs/R48-M1-short/eigenprofile.dat": {
+    "sha256": "d721e605d126e555f92b43200aa73b999ed4e2b61397edd1e98c0d9fddb36575",
+    "bytes": 153788
+  },
+  "analysis/single_wavelength_validation_20261103/runs/R48-M1-short/finished.json": {
+    "sha256": "fa1f417d722188aeb1709caeb9cb85d4ba68ca7ae45876af5c01d5dbb3654a52",
+    "bytes": 3711
+  },
+  "analysis/single_wavelength_validation_20261103/runs/R48-M1-short/params.input": {
+    "sha256": "54adbb998e20fe60f3ca4aab16aabbfd21663e1ed92394fe557805332ca7e5cb",
+    "bytes": 1170
+  },
+  "analysis/single_wavelength_validation_20261103/runs/R48-M1-short/plan.json": {
+    "sha256": "abb8478fbf1b5a4fc0d41879549b1aaedd6b676fd0ba1b9677d247cb2b020ff9",
+    "bytes": 677
+  },
+  "analysis/single_wavelength_validation_20261103/runs/R48-M1-short/post/field_audit.json": {
+    "sha256": "27d4029bba3446dd6a23add4e3bd223313e05636b8acc464a8027a589af60fe5",
+    "bytes": 744
+  },
+  "analysis/single_wavelength_validation_20261103/runs/R48-M1-short/post/field_hashes.json": {
+    "sha256": "0df0fd7e72fe641d01912935160c8b3033d2e7919d4a6d1758a111b5e96b83ac",
+    "bytes": 67015
+  },
+  "analysis/single_wavelength_validation_20261103/runs/R48-M1-short/post/weighted_diagnostics.csv": {
+    "sha256": "fb7840629dcfb35646579d126126f0ce193bedd8d3de2ca29a4363f3eca4fc73",
+    "bytes": 107056
+  },
+  "analysis/single_wavelength_validation_20261103/runs/R48-M1-short/post.log": {
+    "sha256": "3b25466426a8a003ac064a17e31fae621073418232ffc26f8932637cc962cda9",
+    "bytes": 693
+  },
+  "analysis/single_wavelength_validation_20261103/runs/R48-M1-short/R48-M1-short_sigmatop.csv": {
+    "sha256": "4dba19067a7a08a7afee32dd1ff7ef40ebf8caa62209e0c57075026b81082d64",
+    "bytes": 29598
+  },
+  "analysis/single_wavelength_validation_20261103/runs/R48-M1-short/solver.log": {
+    "sha256": "d6b230cbcaaf9073c8abe13800cd8b2062b0f1237adfed12ae547554d289ed2a",
+    "bytes": 176218
+  },
+  "analysis/single_wavelength_validation_20261103/runs/R48-M1-short/solver_finished.json": {
+    "sha256": "ca7ab593dca282f208bc013f9d04b91ea29b6a9c2f33b75274e612d3c49fa465",
+    "bytes": 750
+  },
+  "analysis/single_wavelength_validation_20261103/runs/R48-M1-short/started.json": {
+    "sha256": "ef241bcbf0d4796f1335c85c8395022af3233c2cd979484f82f865df52caae74",
+    "bytes": 492
+  },
+  "analysis/single_wavelength_validation_20261103/runs/R48-M1-short/stop_record.json": {
+    "sha256": "00df58929890f9f9f96b1c5f3d21bd0705b15886355e968db0d450c6847d61fa",
+    "bytes": 350
+  },
+  "analysis/single_wavelength_validation_20261103/runs/R48-M1-short/surface_events.csv": {
+    "sha256": "b30d03a05cd501a7af471ed72048932d47fc80811e9bc65b022c70d9889d5896",
+    "bytes": 59204
+  },
+  "analysis/single_wavelength_validation_20261103/runs/R48-M1-short/transport_budget.csv": {
+    "sha256": "297e9f64163a98f31e68b25ad38f3c52651ca1339b5596fe5b545460cc954337",
+    "bytes": 716495
+  },
+  "analysis/single_wavelength_validation_20261103/runs/R48-M1-short/transport_metadata.json": {
+    "sha256": "a34804046a2c9bbb693d4ccbd25889c5f6572211e8b4ef7937b0812cbcd113d6",
+    "bytes": 982
+  },
+  "analysis/single_wavelength_validation_20261103/runs/R48-M1-short/worker.log": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "analysis/single_wavelength_validation_20261103/sal_cancelled_before_start.json": {
+    "sha256": "2505961f5760d46e8dbed04c7194260e3a7a84d1c2f43432211294ae6bfe780f",
+    "bytes": 155
+  },
+  "analysis/single_wavelength_validation_20261103/short.sbatch": {
+    "sha256": "796a31c3a2594951558d1349dbf3fb75fe8af23f96158fd9087743a1896b8256",
+    "bytes": 607
+  },
+  "analysis/single_wavelength_validation_20261103/short_archive.json": {
+    "sha256": "853780cd971d3e3e91728a90a59c369efed4b82bd6c1ef21371fdc1fc916f979",
+    "bytes": 1596
+  },
+  "analysis/single_wavelength_validation_20261103/short_differences.csv": {
+    "sha256": "4798d04f462c188a23d9e24ca4f3fbce40bce0bb0ee2bcb84e59195d8cbfb06d",
+    "bytes": 20947
+  },
+  "analysis/single_wavelength_validation_20261103/short_latest_status.json": {
+    "sha256": "7206043174fc45b0b36973476ac7a8b698ad7a85891208eac5b8e3c803f11d2e",
+    "bytes": 271
+  },
+  "analysis/single_wavelength_validation_20261103/short_paired_transport.csv": {
+    "sha256": "d778b31da02cb0844fde9785d8006d65cf04bbd298fbb10b030c1dbc20208c98",
+    "bytes": 365886
+  },
+  "analysis/single_wavelength_validation_20261103/short_performance.csv": {
+    "sha256": "949bb2f73ca3bcea72e7782ec565a3fd9e557df8b38731fdb3d575d8dba67bd9",
+    "bytes": 868
+  },
+  "analysis/single_wavelength_validation_20261103/short_resource_preflight.json": {
+    "sha256": "67dedc117825f635aa147f2acf1b92950611ab7939d30812bbe54c70082385dc",
+    "bytes": 3808
+  },
+  "analysis/single_wavelength_validation_20261103/short_scheduler_limit_update.json": {
+    "sha256": "54a00d741fcd6f95ef50c6cb999bd4849ca62ca7aba9d08073903885c8a4a713",
+    "bytes": 534
+  },
+  "analysis/single_wavelength_validation_20261103/short_validation.json": {
+    "sha256": "afe65f03b4ec49f1b419add71ed3af61e6def35b627fdff419ba7465b2dd28b5",
+    "bytes": 15580
+  },
+  "analysis/single_wavelength_validation_20261103/SHORT_WINDOW_VALIDATION_ZH.md": {
+    "sha256": "75230dcd42973c9317d149a87ffe873ba229c75f3c63ec2707b0d968f15d82fd",
+    "bytes": 1290
+  },
+  "analysis/single_wavelength_validation_20261103/staging_failure_retained.json": {
+    "sha256": "3aed25963bc2bff253b2ee00090af6ebcce02c5d803ad2bf82cff5895b599614",
+    "bytes": 597
+  },
+  "analysis/single_wavelength_validation_20261103/submission_short.json": {
+    "sha256": "a1560e39ca8e201ff6d761204ec41c000ff6adf7adb38d16cc4e1108417c7768",
+    "bytes": 114
+  },
+  "analysis/single_wavelength_validation_20261103/test_results.json": {
+    "sha256": "88d6c2d28f14c71cfb25ea6c98a57a334ea62d08724e98a6bc31cbd4175c4811",
+    "bytes": 71
+  },
+  "analysis/single_wavelength_validation_20261103/timing_control_preregistration.json": {
+    "sha256": "e45336c8332f775b49a590e55f3d0307d484c8c104c4c35867f3e26ac77f69e8",
+    "bytes": 597
+  },
+  "analysis/single_wavelength_validation_20261103/VALIDITY_LIMITATIONS_ZH.md": {
+    "sha256": "1367c437633cb103b0ec2d67bbd60770c2abfb8641c5ecd7592a9f9ea255883a",
+    "bytes": 1995
+  },
+  "analysis/unperturbed_36877_20261102/evidence/finished.json": {
+    "sha256": "ca137fa7893280359eafae1be47eff00a47f83a8c9446dce05c675556b97952d",
+    "bytes": 4127
+  },
+  "command/5.md": {
+    "sha256": "e0f212d6e718268668704279a4a9b812957e79f7454052eae9d0f29af1717e35",
+    "bytes": 12618
+  },
+  "scripts/analyze_single_wavelength.py": {
+    "sha256": "08a4d4541416b89871448f1765fd7eec65b542cf7d1345d5165b3ce987f653c9",
+    "bytes": 11522
+  },
+  "scripts/check_single_wavelength.py": {
+    "sha256": "4b575f337a3a1a121608552ca6a084751f0802ef090b74fef971aef1167df9ec",
+    "bytes": 1870
+  },
+  "scripts/prepare_single_wavelength_benchmark.py": {
+    "sha256": "14e89152f212727cd53252a00958469aaf1173d706e0a0d8b72fc40ce8c06e8d",
+    "bytes": 2076
+  },
+  "scripts/report_single_wavelength.py": {
+    "sha256": "87ad4fd7e22fd4ad02b8358e6b81e821162092efb436f7016ba88e75ef63f22d",
+    "bytes": 22813
+  },
+  "scripts/single_wavelength_campaign.py": {
+    "sha256": "3539ae3acc0548c1ba8083eb1702a7f9f49ee1ec90ed19be34501f55f478366b",
+    "bytes": 6034
+  },
+  "scripts/single_wavelength_frodo.py": {
+    "sha256": "7f52f151df715455526ea6db4dbc856e2afe6ef5fd95e891f4006729f46015f9",
+    "bytes": 7222
+  },
+  "scripts/single_wavelength_frodo_worker.py": {
+    "sha256": "49965dd54681a137cea0681cf71af0eebfa7dca590003f6e8c5e2075a8146884",
+    "bytes": 3812
+  },
+  "scripts/single_wavelength_manager.py": {
+    "sha256": "13262aa2c1a414c25d26bf3bdf90adeda8743163504f584d012e271161af81a3",
+    "bytes": 1591
+  },
+  "scripts/single_wavelength_post.py": {
+    "sha256": "604ed2d5fbbe5d8aead1fba29c5da4461a5f748c1933e82cb3794cb463dbf3b4",
+    "bytes": 5166
+  },
+  "scripts/single_wavelength_reference.py": {
+    "sha256": "feb13d2011b22c10a4cf1cb7c005012164bfe3ef69e16bbb97af059d9eb2d55a",
+    "bytes": 1749
+  },
+  "scripts/single_wavelength_worker.py": {
+    "sha256": "e006594567d13714e7cb876443c84907b7566499616a37f3de91db3d4a695d50",
+    "bytes": 3766
+  },
+  "scripts/test_single_wavelength.py": {
+    "sha256": "c057b6a1ee25c220e2dbec87f3bc86037f596e9f7a2d2f581d20500eb053d9d8",
+    "bytes": 3908
+  },
+  "scripts/verify_single_wavelength_delivery.py": {
+    "sha256": "f91dceaaddede234d46ca4f2359fb95c507519b0cc418d303ed6226ebf7048df",
+    "bytes": 2827
+  }
+}
