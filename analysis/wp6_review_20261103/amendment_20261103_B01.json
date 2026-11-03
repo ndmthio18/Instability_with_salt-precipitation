@@ -1,0 +1,22 @@
+{
+  "id": "20261103-B01",
+  "created_utc": "2026-11-03T16:42:19.120693+00:00",
+  "authority": "command/8.md Task1",
+  "base_commit": "6e8e03428779dd1f64134cc5878c9f9ebb03e927",
+  "purpose": "one bounded M0 dt/2 control to separate timestep dependence from unresolved background symmetry mechanisms",
+  "allowed_runs": 1,
+  "T_s": 272846.1275446968,
+  "dt_s": 113.68588647695695,
+  "per_leg_wall_s": 43200,
+  "baseline_threshold_unchanged": 1e-12,
+  "new_symmetry_threshold": null,
+  "forbidden": [
+    "4T",
+    "8T",
+    "full domain",
+    "nx60",
+    "second diagnostic solver run"
+  ],
+  "baseline_input_sha256": "65b33f57bf4e58aeb0061753bc6cfda76e2cd653e966902a05534badc7d16bc7",
+  "elf_sha256": "112076759fdff0942000307f729c2bd3c7e96963229b43c1b67c1f12bbf9df81"
+}

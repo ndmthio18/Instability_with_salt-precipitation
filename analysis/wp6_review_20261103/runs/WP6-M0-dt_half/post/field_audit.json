@@ -1,0 +1,21 @@
+{
+  "frames": 2401,
+  "vertices": 5025,
+  "cells": [
+    24,
+    200
+  ],
+  "width_m": 0.0214285714285714,
+  "height_m": 0.2,
+  "physical_wave_number": 293.2153143350477,
+  "initial_field_error": 0.0,
+  "all_rho_pass": true,
+  "all_sw_pass": true,
+  "profile_sha256": "d721e605d126e555f92b43200aa73b999ed4e2b61397edd1e98c0d9fddb36575",
+  "input_sha256": "eb5684c6a1916214ab701f0007a03ca1739188db1ea256396294ea53b78b3c9f",
+  "postprocessor_sha256": "604ed2d5fbbe5d8aead1fba29c5da4461a5f748c1933e82cb3794cb463dbf3b4",
+  "npz_sha256": {
+    "profiles.npz": "dc69c39bce62901fc2d8e7418d3d656ab2a23046380aa56ec36bb0ae3b4eac83",
+    "representative_fields.npz": "ffdc3d3a23faa12be34981e532baef86d711140ef19476bd8a18525fa68b45d0"
+  }
+}

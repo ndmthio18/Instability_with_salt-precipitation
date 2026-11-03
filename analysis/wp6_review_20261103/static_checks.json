@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "allowed_input_diff": [
+    "Problem.Name",
+    "TimeLoop.DtInitial",
+    "TimeLoop.MaxTimeStepSize"
+  ],
+  "same_ELF": true,
+  "same_grid": true,
+  "same_threshold": true,
+  "only_one_run": true
+}

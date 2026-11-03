@@ -1,0 +1,14 @@
+{
+  "id": "WP6-M0-dt_half",
+  "role": "M0",
+  "stage": "dt_half",
+  "T_s": 272846.1275446968,
+  "input_sha256": "eb5684c6a1916214ab701f0007a03ca1739188db1ea256396294ea53b78b3c9f",
+  "profile_sha256": "d721e605d126e555f92b43200aa73b999ed4e2b61397edd1e98c0d9fddb36575",
+  "elf_sha256": "112076759fdff0942000307f729c2bd3c7e96963229b43c1b67c1f12bbf9df81",
+  "preregistration_sha256": "943357edfafd99a5188a1e8fe828f7441fbe1f46a207adf4ad3b22e5bd42a5d6",
+  "nx_cells": 24,
+  "nz_cells": 200,
+  "DOF_vertices": 5025,
+  "scalar_unknowns": 10050
+}

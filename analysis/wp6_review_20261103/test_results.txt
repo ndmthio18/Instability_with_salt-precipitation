@@ -1,0 +1,27 @@
+test_both_censored_full_pipeline (__main__.PostprocessorIntegrationTests.test_both_censored_full_pipeline) ... ok
+test_different_events_full_pipeline (__main__.PostprocessorIntegrationTests.test_different_events_full_pipeline) ... ok
+test_empty_prethreshold_full_pipeline (__main__.PostprocessorIntegrationTests.test_empty_prethreshold_full_pipeline) ... ok
+test_m0_first_full_pipeline (__main__.PostprocessorIntegrationTests.test_m0_first_full_pipeline) ... ok
+test_m1_first_full_pipeline (__main__.PostprocessorIntegrationTests.test_m1_first_full_pipeline) ... ok
+test_adaptive_no_interpolation (__main__.StoppingTests.test_adaptive_no_interpolation) ... ok
+test_both_censored_different_horizons (__main__.StoppingTests.test_both_censored_different_horizons) ... ok
+test_censor_bounds (__main__.StoppingTests.test_censor_bounds) ... ok
+test_crossing_overshoot_excluded (__main__.StoppingTests.test_crossing_overshoot_excluded) ... ok
+test_event_types_separate (__main__.StoppingTests.test_event_types_separate) ... ok
+test_initial_crossing_empty_comparison (__main__.StoppingTests.test_initial_crossing_empty_comparison) ... ok
+test_initial_surface_event_interval (__main__.StoppingTests.test_initial_surface_event_interval) ... ok
+test_m0_first (__main__.StoppingTests.test_m0_first) ... ok
+test_m1_first (__main__.StoppingTests.test_m1_first) ... ok
+test_near_but_not_shared_times (__main__.StoppingTests.test_near_but_not_shared_times) ... ok
+test_reject_bad_time_dt (__main__.StoppingTests.test_reject_bad_time_dt) ... ok
+test_reject_continuation_after_crossing (__main__.StoppingTests.test_reject_continuation_after_crossing) ... ok
+test_reject_failed_exit (__main__.StoppingTests.test_reject_failed_exit) ... ok
+test_reject_invalid_stop (__main__.StoppingTests.test_reject_invalid_stop) ... ok
+test_reject_missing_bracket (__main__.StoppingTests.test_reject_missing_bracket) ... ok
+test_reject_missing_budget_state (__main__.StoppingTests.test_reject_missing_budget_state) ... ok
+test_terminal_tolerance_does_not_snap_accepted_time (__main__.StoppingTests.test_terminal_tolerance_does_not_snap_accepted_time) ... ok
+
+----------------------------------------------------------------------
+Ran 22 tests in 0.494s
+
+OK

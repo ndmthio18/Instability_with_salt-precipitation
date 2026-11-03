@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "rows": 9608,
+  "shared_states": 1201,
+  "maximum_absolute_differences": {
+    "time_s": 0,
+    "initial_difference_m": 0,
+    "corrected_inventory_difference_m": 0,
+    "delta_C_m": 0,
+    "relative_delta_C_initial_inventory": 0,
+    "delta_C_adv_m": 0,
+    "delta_C_diff_m": 0,
+    "M0_signed_cut_total": 0,
+    "M1_signed_cut_total": 0,
+    "residual_envelope_m": 0,
+    "identity_error_m": 0,
+    "candidate_threshold_m": 0
+  },
+  "old_pair_sha256": "7eb176d309e084e77a50a193b30812f95679ea10f2575a080b849ea0f96d1750",
+  "frozen_files_modified": false
+}
