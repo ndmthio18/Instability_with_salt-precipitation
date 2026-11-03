@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "id": "WP7-E05",
+  "created_local": "2026-11-03T20:31:00+01:00",
+  "timing": "before R48 4T submission",
+  "authority": "User explicitly instructed: 不用担心计算资源，就是按要求执行",
+  "interpretation": "The user overrides the prior storage-resource NO-GO and authorizes the frozen R48 M0/M1 4T pair on the currently available sal scratch tier.",
+  "unchanged": [
+    "Case 36877 physical and constitutive parameters",
+    "single wavelength width and true physical wavenumber",
+    "R48 by 200 grid",
+    "dt/2 and 4T horizon",
+    "M0 amplitude 0 and M1 amplitude 1e-6",
+    "seven locked conservative planes",
+    "solubility stopping and 7200 s per-job wall limit"
+  ],
+  "execution": {
+    "host": "sal",
+    "scheduler": "Slurm",
+    "parallelism": "two independent jobs, one physical core and one rank per leg",
+    "scratch_root": "/tmp/zhixin_paper2_wp7_shortwave_20261103_r01",
+    "minimum_free_scratch_bytes_at_each_start": 64424509440,
+    "stage_out": "archive each completed leg and immediately transfer it locally with SHA-256 and per-VTU verification"
+  },
+  "scope_boundary": "This authorization does not launch R96, multiwave, full-domain, or 8T runs and does not define t_eff or crystallization-delay labels."
+}

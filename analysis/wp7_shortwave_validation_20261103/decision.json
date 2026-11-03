@@ -1,14 +1,18 @@
 {
-  "scope": "command/11 only",
-  "R48_4T_pair": "NO-GO: cost admitted but registered durable-storage gate failed",
-  "R96": "NO-GO",
-  "multiwave": "NO-GO",
-  "later_8T": "NO-GO",
-  "background_model": "partially verified: profiles, budgets and closure pass; strict 1e-14 lateral-range gate fails",
-  "R24_R48_late_wavelength": "unresolved because R48 3T-4T data do not exist",
-  "local_scvf": "implementation compiled and conservative bridge passed; late-time mechanism pending",
+  "scope": "command/11 completed R48 pair",
+  "complete_4T": true,
+  "numerical_acceptance": true,
+  "spectral_convergence": false,
+  "growth_convergence_20pct": false,
+  "near_resolution_limit": false,
+  "quantitative_transport_convergence": false,
+  "R96": "PROPOSE_ONLY_NO_GO; full run exceeds current 2 h per-leg cap",
+  "multiwave": "NO-GO pending converged background/symmetry and local mechanism",
+  "later_8T": "NO-GO pending R48/R96 decision and threshold interpretation",
   "t_eff": null,
   "crystallization_delay_label": null,
   "training_labels_created": false,
-  "next_gate": "provide >=200 GiB durable writable storage with >=20% filesystem free, then run the frozen R48 M0/M1 4T pair and archive each leg immediately"
+  "R96_cost_benchmark_completed": true,
+  "R96_projected_pair_core_h": 7.243240055617773,
+  "R96_projected_worker_wall_s_per_leg": 13037.832100111991
 }

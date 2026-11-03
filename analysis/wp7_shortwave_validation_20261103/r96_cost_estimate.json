@@ -1,0 +1,10 @@
+{
+  "benchmark_solver_wall_s": 25.646979548037052,
+  "seconds_per_step": 2.564697954803705,
+  "projected_solver_wall_s_per_leg": 12310.550183057785,
+  "projected_post_archive_wall_s_per_leg": 727.2819170542061,
+  "projected_worker_wall_s_per_leg": 13037.832100111991,
+  "projected_pair_core_h": 7.243240055617773,
+  "method": "R96 10-step linear solver extrapolation plus twice measured worst R48 post/archive with 25 percent margin",
+  "authorization": "cost evidence only; no full R96 launch"
+}

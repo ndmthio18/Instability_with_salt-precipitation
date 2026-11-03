@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "id": "WP7-E06",
+  "timing": "before viewing R48 late-time results",
+  "purpose": "Measure, but do not launch, the cost basis for a possible R96 validation.",
+  "trigger": "Run one R96 M1 ten-step benchmark only if R48 changes the dominant physical wavelength by more than 10 percent, changes the top-three mode ordering, or leaves the dominant wavelength below 12 cells.",
+  "benchmark": {
+    "case_id": 36877,
+    "nx_cells": 96,
+    "nz_cells": 200,
+    "steps": 10,
+    "dt_s": 113.68588647695695,
+    "amplitude": 1e-6,
+    "hard_wall_s": 600,
+    "rank_and_core": "one rank, one physical core"
+  },
+  "admission_use": "Extrapolate 4800-step solver cost and conservatively scale measured R48 post/archive cost by two. This is a planning estimate, not authorization for a full R96 pair.",
+  "forbidden": "No R96 long run, R96 M0, multiwave, or 8T run is authorized by this trigger."
+}

@@ -7,6 +7,7 @@ OUT=ROOT/'analysis/wp7_shortwave_validation_20261103'
 CACHE=ROOT/'tmp/wp7_shortwave_validation_20261103'
 REMOTE='/tmp/zhixin_paper2_wp7_shortwave_20261103_r01'
 RUNS=['WP7-R48-M1-bench10','WP7-1D-background-T']
+R48_RUNS=['WP7-R48-M0-4T','WP7-R48-M1-4T']
 
 def sha(path): return hashlib.sha256(path.read_bytes()).hexdigest()
 def run(args,**kwargs): return subprocess.run(args,check=True,text=True,**kwargs)
@@ -106,6 +107,64 @@ def collect_retry():
     finally:shutil.copy2(backup,original)
     shutil.move(OUT/'sal_collect_preflight.json',OUT/'sal_collect_preflight_retry.json')
 
+def stage_r48():
+    authorization=OUT/'user_authorization_E05.json';auth_sha=sha(authorization)
+    relocation_sha=sha(OUT/'runtime_relocation_E03.json')
+    probe=json.loads(ssh(f"python3 - <<'PY'\nimport json,os\nfrom pathlib import Path\nr=Path('{REMOTE}');print(json.dumps(dict(free_disk_bytes=os.statvfs(r).f_bavail*os.statvfs(r).f_frsize,available_memory_bytes=int(next(x.split()[1] for x in Path('/proc/meminfo').read_text().splitlines() if x.startswith('MemAvailable:')))*1024)))\nPY",True))
+    assert probe['free_disk_bytes']>60*1024**3 and probe['available_memory_bytes']>16*1024**3
+    scp(authorization,f'sal:{REMOTE}/user_authorization_E05.json')
+    for name in R48_RUNS:
+        local=OUT/'runs'/name;plan=json.loads((local/'plan.json').read_text())
+        plan['minimum_free_disk_bytes']=60*1024**3;plan['runtime_relocation_sha256']=relocation_sha;plan['user_authorization_sha256']=auth_sha
+        save(local/'plan.json',plan)
+        exists=ssh(f"test -e {REMOTE}/runs/{name} && echo yes || true",True).strip();assert not exists,name
+        ssh(f'mkdir -p {REMOTE}/runs/{name}')
+        for filename in ['params.input','plan.json','eigenprofile.dat']:
+            scp(local/filename,f'sal:{REMOTE}/runs/{name}/{filename}')
+    probe.update(runs=R48_RUNS,user_authorization_sha256=auth_sha,runtime_relocation_sha256=relocation_sha)
+    save(OUT/'sal_stage_r48.json',probe);print(json.dumps(probe,indent=2))
+
+def submit_r48():
+    assert (OUT/'sal_stage_r48.json').exists();jobs={}
+    for name in R48_RUNS:
+        raw=ssh(f"cd {REMOTE} && sbatch --parsable --time=02:00:00 --job-name={name} wp7_sal_job.sh {REMOTE} {name}",True).strip();jobs[name]=raw.split(';')[0]
+    save(OUT/'sal_jobs_r48.json',jobs);print(json.dumps(jobs,indent=2))
+
+def status_r48():
+    jobs=json.loads((OUT/'sal_jobs_r48.json').read_text());ids=','.join(jobs.values())
+    queue=ssh(f"squeue -h -j {ids} -o '%i|%T|%M|%R' || true",True)
+    details={job:ssh(f'scontrol show job {job} 2>/dev/null || true',True) for job in jobs.values()}
+    progress={}
+    for name in R48_RUNS:
+        raw=ssh(f"python3 - <<'PY'\nimport json\nfrom pathlib import Path\nd=Path('{REMOTE}/runs/{name}');out={{}}\nfor n in ['started.json','solver_finished.json','finished.json','failure.json','stop_record.json']:\n p=d/n\n if p.exists():\n  try:out[n]=json.loads(p.read_text())\n  except Exception:out[n]={{'invalid':True}}\nprint(json.dumps(out))\nPY",True)
+        progress[name]=json.loads(raw)
+    result=dict(jobs=jobs,queue=queue.splitlines(),details=details,progress=progress);save(OUT/'sal_status_r48.json',result);print(json.dumps(result,indent=2))
+
+def collect_r48():
+    jobs=json.loads((OUT/'sal_jobs_r48.json').read_text());receipt_path=OUT/'sal_collect_r48.json'
+    receipts=load_json(receipt_path) if receipt_path.exists() else {'runs':{}}
+    for name in R48_RUNS:
+        if receipts['runs'].get(name,{}).get('complete'):continue
+        remote_run=f'{REMOTE}/runs/{name}'
+        state=ssh(f"test -f {remote_run}/finished.json && echo finished || (test -f {remote_run}/solver_finished.json && echo solver_finished || echo active)",True).strip()
+        if state=='active':receipts['runs'][name]={'complete':False,'state':'active'};continue
+        with tempfile.TemporaryDirectory() as td:
+            meta=Path(td)/f'{name}_metadata.tar.gz';ssh(f"cd {remote_run} && tar --exclude='*.vtu' -czf {REMOTE}/{name}_metadata.tar.gz .");scp(f'sal:{REMOTE}/{name}_metadata.tar.gz',meta)
+            local=OUT/'runs'/name
+            with tarfile.open(meta) as tar:tar.extractall(local,filter='data')
+        if not (local/'finished.json').exists():receipts['runs'][name]={'complete':False,'state':'failed','solver':json.loads((local/'solver_finished.json').read_text())};continue
+        archive_info=json.loads((local/'finished.json').read_text())['archive'];target=CACHE/f'{name}_fields.tar.gz';scp(f"sal:{archive_info['path']}",target);assert sha(target)==archive_info['sha256']
+        expected={Path(x['path']).name:x['sha256'] for x in json.loads((local/'post/field_hashes.json').read_text())};seen=set()
+        with tarfile.open(target,'r|gz') as tar:
+            for item in tar:
+                if item.name in expected:
+                    f=tar.extractfile(item);assert f and hashlib.file_digest(f,'sha256').hexdigest()==expected[item.name];seen.add(item.name)
+        assert seen==set(expected);receipts['runs'][name]=dict(complete=True,state='archived',archive_sha256=sha(target),verified_vtu=len(seen),local_archive=str(target))
+        save(receipt_path,receipts)
+    save(receipt_path,receipts);print(json.dumps(receipts,indent=2))
+
+def load_json(path):return json.loads(path.read_text())
+
 def status():
     jobs=json.loads((OUT/'sal_jobs_preflight.json').read_text())
     ids=','.join(jobs.values())
@@ -146,5 +205,5 @@ def collect():
     save(OUT/'sal_collect_preflight.json',dict(accounting=accounting.splitlines(),runs=receipts));print(json.dumps(receipts,indent=2))
 
 if __name__=='__main__':
-    parser=argparse.ArgumentParser();parser.add_argument('action',choices=['stage','submit','status','collect','repair','submit_retry','status_retry','collect_retry']);args=parser.parse_args()
+    parser=argparse.ArgumentParser();parser.add_argument('action',choices=['stage','submit','status','collect','repair','submit_retry','status_retry','collect_retry','stage_r48','submit_r48','status_r48','collect_r48']);args=parser.parse_args()
     globals()[args.action]()

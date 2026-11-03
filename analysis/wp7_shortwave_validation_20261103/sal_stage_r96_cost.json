@@ -1,0 +1,20 @@
+{
+  "triggered": true,
+  "trigger_decision": {
+    "scope": "command/11 completed R48 pair",
+    "complete_4T": true,
+    "numerical_acceptance": true,
+    "spectral_convergence": false,
+    "growth_convergence_20pct": false,
+    "near_resolution_limit": false,
+    "quantitative_transport_convergence": false,
+    "R96": "PROPOSE_ONLY_NO_GO",
+    "multiwave": "NO-GO pending converged background/symmetry and local mechanism",
+    "later_8T": "NO-GO pending R48/R96 decision and threshold interpretation",
+    "t_eff": null,
+    "crystallization_delay_label": null,
+    "training_labels_created": false
+  },
+  "input_sha256": "0addb895e498b42253efc6f2046ac73d14e20b1617389db5c4a65aecfa39f2ec",
+  "trigger_sha256": "592b24eec31de307c9730fed2d3eb121393a229ed235edd8ed9bc252676e8792"
+}

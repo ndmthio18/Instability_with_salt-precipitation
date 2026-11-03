@@ -13,5 +13,8 @@
   "elf_sha256": "112076759fdff0942000307f729c2bd3c7e96963229b43c1b67c1f12bbf9df81",
   "preregistration_sha256": "d1d9331ba7e3bd83e2fc2fa689c445a1caf3ee5ed6f2296a75561576c93862cf",
   "hard_wall_limit_s": 7200,
-  "source_input_sha256": "3efe64ff862c7bf1281b5f4e8d64e021b0073b36093b8a5a423a390e7dd7e880"
+  "source_input_sha256": "3efe64ff862c7bf1281b5f4e8d64e021b0073b36093b8a5a423a390e7dd7e880",
+  "minimum_free_disk_bytes": 64424509440,
+  "runtime_relocation_sha256": "47931fd4f4ed1e34ae911ba79a4034abb4da8062782f87a92b3b294ca559fe08",
+  "user_authorization_sha256": "2785cc745ec800592a8815846d25285cdd7053f7c009594f92a2cd1923dfe745"
 }
