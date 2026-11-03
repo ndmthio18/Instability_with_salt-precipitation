@@ -1,0 +1,16 @@
+Reading parameters from file params.input.
+Computed bounding box tree with 399 nodes for 200 grid entities in 4.1799e-05 seconds.
+Writing output for problem "WP8-v2-forced_failure". Took 0.0024 seconds.
+Colored 200 elements with 2 colors in 6.355e-05 seconds.
+
+Newton solver configured with the following options and parameters:
+ -- Newton.EnableShiftCriterion = true (relative shift convergence criterion)
+ -- Newton.MaxRelativeShift = 1e-08
+ -- Newton.MinSteps = 2
+ -- Newton.MaxSteps = 18
+ -- Newton.TargetSteps = 10
+ -- Newton.RetryTimeStepReductionFactor = 0.5
+ -- Newton.MaxTimeStepDivisions = 10
+
+WP8_V2 step=1 iteration=0 accepted=0 scaled=1.46042e-08 salt_budget=4.36703e-18 water_budget=3.48509e-07
+Paper 2 run failed: WP8 v2 rejected Newton step; no acceptance

@@ -1,0 +1,19 @@
+{
+  "returncode": 0,
+  "trigger": null,
+  "solver_and_live_audit_wall_s": 1.5339510440826416,
+  "total_wall_s": 1.5790553092956543,
+  "cpu": 18,
+  "peak_child_rss_kib": 32312,
+  "frames": 11,
+  "raw_field_bytes": 604743,
+  "archive": {
+    "path": "/temp/zhixin/paper2_wp8_newton_correction_20261103/late_scaled_16/fields.tar.gz",
+    "sha256": "110aa2fd5c2a922b7c044e0ee2a2b76fe75b7dd352b7d4bf0eb14a1a297163a3",
+    "bytes": 138792
+  },
+  "archive_budget_pass": true,
+  "elf_sha256": "216a01603e73a2ddd7ae19828aa3d75ebffc595e856b71c8099770c974e191b3",
+  "input_sha256": "44c3e5d75308d2bcbda67cf1630f7998b02c37d04bdb8867b86db1d90c775419",
+  "worker_sha256": "b144808da6a6b997f8dc375c3bc50d4b0f7cc73b5bc86ebec457e026162ff966"
+}

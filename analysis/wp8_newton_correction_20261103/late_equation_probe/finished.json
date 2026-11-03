@@ -1,0 +1,19 @@
+{
+  "returncode": 0,
+  "trigger": null,
+  "solver_and_live_audit_wall_s": 1.0117390155792236,
+  "total_wall_s": 1.0239331722259521,
+  "cpu": 19,
+  "peak_child_rss_kib": 32332,
+  "frames": 2,
+  "raw_field_bytes": 109956,
+  "archive": {
+    "path": "/temp/zhixin/paper2_wp8_newton_correction_20261103/late_equation_probe/fields.tar.gz",
+    "sha256": "efa3b3cbf240f21aa1a42b78f51f16688d60af335eec058623b2f57c71511707",
+    "bytes": 25447
+  },
+  "archive_budget_pass": true,
+  "elf_sha256": "2b85a06608875e4b639142717a8c527fa4241b817ce9e7fb3739c98b9b14846b",
+  "input_sha256": "dba608997d5920d66758e9ffe924462975023de1e26f67d8a953c3d434fa6d49",
+  "worker_sha256": "b144808da6a6b997f8dc375c3bc50d4b0f7cc73b5bc86ebec457e026162ff966"
+}

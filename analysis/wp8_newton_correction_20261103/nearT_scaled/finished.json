@@ -1,0 +1,19 @@
+{
+  "returncode": 0,
+  "trigger": null,
+  "solver_and_live_audit_wall_s": 1.539468765258789,
+  "total_wall_s": 1.5840704441070557,
+  "cpu": 18,
+  "peak_child_rss_kib": 32356,
+  "frames": 11,
+  "raw_field_bytes": 594596,
+  "archive": {
+    "path": "/temp/zhixin/paper2_wp8_newton_correction_20261103/nearT_scaled/fields.tar.gz",
+    "sha256": "9d5031dea85a9803e105414ac29c03722332c1ebc752fc800e9462550e2aa988",
+    "bytes": 134166
+  },
+  "archive_budget_pass": true,
+  "elf_sha256": "216a01603e73a2ddd7ae19828aa3d75ebffc595e856b71c8099770c974e191b3",
+  "input_sha256": "7f59a24bb418f93201babb98d63ba41b1ee1e88234df15af2f645626a501ac9a",
+  "worker_sha256": "b144808da6a6b997f8dc375c3bc50d4b0f7cc73b5bc86ebec457e026162ff966"
+}

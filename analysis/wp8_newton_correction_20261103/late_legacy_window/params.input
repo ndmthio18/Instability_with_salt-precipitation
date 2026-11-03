@@ -1,0 +1,58 @@
+[Grid]
+Positions0 = 0 0.021428571428571432
+Positions1 = 0 0.2
+Cells0 = 1
+Cells1 = 200
+Grading1 = -0.98
+
+[TimeLoop]
+TEnd = 1136.8588647695694
+DtInitial = 113.68588647695695
+MaxTimeStepSize = 113.68588647695695
+OutputInterval = 1
+
+[Problem]
+Name = WP8-v2-late_legacy_window
+Permeability = 1.261386079996293e-11
+Porosity = 0.4057687912195745
+Swr = 0.1282679353072967
+PcN = 2.98602455003942
+PcAlpha = 0.0003121789225428109
+SweL = -0.8395681012108449
+KrwMualemExponent = true
+WaterLevel = 0.6307756332876138
+EvaporationRate = 3.065544359023483e-09
+SaltDiffusivity = 1.5e-09
+ReferenceViscosity = 0.0011
+SaltMoleFraction = 0.0036
+GravitationalAcceleration = 9.800000000000001
+PureWaterDensity = 998.203
+DensityLinearCoefficient = 0.670804
+DensityQuadraticCoefficient = 0.373854
+MolarMassH2O = 0.01801528
+MolarMassNaCl = 0.05844
+Amplitude = 0
+WaveNumber = 1
+StandardDeviationSaltMoleFraction = 0
+PerturbationType = Constant
+RandomSeed = 1
+EnableGravity = true
+PerturbationHeight = 0
+
+[Vtk]
+Precision = Float64
+AddVelocity = true
+
+[Transport]
+StopAtSolubility = true
+SolubilityMoleFraction = 0.1
+
+CutCoordinates = 0.17990308120412202 0.15045635177910349 0.1001063811357248 0.19897112943781048 0.1980519919465355 0.19495794272294398 0.190132317904874
+
+[WP8]
+Criterion = legacy
+RoundoffFactor = 32
+MaxIterations = 20
+Probe = false
+AllowDiagnosticReplay = true
+ReplayProfile = replay.dat

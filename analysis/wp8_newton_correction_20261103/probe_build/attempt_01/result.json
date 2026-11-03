@@ -1,0 +1,169 @@
+{
+  "new_simulations": false,
+  "commands": [
+    [
+      "cmake",
+      "-S",
+      "/temp/zhixin/paper2_wp8_background_v2_probe_build_20261103/source",
+      "-B",
+      "/temp/zhixin/paper2_wp8_background_v2_probe_build_20261103/build-gcc-release",
+      "-DCMAKE_BUILD_TYPE=Release",
+      "-DCMAKE_CXX_COMPILER=/usr/bin/c++",
+      "-DCMAKE_EXPORT_COMPILE_COMMANDS=ON",
+      "-DCMAKE_PREFIX_PATH=/home/zhixin/dumux/dumux/dumux/build-cmake;/home/zhixin/dumux/dumux/dune-common/build-cmake;/home/zhixin/dumux/dumux/dune-istl/build-cmake;/home/zhixin/dumux/dumux/dune-uggrid/build-cmake;/home/zhixin/dumux/dumux/dune-subgrid/build-cmake;/home/zhixin/dumux/dumux/dune-grid/build-cmake;/home/zhixin/dumux/dumux/dune-alugrid/build-cmake;/home/zhixin/dumux/dumux/dune-foamgrid/build-cmake;/home/zhixin/dumux/dumux/dune-geometry/build-cmake;/home/zhixin/dumux/dumux/dune-localfunctions/build-cmake"
+    ],
+    [
+      "cmake",
+      "--build",
+      "/temp/zhixin/paper2_wp8_background_v2_probe_build_20261103/build-gcc-release",
+      "--target",
+      "paper2_transport",
+      "--parallel",
+      "1"
+    ]
+  ],
+  "started_utc": "2026-11-03T22:32:25.427260+00:00",
+  "dependencies": {
+    "/home/zhixin/dumux/dumux/dumux": {
+      "git": {
+        "exit_code": 0,
+        "stdout": "3e66d7b962477dce7ef0067f03eb2cc57e222cff\n",
+        "stderr": ""
+      },
+      "module": "# SPDX-FileCopyrightInfo: Copyright \u00a9 DuMux Project contributors, see AUTHORS.md in root folder\n# SPDX-License-Identifier: GPL-3.0-or-later\n\nModule: dumux\nVersion: 3.9\nAuthor: The DuMux Team\nMaintainer: dumux@listserv.uni-stuttgart.de\nDepends: dune-common (>=2.9) dune-grid (>=2.9) dune-localfunctions (>=2.9) dune-istl (>=2.9)\nSuggests: dune-alugrid (>=2.9) dune-foamgrid (>=2.9) dune-uggrid (>=2.9) dune-functions (>=2.9) opm-common opm-grid dune-subgrid (>=2.9) dune-spgrid (>=2.9) dune-mmesh (>=1.4)\nDescription: DuMux is a module for simulation of multi-phase multi-component flow transport in porous media\nURL: https://dumux.org\nPython-Requires: numpy\nWhitespace-Hook: Yes\n"
+    },
+    "/home/zhixin/dumux/dumux/dune-common": {
+      "git": {
+        "exit_code": 0,
+        "stdout": "a5b46a02c150b43259f3a2b3e88dc56f1f391af0\n",
+        "stderr": ""
+      },
+      "module": "# SPDX-FileCopyrightInfo: Copyright \u00a9 DUNE Project contributors, see file LICENSE.md in module root\n# SPDX-License-Identifier: LicenseRef-GPL-2.0-only-with-DUNE-exception\n\nModule: dune-common\nVersion: 2.10\nAuthor: The Dune Core developers\nMaintainer: dune-devel@lists.dune-project.org\nDescription: Basis infrastructure for all Dune modules\nURL: https://gitlab.dune-project.org/core/dune-common\nPython-Requires: pip>=21.a portalocker numpy wheel setuptools>=41 jinja2\nWhitespace-Hook: Yes\n"
+    },
+    "/home/zhixin/dumux/dumux/dune-istl": {
+      "git": {
+        "exit_code": 0,
+        "stdout": "a255da6e72f3d0f2ccafec48374cc83f3bc66b60\n",
+        "stderr": ""
+      },
+      "module": "# SPDX-FileCopyrightText: Copyright \u00a9 DUNE Project contributors, see file LICENSE.md in module root\n# SPDX-License-Identifier: LicenseRef-GPL-2.0-only-with-DUNE-exception\n\nModule: dune-istl\nVersion: 2.10\nAuthor: The Dune Core developers\nMaintainer: dune-devel@lists.dune-project.org\nDescription: Iterative solver template library which provides generic sparse matrix/vector classes and a variety of solvers based on these classes\nURL: https://gitlab.dune-project.org/core/dune-istl\nPython-Requires:\nDepends: dune-common (>= 2.10)\nWhitespace-Hook: Yes\n"
+    },
+    "/home/zhixin/dumux/dumux/dune-uggrid": {
+      "git": {
+        "exit_code": 0,
+        "stdout": "cf2513efb6497dc95744649e0658cedef2980bff\n",
+        "stderr": ""
+      },
+      "module": "# SPDX-FileCopyrightText: Copyright \u00a9 DUNE Project contributors, see file LICENSE.md in module root\n# SPDX-License-Identifier: LGPL-2.1-or-later\n\nModule: dune-uggrid\nVersion: 2.10\nDepends: dune-common (>= 2.10)\nMaintainer: dune-devel@lists.dune-project.org\nWhitespace-Hook: Yes\n"
+    },
+    "/home/zhixin/dumux/dumux/dune-subgrid": {
+      "git": {
+        "exit_code": 0,
+        "stdout": "e71cc9c2514356c7cd989f0c13661f10c37c58df\n",
+        "stderr": ""
+      },
+      "module": "Module: dune-subgrid\nMaintainer: Carsten Graeser (graeser@math.fu-berlin.de)\nVersion: 2.10\nDepends: dune-common dune-geometry dune-grid\nSuggests: dune-alugrid dune-uggrid\n"
+    },
+    "/home/zhixin/dumux/dumux/dune-grid": {
+      "git": {
+        "exit_code": 0,
+        "stdout": "954436b88247e904628ec4d7c8bb7b2eaac08900\n",
+        "stderr": ""
+      },
+      "module": "# SPDX-FileCopyrightText: Copyright \u00a9 DUNE Project contributors, see file LICENSE.md in module root\n# SPDX-License-Identifier: LicenseRef-GPL-2.0-only-with-DUNE-exception\n\nModule: dune-grid\nVersion: 2.10\nAuthor: The Dune Core developers\nMaintainer: dune-devel@lists.dune-project.org\nDescription: module providing main interfaces for setting and traversing grids\nURL: https://gitlab.dune-project.org/core/dune-grid\nPython-Requires:\nDepends: dune-geometry (>= 2.10)\nSuggests: dune-uggrid (>=2.10)\nWhitespace-Hook: Yes\n"
+    },
+    "/home/zhixin/dumux/dumux/dune-alugrid": {
+      "git": {
+        "exit_code": 0,
+        "stdout": "e80a7ce873bda318a2eef3d6d46e9c5ca61284ca\n",
+        "stderr": ""
+      },
+      "module": "Module: dune-alugrid\nVersion: 2.10\nAuthor: Robert Kloefkorn, Martin Alkaemper, Andreas Dedner and Martin Nolte\nMaintainer: dune-devel@lists.dune-project.org\nDescription: Module providing the DUNE grid interface for unstructured simplicial and cube grids in 2 and 3 space dimensions\nURL: https://gitlab.dune-project.org/extensions/dune-alugrid\nPython-Requires:\nDepends: dune-grid (>= 2.10)\nWhitespace-Hook: Yes\n"
+    },
+    "/home/zhixin/dumux/dumux/dune-foamgrid": {
+      "git": {
+        "exit_code": 0,
+        "stdout": "2bf9fe68e6ccaa389adbdbdeff41557b99ed0375\n",
+        "stderr": ""
+      },
+      "module": "################################\n# Dune module information file #\n################################\n\n#Name of the module\nModule: dune-foamgrid\nVersion: 2.9.1\nMaintainer: timokoch@uio.no, oliver.sander@tu-dresden.de\n#depending on\nDepends: dune-common (>= 2.8) dune-geometry (>= 2.8) dune-grid (>= 2.8)\n"
+    },
+    "/home/zhixin/dumux/dumux/dune-geometry": {
+      "git": {
+        "exit_code": 0,
+        "stdout": "5673e95ac364ad3498aed9eaf65e0d224384d15a\n",
+        "stderr": ""
+      },
+      "module": "# SPDX-FileCopyrightText: Copyright \u00a9 DUNE Project contributors, see file LICENSE.md in module root\n# SPDX-License-Identifier: LicenseRef-GPL-2.0-only-with-DUNE-exception\n\nModule: dune-geometry\nVersion: 2.10\nAuthor: The Dune Core developers\nMaintainer: dune-devel@lists.dune-project.org\nDescription: Geometry Transformations, Reference Elements and Quadrature Rules\nURL: https://gitlab.dune-project.org/core/dune-geometry\nDepends: dune-common (>= 2.10)\nWhitespace-Hook: Yes\n"
+    },
+    "/home/zhixin/dumux/dumux/dune-localfunctions": {
+      "git": {
+        "exit_code": 0,
+        "stdout": "149c7866a11cab6ae5602b50b9f815088daa7a49\n",
+        "stderr": ""
+      },
+      "module": "# SPDX-FileCopyrightText: Copyright \u00a9 DUNE Project contributors, see file LICENSE.md in module root\n# SPDX-License-Identifier: LicenseRef-GPL-2.0-only-with-DUNE-exception\n\nModule: dune-localfunctions\nVersion: 2.10\nAuthor: The Dune Core developers\nMaintainer: dune-devel@lists.dune-project.org\nDescription: Provides interface and implementation for shape functions defined on the DUNE reference elements\nURL: https://gitlab.dune-project.org/core/dune-localfunctions\nPython-Requires:\nDepends: dune-geometry (>= 2.10)\nWhitespace-Hook: Yes\n"
+    }
+  },
+  "compiler": {
+    "exit_code": 0,
+    "stdout": "c++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0\nCopyright (C) 2023 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n",
+    "stderr": ""
+  },
+  "cmake": {
+    "exit_code": 0,
+    "stdout": "cmake version 3.28.3\n\nCMake suite maintained and supported by Kitware (kitware.com/cmake).\n",
+    "stderr": ""
+  },
+  "configure_exit": 0,
+  "build_exit": 0,
+  "executable": {
+    "path": "/temp/zhixin/paper2_wp8_background_v2_probe_build_20261103/build-gcc-release/appl/simpleRichardsnc/paper2_transport",
+    "size": 1672128,
+    "sha256": "2b85a06608875e4b639142717a8c527fa4241b817ce9e7fb3739c98b9b14846b"
+  },
+  "elf_dynamic": {
+    "exit_code": 0,
+    "stdout": "\nDynamic section at offset 0x11e5c8 contains 38 entries:\n  Tag        Type                         Name/Value\n 0x0000000000000001 (NEEDED)             Shared library: [libdumux_fmt.so]\n 0x0000000000000001 (NEEDED)             Shared library: [libm.so.6]\n 0x0000000000000001 (NEEDED)             Shared library: [libdumux.so]\n 0x0000000000000001 (NEEDED)             Shared library: [libdunegeometry.so]\n 0x0000000000000001 (NEEDED)             Shared library: [libdunecommon.so]\n 0x0000000000000001 (NEEDED)             Shared library: [libgomp.so.1]\n 0x0000000000000001 (NEEDED)             Shared library: [libtbb.so.12]\n 0x0000000000000001 (NEEDED)             Shared library: [libmpi.so.40]\n 0x0000000000000001 (NEEDED)             Shared library: [libstdc++.so.6]\n 0x0000000000000001 (NEEDED)             Shared library: [libgcc_s.so.1]\n 0x0000000000000001 (NEEDED)             Shared library: [libc.so.6]\n 0x000000000000001d (RUNPATH)            Library runpath: [/home/zhixin/dumux/dumux/dumux/build-cmake/lib:/home/zhixin/dumux/dumux/dune-alugrid/build-cmake/lib:/home/zhixin/dumux/dumux/dune-grid/build-cmake/lib:/home/zhixin/dumux/dumux/dune-uggrid/build-cmake/lib:/home/zhixin/dumux/dumux/dune-geometry/build-cmake/lib:/home/zhixin/dumux/dumux/dune-common/build-cmake/lib:/usr/local/lib:/usr/lib/x86_64-linux-gnu/openmpi/lib]\n 0x000000000000000c (INIT)               0x12000\n 0x000000000000000d (FINI)               0xf0988\n 0x0000000000000019 (INIT_ARRAY)         0x11b2e8\n 0x000000000000001b (INIT_ARRAYSZ)       16 (bytes)\n 0x000000000000001a (FINI_ARRAY)         0x11b2f8\n 0x000000000000001c (FINI_ARRAYSZ)       8 (bytes)\n 0x000000006ffffef5 (GNU_HASH)           0x3b0\n 0x0000000000000005 (STRTAB)             0x30e8\n 0x0000000000000006 (SYMTAB)             0x910\n 0x000000000000000a (STRSZ)              20520 (bytes)\n 0x000000000000000b (SYMENT)             24 (bytes)\n 0x0000000000000015 (DEBUG)              0x0\n 0x0000000000000003 (PLTGOT)             0x11e868\n 0x0000000000000002 (PLTRELSZ)           5520 (bytes)\n 0x0000000000000014 (PLTREL)             RELA\n 0x0000000000000017 (JMPREL)             0x109c0\n 0x0000000000000007 (RELA)               0x8698\n 0x0000000000000008 (RELASZ)             33576 (bytes)\n 0x0000000000000009 (RELAENT)            24 (bytes)\n 0x000000000000001e (FLAGS)              BIND_NOW\n 0x000000006ffffffb (FLAGS_1)            Flags: NOW PIE\n 0x000000006ffffffe (VERNEED)            0x8468\n 0x000000006fffffff (VERNEEDNUM)         5\n 0x000000006ffffff0 (VERSYM)             0x8110\n 0x000000006ffffff9 (RELACOUNT)          1146\n 0x0000000000000000 (NULL)               0x0\n",
+    "stderr": ""
+  },
+  "compile_commands": [
+    {
+      "directory": "/temp/zhixin/paper2_wp8_background_v2_probe_build_20261103/build-gcc-release/appl/simpleRichardsnc",
+      "command": "/usr/bin/c++ -DENABLE_OPENMP=1 -DHAVE_ARPACKPP=1 -DHAVE_CONFIG_H -DHAVE_GMP=1 -DHAVE_METIS=1 -DHAVE_MPI=1 -DHAVE_PTSCOTCH=1 -DHAVE_QUADMATH=1 -DHAVE_SCOTCH=1 -DHAVE_SUITESPARSE_AMD=1 -DHAVE_SUITESPARSE_BTF=1 -DHAVE_SUITESPARSE_CAMD=1 -DHAVE_SUITESPARSE_CCOLAMD=1 -DHAVE_SUITESPARSE_CHOLMOD=1 -DHAVE_SUITESPARSE_COLAMD=1 -DHAVE_SUITESPARSE_KLU=1 -DHAVE_SUITESPARSE_LDL=1 -DHAVE_SUITESPARSE_SPQR=1 -DHAVE_SUITESPARSE_UMFPACK=1 -DHAVE_SUPERLU=1 -DMETIS_API_VERSION=5 -DMPICH_SKIP_MPICXX=1 -DMPIPP_H -DMPI_NO_CPPBIND=1 -DModelP -DOMPI_SKIP_MPICXX=1 -D_GLIBCXX_USE_FLOAT128 -D_MPICC_H -I/temp/zhixin/paper2_wp8_background_v2_probe_build_20261103/build-gcc-release -I/temp/zhixin/paper2_wp8_background_v2_probe_build_20261103/source -I/temp/zhixin/paper2_wp8_background_v2_probe_build_20261103/build-gcc-release/include -I/temp/zhixin/paper2_wp8_background_v2_probe_build_20261103/build-gcc-release/include_private -I/usr/include/python3.12 -I/home/zhixin/dumux/dumux/dune-common -I/home/zhixin/dumux/dumux/dune-common/build-cmake/include -I/home/zhixin/dumux/dumux/dune-geometry -I/home/zhixin/dumux/dumux/dune-geometry/build-cmake/include -I/home/zhixin/dumux/dumux/dune-uggrid -I/home/zhixin/dumux/dumux/dune-uggrid/build-cmake/include -I/home/zhixin/dumux/dumux/dune-grid -I/home/zhixin/dumux/dumux/dune-grid/build-cmake/include -I/home/zhixin/dumux/dumux/dune-localfunctions -I/home/zhixin/dumux/dumux/dune-localfunctions/build-cmake/include -I/home/zhixin/dumux/dumux/dune-istl -I/home/zhixin/dumux/dumux/dune-istl/build-cmake/include -I/home/zhixin/dumux/dumux/dune-alugrid -I/home/zhixin/dumux/dumux/dune-alugrid/build-cmake/include -I/home/zhixin/dumux/dumux/dune-foamgrid -I/home/zhixin/dumux/dumux/dune-foamgrid/build-cmake/include -I/home/zhixin/dumux/dumux/dune-subgrid -I/home/zhixin/dumux/dumux/dune-subgrid/build-cmake/include -I/home/zhixin/dumux/dumux/dumux -I/home/zhixin/dumux/dumux/dumux/build-cmake/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi -isystem /usr/include/superlu -isystem /usr/local/include/suitesparse -isystem /usr/include/scotch -O3 -DNDEBUG -fPIE -isystem/usr/include/arpack++ -Wabi -fabi-version=0 -fabi-compat-version=0 -ffp-contract=fast -DHAVE_VC=1 -Wall -Wextra -Wpedantic -fopenmp -fext-numeric-literals -o CMakeFiles/paper2_transport.dir/main.cc.o -c /temp/zhixin/paper2_wp8_background_v2_probe_build_20261103/source/appl/simpleRichardsnc/main.cc",
+      "file": "/temp/zhixin/paper2_wp8_background_v2_probe_build_20261103/source/appl/simpleRichardsnc/main.cc",
+      "output": "appl/simpleRichardsnc/CMakeFiles/paper2_transport.dir/main.cc.o"
+    },
+    {
+      "directory": "/temp/zhixin/paper2_wp8_background_v2_probe_build_20261103/build-gcc-release/src",
+      "command": "/usr/bin/c++ -DENABLE_OPENMP=1 -DHAVE_ARPACKPP=1 -DHAVE_CONFIG_H -DHAVE_GMP=1 -DHAVE_METIS=1 -DHAVE_MPI=1 -DHAVE_PTSCOTCH=1 -DHAVE_QUADMATH=1 -DHAVE_SCOTCH=1 -DHAVE_SUITESPARSE_AMD=1 -DHAVE_SUITESPARSE_BTF=1 -DHAVE_SUITESPARSE_CAMD=1 -DHAVE_SUITESPARSE_CCOLAMD=1 -DHAVE_SUITESPARSE_CHOLMOD=1 -DHAVE_SUITESPARSE_COLAMD=1 -DHAVE_SUITESPARSE_KLU=1 -DHAVE_SUITESPARSE_LDL=1 -DHAVE_SUITESPARSE_SPQR=1 -DHAVE_SUITESPARSE_UMFPACK=1 -DHAVE_SUPERLU=1 -DMETIS_API_VERSION=5 -DMPICH_SKIP_MPICXX=1 -DMPIPP_H -DMPI_NO_CPPBIND=1 -DModelP -DOMPI_SKIP_MPICXX=1 -D_GLIBCXX_USE_FLOAT128 -D_MPICC_H -I/temp/zhixin/paper2_wp8_background_v2_probe_build_20261103/build-gcc-release -I/temp/zhixin/paper2_wp8_background_v2_probe_build_20261103/source -I/temp/zhixin/paper2_wp8_background_v2_probe_build_20261103/build-gcc-release/include -I/temp/zhixin/paper2_wp8_background_v2_probe_build_20261103/build-gcc-release/include_private -I/usr/include/python3.12 -I/home/zhixin/dumux/dumux/dune-common -I/home/zhixin/dumux/dumux/dune-common/build-cmake/include -I/home/zhixin/dumux/dumux/dune-geometry -I/home/zhixin/dumux/dumux/dune-geometry/build-cmake/include -I/home/zhixin/dumux/dumux/dune-uggrid -I/home/zhixin/dumux/dumux/dune-uggrid/build-cmake/include -I/home/zhixin/dumux/dumux/dune-grid -I/home/zhixin/dumux/dumux/dune-grid/build-cmake/include -I/home/zhixin/dumux/dumux/dune-localfunctions -I/home/zhixin/dumux/dumux/dune-localfunctions/build-cmake/include -I/home/zhixin/dumux/dumux/dune-istl -I/home/zhixin/dumux/dumux/dune-istl/build-cmake/include -I/home/zhixin/dumux/dumux/dune-alugrid -I/home/zhixin/dumux/dumux/dune-alugrid/build-cmake/include -I/home/zhixin/dumux/dumux/dune-foamgrid -I/home/zhixin/dumux/dumux/dune-foamgrid/build-cmake/include -I/home/zhixin/dumux/dumux/dune-subgrid -I/home/zhixin/dumux/dumux/dune-subgrid/build-cmake/include -I/home/zhixin/dumux/dumux/dumux -I/home/zhixin/dumux/dumux/dumux/build-cmake/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi -isystem /usr/include/superlu -isystem /usr/local/include/suitesparse -isystem /usr/include/scotch -O3 -DNDEBUG -fPIE -isystem/usr/include/arpack++ -Wabi -fabi-version=0 -fabi-compat-version=0 -ffp-contract=fast -DHAVE_VC=1 -fopenmp -fext-numeric-literals -o CMakeFiles/kiemle2023b.dir/kiemle2023b.cc.o -c /temp/zhixin/paper2_wp8_background_v2_probe_build_20261103/source/src/kiemle2023b.cc",
+      "file": "/temp/zhixin/paper2_wp8_background_v2_probe_build_20261103/source/src/kiemle2023b.cc",
+      "output": "src/CMakeFiles/kiemle2023b.dir/kiemle2023b.cc.o"
+    }
+  ],
+  "source_sha256": {
+    "config.h.cmake": "addc2df015faa7334b78458a92aa2cb06ac0df5662da054714ac479ca7e706f9",
+    "kiemle2023b.pc.in": "54fee13aecdcfb07004dc6b4249b68c9a9ea33b7af2136bb278c1949e4a80d86",
+    "README.md": "ef8f3fca28d26200a17fb3386fddfddfb30ad69138dfea472866cc987e9e4e61",
+    "dune.module": "edd9a0bd7703bb4aff92d568d557f008d30895081e0a68d7a3cac1969ead72de",
+    "CMakeLists.txt": "a3750056e945193f32678c7246260515ad18fae14770667b8cccedca54b9fe2e",
+    "doc/CMakeLists.txt": "4fde2ae1df1e9ded71688fd731a4ab48a5bc2035c4ad4e160e034d863b02558c",
+    "appl/CMakeLists.txt": "e4932eb4852ddaa91476d791c91d8ef7d5c13b07a6a2c81ae7033e308ae5768b",
+    "dune/CMakeLists.txt": "4e6273b47c6cd604f89c82ca3fa716391ac252dfa319e27b67fea01bee98e6a8",
+    "src/kiemle2023b.cc": "8ca429bfc299f9410723e3d83f7d876920b443869b00f5d198d038581db813ba",
+    "src/CMakeLists.txt": "7ecedb534af8c9849450955b8242ca9e137b8ad3f03c4ab0d779804093d59ffa",
+    "doc/doxygen/CMakeLists.txt": "d145d336814fca3994a64c7b916565975f7ed9bdff4986bccfe7809d7e1a5c35",
+    "cmake/modules/Kiemle2023bMacros.cmake": "7524f6919d6e280ee968a64140a3a3c006061d29aa5426c26eaafec4ff5d97a4",
+    "cmake/modules/CMakeLists.txt": "5dbd18a784411da7e200169f154d9d62b2578e1ea41e8e5c832b7f738aa2f575",
+    "appl/simpleRichardsnc/main.cc": "0a6595fff455cecd7c528733a0463845649bafbd76dcbb592563e1b672f8b39d",
+    "appl/simpleRichardsnc/params.input": "2cbfbc4c82e5016b8c6de0a998a0e7ce5f26293a60b75087a50e50fc7b128ad7",
+    "appl/simpleRichardsnc/transportdiagnostics.hh": "9ac499200f41b290dcb5287d17be045aab9c2f7dfd428682895fe1bef7fc6c2b",
+    "appl/simpleRichardsnc/CMakeLists.txt": "5a9a763908e7053c80d637a3e60156ec6bd98e76b8d900655c68b1cba2ca1c00",
+    "appl/simpleRichardsnc/model.hh": "b59fd1718863a712a8e619f914be9152302bec990dd7ed19359daed699c118db",
+    "appl/simpleRichardsnc/wp8_equal_height.hh": "7bb37043b0e4a72a45f7c43835689924641290a6a67d2fa9b29540fee8e688ba",
+    "bin/eigenprofile/README.md": "4565332f7edbdd59d016cccd515fb53fd07aa692f8271f19e7f3c8a84077c270",
+    "dune/kiemle2023b/kiemle2023b.hh": "afa7958833dc5acb74a6015365481c67eb666b412f7096be26c93c7d3791a6e5",
+    "dune/kiemle2023b/CMakeLists.txt": "154ce468ad7fc60a049449ed1867df43e15e78aabcd5c8c1caa7b605f9ca0730"
+  },
+  "finished_utc": "2026-11-03T22:33:11.234124+00:00"
+}

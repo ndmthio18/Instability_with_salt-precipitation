@@ -1,0 +1,12 @@
+################################
+# Dune module information file #
+################################
+
+# Name of the module
+Module: kiemle2023b
+Version: 1
+Maintainer: stefanie.kiemle@iws.uni-stuttgart.de
+# Required build dependencies
+Depends: dune-common dune-geometry dune-grid dune-localfunctions dune-istl dumux
+# Optional build dependencies
+#Suggests:
