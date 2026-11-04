@@ -35,8 +35,13 @@ def main(run,out):
     online_by={int(r['step']):r for r in on}
     frame_step=[int(r['step']) for r in weighted]
     assert frame_step==sorted(frame_step) and len(set(frame_step))==len(frame_step)
-    stride=(frame_step[1]-frame_step[0]) if len(frame_step)>1 else 1
-    assert all(b-a==stride for a,b in zip(frame_step,frame_step[1:])),'frames are not evenly spaced'
+    intervals=[b-a for a,b in zip(frame_step,frame_step[1:])]
+    # A threshold event can fall between regular output steps. The unchanged solver
+    # deliberately writes that terminal accepted state, so the last interval need not
+    # equal OutputInterval. Address budgets by their recorded step instead of rejecting
+    # the scientifically essential terminal frame.
+    stride=intervals[0] if intervals and len(set(intervals))==1 else None
+    assert all(v>0 for v in intervals),'frame steps are not strictly increasing'
 
     inv=[];online_error={k:0 for k in ['weighted_top_mean','weighted_top_sigma',
                                        'weighted_fourier','weighted_projection']};grids=None
@@ -83,6 +88,7 @@ def main(run,out):
             cumulative_salt_reintegration_error=maxCS,cumulative_water_reintegration_error=maxCW)
 
     result=dict(frames=len(weighted),recorded_steps=len(on),frame_stride=stride,
+        frame_step_intervals=sorted(set(intervals)),terminal_irregular_stride=stride is None,
         max_inventory_salt_difference_m=max(abs(r['salt_difference_m']) for r in inv),
         max_inventory_water_difference_m=max(abs(r['water_difference_m']) for r in inv),
         online_absolute_errors=online_error,independent_budgets=budget_checks,

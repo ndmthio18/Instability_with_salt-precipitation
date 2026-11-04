@@ -1,0 +1,65 @@
+{
+  "scope": "infrastructure benchmark only; 100 accepted steps; no scientific result",
+  "job_id": "16293542",
+  "node": "ibc11b11n01",
+  "affinity": [
+    44,
+    48,
+    50,
+    55
+  ],
+  "elf_sha256": "112076759fdff0942000307f729c2bd3c7e96963229b43c1b67c1f12bbf9df81",
+  "runs": {
+    "1": {
+      "threads": 1,
+      "wall_s": 18.49031090736389,
+      "s_per_step": 0.1849031090736389,
+      "stop": {
+        "schema_version": 1,
+        "reason": "requested_horizon",
+        "last_accepted_time_s": 11368.588647695668,
+        "accepted_steps": 100,
+        "initial_diagnostics_written": true,
+        "requested_end_s": 11368.588647695695,
+        "surface_threshold_low_s": null,
+        "surface_threshold_high_s": null,
+        "global_threshold_low_s": null,
+        "global_threshold_high_s": null
+      },
+      "files": {
+        "surface_events.csv": "c9bbf3239522e08d3a9db7b137ef4f7a5c1c7d808789fb4a606d50e53303bbaa",
+        "transport_budget.csv": "78fe9dbc2861c7d1ae43944c2083aad65e044da8de6e5a98e4b7a96bf6da552c",
+        "weighted_online.csv": "27330d25ec824f443f39d73bf9a3a21b2330d3713f1d54acc7ca6a68d41fb8f8"
+      }
+    },
+    "4": {
+      "threads": 4,
+      "wall_s": 12.87391972541809,
+      "s_per_step": 0.1287391972541809,
+      "stop": {
+        "schema_version": 1,
+        "reason": "requested_horizon",
+        "last_accepted_time_s": 11368.588647695668,
+        "accepted_steps": 100,
+        "initial_diagnostics_written": true,
+        "requested_end_s": 11368.588647695695,
+        "surface_threshold_low_s": null,
+        "surface_threshold_high_s": null,
+        "global_threshold_low_s": null,
+        "global_threshold_high_s": null
+      },
+      "files": {
+        "surface_events.csv": "c9bbf3239522e08d3a9db7b137ef4f7a5c1c7d808789fb4a606d50e53303bbaa",
+        "transport_budget.csv": "78fe9dbc2861c7d1ae43944c2083aad65e044da8de6e5a98e4b7a96bf6da552c",
+        "weighted_online.csv": "27330d25ec824f443f39d73bf9a3a21b2330d3713f1d54acc7ca6a68d41fb8f8"
+      }
+    }
+  },
+  "bitwise_identical": {
+    "surface_events.csv": true,
+    "transport_budget.csv": true,
+    "weighted_online.csv": true
+  },
+  "all_bitwise_identical": true,
+  "speedup_1_to_4": 1.4362611622361505
+}

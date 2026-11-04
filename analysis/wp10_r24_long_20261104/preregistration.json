@@ -45,8 +45,13 @@
     "benchmark_threads": [1, 4],
     "benchmark_steps": 100,
     "same_node_benchmark": true,
-    "production_threads": "pending measured benchmark",
-    "production_wall_limit": "pending measured benchmark, then frozen before submission",
+    "production_threads": 4,
+    "production_wall_limit": "05:00:00",
+    "solver_timeout_s": 14400,
+    "benchmark_job_id": "16293542",
+    "benchmark_node": "ibc11b11n01",
+    "benchmark_speedup_1_to_4": 1.4362611622361505,
+    "projected_max_solver_wall_s": 7724.351835250853,
     "scratch_policy": "compute-node local scratch; stage one field archive and one diagnostics archive to /WORK",
     "reason": "the user file-count soft quota is already exceeded; avoid adding ~1200 VTU directory entries to /WORK"
   },
@@ -58,5 +63,5 @@
   },
   "scientific_scope": "exploratory R24 evidence only; no convergence, crystallization-delay or t_eff claim",
   "failure_policy": "preserve failure products and stop; no restart or resubmission without new user authorization",
-  "state": "BENCHMARK_PENDING"
+  "state": "PRODUCTION_FROZEN_PENDING_SUBMISSION"
 }
