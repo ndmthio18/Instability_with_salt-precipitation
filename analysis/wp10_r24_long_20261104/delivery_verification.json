@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "tests": {
+    "production_input_hash": true,
+    "fields_archive_hash": true,
+    "products_archive_hash": true,
+    "selected_archive_hash": true,
+    "corrected_post_archive_hash": true,
+    "same_node_benchmark_identical": true,
+    "solver_success": true,
+    "threshold_stop": true,
+    "no_retry": true,
+    "old_4T_prefix_identical": true,
+    "terminal_field_preserved": true,
+    "independent_conservation_passed": true,
+    "all_sparse_fields_present": true,
+    "velocity_checkpoints_complete": true,
+    "full_mode_timeseries_complete": true,
+    "report_present": true
+  },
+  "passed": true,
+  "scope": "delivery integrity and registered numerical checks; not physical validation"
+}

@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "scientific_run": {
+    "job_id": "16293564",
+    "solver_state": "COMPLETED",
+    "slurm_wrapper_state": "FAILED",
+    "slurm_wrapper_exit_code": "1:0",
+    "slurm_wrapper_failure_scope": "postprocessing only; solver and immutable archives completed before the worker returned 1",
+    "solver_returncode": 0,
+    "accepted_steps": 25502,
+    "stop_reason": "surface_solubility_threshold",
+    "last_accepted_time_s": 2899217.476936046,
+    "last_accepted_time_over_T": 21.251666666671714,
+    "automatic_restart_or_retry": false
+  },
+  "original_remote_post": {
+    "state": "FAILED_AFTER_SUCCESSFUL_SOLVER",
+    "cause": "fixed 1e-7 s comparison rejected sub-microsecond PVD six-significant-digit clock roundoff",
+    "solver_or_field_effect": false,
+    "failure_log_preserved": "run/post.log"
+  },
+  "corrected_read_only_post": {
+    "job_id": "16294099",
+    "state": "COMPLETED",
+    "exit_code": "0:0",
+    "elapsed": "00:00:25",
+    "node": "ibc11b11n16",
+    "independent_checks_passed": true,
+    "frames": 512,
+    "recorded_states": 25503,
+    "frame_step_intervals": [2, 50],
+    "maximum_inventory_salt_difference_m": 5.421010862427522e-18,
+    "maximum_inventory_water_difference_m": 1.4814538484841933e-15,
+    "maximum_salt_closure_m": 5.886315706507463e-16,
+    "maximum_water_closure_m": 2.9142141815806805e-14,
+    "archive_sha256": "190bd4fcd0e1b974c8446f6ea8e7a134e35fb9def0f75071347eccf6ab015c27"
+  },
+  "archives": {
+    "fields_remote_sha256": "9863089b39ca6cc5b81558086f9a0b20554e1589507242ff8790bfbba21419f2",
+    "products_sha256": "4c05c3a219ad1c9d78d03c43cea9f79aabd86bbae9314b4140ffd64f599af3e3",
+    "selected_fields_sha256": "2ce1729a8d159974e38b6525959ee0cb8db84a10771eefd12b5f881f42bd4b0a"
+  },
+  "scope": "one exploratory R24-M1 trajectory only; no convergence, crystallization-delay, or t_eff claim"
+}

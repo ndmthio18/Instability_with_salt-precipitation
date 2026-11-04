@@ -64,7 +64,11 @@ def main(run,out):
                 salt_difference_m=salt-float(r['inventory_salt_m']),
                 water_difference_m=water-float(r['inventory_water_m'])))
         o=online_by[step]
-        assert abs(float(o['time_s'])-float(weighted[i]['time_s']))<1e-7
+        # The PVD clock is serialized with six significant digits. At multi-million
+        # second horizons, round-tripping through that clock introduces sub-microsecond
+        # differences even when the accepted-step index is exact.
+        clock_tol=max(1e-7,1e-12*abs(float(o['time_s'])))
+        assert abs(float(o['time_s'])-float(weighted[i]['time_s']))<clock_tol
         for k in online_error:
             if k=='weighted_projection' and o['projection_defined']=='0':continue
             online_error[k]=max(online_error[k],abs(float(o[k])-float(weighted[i][k])))

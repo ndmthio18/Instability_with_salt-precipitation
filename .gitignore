@@ -37,6 +37,11 @@ __pycache__/
 /analysis/*/watch_stdout.log
 /analysis/*/watch_stderr.log
 
+# WP10 raw trajectory products are preserved locally and on hpcc, not in Git.
+/analysis/wp10_r24_long_20261104/*.tar.gz
+/analysis/wp10_r24_long_20261104/run/
+/analysis/wp10_r24_long_20261104/corrected_post_run/
+
 # Case 42929 is still running. Track its plan and frozen snapshots, not live outputs.
 /analysis/highk_unperturbed_42929_20261102/*
 !/analysis/highk_unperturbed_42929_20261102/plan.json

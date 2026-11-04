@@ -1,0 +1,20 @@
+{
+  "utc": "2026-11-04T20:57:38.790168+00:00",
+  "pid": 36763,
+  "elapsed_s": 3742.1578115504235,
+  "accepted_rows_including_initial": 25503,
+  "last_surface_event": {
+    "step": "25502",
+    "time_s": "2899217.476936046",
+    "dt_s": "113.68588647695695",
+    "x_top_area_mean": "0.046101051320366446",
+    "x_top_max": "0.10003396484354643",
+    "x_domain_max": "0.10003396484354643",
+    "x_domain_min": "0.0035999999999999682",
+    "x_top_node_mean": "0.047431221924316203",
+    "sigma_top_node": "0.020474941752918273",
+    "top_area_per_unit_thickness_m": "0.021428571428571432",
+    "surface_threshold_reached": "1",
+    "global_threshold_reached": "1"
+  }
+}

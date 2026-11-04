@@ -1,0 +1,3999 @@
+{
+  "profile_checkpoints": [
+    {
+      "nominal_T": 2,
+      "frame": 48,
+      "actual_T": 2.0000000000000235,
+      "depth90_mm": 1.366348546586016,
+      "depth99_mm": 2.72351034503901,
+      "surface_mean": 0.03206279426645558,
+      "bottom_mean": 0.0036,
+      "mean_at_1mm": 0.014370988579613213,
+      "mean_at_2mm": 0.007509167165196055,
+      "mean_at_5mm": 0.003800593184234599,
+      "mean_at_10mm": 0.0036009271987282186,
+      "mean_at_20mm": 0.0036000000042655583
+    },
+    {
+      "nominal_T": 3,
+      "frame": 72,
+      "actual_T": 2.9999999999996687,
+      "depth90_mm": 1.4673059473570005,
+      "depth99_mm": 2.72351034503901,
+      "surface_mean": 0.044533673852504736,
+      "bottom_mean": 0.0036,
+      "mean_at_1mm": 0.019659900450226458,
+      "mean_at_2mm": 0.009695390111210556,
+      "mean_at_5mm": 0.00397536321203974,
+      "mean_at_10mm": 0.0036030445671390667,
+      "mean_at_20mm": 0.003600000123781823
+    },
+    {
+      "nominal_T": 4,
+      "frame": 96,
+      "actual_T": 4.000000000000047,
+      "depth90_mm": 1.2674102938300125,
+      "depth99_mm": 1.8921638903870164,
+      "surface_mean": 0.05640221858255567,
+      "bottom_mean": 0.0036,
+      "mean_at_1mm": 0.025071549293007832,
+      "mean_at_2mm": 0.011961830790782208,
+      "mean_at_5mm": 0.004155799380398845,
+      "mean_at_10mm": 0.0036057941991127908,
+      "mean_at_20mm": 0.0036000006509320378
+    },
+    {
+      "nominal_T": 5,
+      "frame": 120,
+      "actual_T": 5.000000000000425,
+      "depth90_mm": 3.25409771698601,
+      "depth99_mm": 5.129154462594015,
+      "surface_mean": 0.041522588025564126,
+      "bottom_mean": 0.0036,
+      "mean_at_1mm": 0.024218166738200424,
+      "mean_at_2mm": 0.01839510182198039,
+      "mean_at_5mm": 0.006600364637559773,
+      "mean_at_10mm": 0.0036178945802113403,
+      "mean_at_20mm": 0.00360000171885591
+    },
+    {
+      "nominal_T": 10,
+      "frame": 240,
+      "actual_T": 9.999999999996453,
+      "depth90_mm": 12.712237729568004,
+      "depth99_mm": 16.76683682611202,
+      "surface_mean": 0.033233142471030146,
+      "bottom_mean": 0.0036,
+      "mean_at_1mm": 0.01876856180336197,
+      "mean_at_2mm": 0.016132190964380448,
+      "mean_at_5mm": 0.015048081794415519,
+      "mean_at_10mm": 0.009671692131986053,
+      "mean_at_20mm": 0.0039023999440776697
+    },
+    {
+      "nominal_T": 15,
+      "frame": 360,
+      "actual_T": 14.999999999998344,
+      "depth90_mm": 16.35988880776601,
+      "depth99_mm": 21.830456594151006,
+      "surface_mean": 0.03834791826823225,
+      "bottom_mean": 0.0036,
+      "mean_at_1mm": 0.021708095308217587,
+      "mean_at_2mm": 0.01882184489963062,
+      "mean_at_5mm": 0.01797642590572158,
+      "mean_at_10mm": 0.014301274178437415,
+      "mean_at_20mm": 0.00669407225714449
+    },
+    {
+      "nominal_T": 20,
+      "frame": 480,
+      "actual_T": 20.000000000000234,
+      "depth90_mm": 19.38898597420402,
+      "depth99_mm": 27.51950492486302,
+      "surface_mean": 0.04268696234112246,
+      "bottom_mean": 0.0036,
+      "mean_at_1mm": 0.024311820512043395,
+      "mean_at_2mm": 0.021213066678647634,
+      "mean_at_5mm": 0.020146976011990128,
+      "mean_at_10mm": 0.017021357261510363,
+      "mean_at_20mm": 0.008198462178298359
+    },
+    {
+      "nominal_T": 21.251666666671376,
+      "frame": 511,
+      "actual_T": 21.251666666671376,
+      "depth90_mm": 19.38898597420402,
+      "depth99_mm": 29.462714024277997,
+      "surface_mean": 0.046101051320366335,
+      "bottom_mean": 0.0036,
+      "mean_at_1mm": 0.025976232384268383,
+      "mean_at_2mm": 0.02209532271965947,
+      "mean_at_5mm": 0.020428402142153048,
+      "mean_at_10mm": 0.01684812488078062,
+      "mean_at_20mm": 0.008924197636309321
+    }
+  ],
+  "representative_modes": [
+    {
+      "frame": 0,
+      "time_over_T": 0.0,
+      "dominant_mode": 2,
+      "dominant_wavelength_m": 0.0214285714285714,
+      "cells_per_wavelength": 24.0,
+      "dominant_energy_fraction": 1.0,
+      "top_three_modes": [
+        2,
+        6,
+        18
+      ]
+    },
+    {
+      "frame": 256,
+      "time_over_T": 10.666666666666304,
+      "dominant_mode": 4,
+      "dominant_wavelength_m": 0.0107142857142857,
+      "cells_per_wavelength": 12.0,
+      "dominant_energy_fraction": 0.751813196746067,
+      "top_three_modes": [
+        4,
+        2,
+        8
+      ]
+    },
+    {
+      "frame": 511,
+      "time_over_T": 21.251666666671376,
+      "dominant_mode": 1,
+      "dominant_wavelength_m": 0.0428571428571428,
+      "cells_per_wavelength": 48.0,
+      "dominant_energy_fraction": 0.3860258067223587,
+      "top_three_modes": [
+        1,
+        2,
+        4
+      ]
+    }
+  ],
+  "velocity": [
+    {
+      "nominal_T": 2,
+      "frame": 48,
+      "actual_T": 2.0000000000000235,
+      "array_name": "velocity",
+      "down_min_m_s": -3.06501505214995e-09,
+      "down_max_m_s": -3.02745365516387e-09,
+      "dominant_mode": 2,
+      "dominant_wavelength_m": 0.0214285714285714,
+      "dominant_cells_per_wavelength": 24.0,
+      "top_three_modes": [
+        2,
+        4,
+        6
+      ],
+      "down_cell_fraction": 0.0,
+      "high_salt_down_fraction": 0.0,
+      "high_salt_mean_down_m_s": -3.0648313325933076e-09,
+      "other_mean_down_m_s": -3.0562013716647667e-09,
+      "salt_down_correlation": -0.2796575047192709,
+      "horizontal_anomaly_down_correlation": 0.48137307116264366,
+      "top_anomaly_down_fraction": 0.0,
+      "positive_anomaly_down_fraction": 0.0,
+      "source_sha256": "0cb92485b092a77c8340a759d9e0050f74b1113950675f643ef3ff2021b3f8c2"
+    },
+    {
+      "nominal_T": 3,
+      "frame": 72,
+      "actual_T": 2.9999999999996687,
+      "array_name": "velocity",
+      "down_min_m_s": -3.06628819729316e-09,
+      "down_max_m_s": -3.02745330702827e-09,
+      "dominant_mode": 2,
+      "dominant_wavelength_m": 0.0214285714285714,
+      "dominant_cells_per_wavelength": 24.0,
+      "top_three_modes": [
+        2,
+        4,
+        6
+      ],
+      "down_cell_fraction": 0.0,
+      "high_salt_down_fraction": 0.0,
+      "high_salt_mean_down_m_s": -3.0648223569541596e-09,
+      "other_mean_down_m_s": -3.0562007759215327e-09,
+      "salt_down_correlation": -0.2842540449558533,
+      "horizontal_anomaly_down_correlation": 0.49479722488050193,
+      "top_anomaly_down_fraction": 0.0,
+      "positive_anomaly_down_fraction": 0.0,
+      "source_sha256": "8a81e31fe20673f39911c57ca8a87c187181f75b31db6fa3f408cd6296308ba1"
+    },
+    {
+      "nominal_T": 4,
+      "frame": 96,
+      "actual_T": 4.000000000000047,
+      "array_name": "velocity",
+      "down_min_m_s": -5.30134502532623e-09,
+      "down_max_m_s": -5.27143216431453e-10,
+      "dominant_mode": 10,
+      "dominant_wavelength_m": 0.00428571428571428,
+      "dominant_cells_per_wavelength": 4.8,
+      "top_three_modes": [
+        10,
+        14,
+        20
+      ],
+      "down_cell_fraction": 0.0,
+      "high_salt_down_fraction": 0.0,
+      "high_salt_mean_down_m_s": -3.0250465860525456e-09,
+      "other_mean_down_m_s": -3.060600350053654e-09,
+      "salt_down_correlation": 0.03888233132091486,
+      "horizontal_anomaly_down_correlation": 0.6477942770168031,
+      "top_anomaly_down_fraction": 0.0,
+      "positive_anomaly_down_fraction": 0.0,
+      "source_sha256": "07c028c044bd67b9ec52efdc4aba6ae3c9f5c581df91c2fbc8398a324eade8c6"
+    },
+    {
+      "nominal_T": 5,
+      "frame": 120,
+      "actual_T": 5.000000000000425,
+      "array_name": "velocity",
+      "down_min_m_s": -1.20862260781182e-08,
+      "down_max_m_s": 6.44814435349763e-09,
+      "dominant_mode": 4,
+      "dominant_wavelength_m": 0.0107142857142857,
+      "dominant_cells_per_wavelength": 12.0,
+      "top_three_modes": [
+        4,
+        6,
+        8
+      ],
+      "down_cell_fraction": 0.056875,
+      "high_salt_down_fraction": 0.3875,
+      "high_salt_mean_down_m_s": -8.214525068576645e-10,
+      "other_mean_down_m_s": -3.305192331688955e-09,
+      "salt_down_correlation": 0.24439712602079808,
+      "horizontal_anomaly_down_correlation": 0.7872516753019727,
+      "top_anomaly_down_fraction": 0.56875,
+      "positive_anomaly_down_fraction": 0.1436842105263158,
+      "source_sha256": "e2de075df3cec2237353ec06d2479d86f70c20d81a7782e6a7ff470219fe3751"
+    },
+    {
+      "nominal_T": 10,
+      "frame": 240,
+      "actual_T": 9.999999999996453,
+      "array_name": "velocity",
+      "down_min_m_s": -1.29619688513001e-08,
+      "down_max_m_s": 1.09520434803379e-08,
+      "dominant_mode": 4,
+      "dominant_wavelength_m": 0.0107142857142857,
+      "dominant_cells_per_wavelength": 12.0,
+      "top_three_modes": [
+        4,
+        2,
+        8
+      ],
+      "down_cell_fraction": 0.12354166666666666,
+      "high_salt_down_fraction": 0.60625,
+      "high_salt_mean_down_m_s": 2.919970004908602e-09,
+      "other_mean_down_m_s": -3.7202576896798013e-09,
+      "salt_down_correlation": 0.3967127048791062,
+      "horizontal_anomaly_down_correlation": 0.8868468767995044,
+      "top_anomaly_down_fraction": 0.8895833333333333,
+      "positive_anomaly_down_fraction": 0.313590692755156,
+      "source_sha256": "3688f028b2b5329d923aec6337f8f1009154b77ca53e3a2550c9580621b58437"
+    },
+    {
+      "nominal_T": 15,
+      "frame": 360,
+      "actual_T": 14.999999999998344,
+      "array_name": "velocity",
+      "down_min_m_s": -1.4824829025156e-08,
+      "down_max_m_s": 1.30543127919045e-08,
+      "dominant_mode": 4,
+      "dominant_wavelength_m": 0.0107142857142857,
+      "dominant_cells_per_wavelength": 12.0,
+      "top_three_modes": [
+        4,
+        2,
+        8
+      ],
+      "down_cell_fraction": 0.14958333333333335,
+      "high_salt_down_fraction": 0.6291666666666667,
+      "high_salt_mean_down_m_s": 3.944387443521657e-09,
+      "other_mean_down_m_s": -3.833670828383776e-09,
+      "salt_down_correlation": 0.3803127561377222,
+      "horizontal_anomaly_down_correlation": 0.9006412274096148,
+      "top_anomaly_down_fraction": 0.9395833333333333,
+      "positive_anomaly_down_fraction": 0.3509286412512219,
+      "source_sha256": "96476cd2bc6ebf328c30403536dc8a3c158693d5feecdbaa0656a6965021cd97"
+    },
+    {
+      "nominal_T": 20,
+      "frame": 480,
+      "actual_T": 20.000000000000234,
+      "array_name": "velocity",
+      "down_min_m_s": -1.73647588046127e-08,
+      "down_max_m_s": 1.38319612533859e-08,
+      "dominant_mode": 4,
+      "dominant_wavelength_m": 0.0107142857142857,
+      "dominant_cells_per_wavelength": 12.0,
+      "top_three_modes": [
+        4,
+        3,
+        2
+      ],
+      "down_cell_fraction": 0.16604166666666667,
+      "high_salt_down_fraction": 0.6145833333333334,
+      "high_salt_mean_down_m_s": 3.889130001184573e-09,
+      "other_mean_down_m_s": -3.827110023382892e-09,
+      "salt_down_correlation": 0.3719746035106718,
+      "horizontal_anomaly_down_correlation": 0.8534416057699319,
+      "top_anomaly_down_fraction": 0.9041666666666667,
+      "positive_anomaly_down_fraction": 0.4051855617691917,
+      "source_sha256": "d45b5ea7078c6b6d6e41cc26471102d5ccdec1018e00a05078f5688cd78d64fe"
+    },
+    {
+      "nominal_T": 21.251666666671376,
+      "frame": 511,
+      "actual_T": 21.251666666671376,
+      "array_name": "velocity",
+      "down_min_m_s": -1.82983270212132e-08,
+      "down_max_m_s": 1.47945705564503e-08,
+      "dominant_mode": 1,
+      "dominant_wavelength_m": 0.0428571428571428,
+      "dominant_cells_per_wavelength": 48.0,
+      "top_three_modes": [
+        1,
+        2,
+        4
+      ],
+      "down_cell_fraction": 0.17541666666666667,
+      "high_salt_down_fraction": 0.5604166666666667,
+      "high_salt_mean_down_m_s": 2.1469359862654737e-09,
+      "other_mean_down_m_s": -3.6332770232191215e-09,
+      "salt_down_correlation": 0.3748472842544798,
+      "horizontal_anomaly_down_correlation": 0.6754176612100978,
+      "top_anomaly_down_fraction": 0.8041666666666667,
+      "positive_anomaly_down_fraction": 0.4145490782262083,
+      "source_sha256": "b82d6252541a4dbd84649f38b41d1eba75676c2604ff1d7e75727ce8194f01cb"
+    }
+  ],
+  "velocity_scope": "qualitative cell-centre Darcy reconstruction only; not a conservative face flux",
+  "mode_timeseries": [
+    {
+      "frame": 0,
+      "step": 0,
+      "time_over_T": 0.0,
+      "dominant_mode": 2,
+      "cells_per_wavelength": 24.0
+    },
+    {
+      "frame": 1,
+      "step": 50,
+      "time_over_T": 0.04166666666666777,
+      "dominant_mode": 2,
+      "cells_per_wavelength": 24.0
+    },
+    {
+      "frame": 2,
+      "step": 100,
+      "time_over_T": 0.08333333333336486,
+      "dominant_mode": 2,
+      "cells_per_wavelength": 24.0
+    },
+    {
+      "frame": 3,
+      "step": 150,
+      "time_over_T": 0.12499999999997398,
+      "dominant_mode": 2,
+      "cells_per_wavelength": 24.0
+    },
+    {
+      "frame": 4,
+      "step": 200,
+      "time_over_T": 0.16666666666665642,
+      "dominant_mode": 2,
+      "cells_per_wavelength": 24.0
+    },
+    {
+      "frame": 5,
+      "step": 250,
+      "time_over_T": 0.20833333333333884,
+      "dominant_mode": 2,
+      "cells_per_wavelength": 24.0
+    },
+    {
+      "frame": 6,
+      "step": 300,
+      "time_over_T": 0.25000000000002126,
+      "dominant_mode": 2,
+      "cells_per_wavelength": 24.0
+    },
+    {
+      "frame": 7,
+      "step": 350,
+      "time_over_T": 0.2916666666667037,
+      "dominant_mode": 2,
+      "cells_per_wavelength": 24.0
+    },
+    {
+      "frame": 8,
+      "step": 400,
+      "time_over_T": 0.33333333333331283,
+      "dominant_mode": 2,
+      "cells_per_wavelength": 24.0
+    },
+    {
+      "frame": 9,
+      "step": 450,
+      "time_over_T": 0.3749999999999952,
+      "dominant_mode": 2,
+      "cells_per_wavelength": 24.0
+    },
+    {
+      "frame": 10,
+      "step": 500,
+      "time_over_T": 0.4166666666666777,
+      "dominant_mode": 2,
+      "cells_per_wavelength": 24.0
+    },
+    {
+      "frame": 11,
+      "step": 550,
+      "time_over_T": 0.4583333333333601,
+      "dominant_mode": 2,
+      "cells_per_wavelength": 24.0
+    },
+    {
+      "frame": 12,
+      "step": 600,
+      "time_over_T": 0.5000000000000425,
+      "dominant_mode": 2,
+      "cells_per_wavelength": 24.0
+    },
+    {
+      "frame": 13,
+      "step": 650,
+      "time_over_T": 0.5416666666666516,
+      "dominant_mode": 2,
+      "cells_per_wavelength": 24.0
+    },
+    {
+      "frame": 14,
+      "step": 700,
+      "time_over_T": 0.583333333333334,
+      "dominant_mode": 2,
+      "cells_per_wavelength": 24.0
+    },
+    {
+      "frame": 15,
+      "step": 750,
+      "time_over_T": 0.6250000000000164,
+      "dominant_mode": 2,
+      "cells_per_wavelength": 24.0
+    },
+    {
+      "frame": 16,
+      "step": 800,
+      "time_over_T": 0.6666666666666989,
+      "dominant_mode": 2,
+      "cells_per_wavelength": 24.0
+    },
+    {
+      "frame": 17,
+      "step": 850,
+      "time_over_T": 0.7083333333333813,
+      "dominant_mode": 2,
+      "cells_per_wavelength": 24.0
+    },
+    {
+      "frame": 18,
+      "step": 900,
+      "time_over_T": 0.7500000000002838,
+      "dominant_mode": 2,
+      "cells_per_wavelength": 24.0
+    },
+    {
+      "frame": 19,
+      "step": 950,
+      "time_over_T": 0.7916666666665997,
+      "dominant_mode": 2,
+      "cells_per_wavelength": 24.0
+    },
+    {
+      "frame": 20,
+      "step": 1000,
+      "time_over_T": 0.8333333333336485,
+      "dominant_mode": 2,
+      "cells_per_wavelength": 24.0
+    },
+    {
+      "frame": 21,
+      "step": 1050,
+      "time_over_T": 0.8749999999999645,
+      "dominant_mode": 2,
+      "cells_per_wavelength": 24.0
+    },
+    {
+      "frame": 22,
+      "step": 1100,
+      "time_over_T": 0.9166666666670134,
+      "dominant_mode": 2,
+      "cells_per_wavelength": 24.0
+    },
+    {
+      "frame": 23,
+      "step": 1150,
+      "time_over_T": 0.9583333333333293,
+      "dominant_mode": 2,
+      "cells_per_wavelength": 24.0
+    },
+    {
+      "frame": 24,
+      "step": 1200,
+      "time_over_T": 1.0000000000003781,
+      "dominant_mode": 2,
+      "cells_per_wavelength": 24.0
+    },
+    {
+      "frame": 25,
+      "step": 1250,
+      "time_over_T": 1.0416666666666943,
+      "dominant_mode": 2,
+      "cells_per_wavelength": 24.0
+    },
+    {
+      "frame": 26,
+      "step": 1300,
+      "time_over_T": 1.0833333333330102,
+      "dominant_mode": 2,
+      "cells_per_wavelength": 24.0
+    },
+    {
+      "frame": 27,
+      "step": 1350,
+      "time_over_T": 1.1250000000000588,
+      "dominant_mode": 2,
+      "cells_per_wavelength": 24.0
+    },
+    {
+      "frame": 28,
+      "step": 1400,
+      "time_over_T": 1.166666666666375,
+      "dominant_mode": 2,
+      "cells_per_wavelength": 24.0
+    },
+    {
+      "frame": 29,
+      "step": 1450,
+      "time_over_T": 1.2083333333334239,
+      "dominant_mode": 2,
+      "cells_per_wavelength": 24.0
+    },
+    {
+      "frame": 30,
+      "step": 1500,
+      "time_over_T": 1.2499999999997398,
+      "dominant_mode": 2,
+      "cells_per_wavelength": 24.0
+    },
+    {
+      "frame": 31,
+      "step": 1550,
+      "time_over_T": 1.2916666666667886,
+      "dominant_mode": 2,
+      "cells_per_wavelength": 24.0
+    },
+    {
+      "frame": 32,
+      "step": 1600,
+      "time_over_T": 1.3333333333331048,
+      "dominant_mode": 2,
+      "cells_per_wavelength": 24.0
+    },
+    {
+      "frame": 33,
+      "step": 1650,
+      "time_over_T": 1.3750000000001537,
+      "dominant_mode": 2,
+      "cells_per_wavelength": 24.0
+    },
+    {
+      "frame": 34,
+      "step": 1700,
+      "time_over_T": 1.4166666666664696,
+      "dominant_mode": 2,
+      "cells_per_wavelength": 24.0
+    },
+    {
+      "frame": 35,
+      "step": 1750,
+      "time_over_T": 1.4583333333335184,
+      "dominant_mode": 2,
+      "cells_per_wavelength": 24.0
+    },
+    {
+      "frame": 36,
+      "step": 1800,
+      "time_over_T": 1.4999999999998344,
+      "dominant_mode": 2,
+      "cells_per_wavelength": 24.0
+    },
+    {
+      "frame": 37,
+      "step": 1850,
+      "time_over_T": 1.5416666666668832,
+      "dominant_mode": 2,
+      "cells_per_wavelength": 24.0
+    },
+    {
+      "frame": 38,
+      "step": 1900,
+      "time_over_T": 1.5833333333331994,
+      "dominant_mode": 2,
+      "cells_per_wavelength": 24.0
+    },
+    {
+      "frame": 39,
+      "step": 1950,
+      "time_over_T": 1.6250000000002482,
+      "dominant_mode": 2,
+      "cells_per_wavelength": 24.0
+    },
+    {
+      "frame": 40,
+      "step": 2000,
+      "time_over_T": 1.6666666666665642,
+      "dominant_mode": 2,
+      "cells_per_wavelength": 24.0
+    },
+    {
+      "frame": 41,
+      "step": 2050,
+      "time_over_T": 1.708333333333613,
+      "dominant_mode": 2,
+      "cells_per_wavelength": 24.0
+    },
+    {
+      "frame": 42,
+      "step": 2100,
+      "time_over_T": 1.749999999999929,
+      "dominant_mode": 2,
+      "cells_per_wavelength": 24.0
+    },
+    {
+      "frame": 43,
+      "step": 2150,
+      "time_over_T": 1.7916666666662449,
+      "dominant_mode": 2,
+      "cells_per_wavelength": 24.0
+    },
+    {
+      "frame": 44,
+      "step": 2200,
+      "time_over_T": 1.8333333333332937,
+      "dominant_mode": 2,
+      "cells_per_wavelength": 24.0
+    },
+    {
+      "frame": 45,
+      "step": 2250,
+      "time_over_T": 1.8749999999996099,
+      "dominant_mode": 2,
+      "cells_per_wavelength": 24.0
+    },
+    {
+      "frame": 46,
+      "step": 2300,
+      "time_over_T": 1.9166666666666585,
+      "dominant_mode": 2,
+      "cells_per_wavelength": 24.0
+    },
+    {
+      "frame": 47,
+      "step": 2350,
+      "time_over_T": 1.9583333333329744,
+      "dominant_mode": 2,
+      "cells_per_wavelength": 24.0
+    },
+    {
+      "frame": 48,
+      "step": 2400,
+      "time_over_T": 2.0000000000000235,
+      "dominant_mode": 2,
+      "cells_per_wavelength": 24.0
+    },
+    {
+      "frame": 49,
+      "step": 2450,
+      "time_over_T": 2.0416666666663397,
+      "dominant_mode": 2,
+      "cells_per_wavelength": 24.0
+    },
+    {
+      "frame": 50,
+      "step": 2500,
+      "time_over_T": 2.0833333333333885,
+      "dominant_mode": 2,
+      "cells_per_wavelength": 24.0
+    },
+    {
+      "frame": 51,
+      "step": 2550,
+      "time_over_T": 2.1249999999997042,
+      "dominant_mode": 2,
+      "cells_per_wavelength": 24.0
+    },
+    {
+      "frame": 52,
+      "step": 2600,
+      "time_over_T": 2.166666666666753,
+      "dominant_mode": 2,
+      "cells_per_wavelength": 24.0
+    },
+    {
+      "frame": 53,
+      "step": 2650,
+      "time_over_T": 2.2083333333330692,
+      "dominant_mode": 2,
+      "cells_per_wavelength": 24.0
+    },
+    {
+      "frame": 54,
+      "step": 2700,
+      "time_over_T": 2.2500000000001177,
+      "dominant_mode": 2,
+      "cells_per_wavelength": 24.0
+    },
+    {
+      "frame": 55,
+      "step": 2750,
+      "time_over_T": 2.291666666666434,
+      "dominant_mode": 2,
+      "cells_per_wavelength": 24.0
+    },
+    {
+      "frame": 56,
+      "step": 2800,
+      "time_over_T": 2.333333333333483,
+      "dominant_mode": 2,
+      "cells_per_wavelength": 24.0
+    },
+    {
+      "frame": 57,
+      "step": 2850,
+      "time_over_T": 2.374999999999799,
+      "dominant_mode": 2,
+      "cells_per_wavelength": 24.0
+    },
+    {
+      "frame": 58,
+      "step": 2900,
+      "time_over_T": 2.4166666666668477,
+      "dominant_mode": 2,
+      "cells_per_wavelength": 24.0
+    },
+    {
+      "frame": 59,
+      "step": 2950,
+      "time_over_T": 2.458333333333164,
+      "dominant_mode": 2,
+      "cells_per_wavelength": 24.0
+    },
+    {
+      "frame": 60,
+      "step": 3000,
+      "time_over_T": 2.5000000000002127,
+      "dominant_mode": 2,
+      "cells_per_wavelength": 24.0
+    },
+    {
+      "frame": 61,
+      "step": 3050,
+      "time_over_T": 2.541666666666529,
+      "dominant_mode": 2,
+      "cells_per_wavelength": 24.0
+    },
+    {
+      "frame": 62,
+      "step": 3100,
+      "time_over_T": 2.5833333333328445,
+      "dominant_mode": 2,
+      "cells_per_wavelength": 24.0
+    },
+    {
+      "frame": 63,
+      "step": 3150,
+      "time_over_T": 2.6249999999998934,
+      "dominant_mode": 2,
+      "cells_per_wavelength": 24.0
+    },
+    {
+      "frame": 64,
+      "step": 3200,
+      "time_over_T": 2.6666666666662096,
+      "dominant_mode": 2,
+      "cells_per_wavelength": 24.0
+    },
+    {
+      "frame": 65,
+      "step": 3250,
+      "time_over_T": 2.7083333333332584,
+      "dominant_mode": 2,
+      "cells_per_wavelength": 24.0
+    },
+    {
+      "frame": 66,
+      "step": 3300,
+      "time_over_T": 2.749999999999574,
+      "dominant_mode": 2,
+      "cells_per_wavelength": 24.0
+    },
+    {
+      "frame": 67,
+      "step": 3350,
+      "time_over_T": 2.791666666666623,
+      "dominant_mode": 2,
+      "cells_per_wavelength": 24.0
+    },
+    {
+      "frame": 68,
+      "step": 3400,
+      "time_over_T": 2.833333333332939,
+      "dominant_mode": 2,
+      "cells_per_wavelength": 24.0
+    },
+    {
+      "frame": 69,
+      "step": 3450,
+      "time_over_T": 2.8749999999999876,
+      "dominant_mode": 2,
+      "cells_per_wavelength": 24.0
+    },
+    {
+      "frame": 70,
+      "step": 3500,
+      "time_over_T": 2.9166666666663037,
+      "dominant_mode": 2,
+      "cells_per_wavelength": 24.0
+    },
+    {
+      "frame": 71,
+      "step": 3550,
+      "time_over_T": 2.958333333333353,
+      "dominant_mode": 2,
+      "cells_per_wavelength": 24.0
+    },
+    {
+      "frame": 72,
+      "step": 3600,
+      "time_over_T": 2.9999999999996687,
+      "dominant_mode": 2,
+      "cells_per_wavelength": 24.0
+    },
+    {
+      "frame": 73,
+      "step": 3650,
+      "time_over_T": 3.0416666666667176,
+      "dominant_mode": 2,
+      "cells_per_wavelength": 24.0
+    },
+    {
+      "frame": 74,
+      "step": 3700,
+      "time_over_T": 3.0833333333330337,
+      "dominant_mode": 2,
+      "cells_per_wavelength": 24.0
+    },
+    {
+      "frame": 75,
+      "step": 3750,
+      "time_over_T": 3.1250000000000826,
+      "dominant_mode": 2,
+      "cells_per_wavelength": 24.0
+    },
+    {
+      "frame": 76,
+      "step": 3800,
+      "time_over_T": 3.1666666666663987,
+      "dominant_mode": 2,
+      "cells_per_wavelength": 24.0
+    },
+    {
+      "frame": 77,
+      "step": 3850,
+      "time_over_T": 3.208333333333447,
+      "dominant_mode": 2,
+      "cells_per_wavelength": 24.0
+    },
+    {
+      "frame": 78,
+      "step": 3900,
+      "time_over_T": 3.2499999999997633,
+      "dominant_mode": 2,
+      "cells_per_wavelength": 24.0
+    },
+    {
+      "frame": 79,
+      "step": 3950,
+      "time_over_T": 3.291666666666812,
+      "dominant_mode": 2,
+      "cells_per_wavelength": 24.0
+    },
+    {
+      "frame": 80,
+      "step": 4000,
+      "time_over_T": 3.3333333333331283,
+      "dominant_mode": 2,
+      "cells_per_wavelength": 24.0
+    },
+    {
+      "frame": 81,
+      "step": 4050,
+      "time_over_T": 3.374999999999444,
+      "dominant_mode": 2,
+      "cells_per_wavelength": 24.0
+    },
+    {
+      "frame": 82,
+      "step": 4100,
+      "time_over_T": 3.416666666666493,
+      "dominant_mode": 2,
+      "cells_per_wavelength": 24.0
+    },
+    {
+      "frame": 83,
+      "step": 4150,
+      "time_over_T": 3.458333333332809,
+      "dominant_mode": 2,
+      "cells_per_wavelength": 24.0
+    },
+    {
+      "frame": 84,
+      "step": 4200,
+      "time_over_T": 3.499999999999858,
+      "dominant_mode": 2,
+      "cells_per_wavelength": 24.0
+    },
+    {
+      "frame": 85,
+      "step": 4250,
+      "time_over_T": 3.5416666666661736,
+      "dominant_mode": 2,
+      "cells_per_wavelength": 24.0
+    },
+    {
+      "frame": 86,
+      "step": 4300,
+      "time_over_T": 3.583333333333223,
+      "dominant_mode": 2,
+      "cells_per_wavelength": 24.0
+    },
+    {
+      "frame": 87,
+      "step": 4350,
+      "time_over_T": 3.624999999999539,
+      "dominant_mode": 2,
+      "cells_per_wavelength": 24.0
+    },
+    {
+      "frame": 88,
+      "step": 4400,
+      "time_over_T": 3.6666666666665875,
+      "dominant_mode": 2,
+      "cells_per_wavelength": 24.0
+    },
+    {
+      "frame": 89,
+      "step": 4450,
+      "time_over_T": 3.7083333333329036,
+      "dominant_mode": 2,
+      "cells_per_wavelength": 24.0
+    },
+    {
+      "frame": 90,
+      "step": 4500,
+      "time_over_T": 3.7499999999999525,
+      "dominant_mode": 10,
+      "cells_per_wavelength": 4.8
+    },
+    {
+      "frame": 91,
+      "step": 4550,
+      "time_over_T": 3.7916666666662686,
+      "dominant_mode": 10,
+      "cells_per_wavelength": 4.8
+    },
+    {
+      "frame": 92,
+      "step": 4600,
+      "time_over_T": 3.833333333333317,
+      "dominant_mode": 10,
+      "cells_per_wavelength": 4.8
+    },
+    {
+      "frame": 93,
+      "step": 4650,
+      "time_over_T": 3.8749999999996336,
+      "dominant_mode": 10,
+      "cells_per_wavelength": 4.8
+    },
+    {
+      "frame": 94,
+      "step": 4700,
+      "time_over_T": 3.916666666666682,
+      "dominant_mode": 10,
+      "cells_per_wavelength": 4.8
+    },
+    {
+      "frame": 95,
+      "step": 4750,
+      "time_over_T": 3.9583333333329977,
+      "dominant_mode": 10,
+      "cells_per_wavelength": 4.8
+    },
+    {
+      "frame": 96,
+      "step": 4800,
+      "time_over_T": 4.000000000000047,
+      "dominant_mode": 10,
+      "cells_per_wavelength": 4.8
+    },
+    {
+      "frame": 97,
+      "step": 4850,
+      "time_over_T": 4.041666666666363,
+      "dominant_mode": 10,
+      "cells_per_wavelength": 4.8
+    },
+    {
+      "frame": 98,
+      "step": 4900,
+      "time_over_T": 4.083333333333412,
+      "dominant_mode": 10,
+      "cells_per_wavelength": 4.8
+    },
+    {
+      "frame": 99,
+      "step": 4950,
+      "time_over_T": 4.124999999999728,
+      "dominant_mode": 10,
+      "cells_per_wavelength": 4.8
+    },
+    {
+      "frame": 100,
+      "step": 5000,
+      "time_over_T": 4.166666666666777,
+      "dominant_mode": 10,
+      "cells_per_wavelength": 4.8
+    },
+    {
+      "frame": 101,
+      "step": 5050,
+      "time_over_T": 4.208333333333092,
+      "dominant_mode": 10,
+      "cells_per_wavelength": 4.8
+    },
+    {
+      "frame": 102,
+      "step": 5100,
+      "time_over_T": 4.250000000000141,
+      "dominant_mode": 10,
+      "cells_per_wavelength": 4.8
+    },
+    {
+      "frame": 103,
+      "step": 5150,
+      "time_over_T": 4.291666666666457,
+      "dominant_mode": 10,
+      "cells_per_wavelength": 4.8
+    },
+    {
+      "frame": 104,
+      "step": 5200,
+      "time_over_T": 4.333333333333506,
+      "dominant_mode": 10,
+      "cells_per_wavelength": 4.8
+    },
+    {
+      "frame": 105,
+      "step": 5250,
+      "time_over_T": 4.374999999999822,
+      "dominant_mode": 10,
+      "cells_per_wavelength": 4.8
+    },
+    {
+      "frame": 106,
+      "step": 5300,
+      "time_over_T": 4.416666666666871,
+      "dominant_mode": 10,
+      "cells_per_wavelength": 4.8
+    },
+    {
+      "frame": 107,
+      "step": 5350,
+      "time_over_T": 4.458333333333187,
+      "dominant_mode": 10,
+      "cells_per_wavelength": 4.8
+    },
+    {
+      "frame": 108,
+      "step": 5400,
+      "time_over_T": 4.500000000000235,
+      "dominant_mode": 10,
+      "cells_per_wavelength": 4.8
+    },
+    {
+      "frame": 109,
+      "step": 5450,
+      "time_over_T": 4.5416666666665515,
+      "dominant_mode": 10,
+      "cells_per_wavelength": 4.8
+    },
+    {
+      "frame": 110,
+      "step": 5500,
+      "time_over_T": 4.5833333333336,
+      "dominant_mode": 10,
+      "cells_per_wavelength": 4.8
+    },
+    {
+      "frame": 111,
+      "step": 5550,
+      "time_over_T": 4.6249999999999165,
+      "dominant_mode": 10,
+      "cells_per_wavelength": 4.8
+    },
+    {
+      "frame": 112,
+      "step": 5600,
+      "time_over_T": 4.666666666666966,
+      "dominant_mode": 10,
+      "cells_per_wavelength": 4.8
+    },
+    {
+      "frame": 113,
+      "step": 5650,
+      "time_over_T": 4.7083333333332815,
+      "dominant_mode": 10,
+      "cells_per_wavelength": 4.8
+    },
+    {
+      "frame": 114,
+      "step": 5700,
+      "time_over_T": 4.750000000000331,
+      "dominant_mode": 10,
+      "cells_per_wavelength": 4.8
+    },
+    {
+      "frame": 115,
+      "step": 5750,
+      "time_over_T": 4.791666666666647,
+      "dominant_mode": 10,
+      "cells_per_wavelength": 4.8
+    },
+    {
+      "frame": 116,
+      "step": 5800,
+      "time_over_T": 4.833333333333695,
+      "dominant_mode": 10,
+      "cells_per_wavelength": 4.8
+    },
+    {
+      "frame": 117,
+      "step": 5850,
+      "time_over_T": 4.8750000000000115,
+      "dominant_mode": 10,
+      "cells_per_wavelength": 4.8
+    },
+    {
+      "frame": 118,
+      "step": 5900,
+      "time_over_T": 4.91666666666706,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 119,
+      "step": 5950,
+      "time_over_T": 4.958333333333377,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 120,
+      "step": 6000,
+      "time_over_T": 5.000000000000425,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 121,
+      "step": 6050,
+      "time_over_T": 5.041666666666742,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 122,
+      "step": 6100,
+      "time_over_T": 5.0833333333337904,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 123,
+      "step": 6150,
+      "time_over_T": 5.125000000000106,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 124,
+      "step": 6200,
+      "time_over_T": 5.166666666667155,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 125,
+      "step": 6250,
+      "time_over_T": 5.208333333333471,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 126,
+      "step": 6300,
+      "time_over_T": 5.25000000000052,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 127,
+      "step": 6350,
+      "time_over_T": 5.291666666666836,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 128,
+      "step": 6400,
+      "time_over_T": 5.333333333333885,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 129,
+      "step": 6450,
+      "time_over_T": 5.375000000000201,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 130,
+      "step": 6500,
+      "time_over_T": 5.41666666666725,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 131,
+      "step": 6550,
+      "time_over_T": 5.458333333333565,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 132,
+      "step": 6600,
+      "time_over_T": 5.500000000000615,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 133,
+      "step": 6650,
+      "time_over_T": 5.54166666666693,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 134,
+      "step": 6700,
+      "time_over_T": 5.58333333333398,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 135,
+      "step": 6750,
+      "time_over_T": 5.625000000000295,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 136,
+      "step": 6800,
+      "time_over_T": 5.666666666667345,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 137,
+      "step": 6850,
+      "time_over_T": 5.708333333333661,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 138,
+      "step": 6900,
+      "time_over_T": 5.750000000000709,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 139,
+      "step": 6950,
+      "time_over_T": 5.791666666667025,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 140,
+      "step": 7000,
+      "time_over_T": 5.833333333334074,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 141,
+      "step": 7050,
+      "time_over_T": 5.87500000000039,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 142,
+      "step": 7100,
+      "time_over_T": 5.916666666667439,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 143,
+      "step": 7150,
+      "time_over_T": 5.958333333333755,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 144,
+      "step": 7200,
+      "time_over_T": 6.000000000000804,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 145,
+      "step": 7250,
+      "time_over_T": 6.04166666666712,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 146,
+      "step": 7300,
+      "time_over_T": 6.083333333334168,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 147,
+      "step": 7350,
+      "time_over_T": 6.125000000000484,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 148,
+      "step": 7400,
+      "time_over_T": 6.166666666667533,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 149,
+      "step": 7450,
+      "time_over_T": 6.208333333333849,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 150,
+      "step": 7500,
+      "time_over_T": 6.250000000000898,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 151,
+      "step": 7550,
+      "time_over_T": 6.291666666667214,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 152,
+      "step": 7600,
+      "time_over_T": 6.333333333334263,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 153,
+      "step": 7650,
+      "time_over_T": 6.375000000000578,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 154,
+      "step": 7700,
+      "time_over_T": 6.416666666667628,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 155,
+      "step": 7750,
+      "time_over_T": 6.458333333333943,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 156,
+      "step": 7800,
+      "time_over_T": 6.500000000000993,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 157,
+      "step": 7850,
+      "time_over_T": 6.541666666667309,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 158,
+      "step": 7900,
+      "time_over_T": 6.583333333334358,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 159,
+      "step": 7950,
+      "time_over_T": 6.625000000000674,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 160,
+      "step": 8000,
+      "time_over_T": 6.666666666667723,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 161,
+      "step": 8050,
+      "time_over_T": 6.708333333334038,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 162,
+      "step": 8100,
+      "time_over_T": 6.750000000001087,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 163,
+      "step": 8150,
+      "time_over_T": 6.791666666667403,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 164,
+      "step": 8200,
+      "time_over_T": 6.833333333334452,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 165,
+      "step": 8250,
+      "time_over_T": 6.875000000000768,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 166,
+      "step": 8300,
+      "time_over_T": 6.916666666667817,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 167,
+      "step": 8350,
+      "time_over_T": 6.958333333334133,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 168,
+      "step": 8400,
+      "time_over_T": 7.000000000001181,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 169,
+      "step": 8450,
+      "time_over_T": 7.041666666667497,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 170,
+      "step": 8500,
+      "time_over_T": 7.083333333334546,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 171,
+      "step": 8550,
+      "time_over_T": 7.125000000000862,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 172,
+      "step": 8600,
+      "time_over_T": 7.166666666667911,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 173,
+      "step": 8650,
+      "time_over_T": 7.208333333334227,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 174,
+      "step": 8700,
+      "time_over_T": 7.250000000001276,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 175,
+      "step": 8750,
+      "time_over_T": 7.291666666667592,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 176,
+      "step": 8800,
+      "time_over_T": 7.333333333331709,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 177,
+      "step": 8850,
+      "time_over_T": 7.374999999999491,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 178,
+      "step": 8900,
+      "time_over_T": 7.416666666667273,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 179,
+      "step": 8950,
+      "time_over_T": 7.458333333335055,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 180,
+      "step": 9000,
+      "time_over_T": 7.500000000002837,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 181,
+      "step": 9050,
+      "time_over_T": 7.541666666670619,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 182,
+      "step": 9100,
+      "time_over_T": 7.583333333331071,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 183,
+      "step": 9150,
+      "time_over_T": 7.6249999999988525,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 184,
+      "step": 9200,
+      "time_over_T": 7.666666666666634,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 185,
+      "step": 9250,
+      "time_over_T": 7.708333333334417,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 186,
+      "step": 9300,
+      "time_over_T": 7.750000000002199,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 187,
+      "step": 9350,
+      "time_over_T": 7.791666666669981,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 188,
+      "step": 9400,
+      "time_over_T": 7.8333333333377615,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 189,
+      "step": 9450,
+      "time_over_T": 7.874999999998215,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 190,
+      "step": 9500,
+      "time_over_T": 7.9166666666659955,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 191,
+      "step": 9550,
+      "time_over_T": 7.958333333333779,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 192,
+      "step": 9600,
+      "time_over_T": 8.00000000000156,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 193,
+      "step": 9650,
+      "time_over_T": 8.041666666669343,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 194,
+      "step": 9700,
+      "time_over_T": 8.083333333337125,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 195,
+      "step": 9750,
+      "time_over_T": 8.124999999997575,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 196,
+      "step": 9800,
+      "time_over_T": 8.166666666665359,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 197,
+      "step": 9850,
+      "time_over_T": 8.208333333333139,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 198,
+      "step": 9900,
+      "time_over_T": 8.250000000000922,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 199,
+      "step": 9950,
+      "time_over_T": 8.291666666668704,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 200,
+      "step": 10000,
+      "time_over_T": 8.333333333336487,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 201,
+      "step": 10050,
+      "time_over_T": 8.375000000004267,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 202,
+      "step": 10100,
+      "time_over_T": 8.41666666666472,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 203,
+      "step": 10150,
+      "time_over_T": 8.4583333333325,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 204,
+      "step": 10200,
+      "time_over_T": 8.500000000000282,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 205,
+      "step": 10250,
+      "time_over_T": 8.541666666668066,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 206,
+      "step": 10300,
+      "time_over_T": 8.583333333335847,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 207,
+      "step": 10350,
+      "time_over_T": 8.625000000003629,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 208,
+      "step": 10400,
+      "time_over_T": 8.666666666664081,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 209,
+      "step": 10450,
+      "time_over_T": 8.708333333331861,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 210,
+      "step": 10500,
+      "time_over_T": 8.749999999999645,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 211,
+      "step": 10550,
+      "time_over_T": 8.791666666667426,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 212,
+      "step": 10600,
+      "time_over_T": 8.83333333333521,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 213,
+      "step": 10650,
+      "time_over_T": 8.87500000000299,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 214,
+      "step": 10700,
+      "time_over_T": 8.916666666670773,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 215,
+      "step": 10750,
+      "time_over_T": 8.958333333331224,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 216,
+      "step": 10800,
+      "time_over_T": 8.999999999999007,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 217,
+      "step": 10850,
+      "time_over_T": 9.041666666666789,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 218,
+      "step": 10900,
+      "time_over_T": 9.08333333333457,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 219,
+      "step": 10950,
+      "time_over_T": 9.125000000002352,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 220,
+      "step": 11000,
+      "time_over_T": 9.166666666670134,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 221,
+      "step": 11050,
+      "time_over_T": 9.208333333330586,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 222,
+      "step": 11100,
+      "time_over_T": 9.249999999998368,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 223,
+      "step": 11150,
+      "time_over_T": 9.291666666666151,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 224,
+      "step": 11200,
+      "time_over_T": 9.333333333333933,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 225,
+      "step": 11250,
+      "time_over_T": 9.375000000001712,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 226,
+      "step": 11300,
+      "time_over_T": 9.416666666669496,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 227,
+      "step": 11350,
+      "time_over_T": 9.458333333329946,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 228,
+      "step": 11400,
+      "time_over_T": 9.49999999999773,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 229,
+      "step": 11450,
+      "time_over_T": 9.541666666665511,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 230,
+      "step": 11500,
+      "time_over_T": 9.583333333333295,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 231,
+      "step": 11550,
+      "time_over_T": 9.625000000001075,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 232,
+      "step": 11600,
+      "time_over_T": 9.666666666668856,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 233,
+      "step": 11650,
+      "time_over_T": 9.70833333333664,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 234,
+      "step": 11700,
+      "time_over_T": 9.74999999999709,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 235,
+      "step": 11750,
+      "time_over_T": 9.791666666664874,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 236,
+      "step": 11800,
+      "time_over_T": 9.833333333332655,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 237,
+      "step": 11850,
+      "time_over_T": 9.875000000000437,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 238,
+      "step": 11900,
+      "time_over_T": 9.916666666668219,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 239,
+      "step": 11950,
+      "time_over_T": 9.958333333336,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 240,
+      "step": 12000,
+      "time_over_T": 9.999999999996453,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 241,
+      "step": 12050,
+      "time_over_T": 10.041666666664234,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 242,
+      "step": 12100,
+      "time_over_T": 10.083333333332018,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 243,
+      "step": 12150,
+      "time_over_T": 10.124999999999797,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 244,
+      "step": 12200,
+      "time_over_T": 10.166666666667581,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 245,
+      "step": 12250,
+      "time_over_T": 10.208333333335363,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 246,
+      "step": 12300,
+      "time_over_T": 10.250000000003144,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 247,
+      "step": 12350,
+      "time_over_T": 10.291666666663597,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 248,
+      "step": 12400,
+      "time_over_T": 10.333333333331378,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 249,
+      "step": 12450,
+      "time_over_T": 10.37499999999916,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 250,
+      "step": 12500,
+      "time_over_T": 10.416666666666941,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 251,
+      "step": 12550,
+      "time_over_T": 10.458333333334725,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 252,
+      "step": 12600,
+      "time_over_T": 10.500000000002506,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 253,
+      "step": 12650,
+      "time_over_T": 10.541666666662959,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 254,
+      "step": 12700,
+      "time_over_T": 10.58333333333074,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 255,
+      "step": 12750,
+      "time_over_T": 10.62499999999852,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 256,
+      "step": 12800,
+      "time_over_T": 10.666666666666304,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 257,
+      "step": 12850,
+      "time_over_T": 10.708333333334085,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 258,
+      "step": 12900,
+      "time_over_T": 10.750000000001869,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 259,
+      "step": 12950,
+      "time_over_T": 10.791666666669649,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 260,
+      "step": 13000,
+      "time_over_T": 10.833333333330101,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 261,
+      "step": 13050,
+      "time_over_T": 10.874999999997883,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 262,
+      "step": 13100,
+      "time_over_T": 10.916666666665664,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 263,
+      "step": 13150,
+      "time_over_T": 10.958333333333448,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 264,
+      "step": 13200,
+      "time_over_T": 11.00000000000123,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 265,
+      "step": 13250,
+      "time_over_T": 11.04166666666901,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 266,
+      "step": 13300,
+      "time_over_T": 11.083333333329461,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 267,
+      "step": 13350,
+      "time_over_T": 11.124999999997245,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 268,
+      "step": 13400,
+      "time_over_T": 11.166666666665026,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 269,
+      "step": 13450,
+      "time_over_T": 11.208333333332808,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 270,
+      "step": 13500,
+      "time_over_T": 11.25000000000059,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 271,
+      "step": 13550,
+      "time_over_T": 11.291666666668371,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 272,
+      "step": 13600,
+      "time_over_T": 11.333333333328824,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 273,
+      "step": 13650,
+      "time_over_T": 11.374999999996605,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 274,
+      "step": 13700,
+      "time_over_T": 11.416666666664389,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 275,
+      "step": 13750,
+      "time_over_T": 11.45833333333217,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 276,
+      "step": 13800,
+      "time_over_T": 11.49999999999995,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 277,
+      "step": 13850,
+      "time_over_T": 11.541666666667734,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 278,
+      "step": 13900,
+      "time_over_T": 11.583333333335515,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 279,
+      "step": 13950,
+      "time_over_T": 11.624999999995968,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 280,
+      "step": 14000,
+      "time_over_T": 11.66666666666375,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 281,
+      "step": 14050,
+      "time_over_T": 11.708333333331533,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 282,
+      "step": 14100,
+      "time_over_T": 11.749999999999313,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 283,
+      "step": 14150,
+      "time_over_T": 11.791666666667096,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 284,
+      "step": 14200,
+      "time_over_T": 11.833333333334878,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 285,
+      "step": 14250,
+      "time_over_T": 11.874999999995328,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 286,
+      "step": 14300,
+      "time_over_T": 11.916666666663112,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 287,
+      "step": 14350,
+      "time_over_T": 11.958333333330893,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 288,
+      "step": 14400,
+      "time_over_T": 11.999999999998675,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 289,
+      "step": 14450,
+      "time_over_T": 12.041666666666456,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 290,
+      "step": 14500,
+      "time_over_T": 12.08333333333424,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 291,
+      "step": 14550,
+      "time_over_T": 12.125000000002021,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 292,
+      "step": 14600,
+      "time_over_T": 12.166666666662472,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 293,
+      "step": 14650,
+      "time_over_T": 12.208333333330255,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 294,
+      "step": 14700,
+      "time_over_T": 12.249999999998035,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 295,
+      "step": 14750,
+      "time_over_T": 12.291666666665819,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 296,
+      "step": 14800,
+      "time_over_T": 12.3333333333336,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 297,
+      "step": 14850,
+      "time_over_T": 12.375000000001384,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 298,
+      "step": 14900,
+      "time_over_T": 12.416666666661834,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 299,
+      "step": 14950,
+      "time_over_T": 12.458333333329616,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 300,
+      "step": 15000,
+      "time_over_T": 12.499999999997398,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 301,
+      "step": 15050,
+      "time_over_T": 12.54166666666518,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 302,
+      "step": 15100,
+      "time_over_T": 12.583333333332963,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 303,
+      "step": 15150,
+      "time_over_T": 12.625000000000744,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 304,
+      "step": 15200,
+      "time_over_T": 12.666666666668526,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 305,
+      "step": 15250,
+      "time_over_T": 12.708333333328978,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 306,
+      "step": 15300,
+      "time_over_T": 12.749999999996758,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 307,
+      "step": 15350,
+      "time_over_T": 12.791666666664542,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 308,
+      "step": 15400,
+      "time_over_T": 12.833333333332323,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 309,
+      "step": 15450,
+      "time_over_T": 12.875000000000107,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 310,
+      "step": 15500,
+      "time_over_T": 12.916666666667886,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 311,
+      "step": 15550,
+      "time_over_T": 12.95833333332834,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 312,
+      "step": 15600,
+      "time_over_T": 12.99999999999612,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 313,
+      "step": 15650,
+      "time_over_T": 13.041666666663904,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 314,
+      "step": 15700,
+      "time_over_T": 13.083333333331685,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 315,
+      "step": 15750,
+      "time_over_T": 13.124999999999467,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 316,
+      "step": 15800,
+      "time_over_T": 13.166666666667249,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 317,
+      "step": 15850,
+      "time_over_T": 13.208333333327701,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 318,
+      "step": 15900,
+      "time_over_T": 13.249999999995483,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 319,
+      "step": 15950,
+      "time_over_T": 13.291666666663264,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 320,
+      "step": 16000,
+      "time_over_T": 13.333333333331048,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 321,
+      "step": 16050,
+      "time_over_T": 13.37499999999883,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 322,
+      "step": 16100,
+      "time_over_T": 13.41666666666661,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 323,
+      "step": 16150,
+      "time_over_T": 13.458333333334393,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 324,
+      "step": 16200,
+      "time_over_T": 13.499999999994843,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 325,
+      "step": 16250,
+      "time_over_T": 13.541666666662627,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 326,
+      "step": 16300,
+      "time_over_T": 13.583333333330408,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 327,
+      "step": 16350,
+      "time_over_T": 13.624999999998192,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 328,
+      "step": 16400,
+      "time_over_T": 13.666666666665972,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 329,
+      "step": 16450,
+      "time_over_T": 13.708333333333753,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 330,
+      "step": 16500,
+      "time_over_T": 13.749999999994206,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 331,
+      "step": 16550,
+      "time_over_T": 13.791666666661987,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 332,
+      "step": 16600,
+      "time_over_T": 13.83333333332977,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 333,
+      "step": 16650,
+      "time_over_T": 13.874999999997552,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 334,
+      "step": 16700,
+      "time_over_T": 13.916666666665334,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 335,
+      "step": 16750,
+      "time_over_T": 13.958333333333115,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 336,
+      "step": 16800,
+      "time_over_T": 14.000000000000897,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 337,
+      "step": 16850,
+      "time_over_T": 14.04166666666135,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 338,
+      "step": 16900,
+      "time_over_T": 14.083333333329131,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 339,
+      "step": 16950,
+      "time_over_T": 14.124999999996914,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 340,
+      "step": 17000,
+      "time_over_T": 14.166666666664694,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 341,
+      "step": 17050,
+      "time_over_T": 14.208333333332478,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 342,
+      "step": 17100,
+      "time_over_T": 14.25000000000026,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 343,
+      "step": 17150,
+      "time_over_T": 14.291666666660712,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 344,
+      "step": 17200,
+      "time_over_T": 14.333333333328493,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 345,
+      "step": 17250,
+      "time_over_T": 14.374999999996275,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 346,
+      "step": 17300,
+      "time_over_T": 14.416666666664057,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 347,
+      "step": 17350,
+      "time_over_T": 14.458333333331838,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 348,
+      "step": 17400,
+      "time_over_T": 14.499999999999622,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 349,
+      "step": 17450,
+      "time_over_T": 14.541666666667403,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 350,
+      "step": 17500,
+      "time_over_T": 14.583333333327856,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 351,
+      "step": 17550,
+      "time_over_T": 14.624999999995637,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 352,
+      "step": 17600,
+      "time_over_T": 14.666666666663417,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 353,
+      "step": 17650,
+      "time_over_T": 14.7083333333312,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 354,
+      "step": 17700,
+      "time_over_T": 14.749999999998982,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 355,
+      "step": 17750,
+      "time_over_T": 14.791666666666766,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 356,
+      "step": 17800,
+      "time_over_T": 14.833333333327216,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 357,
+      "step": 17850,
+      "time_over_T": 14.874999999995,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 358,
+      "step": 17900,
+      "time_over_T": 14.91666666666278,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 359,
+      "step": 17950,
+      "time_over_T": 14.958333333330561,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 360,
+      "step": 18000,
+      "time_over_T": 14.999999999998344,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 361,
+      "step": 18050,
+      "time_over_T": 15.041666666666126,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 362,
+      "step": 18100,
+      "time_over_T": 15.083333333326578,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 363,
+      "step": 18150,
+      "time_over_T": 15.12499999999436,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 364,
+      "step": 18200,
+      "time_over_T": 15.166666666662142,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 365,
+      "step": 18250,
+      "time_over_T": 15.208333333329923,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 366,
+      "step": 18300,
+      "time_over_T": 15.249999999997705,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 367,
+      "step": 18350,
+      "time_over_T": 15.291666666665488,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 368,
+      "step": 18400,
+      "time_over_T": 15.333333333333268,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 369,
+      "step": 18450,
+      "time_over_T": 15.37499999999372,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 370,
+      "step": 18500,
+      "time_over_T": 15.416666666661504,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 371,
+      "step": 18550,
+      "time_over_T": 15.458333333329286,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 372,
+      "step": 18600,
+      "time_over_T": 15.499999999997067,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 373,
+      "step": 18650,
+      "time_over_T": 15.541666666664849,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 374,
+      "step": 18700,
+      "time_over_T": 15.583333333332629,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 375,
+      "step": 18750,
+      "time_over_T": 15.625000000000414,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 376,
+      "step": 18800,
+      "time_over_T": 15.666666666660863,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 377,
+      "step": 18850,
+      "time_over_T": 15.708333333328648,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 378,
+      "step": 18900,
+      "time_over_T": 15.74999999999643,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 379,
+      "step": 18950,
+      "time_over_T": 15.791666666664211,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 380,
+      "step": 19000,
+      "time_over_T": 15.833333333331991,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 381,
+      "step": 19050,
+      "time_over_T": 15.874999999999773,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 382,
+      "step": 19100,
+      "time_over_T": 15.916666666667558,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 383,
+      "step": 19150,
+      "time_over_T": 15.958333333328007,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 384,
+      "step": 19200,
+      "time_over_T": 15.999999999995792,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 385,
+      "step": 19250,
+      "time_over_T": 16.041666666663573,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 386,
+      "step": 19300,
+      "time_over_T": 16.083333333331353,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 387,
+      "step": 19350,
+      "time_over_T": 16.124999999999137,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 388,
+      "step": 19400,
+      "time_over_T": 16.166666666666917,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 389,
+      "step": 19450,
+      "time_over_T": 16.2083333333347,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 390,
+      "step": 19500,
+      "time_over_T": 16.24999999999515,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 391,
+      "step": 19550,
+      "time_over_T": 16.291666666662934,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 392,
+      "step": 19600,
+      "time_over_T": 16.333333333330717,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 393,
+      "step": 19650,
+      "time_over_T": 16.374999999998497,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 394,
+      "step": 19700,
+      "time_over_T": 16.416666666666277,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 395,
+      "step": 19750,
+      "time_over_T": 16.45833333333406,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 396,
+      "step": 19800,
+      "time_over_T": 16.500000000001844,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 397,
+      "step": 19850,
+      "time_over_T": 16.541666666662294,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 398,
+      "step": 19900,
+      "time_over_T": 16.583333333330078,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 399,
+      "step": 19950,
+      "time_over_T": 16.624999999997858,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 400,
+      "step": 20000,
+      "time_over_T": 16.66666666666564,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 401,
+      "step": 20050,
+      "time_over_T": 16.70833333333342,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 402,
+      "step": 20100,
+      "time_over_T": 16.750000000001208,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 403,
+      "step": 20150,
+      "time_over_T": 16.791666666661655,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 404,
+      "step": 20200,
+      "time_over_T": 16.83333333332944,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 405,
+      "step": 20250,
+      "time_over_T": 16.874999999997222,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 406,
+      "step": 20300,
+      "time_over_T": 16.916666666665,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 407,
+      "step": 20350,
+      "time_over_T": 16.958333333332785,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 408,
+      "step": 20400,
+      "time_over_T": 17.000000000000565,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 409,
+      "step": 20450,
+      "time_over_T": 17.04166666666835,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 410,
+      "step": 20500,
+      "time_over_T": 17.0833333333288,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 411,
+      "step": 20550,
+      "time_over_T": 17.12499999999658,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 412,
+      "step": 20600,
+      "time_over_T": 17.166666666664366,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 413,
+      "step": 20650,
+      "time_over_T": 17.208333333332146,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 414,
+      "step": 20700,
+      "time_over_T": 17.24999999999993,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 415,
+      "step": 20750,
+      "time_over_T": 17.29166666666771,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 416,
+      "step": 20800,
+      "time_over_T": 17.333333333335492,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 417,
+      "step": 20850,
+      "time_over_T": 17.374999999995943,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 418,
+      "step": 20900,
+      "time_over_T": 17.416666666663723,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 419,
+      "step": 20950,
+      "time_over_T": 17.45833333333151,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 420,
+      "step": 21000,
+      "time_over_T": 17.49999999999929,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 421,
+      "step": 21050,
+      "time_over_T": 17.54166666666707,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 422,
+      "step": 21100,
+      "time_over_T": 17.583333333334853,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 423,
+      "step": 21150,
+      "time_over_T": 17.625000000002636,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 424,
+      "step": 21200,
+      "time_over_T": 17.666666666663087,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 425,
+      "step": 21250,
+      "time_over_T": 17.708333333330867,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 426,
+      "step": 21300,
+      "time_over_T": 17.749999999998654,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 427,
+      "step": 21350,
+      "time_over_T": 17.791666666666433,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 428,
+      "step": 21400,
+      "time_over_T": 17.833333333334213,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 429,
+      "step": 21450,
+      "time_over_T": 17.875000000001997,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 430,
+      "step": 21500,
+      "time_over_T": 17.91666666666978,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 431,
+      "step": 21550,
+      "time_over_T": 17.95833333333023,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 432,
+      "step": 21600,
+      "time_over_T": 17.999999999998014,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 433,
+      "step": 21650,
+      "time_over_T": 18.041666666665794,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 434,
+      "step": 21700,
+      "time_over_T": 18.083333333333577,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 435,
+      "step": 21750,
+      "time_over_T": 18.125000000001357,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 436,
+      "step": 21800,
+      "time_over_T": 18.16666666666914,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 437,
+      "step": 21850,
+      "time_over_T": 18.208333333336924,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 438,
+      "step": 21900,
+      "time_over_T": 18.249999999997375,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 439,
+      "step": 21950,
+      "time_over_T": 18.291666666665158,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 440,
+      "step": 22000,
+      "time_over_T": 18.333333333332938,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 441,
+      "step": 22050,
+      "time_over_T": 18.37500000000072,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 442,
+      "step": 22100,
+      "time_over_T": 18.4166666666685,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 443,
+      "step": 22150,
+      "time_over_T": 18.45833333333628,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 444,
+      "step": 22200,
+      "time_over_T": 18.500000000004068,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 445,
+      "step": 22250,
+      "time_over_T": 18.541666666664515,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 446,
+      "step": 22300,
+      "time_over_T": 18.583333333332302,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 447,
+      "step": 22350,
+      "time_over_T": 18.62500000000008,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 448,
+      "step": 22400,
+      "time_over_T": 18.666666666667865,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 449,
+      "step": 22450,
+      "time_over_T": 18.708333333335645,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 450,
+      "step": 22500,
+      "time_over_T": 18.750000000003425,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 451,
+      "step": 22550,
+      "time_over_T": 18.79166666667121,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 452,
+      "step": 22600,
+      "time_over_T": 18.83333333333166,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 453,
+      "step": 22650,
+      "time_over_T": 18.874999999999446,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 454,
+      "step": 22700,
+      "time_over_T": 18.916666666667226,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 455,
+      "step": 22750,
+      "time_over_T": 18.958333333335005,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 456,
+      "step": 22800,
+      "time_over_T": 19.00000000000279,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 457,
+      "step": 22850,
+      "time_over_T": 19.04166666667057,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 458,
+      "step": 22900,
+      "time_over_T": 19.083333333338356,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 459,
+      "step": 22950,
+      "time_over_T": 19.124999999998803,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 460,
+      "step": 23000,
+      "time_over_T": 19.16666666666659,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 461,
+      "step": 23050,
+      "time_over_T": 19.20833333333437,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 462,
+      "step": 23100,
+      "time_over_T": 19.25000000000215,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 463,
+      "step": 23150,
+      "time_over_T": 19.291666666669933,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 464,
+      "step": 23200,
+      "time_over_T": 19.333333333337713,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 465,
+      "step": 23250,
+      "time_over_T": 19.375000000005496,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 466,
+      "step": 23300,
+      "time_over_T": 19.416666666665947,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 467,
+      "step": 23350,
+      "time_over_T": 19.45833333333373,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 468,
+      "step": 23400,
+      "time_over_T": 19.500000000001513,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 469,
+      "step": 23450,
+      "time_over_T": 19.541666666669293,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 470,
+      "step": 23500,
+      "time_over_T": 19.583333333337077,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 471,
+      "step": 23550,
+      "time_over_T": 19.625000000004857,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 472,
+      "step": 23600,
+      "time_over_T": 19.66666666667264,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 473,
+      "step": 23650,
+      "time_over_T": 19.70833333333309,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 474,
+      "step": 23700,
+      "time_over_T": 19.750000000000874,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 475,
+      "step": 23750,
+      "time_over_T": 19.791666666668657,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 476,
+      "step": 23800,
+      "time_over_T": 19.833333333336437,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 477,
+      "step": 23850,
+      "time_over_T": 19.875000000004217,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 478,
+      "step": 23900,
+      "time_over_T": 19.916666666672,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 479,
+      "step": 23950,
+      "time_over_T": 19.958333333339784,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 480,
+      "step": 24000,
+      "time_over_T": 20.000000000000234,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 481,
+      "step": 24050,
+      "time_over_T": 20.041666666668018,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 482,
+      "step": 24100,
+      "time_over_T": 20.0833333333358,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 483,
+      "step": 24150,
+      "time_over_T": 20.12500000000358,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 484,
+      "step": 24200,
+      "time_over_T": 20.16666666667136,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 485,
+      "step": 24250,
+      "time_over_T": 20.208333333339144,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 486,
+      "step": 24300,
+      "time_over_T": 20.250000000006928,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 487,
+      "step": 24350,
+      "time_over_T": 20.29166666666738,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 488,
+      "step": 24400,
+      "time_over_T": 20.333333333335162,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 489,
+      "step": 24450,
+      "time_over_T": 20.37500000000294,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 490,
+      "step": 24500,
+      "time_over_T": 20.416666666670725,
+      "dominant_mode": 4,
+      "cells_per_wavelength": 12.0
+    },
+    {
+      "frame": 491,
+      "step": 24550,
+      "time_over_T": 20.458333333338505,
+      "dominant_mode": 1,
+      "cells_per_wavelength": 48.0
+    },
+    {
+      "frame": 492,
+      "step": 24600,
+      "time_over_T": 20.50000000000629,
+      "dominant_mode": 1,
+      "cells_per_wavelength": 48.0
+    },
+    {
+      "frame": 493,
+      "step": 24650,
+      "time_over_T": 20.54166666667407,
+      "dominant_mode": 1,
+      "cells_per_wavelength": 48.0
+    },
+    {
+      "frame": 494,
+      "step": 24700,
+      "time_over_T": 20.583333333334522,
+      "dominant_mode": 1,
+      "cells_per_wavelength": 48.0
+    },
+    {
+      "frame": 495,
+      "step": 24750,
+      "time_over_T": 20.625000000002306,
+      "dominant_mode": 1,
+      "cells_per_wavelength": 48.0
+    },
+    {
+      "frame": 496,
+      "step": 24800,
+      "time_over_T": 20.666666666670086,
+      "dominant_mode": 1,
+      "cells_per_wavelength": 48.0
+    },
+    {
+      "frame": 497,
+      "step": 24850,
+      "time_over_T": 20.70833333333787,
+      "dominant_mode": 1,
+      "cells_per_wavelength": 48.0
+    },
+    {
+      "frame": 498,
+      "step": 24900,
+      "time_over_T": 20.75000000000565,
+      "dominant_mode": 1,
+      "cells_per_wavelength": 48.0
+    },
+    {
+      "frame": 499,
+      "step": 24950,
+      "time_over_T": 20.79166666667343,
+      "dominant_mode": 1,
+      "cells_per_wavelength": 48.0
+    },
+    {
+      "frame": 500,
+      "step": 25000,
+      "time_over_T": 20.833333333341216,
+      "dominant_mode": 1,
+      "cells_per_wavelength": 48.0
+    },
+    {
+      "frame": 501,
+      "step": 25050,
+      "time_over_T": 20.875000000001663,
+      "dominant_mode": 1,
+      "cells_per_wavelength": 48.0
+    },
+    {
+      "frame": 502,
+      "step": 25100,
+      "time_over_T": 20.91666666666945,
+      "dominant_mode": 1,
+      "cells_per_wavelength": 48.0
+    },
+    {
+      "frame": 503,
+      "step": 25150,
+      "time_over_T": 20.95833333333723,
+      "dominant_mode": 1,
+      "cells_per_wavelength": 48.0
+    },
+    {
+      "frame": 504,
+      "step": 25200,
+      "time_over_T": 21.000000000005013,
+      "dominant_mode": 1,
+      "cells_per_wavelength": 48.0
+    },
+    {
+      "frame": 505,
+      "step": 25250,
+      "time_over_T": 21.041666666672793,
+      "dominant_mode": 1,
+      "cells_per_wavelength": 48.0
+    },
+    {
+      "frame": 506,
+      "step": 25300,
+      "time_over_T": 21.083333333340576,
+      "dominant_mode": 1,
+      "cells_per_wavelength": 48.0
+    },
+    {
+      "frame": 507,
+      "step": 25350,
+      "time_over_T": 21.12500000000836,
+      "dominant_mode": 1,
+      "cells_per_wavelength": 48.0
+    },
+    {
+      "frame": 508,
+      "step": 25400,
+      "time_over_T": 21.166666666668807,
+      "dominant_mode": 1,
+      "cells_per_wavelength": 48.0
+    },
+    {
+      "frame": 509,
+      "step": 25450,
+      "time_over_T": 21.208333333336594,
+      "dominant_mode": 1,
+      "cells_per_wavelength": 48.0
+    },
+    {
+      "frame": 510,
+      "step": 25500,
+      "time_over_T": 21.250000000004373,
+      "dominant_mode": 1,
+      "cells_per_wavelength": 48.0
+    },
+    {
+      "frame": 511,
+      "step": 25502,
+      "time_over_T": 21.251666666671376,
+      "dominant_mode": 1,
+      "cells_per_wavelength": 48.0
+    }
+  ],
+  "mode_windows": [
+    {
+      "start_T": 0,
+      "end_T": 4,
+      "frames": 96,
+      "mode_counts": {
+        "2": 90,
+        "10": 6
+      }
+    },
+    {
+      "start_T": 4,
+      "end_T": 5,
+      "frames": 24,
+      "mode_counts": {
+        "4": 2,
+        "10": 22
+      }
+    },
+    {
+      "start_T": 5,
+      "end_T": 10,
+      "frames": 121,
+      "mode_counts": {
+        "4": 121
+      }
+    },
+    {
+      "start_T": 10,
+      "end_T": 15,
+      "frames": 120,
+      "mode_counts": {
+        "4": 120
+      }
+    },
+    {
+      "start_T": 15,
+      "end_T": 20,
+      "frames": 119,
+      "mode_counts": {
+        "4": 119
+      }
+    },
+    {
+      "start_T": 20,
+      "end_T": 21.251666666671376,
+      "frames": 32,
+      "mode_counts": {
+        "1": 21,
+        "4": 11
+      }
+    }
+  ]
+}

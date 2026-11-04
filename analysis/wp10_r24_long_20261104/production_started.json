@@ -1,0 +1,19 @@
+{
+  "utc": "2026-11-04T19:55:16.439198+00:00",
+  "job_id": "16293564",
+  "node": "ibc11b11n01",
+  "affinity": [
+    44,
+    48,
+    50,
+    55
+  ],
+  "threads": 4,
+  "scratch": "/tmp/wp10_16293564/WP10-R24-M1-long50T",
+  "scratch_free_bytes": 42498908160,
+  "available_memory_bytes": 90471968768,
+  "elf_sha256": "112076759fdff0942000307f729c2bd3c7e96963229b43c1b67c1f12bbf9df81",
+  "input_sha256": "c1441be8b69a11a23e9c8ce36839c127866d1d5567207fb0c63b6645c33d1bd1",
+  "profile_sha256": "d721e605d126e555f92b43200aa73b999ed4e2b61397edd1e98c0d9fddb36575",
+  "solver_timeout_s": 14400
+}
