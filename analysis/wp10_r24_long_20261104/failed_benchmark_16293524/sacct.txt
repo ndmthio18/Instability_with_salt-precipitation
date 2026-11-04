@@ -1,0 +1,8 @@
+16293524|FAILED|127:0|00:00:01|ibc11b11n01
+16293524.batch|FAILED|127:0|00:00:01|ibc11b11n01
+16293524.extern|COMPLETED|0:0|00:00:01|ibc11b11n01
+
+No solver was started and no accepted step was taken. The inherited submit PATH
+contained only the Slurm binary directory; the batch script therefore failed on its
+first external commands (`hostname` and `mkdir`). This infrastructure-only benchmark
+failure does not count as the single authorized production trajectory.

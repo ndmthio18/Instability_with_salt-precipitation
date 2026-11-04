@@ -8,6 +8,7 @@
 #SBATCH --output=benchmark.stdout.%j
 #SBATCH --error=benchmark.stderr.%j
 set -euo pipefail
+export PATH=/usr/local/bin:/usr/bin:/bin
 
 case "$(hostname)" in ibcln*|test0*|gln0*) echo "refusing login/test node"; exit 2;; esac
 root="$1"
