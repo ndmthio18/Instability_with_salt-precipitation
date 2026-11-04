@@ -1,0 +1,74 @@
+{
+  "host": "hpcc",
+  "node": "ibc11b11n16",
+  "kernel": "3.10.0-1160.el7.nosig.x86_64",
+  "host_glibc": "ldd (GNU libc) 2.17",
+  "python": "/WORK/hulm_work/ys/miniconda3/bin/python3 Python 3.10.9",
+  "returncode": 0,
+  "solver_wall_s": 15.570237734,
+  "vtu_files": 11,
+  "elf_sha256": "112076759fdff0942000307f729c2bd3c7e96963229b43c1b67c1f12bbf9df81",
+  "elf_matches_sal": true,
+  "loader_sha256": "c20a2dc8917c755f02b94049356320fe1f62ac7d9f8994731f807d9df39302da",
+  "libc_sha256": "3a15d66867d83762c7f2f1e37359cb8f6c5743edb369c65285cb0b1c4f7498bf",
+  "stop": {
+    "schema_version": 1,
+    "reason": "requested_horizon",
+    "last_accepted_time_s": 1136.8588647695694,
+    "accepted_steps": 10,
+    "initial_diagnostics_written": true,
+    "requested_end_s": 1136.8588647695694,
+    "surface_threshold_low_s": null,
+    "surface_threshold_high_s": null,
+    "global_threshold_low_s": null,
+    "global_threshold_high_s": null
+  },
+  "sacct": "Disk quotas for usr hulm (uid 10292):\n     Filesystem  kbytes   quota   limit   grace   files   quota   limit   grace\n          /WORK 1860992656  2148000000       0       - 2057468* 2000000       0 1d14h21m9s\nYour balance are:43190.179311000014\n16286679|COMPLETED|0:0|00:00:16|1|ibc11b11n16|",
+  "comparison": {
+    "surface_events.csv": {
+      "present": true,
+      "bitwise_identical": true,
+      "lines": 12,
+      "line_count_matches": true,
+      "numeric_cells": 132,
+      "differing_cells": 0,
+      "max_relative_difference": 0.0
+    },
+    "transport_budget.csv": {
+      "present": true,
+      "bitwise_identical": true,
+      "lines": 89,
+      "line_count_matches": true,
+      "numeric_cells": 2640,
+      "differing_cells": 0,
+      "max_relative_difference": 0.0
+    },
+    "weighted_online.csv": {
+      "present": true,
+      "bitwise_identical": true,
+      "lines": 12,
+      "line_count_matches": true,
+      "numeric_cells": 110,
+      "differing_cells": 0,
+      "max_relative_difference": 0.0
+    },
+    "WP7-R96-M1-bench10_sigmatop.csv": {
+      "present": true,
+      "bitwise_identical": true,
+      "lines": 12,
+      "line_count_matches": true,
+      "numeric_cells": 66,
+      "differing_cells": 0,
+      "max_relative_difference": 0.0
+    }
+  },
+  "sal_benchmark": {
+    "run": "analysis\\wp7_shortwave_validation_20261103\\runs\\WP7-R96-M1-bench10",
+    "solver_wall_s": 25.646979548037052
+  },
+  "speedup_versus_sal": 1.6471797018251648,
+  "portable": true,
+  "numerically_identical": true,
+  "conclusion": "the frozen bundle runs unchanged on CentOS 7 and reproduces the sal benchmark bit for bit",
+  "scope": "infrastructure only; no scientific result and no production authorization"
+}

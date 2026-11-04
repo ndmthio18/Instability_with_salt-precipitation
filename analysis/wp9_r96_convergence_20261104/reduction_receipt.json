@@ -1,0 +1,151 @@
+{
+  "remote_logs": {
+    "wp8_fields.py": "{\"run\": \"runs/WP9-R96-M1-4T-frames\", \"frames\": 4801, \"all_field_hashes_verified\": true, \"field_manifest_sha256\": \"2b1f27b040e1e41d1636d910d7dd8167b65b292c990cb924558a48f485561398\", \"input_sha256\": \"761f32b0cf09f73373d66b8d5eab7c870c158b4a296dd584439151fd76a940a9\", \"script_sha256\": \"5522f29a3c728185705ec4617181197f32e6a478efd13aae372387f3453315bb\", \"wall_s\": 183.80922675132751, \"files\": {\"profiles_spectra.npz\": \"b92cdbda9f0ca3c1292633235a3b8dd99ab88fee926bd77cc326182fc53f5e37\", \"timeseries.csv\": \"ff50b5d58c4d2acb6ec3001144f9de38e063dc36cfc6e5a6730402ec39a6a727\"}}",
+    "wp7_spatial.py": "{\"frames\": 4801, \"final\": {\"frame\": 4800, \"time_s\": 545692.2550893936, \"top_sigma\": 0.00018265142447511373, \"top_relative_sigma\": 0.0032061820510075997, \"volume_anomaly_rms\": 1.0767188293679933e-05, \"energy_relative_initial\": 81725.10576992542, \"fundamental_volume_energy_fraction\": 0.7549415050589149, \"second_harmonic_volume_energy_fraction\": 0.06706401677091886, \"third_harmonic_volume_energy_fraction\": 0.14463979157090942, \"even_higher_harmonic_fraction\": 0.24498963613172384, \"odd_neumann_energy_fraction\": 6.885880936086603e-05, \"dominant_neumann_mode\": 2, \"dominant_physical_wavenumber_rad_m\": 293.2153143350477, \"dominant_wavelength_m\": 0.0214285714285714, \"dominant_cells_per_wavelength\": 96.0, \"top_three_neumann_modes\": \"2;6;4\", \"energy_fraction_below_eight_cells_per_wavelength\": 7.27048217753601e-10, \"energy_fraction_at_four_or_fewer_cells_per_wavelength\": 3.334941181771247e-12, \"top_fundamental_amplitude\": 0.00022773804050278391, \"eigenmode_projection\": 0.00024720310834798796, \"initial_shape_relative_residual\": 0.5022519164749271, \"max_relative_anomaly\": 0.00936216312146189, \"depth90_mm\": 1.4673059473570005, \"depth99_mm\": 2.72351034503901, \"max_mirror_difference\": 5.969498988400712e-06, \"max_endpoint_difference\": 5.969498988400712e-06}}"
+  },
+  "reduced_audit": {
+    "run": "runs/WP9-R96-M1-4T-frames",
+    "frames": 4801,
+    "all_field_hashes_verified": true,
+    "field_manifest_sha256": "2b1f27b040e1e41d1636d910d7dd8167b65b292c990cb924558a48f485561398",
+    "input_sha256": "761f32b0cf09f73373d66b8d5eab7c870c158b4a296dd584439151fd76a940a9",
+    "script_sha256": "5522f29a3c728185705ec4617181197f32e6a478efd13aae372387f3453315bb",
+    "wall_s": 183.80922675132751,
+    "files": {
+      "profiles_spectra.npz": "b92cdbda9f0ca3c1292633235a3b8dd99ab88fee926bd77cc326182fc53f5e37",
+      "timeseries.csv": "ff50b5d58c4d2acb6ec3001144f9de38e063dc36cfc6e5a6730402ec39a6a727"
+    }
+  },
+  "spatial_audit": {
+    "frames": 4801,
+    "selected": [
+      {
+        "frame": 0,
+        "actual_time_s": 0.0,
+        "nominal_target_s": 0,
+        "source_path": "/tmp/zhixin_paper2_wp9_r96_20261104/runs/WP9-R96-M1-4T-frames/WP9-R96-M1-4T-00000.vtu",
+        "sha256": "537479fd1c23b4beabcd714c659963652fb9631fce23d02e37dc1e419617f8dc"
+      },
+      {
+        "frame": 1200,
+        "actual_time_s": 136423.0637723426,
+        "nominal_target_s": 136423.0637723484,
+        "source_path": "/tmp/zhixin_paper2_wp9_r96_20261104/runs/WP9-R96-M1-4T-frames/WP9-R96-M1-4T-01200.vtu",
+        "sha256": "ccc4a9f0823f6084333b3d7487a1eb1103d99ea40772af189d073a8afa329de7"
+      },
+      {
+        "frame": 2400,
+        "actual_time_s": 272846.1275446828,
+        "nominal_target_s": 272846.1275446968,
+        "source_path": "/tmp/zhixin_paper2_wp9_r96_20261104/runs/WP9-R96-M1-4T-frames/WP9-R96-M1-4T-02400.vtu",
+        "sha256": "0f87476d1464876a1e8e26fd792f6f50d8cebb85675b2db78c9ea6994ebaa191"
+      },
+      {
+        "frame": 3600,
+        "actual_time_s": 409269.1913170874,
+        "nominal_target_s": 409269.1913170452,
+        "source_path": "/tmp/zhixin_paper2_wp9_r96_20261104/runs/WP9-R96-M1-4T-frames/WP9-R96-M1-4T-03600.vtu",
+        "sha256": "c5857a86c933f1d65cf455d152b33c66421317f789b58a810be1c5b641a4d359"
+      },
+      {
+        "frame": 4800,
+        "actual_time_s": 545692.2550893936,
+        "nominal_target_s": 545692.2550893936,
+        "source_path": "/tmp/zhixin_paper2_wp9_r96_20261104/runs/WP9-R96-M1-4T-frames/WP9-R96-M1-4T-04800.vtu",
+        "sha256": "4eaa7764a967e1bbd560a6bd5ef248b93e1b686338b237b3151388e16ba83cc6"
+      }
+    ],
+    "all_field_hashes_verified": true,
+    "script_sha256": "1a192eef6f5543361273e1d307a9d4a588dc04a9274e163c4466f53fa3373582",
+    "metrics_helper_sha256": "db454748834cfdee82c3101d7e597e0e8cd0b6eb85c5e50341e69edad7aff062",
+    "field_manifest_sha256": "2b1f27b040e1e41d1636d910d7dd8167b65b292c990cb924558a48f485561398",
+    "npz_sha256": "722d5d32c0e10e0e6efe45116faaa211066d97c4cf704d738231881a11b946c3",
+    "initial": {
+      "frame": 0,
+      "time_s": 0.0,
+      "top_sigma": 7.071067811859764e-07,
+      "top_relative_sigma": 0.00019641855032943788,
+      "volume_anomaly_rms": 3.766383705519403e-08,
+      "energy_relative_initial": 1.0,
+      "fundamental_volume_energy_fraction": 1.0,
+      "second_harmonic_volume_energy_fraction": 3.0122725391217128e-24,
+      "third_harmonic_volume_energy_fraction": 5.162096658113625e-22,
+      "even_higher_harmonic_fraction": 4.6603118223374345e-21,
+      "odd_neumann_energy_fraction": 5.1123267287377e-27,
+      "dominant_neumann_mode": 2,
+      "dominant_physical_wavenumber_rad_m": 293.2153143350477,
+      "dominant_wavelength_m": 0.0214285714285714,
+      "dominant_cells_per_wavelength": 96.0,
+      "top_three_neumann_modes": "2;6;10",
+      "energy_fraction_below_eight_cells_per_wavelength": 2.720045518127064e-21,
+      "energy_fraction_at_four_or_fewer_cells_per_wavelength": 1.4473340803560275e-21,
+      "top_fundamental_amplitude": 9.999999999991923e-07,
+      "eigenmode_projection": 9.999999999999936e-07,
+      "initial_shape_relative_residual": 0.0,
+      "max_relative_anomaly": 0.00027777777777781464,
+      "depth90_mm": 1.2674102938300125,
+      "depth99_mm": 2.473868997364015,
+      "max_mirror_difference": 0.0,
+      "max_endpoint_difference": 0.0
+    },
+    "final": {
+      "frame": 4800,
+      "time_s": 545692.2550893936,
+      "top_sigma": 0.00018265142447511373,
+      "top_relative_sigma": 0.0032061820510075997,
+      "volume_anomaly_rms": 1.0767188293679933e-05,
+      "energy_relative_initial": 81725.10576992542,
+      "fundamental_volume_energy_fraction": 0.7549415050589149,
+      "second_harmonic_volume_energy_fraction": 0.06706401677091886,
+      "third_harmonic_volume_energy_fraction": 0.14463979157090942,
+      "even_higher_harmonic_fraction": 0.24498963613172384,
+      "odd_neumann_energy_fraction": 6.885880936086603e-05,
+      "dominant_neumann_mode": 2,
+      "dominant_physical_wavenumber_rad_m": 293.2153143350477,
+      "dominant_wavelength_m": 0.0214285714285714,
+      "dominant_cells_per_wavelength": 96.0,
+      "top_three_neumann_modes": "2;6;4",
+      "energy_fraction_below_eight_cells_per_wavelength": 7.27048217753601e-10,
+      "energy_fraction_at_four_or_fewer_cells_per_wavelength": 3.334941181771247e-12,
+      "top_fundamental_amplitude": 0.00022773804050278391,
+      "eigenmode_projection": 0.00024720310834798796,
+      "initial_shape_relative_residual": 0.5022519164749271,
+      "max_relative_anomaly": 0.00936216312146189,
+      "depth90_mm": 1.4673059473570005,
+      "depth99_mm": 2.72351034503901,
+      "max_mirror_difference": 5.969498988400712e-06,
+      "max_endpoint_difference": 5.969498988400712e-06
+    },
+    "convention": "Neumann physical k=m*pi/W and wavelength=2W/m; m=2 is canonical; initial-shape residual also includes linear profile evolution"
+  },
+  "local": {
+    "reduced_audit.json": {
+      "sha256": "35e9079f21e147128ec062b1e5e55a56c487cf55fb96a57f6d3b571b5f9a6d53",
+      "bytes": 598
+    },
+    "reduced_timeseries.csv": {
+      "sha256": "ff50b5d58c4d2acb6ec3001144f9de38e063dc36cfc6e5a6730402ec39a6a727",
+      "bytes": 913866
+    },
+    "spatial_metrics.csv": {
+      "sha256": "2d349951bba6aeab6d327931c99573b75298d80bd5c6011bff38ecd69abc96fb",
+      "bytes": 2308074
+    },
+    "spatial_selected_fields.npz": {
+      "sha256": "722d5d32c0e10e0e6efe45116faaa211066d97c4cf704d738231881a11b946c3",
+      "bytes": 490609
+    },
+    "spatial_selected_vertical_profiles.csv": {
+      "sha256": "8ccadcf5f4c26e2f0fb92d18935b0a41ec3566477b70db90a706c5851a6ce74a",
+      "bytes": 99300
+    },
+    "spatial_spatial_audit.json": {
+      "sha256": "de7fb9bef9c684bb09bc5e46ceccdd2290806a8588bd8b44cfb47fd805581e92",
+      "bytes": 4744
+    }
+  },
+  "spectra_npz": {
+    "path": "D:\\3OutputFile\\1Research\\Article\\22Surrogate_model\\paper\\2\\tmp\\wp9_r96_convergence_20261104\\R96_M1_profiles_spectra.npz",
+    "sha256": "b92cdbda9f0ca3c1292633235a3b8dd99ab88fee926bd77cc326182fc53f5e37"
+  }
+}

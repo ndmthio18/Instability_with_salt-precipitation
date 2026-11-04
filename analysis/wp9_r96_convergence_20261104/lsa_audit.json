@@ -1,0 +1,228 @@
+{
+  "task": "command/16 Task D: LSA wavenumber audit, case 36877",
+  "solver": {
+    "module": "D:\\3OutputFile\\1Research\\Article\\22Surrogate_model\\code\\lsa_unsaturated.py",
+    "sha256": "efb167cf9987805464f0d204827218fd780db486ef9222662f91e6456534c46e",
+    "N_chebyshev": 96,
+    "chi_coeff_mode": "paper_eq367",
+    "ell_hat": 3.0,
+    "role": "frozen Paper 1 read-only reference"
+  },
+  "inputs": {
+    "cases_csv_sha256": "f75e11336674ce92804a55f64572b9a954adc997f1722800229191c4596d15b7",
+    "observations_csv_sha256": "bd13ca41330d722aa12fc0aeb768654dd7e77eb22b307e7373025115b9146e7f",
+    "case_id": "36877"
+  },
+  "dimensionless_point": {
+    "n": 2.98602455003942,
+    "m": 0.6651065712146276,
+    "L": -0.8395681012108449,
+    "Swr": 0.12826793530729674,
+    "delta": 1.6245458187355253,
+    "pbot": 3.1538781664380684,
+    "beta": 0.6323705268270816
+  },
+  "R_E": 36879.2606941131,
+  "reference_time_s": 26472870.30932611,
+  "neutral_stability": {
+    "t_hat_onset": 0.0011864658960540684,
+    "t_onset_s": 31409.157792677746,
+    "critical_nx": 5,
+    "critical_wavelength_m": 0.12,
+    "crossing_class": "quasi_neutral",
+    "stability_margin_log10": -1.9380325556490083,
+    "bracket_sufficient": true,
+    "resolution_converged": true,
+    "resolution_relative_error": 4.793657114077199e-05,
+    "seeded_nx28_t_hat": 0.0017177719703013337,
+    "seeded_nx28_t_s": 45474.35459078279,
+    "note": "R_c(t) is the neutral sigma=0 curve; R_c at onset equals R_E by construction"
+  },
+  "quasi_steady_assumptions": [
+    "base state frozen at t; meaningful only where the base state changes slowly over 1/sigma",
+    "single least-stable mode, no mode interaction and no nonlinear saturation",
+    "laterally unbounded column with quantized a = nx*2*pi/ell_hat; the DuMuX box admits only nx = 14*m",
+    "already implemented and self-tested in the frozen Paper 1 solver; nothing new is introduced here",
+    "validated against DuMuX on cases 36545 and 36877 (2026-09-05) to within a factor of two near t_c"
+  ],
+  "reproduced_anchors": {
+    "sigma_c_tc_at2p0": {
+      "recomputed": 0.002380704528523704,
+      "stored": 0.0023807045285015385,
+      "relative_difference": 9.310552329111488e-12
+    },
+    "sigma_max_tc_at2p0": {
+      "recomputed": 0.02754600216084046,
+      "stored": 0.027546002160843148,
+      "relative_difference": 9.758860386455126e-14
+    },
+    "nx_max_at2p0": {
+      "recomputed": 30,
+      "stored": 30,
+      "scan_set": [
+        1,
+        2,
+        3,
+        5,
+        8,
+        12,
+        20,
+        30
+      ],
+      "wide_scan_peak_nx": 30,
+      "wide_scan_peak_sigma_times_t_hat_c": 0.02754600216084046,
+      "wide_scan_peak_is_interior": true,
+      "note": "the stored value is also the largest entry of the 2026-09-05 scan set (1,2,3,5,8,12,20,30); the wide scan confirms it is nevertheless the true interior maximum at 2 t_c, which is a coincidence that does not hold at later times"
+    },
+    "critical_rayleigh_at_tc": {
+      "recomputed": 36879.26489087666,
+      "target_R_E": 36879.2606941131,
+      "relative_difference": 1.1379738840133768e-07,
+      "recomputed_critical_nx": 5,
+      "stored_critical_nx": 5
+    }
+  },
+  "anchors_reproduced": true,
+  "box_mode_algebra": {
+    "width_m": 0.021428571428571432,
+    "full_width_m": 0.6,
+    "nx_per_box_mode": 14.0,
+    "canonical_box_mode": 2,
+    "canonical_nx": 28,
+    "m6_nx": 84,
+    "m10_nx": 140,
+    "m2_wavelength_m": 0.021428571428571432,
+    "m6_wavelength_m": 0.007142857142857144,
+    "m10_wavelength_m": 0.004285714285714287,
+    "m2_k_rad_m": 293.2153143350473,
+    "m6_k_rad_m": 879.6459430051419,
+    "m10_k_rad_m": 1466.0765716752364,
+    "global_critical_nx_representable_in_box": false,
+    "note": "the LSA global critical mode nx=5 has wavelength 0.12 m and does not fit the 0.0214 m box"
+  },
+  "per_checkpoint": {
+    "t_c": {
+      "time_s": 31409.157792677746,
+      "t_over_tc": 1.0,
+      "fastest_box_mode_m": 1,
+      "fastest_box_sigma_per_s": -7.115627200773906e-08,
+      "wide_scan_peak_nx": 5,
+      "wide_scan_peak_at_scan_edge": false,
+      "sigma_per_s_m2": -7.406366148029544e-07,
+      "sigma_per_s_m6": -1.5255947055838143e-05,
+      "sigma_per_s_m10": -5.243033642214176e-05,
+      "critical_rayleigh_over_R_E_m2": 1.359711754890538,
+      "critical_rayleigh_over_R_E_m6": 2.4914786029448264,
+      "critical_rayleigh_over_R_E_m10": 3.82652657047307
+    },
+    "2t_c": {
+      "time_s": 62818.31558535549,
+      "t_over_tc": 2.0,
+      "fastest_box_mode_m": 2,
+      "fastest_box_sigma_per_s": 8.687320981322246e-07,
+      "wide_scan_peak_nx": 30,
+      "wide_scan_peak_at_scan_edge": false,
+      "sigma_per_s_m2": 8.687320981322246e-07,
+      "sigma_per_s_m6": -8.283747054467697e-06,
+      "sigma_per_s_m10": -4.0989936042123494e-05,
+      "critical_rayleigh_over_R_E_m2": 0.763685875009464,
+      "critical_rayleigh_over_R_E_m6": 1.479124484258976,
+      "critical_rayleigh_over_R_E_m10": 2.3572309635568263
+    },
+    "T": {
+      "time_s": 136423.0637723484,
+      "t_over_tc": 4.343416804514001,
+      "fastest_box_mode_m": 4,
+      "fastest_box_sigma_per_s": 8.136875045270152e-06,
+      "wide_scan_peak_nx": 62,
+      "wide_scan_peak_at_scan_edge": false,
+      "sigma_per_s_m2": 4.3427322565475975e-06,
+      "sigma_per_s_m6": 6.370447005136928e-06,
+      "sigma_per_s_m10": -1.722181770433874e-05,
+      "critical_rayleigh_over_R_E_m2": 0.3946873940766855,
+      "critical_rayleigh_over_R_E_m6": 0.8018723612152069,
+      "critical_rayleigh_over_R_E_m10": 1.3162931583685695
+    },
+    "2T": {
+      "time_s": 272846.1275446968,
+      "t_over_tc": 8.686833609028001,
+      "fastest_box_mode_m": 7,
+      "fastest_box_sigma_per_s": 3.342740967403535e-05,
+      "wide_scan_peak_nx": 98,
+      "wide_scan_peak_at_scan_edge": false,
+      "sigma_per_s_m2": 1.0584868035745593e-05,
+      "sigma_per_s_m6": 3.238352361053958e-05,
+      "sigma_per_s_m10": 2.469086292804321e-05,
+      "critical_rayleigh_over_R_E_m2": 0.21378119344179813,
+      "critical_rayleigh_over_R_E_m6": 0.4466308213928023,
+      "critical_rayleigh_over_R_E_m10": 0.7458375758411605
+    },
+    "3T": {
+      "time_s": 409269.1913170452,
+      "t_over_tc": 13.030250413542001,
+      "fastest_box_mode_m": 9,
+      "fastest_box_sigma_per_s": 6.748918809293076e-05,
+      "wide_scan_peak_nx": 124,
+      "wide_scan_peak_at_scan_edge": false,
+      "sigma_per_s_m2": 1.6832493336771412e-05,
+      "sigma_per_s_m6": 5.822792467309963e-05,
+      "sigma_per_s_m10": 6.610413862506296e-05,
+      "critical_rayleigh_over_R_E_m2": 0.14787809117318743,
+      "critical_rayleigh_over_R_E_m6": 0.312244993503214,
+      "critical_rayleigh_over_R_E_m10": 0.5251554073735974
+    },
+    "3.6775T": {
+      "time_s": 501695.8170227767,
+      "t_over_tc": 15.972915298599139,
+      "fastest_box_mode_m": 10,
+      "fastest_box_sigma_per_s": 9.401164964228542e-05,
+      "wide_scan_peak_nx": 138,
+      "wide_scan_peak_at_scan_edge": false,
+      "sigma_per_s_m2": 2.108473289508482e-05,
+      "sigma_per_s_m6": 7.571362579485536e-05,
+      "sigma_per_s_m10": 9.401164964228542e-05,
+      "critical_rayleigh_over_R_E_m2": 0.122668092538121,
+      "critical_rayleigh_over_R_E_m6": 0.26007004141544077,
+      "critical_rayleigh_over_R_E_m10": 0.43874399677987597
+    },
+    "4T": {
+      "time_s": 545692.2550893936,
+      "t_over_tc": 17.373667218056003,
+      "fastest_box_mode_m": 10,
+      "fastest_box_sigma_per_s": 0.00010724573928552059,
+      "wide_scan_peak_nx": 144,
+      "wide_scan_peak_at_scan_edge": false,
+      "sigma_per_s_m2": 2.3113218875480888e-05,
+      "sigma_per_s_m6": 8.402428243731177e-05,
+      "sigma_per_s_m10": 0.00010724573928552059,
+      "critical_rayleigh_over_R_E_m2": 0.11353674925994833,
+      "critical_rayleigh_over_R_E_m6": 0.24106554021599697,
+      "critical_rayleigh_over_R_E_m10": 0.40716871849052705
+    },
+    "t_amp": {
+      "time_s": 286355.56938660605,
+      "t_over_tc": 9.116945168563628,
+      "fastest_box_mode_m": 7,
+      "fastest_box_sigma_per_s": 3.641859010993906e-05,
+      "wide_scan_peak_nx": 102,
+      "wide_scan_peak_at_scan_edge": false,
+      "sigma_per_s_m2": 1.1202066673316477e-05,
+      "sigma_per_s_m6": 3.494464388706904e-05,
+      "sigma_per_s_m10": 2.880416863107616e-05,
+      "critical_rayleigh_over_R_E_m2": 0.20466074022139302,
+      "critical_rayleigh_over_R_E_m6": 0.428202797336324,
+      "critical_rayleigh_over_R_E_m10": 0.7157371308270756
+    }
+  },
+  "amplification_store": {
+    "ln_amplification_max": 80.86873180276015,
+    "nx_amp": 80,
+    "t_hat_amp": 0.010816944518695658,
+    "t_amp_s": 286355.56938660605,
+    "t_amp_over_T": 2.0990260845076216,
+    "growth_stop_reason": "precipitation",
+    "t_precipitation_s": 979334.7310794428,
+    "t_precipitation_over_T": 7.178659560920551
+  },
+  "wall_s": 148.41812992095947
+}

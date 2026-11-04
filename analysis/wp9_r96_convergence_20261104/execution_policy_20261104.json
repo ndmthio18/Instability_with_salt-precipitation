@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "id": "WP9-E02",
+  "created_date": "2026-11-04",
+  "authority": "user instruction, 2026-11-04",
+  "decision": "threaded execution is admitted for future authorized legs",
+  "user_words": "嗯嗯，可以用多线程",
+  "settings": {
+    "backend": "TBB, already compiled into the frozen executable",
+    "env": "DUMUX_NUM_THREADS=<n>",
+    "slurm": "--cpus-per-task=<n>, one task, one node",
+    "recommended_threads": 4,
+    "why_4": "assembly scales about 3.3x from one to four threads while the ILU-BiCGSTAB solve saturates near 1.8x; at four threads the solve is about 79 percent of a step, so more threads buy little",
+    "must_not_pin_single_cpu": "the existing worker pins one CPU with sched_setaffinity; a threaded leg needs that relaxed to the allocated set"
+  },
+  "measured_speedup": {
+    "1": 1.0,
+    "2": 1.6976478309656382,
+    "4": 1.9051296063104373
+  },
+  "numerical_cost": "none measured",
+  "evidence": {
+    "file": "analysis/wp9_r96_convergence_20261104/hpcc_portability/thread_scaling.json",
+    "sha256": "b9b0e07e8e859c94e00fc1bfc3df0a48d34fdf93ee0012e4c7d4ff05a068a09f",
+    "bitwise_identical_across_thread_counts": true,
+    "also_identical_to_the_sal_serial_benchmark": true,
+    "reason": "element coloring makes each degree of freedom receive its contributions in an order fixed by the colors, not by thread scheduling"
+  },
+  "protocol_rule": "the host and the thread count are measured not to be protocol differences and must NOT enter any protocol hash, exactly as the parent repository already rules for frodo and cxhpc; a leg stays comparable with R24, R48 and R96 as long as the executable, input and eigenprofile are unchanged",
+  "does_not_apply_to": "the R96-M1 leg in flight on sal: it holds the single authorization of command/16, which forbids restart and retry",
+  "open_item": "the ILU-BiCGSTAB solver is now the bottleneck; main.cc line 848 carries a commented out UMFPackIstlSolver. Enabling it requires a rebuild, changes the executable hash and needs its own validation and protocol branch; not done and not authorized here",
+  "authorizes_no_run": true
+}

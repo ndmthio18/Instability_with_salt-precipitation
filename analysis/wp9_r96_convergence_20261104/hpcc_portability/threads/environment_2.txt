@@ -1,0 +1,14 @@
+hostname=ibc11b11n01
+job=16288118
+threads=2
+cpus_per_task=2
+affinity=28,29
+elf_sha256=112076759fdff0942000307f729c2bd3c7e96963229b43c1b67c1f12bbf9df81
+returncode=0
+wall_s=16.070981844
+Simulation took 9.4466 seconds on 1 processes.
+Assemble/solve/update time: 0.21(30.81%)/0.46(67.42%)/0.012(1.78%)
+Assemble/solve/update time: 0.21(30.43%)/0.47(67.82%)/0.012(1.75%)
+Assemble/solve/update time: 0.21(29.62%)/0.49(68.23%)/0.015(2.15%)
+Assemble/solve/update time: 0.21(30.27%)/0.48(67.98%)/0.012(1.75%)
+Assemble/solve/update time: 0.21(31.56%)/0.45(66.75%)/0.011(1.69%)

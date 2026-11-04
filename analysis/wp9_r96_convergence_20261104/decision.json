@@ -1,0 +1,143 @@
+{
+  "scope": "command/16 WP9",
+  "criteria_sha256": "8cb6b8b9d7aaadfa80cc2fa1618a2e9a77a91bc30bdca4e232e7770cc1ea7f25",
+  "r96_present": true,
+  "r96_numerical_acceptance": true,
+  "r96_censored_by_threshold": false,
+  "gates": {
+    "G1": {
+      "quantity": "dominant box mode at 4T",
+      "R48": 2.0,
+      "R96": 2.0,
+      "passed": true
+    },
+    "G2": {
+      "quantity": "canonical m=2 energy",
+      "relative_differences": {
+        "T": 0.002559384672202285,
+        "2T": 0.004362773034730459,
+        "3T": 0.007400238073162997,
+        "4T": 0.011073163548262273
+      },
+      "passed": true
+    },
+    "G3": {
+      "quantity": "energy-weighted physical wavenumber at 4T",
+      "relative_difference": 0.46541513596514084,
+      "R48": 817.1228531158923,
+      "R96": 436.8215093327355,
+      "passed": false
+    },
+    "G4": {
+      "quantity": "horizontal-mean top response against the frozen strict background at 4T",
+      "R48": -1.483637049062847e-06,
+      "R96": -4.2344627294160775e-07,
+      "ratio": 0.2854109589734777,
+      "resolvability_floor": 2.458970527197124e-15,
+      "both_above_floor": true,
+      "passed": false
+    },
+    "G5": {
+      "quantity": "initial-corrected Delta C at the 1 mm plane at 4T",
+      "R48": -0.00014944998011128785,
+      "R96": -5.1059820323678384e-05,
+      "relative_difference": 0.6583484301191829,
+      "same_sign": true,
+      "passed": false
+    }
+  },
+  "modes_consistent": false,
+  "all_gates_passed": false,
+  "outcome": "NO-GO",
+  "recommendation": "horizontal resolution is still the limiter at 4T; report the limitation and do not propose mechanism validation",
+  "noise_discriminator": {
+    "frame": 4800,
+    "time_s": 545692.2550893656,
+    "m10_energy": {
+      "R24_M0": 7.858367031950998e-13,
+      "R24_M1": 1.00853966809259e-08,
+      "R48_M0": 7.924005114326242e-15,
+      "R48_M1": 1.3120513625353336e-11,
+      "R96_M0": 3.887797871696022e-17,
+      "R96_M1": 7.703791671692703e-13
+    },
+    "m2_energy_fraction": {
+      "R24_M0": 9.094789144519538e-07,
+      "R24_M1": 0.0013714091979062776,
+      "R48_M0": 8.53502451433056e-09,
+      "R48_M1": 0.35699762216557557,
+      "R96_M0": 2.1677695160843087e-10,
+      "R96_M1": 0.7549415050589154
+    },
+    "m10_energy_fraction": {
+      "R24_M0": 0.0347540137690567,
+      "R24_M1": 0.9346135695029709,
+      "R48_M0": 0.10998657788567538,
+      "R48_M1": 0.2646259367239124,
+      "R96_M0": 0.0012343214590528372,
+      "R96_M1": 0.03322537707079335
+    },
+    "unperturbed_total_energy": {
+      "R24_M0": 2.2611394137582205e-11,
+      "R48_M0": 7.204520102955455e-14,
+      "R96_M0": 3.149745022402303e-14
+    },
+    "R48_over_R24_m10": 0.001300941751767447,
+    "R96_over_R48_m10": 0.058715625711529565,
+    "reading": "noise_seeded",
+    "threshold": "a factor of 10 separates the two registered readings",
+    "r96_has_a_paired_unperturbed_leg": true,
+    "caveat": "the R96 numerical floor is measured by its own unperturbed leg, so the comparison no longer rests on assuming the floor falls with refinement",
+    "R96_unperturbed_total_energy": 3.149745022402303e-14,
+    "R96_m10_over_its_own_floor": 24.458461294168625,
+    "unperturbed_floor_ratio_R96_over_R48": 0.43719012194999746,
+    "ratio_R96_over_R48": 0.058715625711529565,
+    "measured_R48_over_R24": 0.001300941751767447,
+    "registered_rule": {
+      "noise_seeded_if": "R96/R48 < 0.1",
+      "nonlinear_cascade_if": "0.1 <= R96/R48 <= 10",
+      "neither_if": "R96/R48 > 10"
+    }
+  },
+  "lsa_context": {
+    "fastest_box_mode_at_4T": 10,
+    "fastest_box_mode_at_T": 4,
+    "m10_unstable_after": "between T and 2T",
+    "small_perturbation_agreement": 0.09781907713795113
+  },
+  "solubility": {
+    "status": "right_censored",
+    "censoring_time_s": 545692.2550893936
+  },
+  "limitation_attribution": {
+    "horizontal_resolution": {
+      "tested": true,
+      "evidence": "R24 to R48 to R96 at fixed nz and fixed box width",
+      "verdict": "still the limiter at 4T"
+    },
+    "temporal_integration": {
+      "tested": "partially",
+      "evidence": "R96 halves dt together with dx; the only bound is the WP6 R24 dt/2 pair to 2T, which moved growth metrics by about 0.1 percent but moved the 1 mm Delta C by 68 percent at the shared mid-window time",
+      "verdict": "unseparated from horizontal resolution in this comparison"
+    },
+    "vertical_resolution": {
+      "tested": false,
+      "evidence": "nz=200 with Grading1=-0.98 is common to all three legs",
+      "verdict": "untested; common-mode truncation cannot be excluded"
+    },
+    "domain_width": {
+      "tested": false,
+      "evidence": "the box is one A28 wavelength wide with no-flow sides, so only Neumann modes m=1,2,... exist; the LSA global critical mode nx=5 has wavelength 0.12 m and cannot appear at any resolution",
+      "verdict": "a structural restriction of every leg, not a resolution effect"
+    }
+  },
+  "local_flux_mechanism_validation": "not proposed",
+  "R96_M0": "completed under the separate user authorization WP9-A02; no further R96-M0 run is authorized",
+  "R192": "NO-GO",
+  "multiwave": "NO-GO",
+  "full_domain": "NO-GO",
+  "later_8T": "NO-GO",
+  "t_eff": null,
+  "crystallization_delay_label": null,
+  "training_labels_created": false
+}

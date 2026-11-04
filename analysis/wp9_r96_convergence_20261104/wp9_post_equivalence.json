@@ -1,0 +1,12 @@
+{
+  "check": "wp9_post.py reproduces wp6_post.py on a stride-1 run",
+  "fixture": "analysis/wp7_shortwave_validation_20261103/runs/WP7-R48-M1-4T",
+  "frames": 4801,
+  "recorded_steps": 4801,
+  "frame_stride": 1,
+  "shared_fields_identical": true,
+  "differences": [],
+  "new_passed": true,
+  "committed_passed": true,
+  "note": "only the two added keys differ; every threshold and every computed value is unchanged"
+}

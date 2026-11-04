@@ -1,5 +1,17 @@
 # Paper 2 — effective salt redistribution
 
+`command/16.md` 的 WP9 已完成：R96-M1 在 sal 单线程、R96-M0 在用户单独授权后于 hpcc
+四线程完成，均为 9600/9600 接受步并通过守恒、时间轴、逐帧哈希和独立 VTU 再积分。
+R48/R96 的预注册 G1–G5 判定为 G1/G2 通过、G3/G4/G5 失败，最终 **NO-GO**；4T 的
+能量加权波数相差 46.54%，顶面背景参照响应比为 0.285，1 mm 初始校正输运量相差
+65.83%。小扰动窗内 LSA–DuMuX 增长率 11 个准入点的相对差中位数 5.44%、最大 9.78%。
+R96 同时减半 `dx` 和 `dt`，`nz=200` 未变，盒内又缺少全局临界 `nx=5` 模态，故不能
+声称纯空间收敛或唯一因果归因。`t_eff`、结晶延迟及训练标签均未定义；R192、多波长、
+全域和 8T 未启动。42 项数值测试与 1020 项交付检查全过。详见
+[交付索引](analysis/wp9_r96_convergence_20261104/README_ZH.md)、
+[三分辨率比较](analysis/wp9_r96_convergence_20261104/R24_R48_R96_COMPARISON_ZH.md)和
+[最终判定](analysis/wp9_r96_convergence_20261104/DECISION_ZH.md)。
+
 `command/15.md` 已完成：唯一一次连续修正严格背景从 t=0 走到 4T，4800/4800 接受步正常结束，48 项强制验收与 657 项交付检查全部通过，4801 帧逐帧哈希归档。与历史接受前缀 4414 个共有接受时刻的差异全在舍入量级（max|Δx| = 9.02e-16，max|Δp| = 3.06e-10 Pa），旧失败步 4414 以 3 次迭代被接受，Newton 最大迭代由 18 降至 5。有了这条背景后，R24/R48 的 M0/M1 零模态响应可在 0→4T 上参照：3T 之前两种横向分辨率之比为 1.003–1.015，4T 升至 382，且本应等于背景的无扰动 M0 自身在 4T 偏离 1.24e-06（R24）对 2.90e-09（R48），因此 4T 幅度尚未收敛、不可引用。全程未触及局部溶解度阈值（最大 x = 0.056969，占 0.1 的 57.0%）；未定义 t_eff，未启动 R96、追加二维、多波长或 8T。详见 [交付索引](analysis/wp8_full4T_20261103/README_ZH.md)、[执行与验收](analysis/wp8_full4T_20261103/EXECUTION_AND_ACCEPTANCE_ZH.md)、[历史对照](analysis/wp8_full4T_20261103/HISTORICAL_COMPARISON_ZH.md)和[科学审查](analysis/wp8_full4T_20261103/SCIENTIFIC_REVIEW_ZH.md)。
 
 `command/3.md` 基准工作包已完成：sal M0/M1 均正常结束并归档；三深度额外输运尚未分辨，Phase 2 暂不具备启动条件。六项交付与四类图见 [结果报告](analysis/pilot0_integrated_20261102/PILOT_RESULTS_ZH.md)和[下一阶段决策](analysis/pilot0_integrated_20261102/NEXT_STAGE_DECISION_ZH.md)。本轮未追加模拟，自动轮询已结束；重现步骤见 [执行交接](analysis/pilot0_integrated_20261102/EXECUTION_HANDOFF_ZH.md)。

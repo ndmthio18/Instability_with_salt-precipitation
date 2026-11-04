@@ -1,0 +1,262 @@
+{
+  "task": "command/16 Task C",
+  "shared_states": 4801,
+  "legs": {
+    "R24_M0": {
+      "nx_cells": 24,
+      "states": 4801,
+      "stride": 1,
+      "run": "analysis\\wp6_4T_exploratory_20261103\\runs\\WP6-M0-explore4T"
+    },
+    "R24_M1": {
+      "nx_cells": 24,
+      "states": 4801,
+      "stride": 1,
+      "run": "analysis\\wp6_4T_exploratory_20261103\\runs\\WP6-M1-explore4T"
+    },
+    "R48_M0": {
+      "nx_cells": 48,
+      "states": 4801,
+      "stride": 1,
+      "run": "analysis\\wp7_shortwave_validation_20261103\\runs\\WP7-R48-M0-4T"
+    },
+    "R48_M1": {
+      "nx_cells": 48,
+      "states": 4801,
+      "stride": 1,
+      "run": "analysis\\wp7_shortwave_validation_20261103\\runs\\WP7-R48-M1-4T"
+    },
+    "R96_M0": {
+      "nx_cells": 96,
+      "states": 4801,
+      "stride": 2,
+      "run": "analysis\\wp9_r96_convergence_20261104\\r96_m0\\run"
+    },
+    "R96_M1": {
+      "nx_cells": 96,
+      "states": 4801,
+      "stride": 2,
+      "run": "analysis\\wp9_r96_convergence_20261104\\run"
+    }
+  },
+  "time_axis": {
+    "R24_M0": {
+      "max_time_difference_s": 0.0,
+      "bitwise_identical": 4801,
+      "states": 4801,
+      "budget_s": 1.1175870895385742e-06,
+      "within_budget": true
+    },
+    "R24_M1": {
+      "max_time_difference_s": 0.0,
+      "bitwise_identical": 4801,
+      "states": 4801,
+      "budget_s": 1.1175870895385742e-06,
+      "within_budget": true
+    },
+    "R48_M0": {
+      "max_time_difference_s": 0.0,
+      "bitwise_identical": 4801,
+      "states": 4801,
+      "budget_s": 1.1175870895385742e-06,
+      "within_budget": true
+    },
+    "R48_M1": {
+      "max_time_difference_s": 0.0,
+      "bitwise_identical": 4801,
+      "states": 4801,
+      "budget_s": 1.1175870895385742e-06,
+      "within_budget": true
+    },
+    "R96_M0": {
+      "max_time_difference_s": 1.2631062418222427e-07,
+      "bitwise_identical": 23,
+      "states": 4801,
+      "budget_s": 1.1175870895385742e-06,
+      "within_budget": true
+    },
+    "R96_M1": {
+      "max_time_difference_s": 1.2631062418222427e-07,
+      "bitwise_identical": 23,
+      "states": 4801,
+      "budget_s": 1.1175870895385742e-06,
+      "within_budget": true
+    },
+    "background": {
+      "max_time_difference_s": 0.0,
+      "bitwise_identical": 4801,
+      "states": 4801,
+      "budget_s": 1.1175870895385742e-06,
+      "within_budget": true
+    }
+  },
+  "checkpoints": [
+    {
+      "label": "T",
+      "frame": 1200
+    },
+    {
+      "label": "2T",
+      "frame": 2400
+    },
+    {
+      "label": "3T",
+      "frame": 3600
+    },
+    {
+      "label": "3.6775T",
+      "frame": 4413
+    },
+    {
+      "label": "4T",
+      "frame": 4800
+    }
+  ],
+  "uncertainty": {
+    "x_resolvability_floor": 2.458970527197124e-15,
+    "x_resolvability_source": "cross-executable one-cell background bound over 0 -> T (wp9_corrections)",
+    "modal_energy_floor": "the unperturbed leg at the same resolution and time",
+    "timestep_prior_on_growth": 0.0011457,
+    "timestep_prior_source": "WP6 R24 dt/2 pair to 2T; it does not extend to 3T-4T, to R96 or to transport",
+    "transport_timestep_prior": "unbounded: the same WP6 study found a 68 percent mid-window change at 1 mm"
+  },
+  "discriminator": {
+    "frame": 4800,
+    "time_s": 545692.2550893656,
+    "m10_energy": {
+      "R24_M0": 7.858367031950998e-13,
+      "R24_M1": 1.00853966809259e-08,
+      "R48_M0": 7.924005114326242e-15,
+      "R48_M1": 1.3120513625353336e-11,
+      "R96_M0": 3.887797871696022e-17,
+      "R96_M1": 7.703791671692703e-13
+    },
+    "m2_energy_fraction": {
+      "R24_M0": 9.094789144519538e-07,
+      "R24_M1": 0.0013714091979062776,
+      "R48_M0": 8.53502451433056e-09,
+      "R48_M1": 0.35699762216557557,
+      "R96_M0": 2.1677695160843087e-10,
+      "R96_M1": 0.7549415050589154
+    },
+    "m10_energy_fraction": {
+      "R24_M0": 0.0347540137690567,
+      "R24_M1": 0.9346135695029709,
+      "R48_M0": 0.10998657788567538,
+      "R48_M1": 0.2646259367239124,
+      "R96_M0": 0.0012343214590528372,
+      "R96_M1": 0.03322537707079335
+    },
+    "unperturbed_total_energy": {
+      "R24_M0": 2.2611394137582205e-11,
+      "R48_M0": 7.204520102955455e-14,
+      "R96_M0": 3.149745022402303e-14
+    },
+    "R48_over_R24_m10": 0.001300941751767447,
+    "R96_over_R48_m10": 0.058715625711529565,
+    "reading": "noise_seeded",
+    "threshold": "a factor of 10 separates the two registered readings",
+    "r96_has_a_paired_unperturbed_leg": true,
+    "caveat": "the R96 numerical floor is measured by its own unperturbed leg, so the comparison no longer rests on assuming the floor falls with refinement",
+    "R96_unperturbed_total_energy": 3.149745022402303e-14,
+    "R96_m10_over_its_own_floor": 24.458461294168625,
+    "unperturbed_floor_ratio_R96_over_R48": 0.43719012194999746
+  },
+  "cascade_test": {
+    "rows": [
+      {
+        "checkpoint": "T",
+        "frame": 1200,
+        "time_s": 136423.06377235046,
+        "R24_M1_energy_m2": 3.638623075462103e-16,
+        "R24_M1_energy_m10": 4.7995682462954545e-29,
+        "R24_M1_m10_over_m2": 1.3190616743631551e-13,
+        "R48_M1_energy_m2": 3.6070514780982264e-16,
+        "R48_M1_energy_m10": 1.0460780444339488e-29,
+        "R48_M1_m10_over_m2": 2.900091808463684e-14,
+        "R96_M1_energy_m2": 3.597819645833337e-16,
+        "R96_M1_energy_m10": 3.23486076387688e-30,
+        "R96_M1_m10_over_m2": 8.991169881523098e-15,
+        "R48_M1_over_R24_M1_m2": 0.9913232020165027,
+        "R48_M1_over_R24_M1_m10": 0.21795253046799862,
+        "R96_M1_over_R48_M1_m2": 0.9974406153277977,
+        "R96_M1_over_R48_M1_m10": 0.309237038392037
+      },
+      {
+        "checkpoint": "2T",
+        "frame": 2400,
+        "time_s": 272846.1275446852,
+        "R24_M1_energy_m2": 2.554748781685742e-15,
+        "R24_M1_energy_m10": 6.323954968692656e-26,
+        "R24_M1_m10_over_m2": 2.4753725352673686e-11,
+        "R48_M1_energy_m2": 2.5220811481052957e-15,
+        "R48_M1_energy_m10": 5.030841410963377e-27,
+        "R48_M1_m10_over_m2": 1.994718296333478e-12,
+        "R96_M1_energy_m2": 2.51107788048094e-15,
+        "R96_M1_energy_m10": 1.0013441157816256e-27,
+        "R96_M1_m10_over_m2": 3.987706329482067e-13,
+        "R48_M1_over_R24_M1_m2": 0.9872129761585049,
+        "R48_M1_over_R24_M1_m10": 0.07955213843028672,
+        "R96_M1_over_R48_M1_m2": 0.9956372269652696,
+        "R96_M1_over_R48_M1_m10": 0.19904108159709888
+      },
+      {
+        "checkpoint": "3T",
+        "frame": 3600,
+        "time_s": 409269.1913170199,
+        "R24_M1_energy_m2": 9.394569779279524e-14,
+        "R24_M1_energy_m10": 1.5505906173177397e-19,
+        "R24_M1_m10_over_m2": 1.650517962767908e-06,
+        "R48_M1_energy_m2": 9.225756993562418e-14,
+        "R48_M1_energy_m10": 1.8891614861567768e-21,
+        "R48_M1_m10_over_m2": 2.047703497366127e-08,
+        "R96_M1_energy_m2": 9.157484195404907e-14,
+        "R96_M1_energy_m10": 2.3153878063202546e-22,
+        "R96_M1_m10_over_m2": 2.528410376598938e-09,
+        "R48_M1_over_R24_M1_m2": 0.9820308125136888,
+        "R48_M1_over_R24_M1_m10": 0.01218349617918305,
+        "R96_M1_over_R48_M1_m2": 0.992599761926837,
+        "R96_M1_over_R48_M1_m10": 0.12256166681814867
+      },
+      {
+        "checkpoint": "3.6775T",
+        "frame": 4413,
+        "time_s": 501695.8170227767,
+        "R24_M1_energy_m2": 2.7743494051490166e-12,
+        "R24_M1_energy_m10": 1.2461504742990292e-12,
+        "R24_M1_m10_over_m2": 0.44916854091494496,
+        "R48_M1_energy_m2": 2.71297236216578e-12,
+        "R48_M1_energy_m10": 2.752434901779003e-15,
+        "R48_M1_m10_over_m2": 0.0010145458686433946,
+        "R96_M1_energy_m2": 2.6846633388336707e-12,
+        "R96_M1_energy_m10": 2.0583608261291336e-16,
+        "R96_M1_m10_over_m2": 7.667109675745678e-05,
+        "R48_M1_over_R24_M1_m2": 0.9778769599570535,
+        "R48_M1_over_R24_M1_m10": 0.0022087500334397998,
+        "R96_M1_over_R48_M1_m2": 0.9895653108277483,
+        "R96_M1_over_R48_M1_m10": 0.0747832700711191
+      },
+      {
+        "checkpoint": "4T",
+        "frame": 4800,
+        "time_s": 545692.2550893656,
+        "R24_M1_energy_m2": 1.4798849732206095e-11,
+        "R24_M1_energy_m10": 1.00853966809259e-08,
+        "R24_M1_m10_over_m2": 681.498688305314,
+        "R48_M1_energy_m2": 1.7700427342196036e-11,
+        "R48_M1_energy_m10": 1.3120513625353336e-11,
+        "R48_M1_m10_over_m2": 0.7412540596732008,
+        "R96_M1_energy_m2": 1.7504427615361766e-11,
+        "R96_M1_energy_m10": 7.703791671692703e-13,
+        "R96_M1_m10_over_m2": 0.044010531740734604,
+        "R48_M1_over_R24_M1_m2": 1.196067779759623,
+        "R48_M1_over_R24_M1_m10": 0.001300941751767447,
+        "R96_M1_over_R48_M1_m2": 0.9889268364517377,
+        "R96_M1_over_R48_M1_m10": 0.058715625711529565
+      }
+    ],
+    "question": "is E(m=10) a function of the resolved canonical mode",
+    "reading": "a converged nonlinear cascade would make E(m=10) follow E(m=2); a large spread at matched E(m=2) means the short waves are set by the discretization"
+  },
+  "independence_note": "R48 and R96 are compared directly and never through R24; R24 is reported alongside but no R96 result is required to reproduce it"
+}

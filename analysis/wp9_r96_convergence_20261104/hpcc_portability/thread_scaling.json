@@ -1,0 +1,81 @@
+{
+  "scope": "infrastructure thread-scaling measurement; ten steps; no scientific result",
+  "host": "hpcc",
+  "partition": "cnmix",
+  "steps": 10,
+  "elf_sha256": "112076759fdff0942000307f729c2bd3c7e96963229b43c1b67c1f12bbf9df81",
+  "backend": "TBB; the binary exposes DUMUX_NUM_THREADS and Assembly.Multithreading and links libtbb.so.12",
+  "parallel_regions": [
+    "FVAssembler::assembleJacobianAndResidual",
+    "FVAssembler::assembleResidual",
+    "CVFEGridVolumeVariables::update",
+    "CVFEGridFluxVariablesCache::update"
+  ],
+  "runs": {
+    "1": {
+      "threads": 1,
+      "cpus_per_task": 1,
+      "node": "ibc11b11n01",
+      "returncode": 0,
+      "wall_s": 22.672591772,
+      "solver_s": 16.037,
+      "elf_sha256": "112076759fdff0942000307f729c2bd3c7e96963229b43c1b67c1f12bbf9df81",
+      "last_assemble_s": 0.4,
+      "last_solve_s": 0.82,
+      "last_update_s": 0.018,
+      "speedup_vs_1_thread": 1.0,
+      "s_per_step": 1.6037
+    },
+    "2": {
+      "threads": 2,
+      "cpus_per_task": 2,
+      "node": "ibc11b11n01",
+      "returncode": 0,
+      "wall_s": 16.070981844,
+      "solver_s": 9.4466,
+      "elf_sha256": "112076759fdff0942000307f729c2bd3c7e96963229b43c1b67c1f12bbf9df81",
+      "last_assemble_s": 0.21,
+      "last_solve_s": 0.45,
+      "last_update_s": 0.011,
+      "speedup_vs_1_thread": 1.6976478309656382,
+      "s_per_step": 0.94466
+    },
+    "4": {
+      "threads": 4,
+      "cpus_per_task": 4,
+      "node": "ibc11b11n01",
+      "returncode": 0,
+      "wall_s": 14.255399225,
+      "solver_s": 8.4178,
+      "elf_sha256": "112076759fdff0942000307f729c2bd3c7e96963229b43c1b67c1f12bbf9df81",
+      "last_assemble_s": 0.12,
+      "last_solve_s": 0.45,
+      "last_update_s": 0.0091,
+      "speedup_vs_1_thread": 1.9051296063104373,
+      "s_per_step": 0.84178
+    },
+    "8": {
+      "threads": 8,
+      "cpus_per_task": 8,
+      "node": "ibc11b11n04",
+      "returncode": 0,
+      "wall_s": 28.894752921,
+      "solver_s": 22.075,
+      "elf_sha256": "112076759fdff0942000307f729c2bd3c7e96963229b43c1b67c1f12bbf9df81",
+      "last_assemble_s": 0.094,
+      "last_solve_s": 1.6,
+      "last_update_s": 0.0077,
+      "speedup_vs_1_thread": 0.7264779161947905,
+      "s_per_step": 2.2075
+    }
+  },
+  "bitwise_identical_across_thread_counts": {
+    "surface_events.csv": true,
+    "transport_budget.csv": true,
+    "weighted_online.csv": true
+  },
+  "all_bitwise_identical": true,
+  "determinism_reason": "element coloring makes each degree of freedom receive its contributions in an order fixed by the colors, not by thread scheduling",
+  "caveat_8_threads": "the eight-thread job landed on a different node and is not comparable; threads 1, 2 and 4 all ran on ibc11b11n01",
+  "bottleneck": "assembly scales about 3.3x from one to four threads while the ILU-BiCGSTAB solve saturates near 1.8x, so at four threads the linear solve is about 79 percent of a step"
+}

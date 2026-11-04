@@ -1,0 +1,22 @@
+{
+  "host": "hpcc",
+  "login_node": "ibcln01",
+  "remote": "/WORK/hulm_work/zhixin/paper2_wp9_portability_20261104",
+  "bundle_sha256": "af885bc127bce044af72989347209aed35a4bd0fbba2f6722dc836c681967b01",
+  "bundle_source": "the live sal WP9 run root, tarred after the orted relocation",
+  "checksums": {
+    "bundle/bin/paper2_transport": "112076759fdff0942000307f729c2bd3c7e96963229b43c1b67c1f12bbf9df81",
+    "params.input": "0addb895e498b42253efc6f2046ac73d14e20b1617389db5c4a65aecfa39f2ec",
+    "eigenprofile.dat": "d721e605d126e555f92b43200aa73b999ed4e2b61397edd1e98c0d9fddb36575",
+    "job.sbatch": "fe3ec129e9abe8d75ba0964cc7d843f709498cd49509ff96d7605ed59bd18b8d"
+  },
+  "bundle_files": 350,
+  "elf_matches_sal": true,
+  "input_matches_bench": true,
+  "profile_matches_bench": true,
+  "quota_tail": [
+    "          /WORK 1860837496  2148000000       0       - 2057053* 2000000       0 1d14h23m34s",
+    "Your balance are:43190.179311000014"
+  ],
+  "scope": "infrastructure portability only; authorizes no production leg"
+}

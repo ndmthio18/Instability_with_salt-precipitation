@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "id": "WP9-E01",
+  "created_date": "2026-11-04",
+  "authority": "command/16.md",
+  "timing": "while the R96 solver was still integrating; no R96 postprocessing had run",
+  "observed_defect": "scripts/wp6_post.py addresses the conservative budget and online rows by the archived frame index, which is the accepted step only when every step is archived. The R96 leg advances with dt/2 and archives every second step, so the worker post stage would have compared frame i against step i, failed its time assertion, and returned without writing finished.json or the field archive.",
+  "correction": "the remote copy of wp6_post.py in the WP9 run root was replaced with wp9_post.py, which takes each frame step from the sigma-top clock that single_wavelength_post.post already records, and integrates the cumulative flux over every accepted step",
+  "scientific_inputs_changed": false,
+  "executable_changed": false,
+  "solver_interrupted": false,
+  "thresholds_changed": false,
+  "repository_scripts_changed": [
+    "scripts/wp9_post.py is new; scripts/wp6_post.py is untouched"
+  ],
+  "remote_files": {
+    "wp6_post_py_before": "95acc0de925089f7392081dc854687275cb65573813892ef5f2df09e1b53540c",
+    "wp6_post_py_after": "119e7f0c117fdbc5b3a613e36014261945cb6d930b78a1fbd2ddcc91ba9f61c2",
+    "retained_remote_copy": "wp6_post_original_stride1.py"
+  },
+  "equivalence_proof": "wp9_post_equivalence.json: bitwise identical on WP7-R48-M1-4T, stride 1, 4801 frames",
+  "forbidden": "this correction authorizes no new solver run of any kind"
+}

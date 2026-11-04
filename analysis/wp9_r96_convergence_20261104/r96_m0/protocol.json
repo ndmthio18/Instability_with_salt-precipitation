@@ -1,0 +1,175 @@
+{
+  "schema_version": 1,
+  "id": "WP9-R96-M0",
+  "created_date": "2026-11-04",
+  "authority": "command/16.md for the comparison, user instruction of 2026-11-04 for this leg",
+  "authority_sha256": "b0a608a5cb69da28e58da2bf1ea164f8748603a50cee5bdbd7e5da2ebd982f4d",
+  "decision": "FROZEN_AND_PENDING_LAUNCH",
+  "launched": false,
+  "scope": [
+    "exactly one unperturbed R96 leg, strictly paired with the R96-M1 leg"
+  ],
+  "purpose": "measure the R96 numerical floor, which the registered short-wave discriminator records as unmeasured, and complete the A/B/C comparison at R96",
+  "forbidden": [
+    "R192",
+    "multiwavelength",
+    "full-domain",
+    "8T",
+    "restart",
+    "retry",
+    "any change of the solver formulation"
+  ],
+  "pairing": {
+    "partner": "WP9-R96-M1-4T",
+    "partner_input_sha256": "761f32b0cf09f73373d66b8d5eab7c870c158b4a296dd584439151fd76a940a9",
+    "differences": {
+      "Problem.Name": {
+        "m1": "WP9-R96-M1-4T",
+        "m0": "WP9-R96-M0-4T"
+      },
+      "Problem.Amplitude": {
+        "m1": "1e-06",
+        "m0": "0"
+      },
+      "Problem.StandardDeviationSaltMoleFraction": {
+        "m1": "1e-06",
+        "m0": "0"
+      },
+      "Problem.PerturbationType": {
+        "m1": "Eigenprofile",
+        "m0": "Constant"
+      },
+      "Problem.EigenprofilePath": {
+        "m1": "eigenprofile.dat",
+        "m0": null
+      }
+    },
+    "identical_to_the_R48_pair_difference": true,
+    "same_grid": true,
+    "same_dt": true,
+    "same_time_axis": true,
+    "same_output_interval": true
+  },
+  "physics": {
+    "case_id": 36877,
+    "width_m": 0.021428571428571432,
+    "height_m": 0.2,
+    "canonical_mode": "A28, Neumann m=2, one wavelength across the box",
+    "nx_cells": 96,
+    "nz_cells": 200,
+    "grading1": -0.98,
+    "perturbation": {
+      "type": "Constant",
+      "amplitude": 0.0,
+      "note": "no imposed perturbation; the leg measures what the discretization alone produces"
+    },
+    "constitutive": "unchanged from the frozen R48-M1 input; KrwMualemExponent = true",
+    "stopping": {
+      "horizon_s": 545692.2550893936,
+      "horizon_over_T": 4.0,
+      "solubility_mole_fraction": 0.1,
+      "stop_at_solubility": true,
+      "first_local_crossing": "whichever comes first"
+    }
+  },
+  "numerics": {
+    "dt_s": 56.842943238478476,
+    "dt_relative_to_R24_R48": 0.5,
+    "steps": 9600,
+    "fixed_timestep": true,
+    "output_interval": 2,
+    "expected_frames": 4801,
+    "executable": {
+      "sha256": "112076759fdff0942000307f729c2bd3c7e96963229b43c1b67c1f12bbf9df81",
+      "path": "/tmp/zhixin_paper2_wp7_shortwave_20261103_r01/bundle/bin/paper2_transport",
+      "provenance": "the identical bundle that produced R24 and R48; no rebuild"
+    },
+    "cuts": "the seven original conservative planes, byte-identical CutCoordinates",
+    "time_axis": {
+      "exact_halving": true,
+      "coarse_endpoint_s": 545692.2550893656,
+      "fine_endpoint_s": 545692.2550894701,
+      "max_paired_representation_error_s": 1.2631062418222427e-07,
+      "accumulation_budget_s": 1.1175870895385742e-06,
+      "pairing_rule": "frame j of R96 pairs with frame j of R24/R48 (step 2j at dt/2 versus step j at dt)",
+      "tolerance_s": 1.1175870895385742e-06,
+      "note": "dt/2 is an exact binary halving, so the mathematical accepted times coincide identically; only the double accumulation differs. The 32-ULP same_time rule used inside one protocol is too tight across protocols and is replaced by the accumulation budget plus the exact frame-index identity."
+    },
+    "deviation": {
+      "key": "TimeLoop.OutputInterval",
+      "from_": "1",
+      "to_": "2",
+      "reason": "the per-step conservative diagnostics and sigma_top are written every accepted step irrespective of OutputInterval (main.cc: transport.write and writeSigmaTop precede the interval test), so interval 2 loses no diagnostic and no comparison time: the shared accepted times with R24/R48 are exactly the even steps",
+      "effect": "4801 frames instead of 9601; peak scratch 21.5 GiB instead of 43 GiB"
+    }
+  },
+  "execution": {
+    "host": "hpcc",
+    "partition": "cnmix",
+    "ranks": 1,
+    "cpus": 4,
+    "threads": 4,
+    "thread_backend": "TBB, compiled into the frozen executable",
+    "hard_wall_s": 21600,
+    "projected_solver_wall_s": 8083.2,
+    "projection_source": "the four-thread ten-step measurement, 0.842 s per step",
+    "minimum_free_disk_bytes": 107374182400,
+    "minimum_available_memory_bytes": 17179869184,
+    "scratch": "/WORK/hulm_work/zhixin/paper2_wp9_r96_m0_20261104",
+    "filesystem": "Lustre /WORK",
+    "io_caveat": "the sal legs wrote to a RAM-backed tmpfs; 4801 files on Lustre may be slower, so the projection is a floor, not a promise"
+  },
+  "host_and_threads_are_not_protocol_differences": {
+    "executable_identical": true,
+    "diagnostics_bitwise_identical_to_sal": true,
+    "diagnostics_bitwise_identical_across_thread_counts": true,
+    "evidence": [
+      "hpcc_portability/portability.json",
+      "hpcc_portability/thread_scaling.json"
+    ],
+    "rule": "neither the host nor the thread count enters any protocol hash"
+  },
+  "acceptance": [
+    "solver exit 0 with stop reason requested_horizon or a recorded solubility crossing",
+    "every accepted step uses the fixed dt; no Newton-driven reduction",
+    "accepted steps equal 9600 unless the solubility stop fired first",
+    "maximum regional salt residual <= 1e-14 m and water residual <= 1e-11 m (the WP7 thresholds)",
+    "independent VTU inventory, flux reintegration and budget identity reproduce the online budget",
+    "initial state matches the registered initial condition",
+    "no NaN or non-finite state anywhere in the diagnostics",
+    "frame count equals 4801 and every frame hash verifies at both ends",
+    "the paired time axis satisfies the registered accumulation budget at every shared frame"
+  ],
+  "postprocessing": [
+    "wp8_fields.py reduction, identical to the R24/R48 products",
+    "wp7_spatial.py metrics, identical to the R48 products",
+    "both run against hash-verified frames and audited"
+  ],
+  "known_confounds": [
+    {
+      "name": "simultaneous timestep change",
+      "detail": "R96 halves dx and dt together, so an R48-R96 difference cannot be attributed to horizontal resolution alone. The only existing bound is the WP6 R24 dt/2 pair to 2T: growth amplification -0.0999 percent, surface weighted sigma -0.1145 percent, vertical sigma profile relative L2 0.0389 percent, detection time +0.0972 percent. That bound does not extend to 3T-4T, to R96, or to the 1 mm transport difference, where the same study found a 68 percent mid-window change under dt halving.",
+      "consequence": "growth and modal conclusions carry a ~0.1 percent temporal prior; transport conclusions carry none"
+    },
+    {
+      "name": "domain width",
+      "detail": "the box is one A28 wavelength wide with no-flow sides, so only Neumann modes m = 1,2,... exist and the LSA global critical mode nx=5 (wavelength 0.12 m) cannot appear at all",
+      "consequence": "no statement about the unbounded-domain wavelength selection follows"
+    },
+    {
+      "name": "vertical resolution",
+      "detail": "nz=200 with Grading1=-0.98 is held fixed at every resolution and is not varied here",
+      "consequence": "vertical truncation is common-mode and untested"
+    },
+    {
+      "name": "executable provenance",
+      "detail": "the strict one-cell background uses a different executable; only R24/R48/R96 share this one",
+      "consequence": "background-referenced differences retain the cross-executable gap recorded in command/15"
+    }
+  ],
+  "failure_policy": [
+    "preserve the last accepted state, the solver log and all provenance",
+    "no automatic retry and no restart",
+    "report the failure and stop"
+  ]
+}

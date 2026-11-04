@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "id": "WP9-A01",
+  "created_date": "2026-11-04",
+  "authority": "command/16.md",
+  "question": "command/16 要求在明确授权前不得启动 R96。协议已冻结（96×200、A28 本征剖面、幅值 1e-6、七观测面、4T 或首次 x>=0.1），sal 上同一 ELF 与 71 GB 暂存空间可用，预计单腿约 7.2 小时、硬上限 12 小时。是否现在启动？",
+  "answer": "按 dt/2 启动（推荐）",
+  "granted": {
+    "runs": 1,
+    "role": "M1",
+    "nx_cells": 96,
+    "dt_s": 56.842943238478476,
+    "steps": 9600,
+    "horizon_s": 545692.2550893936,
+    "host": "sal",
+    "cpus": 1,
+    "hard_wall_s": 43200
+  },
+  "not_granted": [
+    "R96-M0",
+    "R192",
+    "multiwavelength",
+    "full-domain",
+    "8T",
+    "restart",
+    "retry"
+  ],
+  "protocol_sha256": "9b987d7c998d7275e49fec54dac208ec106ffd22e8271a5c6a8041777d900924",
+  "input_sha256": "761f32b0cf09f73373d66b8d5eab7c870c158b4a296dd584439151fd76a940a9"
+}

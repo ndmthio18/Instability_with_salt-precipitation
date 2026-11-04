@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "id": "WP9-A02",
+  "created_date": "2026-11-04",
+  "question": "多线程跑哪一条？",
+  "answer": "R96-M0（推荐）",
+  "user_words": "嗯嗯，那就在hpcc上跑一个多线程",
+  "granted": {
+    "runs": 1,
+    "role": "M0",
+    "nx_cells": 96,
+    "host": "hpcc",
+    "threads": 4,
+    "dt_s": 56.842943238478476,
+    "steps": 9600
+  },
+  "not_granted": [
+    "R192",
+    "multiwavelength",
+    "full-domain",
+    "8T",
+    "restart",
+    "retry"
+  ],
+  "protocol_sha256": "efdd0ca5ed5c45c3a53c0e0a7e237b576da12e80c63489394bcf03f11e704063",
+  "input_sha256": "392af4d9cb22204268bd99a32296ecc7bb06bac02503eaed270396f958a31f92"
+}

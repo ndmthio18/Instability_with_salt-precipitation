@@ -1,0 +1,118 @@
+{
+  "solver": {
+    "returncode": 0,
+    "reason": null,
+    "wall_s": 6669.547511212528,
+    "cpu_s": 10538.873672,
+    "peak_rss_kib": 85900,
+    "stop": {
+      "schema_version": 1,
+      "reason": "requested_horizon",
+      "last_accepted_time_s": 545692.2550893936,
+      "accepted_steps": 9600,
+      "initial_diagnostics_written": true,
+      "requested_end_s": 545692.2550893936,
+      "surface_threshold_low_s": null,
+      "surface_threshold_high_s": null,
+      "global_threshold_low_s": null,
+      "global_threshold_high_s": null
+    },
+    "threads": 4,
+    "newton_iterations": 19201,
+    "failure_lines": [
+      " -- Newton.RetryTimeStepReductionFactor = 0.5"
+    ]
+  },
+  "post_archive_wall_s": 544.4852805957198,
+  "archive": {
+    "path": "/WORK/hulm_work/zhixin/paper2_wp9_r96_m0_20261104/WP9-R96-M0-4T_fields.tar.gz",
+    "bytes": 2314517289,
+    "sha256": "9886c53bfdb6bf24dec4a99f052055b7d0b585dfb8239193e18b87e1caa1b3eb"
+  },
+  "files": {
+    "started.json": {
+      "sha256": "0f8e2081895af7c0154154437316eb04b66562c0e806f276c32bfaf2ea40ad2b",
+      "bytes": 387
+    },
+    "transport_metadata.json": {
+      "sha256": "6e25c4ea1bf90bf1a65400f154b0a01e83bf6d9b63d6a343c22c4f04ccce275e",
+      "bytes": 1388
+    },
+    "stop_record.json": {
+      "sha256": "ba647ac4f06787a876731cf43110171bb978a0cc31b24bd8bc531d8723935c1a",
+      "bytes": 351
+    },
+    "solver_finished.json": {
+      "sha256": "2da4af31c5f719c7dde40fdea56f2d5019e3633bf9caaeeeb31e4ecf79f86711",
+      "bytes": 626
+    },
+    "post.log": {
+      "sha256": "bcf384da815c98216e005c81e00963d87c4c99a4a37d1fb71263714a5998cc86",
+      "bytes": 2076
+    },
+    "weighted_online.csv": {
+      "sha256": "5eb97b5fb6e54a32ce0fda0a19e26930d830f267219722c6453e21716a428ffa",
+      "bytes": 1557256
+    },
+    "WP9-R96-M0-4T.pvd": {
+      "sha256": "f77171cf290193b792cb4e535d610878af2ef73732a52f58dd85ae64a675a6f6",
+      "bytes": 418528
+    },
+    "params.input": {
+      "sha256": "392af4d9cb22204268bd99a32296ecc7bb06bac02503eaed270396f958a31f92",
+      "bytes": 1279
+    },
+    "solver.log": {
+      "sha256": "59c75324fefba2792274f4cded9953fa246e0eea430b153a1debe66350eaec0b",
+      "bytes": 5339625
+    },
+    "WP9-R96-M0-4T_sigmatop.csv": {
+      "sha256": "04f01bd5456900ba2e8d3497f891523b502d6d40447846bfe52b076d8106c3b5",
+      "bytes": 940998
+    },
+    "eigenprofile.dat": {
+      "sha256": "d721e605d126e555f92b43200aa73b999ed4e2b61397edd1e98c0d9fddb36575",
+      "bytes": 153788
+    },
+    "plan.json": {
+      "sha256": "ca9a6e872a79d4265640f3ae37b4b3c1ab031c75865918e3a6e857b8db530aba",
+      "bytes": 852
+    },
+    "transport_budget.csv": {
+      "sha256": "95f06584b7ad0c3fb0f482852450e14abbaa78eb85463ea99b7ce64b43da63ef",
+      "bytes": 46383546
+    },
+    "surface_events.csv": {
+      "sha256": "e88e6bcd2c95b5c0f7997aab2a1a91c7daaf463bb9d4f73ed36def125f5f2011",
+      "bytes": 1885941
+    },
+    "post/field_hashes.json": {
+      "sha256": "e25be45c1587e277afbce15ac0ecf51510284aca6886256b4880cbe02d211e33",
+      "bytes": 1146331
+    },
+    "post/independent_inventories.csv": {
+      "sha256": "d019853de3aac0c979e247077fa3317ba54e84f48d451c5f0fe293a5e53244cc",
+      "bytes": 5116859
+    },
+    "post/field_audit.json": {
+      "sha256": "c15219aba96f4483c1e23fa0a2a33904550d0812183071ca5ea5ce6b89ad2855",
+      "bytes": 728
+    },
+    "post/independent_checks.json": {
+      "sha256": "0a30800239c4365e76b87d8a7f53789b565a29a0515f9e8da17d90b5bc64977c",
+      "bytes": 2391
+    },
+    "post/profiles.npz": {
+      "sha256": "8e0350bfc24d1929e974cacc87b6539668de2a1d57581cad4b42d53d7de0894f",
+      "bytes": 7821705
+    },
+    "post/representative_fields.npz": {
+      "sha256": "7bffcee2cea50696b8b82763824a58b7b4a65d93fc7108ebd4379482fbf68471",
+      "bytes": 98928
+    },
+    "post/weighted_diagnostics.csv": {
+      "sha256": "6a671c21f3072d0cd1b25a409587d217d6c54ec207d97602f4045b9a90d554b4",
+      "bytes": 1567961
+    }
+  }
+}

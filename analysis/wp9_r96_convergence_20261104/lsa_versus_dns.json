@@ -1,0 +1,322 @@
+{
+  "task": "command/16 Task D, small-perturbation comparison",
+  "admission": {
+    "purity_floor": 0.98,
+    "amplitude_ceiling": 0.01,
+    "rationale": "the quasi-steady LSA describes one small mode on a frozen base state; it is compared only where the DuMuX solution still is one small mode"
+  },
+  "windows": {
+    "R24_M1": {
+      "first_frame": 0,
+      "last_frame": 4203,
+      "last_time_s": 477821.7808626181,
+      "last_time_over_T": 3.5024999999997646,
+      "frames": 4204,
+      "purity_floor": 0.98,
+      "amplitude_ceiling": 0.01,
+      "amplitude_available": true,
+      "max_relative_anomaly_at_last": 0.0015690696814082328
+    },
+    "R48_M1": {
+      "first_frame": 0,
+      "last_frame": 4444,
+      "last_time_s": 505220.079503562,
+      "last_time_over_T": 3.703333333333078,
+      "frames": 4445,
+      "purity_floor": 0.98,
+      "amplitude_ceiling": 0.01,
+      "amplitude_available": true,
+      "max_relative_anomaly_at_last": 0.002576965204603485
+    },
+    "R96_M1": {
+      "first_frame": 0,
+      "last_frame": 4533,
+      "last_time_s": 515338.12340001017,
+      "last_time_over_T": 3.777499999999737,
+      "frames": 4534,
+      "purity_floor": 0.98,
+      "amplitude_ceiling": 0.01,
+      "amplitude_available": true,
+      "max_relative_anomaly_at_last": 0.0030844545383820828
+    }
+  },
+  "rows": [
+    {
+      "leg": "R24_M1",
+      "checkpoint": "T",
+      "frame": 1200,
+      "time_s": 136423.06377235046,
+      "t_over_T": 1.000000000000015,
+      "dumux_dlnA2_dt_per_s": 3.9387105143853796e-06,
+      "lsa_sigma_m2_per_s": 4.3427322565475975e-06,
+      "ratio": 0.9069660024393471,
+      "relative_difference": -0.09303399756065289,
+      "canonical_energy_fraction": 0.9999999955446743,
+      "max_relative_anomaly": 5.735739829243975e-05,
+      "admitted_small_perturbation": true,
+      "comparison": "quantitative"
+    },
+    {
+      "leg": "R24_M1",
+      "checkpoint": "2T",
+      "frame": 2400,
+      "time_s": 272846.1275446852,
+      "t_over_T": 1.9999999999999152,
+      "dumux_dlnA2_dt_per_s": 1.0008629373885192e-05,
+      "lsa_sigma_m2_per_s": 1.0584868035745593e-05,
+      "ratio": 0.945560146813884,
+      "relative_difference": -0.054439853186115994,
+      "canonical_energy_fraction": 0.9999998104580939,
+      "max_relative_anomaly": 9.179092113169861e-05,
+      "admitted_small_perturbation": true,
+      "comparison": "quantitative"
+    },
+    {
+      "leg": "R24_M1",
+      "checkpoint": "3T",
+      "frame": 3600,
+      "time_s": 409269.1913170199,
+      "t_over_T": 2.999999999999815,
+      "dumux_dlnA2_dt_per_s": 1.6092359166254566e-05,
+      "lsa_sigma_m2_per_s": 1.6832493336771412e-05,
+      "ratio": 0.9560294392691078,
+      "relative_difference": -0.04397056073089223,
+      "canonical_energy_fraction": 0.9999379280782472,
+      "max_relative_anomaly": 0.000419800420175451,
+      "admitted_small_perturbation": true,
+      "comparison": "quantitative"
+    },
+    {
+      "leg": "R24_M1",
+      "checkpoint": "3.6775T",
+      "frame": 4413,
+      "time_s": 501695.8170227767,
+      "t_over_T": 3.677499999999747,
+      "dumux_dlnA2_dt_per_s": 2.0194070459285396e-05,
+      "lsa_sigma_m2_per_s": 2.108473289508482e-05,
+      "ratio": 0.9577579455129331,
+      "relative_difference": -0.04224205448706686,
+      "canonical_energy_fraction": 0.6488095748317338,
+      "max_relative_anomaly": 0.004276346153760688,
+      "admitted_small_perturbation": false,
+      "comparison": "not admitted: outside the small-perturbation regime"
+    },
+    {
+      "leg": "R24_M1",
+      "checkpoint": "4T",
+      "frame": 4800,
+      "time_s": 545692.2550893656,
+      "t_over_T": 3.9999999999997953,
+      "dumux_dlnA2_dt_per_s": -0.00016650572401454792,
+      "lsa_sigma_m2_per_s": 2.3113218875480888e-05,
+      "ratio": -7.203917589824824,
+      "relative_difference": -8.203917589824824,
+      "canonical_energy_fraction": 0.0013714091979062776,
+      "max_relative_anomaly": 0.22068347060761118,
+      "admitted_small_perturbation": false,
+      "comparison": "not admitted: outside the small-perturbation regime"
+    },
+    {
+      "leg": "R48_M1",
+      "checkpoint": "T",
+      "frame": 1200,
+      "time_s": 136423.06377235046,
+      "t_over_T": 1.000000000000015,
+      "dumux_dlnA2_dt_per_s": 3.923449967420389e-06,
+      "lsa_sigma_m2_per_s": 4.3427322565475975e-06,
+      "ratio": 0.9034519596516569,
+      "relative_difference": -0.09654804034834308,
+      "canonical_energy_fraction": 0.9999999956402824,
+      "max_relative_anomaly": 5.694450299270816e-05,
+      "admitted_small_perturbation": true,
+      "comparison": "quantitative"
+    },
+    {
+      "leg": "R48_M1",
+      "checkpoint": "2T",
+      "frame": 2400,
+      "time_s": 272846.1275446852,
+      "t_over_T": 1.9999999999999152,
+      "dumux_dlnA2_dt_per_s": 9.992986155227257e-06,
+      "lsa_sigma_m2_per_s": 1.0584868035745593e-05,
+      "ratio": 0.944082261723101,
+      "relative_difference": -0.055917738276899054,
+      "canonical_energy_fraction": 0.9999998228985832,
+      "max_relative_anomaly": 9.12861285271184e-05,
+      "admitted_small_perturbation": true,
+      "comparison": "quantitative"
+    },
+    {
+      "leg": "R48_M1",
+      "checkpoint": "3T",
+      "frame": 3600,
+      "time_s": 409269.1913170199,
+      "t_over_T": 2.999999999999815,
+      "dumux_dlnA2_dt_per_s": 1.6071360727974715e-05,
+      "lsa_sigma_m2_per_s": 1.6832493336771412e-05,
+      "ratio": 0.9547819450411446,
+      "relative_difference": -0.04521805495885545,
+      "canonical_energy_fraction": 0.9999557283421392,
+      "max_relative_anomaly": 0.0004152136888362661,
+      "admitted_small_perturbation": true,
+      "comparison": "quantitative"
+    },
+    {
+      "leg": "R48_M1",
+      "checkpoint": "3.6775T",
+      "frame": 4413,
+      "time_s": 501695.8170227767,
+      "t_over_T": 3.677499999999747,
+      "dumux_dlnA2_dt_per_s": 2.0194105623254355e-05,
+      "lsa_sigma_m2_per_s": 2.108473289508482e-05,
+      "ratio": 0.9577596132584594,
+      "relative_difference": -0.042240386741540625,
+      "canonical_energy_fraction": 0.9853345328947558,
+      "max_relative_anomaly": 0.0023377617557970953,
+      "admitted_small_perturbation": true,
+      "comparison": "quantitative"
+    },
+    {
+      "leg": "R48_M1",
+      "checkpoint": "4T",
+      "frame": 4800,
+      "time_s": 545692.2550893656,
+      "t_over_T": 3.9999999999997953,
+      "dumux_dlnA2_dt_per_s": 2.1839615031918344e-05,
+      "lsa_sigma_m2_per_s": 2.3113218875480888e-05,
+      "ratio": 0.9448971668366963,
+      "relative_difference": -0.055102833163303666,
+      "canonical_energy_fraction": 0.35699762216557557,
+      "max_relative_anomaly": 0.015735672099132438,
+      "admitted_small_perturbation": false,
+      "comparison": "not admitted: outside the small-perturbation regime"
+    },
+    {
+      "leg": "R96_M1",
+      "checkpoint": "T",
+      "frame": 1200,
+      "time_s": 136423.06377235046,
+      "t_over_T": 1.000000000000015,
+      "dumux_dlnA2_dt_per_s": 3.9179301949548995e-06,
+      "lsa_sigma_m2_per_s": 4.3427322565475975e-06,
+      "ratio": 0.9021809228620489,
+      "relative_difference": -0.09781907713795113,
+      "canonical_energy_fraction": 0.9999999956670402,
+      "max_relative_anomaly": 5.683029318897707e-05,
+      "admitted_small_perturbation": true,
+      "comparison": "quantitative"
+    },
+    {
+      "leg": "R96_M1",
+      "checkpoint": "2T",
+      "frame": 2400,
+      "time_s": 272846.1275446852,
+      "t_over_T": 1.9999999999999152,
+      "dumux_dlnA2_dt_per_s": 9.984812336952253e-06,
+      "lsa_sigma_m2_per_s": 1.0584868035745593e-05,
+      "ratio": 0.9433100444174718,
+      "relative_difference": -0.056689955582528206,
+      "canonical_energy_fraction": 0.9999998264449502,
+      "max_relative_anomaly": 9.110695817992002e-05,
+      "admitted_small_perturbation": true,
+      "comparison": "quantitative"
+    },
+    {
+      "leg": "R96_M1",
+      "checkpoint": "3T",
+      "frame": 3600,
+      "time_s": 409269.1913170199,
+      "t_over_T": 2.999999999999815,
+      "dumux_dlnA2_dt_per_s": 1.6057340284793276e-05,
+      "lsa_sigma_m2_per_s": 1.6832493336771412e-05,
+      "ratio": 0.953949005862086,
+      "relative_difference": -0.046050994137914025,
+      "canonical_energy_fraction": 0.9999587504369505,
+      "max_relative_anomaly": 0.00041348255967377104,
+      "admitted_small_perturbation": true,
+      "comparison": "quantitative"
+    },
+    {
+      "leg": "R96_M1",
+      "checkpoint": "3.6775T",
+      "frame": 4413,
+      "time_s": 501695.8170227767,
+      "t_over_T": 3.677499999999747,
+      "dumux_dlnA2_dt_per_s": 2.0176544688124687e-05,
+      "lsa_sigma_m2_per_s": 2.108473289508482e-05,
+      "ratio": 0.9569267388171729,
+      "relative_difference": -0.04307326118282706,
+      "canonical_energy_fraction": 0.992616217804567,
+      "max_relative_anomaly": 0.002181346392861043,
+      "admitted_small_perturbation": true,
+      "comparison": "quantitative"
+    },
+    {
+      "leg": "R96_M1",
+      "checkpoint": "4T",
+      "frame": 4800,
+      "time_s": 545692.2550893656,
+      "t_over_T": 3.9999999999997953,
+      "dumux_dlnA2_dt_per_s": 2.2039084627615042e-05,
+      "lsa_sigma_m2_per_s": 2.3113218875480888e-05,
+      "ratio": 0.9535272757268216,
+      "relative_difference": -0.04647272427317839,
+      "canonical_energy_fraction": 0.7549415050589154,
+      "max_relative_anomaly": 0.00936216312146189,
+      "admitted_small_perturbation": false,
+      "comparison": "not admitted: outside the small-perturbation regime"
+    }
+  ],
+  "agreement": {
+    "points": 11,
+    "max_absolute_relative_difference": 0.09781907713795113,
+    "median_absolute_relative_difference": 0.054439853186115994,
+    "per_leg": {
+      "R24_M1": {
+        "points": 3,
+        "max_absolute_relative_difference": 0.09303399756065289
+      },
+      "R48_M1": {
+        "points": 4,
+        "max_absolute_relative_difference": 0.09654804034834308
+      },
+      "R96_M1": {
+        "points": 4,
+        "max_absolute_relative_difference": 0.09781907713795113
+      }
+    }
+  },
+  "outside_window": [
+    {
+      "leg": "R24_M1",
+      "checkpoint": "3.6775T",
+      "ratio": 0.9577579455129331,
+      "canonical_energy_fraction": 0.6488095748317338
+    },
+    {
+      "leg": "R24_M1",
+      "checkpoint": "4T",
+      "ratio": -7.203917589824824,
+      "canonical_energy_fraction": 0.0013714091979062776
+    },
+    {
+      "leg": "R48_M1",
+      "checkpoint": "4T",
+      "ratio": 0.9448971668366963,
+      "canonical_energy_fraction": 0.35699762216557557
+    },
+    {
+      "leg": "R96_M1",
+      "checkpoint": "4T",
+      "ratio": 0.9535272757268216,
+      "canonical_energy_fraction": 0.7549415050589154
+    }
+  ],
+  "interpretation": "inside the registered window the measured canonical-mode growth and the quasi-steady LSA growth rate agree within ten percent at every resolution, which is tighter than the factor of two the solver docstring claims. Outside the window no comparison is made: the canonical mode is no longer the solution. The agreement is evidence about the linear stage of the seeded mode, not about late-time finger amplitude or about transport.",
+  "caveats": [
+    "the quasi-steady base state is frozen at t; this is an approximation, not an identity",
+    "the box admits only Neumann modes m=1,2,...; the unbounded critical mode nx=5 is absent",
+    "agreement of a growth rate is not agreement of an amplitude: the seed amplitude and the detection protocol are not LSA quantities",
+    "R96 advances with dt/2, so its measured slope carries a different temporal truncation"
+  ]
+}

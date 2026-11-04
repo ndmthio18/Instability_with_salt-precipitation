@@ -1,0 +1,280 @@
+{
+  "schema_version": 1,
+  "version": "v2",
+  "created_date": "2026-11-04",
+  "authority": "command/16.md",
+  "authority_sha256": "b0a608a5cb69da28e58da2bf1ea164f8748603a50cee5bdbd7e5da2ebd982f4d",
+  "supersedes": "analysis/wp8_full4T_20261103 (command/15); those reports are left unchanged",
+  "superseded_files": {
+    "analysis/wp8_full4T_20261103/SCIENTIFIC_REVIEW_ZH.md": {
+      "sha256": "92605345836efa56f01ec65874a84ad68a11255b528d8bc467b070de54a7f440",
+      "bytes": 8192
+    },
+    "analysis/wp8_full4T_20261103/README_ZH.md": {
+      "sha256": "08dc1a2241e474691a2e6dee7318fb3b53023ca0220db708149e2023b0c38d0b",
+      "bytes": 3006
+    },
+    "analysis/wp8_full4T_20261103/HISTORICAL_COMPARISON_ZH.md": {
+      "sha256": "272e09a5ae20b7d638e1b8583bd429bef314971535f42c631636b598d22fd1c5",
+      "bytes": 5832
+    },
+    "analysis/wp8_full4T_20261103/EXECUTION_AND_ACCEPTANCE_ZH.md": {
+      "sha256": "46fa7b1544da8ead795907c1d77742a17dbf950ddbb4a5da79069c888a9bcb1b",
+      "bytes": 5802
+    },
+    "analysis/wp8_full4T_20261103/scientific_analysis.json": {
+      "sha256": "8b2b3447262e19f9bdbc02f35e2e7c03a24525f2012ba588dfefbc4cfdb79aff",
+      "bytes": 82876
+    }
+  },
+  "correction_1_inventory": {
+    "whole_domain": {
+      "initial_salt_m": 8.630186732247061e-05,
+      "final_salt_m": 9.230418395461299e-05,
+      "delta_salt_m": 6.0023166321423815e-06,
+      "relative_change": 0.06955025213665977,
+      "cumulative_bottom_salt_input_m": 6.002316632179053e-06,
+      "attributed_fraction": 0.9999999999938904,
+      "attribution_relative_error": 6.1095573045122364e-12,
+      "initial_water_m": 0.02397274092290844,
+      "final_water_m": 0.023967207284151637,
+      "delta_water_m": -5.533638756802933e-06,
+      "relative_water_change": -0.00023083045758509613,
+      "cumulative_bottom_water_input_m": 0.0016673101756052662,
+      "evaporation_rate_m_s": 3.065544359023483e-09,
+      "evaporated_water_m": 0.0016728438143520084,
+      "water_balance_residual_m": -1.006074563936199e-14,
+      "top_boundary_salt_flux": "zero by construction: evaporation removes pure water"
+    },
+    "free_domain_relative_change": 0.07038086021685452,
+    "per_plane": [
+      {
+        "region": "upper_0.995000",
+        "depth_mm": 1.0288705621893435,
+        "initial_salt_m": 3.8825149391785884e-07,
+        "final_salt_m": 4.086683418285087e-06,
+        "enrichment_ratio": 10.525866564082541,
+        "delta_salt_m": 3.698431924367228e-06,
+        "net_upward_salt_across_lower_plane_m": 3.6984319229842e-06,
+        "advective_component_m": 2.238691969497706e-05,
+        "diffusive_component_m": -1.868848777199284e-05,
+        "balance_residual_m": 1.3830277729802963e-15,
+        "delta_water_m": -6.543567638555973e-08
+      },
+      {
+        "region": "upper_0.990000",
+        "depth_mm": 1.9480080534645117,
+        "initial_salt_m": 7.354788163281274e-07,
+        "final_salt_m": 5.759101892186922e-06,
+        "enrichment_ratio": 7.830411650656637,
+        "delta_salt_m": 5.0236230758587944e-06,
+        "net_upward_salt_across_lower_plane_m": 5.023623075026478e-06,
+        "advective_component_m": 1.2600806058388476e-05,
+        "diffusive_component_m": -7.577182983361981e-06,
+        "balance_residual_m": 8.323165968287041e-16,
+        "delta_water_m": -1.1853407919307636e-07
+      },
+      {
+        "region": "upper_0.975000",
+        "depth_mm": 5.042057277056356,
+        "initial_salt_m": 1.9070122822911021e-06,
+        "final_salt_m": 7.868482149503799e-06,
+        "enrichment_ratio": 4.126078380602002,
+        "delta_salt_m": 5.961469867212696e-06,
+        "net_upward_salt_across_lower_plane_m": 5.961469867221712e-06,
+        "advective_component_m": 6.33449015727021e-06,
+        "diffusive_component_m": -3.730202900484988e-07,
+        "balance_residual_m": -9.015818690574773e-18,
+        "delta_water_m": -2.863089657189526e-07
+      },
+      {
+        "region": "upper_0.950000",
+        "depth_mm": 9.867682095126273,
+        "initial_salt_m": 3.7425147149198595e-06,
+        "final_salt_m": 9.762045435800846e-06,
+        "enrichment_ratio": 2.608418718270794,
+        "delta_salt_m": 6.019530720880986e-06,
+        "net_upward_salt_across_lower_plane_m": 6.019530720882139e-06,
+        "advective_component_m": 6.023084767140849e-06,
+        "diffusive_component_m": -3.5540462587262585e-09,
+        "balance_residual_m": -1.153658874160357e-18,
+        "delta_water_m": -5.391270238334304e-07
+      },
+      {
+        "region": "upper_0.900000",
+        "depth_mm": 20.096918795878207,
+        "initial_salt_m": 7.667579969821422e-06,
+        "final_salt_m": 1.368602224168016e-05,
+        "enrichment_ratio": 1.7849207045177915,
+        "delta_salt_m": 6.018442271858738e-06,
+        "net_upward_salt_across_lower_plane_m": 6.018442271820522e-06,
+        "advective_component_m": 6.018442428350946e-06,
+        "diffusive_component_m": -1.5653041463095072e-13,
+        "balance_residual_m": 3.821558548127227e-17,
+        "delta_water_m": -1.0542785177157336e-06
+      },
+      {
+        "region": "upper_0.750000",
+        "depth_mm": 49.54364822089632,
+        "initial_salt_m": 1.9239321213953026e-05,
+        "final_salt_m": 2.5252981789534543e-05,
+        "enrichment_ratio": 1.3125713484746127,
+        "delta_salt_m": 6.013660575581517e-06,
+        "net_upward_salt_across_lower_plane_m": 6.013660575552187e-06,
+        "advective_component_m": 6.013660575552187e-06,
+        "diffusive_component_m": 5.756370769513729e-22,
+        "balance_residual_m": 2.933020986457466e-17,
+        "delta_water_m": -2.382543357199937e-06
+      },
+      {
+        "region": "upper_0.500000",
+        "depth_mm": 99.8936188642754,
+        "initial_salt_m": 4.006457243782046e-05,
+        "final_salt_m": 4.607197393147143e-05,
+        "enrichment_ratio": 1.1499429827430294,
+        "delta_salt_m": 6.0074014936509665e-06,
+        "net_upward_salt_across_lower_plane_m": 6.0074014936700874e-06,
+        "advective_component_m": 6.007401493670088e-06,
+        "diffusive_component_m": -5.824873007814153e-22,
+        "balance_residual_m": -1.9120921751318576e-17,
+        "delta_water_m": -4.121177226788092e-06
+      },
+      {
+        "region": "free_domain",
+        "depth_mm": 197.96419435908803,
+        "initial_salt_m": 8.528336558615943e-05,
+        "final_salt_m": 9.128568221830182e-05,
+        "enrichment_ratio": 1.0703808602168545,
+        "delta_salt_m": 6.002316632142395e-06,
+        "net_upward_salt_across_lower_plane_m": 6.002316632179408e-06,
+        "advective_component_m": 6.0023166321793096e-06,
+        "diffusive_component_m": 9.49276310045631e-20,
+        "balance_residual_m": -3.701279869617116e-17,
+        "delta_water_m": -5.533638756802933e-06
+      }
+    ],
+    "corrected_statement": "the whole-domain and free-domain salt inventory increase is bottom-boundary salt input, not evaporative concentration; evaporation removes water and no salt, so it raises the mole fraction without changing the inventory"
+  },
+  "correction_2_censoring": {
+    "status": "right_censored",
+    "censoring_time_s": 545692.2550893936,
+    "censoring_time_over_T": 4.0,
+    "statement": "the first local solubility-crossing time is right-censored at 4T for every trajectory: T_sol > 545692.2550893936 s. This is a censored observation, not an absence of the event.",
+    "trajectories": [
+      {
+        "run": "background_1D_v2",
+        "nx_cells": 1,
+        "max_local_x": 0.05696893664024837,
+        "fraction_of_solubility": 0.5696893664024837,
+        "last_accepted_time_s": 545692.2550893656,
+        "crossed": false
+      },
+      {
+        "run": "R24_M0",
+        "nx_cells": 24,
+        "max_local_x": 0.05734079853935839,
+        "fraction_of_solubility": 0.5734079853935838,
+        "last_accepted_time_s": 545692.2550893656,
+        "crossed": false
+      },
+      {
+        "run": "R24_M1",
+        "nx_cells": 24,
+        "max_local_x": 0.06383967443551299,
+        "fraction_of_solubility": 0.6383967443551298,
+        "last_accepted_time_s": 545692.2550893656,
+        "crossed": false
+      },
+      {
+        "run": "R48_M0",
+        "nx_cells": 48,
+        "max_local_x": 0.056988900624629885,
+        "fraction_of_solubility": 0.5698890062462988,
+        "last_accepted_time_s": 545692.2550893656,
+        "crossed": false
+      },
+      {
+        "run": "R48_M1",
+        "nx_cells": 48,
+        "max_local_x": 0.05768990095172916,
+        "fraction_of_solubility": 0.5768990095172916,
+        "last_accepted_time_s": 545692.2550893656,
+        "crossed": false
+      }
+    ],
+    "external_reference": {
+      "source": "Paper 1 frozen observations.csv, one-dimensional precipitation clock for case 36877",
+      "t_precipitation_s": 979334.7310794428,
+      "t_precipitation_over_T": 7.178659560920551,
+      "caveat": "a different model of the horizontally uniform base state; it bounds the censoring plausibly but is not evidence about these two-dimensional runs"
+    }
+  },
+  "correction_3_v2_executable": {
+    "claim": "the v2 strict-background executable cannot run an ordinary two-dimensional grid",
+    "evidence": [
+      {
+        "file": "scripts/wp8_equal_height.hh",
+        "excerpt": "for(auto n:count)if(n!=2)throw std::runtime_error(\"WP8 requires exactly one horizontal cell\")",
+        "present": true,
+        "meaning": "every height level must carry exactly two vertices, i.e. exactly one horizontal cell"
+      },
+      {
+        "file": "model/transport_wp8_background_v2/source/appl/simpleRichardsnc/main.cc",
+        "excerpt": "paper2ConstrainedStep(*assembler, x, *gridGeometry, timeLoop->timeStepSize());",
+        "present": true,
+        "unconditional": false,
+        "meaning": "the constrained step replaces the Newton solver unconditionally; there is no runtime switch"
+      },
+      {
+        "file": "scripts/wp8_equal_height.hh",
+        "excerpt": "if(geometry.gridView().comm().size()!=1)throw ... \"WP8 constraint requires one MPI rank\"",
+        "present": true,
+        "meaning": "serial one-cell extrusion only"
+      }
+    ],
+    "withdrawn_recommendation": "SCIENTIFIC_REVIEW_ZH.md section 8 item 1 proposed running one 2D M0 with the same v2 executable to close the cross-executable gap; that run is impossible and the recommendation is withdrawn",
+    "replacement": "measure the gap on the one-cell background, where both executables can run (see elf_gap)"
+  },
+  "elf_gap": {
+    "reference": {
+      "run": "analysis\\wp7_shortwave_validation_20261103\\runs\\WP7-1D-background-T",
+      "nx_cells": 1,
+      "elf_sha256": "112076759fdff0942000307f729c2bd3c7e96963229b43c1b67c1f12bbf9df81",
+      "criterion": "legacy native Newton",
+      "states": 1201
+    },
+    "subject": {
+      "run": "analysis\\wp8_full4T_20261103\\run",
+      "nx_cells": 1,
+      "elf_sha256": "216a01603e73a2ddd7ae19828aa3d75ebffc595e856b71c8099770c974e191b3",
+      "criterion": "scaled constrained",
+      "states": 4801
+    },
+    "shared_states": 1201,
+    "bitwise_identical_times": 1200,
+    "max_time_difference_s": 2.066371962428093e-09,
+    "time_budget_s": 3.4924596548080444e-08,
+    "times_within_budget": true,
+    "max_abs_x_top_area_mean": 2.458970527197124e-15,
+    "max_abs_x_top_max": 1.9470536294363683e-14,
+    "max_abs_x_domain_max": 1.9470536294363683e-14,
+    "max_abs_x_top_node_mean": 2.4581031654591357e-15,
+    "max_abs_sigma_top_node": 1.944971961265196e-14,
+    "max_abs_budget": {
+      "inventory_salt_m": 3.3881317890172014e-19,
+      "inventory_water_m": 7.632783294297951e-17,
+      "cut_salt_total_down_m_s": 2.1462877164339717e-19,
+      "cumulative_cut_salt_m": 4.086233050738146e-16,
+      "whole_salt_inventory_m": 3.5236570605778894e-19
+    },
+    "interpretation": "over 0 -> T the two executables reproduce the same one-cell background to round-off, so the cross-executable gap recorded in command/15 section 7 is bounded there and cannot explain the R24/R48 divergence, which is five to eleven orders larger. The bound does not extend past T, because the two-dimensional executable never ran a one-cell background beyond T, and it says nothing about the nx>=24 discretization path."
+  },
+  "checks": {
+    "attribution_exact": true,
+    "censored": true,
+    "v2_guard_present": true,
+    "elf_gap_round_off": true,
+    "superseded_unchanged": true
+  },
+  "passed": true
+}

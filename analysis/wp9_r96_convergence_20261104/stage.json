@@ -1,0 +1,50 @@
+{
+  "root": "/tmp/zhixin_paper2_wp9_r96_20261104",
+  "elf_sha256": "112076759fdff0942000307f729c2bd3c7e96963229b43c1b67c1f12bbf9df81",
+  "runtime_manifest_entries": 349,
+  "runtime_manifest_mismatches": [],
+  "input_sha256": "761f32b0cf09f73373d66b8d5eab7c870c158b4a296dd584439151fd76a940a9",
+  "profile_sha256": "d721e605d126e555f92b43200aa73b999ed4e2b61397edd1e98c0d9fddb36575",
+  "preregistration_sha256": "9b987d7c998d7275e49fec54dac208ec106ffd22e8271a5c6a8041777d900924",
+  "free_disk_bytes": 72715436032,
+  "available_memory_bytes": 151970643968,
+  "load": [
+    80.6689453125,
+    81.48388671875,
+    84.5361328125
+  ],
+  "checks": {
+    "elf_matches_R24_R48": true,
+    "runtime_manifest_clean": true,
+    "input_matches": true,
+    "profile_matches": true,
+    "protocol_matches": true,
+    "free_scratch_above_minimum": true,
+    "memory_above_worker_gate": true,
+    "reduced_spectra_present": true
+  },
+  "admitted": true,
+  "plan": {
+    "id": "WP9-R96-M1-4T",
+    "role": "M1",
+    "stage": "r96",
+    "case_id": 36877,
+    "nx_cells": 96,
+    "nz_cells": 200,
+    "T_s": 545692.2550893936,
+    "dt_s": 56.842943238478476,
+    "steps": 9600,
+    "output_interval": 2,
+    "scalar_unknowns": 38994,
+    "input_sha256": "761f32b0cf09f73373d66b8d5eab7c870c158b4a296dd584439151fd76a940a9",
+    "profile_sha256": "d721e605d126e555f92b43200aa73b999ed4e2b61397edd1e98c0d9fddb36575",
+    "elf_sha256": "112076759fdff0942000307f729c2bd3c7e96963229b43c1b67c1f12bbf9df81",
+    "preregistration_sha256": "9b987d7c998d7275e49fec54dac208ec106ffd22e8271a5c6a8041777d900924",
+    "user_authorization_sha256": "e7dff6af17e06fdaf6f517337e291838589f37efedaa0ccbb15d75a15bdb26f7",
+    "authority_sha256": "b0a608a5cb69da28e58da2bf1ea164f8748603a50cee5bdbd7e5da2ebd982f4d",
+    "hard_wall_limit_s": 43200,
+    "minimum_free_disk_bytes": 42949672960,
+    "runtime_relocation_sha256": "c87d20fc1f3dbd7ac8077ee51c295afcfeda02c159e75beecf78119fc90688e0",
+    "reference_run": "analysis/wp7_shortwave_validation_20261103/runs/WP7-R48-M1-4T"
+  }
+}

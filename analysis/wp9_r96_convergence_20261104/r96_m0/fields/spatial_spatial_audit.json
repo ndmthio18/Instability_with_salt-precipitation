@@ -1,0 +1,102 @@
+{
+  "frames": 4801,
+  "selected": [
+    {
+      "frame": 0,
+      "actual_time_s": 0.0,
+      "nominal_target_s": 0,
+      "source_path": "/WORK/hulm_work/zhixin/paper2_wp9_r96_m0_20261104/runs/WP9-R96-M0-4T-frames/WP9-R96-M0-4T-00000.vtu",
+      "sha256": "0899e20f6b0df3db1bb6a5683b621026b6cb3637b2564361a98ee4923b56bdd5"
+    },
+    {
+      "frame": 1200,
+      "actual_time_s": 136423.0637723426,
+      "nominal_target_s": 136423.0637723484,
+      "source_path": "/WORK/hulm_work/zhixin/paper2_wp9_r96_m0_20261104/runs/WP9-R96-M0-4T-frames/WP9-R96-M0-4T-01200.vtu",
+      "sha256": "350dcc296695540911aa2f509bf595d9c60af8d18969e0c392c978c917066cf2"
+    },
+    {
+      "frame": 2400,
+      "actual_time_s": 272846.1275446828,
+      "nominal_target_s": 272846.1275446968,
+      "source_path": "/WORK/hulm_work/zhixin/paper2_wp9_r96_m0_20261104/runs/WP9-R96-M0-4T-frames/WP9-R96-M0-4T-02400.vtu",
+      "sha256": "e290cae148ea5699d9757d1e646fa7be26f7a927478210ea965455329c7a5fa2"
+    },
+    {
+      "frame": 3600,
+      "actual_time_s": 409269.1913170874,
+      "nominal_target_s": 409269.1913170452,
+      "source_path": "/WORK/hulm_work/zhixin/paper2_wp9_r96_m0_20261104/runs/WP9-R96-M0-4T-frames/WP9-R96-M0-4T-03600.vtu",
+      "sha256": "b8fd74f6c467b95fee8e8b895dcc61d9b1c9f9f876985538dcd1706d67f310fc"
+    },
+    {
+      "frame": 4800,
+      "actual_time_s": 545692.2550893936,
+      "nominal_target_s": 545692.2550893936,
+      "source_path": "/WORK/hulm_work/zhixin/paper2_wp9_r96_m0_20261104/runs/WP9-R96-M0-4T-frames/WP9-R96-M0-4T-04800.vtu",
+      "sha256": "4a804e15d7e0dc530e891d4782fdf9095b87ebae70fed909586dde506514ea5f"
+    }
+  ],
+  "all_field_hashes_verified": true,
+  "script_sha256": "1a192eef6f5543361273e1d307a9d4a588dc04a9274e163c4466f53fa3373582",
+  "metrics_helper_sha256": "db454748834cfdee82c3101d7e597e0e8cd0b6eb85c5e50341e69edad7aff062",
+  "field_manifest_sha256": "5cd9a62d7741003a26ee9529067f2fb46e430053374b4b46f878a5b27f6cc53c",
+  "npz_sha256": "2b8f2df2ad21524e2e5aab8c7e3d5a2391e80c220b5cf8f89c1285e87af8efe2",
+  "initial": {
+    "frame": 0,
+    "time_s": 0.0,
+    "top_sigma": 4.336808689942018e-19,
+    "top_relative_sigma": 1.2046690805394496e-16,
+    "volume_anomaly_rms": 4.336808689942018e-19,
+    "energy_relative_initial": 1.0,
+    "fundamental_volume_energy_fraction": 6.7279092643105265e-34,
+    "second_harmonic_volume_energy_fraction": 2.5919650435631505e-32,
+    "third_harmonic_volume_energy_fraction": 3.175157178364858e-33,
+    "even_higher_harmonic_fraction": 3.624324694284435e-27,
+    "odd_neumann_energy_fraction": 4.779987244485907e-27,
+    "dominant_neumann_mode": 87,
+    "dominant_physical_wavenumber_rad_m": 12754.866173574575,
+    "dominant_wavelength_m": 0.0004926108374384231,
+    "dominant_cells_per_wavelength": 2.206896551724138,
+    "top_three_neumann_modes": "87;86;58",
+    "energy_fraction_below_eight_cells_per_wavelength": 8.400737350978883e-27,
+    "energy_fraction_at_four_or_fewer_cells_per_wavelength": 8.187039401008064e-27,
+    "top_fundamental_amplitude": 1.5908356881128311e-35,
+    "eigenmode_projection": -5.826449163941793e-35,
+    "initial_shape_relative_residual": 0.0,
+    "max_relative_anomaly": 1.2046690805394496e-16,
+    "depth90_mm": 180.4401416151111,
+    "depth99_mm": 200.0,
+    "max_mirror_difference": 0.0,
+    "max_endpoint_difference": 0.0
+  },
+  "final": {
+    "frame": 4800,
+    "time_s": 545692.2550893936,
+    "top_sigma": 6.415684072040976e-06,
+    "top_relative_sigma": 0.00011261722106867364,
+    "volume_anomaly_rms": 3.9684663425574765e-07,
+    "energy_relative_initial": 8.373458526722655e+23,
+    "fundamental_volume_energy_fraction": 2.167769516084309e-10,
+    "second_harmonic_volume_energy_fraction": 2.4045627195791874e-06,
+    "third_harmonic_volume_energy_fraction": 0.00736646302229181,
+    "even_higher_harmonic_fraction": 0.8902884870361716,
+    "odd_neumann_energy_fraction": 0.1097115127470517,
+    "dominant_neumann_mode": 8,
+    "dominant_physical_wavenumber_rad_m": 1172.8612573401908,
+    "dominant_wavelength_m": 0.00535714285714285,
+    "dominant_cells_per_wavelength": 24.0,
+    "top_three_neumann_modes": "8;7;9",
+    "energy_fraction_below_eight_cells_per_wavelength": 2.4961080790806353e-11,
+    "energy_fraction_at_four_or_fewer_cells_per_wavelength": 1.242821652559416e-13,
+    "top_fundamental_amplitude": 1.9327729923532203e-10,
+    "eigenmode_projection": -6.988051281542217e-11,
+    "initial_shape_relative_residual": 1.0,
+    "max_relative_anomaly": 0.0002978726278680806,
+    "depth90_mm": 1.2674102938300125,
+    "depth99_mm": 2.117819896292006,
+    "max_mirror_difference": 7.664493487199997e-06,
+    "max_endpoint_difference": 7.664493487199997e-06
+  },
+  "convention": "Neumann physical k=m*pi/W and wavelength=2W/m; m=2 is canonical; initial-shape residual also includes linear profile evolution"
+}

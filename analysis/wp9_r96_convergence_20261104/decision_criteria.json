@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "id": "WP9-D01",
+  "created_date": "2026-11-04",
+  "authority": "command/16.md",
+  "timing": "registered while the R96 leg was still running; no R96 output of any kind had been read",
+  "evidence_seen_at_registration": [
+    "the R96 step counter and wall clock only",
+    "no R96 field, spectrum, budget, event or diagnostic value"
+  ],
+  "consistency_gates_R48_vs_R96": [
+    {
+      "id": "G1",
+      "quantity": "dominant box mode at 4T",
+      "rule": "identical integer m"
+    },
+    {
+      "id": "G2",
+      "quantity": "canonical m=2 energy",
+      "rule": "relative difference <= 0.20 at T, 2T and 3T and <= 0.50 at 4T"
+    },
+    {
+      "id": "G3",
+      "quantity": "energy-weighted physical wavenumber at 4T",
+      "rule": "relative difference <= 0.20"
+    },
+    {
+      "id": "G4",
+      "quantity": "horizontal-mean top response against the frozen strict background at 4T",
+      "rule": "ratio within a factor of two and both magnitudes above the 2.459e-15 resolvability floor"
+    },
+    {
+      "id": "G5",
+      "quantity": "initial-corrected seven-plane Delta C at the 1 mm plane at 4T",
+      "rule": "same sign and relative difference <= 0.50"
+    }
+  ],
+  "decision_rule": {
+    "all_five_pass": "GO: propose local conservative flux-mechanism validation",
+    "G1_G2_G3_pass_only": "modes consistent, transport not; the limitation is not horizontal resolution, and the next test is a dt-matched or vertically refined leg, not R192",
+    "G1_G2_G3_not_all_pass": "horizontal resolution is still the limiter at 4T; report the limitation and do not propose mechanism validation"
+  },
+  "limitation_attribution": {
+    "horizontal_resolution": "G1-G3 fail and the short-wave energy keeps falling with h",
+    "temporal_integration": "G1-G3 pass while G5 fails, given the WP6 finding of a 68 percent mid-window change at 1 mm under dt halving",
+    "vertical_resolution": "nz=200 is common to all three legs and is never tested here; it can only be named as untested",
+    "domain_width": "the box admits only Neumann modes m=1,2,...; the LSA global critical mode nx=5 cannot appear at any resolution"
+  },
+  "noise_discriminator": {
+    "quantity": "m=10 depth-integrated energy at 4T",
+    "measured_R48_over_R24": 0.001300941751767447,
+    "noise_seeded_if": "R96/R48 < 0.1",
+    "nonlinear_cascade_if": "0.1 <= R96/R48 <= 10",
+    "neither_if": "R96/R48 > 10"
+  },
+  "forbidden_regardless_of_outcome": [
+    "R96-M0",
+    "R192",
+    "multiwavelength",
+    "full-domain",
+    "8T",
+    "assigning t_eff",
+    "assigning a crystallization delay",
+    "creating surrogate training labels"
+  ]
+}

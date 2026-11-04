@@ -1,0 +1,26 @@
+{
+  "run": "/tmp/zhixin_paper2_wp7_shortwave_20261103_r01/runs/WP7-R48-M1-bench10",
+  "view": "/tmp/zhixin_paper2_wp9_r96_20261104/runs/_adapter_selftest",
+  "stride": 1,
+  "frames": 11,
+  "recorded_steps": 11,
+  "kept_steps": 11,
+  "first_kept_step": 0,
+  "last_kept_step": 10,
+  "hard_linked_fields": 11,
+  "link_type": "hard",
+  "copied_bytes": 157426,
+  "sha256_values_unchanged": true,
+  "source_manifest_sha256": "9f99a5495bc2a467615e9a967ecf00a63a08561418f98ab51bede3ca0a84e6d8",
+  "view_manifest_sha256": "8eec50fb03f9fbe952f5d8aaba86c8640d7482735a19b047f16cf73109c8ae6d",
+  "script_sha256": "ac73189babcaeb4a7e8d84daaf680d3b0a06d943506ce0ee72756304b6957fb3",
+  "selftest": {
+    "purpose": "end-to-end check of wp9_pair_frames.py plus both reviewed field passes",
+    "fixture": "WP7-R48-M1-bench10, stride 1, so the view is an exact restatement of the source run",
+    "wp8_fields_all_field_hashes_verified": true,
+    "wp7_spatial_frames": 11,
+    "wp7_spatial_dominant_mode": 2,
+    "wp7_spatial_dominant_cells_per_wavelength": 48.0,
+    "note": "the view directory and its two outputs were removed after the check; only this receipt is kept"
+  }
+}
