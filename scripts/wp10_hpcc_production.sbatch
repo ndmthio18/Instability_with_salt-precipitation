@@ -13,5 +13,5 @@ export PATH=/usr/local/bin:/usr/bin:/bin
 case "$(hostname)" in ibcln*|test0*|gln0*) echo "refusing login/test node"; exit 2;; esac
 root="$1"
 export WP10_THREADS="${SLURM_CPUS_PER_TASK}"
-python3 "$root/wp10_hpcc_worker.py" "$root"
+/WORK/hulm_work/ys/miniconda3/bin/python3 "$root/wp10_hpcc_worker.py" "$root"
 
