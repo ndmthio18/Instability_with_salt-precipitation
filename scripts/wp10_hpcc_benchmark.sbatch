@@ -14,7 +14,7 @@ root="$1"
 scratch="${TMPDIR:-/tmp}/wp10_benchmark_${SLURM_JOB_ID}"
 mkdir -p "$scratch"
 trap 'rm -rf "$scratch"' EXIT
-cp -a "$root/bundle" "$scratch/bundle"
+cp -aL "$root/bundle" "$scratch/bundle"
 cp "$root/params_benchmark.input" "$scratch/params.input"
 cp "$root/eigenprofile.dat" "$scratch/eigenprofile.dat"
 
