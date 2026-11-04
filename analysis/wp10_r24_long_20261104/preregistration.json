@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "id": "WP10-R24-M1-long50T",
+  "created": "2026-11-04",
+  "authority": "command/17.md",
+  "authority_sha256": "1ca891410e8239b5706c6b7525a523686e05b43c1bcf7a8be0f87cd727e6b2e6",
+  "repository_baseline": "1cc621a3015c95b6146d70e590146a85391c5ae2",
+  "authorization": {
+    "production_runs": 1,
+    "case_id": 36877,
+    "role": "R24-M1",
+    "host": "hpcc",
+    "partition": "cnmix",
+    "forbidden": [
+      "restart", "automatic retry", "R48", "R96", "R192",
+      "multiwavelength", "additional long run", "new precipitation physics"
+    ]
+  },
+  "provenance": {
+    "executable_sha256": "112076759fdff0942000307f729c2bd3c7e96963229b43c1b67c1f12bbf9df81",
+    "eigenprofile_sha256": "d721e605d126e555f92b43200aa73b999ed4e2b61397edd1e98c0d9fddb36575",
+    "production_input_sha256": "c1441be8b69a11a23e9c8ce36839c127866d1d5567207fb0c63b6645c33d1bd1",
+    "benchmark_input_sha256": "0862c9f013a9a04aa865e03619210b8ee3183d5b1707bd7fcba73ee61843156b",
+    "reference_input": "analysis/wp6_4T_exploratory_20261103/runs/WP6-M1-explore4T/params.input",
+    "only_production_input_changes": {
+      "Problem.Name": ["WP6-M1-explore4T", "WP10-R24-M1-long50T"],
+      "TimeLoop.TEnd": ["545692.2550893936", "6821153.18861742"],
+      "TimeLoop.OutputInterval": ["1", "50"]
+    }
+  },
+  "numerics": {
+    "cells": [24, 200],
+    "grading1": -0.98,
+    "width_m": 0.021428571428571432,
+    "dt_s": 113.68588647695695,
+    "maximum_time_s": 6821153.18861742,
+    "maximum_nominal_steps": 60000,
+    "output_interval_steps": 50,
+    "terminal_frame_guarantee": "main.cc writes when timeLoop.finished() or transport.shouldStop()",
+    "stop": "first accepted local salt mole fraction >= 0.1"
+  },
+  "execution": {
+    "slurm_nodes": 1,
+    "slurm_tasks": 1,
+    "benchmark_threads": [1, 4],
+    "benchmark_steps": 100,
+    "same_node_benchmark": true,
+    "production_threads": "pending measured benchmark",
+    "production_wall_limit": "pending measured benchmark, then frozen before submission",
+    "scratch_policy": "compute-node local scratch; stage one field archive and one diagnostics archive to /WORK",
+    "reason": "the user file-count soft quota is already exceeded; avoid adding ~1200 VTU directory entries to /WORK"
+  },
+  "diagnostics": {
+    "accepted_step": ["surface_events.csv", "weighted_online.csv", "transport_budget.csv"],
+    "conservative": "signed SCVF plane fluxes and inventories at the original seven planes",
+    "field_scope": "VTK cell-centre velocity is qualitative only",
+    "known_limitation": "the frozen executable does not separate local positive and negative SCVF contributions"
+  },
+  "scientific_scope": "exploratory R24 evidence only; no convergence, crystallization-delay or t_eff claim",
+  "failure_policy": "preserve failure products and stop; no restart or resubmission without new user authorization",
+  "state": "BENCHMARK_PENDING"
+}
