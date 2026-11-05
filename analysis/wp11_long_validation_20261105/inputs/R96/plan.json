@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "grid": "R96",
+  "run_name": "WP11-R96-M1-long25T",
+  "input_sha256": "474ca896e3aaed4d0c98c89610fb38c21e29f68b3398e3b2e044128167e4dacf",
+  "profile_sha256": "d721e605d126e555f92b43200aa73b999ed4e2b61397edd1e98c0d9fddb36575",
+  "elf_sha256": "112076759fdff0942000307f729c2bd3c7e96963229b43c1b67c1f12bbf9df81",
+  "threads": 4,
+  "slurm_wall_limit_s": 129600,
+  "solver_timeout_s": 115200,
+  "minimum_scratch_free_bytes": 32212254720,
+  "minimum_available_memory_bytes": 17179869184,
+  "benchmark_job_id": "16305460",
+  "benchmark_4thread_s_per_step": 0.6865348553657532,
+  "projected_early_30000_step_wall_s": 20596.045660972595,
+  "budget_basis": "own-grid early benchmark plus prior dt/2 R96 4T nonlinear cost; 32 h solver guard and 4 h post/archive margin"
+}

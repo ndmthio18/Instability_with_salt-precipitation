@@ -32,15 +32,27 @@
       "cells0": 48,
       "input_sha256": "5b4bd10811f1a50052aff1ae1bd498d69108cb7a88c9f145260437569198d4f9",
       "benchmark_input_sha256": "d9eb325a801264bdaf3dcc048bc343799a4408703c948499778e0536473fc85f",
-      "threads": "pending own-grid benchmark",
-      "wall_limit": "pending own-grid benchmark and prior R48 4T cost"
+      "threads": 4,
+      "wall_limit": "12:00:00",
+      "solver_timeout_s": 36000,
+      "benchmark_job_id": "16305459",
+      "benchmark_node": "ibc11b11n34",
+      "benchmark_1thread_s_per_step": 0.4147574782371521,
+      "benchmark_4thread_s_per_step": 0.2862191009521484,
+      "benchmark_bitwise_identical": true
     },
     "R96": {
       "cells0": 96,
       "input_sha256": "474ca896e3aaed4d0c98c89610fb38c21e29f68b3398e3b2e044128167e4dacf",
       "benchmark_input_sha256": "9a6e2da8e2d73a6f7328b50691acb1c868ad7f91c7231ff417f84911a7b418dc",
-      "threads": "pending own-grid benchmark",
-      "wall_limit": "pending own-grid benchmark, prior dt/2 4T cost, and nonlinear escalation allowance",
+      "threads": 4,
+      "wall_limit": "36:00:00",
+      "solver_timeout_s": 115200,
+      "benchmark_job_id": "16305460",
+      "benchmark_node": "ibc11b11n34",
+      "benchmark_1thread_s_per_step": 0.9826658368110657,
+      "benchmark_4thread_s_per_step": 0.6865348553657532,
+      "benchmark_bitwise_identical": true,
       "timestep_note": "full dt is intentional; prior WP9 dt/2 is a separate temporal-sensitivity reference"
     }
   },
@@ -55,5 +67,5 @@
   },
   "analysis_order": ["R48 Stage A immediately at completion", "R96 Stage B after independent completion"],
   "failure_policy": "preserve accepted prefix and evidence; no restart or retry without new authorization",
-  "state": "PREFLIGHT_CONNECTION_PENDING"
+  "state": "PRODUCTION_FROZEN_PENDING_SUBMISSION"
 }

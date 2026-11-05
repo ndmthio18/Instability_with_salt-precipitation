@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "grid": "R48",
+  "run_name": "WP11-R48-M1-long25T",
+  "input_sha256": "5b4bd10811f1a50052aff1ae1bd498d69108cb7a88c9f145260437569198d4f9",
+  "profile_sha256": "d721e605d126e555f92b43200aa73b999ed4e2b61397edd1e98c0d9fddb36575",
+  "elf_sha256": "112076759fdff0942000307f729c2bd3c7e96963229b43c1b67c1f12bbf9df81",
+  "threads": 4,
+  "slurm_wall_limit_s": 43200,
+  "solver_timeout_s": 36000,
+  "minimum_scratch_free_bytes": 32212254720,
+  "minimum_available_memory_bytes": 17179869184,
+  "benchmark_job_id": "16305459",
+  "benchmark_4thread_s_per_step": 0.2862191009521484,
+  "projected_early_30000_step_wall_s": 8586.573028564453,
+  "budget_basis": "own-grid 100-step 4-thread benchmark plus 4.8 h margin for nonlinear escalation, postprocessing and archive stage-out"
+}
