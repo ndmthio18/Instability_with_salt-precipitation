@@ -44,7 +44,7 @@ __pycache__/
 
 # WP11 immutable raw archives and extracted trajectories stay local/on hpcc.  Track
 # reduced CSV/JSON, figures, reports and provenance, not the multi-gigabyte fields.
-/analysis/wp11_long_validation_20261105/*.tar.gz
+/analysis/wp11_long_validation_20261105/**/*.tar.gz
 /analysis/wp11_long_validation_20261105/R48_run/
 /analysis/wp11_long_validation_20261105/R96_run/
 /analysis/wp11_long_validation_20261105/pipeline_selftest/
