@@ -85,5 +85,12 @@
       "cause": "worker looked for the shared eigenprofile in the grid-specific directory"
     }
   },
-  "state": "BLOCKED_AFTER_PRE_SOLVER_FAILURE_AWAITING_RESUBMISSION_AUTHORIZATION"
+  "resubmission_authorization": {
+    "authorized_by": "user",
+    "authorized_local_time": "2026-11-05T14:46:29+01:00",
+    "scope": "submit R48-M1 and R96-M1 once from the original initial state after correcting the pre-solver shared-profile path",
+    "restart": false,
+    "additional_simulation": false
+  },
+  "state": "RESUBMISSION_AUTHORIZED_PENDING_PREFLIGHT"
 }
