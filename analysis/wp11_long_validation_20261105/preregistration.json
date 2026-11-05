@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "id": "WP11-R48-R96-long25T",
+  "created": "2026-11-05",
+  "authority": "command/18.md",
+  "authority_sha256": "d78352441d37f17b6b6af22a5063c375b0e4c7def3ec25df3cdb93a40355f75e",
+  "reference_commit": "427fc703754ed53e06b300c14751714348463bfa",
+  "authorization": {
+    "production_runs": 2,
+    "grids": ["R48-M1", "R96-M1"],
+    "case_id": 36877,
+    "host": "hpcc",
+    "partition": "cnmix",
+    "concurrent_independent_jobs": true,
+    "forbidden": ["R48-M0", "R96-M0", "R192", "larger domain", "additional production run", "automatic retry", "restart", "new precipitation physics"]
+  },
+  "common": {
+    "executable_sha256": "112076759fdff0942000307f729c2bd3c7e96963229b43c1b67c1f12bbf9df81",
+    "eigenprofile_sha256": "d721e605d126e555f92b43200aa73b999ed4e2b61397edd1e98c0d9fddb36575",
+    "cells1": 200,
+    "grading1": -0.98,
+    "width_m": 0.021428571428571432,
+    "dt_s": 113.68588647695695,
+    "maximum_time_s": 3410576.59430871,
+    "maximum_nominal_steps": 30000,
+    "output_interval_steps": 50,
+    "stop": "first accepted local salt mole fraction >= 0.1",
+    "initial_state": "original A28 eigenprofile; no restart"
+  },
+  "legs": {
+    "R48": {
+      "cells0": 48,
+      "input_sha256": "5b4bd10811f1a50052aff1ae1bd498d69108cb7a88c9f145260437569198d4f9",
+      "benchmark_input_sha256": "d9eb325a801264bdaf3dcc048bc343799a4408703c948499778e0536473fc85f",
+      "threads": "pending own-grid benchmark",
+      "wall_limit": "pending own-grid benchmark and prior R48 4T cost"
+    },
+    "R96": {
+      "cells0": 96,
+      "input_sha256": "474ca896e3aaed4d0c98c89610fb38c21e29f68b3398e3b2e044128167e4dacf",
+      "benchmark_input_sha256": "9a6e2da8e2d73a6f7328b50691acb1c868ad7f91c7231ff417f84911a7b418dc",
+      "threads": "pending own-grid benchmark",
+      "wall_limit": "pending own-grid benchmark, prior dt/2 4T cost, and nonlinear escalation allowance",
+      "timestep_note": "full dt is intentional; prior WP9 dt/2 is a separate temporal-sensitivity reference"
+    }
+  },
+  "execution": {
+    "nodes_per_job": 1,
+    "tasks_per_job": 1,
+    "benchmark_threads": [1,4],
+    "benchmark_steps": 100,
+    "scratch_policy": "node-local scratch; stage one field archive and one products archive per leg",
+    "minimum_scratch_free_bytes": 32212254720,
+    "minimum_available_memory_bytes": 17179869184
+  },
+  "analysis_order": ["R48 Stage A immediately at completion", "R96 Stage B after independent completion"],
+  "failure_policy": "preserve accepted prefix and evidence; no restart or retry without new authorization",
+  "state": "PREFLIGHT_CONNECTION_PENDING"
+}
