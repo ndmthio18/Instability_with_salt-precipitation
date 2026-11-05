@@ -42,6 +42,13 @@ __pycache__/
 /analysis/wp10_r24_long_20261104/run/
 /analysis/wp10_r24_long_20261104/corrected_post_run/
 
+# WP11 immutable raw archives and extracted trajectories stay local/on hpcc.  Track
+# reduced CSV/JSON, figures, reports and provenance, not the multi-gigabyte fields.
+/analysis/wp11_long_validation_20261105/*.tar.gz
+/analysis/wp11_long_validation_20261105/R48_run/
+/analysis/wp11_long_validation_20261105/R96_run/
+/analysis/wp11_long_validation_20261105/pipeline_selftest/
+
 # Case 42929 is still running. Track its plan and frozen snapshots, not live outputs.
 /analysis/highk_unperturbed_42929_20261102/*
 !/analysis/highk_unperturbed_42929_20261102/plan.json
