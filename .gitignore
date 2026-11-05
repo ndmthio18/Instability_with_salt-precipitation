@@ -48,6 +48,13 @@ __pycache__/
 /analysis/wp11_long_validation_20261105/R48_run/
 /analysis/wp11_long_validation_20261105/R96_run/
 /analysis/wp11_long_validation_20261105/pipeline_selftest/
+# The interim archive pointer and compact reductions are tracked; complete scalar
+# histories remain reproducible from the verified archive without bloating Git.
+/analysis/wp11_long_validation_20261105/interim_r96_20T/snapshot/*/surface_events.csv
+/analysis/wp11_long_validation_20261105/interim_r96_20T/snapshot/*/weighted_online.csv
+/analysis/wp11_long_validation_20261105/interim_r96_20T/snapshot/*/transport_budget.csv
+/analysis/wp11_long_validation_20261105/interim_r96_20T/R96/surface_series.csv
+/analysis/wp11_long_validation_20261105/interim_r96_20T/R96/flux_series.csv
 
 # Case 42929 is still running. Track its plan and frozen snapshots, not live outputs.
 /analysis/highk_unperturbed_42929_20261102/*

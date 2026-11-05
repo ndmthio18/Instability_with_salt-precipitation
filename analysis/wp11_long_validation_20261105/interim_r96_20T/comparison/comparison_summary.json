@@ -1,0 +1,48 @@
+{
+  "common_end_T": 20.035,
+  "surface": [
+    {
+      "grid": "R24",
+      "early_peak_T": 3.9916666666664584,
+      "early_peak_mean": 0.05641544818807021,
+      "post_peak_minimum_T": 5.852500000000558,
+      "post_peak_minimum_mean": 0.02389553658005095,
+      "decline_fraction": 0.5764362892165416,
+      "final_T": 20.0350000000033,
+      "final_mean": 0.04270607497494845,
+      "final_surface_max": 0.06856039414739717,
+      "maximum_surface_max": 0.07026068360217849,
+      "maximum_domain_max": 0.07026068360217849,
+      "solubility_threshold_reached": false
+    },
+    {
+      "grid": "R48",
+      "early_peak_T": 4.221666666666553,
+      "early_peak_mean": 0.059278516396573264,
+      "post_peak_minimum_T": 6.434166666667464,
+      "post_peak_minimum_mean": 0.025630007990774143,
+      "decline_fraction": 0.567634118585064,
+      "final_T": 20.0350000000033,
+      "final_mean": 0.04150394511401274,
+      "final_surface_max": 0.06630076184919437,
+      "maximum_surface_max": 0.0736219959571741,
+      "maximum_domain_max": 0.0736219959571741,
+      "solubility_threshold_reached": false
+    },
+    {
+      "grid": "R96",
+      "early_peak_T": 4.307499999999922,
+      "early_peak_mean": 0.06035756882103727,
+      "post_peak_minimum_T": 7.14500000000109,
+      "post_peak_minimum_mean": 0.024579671234991364,
+      "decline_fraction": 0.5927657174550698,
+      "final_T": 20.0350000000033,
+      "final_mean": 0.0402369134388289,
+      "final_surface_max": 0.06453574842809784,
+      "maximum_surface_max": 0.07713809521854521,
+      "maximum_domain_max": 0.07713809521854521,
+      "solubility_threshold_reached": false
+    }
+  ],
+  "interpretation_boundary": "interim three-grid evidence; no asymptotic convergence, validated t_eff, or crystallization-delay claim"
+}

@@ -44,6 +44,11 @@ def positive_summary(records, field, threshold):
             "positive_step_count": 0,
             "longest_continuous_positive_interval": None,
             "peak_positive_flux_m_s": None,
+            "peak_positive_step": None,
+            "peak_positive_time_s": None,
+            "peak_positive_time_over_T": None,
+            "positive_step_support_duration_s": 0.0,
+            "positive_step_support_duration_over_T": 0.0,
             "positive_step_integral_m": 0.0,
             "integration_semantics": "sum of F_i*dt_i over accepted steps with F_i above threshold",
         }
@@ -91,6 +96,10 @@ def positive_summary(records, field, threshold):
         },
         "peak_positive_flux_m_s": max(value for _, value in hits),
         "peak_positive_step": int(max(hits, key=lambda item: item[1])[0]["step"]),
+        "peak_positive_time_s": float(max(hits, key=lambda item: item[1])[0]["time_s"]),
+        "peak_positive_time_over_T": float(max(hits, key=lambda item: item[1])[0]["time_s"]) / T_S,
+        "positive_step_support_duration_s": sum(float(r["dt_s"]) for r, _ in hits),
+        "positive_step_support_duration_over_T": sum(float(r["dt_s"]) for r, _ in hits) / T_S,
         "positive_step_integral_m": sum(value * float(r["dt_s"]) for r, value in hits),
         "integration_semantics": "sum of F_i*dt_i over accepted steps with F_i above threshold",
     }
@@ -103,13 +112,28 @@ def write_csv(path, fieldnames, records):
         writer.writerows(records)
 
 
-def main(run, out, label):
+def main(run, out, label, snapshot_manifest=None):
     run, out = Path(run), Path(out)
     out.mkdir(parents=True, exist_ok=True)
     surface = rows(run / "surface_events.csv")
     online = rows(run / "weighted_online.csv")
     budget = rows(run / "transport_budget.csv")
-    stop = json.loads((run / "stop_record.json").read_text())
+    if snapshot_manifest is None:
+        stop = json.loads((run / "stop_record.json").read_text())
+        boundary_file = run / "stop_record.json"
+    else:
+        boundary_file = Path(snapshot_manifest)
+        snapshot = json.loads(boundary_file.read_text())
+        stop = {
+            "reason": "interim_snapshot_boundary",
+            "last_accepted_step": int(snapshot["snapshot_end_step"]),
+            "last_accepted_time_s": float(snapshot["snapshot_end_time_s"]),
+            "global_threshold_low_s": None,
+            "global_threshold_high_s": None,
+            "terminal_state": False,
+            "production_job_id": snapshot.get("production_job_id"),
+            "scope": snapshot.get("scope", "read-only interim snapshot; not a terminal simulation state"),
+        }
     online_by_step = {int(r["step"]): r for r in online}
 
     surface_series = []
@@ -182,8 +206,9 @@ def main(run, out, label):
         "planes": plane_metrics,
         "hashes": {name: sha256(run / name) for name in (
             "params.input", "eigenprofile.dat", "surface_events.csv", "weighted_online.csv",
-            "transport_budget.csv", "stop_record.json")},
+            "transport_budget.csv")},
     }
+    result["hashes"][boundary_file.name] = sha256(boundary_file)
     write_csv(out / "surface_series.csv", list(surface_series[0]), surface_series)
     write_csv(out / "flux_series.csv", list(flux_series[0]), flux_series)
     (out / "scalar_metrics.json").write_text(json.dumps(result, indent=2))
@@ -195,5 +220,6 @@ if __name__ == "__main__":
     parser.add_argument("run")
     parser.add_argument("out")
     parser.add_argument("label")
+    parser.add_argument("--snapshot-manifest")
     args = parser.parse_args()
-    main(args.run, args.out, args.label)
+    main(args.run, args.out, args.label, args.snapshot_manifest)

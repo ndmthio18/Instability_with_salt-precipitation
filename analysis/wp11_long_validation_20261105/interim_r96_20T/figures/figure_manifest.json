@@ -1,0 +1,16 @@
+{
+  "common_end_T": 20.035,
+  "figures": [
+    "Figure_A_surface_concentration",
+    "Figure_B_advective_flux",
+    "Figure_C_cumulative_transport",
+    "Figure_D_fingering_fields",
+    "Figure_E_modal_development"
+  ],
+  "styles": {
+    "R24": "blue solid",
+    "R48": "vermillion dashed",
+    "R96": "green dash-dot"
+  },
+  "scope": "interim common-window figures; no smoothing; R96 spatial/modal series is sparse"
+}

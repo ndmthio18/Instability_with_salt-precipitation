@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "label": "WP11-R96-interim-20T",
+  "scope": "immutable read-only interim snapshot; not a terminal simulation state",
+  "production_job_id": "16307014",
+  "snapshot_end_step": 24042,
+  "snapshot_end_time_s": 2733236.0826794505,
+  "snapshot_end_time_over_T": 20.035,
+  "archive_bytes": 43608010,
+  "archive_sha256": "f95a06bd186a56f5a92b5776bc65452d54de5ba49f85d3397efe4349a88ad3ce",
+  "manifest_sha256": "e48117a5f64d16da18d6d995f32f8c638fb12233059e3db0524e632bbcc61561",
+  "durable_hpcc_archive": "/WORK/hulm_work/zhixin/paper2_wp11_long_20261105/interim_r96_20T/snapshot.tar.gz",
+  "durable_hpcc_record": "/WORK/hulm_work/zhixin/paper2_wp11_long_20261105/interim_r96_20T/snapshot_record.json",
+  "local_archive": "analysis/wp11_long_validation_20261105/interim_r96_20T/execution/snapshot.tar.gz",
+  "raw_data_git_policy": "The 43.6 MB verified archive remains on durable hpcc storage and locally under the analysis ignore rule; the immutable manifest, record, reductions, figures and scripts are committed.",
+  "reconstruction": "Verify SHA-256, extract the archive, then run wp11_scalar_metrics.py with --snapshot-manifest and wp11_interim_field_metrics.py."
+}

@@ -1,0 +1,174 @@
+{
+  "schema_version": 1,
+  "common_end_T": 20.035,
+  "common_end_step": 24042,
+  "records": {
+    "R24": {
+      "surface_rows": 24043,
+      "first_step": 0,
+      "last_step": 24042,
+      "consecutive_steps": true,
+      "strictly_increasing_time_after_initial": true,
+      "maximum_abs_salt_residual_m": 5.94890720614482e-16,
+      "maximum_abs_water_residual_m": 2.948279486938397e-14
+    },
+    "R48": {
+      "surface_rows": 24043,
+      "first_step": 0,
+      "last_step": 24042,
+      "consecutive_steps": true,
+      "strictly_increasing_time_after_initial": true,
+      "maximum_abs_salt_residual_m": 2.83877163041648e-16,
+      "maximum_abs_water_residual_m": 1.7640729770167555e-14
+    },
+    "R96": {
+      "surface_rows": 24043,
+      "first_step": 0,
+      "last_step": 24042,
+      "consecutive_steps": true,
+      "strictly_increasing_time_after_initial": true,
+      "maximum_abs_salt_residual_m": 3.6821792766565317e-16,
+      "maximum_abs_water_residual_m": 2.4920219010297526e-14
+    }
+  },
+  "provenance": {
+    "params.input": "474ca896e3aaed4d0c98c89610fb38c21e29f68b3398e3b2e044128167e4dacf",
+    "eigenprofile.dat": "d721e605d126e555f92b43200aa73b999ed4e2b61397edd1e98c0d9fddb36575",
+    "surface_events.csv": "eb0ccb73417edb60c89aa2fa2ce54a04e5ac9b1c1ff56702b097615c81d66f5d",
+    "weighted_online.csv": "0acbdb354e93d84f9142431f29210a88b0e80048a128d4af316a2a3c49d6af30",
+    "transport_budget.csv": "98e5bc7603076a1e2851be6385eee2acbf42ec8ab66eb4f6b2faa9055d5110e8",
+    "manifest.json": "e48117a5f64d16da18d6d995f32f8c638fb12233059e3db0524e632bbcc61561"
+  },
+  "snapshot_is_terminal": false,
+  "production_job_preserved": true,
+  "threshold_statement": "t_sat,R96 > 20.035 T within this immutable snapshot only",
+  "snapshot_validation": {
+    "manifest_scope": "read-only interim snapshot; not a terminal simulation state",
+    "production_state_at_capture": "RUNNING",
+    "snapshot_end_step": 24042,
+    "snapshot_end_time_over_T": 20.035,
+    "all_present_file_hashes_match": true,
+    "checked_file_count": 24,
+    "file_checks": {
+      "WP11-R96-M1-long25T-00048.vtu": {
+        "bytes_match": true,
+        "sha256_match": true
+      },
+      "WP11-R96-M1-long25T-00072.vtu": {
+        "bytes_match": true,
+        "sha256_match": true
+      },
+      "WP11-R96-M1-long25T-00096.vtu": {
+        "bytes_match": true,
+        "sha256_match": true
+      },
+      "WP11-R96-M1-long25T-00108.vtu": {
+        "bytes_match": true,
+        "sha256_match": true
+      },
+      "WP11-R96-M1-long25T-00120.vtu": {
+        "bytes_match": true,
+        "sha256_match": true
+      },
+      "WP11-R96-M1-long25T-00132.vtu": {
+        "bytes_match": true,
+        "sha256_match": true
+      },
+      "WP11-R96-M1-long25T-00144.vtu": {
+        "bytes_match": true,
+        "sha256_match": true
+      },
+      "WP11-R96-M1-long25T-00156.vtu": {
+        "bytes_match": true,
+        "sha256_match": true
+      },
+      "WP11-R96-M1-long25T-00168.vtu": {
+        "bytes_match": true,
+        "sha256_match": true
+      },
+      "WP11-R96-M1-long25T-00192.vtu": {
+        "bytes_match": true,
+        "sha256_match": true
+      },
+      "WP11-R96-M1-long25T-00240.vtu": {
+        "bytes_match": true,
+        "sha256_match": true
+      },
+      "WP11-R96-M1-long25T-00288.vtu": {
+        "bytes_match": true,
+        "sha256_match": true
+      },
+      "WP11-R96-M1-long25T-00360.vtu": {
+        "bytes_match": true,
+        "sha256_match": true
+      },
+      "WP11-R96-M1-long25T-00432.vtu": {
+        "bytes_match": true,
+        "sha256_match": true
+      },
+      "WP11-R96-M1-long25T-00480.vtu": {
+        "bytes_match": true,
+        "sha256_match": true
+      },
+      "WP11-R96-interim-20T.pvd": {
+        "bytes_match": true,
+        "sha256_match": true
+      },
+      "eigenprofile.dat": {
+        "bytes_match": true,
+        "sha256_match": true
+      },
+      "params.input": {
+        "bytes_match": true,
+        "sha256_match": true
+      },
+      "solver_tail.log": {
+        "bytes_match": true,
+        "sha256_match": true
+      },
+      "source_status.json": {
+        "bytes_match": true,
+        "sha256_match": true
+      },
+      "surface_events.csv": {
+        "bytes_match": true,
+        "sha256_match": true
+      },
+      "transport_budget.csv": {
+        "bytes_match": true,
+        "sha256_match": true
+      },
+      "transport_metadata.json": {
+        "bytes_match": true,
+        "sha256_match": true
+      },
+      "weighted_online.csv": {
+        "bytes_match": true,
+        "sha256_match": true
+      }
+    },
+    "surface_steps_consecutive": true,
+    "weighted_steps_consecutive": true,
+    "surface_weighted_steps_identical": true,
+    "surface_weighted_timestamps_identical": true,
+    "budget_region_count": 8,
+    "budget_rows_per_region": {
+      "upper_0.900000": 24043,
+      "upper_0.750000": 24043,
+      "upper_0.500000": 24043,
+      "upper_0.995000": 24043,
+      "upper_0.990000": 24043,
+      "upper_0.975000": 24043,
+      "upper_0.950000": 24043,
+      "free_domain": 24043
+    },
+    "budget_expected_rows_per_region": 24043,
+    "budget_unique_step_region_pairs": true,
+    "budget_maximum_step": 24042,
+    "budget_no_post_snapshot_records": true,
+    "budget_one_timestamp_per_step": true,
+    "selected_field_count": 15,
+    "selected_fields_valid_xml_and_connectivity": true,
+    "note": "XML/connectivity assertion is independently exercised by wp11_interim_field_metrics.py for every selected field"
+  }
+}
