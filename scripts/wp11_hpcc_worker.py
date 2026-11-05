@@ -34,7 +34,8 @@ def archive(run,path,fields):
 def main(root,grid):
     root=Path(root);durable=root/grid;plan=json.loads((durable/"plan.json").read_text())
     threads=int(os.environ["WP11_THREADS"]);job=os.environ.get("SLURM_JOB_ID")
-    assert job and threads==plan["threads"] and not (durable/"production_started.json").exists()
+    started_path=durable/"production_started.json"
+    assert job and threads==plan["threads"] and started_path.exists() and started_path.stat().st_size==0
     scratch_root=Path(os.environ.get("TMPDIR","/tmp"));disk=shutil.disk_usage(scratch_root)
     mem=int(next(x.split()[1] for x in Path("/proc/meminfo").read_text().splitlines() if x.startswith("MemAvailable:")))*1024
     assert disk.free>=plan["minimum_scratch_free_bytes"] and mem>=plan["minimum_available_memory_bytes"]
@@ -48,7 +49,7 @@ def main(root,grid):
              "scratch_free_bytes":disk.free,"available_memory_bytes":mem,"elf_sha256":ELF,
              "input_sha256":plan["input_sha256"],"profile_sha256":PROFILE,
              "solver_timeout_s":plan["solver_timeout_s"]}
-    save(durable/"production_started.json",started)
+    save(started_path,started)
     env=dict(os.environ,DUMUX_NUM_THREADS=str(threads),OPENBLAS_NUM_THREADS="1",OMP_NUM_THREADS="1",MKL_NUM_THREADS="1")
     def limit():resource.setrlimit(resource.RLIMIT_AS,(12*1024**3,12*1024**3))
     began=time.monotonic();timed_out=False
