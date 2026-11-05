@@ -13,7 +13,12 @@ def sha(path):
         for block in iter(lambda:f.read(1024*1024),b""):h.update(block)
     return h.hexdigest()
 def save(path,value):
-    path=Path(path);tmp=Path(str(path)+".tmp");tmp.write_text(json.dumps(value,indent=2));tmp.replace(path)
+    # WP11 starts while the account is above its soft file-count quota and the grace
+    # period may expire during R96. All durable targets are pre-created before submit;
+    # overwrite the same inode instead of creating a temporary inode for every update.
+    path=Path(path)
+    with path.open("w") as f:
+        json.dump(value,f,indent=2);f.flush();os.fsync(f.fileno())
 def last_csv(path):
     if not path.exists():return 0,None
     with path.open(newline="") as f:
