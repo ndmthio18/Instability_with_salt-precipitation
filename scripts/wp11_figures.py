@@ -68,6 +68,7 @@ def load_grid(label, path, fields_required=True):
 
 
 def figure_surface(grids, out, registry):
+    common_end = min(grid["scalar"]["stop"]["time_over_T"] for grid in grids)
     fig, axes = plt.subplots(2, 2, figsize=(10, 6), sharex=True)
     quantities = (("surface_mean", "Surface mean"), ("surface_max", "Surface maximum"),
                   ("domain_max", "Domain maximum"), ("surface_sigma", "Surface standard deviation"))
@@ -78,6 +79,7 @@ def figure_surface(grids, out, registry):
                       ls=STYLES[grid["label"]], lw=1.25, label=grid["label"])
         axis.axhline(0.1, color="0.35", ls=":", lw=0.8)
         axis.set(title=title, ylabel="salt mole fraction")
+        axis.set_xlim(0, common_end)
         axis.grid(alpha=0.18)
     for axis in axes[-1]:
         axis.set_xlabel("t / T")
@@ -87,6 +89,7 @@ def figure_surface(grids, out, registry):
 
 
 def figure_flux(grids, out, registry):
+    common_end = min(grid["scalar"]["stop"]["time_over_T"] for grid in grids)
     fig, axes = plt.subplots(len(DEPTHS), 2, figsize=(11, 12), sharex=True)
     for row_index, depth in enumerate(DEPTHS):
         for col_index, (key, title) in enumerate((("advective_down_m_s", "Advective"), ("total_down_m_s", "Total"))):
@@ -100,6 +103,7 @@ def figure_flux(grids, out, registry):
             axis.set_yscale("symlog", linthresh=1e-15)
             axis.set_ylabel(f"{depth:g} mm\nflux (m s$^{{-1}}$)")
             axis.set_title(f"{title} signed downward flux")
+            axis.set_xlim(0, common_end)
             axis.grid(alpha=0.16)
     for axis in axes[-1]:
         axis.set_xlabel("t / T")
@@ -161,6 +165,7 @@ def figure_fields(grids, out, registry, target):
 
 
 def figure_modes(grids, out, registry):
+    common_end = min(grid["scalar"]["stop"]["time_over_T"] for grid in grids)
     fig, axes = plt.subplots(len(MODES), 1, figsize=(9, 11), sharex=True)
     for axis, mode in zip(axes, MODES):
         for grid in grids:
@@ -168,6 +173,7 @@ def figure_modes(grids, out, registry):
             axis.plot(numeric(rr, "time_over_T"), numeric(rr, "energy_fraction"),
                       color=COLORS[grid["label"]], ls=STYLES[grid["label"]], lw=1.1, label=grid["label"])
         axis.set_yscale("log")
+        axis.set_xlim(0, common_end)
         axis.set_ylabel(f"m={mode}\nenergy fraction")
         axis.grid(alpha=0.16)
     axes[-1].set_xlabel("t / T")
@@ -177,6 +183,7 @@ def figure_modes(grids, out, registry):
 
 
 def figure_inventory(grids, out, registry):
+    common_end = min(grid["scalar"]["stop"]["time_over_T"] for grid in grids)
     fig, axes = plt.subplots(len(DEPTHS), 2, figsize=(11, 12), sharex=True)
     for row_index, depth in enumerate(DEPTHS):
         for grid in grids:
@@ -192,6 +199,8 @@ def figure_inventory(grids, out, registry):
         axes[row_index, 1].set_ylabel(f"{depth:g} mm\ninventory change (m)")
         axes[row_index, 0].grid(alpha=0.16)
         axes[row_index, 1].grid(alpha=0.16)
+        axes[row_index, 0].set_xlim(0, common_end)
+        axes[row_index, 1].set_xlim(0, common_end)
     axes[0, 0].set_title("Cumulative signed conservative transport")
     axes[0, 1].set_title("Upper-region salt inventory change")
     for axis in axes[-1]:
