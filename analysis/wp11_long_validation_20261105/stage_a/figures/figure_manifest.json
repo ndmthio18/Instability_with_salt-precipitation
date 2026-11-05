@@ -1,0 +1,139 @@
+{
+  "schema_version": 1,
+  "status": "provisional publication figures; target-journal compliance not claimed",
+  "rendering": "accepted/saved samples connected without smoothing; color plus line style encode grid",
+  "figures": [
+    {
+      "figure": "Figure_01_surface_concentration",
+      "files": [
+        {
+          "path": "Figure_01_surface_concentration.png",
+          "sha256": "d9259bef2ccaf6782bdad37ab4f8b487e2ce4af9cb2156e6e82ac814c632d991",
+          "bytes": 192857
+        },
+        {
+          "path": "Figure_01_surface_concentration.pdf",
+          "sha256": "1f4bc30eb0b5ef362141a31578cae94a14689240ed586b5309a6edf2ffbf99cc",
+          "bytes": 21337
+        }
+      ],
+      "description": "Four panels compare accepted-step surface mean, surface maximum, domain maximum and surface standard deviation. A dotted horizontal line marks x=0.1; curves are unsmoothed."
+    },
+    {
+      "figure": "Figure_02_signed_conservative_flux",
+      "files": [
+        {
+          "path": "Figure_02_signed_conservative_flux.png",
+          "sha256": "6cdebf5cdd72cd851281bee14c29b44e08c2963a6df91224b2f4e8f43fea5afb",
+          "bytes": 455492
+        },
+        {
+          "path": "Figure_02_signed_conservative_flux.pdf",
+          "sha256": "0694d26399d52f41ffd50c7bb70a3cfbbc2b992ed039ef9f4ace6ed87837e36e",
+          "bytes": 38503
+        }
+      ],
+      "description": "Rows show the 1, 2, 5, 10 and 20 mm planes; columns show signed plane-integrated advective and total salt flux. Positive is downward. The dotted line is the registered 1e-15 m/s resolvability screen, not a physical threshold."
+    },
+    {
+      "figure": "Figure_03_fields_5T",
+      "files": [
+        {
+          "path": "Figure_03_fields_5T.png",
+          "sha256": "278d32097277c25d7fd984ed0ca71a92266fab0330119dcf0e93f072de1524a0",
+          "bytes": 144845
+        },
+        {
+          "path": "Figure_03_fields_5T.pdf",
+          "sha256": "f9a84824e3d265bb6ad5a7db4b872efdf5734c42a14edcdb1ada8b8bf1cdcbfb",
+          "bytes": 423095
+        }
+      ],
+      "description": "Matched saved frames nearest 5T show the top 20 mm. Concentration uses one common sequential scale and downward cell-centre velocity one common zero-centred diverging scale. Velocity is qualitative and is mapped through VTK cell connectivity, not interpreted as a conservative face flux."
+    },
+    {
+      "figure": "Figure_03_fields_6T",
+      "files": [
+        {
+          "path": "Figure_03_fields_6T.png",
+          "sha256": "a58a227bc7c415c494a54436282c022af533a5e59123e4ceed8718f2309799d4",
+          "bytes": 145578
+        },
+        {
+          "path": "Figure_03_fields_6T.pdf",
+          "sha256": "78eae57ef5563f6a82d3b944d2adcb7ed423875d6b024cd76b5b70188b4528ed",
+          "bytes": 436607
+        }
+      ],
+      "description": "Matched saved frames nearest 6T show the top 20 mm. Concentration uses one common sequential scale and downward cell-centre velocity one common zero-centred diverging scale. Velocity is qualitative and is mapped through VTK cell connectivity, not interpreted as a conservative face flux."
+    },
+    {
+      "figure": "Figure_04_modal_energy",
+      "files": [
+        {
+          "path": "Figure_04_modal_energy.png",
+          "sha256": "d7b4e033fbbdd2ed9e21917f8e4941b1d8cba8c4cc0aaa52bcea590da6f6b45f",
+          "bytes": 265805
+        },
+        {
+          "path": "Figure_04_modal_energy.pdf",
+          "sha256": "9a005077fce46c5014c3a9354ff54542aac003f057b785a788c60a8f1d41b043",
+          "bytes": 22309
+        }
+      ],
+      "description": "Unsmoothed Neumann-mode energy fractions for m=1, 2, 4, 6 and 10 versus physical time. Modes use k_m=m*pi/W; the same physical basis is used for every grid."
+    },
+    {
+      "figure": "Figure_05_cumulative_transport_inventory",
+      "files": [
+        {
+          "path": "Figure_05_cumulative_transport_inventory.png",
+          "sha256": "72adb466a6f37fe0664dcf29c6fb47c8056489aff616892052456b573f7b877c",
+          "bytes": 496223
+        },
+        {
+          "path": "Figure_05_cumulative_transport_inventory.pdf",
+          "sha256": "5e1a432b60d8a0fbcc25ed4f96e7b3f65a60e76dc90f28143bcb9c2d5867e291",
+          "bytes": 28128
+        }
+      ],
+      "description": "Rows show five fixed physical depths. Left: cumulative signed advective plus diffusive transport; right: independently recorded upper-region salt inventory change from each run's initial state."
+    },
+    {
+      "figure": "Figure_06_downward_flux_summary",
+      "files": [
+        {
+          "path": "Figure_06_downward_flux_summary.png",
+          "sha256": "ec42e6fc0345488eb9275dd92d716caff7f0756186c94b775479026625f16c9e",
+          "bytes": 153389
+        },
+        {
+          "path": "Figure_06_downward_flux_summary.pdf",
+          "sha256": "a809a0c422788317816eee5cda45118d2839797fbbc9e25911dd1edb0104b752",
+          "bytes": 16171
+        }
+      ],
+      "description": "Across grids and depths, panels report the first accepted advective flux above 1e-15 m/s, its peak, and the accepted-step support duration of the longest continuous positive interval. Missing markers mean no resolved positive interval."
+    },
+    {
+      "figure": "Figure_07_solubility_event",
+      "files": [
+        {
+          "path": "Figure_07_solubility_event.png",
+          "sha256": "457d0c1e2337f8fef40fa0f23a2cd13d791f982dcd1630746685b0236efec419",
+          "bytes": 47774
+        },
+        {
+          "path": "Figure_07_solubility_event.pdf",
+          "sha256": "561256360099676b72ade0cc28dab3a9aa570716cdbadeaeb184a7da6ad14cdf",
+          "bytes": 11362
+        }
+      ],
+      "description": "Filled markers and vertical brackets denote the accepted-step bracket of the first local x>=0.1 event. Open markers denote right-censoring at the completed horizon; the dotted line marks 25T."
+    }
+  ],
+  "source_directories": {
+    "R24": "analysis\\wp11_long_validation_20261105\\stage_a\\R24",
+    "R48": "analysis\\wp11_long_validation_20261105\\stage_a\\R48"
+  }
+}

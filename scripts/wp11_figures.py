@@ -38,12 +38,13 @@ def numeric(rows, key):
 
 
 def finish(fig, out, stem, registry, alt):
-    if fig.get_layout_engine() is None:
+    manual_layout = getattr(fig, "_wp11_manual_layout", False)
+    if fig.get_layout_engine() is None and not manual_layout:
         fig.tight_layout()
     paths = []
     for suffix, dpi in (("png", 220), ("pdf", None)):
         path = out / f"{stem}.{suffix}"
-        fig.savefig(path, dpi=dpi, bbox_inches="tight")
+        fig.savefig(path, dpi=dpi, bbox_inches=None if manual_layout else "tight")
         paths.append({"path": path.name, "sha256": sha256(path), "bytes": path.stat().st_size})
     plt.close(fig)
     registry.append({"figure": stem, "files": paths, "description": alt})
@@ -140,8 +141,9 @@ def figure_fields(grids, out, registry, target):
         v_values.append(panel["down"][cell_depth <= top_depth_mm])
     cmin, cmax = min(v.min() for v in c_values), max(v.max() for v in c_values)
     vmax = max(abs(v).max() for v in v_values)
-    fig, axes = plt.subplots(2, len(grids), figsize=(4.1 * len(grids), 6.7), squeeze=False,
-                             layout="constrained")
+    fig, axes = plt.subplots(2, len(grids), figsize=(4.1 * len(grids) + 1.3, 6.9), squeeze=False)
+    fig._wp11_manual_layout = True
+    fig.subplots_adjust(left=0.08, right=0.84, bottom=0.10, top=0.93, wspace=0.22, hspace=0.20)
     concentration_image = velocity_image = None
     for column, (grid, panel) in enumerate(zip(grids, panels)):
         x_mm = panel["px"] * 1000
@@ -158,8 +160,11 @@ def figure_fields(grids, out, registry, target):
             axis.set_xlabel("x (mm)")
         axes[0, column].set_ylabel("depth (mm)")
         axes[1, column].set_ylabel("depth (mm)")
-    fig.colorbar(concentration_image, ax=axes[0].tolist(), label="salt mole fraction", shrink=0.88)
-    fig.colorbar(velocity_image, ax=axes[1].tolist(), label="qualitative downward cell velocity (m/s)", shrink=0.88)
+    concentration_cax = fig.add_axes([0.88, 0.56, 0.018, 0.34])
+    velocity_cax = fig.add_axes([0.88, 0.10, 0.018, 0.34])
+    fig.colorbar(concentration_image, cax=concentration_cax, label="salt mole fraction")
+    fig.colorbar(velocity_image, cax=velocity_cax,
+                 label="qualitative downward cell velocity (m/s)")
     finish(fig, out, f"Figure_03_fields_{target:g}T", registry,
            f"Matched saved frames nearest {target:g}T show the top 20 mm. Concentration uses one common sequential scale and downward cell-centre velocity one common zero-centred diverging scale. Velocity is qualitative and is mapped through VTK cell connectivity, not interpreted as a conservative face flux.")
 

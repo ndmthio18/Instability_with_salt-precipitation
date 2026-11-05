@@ -43,6 +43,27 @@ def finite_csv(path):
     return True
 
 
+def audit_timestep_sequence(accepted_dt, times, stop):
+    """Accept the frozen dt, plus only an explicit final clamp to the horizon."""
+    nonstandard = [index + 1 for index, value in enumerate(accepted_dt) if value != EXPECTED_DT]
+    final_horizon_clamp = (
+        stop["reason"] == "requested_horizon"
+        and nonstandard == [len(accepted_dt)]
+        and 0.0 < accepted_dt[-1] <= EXPECTED_DT
+        and math.isclose(times[-1], stop["requested_end_s"], rel_tol=0.0, abs_tol=1e-8)
+        and math.isclose(times[-1] - times[-2], accepted_dt[-1], rel_tol=0.0, abs_tol=1e-8)
+    )
+    passed = not nonstandard or final_horizon_clamp
+    return {
+        "passed": passed,
+        "expected_dt_s": EXPECTED_DT,
+        "nonstandard_accepted_steps": nonstandard,
+        "terminal_dt_s": accepted_dt[-1] if accepted_dt else None,
+        "terminal_horizon_clamp": final_horizon_clamp,
+        "terminal_clamp_s": EXPECTED_DT - accepted_dt[-1] if final_horizon_clamp else None,
+    }
+
+
 def main(evidence, run, out, label, expected_input, expected_job, prefix_run=None):
     evidence, run, out = Path(evidence), Path(run), Path(out)
     out.mkdir(parents=True, exist_ok=True)
@@ -55,6 +76,19 @@ def main(evidence, run, out, label, expected_input, expected_job, prefix_run=Non
     steps = [int(row["step"]) for row in surface]
     times = [float(row["time_s"]) for row in surface]
     accepted_dt = [float(row["dt_s"]) for row in surface[1:]]
+    timestep_audit = audit_timestep_sequence(accepted_dt, times, stop)
+    frame_stride = int(checks["frame_stride"])
+    terminal_remainder = stop["accepted_steps"] % frame_stride
+    expected_frames = 1 + stop["accepted_steps"] // frame_stride + int(terminal_remainder != 0)
+    expected_frame_intervals = [frame_stride] + ([terminal_remainder] if terminal_remainder else [])
+    field_frame_audit = {
+        "frame_stride": frame_stride,
+        "terminal_remainder_steps": terminal_remainder,
+        "expected_frames": expected_frames,
+        "observed_frames": checks["frames"],
+        "observed_frame_step_intervals": checks["frame_step_intervals"],
+        "terminal_is_irregular_stride": checks["terminal_irregular_stride"],
+    }
     archive_tests = {
         "fields_archive": sha256(evidence / "fields.tar.gz") == finished["fields"]["sha256"],
         "products_archive": sha256(evidence / "products.tar.gz") == finished["products"]["sha256"],
@@ -79,14 +113,18 @@ def main(evidence, run, out, label, expected_input, expected_job, prefix_run=Non
         "accepted_step_count": stop["accepted_steps"] == len(surface) - 1,
         "step_sequence": steps == list(range(len(steps))),
         "strictly_increasing_time": all(b > a for a, b in zip(times, times[1:])),
-        "no_unregistered_timestep_reduction": bool(accepted_dt) and all(value == EXPECTED_DT for value in accepted_dt),
+        "no_unregistered_timestep_reduction": bool(accepted_dt) and timestep_audit["passed"],
         "independent_conservation": checks["passed"],
         "salt_storage_reconstruction": checks["max_inventory_salt_difference_m"] < 1e-14,
         "water_storage_reconstruction": checks["max_inventory_water_difference_m"] < 1e-12,
         "cumulative_flux_reintegration": all(
             item["cumulative_salt_reintegration_error"] == 0.0 and item["cumulative_water_reintegration_error"] == 0.0
             for item in checks["independent_budgets"].values()),
-        "terminal_field_preserved": checks["terminal_irregular_stride"] and checks["frames"] == len(list(run.glob("*.vtu"))),
+        "sparse_field_mapping": (
+            checks["recorded_steps"] == len(surface)
+            and sorted(checks["frame_step_intervals"]) == sorted(expected_frame_intervals)
+        ),
+        "terminal_field_preserved": checks["frames"] == expected_frames == len(list(run.glob("*.vtu"))),
         "field_audit_grid": audit["cells"][0] == int(label[1:]) and audit["cells"][1] == 200,
         "field_audit_profile": audit["profile_sha256"] == EXPECTED_PROFILE,
         "finite_surface": finite_csv(run / "surface_events.csv"),
@@ -105,6 +143,8 @@ def main(evidence, run, out, label, expected_input, expected_job, prefix_run=Non
         "stop": stop,
         "surface_or_interior_event": stop["reason"],
         "prefix_comparison": prefix,
+        "timestep_audit": timestep_audit,
+        "field_frame_audit": field_frame_audit,
         "independent_checks": checks,
         "scope": "numerical/provenance acceptance; does not establish physical convergence or precipitation kinetics",
     }

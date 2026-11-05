@@ -1,0 +1,157 @@
+{
+  "schema_version": 1,
+  "grid": "R48",
+  "job_id": "16307013",
+  "tests": {
+    "registered_job": true,
+    "registered_grid": true,
+    "four_threads": true,
+    "executable_hash": true,
+    "input_hash_started": true,
+    "input_hash_local": true,
+    "profile_hash_started": true,
+    "profile_hash_local": true,
+    "worker_complete": true,
+    "solver_success": true,
+    "registered_stop": true,
+    "accepted_step_count": true,
+    "step_sequence": true,
+    "strictly_increasing_time": true,
+    "no_unregistered_timestep_reduction": true,
+    "independent_conservation": true,
+    "salt_storage_reconstruction": true,
+    "water_storage_reconstruction": true,
+    "cumulative_flux_reintegration": true,
+    "sparse_field_mapping": true,
+    "terminal_field_preserved": true,
+    "field_audit_grid": true,
+    "field_audit_profile": true,
+    "finite_surface": true,
+    "finite_online": true,
+    "finite_budget": true,
+    "fields_archive": true,
+    "products_archive": true,
+    "registered_short_trajectory_prefix": true
+  },
+  "passed": true,
+  "stop": {
+    "schema_version": 1,
+    "reason": "requested_horizon",
+    "last_accepted_time_s": 3410576.59430871,
+    "accepted_steps": 30000,
+    "initial_diagnostics_written": true,
+    "requested_end_s": 3410576.59430871,
+    "surface_threshold_low_s": null,
+    "surface_threshold_high_s": null,
+    "global_threshold_low_s": null,
+    "global_threshold_high_s": null
+  },
+  "surface_or_interior_event": "requested_horizon",
+  "prefix_comparison": {
+    "surface_events.csv": {
+      "old_lines": 4802,
+      "new_lines": 30002,
+      "bitwise_prefix": true
+    },
+    "weighted_online.csv": {
+      "old_lines": 4802,
+      "new_lines": 30002,
+      "bitwise_prefix": true
+    },
+    "transport_budget.csv": {
+      "old_lines": 38409,
+      "new_lines": 240009,
+      "bitwise_prefix": true
+    }
+  },
+  "timestep_audit": {
+    "passed": true,
+    "expected_dt_s": 113.68588647695695,
+    "nonstandard_accepted_steps": [
+      30000
+    ],
+    "terminal_dt_s": 113.68588505452499,
+    "terminal_horizon_clamp": true,
+    "terminal_clamp_s": 1.4224319642153205e-06
+  },
+  "field_frame_audit": {
+    "frame_stride": 50,
+    "terminal_remainder_steps": 0,
+    "expected_frames": 601,
+    "observed_frames": 601,
+    "observed_frame_step_intervals": [
+      50
+    ],
+    "terminal_is_irregular_stride": false
+  },
+  "independent_checks": {
+    "frames": 601,
+    "recorded_steps": 30001,
+    "frame_stride": 50,
+    "frame_step_intervals": [
+      50
+    ],
+    "terminal_irregular_stride": false,
+    "max_inventory_salt_difference_m": 9.906897351086297e-18,
+    "max_inventory_water_difference_m": 2.8622937353617317e-15,
+    "online_absolute_errors": {
+      "weighted_top_mean": 8.326672684688674e-17,
+      "weighted_top_sigma": 9.020562075079397e-17,
+      "weighted_fourier": 1.1275702593849246e-16,
+      "weighted_projection": 2.3505503099485736e-16
+    },
+    "independent_budgets": {
+      "upper_0.900000": {
+        "salt_closure_m": 2.9559755793280573e-17,
+        "water_closure_m": 7.840904583394253e-15,
+        "cumulative_salt_reintegration_error": 0.0,
+        "cumulative_water_reintegration_error": 0.0
+      },
+      "upper_0.750000": {
+        "salt_closure_m": 2.966987007642363e-17,
+        "water_closure_m": 8.161439003052462e-15,
+        "cumulative_salt_reintegration_error": 0.0,
+        "cumulative_water_reintegration_error": 0.0
+      },
+      "upper_0.500000": {
+        "salt_closure_m": 2.01945360119634e-17,
+        "water_closure_m": 5.530540692836976e-15,
+        "cumulative_salt_reintegration_error": 0.0,
+        "cumulative_water_reintegration_error": 0.0
+      },
+      "upper_0.995000": {
+        "salt_closure_m": 4.917055904964367e-16,
+        "water_closure_m": 1.5912710480558927e-14,
+        "cumulative_salt_reintegration_error": 0.0,
+        "cumulative_water_reintegration_error": 0.0
+      },
+      "upper_0.990000": {
+        "salt_closure_m": 2.8157916265574706e-16,
+        "water_closure_m": 9.455135955028021e-15,
+        "cumulative_salt_reintegration_error": 0.0,
+        "cumulative_water_reintegration_error": 0.0
+      },
+      "upper_0.975000": {
+        "salt_closure_m": 1.975382476950699e-16,
+        "water_closure_m": 8.452699011141497e-15,
+        "cumulative_salt_reintegration_error": 0.0,
+        "cumulative_water_reintegration_error": 0.0
+      },
+      "upper_0.950000": {
+        "salt_closure_m": 1.2554383531024338e-16,
+        "water_closure_m": 1.753645133227284e-14,
+        "cumulative_salt_reintegration_error": 0.0,
+        "cumulative_water_reintegration_error": 0.0
+      },
+      "free_domain": {
+        "salt_closure_m": 7.850301355152856e-17,
+        "water_closure_m": 2.1401155621150834e-14,
+        "cumulative_salt_reintegration_error": 0.0,
+        "cumulative_water_reintegration_error": 0.0
+      }
+    },
+    "scope": "independent VTU storage + independent integration of recorded conservative flux; not a second flux-kernel implementation",
+    "passed": true
+  },
+  "scope": "numerical/provenance acceptance; does not establish physical convergence or precipitation kinetics"
+}

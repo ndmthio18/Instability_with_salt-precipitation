@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "grids": [
+    "R24",
+    "R48"
+  ],
+  "shared_comparison_end_T": 21.251666666671714,
+  "surface": [
+    {
+      "grid": "R24",
+      "shared_end_T": 21.251666666671714,
+      "surface_mean_peak": 0.05641544818807021,
+      "surface_mean_peak_T": 3.9916666666664584,
+      "surface_mean_at_shared_end": 0.046101051320366446,
+      "decline_from_peak": 0.010314396867703766,
+      "decline_fraction_from_peak": 0.1828292994025151,
+      "surface_max_at_shared_end": 0.10003396484354643,
+      "domain_max_at_shared_end": 0.10003396484354643,
+      "stop_reason": "surface_solubility_threshold",
+      "stop_T": 21.251666666671714,
+      "threshold_low_T": 21.25083333333838,
+      "threshold_high_T": 21.251666666671714
+    },
+    {
+      "grid": "R48",
+      "shared_end_T": 21.251666666671714,
+      "surface_mean_peak": 0.059278516396573264,
+      "surface_mean_peak_T": 4.221666666666553,
+      "surface_mean_at_shared_end": 0.04258443385479984,
+      "decline_from_peak": 0.016694082541773424,
+      "decline_fraction_from_peak": 0.2816211261106809,
+      "surface_max_at_shared_end": 0.06724246487940706,
+      "domain_max_at_shared_end": 0.06724246487940706,
+      "stop_reason": "requested_horizon",
+      "stop_T": 25.000000000000004,
+      "threshold_low_T": null,
+      "threshold_high_T": null
+    }
+  ],
+  "velocity": [
+    {
+      "grid": "R24",
+      "sign_only_first_T": 0.0,
+      "reappearance_after_absence_T": 4.041666666666363,
+      "reappearance_step": 4850,
+      "reappearance_peak_down_m_s": 1.3363403523483e-09,
+      "overall_peak_down_m_s": 1.91645148122899e-08,
+      "overall_peak_down_T": 5.54166666666693,
+      "area_fraction_at_peak": 0.0925,
+      "salt_down_correlation_at_peak": 0.5006809035354022,
+      "maximum_finger_penetration_mm": 12.878490809371506,
+      "maximum_finger_penetration_T": 11.416666666664389
+    },
+    {
+      "grid": "R48",
+      "sign_only_first_T": 0.0,
+      "reappearance_after_absence_T": 4.208333333333092,
+      "reappearance_step": 5050,
+      "reappearance_peak_down_m_s": 7.59877901684737e-10,
+      "overall_peak_down_m_s": 1.92725119386672e-08,
+      "overall_peak_down_T": 5.750000000000709,
+      "area_fraction_at_peak": 0.08947916666666667,
+      "salt_down_correlation_at_peak": 0.4822902050781975,
+      "maximum_finger_penetration_mm": 17.82200510630652,
+      "maximum_finger_penetration_T": 23.875000000008665
+    }
+  ],
+  "positive_flux_definition": "accepted steps with signed conservative plane-integrated flux >1e-15 m/s; first-last span is not treated as continuous",
+  "velocity_onset_definition": "first positive saved cell-centre downward velocity after at least one saved frame with no downward cell; t=0 sign-only seed is retained separately",
+  "scope": "comparison tables only; outcome A/B/C requires evidence-bounded scientific judgment"
+}

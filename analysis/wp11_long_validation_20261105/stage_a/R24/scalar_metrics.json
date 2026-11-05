@@ -1,0 +1,591 @@
+{
+  "schema_version": 1,
+  "grid": "R24",
+  "stop": {
+    "schema_version": 1,
+    "reason": "surface_solubility_threshold",
+    "last_accepted_time_s": 2899217.476936046,
+    "accepted_steps": 25502,
+    "initial_diagnostics_written": true,
+    "requested_end_s": 6821153.18861742,
+    "surface_threshold_low_s": 2899103.791049569,
+    "surface_threshold_high_s": 2899217.476936046,
+    "global_threshold_low_s": 2899103.791049569,
+    "global_threshold_high_s": 2899217.476936046,
+    "time_over_T": 21.251666666671714
+  },
+  "accepted_steps": 25502,
+  "saved_scalar_rows": 25503,
+  "sign_convention": "positive is downward; values are signed plane-integrated conservative SCVF fluxes",
+  "local_positive_negative_scvf_split_available": false,
+  "positive_interval_note": "first/last are bounds only; longest continuous interval and actual positive-step count are computed independently",
+  "planes": {
+    "1.0": {
+      "region": "upper_0.995000",
+      "requested_z_over_H": 0.995,
+      "actual_z_over_H": 0.9948556471890533,
+      "actual_depth_mm": 1.0288705621893435,
+      "advective": {
+        "strict_positive": {
+          "threshold_m_s": 0.0,
+          "first_positive_step": 4959,
+          "first_positive_time_s": 563768.3110392092,
+          "first_positive_time_over_T": 4.13249999999985,
+          "last_positive_step": 6782,
+          "last_positive_time_s": 771017.6820867872,
+          "last_positive_time_over_T": 5.651666666667142,
+          "positive_step_count": 374,
+          "positive_step_fraction": 0.014665516430083915,
+          "longest_continuous_positive_interval": {
+            "first_step": 6554,
+            "last_step": 6782,
+            "first_time_s": 745097.2999700303,
+            "last_time_s": 771017.6820867872,
+            "first_time_over_T": 5.461666666667064,
+            "last_time_over_T": 5.651666666667142,
+            "accepted_step_count": 229,
+            "accepted_step_support_duration_s": 26034.068003223143,
+            "accepted_step_support_duration_over_T": 0.19083333333333327
+          },
+          "peak_positive_flux_m_s": 1.1825409116057588e-11,
+          "peak_positive_step": 6645,
+          "positive_step_integral_m": 2.9996750342706734e-07,
+          "integration_semantics": "sum of F_i*dt_i over accepted steps with F_i above threshold"
+        },
+        "above_1e-15": {
+          "threshold_m_s": 1e-15,
+          "first_positive_step": 4959,
+          "first_positive_time_s": 563768.3110392092,
+          "first_positive_time_over_T": 4.13249999999985,
+          "last_positive_step": 6782,
+          "last_positive_time_s": 771017.6820867872,
+          "last_positive_time_over_T": 5.651666666667142,
+          "positive_step_count": 374,
+          "positive_step_fraction": 0.014665516430083915,
+          "longest_continuous_positive_interval": {
+            "first_step": 6554,
+            "last_step": 6782,
+            "first_time_s": 745097.2999700303,
+            "last_time_s": 771017.6820867872,
+            "first_time_over_T": 5.461666666667064,
+            "last_time_over_T": 5.651666666667142,
+            "accepted_step_count": 229,
+            "accepted_step_support_duration_s": 26034.068003223143,
+            "accepted_step_support_duration_over_T": 0.19083333333333327
+          },
+          "peak_positive_flux_m_s": 1.1825409116057588e-11,
+          "peak_positive_step": 6645,
+          "positive_step_integral_m": 2.9996750342706734e-07,
+          "integration_semantics": "sum of F_i*dt_i over accepted steps with F_i above threshold"
+        }
+      },
+      "total": {
+        "strict_positive": {
+          "threshold_m_s": 0.0,
+          "first_positive_step": 4820,
+          "first_positive_time_s": 547965.9728189057,
+          "first_positive_time_over_T": 4.0166666666664685,
+          "last_positive_step": 7025,
+          "last_positive_time_s": 798643.3525006991,
+          "last_positive_time_over_T": 5.854166666667226,
+          "positive_step_count": 1535,
+          "positive_step_fraction": 0.06019135754058505,
+          "longest_continuous_positive_interval": {
+            "first_step": 5952,
+            "last_step": 7025,
+            "first_time_s": 676658.396310874,
+            "last_time_s": 798643.3525006991,
+            "first_time_over_T": 4.96000000000019,
+            "last_time_over_T": 5.854166666667226,
+            "accepted_step_count": 1074,
+            "accepted_step_support_duration_s": 122098.64207625177,
+            "accepted_step_support_duration_over_T": 0.8949999999999997
+          },
+          "peak_positive_flux_m_s": 4.439739540321902e-11,
+          "peak_positive_step": 4985,
+          "positive_step_integral_m": 2.515918208119258e-06,
+          "integration_semantics": "sum of F_i*dt_i over accepted steps with F_i above threshold"
+        },
+        "above_1e-15": {
+          "threshold_m_s": 1e-15,
+          "first_positive_step": 4820,
+          "first_positive_time_s": 547965.9728189057,
+          "first_positive_time_over_T": 4.0166666666664685,
+          "last_positive_step": 7025,
+          "last_positive_time_s": 798643.3525006991,
+          "last_positive_time_over_T": 5.854166666667226,
+          "positive_step_count": 1535,
+          "positive_step_fraction": 0.06019135754058505,
+          "longest_continuous_positive_interval": {
+            "first_step": 5952,
+            "last_step": 7025,
+            "first_time_s": 676658.396310874,
+            "last_time_s": 798643.3525006991,
+            "first_time_over_T": 4.96000000000019,
+            "last_time_over_T": 5.854166666667226,
+            "accepted_step_count": 1074,
+            "accepted_step_support_duration_s": 122098.64207625177,
+            "accepted_step_support_duration_over_T": 0.8949999999999997
+          },
+          "peak_positive_flux_m_s": 4.439739540321902e-11,
+          "peak_positive_step": 4985,
+          "positive_step_integral_m": 2.515918208119258e-06,
+          "integration_semantics": "sum of F_i*dt_i over accepted steps with F_i above threshold"
+        }
+      },
+      "final": {
+        "grid": "R24",
+        "depth_mm": 1.0,
+        "step": 25502,
+        "time_s": 2899217.476936046,
+        "time_over_T": 21.251666666671714,
+        "advective_down_m_s": -2.671504898290195e-11,
+        "diffusive_down_m_s": 2.5551080109425185e-11,
+        "total_down_m_s": -1.1639688734767858e-12,
+        "cumulative_advective_m": -6.898043076539027e-05,
+        "cumulative_diffusive_m": 6.579684471909696e-05,
+        "inventory_salt_m": 3.5718375405695933e-06,
+        "salt_residual_m": 3.586689017347818e-16,
+        "water_residual_m": 2.016044526517702e-14
+      },
+      "maximum_abs_salt_residual_m": 5.94890720614482e-16,
+      "maximum_abs_water_residual_m": 2.948279486938397e-14
+    },
+    "2.0": {
+      "region": "upper_0.990000",
+      "requested_z_over_H": 0.99,
+      "actual_z_over_H": 0.9902599597326774,
+      "actual_depth_mm": 1.9480080534645117,
+      "advective": {
+        "strict_positive": {
+          "threshold_m_s": 0.0,
+          "first_positive_step": 4979,
+          "first_positive_time_s": 566042.0287687493,
+          "first_positive_time_over_T": 4.149166666666523,
+          "last_positive_step": 6992,
+          "last_positive_time_s": 794891.718246958,
+          "last_positive_time_over_T": 5.826666666667214,
+          "positive_step_count": 1071,
+          "positive_step_fraction": 0.041996706140694846,
+          "longest_continuous_positive_interval": {
+            "first_step": 6115,
+            "last_step": 6992,
+            "first_time_s": 695189.1958066256,
+            "last_time_s": 794891.718246958,
+            "first_time_over_T": 5.09583333333358,
+            "last_time_over_T": 5.826666666667214,
+            "accepted_step_count": 878,
+            "accepted_step_support_duration_s": 99816.2083267682,
+            "accepted_step_support_duration_over_T": 0.7316666666666664
+          },
+          "peak_positive_flux_m_s": 3.7482097578424356e-11,
+          "peak_positive_step": 6646,
+          "positive_step_integral_m": 1.5286075339628537e-06,
+          "integration_semantics": "sum of F_i*dt_i over accepted steps with F_i above threshold"
+        },
+        "above_1e-15": {
+          "threshold_m_s": 1e-15,
+          "first_positive_step": 4979,
+          "first_positive_time_s": 566042.0287687493,
+          "first_positive_time_over_T": 4.149166666666523,
+          "last_positive_step": 6992,
+          "last_positive_time_s": 794891.718246958,
+          "last_positive_time_over_T": 5.826666666667214,
+          "positive_step_count": 1071,
+          "positive_step_fraction": 0.041996706140694846,
+          "longest_continuous_positive_interval": {
+            "first_step": 6115,
+            "last_step": 6992,
+            "first_time_s": 695189.1958066256,
+            "last_time_s": 794891.718246958,
+            "first_time_over_T": 5.09583333333358,
+            "last_time_over_T": 5.826666666667214,
+            "accepted_step_count": 878,
+            "accepted_step_support_duration_s": 99816.2083267682,
+            "accepted_step_support_duration_over_T": 0.7316666666666664
+          },
+          "peak_positive_flux_m_s": 3.7482097578424356e-11,
+          "peak_positive_step": 6646,
+          "positive_step_integral_m": 1.5286075339628537e-06,
+          "integration_semantics": "sum of F_i*dt_i over accepted steps with F_i above threshold"
+        }
+      },
+      "total": {
+        "strict_positive": {
+          "threshold_m_s": 0.0,
+          "first_positive_step": 4884,
+          "first_positive_time_s": 555241.869553434,
+          "first_positive_time_over_T": 4.069999999999824,
+          "last_positive_step": 7037,
+          "last_positive_time_s": 800007.5831384232,
+          "last_positive_time_over_T": 5.86416666666723,
+          "positive_step_count": 1491,
+          "positive_step_fraction": 0.05846600266645753,
+          "longest_continuous_positive_interval": {
+            "first_step": 5966,
+            "last_step": 7037,
+            "first_time_s": 678249.9987215521,
+            "last_time_s": 800007.5831384232,
+            "first_time_over_T": 4.971666666666862,
+            "last_time_over_T": 5.86416666666723,
+            "accepted_step_count": 1072,
+            "accepted_step_support_duration_s": 121871.27030329785,
+            "accepted_step_support_duration_over_T": 0.893333333333333
+          },
+          "peak_positive_flux_m_s": 4.255294685918443e-11,
+          "peak_positive_step": 6634,
+          "positive_step_integral_m": 3.1976629838496587e-06,
+          "integration_semantics": "sum of F_i*dt_i over accepted steps with F_i above threshold"
+        },
+        "above_1e-15": {
+          "threshold_m_s": 1e-15,
+          "first_positive_step": 4884,
+          "first_positive_time_s": 555241.869553434,
+          "first_positive_time_over_T": 4.069999999999824,
+          "last_positive_step": 7037,
+          "last_positive_time_s": 800007.5831384232,
+          "last_positive_time_over_T": 5.86416666666723,
+          "positive_step_count": 1491,
+          "positive_step_fraction": 0.05846600266645753,
+          "longest_continuous_positive_interval": {
+            "first_step": 5966,
+            "last_step": 7037,
+            "first_time_s": 678249.9987215521,
+            "last_time_s": 800007.5831384232,
+            "first_time_over_T": 4.971666666666862,
+            "last_time_over_T": 5.86416666666723,
+            "accepted_step_count": 1072,
+            "accepted_step_support_duration_s": 121871.27030329785,
+            "accepted_step_support_duration_over_T": 0.893333333333333
+          },
+          "peak_positive_flux_m_s": 4.255294685918443e-11,
+          "peak_positive_step": 6634,
+          "positive_step_integral_m": 3.1976629838496587e-06,
+          "integration_semantics": "sum of F_i*dt_i over accepted steps with F_i above threshold"
+        }
+      },
+      "final": {
+        "grid": "R24",
+        "depth_mm": 2.0,
+        "step": 25502,
+        "time_s": 2899217.476936046,
+        "time_over_T": 21.251666666671714,
+        "advective_down_m_s": -5.7698737085876094e-12,
+        "diffusive_down_m_s": 5.229721980947759e-12,
+        "total_down_m_s": -5.401517276398549e-13,
+        "cumulative_advective_m": -2.322075095900189e-05,
+        "cumulative_diffusive_m": 1.8125067917151476e-05,
+        "inventory_salt_m": 5.831161858003855e-06,
+        "salt_residual_m": -1.7472849745845884e-16,
+        "water_residual_m": 1.3252971307294362e-15
+      },
+      "maximum_abs_salt_residual_m": 2.217947302055913e-16,
+      "maximum_abs_water_residual_m": 1.3617641053648636e-14
+    },
+    "5.0": {
+      "region": "upper_0.975000",
+      "requested_z_over_H": 0.975,
+      "actual_z_over_H": 0.9747897136147182,
+      "actual_depth_mm": 5.042057277056355,
+      "advective": {
+        "strict_positive": {
+          "threshold_m_s": 0.0,
+          "first_positive_step": 6239,
+          "first_positive_time_s": 709286.2457297741,
+          "first_positive_time_over_T": 5.199166666666955,
+          "last_positive_step": 7141,
+          "last_positive_time_s": 811830.9153320316,
+          "last_positive_time_over_T": 5.950833333333931,
+          "positive_step_count": 903,
+          "positive_step_fraction": 0.03540898753038978,
+          "longest_continuous_positive_interval": {
+            "first_step": 6239,
+            "last_step": 7141,
+            "first_time_s": 709286.2457297741,
+            "last_time_s": 811830.9153320316,
+            "first_time_over_T": 5.199166666666955,
+            "last_time_over_T": 5.950833333333931,
+            "accepted_step_count": 903,
+            "accepted_step_support_duration_s": 102658.35548869213,
+            "accepted_step_support_duration_over_T": 0.7524999999999997
+          },
+          "peak_positive_flux_m_s": 3.4135397814242496e-11,
+          "peak_positive_step": 6746,
+          "positive_step_integral_m": 1.960576332210736e-06,
+          "integration_semantics": "sum of F_i*dt_i over accepted steps with F_i above threshold"
+        },
+        "above_1e-15": {
+          "threshold_m_s": 1e-15,
+          "first_positive_step": 6239,
+          "first_positive_time_s": 709286.2457297741,
+          "first_positive_time_over_T": 5.199166666666955,
+          "last_positive_step": 7141,
+          "last_positive_time_s": 811830.9153320316,
+          "last_positive_time_over_T": 5.950833333333931,
+          "positive_step_count": 903,
+          "positive_step_fraction": 0.03540898753038978,
+          "longest_continuous_positive_interval": {
+            "first_step": 6239,
+            "last_step": 7141,
+            "first_time_s": 709286.2457297741,
+            "last_time_s": 811830.9153320316,
+            "first_time_over_T": 5.199166666666955,
+            "last_time_over_T": 5.950833333333931,
+            "accepted_step_count": 903,
+            "accepted_step_support_duration_s": 102658.35548869213,
+            "accepted_step_support_duration_over_T": 0.7524999999999997
+          },
+          "peak_positive_flux_m_s": 3.4135397814242496e-11,
+          "peak_positive_step": 6746,
+          "positive_step_integral_m": 1.960576332210736e-06,
+          "integration_semantics": "sum of F_i*dt_i over accepted steps with F_i above threshold"
+        }
+      },
+      "total": {
+        "strict_positive": {
+          "threshold_m_s": 0.0,
+          "first_positive_step": 6171,
+          "first_positive_time_s": 701555.6054493379,
+          "first_positive_time_over_T": 5.142500000000266,
+          "last_positive_step": 7148,
+          "last_positive_time_s": 812626.7165373706,
+          "last_positive_time_over_T": 5.956666666667267,
+          "positive_step_count": 978,
+          "positive_step_fraction": 0.03834993333856168,
+          "longest_continuous_positive_interval": {
+            "first_step": 6171,
+            "last_step": 7148,
+            "first_time_s": 701555.6054493379,
+            "last_time_s": 812626.7165373706,
+            "first_time_over_T": 5.142500000000266,
+            "last_time_over_T": 5.956666666667267,
+            "accepted_step_count": 978,
+            "accepted_step_support_duration_s": 111184.7969744639,
+            "accepted_step_support_duration_over_T": 0.8149999999999997
+          },
+          "peak_positive_flux_m_s": 3.671018475416773e-11,
+          "peak_positive_step": 6736,
+          "positive_step_integral_m": 2.3395491668430892e-06,
+          "integration_semantics": "sum of F_i*dt_i over accepted steps with F_i above threshold"
+        },
+        "above_1e-15": {
+          "threshold_m_s": 1e-15,
+          "first_positive_step": 6171,
+          "first_positive_time_s": 701555.6054493379,
+          "first_positive_time_over_T": 5.142500000000266,
+          "last_positive_step": 7148,
+          "last_positive_time_s": 812626.7165373706,
+          "last_positive_time_over_T": 5.956666666667267,
+          "positive_step_count": 978,
+          "positive_step_fraction": 0.03834993333856168,
+          "longest_continuous_positive_interval": {
+            "first_step": 6171,
+            "last_step": 7148,
+            "first_time_s": 701555.6054493379,
+            "last_time_s": 812626.7165373706,
+            "first_time_over_T": 5.142500000000266,
+            "last_time_over_T": 5.956666666667267,
+            "accepted_step_count": 978,
+            "accepted_step_support_duration_s": 111184.7969744639,
+            "accepted_step_support_duration_over_T": 0.8149999999999997
+          },
+          "peak_positive_flux_m_s": 3.671018475416773e-11,
+          "peak_positive_step": 6736,
+          "positive_step_integral_m": 2.3395491668430892e-06,
+          "integration_semantics": "sum of F_i*dt_i over accepted steps with F_i above threshold"
+        }
+      },
+      "final": {
+        "grid": "R24",
+        "depth_mm": 5.0,
+        "step": 25502,
+        "time_s": 2899217.476936046,
+        "time_over_T": 21.251666666671714,
+        "advective_down_m_s": -3.967039814517628e-12,
+        "diffusive_down_m_s": 2.1997132056155785e-12,
+        "total_down_m_s": -1.7673266089020293e-12,
+        "cumulative_advective_m": -1.602599322860028e-05,
+        "cumulative_diffusive_m": 5.209753898966044e-06,
+        "inventory_salt_m": 1.2723251611809413e-05,
+        "salt_residual_m": -1.1606553663046776e-16,
+        "water_residual_m": 6.403862366400497e-16
+      },
+      "maximum_abs_salt_residual_m": 2.9310389293608907e-16,
+      "maximum_abs_water_residual_m": 1.6584518013182305e-14
+    },
+    "10.0": {
+      "region": "upper_0.950000",
+      "requested_z_over_H": 0.95,
+      "actual_z_over_H": 0.9506615895243686,
+      "actual_depth_mm": 9.867682095126273,
+      "advective": {
+        "strict_positive": {
+          "threshold_m_s": 0.0,
+          "first_positive_step": null,
+          "last_positive_step": null,
+          "positive_step_count": 0,
+          "longest_continuous_positive_interval": null,
+          "peak_positive_flux_m_s": null,
+          "positive_step_integral_m": 0.0,
+          "integration_semantics": "sum of F_i*dt_i over accepted steps with F_i above threshold"
+        },
+        "above_1e-15": {
+          "threshold_m_s": 1e-15,
+          "first_positive_step": null,
+          "last_positive_step": null,
+          "positive_step_count": 0,
+          "longest_continuous_positive_interval": null,
+          "peak_positive_flux_m_s": null,
+          "positive_step_integral_m": 0.0,
+          "integration_semantics": "sum of F_i*dt_i over accepted steps with F_i above threshold"
+        }
+      },
+      "total": {
+        "strict_positive": {
+          "threshold_m_s": 0.0,
+          "first_positive_step": 6945,
+          "first_positive_time_s": 789548.4815825388,
+          "first_positive_time_over_T": 5.787500000000531,
+          "last_positive_step": 7344,
+          "last_positive_time_s": 834909.1502868633,
+          "last_positive_time_over_T": 6.120000000000668,
+          "positive_step_count": 400,
+          "positive_step_fraction": 0.015685044310250175,
+          "longest_continuous_positive_interval": {
+            "first_step": 6945,
+            "last_step": 7344,
+            "first_time_s": 789548.4815825388,
+            "last_time_s": 834909.1502868633,
+            "first_time_over_T": 5.787500000000531,
+            "last_time_over_T": 6.120000000000668,
+            "accepted_step_count": 400,
+            "accepted_step_support_duration_s": 45474.35459078278,
+            "accepted_step_support_duration_over_T": 0.3333333333333332
+          },
+          "peak_positive_flux_m_s": 4.546608610899503e-12,
+          "peak_positive_step": 7110,
+          "positive_step_integral_m": 1.2976777049613702e-07,
+          "integration_semantics": "sum of F_i*dt_i over accepted steps with F_i above threshold"
+        },
+        "above_1e-15": {
+          "threshold_m_s": 1e-15,
+          "first_positive_step": 6945,
+          "first_positive_time_s": 789548.4815825388,
+          "first_positive_time_over_T": 5.787500000000531,
+          "last_positive_step": 7344,
+          "last_positive_time_s": 834909.1502868633,
+          "last_positive_time_over_T": 6.120000000000668,
+          "positive_step_count": 400,
+          "positive_step_fraction": 0.015685044310250175,
+          "longest_continuous_positive_interval": {
+            "first_step": 6945,
+            "last_step": 7344,
+            "first_time_s": 789548.4815825388,
+            "last_time_s": 834909.1502868633,
+            "first_time_over_T": 5.787500000000531,
+            "last_time_over_T": 6.120000000000668,
+            "accepted_step_count": 400,
+            "accepted_step_support_duration_s": 45474.35459078278,
+            "accepted_step_support_duration_over_T": 0.3333333333333332
+          },
+          "peak_positive_flux_m_s": 4.546608610899503e-12,
+          "peak_positive_step": 7110,
+          "positive_step_integral_m": 1.2976777049613702e-07,
+          "integration_semantics": "sum of F_i*dt_i over accepted steps with F_i above threshold"
+        }
+      },
+      "final": {
+        "grid": "R24",
+        "depth_mm": 10.0,
+        "step": 25502,
+        "time_s": 2899217.476936046,
+        "time_over_T": 21.251666666671714,
+        "advective_down_m_s": -3.4718601857744498e-12,
+        "diffusive_down_m_s": 2.7530909997368008e-12,
+        "total_down_m_s": -7.187691860376264e-13,
+        "cumulative_advective_m": -2.6753173743156973e-05,
+        "cumulative_diffusive_m": 8.249658965764928e-06,
+        "inventory_salt_m": 2.2246029492286404e-05,
+        "salt_residual_m": -2.5366942704371787e-17,
+        "water_residual_m": -1.2215528000475255e-15
+      },
+      "maximum_abs_salt_residual_m": 9.086461238375781e-17,
+      "maximum_abs_water_residual_m": 7.497496886028389e-15
+    },
+    "20.0": {
+      "region": "upper_0.900000",
+      "requested_z_over_H": 0.9,
+      "actual_z_over_H": 0.899515406020609,
+      "actual_depth_mm": 20.096918795878203,
+      "advective": {
+        "strict_positive": {
+          "threshold_m_s": 0.0,
+          "first_positive_step": null,
+          "last_positive_step": null,
+          "positive_step_count": 0,
+          "longest_continuous_positive_interval": null,
+          "peak_positive_flux_m_s": null,
+          "positive_step_integral_m": 0.0,
+          "integration_semantics": "sum of F_i*dt_i over accepted steps with F_i above threshold"
+        },
+        "above_1e-15": {
+          "threshold_m_s": 1e-15,
+          "first_positive_step": null,
+          "last_positive_step": null,
+          "positive_step_count": 0,
+          "longest_continuous_positive_interval": null,
+          "peak_positive_flux_m_s": null,
+          "positive_step_integral_m": 0.0,
+          "integration_semantics": "sum of F_i*dt_i over accepted steps with F_i above threshold"
+        }
+      },
+      "total": {
+        "strict_positive": {
+          "threshold_m_s": 0.0,
+          "first_positive_step": null,
+          "last_positive_step": null,
+          "positive_step_count": 0,
+          "longest_continuous_positive_interval": null,
+          "peak_positive_flux_m_s": null,
+          "positive_step_integral_m": 0.0,
+          "integration_semantics": "sum of F_i*dt_i over accepted steps with F_i above threshold"
+        },
+        "above_1e-15": {
+          "threshold_m_s": 1e-15,
+          "first_positive_step": null,
+          "last_positive_step": null,
+          "positive_step_count": 0,
+          "longest_continuous_positive_interval": null,
+          "peak_positive_flux_m_s": null,
+          "positive_step_integral_m": 0.0,
+          "integration_semantics": "sum of F_i*dt_i over accepted steps with F_i above threshold"
+        }
+      },
+      "final": {
+        "grid": "R24",
+        "depth_mm": 20.0,
+        "step": 25502,
+        "time_s": 2899217.476936046,
+        "time_over_T": 21.251666666671714,
+        "advective_down_m_s": -1.5732081561341901e-12,
+        "diffusive_down_m_s": 6.845611045028772e-13,
+        "total_down_m_s": -8.886470516313041e-13,
+        "cumulative_advective_m": -2.9712896451960118e-05,
+        "cumulative_diffusive_m": 2.081051686091397e-06,
+        "inventory_salt_m": 3.529942473572881e-05,
+        "salt_residual_m": 3.896690370548683e-17,
+        "water_residual_m": 2.8765016542607385e-15
+      },
+      "maximum_abs_salt_residual_m": 4.600066529948654e-17,
+      "maximum_abs_water_residual_m": 6.53759298690419e-15
+    }
+  },
+  "hashes": {
+    "params.input": "c1441be8b69a11a23e9c8ce36839c127866d1d5567207fb0c63b6645c33d1bd1",
+    "eigenprofile.dat": "d721e605d126e555f92b43200aa73b999ed4e2b61397edd1e98c0d9fddb36575",
+    "surface_events.csv": "04bf97862527ecfcc7be49d55d356bbc5e6a9065d8f5c85d9be89974bbc4d5be",
+    "weighted_online.csv": "f4bb810acfdc1d79847c170d2c222d9e446c886c4ef938d263f8299b6533cb07",
+    "transport_budget.csv": "4d77215b491f9d935d9a1131d3b66c3f23b28eb87d9515dbed4931e0050f928d",
+    "stop_record.json": "135705d2f9b88021a47bafbd4f0b1f84923abe5eda3c7b3683c4688c6c3cd1db"
+  }
+}

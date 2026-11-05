@@ -104,5 +104,17 @@
       "started_utc": "2026-11-05T13:39:29.847910+00:00"
     }
   },
-  "state": "PRODUCTION_RUNNING"
+  "stage_a": {
+    "completed_local_time": "2026-11-05T20:39:03+01:00",
+    "R48_job_id": "16307013",
+    "R48_state": "COMPLETED",
+    "R48_stop_reason": "requested_horizon",
+    "R48_accepted_steps": 30000,
+    "R48_stop_T": 25.0,
+    "R48_threshold_status": "right_censored_beyond_25T",
+    "numerical_acceptance": true,
+    "report": "stage_a/REPORT_ZH.md",
+    "R96_state_at_stage_a": "RUNNING"
+  },
+  "state": "STAGE_A_COMPLETE_R96_RUNNING"
 }
