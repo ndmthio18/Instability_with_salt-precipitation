@@ -49,18 +49,22 @@ def finish(fig, out, stem, registry, alt):
     registry.append({"figure": stem, "files": paths, "description": alt})
 
 
-def load_grid(label, path):
+def load_grid(label, path, fields_required=True):
     path = Path(path)
-    return {
+    result = {
         "label": label,
         "path": path,
         "surface": records(path / "surface_series.csv"),
         "flux": records(path / "flux_series.csv"),
         "scalar": json.loads((path / "scalar_metrics.json").read_text()),
-        "modes": records(path / "tracked_mode_series.csv"),
-        "field": json.loads((path / "field_metrics.json").read_text()),
-        "panels": np.load(path / "field_panels.npz"),
     }
+    if fields_required:
+        result.update({
+            "modes": records(path / "tracked_mode_series.csv"),
+            "field": json.loads((path / "field_metrics.json").read_text()),
+            "panels": np.load(path / "field_panels.npz"),
+        })
+    return result
 
 
 def figure_surface(grids, out, registry):
@@ -290,7 +294,7 @@ def main(out, specifications, dt2=None):
     figure_flux_summary(grids, out, registry)
     figure_threshold(grids, out, registry)
     if dt2 is not None:
-        old = load_grid("R96-dt/2", dt2)
+        old = load_grid("R96-dt/2", dt2, fields_required=False)
         new = next(grid for grid in grids if grid["label"] == "R96")
         figure_timestep(new, old, out, registry)
     manifest = {
