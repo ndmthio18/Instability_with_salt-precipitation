@@ -92,5 +92,17 @@
     "restart": false,
     "additional_simulation": false
   },
-  "state": "RESUBMISSION_AUTHORIZED_PENDING_PREFLIGHT"
+  "production_jobs": {
+    "R48": {
+      "job_id": "16307013",
+      "node_at_start": "ibc12b11n04",
+      "started_utc": "2026-11-05T13:39:29.847013+00:00"
+    },
+    "R96": {
+      "job_id": "16307014",
+      "node_at_start": "ibc12b11n04",
+      "started_utc": "2026-11-05T13:39:29.847910+00:00"
+    }
+  },
+  "state": "PRODUCTION_RUNNING"
 }
