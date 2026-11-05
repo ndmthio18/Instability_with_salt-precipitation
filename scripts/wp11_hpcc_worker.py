@@ -41,7 +41,10 @@ def main(root,grid):
     assert disk.free>=plan["minimum_scratch_free_bytes"] and mem>=plan["minimum_available_memory_bytes"]
     scratch=scratch_root/f"wp11_{grid}_{job}";run=scratch/plan["run_name"]
     run.mkdir(parents=True);shutil.copytree(root/"bundle",scratch/"bundle",symlinks=False)
-    for n in ("params.input","eigenprofile.dat"):shutil.copy2(durable/n,run/n)
+    # The grid-specific input lives under R48/R96, while the immutable A28
+    # profile is shared once at the WP11 root to avoid another durable inode.
+    shutil.copy2(durable/"params.input",run/"params.input")
+    shutil.copy2(root/"eigenprofile.dat",run/"eigenprofile.dat")
     assert sha(scratch/"bundle/bin/paper2_transport")==ELF
     assert sha(run/"params.input")==plan["input_sha256"] and sha(run/"eigenprofile.dat")==PROFILE
     started={"utc":datetime.now(timezone.utc).isoformat(),"job_id":job,"grid":grid,"node":socket.gethostname(),

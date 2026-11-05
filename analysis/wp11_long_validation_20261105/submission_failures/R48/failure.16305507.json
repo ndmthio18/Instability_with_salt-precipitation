@@ -1,0 +1,4 @@
+{
+  "utc": "2026-11-05T08:41:33.492071+00:00",
+  "traceback": "Traceback (most recent call last):\n  File \"/WORK/hulm_work/zhixin/paper2_wp11_long_20261105/wp11_hpcc_worker.py\", line 90, in <module>\n    try:raise SystemExit(main(root,grid))\n  File \"/WORK/hulm_work/zhixin/paper2_wp11_long_20261105/wp11_hpcc_worker.py\", line 44, in main\n    for n in (\"params.input\",\"eigenprofile.dat\"):shutil.copy2(durable/n,run/n)\n  File \"/WORK/hulm_work/ys/miniconda3/lib/python3.10/shutil.py\", line 434, in copy2\n    copyfile(src, dst, follow_symlinks=follow_symlinks)\n  File \"/WORK/hulm_work/ys/miniconda3/lib/python3.10/shutil.py\", line 254, in copyfile\n    with open(src, 'rb') as fsrc:\nFileNotFoundError: [Errno 2] No such file or directory: '/WORK/hulm_work/zhixin/paper2_wp11_long_20261105/R48/eigenprofile.dat'\n"
+}

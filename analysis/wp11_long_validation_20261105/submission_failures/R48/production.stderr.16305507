@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/WORK/hulm_work/zhixin/paper2_wp11_long_20261105/wp11_hpcc_worker.py", line 90, in <module>
+    try:raise SystemExit(main(root,grid))
+  File "/WORK/hulm_work/zhixin/paper2_wp11_long_20261105/wp11_hpcc_worker.py", line 44, in main
+    for n in ("params.input","eigenprofile.dat"):shutil.copy2(durable/n,run/n)
+  File "/WORK/hulm_work/ys/miniconda3/lib/python3.10/shutil.py", line 434, in copy2
+    copyfile(src, dst, follow_symlinks=follow_symlinks)
+  File "/WORK/hulm_work/ys/miniconda3/lib/python3.10/shutil.py", line 254, in copyfile
+    with open(src, 'rb') as fsrc:
+FileNotFoundError: [Errno 2] No such file or directory: '/WORK/hulm_work/zhixin/paper2_wp11_long_20261105/R48/eigenprofile.dat'
+srun: error: ibc11b11n34: task 0: Exited with exit code 1

@@ -67,5 +67,23 @@
   },
   "analysis_order": ["R48 Stage A immediately at completion", "R96 Stage B after independent completion"],
   "failure_policy": "preserve accepted prefix and evidence; no restart or retry without new authorization",
-  "state": "PRODUCTION_FROZEN_PENDING_SUBMISSION"
+  "submission_failures": {
+    "R48": {
+      "job_id": "16305507",
+      "state": "FAILED",
+      "elapsed_s": 6,
+      "solver_invoked": false,
+      "accepted_states": 0,
+      "cause": "worker looked for the shared eigenprofile in the grid-specific directory"
+    },
+    "R96": {
+      "job_id": "16305508",
+      "state": "FAILED",
+      "elapsed_s": 6,
+      "solver_invoked": false,
+      "accepted_states": 0,
+      "cause": "worker looked for the shared eigenprofile in the grid-specific directory"
+    }
+  },
+  "state": "BLOCKED_AFTER_PRE_SOLVER_FAILURE_AWAITING_RESUBMISSION_AUTHORIZATION"
 }
