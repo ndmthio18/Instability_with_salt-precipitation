@@ -94,6 +94,16 @@ def write_csv(path, records):
         writer.writerows(records)
 
 
+def first_reappearance_after_absence(records):
+    seen_frame_without_downflow = False
+    for row in records:
+        if row["peak_downward_velocity_m_s"] <= 0:
+            seen_frame_without_downflow = True
+        elif seen_frame_without_downflow:
+            return row
+    return None
+
+
 def main(run, out, label):
     run, out = Path(run), Path(out)
     out.mkdir(parents=True, exist_ok=True)
@@ -151,37 +161,37 @@ def main(run, out, label):
                 "tracked_mode": int(mode in TRACKED_MODES),
             })
 
+        cxs, czs, x_cell_grid = cell_grid(centers, cell_x)
+        _, _, down_grid = cell_grid(centers, -velocity[:, 1])
+        row_mean = x_cell_grid.mean(axis=1, keepdims=True)
+        x_anomaly = x_cell_grid - row_mean
+        down_anomaly = down_grid - down_grid.mean(axis=1, keepdims=True)
+        positive_anomaly = x_anomaly[x_anomaly > 0]
+        anomaly_cut = float(np.quantile(positive_anomaly, 0.9)) if positive_anomaly.size else np.inf
+        high_finger = x_anomaly >= anomaly_cut
+        overlap = high_finger & (down_grid > 0)
+        penetration_mm = float((zs[-1] - czs[overlap.any(axis=1)].min()) * 1000.0) if overlap.any() else None
+        flat_x, flat_down = x_cell_grid.ravel(), down_grid.ravel()
+        high_global = flat_x >= np.quantile(flat_x, 0.9)
+        velocity_rows.append({
+            "grid": label,
+            "nominal_time_over_T": selected.get(frame, ""),
+            "frame": frame,
+            "step": int(diagnostics[frame]["step"]),
+            "time_s": float(diagnostics[frame]["time_s"]),
+            "time_over_T": frame_times[frame],
+            "downward_cell_fraction": float(np.mean(down_grid > 0)),
+            "peak_downward_velocity_m_s": float(down_grid.max()),
+            "peak_upward_velocity_m_s": float(-down_grid.min()),
+            "salt_down_correlation": float(np.corrcoef(flat_x, flat_down)[0, 1]),
+            "horizontal_anomaly_down_correlation": float(np.corrcoef(x_anomaly.ravel(), down_anomaly.ravel())[0, 1]),
+            "high_concentration_downward_fraction": float(np.mean(flat_down[high_global] > 0)),
+            "high_concentration_mean_downward_velocity_m_s": float(flat_down[high_global].mean()),
+            "finger_penetration_depth_mm": penetration_mm,
+            "finger_definition": "deepest cell with downward velocity and horizontal concentration anomaly in the top decile of positive anomalies",
+            "source_sha256": manifest[frame]["sha256"],
+        })
         if frame in selected:
-            cxs, czs, x_cell_grid = cell_grid(centers, cell_x)
-            _, _, down_grid = cell_grid(centers, -velocity[:, 1])
-            row_mean = x_cell_grid.mean(axis=1, keepdims=True)
-            x_anomaly = x_cell_grid - row_mean
-            down_anomaly = down_grid - down_grid.mean(axis=1, keepdims=True)
-            positive_anomaly = x_anomaly[x_anomaly > 0]
-            anomaly_cut = float(np.quantile(positive_anomaly, 0.9)) if positive_anomaly.size else np.inf
-            high_finger = x_anomaly >= anomaly_cut
-            overlap = high_finger & (down_grid > 0)
-            penetration_mm = float((zs[-1] - czs[overlap.any(axis=1)].min()) * 1000.0) if overlap.any() else None
-            flat_x, flat_down = x_cell_grid.ravel(), down_grid.ravel()
-            high_global = flat_x >= np.quantile(flat_x, 0.9)
-            velocity_rows.append({
-                "grid": label,
-                "nominal_time_over_T": selected[frame],
-                "frame": frame,
-                "step": int(diagnostics[frame]["step"]),
-                "time_s": float(diagnostics[frame]["time_s"]),
-                "time_over_T": frame_times[frame],
-                "downward_cell_fraction": float(np.mean(down_grid > 0)),
-                "peak_downward_velocity_m_s": float(down_grid.max()),
-                "peak_upward_velocity_m_s": float(-down_grid.min()),
-                "salt_down_correlation": float(np.corrcoef(flat_x, flat_down)[0, 1]),
-                "horizontal_anomaly_down_correlation": float(np.corrcoef(x_anomaly.ravel(), down_anomaly.ravel())[0, 1]),
-                "high_concentration_downward_fraction": float(np.mean(flat_down[high_global] > 0)),
-                "high_concentration_mean_downward_velocity_m_s": float(flat_down[high_global].mean()),
-                "finger_penetration_depth_mm": penetration_mm,
-                "finger_definition": "deepest cell with downward velocity and horizontal concentration anomaly in the top decile of positive anomalies",
-                "source_sha256": manifest[frame]["sha256"],
-            })
             prefix = f"frame_{frame}"
             panel_arrays[f"{prefix}_point_x_m"] = xs
             panel_arrays[f"{prefix}_point_z_m"] = zs
@@ -218,7 +228,10 @@ def main(run, out, label):
         "velocity_scope": "qualitative cell-centre Darcy reconstruction only; not a conservative face flux",
         "mode_basis": "Neumann cosine modes; physical wavenumber k_m=m*pi/W",
         "tracked_modes": list(TRACKED_MODES),
-        "selected_velocity_checkpoints": velocity_rows,
+        "first_observed_downward_flow_sign_only": next((row for row in velocity_rows if row["peak_downward_velocity_m_s"] > 0), None),
+        "first_reappearing_downward_flow_after_absence": first_reappearance_after_absence(velocity_rows),
+        "downward_onset_semantics": "sign-only includes the imposed initial eigenprofile; mechanism timing uses the first positive saved frame after at least one saved frame with no downward cell",
+        "selected_velocity_checkpoints": [row for row in velocity_rows if row["nominal_time_over_T"] != ""],
         "hashes": {
             "field_manifest": sha256(run / "post" / "field_hashes.json"),
             "weighted_diagnostics": sha256(run / "post" / "weighted_diagnostics.csv"),
