@@ -1,0 +1,15 @@
+prefix=@prefix@
+exec_prefix=@exec_prefix@
+libdir=@libdir@
+includedir=@includedir@
+CXX=@CXX@
+CC=@CC@
+DEPENDENCIES=@REQUIRES@
+
+Name: @PACKAGE_NAME@
+Version: @VERSION@
+Description: Conservative P1 two-phase three-component verification model
+URL: https://github.com/ndmthio18/Instability_with_salt-precipitation
+Requires: dune-common dune-geometry dune-grid dune-localfunctions dune-istl dumux
+Libs: -L${libdir}
+Cflags: -I${includedir}

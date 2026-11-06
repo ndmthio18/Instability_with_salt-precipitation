@@ -1,0 +1,27 @@
+{
+  "declared_before_instability_results": true,
+  "common_end_time_s": 60000.0,
+  "base": {"nx": 280, "nz": 100, "dt_s": 227.3717729539139},
+  "one_factor_pairs": {
+    "time": [
+      {"nx": 280, "nz": 100, "dt_s": 227.3717729539139},
+      {"nx": 280, "nz": 100, "dt_s": 113.68588647695695}
+    ],
+    "horizontal": [
+      {"nx": 140, "nz": 100, "dt_s": 227.3717729539139},
+      {"nx": 280, "nz": 100, "dt_s": 227.3717729539139}
+    ],
+    "vertical": [
+      {"nx": 280, "nz": 50, "dt_s": 227.3717729539139},
+      {"nx": 280, "nz": 100, "dt_s": 227.3717729539139}
+    ]
+  },
+  "acceptance": {
+    "surface_salinity_relative_difference": 0.02,
+    "mode_amplitude_relative_difference_when_resolved": 0.10,
+    "post_minimum_growth_rate_relative_difference": 0.10,
+    "inventory_absolute_budget_residual_mol_m2": 1e-8,
+    "profile_norms": "Report L1, L2 and Linf; no pass threshold is assigned before a matched profile extractor is frozen."
+  },
+  "qualification": "nx=280 gives 10 horizontal cells per mode-28 wavelength. This is an exploratory lower bound, not the 600x200 production grid."
+}

@@ -1,0 +1,44 @@
+{
+  "host": "sal",
+  "remote_root": "/temp-hd/zhixin/p1_compositional_20261106",
+  "build_attempt": "build_attempt_06",
+  "cmake_build_type": "Release",
+  "cmake_disable_find_package_superlu": true,
+  "compiler_path": "/usr/lib/hpc/compiler/gnu/14/bin/c++",
+  "compiler_reported_version": "SUSE GCC 15.2.1",
+  "cmake_version": "4.1.3",
+  "modules": {
+    "dune-common": "cce9c197680c1a9964d21ab4d0e0835ea36affb0",
+    "dune-geometry": "7d5b1d81ad997f81637ac97f753f80a64ff9cdb0",
+    "dune-grid": "75b66b0ebf0656e21af08798188b3d2848c9574d",
+    "dune-istl": "1582b9e200ad098d0f00de2c135f9eed38508319",
+    "dune-localfunctions": "f2c7cfb96327fbfd29744dccf5eac015a1dfa06f",
+    "dune-alugrid": "0f80e6d29e80dfa7f79a19369ae65199df77587a",
+    "dune-functions": "a4a62c88fcade7870cde5a8fd353b94b374ff593",
+    "dune-typetree": "ce45e04fb34e615aded244421224986ec954ff5f",
+    "dune-uggrid": "e26f81ff7d84f5d7b228edb3313beae592d502f7",
+    "dumux": "63568e6ad0016124fa89ecd932adb613118527bf",
+    "kiemle2023b_reference": "12a6a8a04475adf51b012c52486436343d76e6d4"
+  },
+  "upstream_state": {
+    "dumux_describe": "3.4.0-rc1-2717-g63568e6ad-dirty",
+    "unrelated_dirty_path": "test/porenetwork/2pupscaling/params.input",
+    "shared_sources_modified_by_P1": false,
+    "brineair_sha256": "4f812301a714fa8e9cc18a9c19e0521e862d809f6f97b2588c4a270a1bc7cd54",
+    "brineair_last_commit": "e695f40b997b0e1f316e7976d1ea01b1322afebd",
+    "upstream_2pnc_last_commit": "a153d6556efbd3da8c12eafe193e462539f954a7"
+  },
+  "executables": {
+    "p1_compositional_2d_sha256": "5f9107f2e76a8f1adad4ecdac05d35859c8e4dd0b633da325d235bdba5d914d8",
+    "p1_compositional_1d_sha256": "79381a44211e7e2c9ad8ccad0ecd759ccaa25891402ef59e41fc984a73db3c4d"
+  },
+  "runtime_workaround": {
+    "reason": "OpenMPI/UCX allocator deadlock during MPI_Init on sal",
+    "environment": {
+      "OMPI_MCA_pml": "ob1",
+      "OMPI_MCA_btl": "self,tcp",
+      "OMPI_MCA_mtl": "^ofi",
+      "UCX_TLS": "tcp,self"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "declared_before_verification_results": true,
+  "criteria_version": "P1-V1",
+  "absolute_component_budget_residual_mol_m2": 1e-9,
+  "relative_component_budget_residual_for_nonzero_signal": 1e-6,
+  "minimum_signal_mol_m2_for_relative_test": 1e-8,
+  "mole_fraction_lower_bound": -1e-10,
+  "mole_fraction_upper_bound": 1.0000000001,
+  "saturation_lower_bound": -1e-10,
+  "saturation_upper_bound": 1.0000000001,
+  "V3_max_pressure_drift_pa": 0.1,
+  "V3_max_spurious_velocity_fraction_of_evaporation": 0.01,
+  "V4_relative_amplitude_error_n40": 0.02,
+  "V4_refinement_ratio_required": 1.5,
+  "V5_max_1d_2d_relative_difference": 1e-8,
+  "V6_phase_state_count_must_change": true,
+  "V6_dt_refinement_max_transition_time_difference_fraction": 0.05,
+  "notes": [
+    "Absolute budget tolerance controls closed or zero-signal cases; a relative residual is not defined for zero physical transport.",
+    "The V3 velocity criterion is relative to 3.065544359023483e-9 m/s.",
+    "Criteria are not to be relaxed after results are inspected."
+  ]
+}

@@ -1,0 +1,56 @@
+[TimeLoop]
+TEnd = 136423.0637723484
+DtInitial = 227.3717729539139
+MaxTimeStepSize = 227.3717729539139
+OutputEverySteps = 50
+
+[Grid]
+Positions0 = 0 0.60
+Cells0 = 600
+Grading0 = 1
+Positions1 = 0 0.20
+Cells1 = 200
+Grading1 = -0.98
+
+[Problem]
+Name = P1_B1_case36877_nx28
+InitialSaltProfile = Eigen
+PerturbationAmplitude = 1e-6
+EigenprofilePath = ../../../../analysis/matched_pair_36877_20261102/planned_M1/eigenprofile.dat
+BoundaryMode = Reservoir
+InitialPhaseState = Both
+AtmosphericPressure = 1e5
+HydrostaticDensity = 1006.0241044335427
+HydrostaticGasDensity = 1.177716
+HydrostaticGasDensityGradient = 1.2e-4
+WaterLevelDepth = 0.6307756332876138
+Permeability = 1.261386079996293e-11
+Porosity = 0.4057687912195745
+Temperature = 293.15
+GravitationalAcceleration = 9.8
+EnableGravity = true
+SaltMoleFraction = 0.0036
+InitialDissolvedAirMoleFraction = 1e-8
+InitialGasSaturation = -1
+SaltDiffusivity = 1.5e-9
+WaveNumber = 28
+EvaporationRate = 3.065544359023483e-9
+EvaporationWaterDensity = 998.203
+TestComponent = 0
+TestMolarFlux = 0
+WriteCellStates = false
+
+[SpatialParams]
+VanGenuchtenAlpha = 0.0003121789225428109
+VanGenuchtenN = 2.98602455003942
+VanGenuchtenL = -0.8395681012108449
+Swr = 0.1282679353072967
+Snr = 0
+
+[Newton]
+MaxRelativeShift = 1e-8
+MaxSteps = 20
+
+[Vtk]
+AddVelocity = true
+AddProcessRank = false

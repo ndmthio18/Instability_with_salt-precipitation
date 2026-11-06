@@ -1,0 +1,9 @@
+/* begin p1compositional */
+#define PACKAGE "@DUNE_MOD_NAME@"
+#define PACKAGE_BUGREPORT "@DUNE_MAINTAINER@"
+#define PACKAGE_NAME "@DUNE_MOD_NAME@"
+#define PACKAGE_STRING "@DUNE_MOD_NAME@ @DUNE_MOD_VERSION@"
+#define PACKAGE_TARNAME "@DUNE_MOD_NAME@"
+#define PACKAGE_URL "@DUNE_MOD_URL@"
+#define PACKAGE_VERSION "@DUNE_MOD_VERSION@"
+/* end p1compositional */
