@@ -1,0 +1,27 @@
+{
+  "audit": "P1-R1 Richards-Salt Unit Conversion and Conservation Audit",
+  "date": "2026-11-06",
+  "frozen_local_source": {
+    "manifest": "model/transport_wp8_background_v2/source_manifest.json",
+    "paper1_commit": "158395f3d25a29680dea5bcd0d3a24e52a28b4cd",
+    "files": {
+      "main.cc": "0a6595fff455cecd7c528733a0463845649bafbd76dcbb592563e1b672f8b39d",
+      "model.hh": "b59fd1718863a712a8e619f914be9152302bec990dd7ed19359daed699c118db",
+      "transportdiagnostics.hh": "9ac499200f41b290dcb5287d17be045aab9c2f7dfd428682895fe1bef7fc6c2b"
+    }
+  },
+  "pinned_upstream_dumux": {
+    "path": "/temp-hd/zhixin/dumux_salt_REV/DUMUX/dumux",
+    "commit": "63568e6ad0016124fa89ecd932adb613118527bf",
+    "worktree_note": "The inspected upstream checkout had one unrelated pre-existing modification at test/porenetwork/2pupscaling/params.input; none of the audited files was modified.",
+    "files": {
+      "dumux/porousmediumflow/compositional/localresidual.hh": "b60a34f3c3409db064c1c0bed6a85518ce1d69c8873da5ab360ae9f19668bae9",
+      "dumux/porousmediumflow/richardsnc/model.hh": "67efd61cadb0fc0b49ec40e6588eb5bb8772f1b362491bb5c31805cc5545cec5",
+      "dumux/porousmediumflow/richardsnc/volumevariables.hh": "b235a8e2d16e5b1aa34290c7fa08484fcc818b929fcd5d5e310d66da17e31bb6",
+      "dumux/flux/box/fickslaw.hh": "848b1501417ace074ae0eacd3acf30363d2121809008462af73545f35cf7c18f",
+      "dumux/flux/fickslaw_fwd.hh": "3208defeb69f8fbbc80477cd8e2a2e159a7fb8b91bc9e9d3e2864ef2bfe37469",
+      "dumux/flux/referencesystemformulation.hh": "6bc2d2af034a2b1fee11aaac2a003f9815227eadcdb4bce6f9c4eadfe9c170f4"
+    }
+  },
+  "scope_note": "Read-only audit. No frozen source, solver physics, or production case was modified."
+}

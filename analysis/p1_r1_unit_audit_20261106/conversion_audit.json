@@ -1,0 +1,70 @@
+{
+  "case36877_evaporation_if_interpreted_as_pure_water_volume_demand": {
+    "H2O_mass_flux_kg_per_m2_s": 3.0655443589999998e-06,
+    "H2O_molar_flux_mol_per_m2_s": 0.00017030801994444443,
+    "assumption": "e is an equivalent pure-water volume demand referenced to 1000 kg/m3",
+    "e_m_per_s": 3.065544359e-09
+  },
+  "checks": {
+    "mass_molar_component_identities": "PASS",
+    "total_mass_closure": "PASS"
+  },
+  "constants": {
+    "M_H2O_kg_per_mol": 0.018,
+    "M_NaCl_kg_per_mol": 0.0584428,
+    "rho_reference_kg_per_m3": 1000.0
+  },
+  "non_equivalence": {
+    "case36877_initial": {
+      "dc_dx_mol_per_m3": -4154.27093685139,
+      "density_change_fraction_per_unit_x_drho_dx_over_rho": 0.00775439379964045,
+      "drho_dx_kg_per_m3": 2170.8598660552525,
+      "extra_molar_salt_storage_fraction_x_dc_dx_over_c": -0.0002692663426628911,
+      "x_NaCl": 0.0036
+    },
+    "high_concentration_audit_state": {
+      "dc_dx_mol_per_m3": -14869.9427882093,
+      "density_change_fraction_per_unit_x_drho_dx_over_rho": 0.15623867287147827,
+      "drho_dx_kg_per_m3": 1881.3003043760546,
+      "extra_molar_salt_storage_fraction_x_dc_dx_over_c": -0.027222977974963366,
+      "x_NaCl": 0.1
+    },
+    "representative_p1_top_state": {
+      "dc_dx_mol_per_m3": -4583.206828101538,
+      "density_change_fraction_per_unit_x_drho_dx_over_rho": 0.01703462128130516,
+      "drho_dx_kg_per_m3": 2161.4774021827543,
+      "extra_molar_salt_storage_fraction_x_dc_dx_over_c": -0.0006618781630030045,
+      "x_NaCl": 0.008018127628
+    }
+  },
+  "purpose": "P1-R1 deterministic conversion audit; not a solver validation",
+  "states": {
+    "case36877_initial": {
+      "Mbar_kg_per_mol": 0.018145594079999997,
+      "c_mol_per_m3_liquid": 55541.198445987866,
+      "rho_kg_per_m3_liquid": 1007.8280417176225,
+      "salt_mass_concentration_kg_per_m3_liquid": 11.685539349141047,
+      "w_NaCl": 0.011594774966992981,
+      "water_mass_concentration_kg_per_m3_liquid": 996.1425023684814,
+      "x_NaCl": 0.0036
+    },
+    "high_concentration_audit_state": {
+      "Mbar_kg_per_mol": 0.02204428,
+      "c_mol_per_m3_liquid": 54622.76317412813,
+      "rho_kg_per_m3_liquid": 1204.1194857841692,
+      "salt_mass_concentration_kg_per_m3_liquid": 319.2307223632935,
+      "w_NaCl": 0.26511548574051863,
+      "water_mass_concentration_kg_per_m3_liquid": 884.8887634208756,
+      "x_NaCl": 0.1
+    },
+    "representative_p1_top_state": {
+      "Mbar_kg_per_mol": 0.018324275532033675,
+      "c_mol_per_m3_liquid": 55521.906216858195,
+      "rho_kg_per_m3_liquid": 1017.398707581443,
+      "salt_mass_concentration_kg_per_m3_liquid": 26.017666821534775,
+      "w_NaCl": 0.025572734295469954,
+      "water_mass_concentration_kg_per_m3_liquid": 991.3810407599083,
+      "x_NaCl": 0.008018127628
+    }
+  }
+}
