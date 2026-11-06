@@ -1,0 +1,205 @@
+{
+  "p1r2_driven": [
+    {
+      "case": "V5_mass_mode_A_1d",
+      "records_read": 1201,
+      "records_written": 61,
+      "output_stride": 20,
+      "time_window_s": [
+        0.0,
+        136423.0637723484
+      ],
+      "soil_mass_fraction_range": [
+        0.011584505959656094,
+        0.06048220547563973
+      ],
+      "water_activity_range": [
+        0.9933513688373353,
+        0.9633816087005987
+      ],
+      "film_flux_range_kg_m2_s": [
+        3.0162708771048996e-05,
+        2.863155851413649e-05
+      ],
+      "film_flux_relative_decline": 0.05076302226483539,
+      "equilibrium_mass_fraction": 0.2649408697676898,
+      "max_soil_mass_fraction": 0.06048220547568309,
+      "fraction_of_equilibrium_reached": 0.22828567570083155,
+      "seed_event_fired": false,
+      "eligibility_time_s": null,
+      "crust_height_m": 0.0,
+      "note": "One-way diagnostic. The salinity trajectory was produced under a fixed prescribed evaporation flux; the film flux reported here is salinity dependent and was not fed back. No onset or growth claim.",
+      "source": "model/p1_r2_conservative_richards/results/stage_c_20261106/runs/V5_mass_mode_A_1d/surface_events.csv"
+    },
+    {
+      "case": "V5_mass_mode_B_1d",
+      "records_read": 1201,
+      "records_written": 61,
+      "output_stride": 20,
+      "time_window_s": [
+        0.0,
+        136423.0637723484
+      ],
+      "soil_mass_fraction_range": [
+        0.011584505959656094,
+        0.06312710571869665
+      ],
+      "water_activity_range": [
+        0.9933513688373353,
+        0.9616197786054482
+      ],
+      "film_flux_range_kg_m2_s": [
+        3.0162708771048996e-05,
+        2.8541572362876336e-05
+      ],
+      "film_flux_relative_decline": 0.05374638002435219,
+      "equilibrium_mass_fraction": 0.2649408697676898,
+      "max_soil_mass_fraction": 0.0631271057187847,
+      "fraction_of_equilibrium_reached": 0.2382686588676822,
+      "seed_event_fired": false,
+      "eligibility_time_s": null,
+      "crust_height_m": 0.0,
+      "note": "One-way diagnostic. The salinity trajectory was produced under a fixed prescribed evaporation flux; the film flux reported here is salinity dependent and was not fed back. No onset or growth claim.",
+      "source": "model/p1_r2_conservative_richards/results/stage_c_20261106/runs/V5_mass_mode_B_1d/surface_events.csv"
+    },
+    {
+      "case": "V8_case36877_R24_2d",
+      "records_read": 601,
+      "records_written": 31,
+      "output_stride": 20,
+      "time_window_s": [
+        0.0,
+        136423.0637723484
+      ],
+      "soil_mass_fraction_range": [
+        0.011584505959656096,
+        0.060481170548548256
+      ],
+      "water_activity_range": [
+        0.9933513688373353,
+        0.9633822948260475
+      ],
+      "film_flux_range_kg_m2_s": [
+        3.0162708771048996e-05,
+        2.863159355880901e-05
+      ],
+      "film_flux_relative_decline": 0.0507618604105475,
+      "equilibrium_mass_fraction": 0.2649408697676898,
+      "max_soil_mass_fraction": 0.06048450314057344,
+      "fraction_of_equilibrium_reached": 0.22829434806947127,
+      "seed_event_fired": false,
+      "eligibility_time_s": null,
+      "crust_height_m": 0.0,
+      "note": "One-way diagnostic. The salinity trajectory was produced under a fixed prescribed evaporation flux; the film flux reported here is salinity dependent and was not fed back. No onset or growth claim.",
+      "source": "model/p1_r2_conservative_richards/results/stage_d_20261106/run/surface_events.csv"
+    }
+  ],
+  "missing_sources": [],
+  "synthetic_continuation": [
+    {
+      "case": "synthetic|soil_top|finite_da",
+      "declared_synthetic": true,
+      "ramp_seconds": 100000.0,
+      "hold_seconds": 400000.0,
+      "dt_s": 250.0,
+      "activation_time_s": 100000.0,
+      "eligibility_time_s": 100000.0,
+      "seed_height_m": 0.0001,
+      "final_height_m": 0.00015038193056729328,
+      "height_growth_factor": 1.5038193056729328,
+      "final_evaporation_flux_kg_m2_s": 1.781528648571137e-05,
+      "final_growth_velocity_m_s": 1.4681031818771122e-10,
+      "final_salt_flux_soil_kg_m2_s": 1.3625321649768527e-06,
+      "final_water_flux_soil_kg_m2_s": 1.786708307505391e-05,
+      "final_top_supersaturation": 0.0013220811613522672,
+      "final_damkohler": 0.438058732385912,
+      "salt_residual_relative": 8.115031719321107e-16,
+      "water_residual_relative": 9.354598930021021e-15,
+      "dissolved_storage_gap_relative": 0.00021427590822618785,
+      "constant_porosity_defensible": false,
+      "large_da_valid": false,
+      "pe_much_smaller_than_da": true,
+      "internal_over_top_precipitation": 6.046771969338968
+    },
+    {
+      "case": "synthetic|soil_top|large_da",
+      "declared_synthetic": true,
+      "ramp_seconds": 100000.0,
+      "hold_seconds": 400000.0,
+      "dt_s": 250.0,
+      "activation_time_s": 100000.0,
+      "eligibility_time_s": 100000.0,
+      "seed_height_m": 0.0001,
+      "final_height_m": 0.00019919055185972707,
+      "height_growth_factor": 1.9919055185972707,
+      "final_evaporation_flux_kg_m2_s": 1.781528648571137e-05,
+      "final_growth_velocity_m_s": 2.479763796493414e-10,
+      "final_salt_flux_soil_kg_m2_s": 2.8680975041375793e-06,
+      "final_water_flux_soil_kg_m2_s": 1.7902667151261304e-05,
+      "final_top_supersaturation": 0.002232918377734302,
+      "final_damkohler": 0.7685612782002296,
+      "salt_residual_relative": 6.303001856039904e-16,
+      "water_residual_relative": 5.3098828341042844e-15,
+      "dissolved_storage_gap_relative": 0.002301131791579192,
+      "constant_porosity_defensible": false,
+      "large_da_valid": false,
+      "pe_much_smaller_than_da": true,
+      "internal_over_top_precipitation": 7.805949458791462
+    },
+    {
+      "case": "synthetic|crust_top|finite_da",
+      "declared_synthetic": true,
+      "ramp_seconds": 100000.0,
+      "hold_seconds": 400000.0,
+      "dt_s": 250.0,
+      "activation_time_s": 100000.0,
+      "eligibility_time_s": 100000.0,
+      "seed_height_m": 0.0001,
+      "final_height_m": 0.00015008832637048727,
+      "height_growth_factor": 1.5008832637048726,
+      "final_evaporation_flux_kg_m2_s": 1.771150436311004e-05,
+      "final_growth_velocity_m_s": 1.4574537582483397e-10,
+      "final_salt_flux_soil_kg_m2_s": 1.3505684547279907e-06,
+      "final_water_flux_soil_kg_m2_s": 1.7762935149974862e-05,
+      "final_top_supersaturation": 0.0013124897754841042,
+      "final_damkohler": 0.4363498791001239,
+      "salt_residual_relative": 6.116712098541655e-16,
+      "water_residual_relative": 3.4979609308155583e-15,
+      "dissolved_storage_gap_relative": 0.00021945401797818492,
+      "constant_porosity_defensible": false,
+      "large_da_valid": false,
+      "pe_much_smaller_than_da": true,
+      "internal_over_top_precipitation": 6.035783871126773
+    },
+    {
+      "case": "synthetic|crust_top|large_da",
+      "declared_synthetic": true,
+      "ramp_seconds": 100000.0,
+      "hold_seconds": 400000.0,
+      "dt_s": 250.0,
+      "activation_time_s": 100000.0,
+      "eligibility_time_s": 100000.0,
+      "seed_height_m": 0.0001,
+      "final_height_m": 0.0001982153915907478,
+      "height_growth_factor": 1.982153915907478,
+      "final_evaporation_flux_kg_m2_s": 1.764014117967534e-05,
+      "final_growth_velocity_m_s": 2.4553847897689226e-10,
+      "final_salt_flux_soil_kg_m2_s": 2.829134390851025e-06,
+      "final_water_flux_soil_kg_m2_s": 1.772666538201738e-05,
+      "final_top_supersaturation": 0.0022109661530010415,
+      "final_damkohler": 0.7610545379814229,
+      "salt_residual_relative": 1.911263223515761e-15,
+      "water_residual_relative": 5.4040275743334547e-14,
+      "dissolved_storage_gap_relative": 0.0022864253703369004,
+      "constant_porosity_defensible": false,
+      "large_da_valid": false,
+      "pe_much_smaller_than_da": true,
+      "internal_over_top_precipitation": 7.772193860768992
+    }
+  ],
+  "declared_limitations": [
+    "The P1-R2 salinity histories were produced with a fixed prescribed evaporation flux; the film flux computed here was not fed back.",
+    "No crust forms on any committed P1-R2 trajectory because the soil surface never reaches halite equilibrium within the frozen window.",
+    "The synthetic continuation prescribes the soil concentration and is not a solution of the Richards-salt problem."
+  ]
+}

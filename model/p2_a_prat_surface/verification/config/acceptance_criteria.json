@@ -1,0 +1,83 @@
+{
+  "schema_version": 1,
+  "registered_before_runs": true,
+  "task": "P2-A heterogeneity film evaporation + Prat (2026) growth",
+  "tolerances": {
+    "three_route_growth_relative": 1e-12,
+    "damkohler_identity_relative": 1e-12,
+    "route_difference_identity_relative": 1e-12,
+    "profile_boundary_absolute": 1e-14,
+    "profile_ode_relative": 1e-6,
+    "quadrature_relative": 1e-6,
+    "large_da_limit_relative_at_da_10": 0.01,
+    "large_da_limit_relative_at_da_1000": 1e-6,
+    "analytic_linear_height_relative": 1e-12,
+    "time_step_observed_order_min_heun": 1.8,
+    "time_step_observed_order_min_euler": 0.9,
+    "salt_budget_relative": 1e-10,
+    "water_budget_relative": 1e-10,
+    "film_flux_hand_check_relative": 1e-12,
+    "zero_driving_absolute_kg_m2_s": 1e-300,
+    "saturated_water_activity_band": [0.74, 0.77]
+  },
+  "declared_reference_parameters": {
+    "equilibrium_mass_fraction": {
+      "value": 0.2649408697676898,
+      "provenance": "mass-fraction image of the frozen Case 36877 input Transport.SolubilityMoleFraction = 0.1, converted with the frozen molar masses"
+    },
+    "crust_porosity": {
+      "value": 0.4,
+      "provenance": "declared modelling input; Prat (2026) treats eps_c as a given uniform parameter and the audit records no numerical value"
+    },
+    "crystal_density": {
+      "value": 2165.0,
+      "provenance": "DuMuX dumux/material/components/nacl.hh NaCl::solidDensity"
+    },
+    "specific_area": {
+      "value": 100000.0,
+      "provenance": "declared modelling input (1/m); no value is available from the audit. Swept over three decades in the verification evidence."
+    },
+    "reaction_coefficient": {
+      "value": 1e-07,
+      "provenance": "declared modelling input (m/s); no value is available from the audit. Swept over three decades in the verification evidence."
+    },
+    "effective_salt_diffusivity": {
+      "value": 9.48683298050514e-10,
+      "provenance": "declared tortuosity closure D_s_eff = D_mol * sqrt(eps_c) with the frozen Case 36877 Problem.SaltDiffusivity = 1.5e-9 m2/s; not calibrated"
+    },
+    "beta": {
+      "value": 2.0,
+      "provenance": "Prat (2026) ideal cubic construction, Appendix; recorded in docs/PRAT_PHYSICS_AUDIT.md section 3"
+    },
+    "vapour_density": {
+      "value": 0.01730312942218652,
+      "provenance": "ideal-gas water-vapour density at RH = 0.4, T = 293.15 K, p = 1e5 Pa; kept non-zero so the equation (6) sweep term is reported rather than assumed away"
+    },
+    "film_thickness": {
+      "value": 0.0083,
+      "provenance": "heterogeneity cylinder revision v12 Revision.FilmThickness; inherited physical film, NOT calibrated to any evaporation rate"
+    },
+    "relative_humidity": {
+      "value": 0.4,
+      "provenance": "heterogeneity FreeFlow.RelativeHumidity default"
+    },
+    "temperature": {
+      "value": 293.15,
+      "provenance": "heterogeneity Reservoir.Temperature default"
+    },
+    "atmospheric_pressure": {
+      "value": 100000.0,
+      "provenance": "heterogeneity Reservoir.AtmosphericPressure default"
+    },
+    "seed_height": {
+      "value": 0.0001,
+      "provenance": "declared seed-formation input; NOT a nucleation prediction"
+    }
+  },
+  "notes": [
+    "Relative budget denominators use max(|integrated boundary transfer|, |inventory change|).",
+    "a_v and k_r are declared inputs, not fitted. Absolute growth rates are therefore parameter-conditional; the verification targets are identities and convergence orders, which are parameter-independent.",
+    "No tolerance in this file validates physics. They bound implementation and discretisation error only.",
+    "The P1-R2 driven chain is a one-way diagnostic: the soil salinity trajectory it reads was produced under a FIXED prescribed evaporation flux, while this module computes a salinity-dependent flux. The two are inconsistent by construction and no feedback is claimed."
+  ]
+}

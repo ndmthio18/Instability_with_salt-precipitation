@@ -1,0 +1,276 @@
+{
+  "generated": "2026-11-07",
+  "python": "3.12.4",
+  "criteria_file": "verification\\config\\acceptance_criteria.json",
+  "declared_reference": {
+    "equilibrium_mass_fraction": 0.2649408697676898,
+    "crust_porosity": 0.4,
+    "crystal_density": 2165.0,
+    "specific_area": 100000.0,
+    "reaction_coefficient": 1e-07,
+    "effective_salt_diffusivity": 9.48683298050514e-10,
+    "beta": 2.0,
+    "vapour_density": 0.01730312942218652,
+    "film_thickness": 0.0083,
+    "relative_humidity": 0.4,
+    "temperature": 293.15,
+    "atmospheric_pressure": 100000.0,
+    "seed_height": 0.0001
+  },
+  "evaporation": {
+    "flux_fresh_water_kg_m2_s": 3.0502497217541225e-05,
+    "flux_at_equilibrium_kg_m2_s": 1.781528648571137e-05,
+    "salinity_reduction_fraction": 0.41594006685242013,
+    "water_activity_at_equilibrium": 0.7512135808791999,
+    "transfer_coefficient_kg_m2_s": 0.0034504574158055975,
+    "vapour_diffusion_coefficient_m2_s": 2.418907449661513e-05,
+    "saturation_pressure_pa": 2339.2147667769013,
+    "legacy_p1_prescribed_flux_kg_m2_s": 3.0600355758103174e-06,
+    "ratio_declared_film_to_legacy": 5.821921361484095,
+    "equivalent_film_thickness_for_legacy_flux_m": 0.048321947300318,
+    "note": "The equivalent thickness is reported as a diagnostic only. P2-A item 2 forbids calibrating the film against a prescribed flux, and no calibration was performed."
+  },
+  "growth_law": {
+    "damkohler_star": 0.0027893532797237195,
+    "efficiency_large_da": 0.05016490271245252,
+    "internal_over_top_large_da_limit": 18.934255743144664,
+    "identity": "In the large-Da limit the depth-integrated internal reaction divided by the top skeleton rate equals 1/sqrt(Da*), so f_inf = 1/(1 + internal/top). Derived in this work from the analytic profile; Prat (2026) does not state it.",
+    "smallest_height_with_da_above_10_m": 0.0008254041852680181,
+    "heights_with_defensible_constant_porosity": 3,
+    "heights_examined": 61
+  },
+  "interface_comparison": {
+    "rows": 200,
+    "evaluated": 194,
+    "model_domain_exits": 6,
+    "acceptable_at_1_percent": 143,
+    "max_relative_flux_difference": 0.13130500131467895,
+    "max_difference_case": {
+      "height_m": 0.0031622776601683794,
+      "specific_area_1_m": 1000.0,
+      "reaction_coefficient_m_s": 1e-09,
+      "damkohler": 0.019370508886970277
+    },
+    "largest_acceptable_peclet": 1.234940951710822,
+    "smallest_unacceptable_peclet": 0.012349409517108223,
+    "largest_acceptable_top_supersaturation": 0.0022109661530010415,
+    "flux_sensitivity_to_concentration": 4.4266951593057655,
+    "first_order_supersaturation_threshold": 0.0022590216041820893,
+    "first_order_prediction_max_relative_error": 0.05483220527649882,
+    "criterion": "Option A omits the crust-top supersaturation C*_top, so to first order its relative evaporation-flux error is S * C*_top with S = -d ln j / dC evaluated at C_eq. At the declared film, S is reported above and the 1 per cent acceptance level corresponds to the quoted C*_top threshold. Peclet alone is NOT the criterion: the sweep contains acceptable rows at larger Pe than some unacceptable rows, because C*_top scales as Pe/sqrt(Da) for Da >> 1."
+  },
+  "budgets": [
+    {
+      "case": "soil_top|finite_da",
+      "delta_solid_salt_kg_m2": 0.16691512647020645,
+      "delta_dissolved_salt_kg_m2": 0.002957876763195722,
+      "delta_water_kg_m2": 0.008162600980443864,
+      "integrated_salt_from_soil_kg_m2": 0.16987300323340238,
+      "integrated_water_from_soil_kg_m2": 3.5712194979727947,
+      "integrated_evaporation_kg_m2": 3.563057297142322,
+      "vapour_swept_kg_m2": 4.0014992332487835e-07,
+      "seed_salt_kg_m2": 0.0,
+      "seed_water_kg_m2": 0.0,
+      "salt_residual_kg_m2": 1.942890293094024e-16,
+      "water_residual_kg_m2": -4.796163466380676e-14,
+      "salt_residual_relative": 1.1437310556195492e-15,
+      "water_residual_relative": 1.3430043908259411e-14,
+      "final_height_m": 0.00012312587009906967,
+      "final_evaporation_flux_kg_m2_s": 1.781528648571137e-05,
+      "final_growth_velocity_m_s": 1.2578592722692852e-10,
+      "dissolved_storage_gap_relative": 8.8734840656179e-05
+    },
+    {
+      "case": "soil_top|large_da",
+      "delta_solid_salt_kg_m2": 0.3909478068778257,
+      "delta_dissolved_salt_kg_m2": 0.00637176166150971,
+      "delta_water_kg_m2": 0.017476991263462582,
+      "integrated_salt_from_soil_kg_m2": 0.3973195685393359,
+      "integrated_water_from_soil_kg_m2": 3.580533430252306,
+      "integrated_evaporation_kg_m2": 3.563057297142322,
+      "vapour_swept_kg_m2": 8.581534781435504e-07,
+      "seed_salt_kg_m2": 0.0,
+      "seed_water_kg_m2": 0.0,
+      "salt_residual_kg_m2": 4.996003610813204e-16,
+      "water_residual_kg_m2": -4.440892098500626e-16,
+      "salt_residual_relative": 1.2574270200634691e-15,
+      "water_residual_relative": 1.240287846771394e-16,
+      "final_height_m": 0.00014959527592987376,
+      "final_evaporation_flux_kg_m2_s": 1.781528648571137e-05,
+      "final_growth_velocity_m_s": 2.479763796493414e-10,
+      "dissolved_storage_gap_relative": 0.0014900670966456417
+    },
+    {
+      "case": "crust_top|finite_da",
+      "delta_solid_salt_kg_m2": 0.16601339271353727,
+      "delta_dissolved_salt_kg_m2": 0.0029430355158027287,
+      "delta_water_kg_m2": 0.008121863803061388,
+      "integrated_salt_from_soil_kg_m2": 0.1689564282293392,
+      "integrated_water_from_soil_kg_m2": 3.5548041739298304,
+      "integrated_evaporation_kg_m2": 3.5466827082768,
+      "vapour_swept_kg_m2": 3.981500360066304e-07,
+      "seed_salt_kg_m2": 0.0,
+      "seed_water_kg_m2": 0.0,
+      "salt_residual_kg_m2": -7.771561172376096e-16,
+      "water_residual_kg_m2": 4.884981308350689e-15,
+      "salt_residual_relative": 4.599742817613927e-15,
+      "water_residual_relative": 1.3741913954574745e-15,
+      "final_height_m": 0.0001230102905833966,
+      "final_evaporation_flux_kg_m2_s": 1.772626629960117e-05,
+      "final_growth_velocity_m_s": 1.2506265261397203e-10,
+      "dissolved_storage_gap_relative": 9.525691518635703e-05
+    },
+    {
+      "case": "crust_top|large_da",
+      "delta_solid_salt_kg_m2": 0.38650905518951273,
+      "delta_dissolved_salt_kg_m2": 0.006308601333081339,
+      "delta_water_kg_m2": 0.017305690185223654,
+      "integrated_salt_from_soil_kg_m2": 0.3928176565225939,
+      "integrated_water_from_soil_kg_m2": 3.5453330764033795,
+      "integrated_evaporation_kg_m2": 3.528028235935113,
+      "vapour_swept_kg_m2": 8.497168159727878e-07,
+      "seed_salt_kg_m2": 0.0,
+      "seed_water_kg_m2": 0.0,
+      "salt_residual_kg_m2": -1.6653345369377348e-16,
+      "water_residual_kg_m2": -1.412203687323199e-13,
+      "salt_residual_relative": 4.23945947766212e-16,
+      "water_residual_relative": 3.9832750742726606e-14,
+      "final_height_m": 0.0001491076957953823,
+      "final_evaporation_flux_kg_m2_s": 1.764014117967534e-05,
+      "final_growth_velocity_m_s": 2.4553847897689226e-10,
+      "dissolved_storage_gap_relative": 0.0014925549780409777
+    }
+  ],
+  "time_step_convergence": {
+    "euler": {
+      "orders": [
+        0.9933461007521249,
+        0.9994123903270432,
+        0.9997062078908914,
+        0.999853245562916
+      ],
+      "min_order": 0.9933461007521249
+    },
+    "heun": {
+      "orders": [
+        1.9900111483165541,
+        1.9993421567411407,
+        2.0005958306666636,
+        2.004003383229052
+      ],
+      "min_order": 1.9900111483165541
+    }
+  },
+  "supply_response": [
+    {
+      "available_fraction_of_demand": 2.0,
+      "salt_demand_kg_m2_s": 6.303535176597092e-06,
+      "salt_available_kg_m2_s": 1.2607070353194183e-05,
+      "salt_ratio": 0.5,
+      "salt_limited": false,
+      "water_limited": false,
+      "model_domain_exit_raised": false,
+      "growth_velocity_unchanged_m_s": 2.479055522636303e-10
+    },
+    {
+      "available_fraction_of_demand": 1.5,
+      "salt_demand_kg_m2_s": 6.303535176597092e-06,
+      "salt_available_kg_m2_s": 9.455302764895637e-06,
+      "salt_ratio": 0.6666666666666667,
+      "salt_limited": false,
+      "water_limited": false,
+      "model_domain_exit_raised": false,
+      "growth_velocity_unchanged_m_s": 2.479055522636303e-10
+    },
+    {
+      "available_fraction_of_demand": 1.0,
+      "salt_demand_kg_m2_s": 6.303535176597092e-06,
+      "salt_available_kg_m2_s": 6.303535176597092e-06,
+      "salt_ratio": 1.0,
+      "salt_limited": false,
+      "water_limited": false,
+      "model_domain_exit_raised": false,
+      "growth_velocity_unchanged_m_s": 2.479055522636303e-10
+    },
+    {
+      "available_fraction_of_demand": 0.9,
+      "salt_demand_kg_m2_s": 6.303535176597092e-06,
+      "salt_available_kg_m2_s": 5.673181658937383e-06,
+      "salt_ratio": 1.111111111111111,
+      "salt_limited": true,
+      "water_limited": true,
+      "model_domain_exit_raised": true,
+      "growth_velocity_unchanged_m_s": 2.479055522636303e-10
+    },
+    {
+      "available_fraction_of_demand": 0.5,
+      "salt_demand_kg_m2_s": 6.303535176597092e-06,
+      "salt_available_kg_m2_s": 3.151767588298546e-06,
+      "salt_ratio": 2.0,
+      "salt_limited": true,
+      "water_limited": true,
+      "model_domain_exit_raised": true,
+      "growth_velocity_unchanged_m_s": 2.479055522636303e-10
+    },
+    {
+      "available_fraction_of_demand": 0.1,
+      "salt_demand_kg_m2_s": 6.303535176597092e-06,
+      "salt_available_kg_m2_s": 6.303535176597093e-07,
+      "salt_ratio": 9.999999999999998,
+      "salt_limited": true,
+      "water_limited": true,
+      "model_domain_exit_raised": true,
+      "growth_velocity_unchanged_m_s": 2.479055522636303e-10
+    }
+  ],
+  "connectivity_response": [
+    {
+      "crust_saturation": 1.0,
+      "closure_active": true,
+      "salt_flux_soil_kg_m2_s": 6.303535176597092e-06,
+      "water_flux_soil_kg_m2_s": 1.7902642269492784e-05,
+      "growth_velocity_m_s": 2.479055522636303e-10
+    },
+    {
+      "crust_saturation": 0.995,
+      "closure_active": true,
+      "salt_flux_soil_kg_m2_s": 6.303375928433499e-06,
+      "water_flux_soil_kg_m2_s": 1.790220546912617e-05,
+      "growth_velocity_m_s": 2.479055522636303e-10
+    },
+    {
+      "crust_saturation": 0.99,
+      "closure_active": true,
+      "salt_flux_soil_kg_m2_s": 6.303216680269906e-06,
+      "water_flux_soil_kg_m2_s": 1.790176866875955e-05,
+      "growth_velocity_m_s": 2.479055522636303e-10
+    },
+    {
+      "crust_saturation": 0.95,
+      "closure_active": false,
+      "salt_flux_soil_kg_m2_s": NaN,
+      "water_flux_soil_kg_m2_s": NaN,
+      "growth_velocity_m_s": NaN
+    },
+    {
+      "crust_saturation": 0.8,
+      "closure_active": false,
+      "salt_flux_soil_kg_m2_s": NaN,
+      "water_flux_soil_kg_m2_s": NaN,
+      "growth_velocity_m_s": NaN
+    },
+    {
+      "crust_saturation": 0.4,
+      "closure_active": false,
+      "salt_flux_soil_kg_m2_s": NaN,
+      "water_flux_soil_kg_m2_s": NaN,
+      "growth_velocity_m_s": NaN
+    }
+  ],
+  "limitations": [
+    "Relative budget denominators use max(|integrated boundary transfer|, |inventory change|).",
+    "a_v and k_r are declared inputs, not fitted. Absolute growth rates are therefore parameter-conditional; the verification targets are identities and convergence orders, which are parameter-independent.",
+    "No tolerance in this file validates physics. They bound implementation and discretisation error only.",
+    "The P1-R2 driven chain is a one-way diagnostic: the soil salinity trajectory it reads was produced under a FIXED prescribed evaporation flux, while this module computes a salinity-dependent flux. The two are inconsistent by construction and no feedback is claimed."
+  ]
+}
