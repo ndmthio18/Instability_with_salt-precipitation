@@ -97,21 +97,21 @@ Upstream RichardsNC defaults to a compositional local residual and exposes these
 
 ## Deterministic conversion check
 
-`analysis/p1_r1_unit_audit_20261106/conversion_audit.py` reproduces the binary H2O–NaCl conversions and asserts component mass identities. Its committed JSON output gives, for the Case 36877 initial state \(x_s=0.0036\):
+`analysis/p1_r1_unit_audit_20261106/conversion_audit.py` now parses the actual frozen Case 36877 input and rejects the previously used rounded substitutes. The frozen input SHA-256 is `25395acfec12d1d21659fe33f774d56646596c271908e4b64dd4a841f123c6ef`. Its committed JSON output gives, for \(x_s=0.0036\):
 
-- \(\bar M=0.01814559408\ \mathrm{kg\,mol^{-1}}\),
-- \(w_s=0.011594775\),
-- \(\rho=1007.8280\ \mathrm{kg\,m^{-3}}\),
-- \(c=55541.1984\ \mathrm{mol\,m^{-3}}\).
+- \(\bar M=0.018160808992\ \mathrm{kg\,mol^{-1}}\),
+- \(w_s=0.0115845059596561\),
+- \(\rho=1006.02410443354\ \mathrm{kg\,m^{-3}}\),
+- \(c=55395.3353551984\ \mathrm{mol\,m^{-3}}\).
 
-For the explicitly conditional interpretation of \(e=3.065544359\times10^{-9}\ \mathrm{m\,s^{-1}}\) as a pure-water volume demand referenced to \(1000\ \mathrm{kg\,m^{-3}}\):
+For the explicitly conditional interpretation of \(e=3.065544359023483\times10^{-9}\ \mathrm{m\,s^{-1}}\) as a pure-water volume demand referenced to the frozen `PureWaterDensity = 998.203 kg m^-3`:
 
 \[
-F_w^m=3.065544359\times10^{-6}\ \mathrm{kg\,m^{-2}\,s^{-1}},
+F_w^m=3.06003557581032\times10^{-6}\ \mathrm{kg\,m^{-2}\,s^{-1}},
 \]
 
 \[
-F_w^n=1.7030801994\times10^{-4}\ \mathrm{mol\,m^{-2}\,s^{-1}}.
+F_w^n=1.69857786046640\times10^{-4}\ \mathrm{mol\,m^{-2}\,s^{-1}}.
 \]
 
 These are boundary conversions under a declared reference-density assumption; they are not evidence that the interior normalized residual conserves physical components.

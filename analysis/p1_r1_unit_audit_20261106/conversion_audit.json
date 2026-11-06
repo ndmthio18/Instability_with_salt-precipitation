@@ -1,69 +1,85 @@
 {
   "case36877_evaporation_if_interpreted_as_pure_water_volume_demand": {
-    "H2O_mass_flux_kg_per_m2_s": 3.0655443589999998e-06,
-    "H2O_molar_flux_mol_per_m2_s": 0.00017030801994444443,
-    "assumption": "e is an equivalent pure-water volume demand referenced to 1000 kg/m3",
-    "e_m_per_s": 3.065544359e-09
+    "H2O_mass_flux_kg_per_m2_s": 3.0600355758103174e-06,
+    "H2O_molar_flux_mol_per_m2_s": 0.00016985778604664025,
+    "assumption": "E is the equivalent pure-water volume demand from the frozen Case 36877 input, referenced to its PureWaterDensity",
+    "e_m_per_s": 3.065544359023483e-09
   },
   "checks": {
+    "frozen_parameter_identity": "PASS",
     "mass_molar_component_identities": "PASS",
     "total_mass_closure": "PASS"
   },
   "constants": {
-    "M_H2O_kg_per_mol": 0.018,
-    "M_NaCl_kg_per_mol": 0.0584428,
-    "rho_reference_kg_per_m3": 1000.0
+    "M_H2O_kg_per_mol": 0.01801528,
+    "M_NaCl_kg_per_mol": 0.05844,
+    "density_linear_coefficient": 0.670804,
+    "density_quadratic_coefficient": 0.373854,
+    "rho_reference_kg_per_m3": 998.203
   },
   "non_equivalence": {
     "case36877_initial": {
-      "dc_dx_mol_per_m3": -4154.27093685139,
-      "density_change_fraction_per_unit_x_drho_dx_over_rho": 0.00775439379964045,
-      "drho_dx_kg_per_m3": 2170.8598660552525,
-      "extra_molar_salt_storage_fraction_x_dc_dx_over_c": -0.0002692663426628911,
+      "dc_dx_mol_per_m3": -3876.2759504606947,
+      "density_change_fraction_per_unit_x_drho_dx_over_rho": 0.0077614448561293,
+      "drho_dx_kg_per_m3": 2168.9446140271684,
+      "extra_molar_salt_storage_fraction_x_dc_dx_over_c": -0.0002519091784927515,
       "x_NaCl": 0.0036
     },
     "high_concentration_audit_state": {
-      "dc_dx_mol_per_m3": -14869.9427882093,
-      "density_change_fraction_per_unit_x_drho_dx_over_rho": 0.15623867287147827,
-      "drho_dx_kg_per_m3": 1881.3003043760546,
-      "extra_molar_salt_storage_fraction_x_dc_dx_over_c": -0.027222977974963366,
+      "dc_dx_mol_per_m3": -14643.587201135233,
+      "density_change_fraction_per_unit_x_drho_dx_over_rho": 0.15639913727380553,
+      "drho_dx_kg_per_m3": 1880.1812836954923,
+      "extra_molar_salt_storage_fraction_x_dc_dx_over_c": -0.02686849589434539,
       "x_NaCl": 0.1
     },
     "representative_p1_top_state": {
-      "dc_dx_mol_per_m3": -4583.206828101538,
-      "density_change_fraction_per_unit_x_drho_dx_over_rho": 0.01703462128130516,
-      "drho_dx_kg_per_m3": 2161.4774021827543,
-      "extra_molar_salt_storage_fraction_x_dc_dx_over_c": -0.0006618781630030045,
+      "dc_dx_mol_per_m3": -4308.637689973693,
+      "density_change_fraction_per_unit_x_drho_dx_over_rho": 0.017050138462708603,
+      "drho_dx_kg_per_m3": 2159.5925028350393,
+      "extra_molar_salt_storage_fraction_x_dc_dx_over_c": -0.0006238518228392814,
       "x_NaCl": 0.008018127628
     }
   },
-  "purpose": "P1-R1 deterministic conversion audit; not a solver validation",
+  "purpose": "P1-R1/R2 deterministic conversion audit; not a solver validation",
+  "source": {
+    "frozen_case36877_input": "analysis/matched_pair_36877_20261102/legacy_nx28/sandy--boreal--s1354--f1080--global_default_L0p5--native.input",
+    "parameters_as_read": {
+      "DensityLinearCoefficient": "0.670804",
+      "DensityQuadraticCoefficient": "0.373854",
+      "EvaporationRate": "3.065544359023483e-09",
+      "MolarMassH2O": "0.01801528",
+      "MolarMassNaCl": "0.05844",
+      "PureWaterDensity": "998.203",
+      "SaltMoleFraction": "0.0036"
+    },
+    "sha256": "25395acfec12d1d21659fe33f774d56646596c271908e4b64dd4a841f123c6ef"
+  },
   "states": {
     "case36877_initial": {
-      "Mbar_kg_per_mol": 0.018145594079999997,
-      "c_mol_per_m3_liquid": 55541.198445987866,
-      "rho_kg_per_m3_liquid": 1007.8280417176225,
-      "salt_mass_concentration_kg_per_m3_liquid": 11.685539349141047,
-      "w_NaCl": 0.011594774966992981,
-      "water_mass_concentration_kg_per_m3_liquid": 996.1425023684814,
+      "Mbar_kg_per_mol": 0.018160808992,
+      "c_mol_per_m3_liquid": 55395.335355198404,
+      "rho_kg_per_m3_liquid": 1006.0241044335427,
+      "salt_mass_concentration_kg_per_m3_liquid": 11.65429223336806,
+      "w_NaCl": 0.011584505959656094,
+      "water_mass_concentration_kg_per_m3_liquid": 994.3698122001746,
       "x_NaCl": 0.0036
     },
     "high_concentration_audit_state": {
-      "Mbar_kg_per_mol": 0.02204428,
-      "c_mol_per_m3_liquid": 54622.76317412813,
-      "rho_kg_per_m3_liquid": 1204.1194857841692,
-      "salt_mass_concentration_kg_per_m3_liquid": 319.2307223632935,
-      "w_NaCl": 0.26511548574051863,
-      "water_mass_concentration_kg_per_m3_liquid": 884.8887634208756,
+      "Mbar_kg_per_mol": 0.022057752,
+      "c_mol_per_m3_liquid": 54500.956282473,
+      "rho_kg_per_m3_liquid": 1202.1685774416314,
+      "salt_mass_concentration_kg_per_m3_liquid": 318.5035885147722,
+      "w_NaCl": 0.2649408697676898,
+      "water_mass_concentration_kg_per_m3_liquid": 883.6649889268592,
       "x_NaCl": 0.1
     },
     "representative_p1_top_state": {
-      "Mbar_kg_per_mol": 0.018324275532033675,
-      "c_mol_per_m3_liquid": 55521.906216858195,
-      "rho_kg_per_m3_liquid": 1017.398707581443,
-      "salt_mass_concentration_kg_per_m3_liquid": 26.017666821534775,
-      "w_NaCl": 0.025572734295469954,
-      "water_mass_concentration_kg_per_m3_liquid": 991.3810407599083,
+      "Mbar_kg_per_mol": 0.018339410564286167,
+      "c_mol_per_m3_liquid": 55377.26369667165,
+      "rho_kg_per_m3_liquid": 1015.5863748600009,
+      "salt_mass_concentration_kg_per_m3_liquid": 25.948643810464915,
+      "w_NaCl": 0.025550405610790073,
+      "water_mass_concentration_kg_per_m3_liquid": 989.637731049536,
       "x_NaCl": 0.008018127628
     }
   }

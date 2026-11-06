@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "registered_before_runs": true,
+  "controlled_test_budget_relative": 1e-8,
+  "controlled_test_budget_absolute_kg": 1e-10,
+  "case36877_budget_relative": 1e-6,
+  "conversion_identity_relative": 5e-13,
+  "diffusion_derivative_relative": 1e-9,
+  "prescribed_flux_relative": 1e-8,
+  "face_reconstruction_relative": 1e-8,
+  "notes": [
+    "Relative budget denominators use max(initial inventory, integrated absolute boundary transfer).",
+    "Water is reconstructed as total minus NaCl and must close with the propagated absolute tolerance.",
+    "A successful numerical budget does not validate constitutive physics."
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "schema_version": 2,
+  "reason": "requested_horizon",
+  "last_accepted_time_s": 100000,
+  "accepted_steps": 2,
+  "initial_diagnostics_written": true,
+  "requested_end_s": 100000,
+  "surface_threshold_low_s": 50000,
+  "surface_threshold_high_s": 100000,
+  "global_threshold_low_s": 50000,
+  "global_threshold_high_s": 100000
+}

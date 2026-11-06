@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-06",
+  "host": "sal.iws.uni-stuttgart.de",
+  "build_target": "paper2_transport",
+  "build_status": "PASS",
+  "final_hardened_executable_sha256": "bb122bd84db75d569c2edbe8739a3720d493249ad6097c16e9bb06994ab81993",
+  "smoke_test": {
+    "case": "V1_closed_box",
+    "status": "PASS",
+    "accepted_steps": 10,
+    "final_time_s": 1000.0,
+    "max_total_residual_kg": 3.608224830031759e-16,
+    "max_salt_residual_kg": 2.0816681711721685e-17,
+    "max_water_residual_kg": 3.5908775952719907e-16,
+    "evidence": "model/p1_r2_conservative_richards/results/stage_b_20261106/V1_final_hardening"
+  },
+  "note": "Only rounded fallback removal and the explicit example input changed after the reported Stage B-D runs; those runs already supplied exact constants."
+}

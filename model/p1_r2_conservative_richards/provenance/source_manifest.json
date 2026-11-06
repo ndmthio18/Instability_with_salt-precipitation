@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "reference_audit_commit": "eb79b9882a83a11359c47b25498ccb38d6dad102",
+  "reference_sources": {
+    "wp8_audit_tree_git_sha1": "c80affeead226f3c3320393395972b8891ffc8bc",
+    "wp8_main_sha256": "0a6595fff455cecd7c528733a0463845649bafbd76dcbb592563e1b672f8b39d",
+    "wp8_model_sha256": "b59fd1718863a712a8e619f914be9152302bec990dd7ed19359daed699c118db",
+    "wp8_diagnostics_sha256": "9ac499200f41b290dcb5287d17be045aab9c2f7dfd428682895fe1bef7fc6c2b",
+    "wp7_standard_2d_tree_git_sha1": "eca049fe21df8fdb33f4112eba222aba4578c9be",
+    "wp7_main_sha256": "dc7c629220fd0f3b23a6fcb6f156537d0d1d38b376550606235aeda7729dd2b4",
+    "wp7_model_sha256": "b59fd1718863a712a8e619f914be9152302bec990dd7ed19359daed699c118db",
+    "wp7_diagnostics_sha256": "9ac499200f41b290dcb5287d17be045aab9c2f7dfd428682895fe1bef7fc6c2b",
+    "selection": "WP8 was the audit reference, but its specialized one-horizontal-cell time loop was not used for 2D. The isolated copy starts from the frozen WP7 standard Newton path; WP7 and WP8 model.hh and transportdiagnostics.hh are byte-identical."
+  },
+  "isolated_source_sha256": {
+    "main.cc": "eecbbdbaed39eaceac2e1f1024ba87da517f51a8218ca34de9b7164400b84e45",
+    "model.hh": "2399096cfa3b81998ba13eabe05f8fd319aebd335b473d29cee18e02bdccb12d",
+    "transportdiagnostics.hh": "3704a93f6c4849d6e03e220bf8d371fcd1cdab21feae53114beac4d8891a88df",
+    "CMakeLists.txt": "39a4e78be3cc05abd768035dadd497867226ddddd2389e419ce995049f5bb962",
+    "params.input": "7feb2480dcf38364e7903805a75f20a3672e7c571f9bbb212d0d212e9d043a55"
+  },
+  "source_diff": {
+    "path": "model/p1_r2_conservative_richards/source_diff_from_wp7_standard_2d.patch",
+    "sha256": "93a685e9b10363789e1c60640bf24b801a3a189b258d019c81f26cce52b2c31d"
+  },
+  "frozen_case36877_input": {
+    "path": "analysis/matched_pair_36877_20261102/legacy_nx28/sandy--boreal--s1354--f1080--global_default_L0p5--native.input",
+    "sha256": "25395acfec12d1d21659fe33f774d56646596c271908e4b64dd4a841f123c6ef"
+  },
+  "build": {
+    "host": "sal.iws.uni-stuttgart.de",
+    "os": "openSUSE Tumbleweed",
+    "compiler": "g++ (SUSE Linux) 15.2.1 20251006",
+    "mpi_launcher": "Open MPI 5.0.9",
+    "remote_stack_root": "/temp-hd/zhixin/dumux_salt_REV/DUMUX",
+    "remote_build_root": "/temp-hd/zhixin/p1_r2_conservative_richards_20261106/build-gcc-release",
+    "result_executable_sha256": "6454ab74b78d129013690caf2c66acb6d4ef56ebd27bfec1094aab550c6eadc7",
+    "final_hardened_executable_sha256": "bb122bd84db75d569c2edbe8739a3720d493249ad6097c16e9bb06994ab81993",
+    "hardening_note": "The final source removes rounded parameter defaults and requires explicit composition/density constants. All reported production inputs already supplied the exact constants, so their numerical path is unchanged. V1 was rerun with the final executable and reproduced the earlier residuals.",
+    "compile_compatibility_definition": "SUPERLU_TYPEDEF_COMPLEX",
+    "dumux_git_sha1": "63568e6ad0016124fa89ecd932adb613118527bf",
+    "dune_common_git_sha1": "cce9c197680c1a9964d21ab4d0e0835ea36affb0",
+    "dune_geometry_git_sha1": "7d5b1d81ad997f81637ac97f753f80a64ff9cdb0",
+    "dune_grid_git_sha1": "75b66b0ebf0656e21af08798188b3d2848c9574d",
+    "dune_istl_git_sha1": "1582b9e200ad098d0f00de2c135f9eed38508319",
+    "dune_localfunctions_git_sha1": "f2c7cfb96327fbfd29744dccf5eac015a1dfa06f"
+  },
+  "raw_2d_archive": {
+    "remote_path": "/temp-hd/zhixin/p1_r2_conservative_richards_20261106/runs/V8_case36877_R24_mode28_mass_A_fields.tar.gz",
+    "bytes": 5505178,
+    "sha256": "d0d5ab74224e47982e769da47a02a598fb072d154595bad409c446295a41f10c",
+    "repository_policy": "raw VTU/PVD fields are retained remotely and excluded from Git"
+  }
+}

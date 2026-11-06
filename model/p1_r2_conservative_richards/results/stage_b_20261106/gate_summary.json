@@ -1,0 +1,76 @@
+{
+  "all_pass": true,
+  "gates": [
+    {
+      "accepted_steps": 10,
+      "budget_pass": true,
+      "budget_tolerance_kg": {
+        "salt": 1.0212350443980156e-10,
+        "total": 1.6448203235020012e-09,
+        "water": 1.5426968190621997e-09
+      },
+      "face_reconstruction_pass": true,
+      "face_reconstruction_tolerance_kg_s": 1e-14,
+      "final_time_s": 1000.0,
+      "max_budget_residual_kg": {
+        "salt": 2.0816681711721685e-17,
+        "total": 3.608224830031759e-16,
+        "water": 3.5908775952719907e-16
+      },
+      "max_face_reconstruction_error_kg_s": 0.0,
+      "pass": true,
+      "retry_count": 0,
+      "run": "V1_closed_box"
+    },
+    {
+      "accepted_steps": 10,
+      "budget_pass": true,
+      "budget_tolerance_kg": {
+        "salt": 1.021312404201534e-10,
+        "total": 1.6448455072391573e-09,
+        "water": 1.542714266819004e-09
+      },
+      "face_reconstruction_pass": true,
+      "face_reconstruction_tolerance_kg_s": 1e-14,
+      "final_time_s": 1000.0,
+      "max_budget_residual_kg": {
+        "salt": 2.0021317774249897e-17,
+        "total": 5.379811179873073e-16,
+        "water": 5.179598002130574e-16
+      },
+      "max_face_reconstruction_error_kg_s": 0.0,
+      "pass": true,
+      "prescribed_flux": {
+        "expected_salt_kg_s": 5.999999999999999e-09,
+        "expected_total_kg_s": 6.000000000000001e-07,
+        "observed_salt_kg_s": 6e-09,
+        "observed_total_kg_s": 6.000000000000001e-07,
+        "pass": true
+      },
+      "retry_count": 0,
+      "run": "V2_component_flux"
+    },
+    {
+      "accepted_steps": 20,
+      "budget_pass": true,
+      "budget_tolerance_kg": {
+        "salt": 2.385627873389757e-10,
+        "total": 1.6380410396812724e-09,
+        "water": 1.3994782523422966e-09
+      },
+      "face_reconstruction_pass": true,
+      "face_reconstruction_tolerance_kg_s": 1e-14,
+      "final_time_s": 2000.0,
+      "max_budget_residual_kg": {
+        "salt": 2.6020852139652106e-16,
+        "total": 6.938893903907228e-16,
+        "water": 4.440892098500626e-16
+      },
+      "max_face_reconstruction_error_kg_s": 0.0,
+      "pass": true,
+      "retry_count": 0,
+      "run": "V3_variable_density"
+    }
+  ],
+  "schema_version": 1
+}

@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "run_scope": "single bounded one-wavelength Case 36877 comparison; no production campaign",
+  "grid": {
+    "cells_x": 24,
+    "cells_z": 200,
+    "vertical_grading": -0.98
+  },
+  "baseline": "frozen normalized R24-M1-full fixed-grid reference; not continuum truth",
+  "accepted_steps": 600,
+  "retried_steps": 0,
+  "final_time_s": 136423.0637723,
+  "max_component_budget_residuals_kg": {
+    "total_residual_kg": 9.048181447797107e-14,
+    "salt_residual_kg": 8.061788541423309e-16,
+    "water_residual_kg": 8.979588444442746e-14
+  },
+  "final_normalized_amplitude": {
+    "conservative_mode_A": 1.1320553178689916,
+    "frozen_normalized": 1.129188374608112
+  },
+  "surface_sigma_minimum_time_s": {
+    "conservative_mode_A": 50021.79004986,
+    "frozen_normalized": 50703.90536872
+  },
+  "final_quarter_log_growth_rate_s-1": {
+    "conservative_mode_A": 3.3308152279879883e-06,
+    "frozen_normalized": 3.3094094019403533e-06
+  },
+  "final_surface_mean_x": {
+    "conservative_mode_A": 0.01945863830239,
+    "frozen_normalized": 0.01942558499531
+  },
+  "final_relative_differences": {
+    "normalized_amplitude": 0.002538941531234462,
+    "final_quarter_log_growth_rate": 0.0064681710383382995,
+    "surface_mean_x": 0.0017015347073450204
+  },
+  "input_sha256": "2d70932da5ad32c8070ff227f6d898349f14ea5e4b0cf91ebc722ef832580163",
+  "eigenprofile_sha256": "d721e605d126e555f92b43200aa73b999ed4e2b61397edd1e98c0d9fddb36575",
+  "claims": {
+    "component_conservation": "supported at this fixed grid and accepted time-step sequence",
+    "numerical_convergence": "not established by this single R24 run",
+    "physical_validation": "not established",
+    "instability_growth": "bounded fixed-grid comparison only; reference times are diagnostics, not guaranteed predictions"
+  }
+}

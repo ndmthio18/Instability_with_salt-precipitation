@@ -1,0 +1,16 @@
+{
+  "schema_version": 3,
+  "equation_0": "total liquid mass",
+  "equation_1": "dissolved NaCl mass",
+  "inventory_unit": "kg per unit out-of-plane thickness",
+  "integrated_flux_unit": "kg/s per unit out-of-plane thickness",
+  "diffusion_reference": "mass averaged",
+  "darcy_velocity_assumption": "mixture mass-average velocity approximation",
+  "advection_face_rule": "upwind rho and mass fraction",
+  "diffusion_face_rule": "arithmetic rho and D, BOX gradient of mass fraction",
+  "bottom_reaction": "bottom control-volume storage change plus independently summed internal SCVF flux; not a whole-domain residual remainder",
+  "time_integration": "accepted-step backward Euler endpoint flux",
+  "evaporation_boundary_mode": "prescribed_components",
+  "bottom_boundary_mode": "no_flux",
+  "face_flux_output": true
+}

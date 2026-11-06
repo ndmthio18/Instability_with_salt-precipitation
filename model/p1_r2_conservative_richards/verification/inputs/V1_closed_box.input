@@ -1,0 +1,51 @@
+[Grid]
+Positions0 = 0 0.06
+Positions1 = 0 0.02
+Cells0 = 4
+Cells1 = 8
+Grading1 = -0.8
+
+[TimeLoop]
+TEnd = 1000
+DtInitial = 100
+MaxTimeStepSize = 100
+OutputInterval = 100000
+
+[Problem]
+Name = P1R2_V1_closed_box
+Permeability = 1.261386079996293e-11
+Porosity = 0.4057687912195745
+Swr = 0.1282679353072967
+PcN = 2.98602455003942
+PcAlpha = 0.0003121789225428109
+SweL = -0.8395681012108449
+KrwMualemExponent = true
+WaterLevel = 0.6307756332876138
+EvaporationRate = 0
+EvaporationBoundaryMode = no_flux
+BottomBoundaryMode = no_flux
+SaltDiffusivity = 1.5e-09
+ReferenceViscosity = 0.0011
+SaltMoleFraction = 0.02
+GravitationalAcceleration = 9.800000000000001
+PureWaterDensity = 998.203
+DensityLinearCoefficient = 0.670804
+DensityQuadraticCoefficient = 0.373854
+MolarMassH2O = 0.01801528
+MolarMassNaCl = 0.05844
+Amplitude = 0.005
+WaveNumber = 1
+StandardDeviationSaltMoleFraction = 0
+PerturbationType = Periodic
+RandomSeed = 1
+EnableGravity = true
+PerturbationHeight = 0
+
+[Transport]
+SolubilityMoleFraction = 0.2
+StopAtSolubility = false
+WriteFaceFluxes = true
+
+[Vtk]
+Precision = Float64
+AddVelocity = true
