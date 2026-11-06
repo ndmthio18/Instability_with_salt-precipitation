@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "profile": {
+    "minimum": -8.642409378252e-11,
+    "maximum": 1.0,
+    "sha256": "d721e605d126e555f92b43200aa73b999ed4e2b61397edd1e98c0d9fddb36575"
+  },
+  "executable_sha256": "112076759fdff0942000307f729c2bd3c7e96963229b43c1b67c1f12bbf9df81",
+  "initial_range_checks": [
+    {
+      "grid": "R24",
+      "differences": [
+        "Problem.Amplitude",
+        "Problem.Name",
+        "TimeLoop.TEnd"
+      ],
+      "initial_range": [
+        0.00359,
+        0.00361
+      ],
+      "input_sha256": "c1c7ecee27ed49e10f70bed0aa78e12077fe2220acfb20cf5df00cb1b2842e88"
+    },
+    {
+      "grid": "R48",
+      "differences": [
+        "Problem.Amplitude",
+        "Problem.Name",
+        "TimeLoop.TEnd"
+      ],
+      "initial_range": [
+        0.00359,
+        0.00361
+      ],
+      "input_sha256": "9eb09a60c355eb81845985877cbde2b5843513651102b55189504d9f98d06d32"
+    },
+    {
+      "grid": "R96",
+      "differences": [
+        "Problem.Amplitude",
+        "Problem.Name",
+        "TimeLoop.TEnd"
+      ],
+      "initial_range": [
+        0.00359,
+        0.00361
+      ],
+      "input_sha256": "120a22fe9c53380cfd114396ffa7adafa64736fe85d7806b94555d74fe0e4680"
+    }
+  ],
+  "cost_and_storage_estimates": [
+    {
+      "grid": "R24",
+      "early_linear_wall_s": 926.9208,
+      "long_run_linear_wall_s": 1056.555629453945,
+      "allocated_wall": "03:00:00",
+      "expected_frames": 145,
+      "estimated_fields_archive_bytes": 39366957
+    },
+    {
+      "grid": "R48",
+      "early_linear_wall_s": 2060.7768,
+      "long_run_linear_wall_s": 3796.3128,
+      "allocated_wall": "05:00:00",
+      "expected_frames": 145,
+      "estimated_fields_archive_bytes": 76674933
+    },
+    {
+      "grid": "R96",
+      "early_linear_wall_s": 4943.052,
+      "long_run_linear_wall_s": 7736.028,
+      "allocated_wall": "08:00:00",
+      "expected_frames": 145,
+      "estimated_fields_archive_bytes": 148510441
+    }
+  ],
+  "estimated_total_fields_archive_bytes": 264552331,
+  "authorization": "user explicitly authorized R24/R48/R96, A=1e-5, maximum 6T"
+}

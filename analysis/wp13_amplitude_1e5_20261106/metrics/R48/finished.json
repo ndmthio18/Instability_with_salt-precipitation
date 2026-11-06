@@ -1,0 +1,31 @@
+{
+  "solver": {
+    "returncode": 0,
+    "timed_out": false,
+    "wall_s": 2283.4558491613716,
+    "stop": {
+      "schema_version": 1,
+      "reason": "requested_horizon",
+      "last_accepted_time_s": 818538.38263409,
+      "accepted_steps": 7200,
+      "initial_diagnostics_written": true,
+      "requested_end_s": 818538.38263409,
+      "surface_threshold_low_s": null,
+      "surface_threshold_high_s": null,
+      "global_threshold_low_s": null,
+      "global_threshold_high_s": null
+    },
+    "peak_rss_kib": 48148,
+    "post_returncode": 0
+  },
+  "fields": {
+    "bytes": 62327648,
+    "sha256": "d2124c1bec9eb9ffacbfa7a9184582ba85580676b54726a667236dc1d6a09c82"
+  },
+  "products": {
+    "bytes": 12147383,
+    "sha256": "2fa461d0b81796f0ec6381215bf9252d08140f0347b7d1ccc6d0843d7a06d5f0"
+  },
+  "complete": true,
+  "scratch_removed": true
+}

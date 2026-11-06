@@ -1,0 +1,135 @@
+{
+  "schema_version": 1,
+  "job_id": "16309626",
+  "grid": "R96",
+  "simulation_job_id": "16309620",
+  "tests": {
+    "registered_job": true,
+    "registered_grid": true,
+    "four_threads": true,
+    "executable_hash": true,
+    "input_hash": true,
+    "profile_hash": true,
+    "archive_hashes": true,
+    "worker_complete": true,
+    "solver_success": true,
+    "requested_horizon": true,
+    "surface_rows": true,
+    "step_sequence": true,
+    "strictly_increasing_time": true,
+    "fixed_timestep_or_terminal_horizon_clamp": true,
+    "initial_range": true,
+    "independent_conservation": true,
+    "field_count": true,
+    "single_pvd": true,
+    "field_grid": true,
+    "field_profile": true,
+    "salt_storage_reconstruction": true,
+    "water_storage_reconstruction": true
+  },
+  "passed": true,
+  "failed": [],
+  "archive_hashes": {
+    "fields": "ea77e0e279d116bb5a2c045ca63e03671e8232d6f92adbccde8dae5cff695ac9",
+    "products": "91a909dc4ea2ab550bb19369484f1f5ece9db77e5a0dce95426b6bc152487558"
+  },
+  "initial_range_audit": {
+    "salt_mole_fraction": 0.0036,
+    "amplitude": 1e-05,
+    "expected_min": 0.00359,
+    "expected_max": 0.00361,
+    "observed_min": 0.00359,
+    "observed_max": 0.00361
+  },
+  "timestep_audit": {
+    "expected_dt_s": 113.68588647695695,
+    "nonstandard_accepted_steps": [
+      7200
+    ],
+    "terminal_dt_s": 113.68588639225345,
+    "terminal_horizon_clamp": true,
+    "terminal_clamp_s": 8.470350110201252e-08
+  },
+  "stop": {
+    "schema_version": 1,
+    "reason": "requested_horizon",
+    "last_accepted_time_s": 818538.38263409,
+    "accepted_steps": 7200,
+    "initial_diagnostics_written": true,
+    "requested_end_s": 818538.38263409,
+    "surface_threshold_low_s": null,
+    "surface_threshold_high_s": null,
+    "global_threshold_low_s": null,
+    "global_threshold_high_s": null
+  },
+  "independent_checks": {
+    "frames": 145,
+    "recorded_steps": 7201,
+    "frame_stride": 50,
+    "frame_step_intervals": [
+      50
+    ],
+    "terminal_irregular_stride": false,
+    "max_inventory_salt_difference_m": 2.1833121248426846e-17,
+    "max_inventory_water_difference_m": 5.665606872540252e-15,
+    "online_absolute_errors": {
+      "weighted_top_mean": 9.020562075079397e-17,
+      "weighted_top_sigma": 6.071532165918825e-17,
+      "weighted_fourier": 6.310056643865636e-17,
+      "weighted_projection": 4.991666802123262e-16
+    },
+    "independent_budgets": {
+      "upper_0.900000": {
+        "salt_closure_m": 1.405566472673786e-17,
+        "water_closure_m": 3.7118751929960834e-15,
+        "cumulative_salt_reintegration_error": 0.0,
+        "cumulative_water_reintegration_error": 0.0
+      },
+      "upper_0.750000": {
+        "salt_closure_m": 9.662104829329804e-18,
+        "water_closure_m": 2.5483193741217703e-15,
+        "cumulative_salt_reintegration_error": 0.0,
+        "cumulative_water_reintegration_error": 0.0
+      },
+      "upper_0.500000": {
+        "salt_closure_m": 2.7050844203513336e-17,
+        "water_closure_m": 7.31929470645324e-15,
+        "cumulative_salt_reintegration_error": 0.0,
+        "cumulative_water_reintegration_error": 0.0
+      },
+      "upper_0.995000": {
+        "salt_closure_m": 2.1403675544168915e-16,
+        "water_closure_m": 8.919986229955369e-15,
+        "cumulative_salt_reintegration_error": 0.0,
+        "cumulative_water_reintegration_error": 0.0
+      },
+      "upper_0.990000": {
+        "salt_closure_m": 6.243310447621997e-17,
+        "water_closure_m": 9.370128694588535e-15,
+        "cumulative_salt_reintegration_error": 0.0,
+        "cumulative_water_reintegration_error": 0.0
+      },
+      "upper_0.975000": {
+        "salt_closure_m": 4.0870186737967246e-17,
+        "water_closure_m": 5.430328383665997e-15,
+        "cumulative_salt_reintegration_error": 0.0,
+        "cumulative_water_reintegration_error": 0.0
+      },
+      "upper_0.950000": {
+        "salt_closure_m": 1.9137862410263662e-17,
+        "water_closure_m": 4.883480683605509e-15,
+        "cumulative_salt_reintegration_error": 0.0,
+        "cumulative_water_reintegration_error": 0.0
+      },
+      "free_domain": {
+        "salt_closure_m": 5.364429061550935e-17,
+        "water_closure_m": 1.4979587936812117e-14,
+        "cumulative_salt_reintegration_error": 0.0,
+        "cumulative_water_reintegration_error": 0.0
+      }
+    },
+    "scope": "independent VTU storage + independent integration of recorded conservative flux; not a second flux-kernel implementation",
+    "passed": true
+  },
+  "scope": "numerical/provenance acceptance; not physical convergence or solubility-time validation"
+}

@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "utc": "2026-11-05T23:45:31.684040+00:00",
+  "job_id": "16309391",
+  "node": "ibc11b11n19",
+  "label": "R48",
+  "amplitude": 0.0001,
+  "source_archives": {
+    "fields": "/WORK/hulm_work/zhixin/paper2_wp12_amplitude_20261106/R48/fields.tar.gz",
+    "products": "/WORK/hulm_work/zhixin/paper2_wp12_amplitude_20261106/R48/products.tar.gz"
+  },
+  "source_hashes": {
+    "fields": "1245db5b63025967d7b44666343e03d86aaf286d3a51cb6e04ec68cf89a74f64",
+    "products": "c5b409f6a319b70edccf2cfc82180fbbc25003847c6d751e250553a1977a41b7"
+  },
+  "pvd_mapping": {
+    "datasets_before": 145,
+    "datasets_after": 145,
+    "vtu_files": 145
+  },
+  "numerical_acceptance_passed": true,
+  "output_bytes": 2373999,
+  "output_sha256": "bfb1564a8ca07f3b3438e344c0250a23bea8965763de7fa18d13ae729d0ac1c4"
+}

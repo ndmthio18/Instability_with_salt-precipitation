@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "benchmark": "Case 36877 enhanced initial perturbation, R24/R48/R96, 0-6T",
+  "all_new_runs_numerically_accepted": true,
+  "decisions": {
+    "accelerates_nonlinear_development": {
+      "answer": true,
+      "evidence": "t_nl advances by 17.5-19.5% at 1e-5 and 45.8-47.3% at 1e-4 relative to 1e-6"
+    },
+    "changes_dominant_modes": {
+      "answer": true,
+      "evidence": "dominant mode at 6T is m=4, m=6 and m=2 for amplitudes 1e-6, 1e-5 and 1e-4, respectively; aligned-time differences persist"
+    },
+    "reduces_symmetry_breaking": {
+      "answer": true,
+      "evidence": "odd-mode fraction and mirror error fall by orders of magnitude at both enhanced amplitudes, although 1e-5 is not monotone from R48 to R96"
+    },
+    "improves_grid_consistency": {
+      "answer": "conditional",
+      "evidence": "1e-4 R48/R96 peak and positive-integral differences are 4-8% at 2-10 mm except 1 mm at 18%; 1e-5 positive components remain 14-98% different at 1-5 mm"
+    },
+    "changes_transport_mechanism": {
+      "answer": "broad mechanism no; nonlinear pathway yes",
+      "evidence": "density-driven downward advection remains, but modal selection and nonlinear cascade change with amplitude"
+    },
+    "is_1e-5_worth_testing": {
+      "answer": true,
+      "status": "completed under later explicit authorization",
+      "evidence": "it separates intermediate timing/symmetry behavior from the still grid-sensitive modal and positive-flux response"
+    }
+  },
+  "bounded_extension_recommendation": {
+    "execute_now": false,
+    "priority": "extend all three 1e-5 grids together to at most 8T if positive-transport convergence is required",
+    "reason": "no positive 10-mm advection by 6T and a 97.7% R48/R96 difference in the 5-mm positive integral",
+    "conditional_second_priority": "extend all three 1e-4 grids to at most 8T only if an R24-inclusive deep-transport convergence claim is required"
+  },
+  "claim_boundary": "not a replacement for 1e-6 and not validation of solubility-crossing time"
+}

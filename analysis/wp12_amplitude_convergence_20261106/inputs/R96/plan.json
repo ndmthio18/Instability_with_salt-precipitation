@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "campaign": "WP12 enhanced initial perturbation convergence test",
+  "grid": "R96",
+  "run_name": "WP12-R96-A1e4-6T",
+  "threads": 4,
+  "input_sha256": "582c35ad9a6d7b57b447f40d746231abe3cecc84c3c31a1db854d66aa6b29424",
+  "profile_sha256": "d721e605d126e555f92b43200aa73b999ed4e2b61397edd1e98c0d9fddb36575",
+  "executable_sha256": "112076759fdff0942000307f729c2bd3c7e96963229b43c1b67c1f12bbf9df81",
+  "solver_timeout_s": 25200,
+  "minimum_scratch_free_bytes": 34359738368,
+  "minimum_available_memory_bytes": 17179869184,
+  "authorized_steps": 7200,
+  "authorized_horizon_T": 6.0,
+  "authorized_end_s": 818538.38263409,
+  "authorized_amplitude": 0.0001,
+  "initial_salt_mole_fraction_range": [
+    0.0035,
+    0.0036999999999999997
+  ],
+  "allowed_input_differences_from_reference": [
+    "Problem.Amplitude",
+    "Problem.Name",
+    "TimeLoop.TEnd"
+  ],
+  "reference_input": "analysis\\wp11_long_validation_20261105\\inputs\\R96\\params.input",
+  "reference_input_sha256": "474ca896e3aaed4d0c98c89610fb38c21e29f68b3398e3b2e044128167e4dacf"
+}

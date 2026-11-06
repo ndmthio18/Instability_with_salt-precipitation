@@ -1,0 +1,18 @@
+{
+  "source": "scripts/wp12_make_figures.py",
+  "backend": "python",
+  "validator": "nature-figure validate_figure.py",
+  "ready": true,
+  "strict": true,
+  "counts": {
+    "PASS": 21,
+    "WARN": 0,
+    "FAIL": 0
+  },
+  "notes": [
+    "All detected text sizes are at least 5 pt; configured minimum is 6 pt.",
+    "PDF and SVG retain editable text; TIFF export is configured at 600 dpi.",
+    "Logarithmic axes use explicit nonpositive clipping and positive display floors.",
+    "Render-time panel-alignment validation is wired into the plotting source."
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "inspected_outputs": [
+    "Figure_1_timing_and_registered_alignment.png",
+    "Figure_2_A1e-4_grid_transport.png",
+    "Figure_3_modal_energy_physical_and_aligned.png",
+    "Figure_4_symmetry_and_timing.png",
+    "Figure_5_A1e-5_grid_transport.png"
+  ],
+  "final_size_review": true,
+  "passed": true,
+  "checks": {
+    "panel_labels_present": true,
+    "legends_readable": true,
+    "axes_and_units_readable": true,
+    "no_visible_clipping": true,
+    "no_visible_text_collision": true,
+    "curves_match_declared_physical_and_aligned_coordinates": true,
+    "zero_or_unresolved_deep_positive_flux_not_hidden": true
+  },
+  "notes": "Unicode subscript/superscript labels were replaced with portable ASCII after the first render; the final render has no missing-glyph warning. Figure 3 legend was moved above the panels after the strict collision audit identified one bar-edge overlap."
+}

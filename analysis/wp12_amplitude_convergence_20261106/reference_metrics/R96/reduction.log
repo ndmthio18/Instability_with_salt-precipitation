@@ -1,0 +1,15 @@
+$ /WORK/hulm_work/ys/miniconda3/bin/python3 /WORK/hulm_work/zhixin/paper2_wp12_amplitude_20261106/wp9_post.py /tmp/wp12_reduce_R96_16309389/run /tmp/wp12_reduce_R96_16309389/run/post_reduced_0_6T
+{"frames": 145, "recorded_steps": 30001, "frame_stride": 50, "frame_step_intervals": [50], "terminal_irregular_stride": false, "max_inventory_salt_difference_m": 1.8526304622346057e-17, "max_inventory_water_difference_m": 5.783568068906675e-15, "online_absolute_errors": {"weighted_top_mean": 6.245004513516506e-17, "weighted_top_sigma": 4.85722573273506e-17, "weighted_fourier": 1.0495077029659683e-16, "weighted_projection": 2.1300506931193341e-16}, "independent_budgets": {"upper_0.900000": {"salt_closure_m": 6.465402486392074e-17, "water_closure_m": 1.7765568027032735e-14, "cumulative_salt_reintegration_error": 0.0, "cumulative_water_reintegration_error": 0.0}, "upper_0.750000": {"salt_closure_m": 3.4108746236509793e-17, "water_closure_m": 9.390798058741883e-15, "cumulative_salt_reintegration_error": 0.0, "cumulative_water_reintegration_error": 0.0}, "upper_0.500000": {"salt_closure_m": 4.607943936358119e-17, "water_closure_m": 1.2617846627564419e-14, "cumulative_salt_reintegration_error": 0.0, "cumulative_water_reintegration_error": 0.0}, "upper_0.995000": {"salt_closure_m": 1.7993902063349367e-16, "water_closure_m": 1.1993454000859976e-14, "cumulative_salt_reintegration_error": 0.0, "cumulative_water_reintegration_error": 0.0}, "upper_0.990000": {"salt_closure_m": 1.2366426920028609e-16, "water_closure_m": 1.6707500288511154e-14, "cumulative_salt_reintegration_error": 0.0, "cumulative_water_reintegration_error": 0.0}, "upper_0.975000": {"salt_closure_m": 2.2232920799530875e-17, "water_closure_m": 6.070663586570975e-15, "cumulative_salt_reintegration_error": 0.0, "cumulative_water_reintegration_error": 0.0}, "upper_0.950000": {"salt_closure_m": 5.5467105518000603e-17, "water_closure_m": 1.52598753742233e-14, "cumulative_salt_reintegration_error": 0.0, "cumulative_water_reintegration_error": 0.0}, "free_domain": {"salt_closure_m": 4.256848779721212e-17, "water_closure_m": 1.1902863575688222e-14, "cumulative_salt_reintegration_error": 0.0, "cumulative_water_reintegration_error": 0.0}}, "scope": "independent VTU storage + independent integration of recorded conservative flux; not a second flux-kernel implementation", "passed": true}
+$ /WORK/hulm_work/ys/miniconda3/bin/python3 /WORK/hulm_work/zhixin/paper2_wp12_amplitude_20261106/wp12_scalar_metrics.py /tmp/wp12_reduce_R96_16309389/run /tmp/wp12_reduce_R96_16309389/metrics R96 1e-6 --max-T 6 --post-dir /tmp/wp12_reduce_R96_16309389/run/post_reduced_0_6T
+{
+  "grid": "R96",
+  "amplitude": 1e-06,
+  "steps": 7200,
+  "milestone_T": 3.7174999999997427
+}
+$ /WORK/hulm_work/ys/miniconda3/bin/python3 /WORK/hulm_work/zhixin/paper2_wp12_amplitude_20261106/wp12_field_metrics.py /tmp/wp12_reduce_R96_16309389/run /tmp/wp12_reduce_R96_16309389/metrics R96 --max-T 6 --post-dir /tmp/wp12_reduce_R96_16309389/run/post_reduced_0_6T
+{
+  "grid": "R96",
+  "frames": 145,
+  "resolved_downflow_T": 4.291666666666457
+}

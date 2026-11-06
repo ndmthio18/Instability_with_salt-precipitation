@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "frozen_utc": "2026-11-05T23:11:10.459792+00:00",
+  "scope": "three grids at amplitude 1e-4 through at most 6T; no other amplitude or extension is authorized",
+  "fixed": {
+    "case": 36877,
+    "amplitude": 0.0001,
+    "reference_amplitude": 1e-06,
+    "profile": "A28",
+    "profile_sha256": "d721e605d126e555f92b43200aa73b999ed4e2b61397edd1e98c0d9fddb36575",
+    "physical_wavelength_m": 0.021428571428571432,
+    "domain_m": [
+      0.021428571428571432,
+      0.2
+    ],
+    "vertical_cells": 200,
+    "horizontal_grids": [
+      24,
+      48,
+      96
+    ],
+    "dt_s": 113.68588647695695,
+    "steps": 7200,
+    "end_s": 818538.38263409,
+    "end_T": 6.0,
+    "output_interval_steps": 50,
+    "stop_at_surface_solubility": true
+  },
+  "source_interpretation": "Problem.Amplitude is an additive salt-mole-fraction coefficient multiplying A28(y)*cos(2*pi*x/lambda); it does not alter wavelength or profile.",
+  "comparison_axes": {
+    "amplitude_sensitivity": "1e-6 versus 1e-4 on the same grid only",
+    "grid_sensitivity": "R24/R48/R96 at 1e-4 only"
+  },
+  "registered_metrics": {
+    "nonlinear_harmonic_signal": "H23=sqrt(harmonic2_top^2+harmonic3_top^2)",
+    "nonlinear_milestone": "first accepted step of 50 consecutive accepted steps with H23 >= 1e-5",
+    "sustained_positive_advective_flux": "first accepted step of 50 consecutive accepted steps with conservative SCVF net advective salt flux > 1e-15 m/s",
+    "local_downward_velocity": "first two consecutive saved fields with max downward water velocity > 1e-10 m/s and downward-area fraction > 0.001",
+    "mirror_error": "L2(x(x,z)-x(W-x,z))/L2(x(x,z)-horizontal_mean(z))",
+    "odd_mode_fraction": "sum odd nonzero horizontal Fourier energy / sum all nonzero horizontal Fourier energy",
+    "milestone_alignment": "plot against t-t_nl only when the registered milestone is observed; never optimize shifts"
+  },
+  "claim_boundary": "accelerated nonlinear convergence benchmark; not a replacement for A=1e-6 and not validation of solubility-crossing time"
+}

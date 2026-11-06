@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "grid": "R24",
+  "frames": 145,
+  "first_step": 0,
+  "last_step": 7200,
+  "last_time_over_T": 6.000000000000804,
+  "resolved_downflow_definition": "first of two consecutive saved fields with peak downward velocity >1e-10 m/s and downward cell fraction >0.001",
+  "resolved_downflow_onset": {
+    "grid": "R24",
+    "frame": 97,
+    "step": 4850,
+    "time_s": 551376.5494132,
+    "time_over_T": 4.041666666666363,
+    "dominant_mode": 10,
+    "total_nonzero_mode_energy": 2.943932168532084e-08,
+    "odd_mode_energy_fraction": 0.0002667901333343544,
+    "mirror_symmetry_error": 0.03266742312053525,
+    "peak_downward_velocity_m_s": 1.3363403523483e-09,
+    "resolved_downward_cell_fraction": 0.0125,
+    "resolved_downflow_frame": 1,
+    "field_sha256": "4a6f066bd935bef344388f5015db7090e92e2a3fc6d228853ed9ee30dc5f7244",
+    "mode_2_energy": 2.580762217024509e-11,
+    "mode_2_energy_fraction": 0.000876637799134937,
+    "mode_4_energy": 1.7964078983046165e-10,
+    "mode_4_energy_fraction": 0.006102069597616948,
+    "mode_6_energy": 2.2861424202674984e-10,
+    "mode_6_energy_fraction": 0.00776560834079076,
+    "mode_10_energy": 2.7295803515467695e-08,
+    "mode_10_energy_fraction": 0.9271886019397669
+  },
+  "mirror_error_definition": "area-weighted L2[x(x,z)-x(W-x,z)] / area-weighted L2[x-horizontal_mean(z)]",
+  "odd_mode_definition": "odd nonzero Neumann-cosine energy divided by all nonzero Neumann-cosine energy",
+  "tracked_modes": [
+    2,
+    4,
+    6,
+    10
+  ],
+  "maximum_mirror_symmetry_error": 0.048917147674998704,
+  "maximum_odd_mode_energy_fraction": 0.000598221834164383
+}

@@ -1,0 +1,259 @@
+{
+  "schema_version": 1,
+  "grid": "R48",
+  "amplitude": 1e-05,
+  "accepted_steps": 7200,
+  "stop": {
+    "reason": "registered_analysis_boundary",
+    "last_accepted_time_s": 818538.38263409,
+    "accepted_steps": 7200,
+    "requested_analysis_end_T": 6.0,
+    "source_stop": {
+      "schema_version": 1,
+      "reason": "requested_horizon",
+      "last_accepted_time_s": 818538.38263409,
+      "accepted_steps": 7200,
+      "initial_diagnostics_written": true,
+      "requested_end_s": 818538.38263409,
+      "surface_threshold_low_s": null,
+      "surface_threshold_high_s": null,
+      "global_threshold_low_s": null,
+      "global_threshold_high_s": null
+    },
+    "time_over_T": 5.999999999999997
+  },
+  "nonlinear_milestone": {
+    "definition": "first accepted step of 50 consecutive accepted steps with H23=sqrt(h2^2+h3^2) >= 1e-5",
+    "step": 3582,
+    "time_s": 407222.8453604349,
+    "time_over_T": 2.9849999999998165,
+    "H23": 1.0034491146119252e-05
+  },
+  "surface": {
+    "mean_peak": 0.05430891455113929,
+    "mean_peak_step": 4597,
+    "mean_peak_time_over_T": 3.830833333333065,
+    "mean_terminal": 0.03245611213633492,
+    "decline_after_peak": 0.02185280241480437,
+    "decline_fraction": 0.4023796571044881,
+    "max_terminal": 0.05032318927334274,
+    "domain_max_terminal": 0.05032318927334274
+  },
+  "planes": {
+    "1.0": {
+      "region": "upper_0.995000",
+      "actual_depth_mm": 1.0288705621893435,
+      "advective": {
+        "first_sustained_above_1e-15_step": 4865,
+        "first_sustained_above_1e-15_time_s": 553081.8377103709,
+        "first_sustained_above_1e-15_time_over_T": 4.054166666666484,
+        "peak_positive_m_s": 1.6849963937864684e-11,
+        "peak_step": 5020,
+        "peak_time_over_T": 4.183333333333204,
+        "integrated_positive_m": 4.3012225248523606e-07,
+        "integrated_resolved_positive_m": 4.3012225248523606e-07,
+        "integrated_signed_m": -2.4968821245308268e-05,
+        "accepted_steps": 7200,
+        "reported_cumulative_m": -2.4968821245308268e-05,
+        "reintegration_error_m": 0.0
+      },
+      "total": {
+        "first_sustained_above_1e-15_step": 4622,
+        "first_sustained_above_1e-15_time_s": 525456.167296459,
+        "first_sustained_above_1e-15_time_over_T": 3.851666666666401,
+        "peak_positive_m_s": 4.2637806436845657e-11,
+        "peak_step": 4924,
+        "peak_time_over_T": 4.103333333333171,
+        "integrated_positive_m": 1.8732476203493768e-06,
+        "integrated_resolved_positive_m": 1.8732476203493768e-06,
+        "integrated_signed_m": -2.1906326716034185e-06,
+        "accepted_steps": 7200,
+        "reported_cumulative_m": -2.1906326716034185e-06,
+        "reintegration_error_m": 0.0
+      },
+      "maximum_abs_salt_residual_m": 2.739660305258254e-16,
+      "maximum_abs_water_residual_m": 1.0642158914350243e-14,
+      "maximum_abs_whole_salt_residual_m": 3.865943074563352e-17,
+      "maximum_abs_whole_water_residual_m": 1.2144799055313626e-14
+    },
+    "2.0": {
+      "region": "upper_0.990000",
+      "actual_depth_mm": 1.9480080534645117,
+      "advective": {
+        "first_sustained_above_1e-15_step": 4794,
+        "first_sustained_above_1e-15_time_s": 545010.1397705036,
+        "first_sustained_above_1e-15_time_over_T": 3.994999999999793,
+        "peak_positive_m_s": 4.446594035998089e-11,
+        "peak_step": 4993,
+        "peak_time_over_T": 4.160833333333195,
+        "integrated_positive_m": 1.4333374067627778e-06,
+        "integrated_resolved_positive_m": 1.4333374067627778e-06,
+        "integrated_signed_m": -1.269845492343636e-05,
+        "accepted_steps": 7200,
+        "reported_cumulative_m": -1.269845492343636e-05,
+        "reintegration_error_m": 0.0
+      },
+      "total": {
+        "first_sustained_above_1e-15_step": 4671,
+        "first_sustained_above_1e-15_time_s": 531026.7757338322,
+        "first_sustained_above_1e-15_time_over_T": 3.892499999999751,
+        "peak_positive_m_s": 5.3816426804553306e-11,
+        "peak_step": 4962,
+        "peak_time_over_T": 4.134999999999851,
+        "integrated_positive_m": 2.138376892747279e-06,
+        "integrated_resolved_positive_m": 2.138376892747279e-06,
+        "integrated_signed_m": -3.5879065497282047e-06,
+        "accepted_steps": 7200,
+        "reported_cumulative_m": -3.5879065497282047e-06,
+        "reintegration_error_m": 0.0
+      },
+      "maximum_abs_salt_residual_m": 1.2599530387112992e-16,
+      "maximum_abs_water_residual_m": 8.360966534093939e-15,
+      "maximum_abs_whole_salt_residual_m": 3.865943074563352e-17,
+      "maximum_abs_whole_water_residual_m": 1.2144799055313626e-14
+    },
+    "5.0": {
+      "region": "upper_0.975000",
+      "actual_depth_mm": 5.042057277056355,
+      "advective": {
+        "first_sustained_above_1e-15_step": 5148,
+        "first_sustained_above_1e-15_time_s": 585254.943583363,
+        "first_sustained_above_1e-15_time_over_T": 4.289999999999915,
+        "peak_positive_m_s": 5.070649692718685e-13,
+        "peak_step": 5197,
+        "peak_time_over_T": 4.330833333333265,
+        "integrated_positive_m": 3.64119436348899e-09,
+        "integrated_resolved_positive_m": 3.64119436348899e-09,
+        "integrated_signed_m": -9.814533245296687e-06,
+        "accepted_steps": 7200,
+        "reported_cumulative_m": -9.814533245296687e-06,
+        "reintegration_error_m": 0.0
+      },
+      "total": {
+        "first_sustained_above_1e-15_step": 4936,
+        "first_sustained_above_1e-15_time_s": 561153.5356502382,
+        "first_sustained_above_1e-15_time_over_T": 4.113333333333175,
+        "peak_positive_m_s": 1.2277695140841868e-11,
+        "peak_step": 5184,
+        "peak_time_over_T": 4.319999999999927,
+        "integrated_positive_m": 3.967173493004957e-07,
+        "integrated_resolved_positive_m": 3.967173493004957e-07,
+        "integrated_signed_m": -7.266363693062675e-06,
+        "accepted_steps": 7200,
+        "reported_cumulative_m": -7.266363693062675e-06,
+        "reintegration_error_m": 0.0
+      },
+      "maximum_abs_salt_residual_m": 3.714493583594283e-17,
+      "maximum_abs_water_residual_m": 5.234123259950787e-15,
+      "maximum_abs_whole_salt_residual_m": 3.865943074563352e-17,
+      "maximum_abs_whole_water_residual_m": 1.2144799055313626e-14
+    },
+    "10.0": {
+      "region": "upper_0.950000",
+      "actual_depth_mm": 9.867682095126273,
+      "advective": {
+        "first_sustained_above_1e-15_step": null,
+        "first_sustained_above_1e-15_time_s": null,
+        "first_sustained_above_1e-15_time_over_T": null,
+        "peak_positive_m_s": 0.0,
+        "peak_step": 1,
+        "peak_time_over_T": 0.000833333333333333,
+        "integrated_positive_m": 0.0,
+        "integrated_resolved_positive_m": 0,
+        "integrated_signed_m": -9.184996626207318e-06,
+        "accepted_steps": 7200,
+        "reported_cumulative_m": -9.184996626207318e-06,
+        "reintegration_error_m": 0.0
+      },
+      "total": {
+        "first_sustained_above_1e-15_step": null,
+        "first_sustained_above_1e-15_time_s": null,
+        "first_sustained_above_1e-15_time_over_T": null,
+        "peak_positive_m_s": 0.0,
+        "peak_step": 1,
+        "peak_time_over_T": 0.000833333333333333,
+        "integrated_positive_m": 0.0,
+        "integrated_resolved_positive_m": 0,
+        "integrated_signed_m": -8.95923452758416e-06,
+        "accepted_steps": 7200,
+        "reported_cumulative_m": -8.95923452758416e-06,
+        "reintegration_error_m": 0.0
+      },
+      "maximum_abs_salt_residual_m": 1.6666220270175613e-17,
+      "maximum_abs_water_residual_m": 4.7326967487747455e-15,
+      "maximum_abs_whole_salt_residual_m": 3.865943074563352e-17,
+      "maximum_abs_whole_water_residual_m": 1.2144799055313626e-14
+    }
+  },
+  "independent_conservation_passed": true,
+  "independent_checks": {
+    "frames": 145,
+    "recorded_steps": 7201,
+    "frame_stride": 50,
+    "frame_step_intervals": [
+      50
+    ],
+    "terminal_irregular_stride": false,
+    "max_inventory_salt_difference_m": 8.375461782450522e-18,
+    "max_inventory_water_difference_m": 2.5431046157819992e-15,
+    "online_absolute_errors": {
+      "weighted_top_mean": 4.85722573273506e-17,
+      "weighted_top_sigma": 5.0306980803327406e-17,
+      "weighted_fourier": 8.673617379884035e-17,
+      "weighted_projection": 4.2674197509029455e-16
+    },
+    "independent_budgets": {
+      "upper_0.900000": {
+        "salt_closure_m": 2.0482103697556236e-17,
+        "water_closure_m": 5.739533578836002e-15,
+        "cumulative_salt_reintegration_error": 0.0,
+        "cumulative_water_reintegration_error": 0.0
+      },
+      "upper_0.750000": {
+        "salt_closure_m": 8.994854625130229e-18,
+        "water_closure_m": 2.483051673887564e-15,
+        "cumulative_salt_reintegration_error": 0.0,
+        "cumulative_water_reintegration_error": 0.0
+      },
+      "upper_0.500000": {
+        "salt_closure_m": 9.64939933512099e-18,
+        "water_closure_m": 2.7388285189040504e-15,
+        "cumulative_salt_reintegration_error": 0.0,
+        "cumulative_water_reintegration_error": 0.0
+      },
+      "upper_0.995000": {
+        "salt_closure_m": 2.682146768139687e-16,
+        "water_closure_m": 1.0096565445091513e-14,
+        "cumulative_salt_reintegration_error": 0.0,
+        "cumulative_water_reintegration_error": 0.0
+      },
+      "upper_0.990000": {
+        "salt_closure_m": 1.219079463841543e-16,
+        "water_closure_m": 8.141999676322315e-15,
+        "cumulative_salt_reintegration_error": 0.0,
+        "cumulative_water_reintegration_error": 0.0
+      },
+      "upper_0.975000": {
+        "salt_closure_m": 3.6723960461157446e-17,
+        "water_closure_m": 5.153163109698392e-15,
+        "cumulative_salt_reintegration_error": 0.0,
+        "cumulative_water_reintegration_error": 0.0
+      },
+      "upper_0.950000": {
+        "salt_closure_m": 1.541091744234474e-17,
+        "water_closure_m": 4.460056007174018e-15,
+        "cumulative_salt_reintegration_error": 0.0,
+        "cumulative_water_reintegration_error": 0.0
+      },
+      "free_domain": {
+        "salt_closure_m": 3.6131037398079435e-17,
+        "water_closure_m": 9.901505986377023e-15,
+        "cumulative_salt_reintegration_error": 0.0,
+        "cumulative_water_reintegration_error": 0.0
+      }
+    },
+    "scope": "independent VTU storage + independent integration of recorded conservative flux; not a second flux-kernel implementation",
+    "passed": true
+  },
+  "sign_convention": "positive is downward; all plane fluxes are conservative SCVF integrations"
+}

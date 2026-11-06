@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "campaign": "WP13 intermediate-amplitude three-grid convergence test",
+  "grid": "R48",
+  "run_name": "WP13-R48-A1e5-6T",
+  "threads": 4,
+  "input_sha256": "9eb09a60c355eb81845985877cbde2b5843513651102b55189504d9f98d06d32",
+  "profile_sha256": "d721e605d126e555f92b43200aa73b999ed4e2b61397edd1e98c0d9fddb36575",
+  "executable_sha256": "112076759fdff0942000307f729c2bd3c7e96963229b43c1b67c1f12bbf9df81",
+  "solver_timeout_s": 14400,
+  "minimum_scratch_free_bytes": 34359738368,
+  "minimum_available_memory_bytes": 17179869184,
+  "authorized_steps": 7200,
+  "authorized_horizon_T": 6.0,
+  "authorized_end_s": 818538.38263409,
+  "authorized_amplitude": 1e-05,
+  "initial_salt_mole_fraction_range": [
+    0.00359,
+    0.00361
+  ],
+  "allowed_input_differences_from_reference": [
+    "Problem.Amplitude",
+    "Problem.Name",
+    "TimeLoop.TEnd"
+  ],
+  "reference_input": "analysis\\wp11_long_validation_20261105\\R48_run\\params.input",
+  "reference_input_sha256": "5b4bd10811f1a50052aff1ae1bd498d69108cb7a88c9f145260437569198d4f9"
+}
