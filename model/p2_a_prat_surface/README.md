@@ -9,26 +9,40 @@ surface/            the module
   thermo.py           source-traced thermophysical correlations
   water_activity.py   NaCl water activity (Pitzer), reused from heterogeneity
   film_evaporation.py physical gas-film evaporation flux
-  prat_crust.py       Prat growth law, reduced crust transport, inventories
-  coupling.py         one-way chain, base-flux reconstruction, options A/B
+  prat_crust.py       P2-A: Prat closed growth law, frozen uniform porosity
+  coupling.py         P2-A: one-way chain, base fluxes, interface options A/B
+  evolving_crust.py   P2-B: depth-resolved crust with porosity from eq (2)
 verification/
-  config/acceptance_criteria.json   tolerances and declared parameters,
-                                    registered before the runs
-  reference_config.py               the single declared reference configuration
-  test_p2a_surface.py               61 tests, maps onto task item 10
-  run_verification.py               regenerates the evidence tables
-  drive_from_p1r2.py                one-way chain driven by frozen P1-R2 data
+  config/acceptance_criteria.json       P2-A tolerances and declared inputs
+  config/acceptance_criteria_p2b.json   P2-B tolerances, inputs and the
+                                        predictions registered before
+                                        measurement
+  reference_config.py        the declared P2-A reference configuration
+  reference_config_p2b.py    the declared P2-B reference configuration
+  test_p2a_surface.py        61 tests, maps onto task-4 item 10
+  test_p2b_evolving.py       28 tests, evolving porosity
+  run_verification.py        regenerates the P2-A evidence tables
+  run_p2b.py                 regenerates the P2-B evidence tables
+  drive_from_p1r2.py         one-way chain driven by frozen P1-R2 data
 results/            generated evidence (CSV + JSON)
 ```
+
+`prat_crust.py` and `coupling.py` are the audited P2-A closed-form path and are
+left unmodified by P2-B; `evolving_crust.py` must reproduce them in the
+frozen-uniform-porosity limit, and a test enforces that.
 
 Reproduce:
 
 ```bash
-cd verification && python -m unittest test_p2a_surface
+cd verification && python -m unittest test_p2a_surface test_p2b_evolving
 ```
 
 ```bash
 cd verification && python run_verification.py
+```
+
+```bash
+cd verification && python run_p2b.py
 ```
 
 ```bash
@@ -43,13 +57,14 @@ Documentation:
   assumptions and open tensions
 - `docs/P2_A_VERIFICATION.md` - numerical evidence for task item 10
 - `docs/P2_A_INTERFACE_COMPARISON.md` - evaporation-interface options A and B
+- `docs/P2_B_EVOLVING_POROSITY.md` - removing the frozen-porosity assumption
 - `docs/P2_A_GO_NO_GO.md` - decision and gates
 
 Read `docs/PRAT_PHYSICS_AUDIT.md` and `docs/INTERFACE_CONSERVATION.md` first;
 every Prat equation used here is taken from the audit, not from memory.
 
 **Status: one-way diagnostic only.** Growth is gated behind an explicitly
-declared seed event, the evaporation flux is never fed back into a Richards
-solution, and the constant-porosity assumption of the reduced crust solution
-does not hold at the declared parameters. See the GO/NO-GO before using any
-number here.
+declared seed event and the evaporation flux is never fed back into a Richards
+solution. P2-B shows that with porosity evolving as equation (2) requires, the
+crust seals after growing by only about `beta * eps_0 / a_v`. See the GO/NO-GO
+before using any number here.

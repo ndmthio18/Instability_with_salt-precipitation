@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "registered_before_runs": true,
+  "task": "P2-B evolving crust porosity from Prat equation (2)",
+  "note": "Registered separately so that the P2-A file committed in 14712ec stays untouched.",
+  "tolerances": {
+    "eq28_reduction_observed_order_min": 1.9,
+    "eq28_reduction_relative_at_n512": 1e-06,
+    "exact_closure_offset_predicted_relative": 0.02,
+    "salt_budget_relative": 1e-10,
+    "water_budget_relative": 1e-10,
+    "solid_split_residual_relative": 1e-10,
+    "sealing_time_grid_relative": 0.05,
+    "sealing_time_timestep_relative": 0.02,
+    "sealing_law_ratio_band_thin_crust": [
+      0.95,
+      1.2
+    ],
+    "sealing_law_evaporation_independence_relative": 0.01,
+    "sealing_law_kinetics_independence_relative": 0.15,
+    "clogging_depth_relative": 0.05,
+    "sealing_law_lower_bound_slack": 0.02,
+    "sealing_law_thin_crust_relative": 0.1,
+    "boundary_layer_cells_minimum": 4.0
+  },
+  "declared_reference_parameters": {
+    "deposition_porosity": {
+      "value": 0.4,
+      "provenance": "same declared value as the P2-A crust porosity; it is now the porosity of newly created layers only"
+    },
+    "clogging_porosity": {
+      "value": 0.01,
+      "provenance": "declared sealing threshold; the reduced solution has no meaning once the pore network closes"
+    },
+    "connectivity_porosity": {
+      "value": 0.02,
+      "provenance": "declared hydraulic-connectivity limit, the porosity analogue of PRAT_PHYSICS_AUDIT section 5.4"
+    },
+    "cells_per_seed_height": {
+      "value": 32,
+      "provenance": "declared base grid; convergence is demonstrated at 16, 32, 64 and 128"
+    },
+    "diffusivity_exponent": {
+      "value": 0.0,
+      "provenance": "constant by default so the bare effect of equation (2) is isolated; 1.5 is run as a declared sensitivity only"
+    },
+    "specific_area_exponent": {
+      "value": 0.0,
+      "provenance": "constant by default; 1.0 and 2.0 are run as declared sensitivities only. Prat (2026) supplies no a_v(eps) closure and the audit lists changing crystal size as unresolved."
+    }
+  },
+  "predictions_registered_before_measurement": {
+    "growth_before_sealing": "dh = beta * eps_0 / a_v, independent of j, k_r, RH and C*_top",
+    "clogging_depth": "the porosity minimum sits at the original seed top, z = h_seed",
+    "cubic_construction_corollary": "with a_v = 6(1-eps_0)/d for the paper's own ideal cubic construction, dh/d = beta eps_0 / (6 (1-eps_0))",
+    "general_power_law": "With a_v(eps) = a_v0 (eps/eps_0)**m, dh = (beta eps_0**m / a_v0) * integral_{eps_seal}^{eps_0} eps**-m d eps for any m; still independent of j, k_r and C*_top. Exact while dh << h, a lower bound otherwise.",
+    "resolution_requirement": "The grid must resolve the reaction boundary layer h/sqrt(Da), not the growth increment; rows with fewer than 4 cells across it are excluded from the law statistics."
+  },
+  "limitations": [
+    "a_v and k_r remain declared inputs with no measured value.",
+    "The quasi-steady transport reduction and the Pe << Da neglect of advection are inherited from the audit unchanged.",
+    "Sealing is declared at a porosity threshold, not derived from a percolation criterion.",
+    "Nothing here is coupled to a Richards solution."
+  ]
+}

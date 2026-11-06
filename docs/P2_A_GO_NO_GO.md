@@ -1,5 +1,17 @@
 # P2-A GO/NO-GO decision
 
+> **Update after P2-B (see `P2_B_EVOLVING_POROSITY.md`).** Blocker 1 below has
+> been addressed as a *modelling* gap: `surface/evolving_crust.py` evolves the
+> crust porosity from Prat equation (2) on a depth-resolved material grid, is
+> conservative to 1e-15, and reproduces equation (28) at second order in the
+> frozen-uniform limit. The physical conclusion is sharper than before, not
+> softer: with constant specific area the crust seals after growing by only
+> `beta * eps_0 / a_v`, independent of the evaporation flux, which is less
+> than one crystal diameter in the paper's own cubic construction. Blocker 1
+> is therefore replaced by **gate 1'** in the gate list at the end of this
+> document. Blocker 2 and every other item below are unchanged, and the
+> overall decision is unchanged.
+
 ## Decision
 
 **GO** for accepting the P2-A surface module as a verified, conservative,
@@ -127,11 +139,24 @@ Not supported, and must not be claimed:
 > crust growth occurs at a predicted time, or that the coupled model conserves,
 > since no coupled model exists yet.
 
-## Gates before P2-B coupling
+## Gates before coupling
 
-1. Resolve the constant-porosity tension: either evolve `eps_c` from
-   equation (2) and re-derive the reduced solution, or restrict the model to a
-   declared `Da*` window and justify it.
+1. ~~Resolve the constant-porosity tension.~~ **Done in P2-B.** Porosity now
+   evolves from equation (2); see `P2_B_EVOLVING_POROSITY.md`.
+
+1'. **(replaces gate 1)** Supply a defensible `a_v(eps)` closure, or a
+   measurement of `a_v`, that permits a crust to reach a thickness worth
+   modelling. With constant `a_v` the resolved model seals after
+   `dh = beta eps_0 / a_v`, which is 8.4 % of the seed height at the declared
+   inputs and under one crystal diameter in the paper's own cubic
+   construction. P2-B shows the growth before sealing is
+   `(beta eps_0^m / a_v0) * integral eps^-m d eps` for `a_v ~ eps^m` and is
+   independent of the evaporation flux for every `m`, so no atmospheric or
+   kinetic parameter can rescue it: only crystal coarsening can. That closure
+   is the audit's own unresolved "changing crystal size" item and P2-B does
+   not supply it. Until it exists, a crust that grows appreciably cannot be
+   claimed, and neither can one that seals, since the sealing threshold is
+   declared rather than derived from a percolation or permeability criterion.
 2. Obtain or declare defensible `a_v` and `k_r` with provenance, and re-run the
    regime tables.
 3. Decide the atmospheric control variable and film thickness for Case 36877,
@@ -146,4 +171,4 @@ Not supported, and must not be claimed:
    stands: no large-scale density-instability run before conservative
    soil/crust coupling is verified.
 
-Until gates 1, 2, 4 and 5 are met, P2-B remains held.
+Until gates 1', 2, 4 and 5 are met, coupling remains held.
