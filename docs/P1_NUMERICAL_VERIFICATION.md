@@ -6,7 +6,11 @@ Acceptance criteria were stored and hashed before the accepted run. The absolute
 
 ## Accepted run
 
-The accepted suite is `/temp-hd/zhixin/p1_compositional_20261106/verification_run_06`; the compact committed record is `model/p1_compositional_baseline/results/p1_verification_20261106/gate_summary.json`.
+The final accepted suite is
+`/temp-hd/zhixin/p1_compositional_20261106/verification_run_07`, built from the
+committed source defaults and executed with the recorded OpenMPI runtime
+workaround. The compact and full records are under
+`model/p1_compositional_baseline/results/p1_verification_20261106/`.
 
 | Gate | Result | Evidence |
 |---|---:|---|
@@ -26,5 +30,9 @@ V6 uses controlled air-component injection into a liquid-only state and controll
 - Build attempt 02 exposed the SuperLU header mismatch and a missing local-residual constructor argument.
 - Verification run 02 exposed inactive-phase diagnostic handling, a non-hydrostatic gas initial pressure and an ill-posed V5 phase label.
 - Verification runs 04 and 05 failed the unchanged V3/V4/V6 gates and motivated physically traceable corrections; their failures were not reclassified as passes.
+- Build attempt 07 initially invoked CMake's default `all` target, which does
+  not include the optional P1 application targets in this DUNE module. The same
+  configured build tree then compiled the explicit 1D and 2D targets; the
+  recorded executable hashes are the latter successful products.
 
 Passing V1--V7 demonstrates numerical accounting and controlled state transitions. It does not validate density-instability onset, the `BrineAir` constitutive choice against experiment, or any precipitation mechanism.

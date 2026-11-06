@@ -1,0 +1,39 @@
+{
+  "time_end_s": 60000.0,
+  "accepted_steps": 264,
+  "initial_mode_amplitude": 7.614628922423316e-07,
+  "minimum_mode_amplitude": 4.6980610586239363e-07,
+  "new_model_mode_minimum_time_s": 60000.0,
+  "mode_minimum_is_endpoint": true,
+  "mode_monotonic_nonincreasing": true,
+  "numerical_detection_time_s": null,
+  "post_minimum_log_slope_1_s": null,
+  "reference_times_s": {
+    "lsa_global_neutral_crossing": 31409.1577927,
+    "lsa_observable_mode_crossing": 45474.3545908,
+    "richards_detected_onset": 50394.3336331
+  },
+  "max_abs_budget_residual_mol_m2": {
+    "B0": 5.380125974359847e-10,
+    "B1": 4.5015435823358985e-10
+  },
+  "final": {
+    "B0": {
+      "top_salt_mean": 0.00801812763063132,
+      "top_liquid_density_kg_m3": 1015.5951664601988,
+      "top_sw": 0.25814108676804,
+      "mode_amplitude": 3.56398457488155e-16,
+      "water_inventory_mol_m2": 1322.661882470877,
+      "salt_inventory_mol_m2": 4.815481937232026
+    },
+    "B1": {
+      "top_salt_mean": 0.008018127628056915,
+      "top_liquid_density_kg_m3": 1015.5951664545179,
+      "top_sw": 0.2581410867680393,
+      "mode_amplitude": 4.6980610586239363e-07,
+      "water_inventory_mol_m2": 1322.661882470903,
+      "salt_inventory_mol_m2": 4.815481937232008
+    }
+  },
+  "interpretation_limit": "An endpoint minimum means that no post-minimum growth or numerical onset was detected in the simulated window. Any interior minimum would remain distinct from the LSA global neutral crossing and nonlinear transport onset."
+}

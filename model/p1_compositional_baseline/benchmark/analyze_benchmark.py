@@ -5,15 +5,26 @@ from __future__ import annotations
 
 import argparse
 import csv
+import hashlib
 import json
 import math
+import platform
 from pathlib import Path
+import sys
 
 
 def read_budget(path: Path) -> list[dict[str, float]]:
     with path.open(newline="", encoding="utf-8") as handle:
         return [{key: float(value) for key, value in row.items()}
                 for row in csv.DictReader(handle)]
+
+
+def sha256(path: Path) -> str:
+    digest = hashlib.sha256()
+    with path.open("rb") as handle:
+        for block in iter(lambda: handle.read(1024 * 1024), b""):
+            digest.update(block)
+    return digest.hexdigest()
 
 
 def slope(xs: list[float], ys: list[float]) -> float | None:
@@ -30,6 +41,8 @@ def main() -> int:
     parser.add_argument("b0", type=Path)
     parser.add_argument("b1", type=Path)
     parser.add_argument("output", type=Path)
+    parser.add_argument("--binary-sha256", required=True)
+    parser.add_argument("--remote-result", required=True)
     args = parser.parse_args()
     args.output.mkdir(parents=True, exist_ok=False)
 
@@ -41,8 +54,12 @@ def main() -> int:
     positive = [(time, amplitude) for time, amplitude in zip(times, amplitudes) if amplitude > 0.0]
     minimum_index = min(range(len(amplitudes)), key=amplitudes.__getitem__)
     detected_minimum_time = times[minimum_index]
+    minimum_is_endpoint = minimum_index == len(amplitudes) - 1
+    monotonic_nonincreasing = all(
+        following <= preceding for preceding, following in zip(amplitudes, amplitudes[1:])
+    )
     fit = [(time, math.log(amplitude)) for time, amplitude in positive
-           if time >= detected_minimum_time and time <= times[-1]]
+           if not minimum_is_endpoint and time >= detected_minimum_time and time <= times[-1]]
     fitted_growth_rate = slope([item[0] for item in fit], [item[1] for item in fit])
 
     components = ("water", "air", "salt")
@@ -52,6 +69,9 @@ def main() -> int:
         "initial_mode_amplitude": amplitudes[0],
         "minimum_mode_amplitude": amplitudes[minimum_index],
         "new_model_mode_minimum_time_s": detected_minimum_time,
+        "mode_minimum_is_endpoint": minimum_is_endpoint,
+        "mode_monotonic_nonincreasing": monotonic_nonincreasing,
+        "numerical_detection_time_s": None if minimum_is_endpoint else detected_minimum_time,
         "post_minimum_log_slope_1_s": fitted_growth_rate,
         "reference_times_s": {
             "lsa_global_neutral_crossing": 31409.1577927,
@@ -69,7 +89,11 @@ def main() -> int:
                      "mode_amplitude", "water_inventory_mol_m2", "salt_inventory_mol_m2")}
             for label, data in (("B0", b0), ("B1", b1))
         },
-        "interpretation_limit": "The mode-amplitude minimum is a numerical detection diagnostic, not the LSA global neutral crossing or a nonlinear transport-onset time."
+        "interpretation_limit": (
+            "An endpoint minimum means that no post-minimum growth or numerical onset was "
+            "detected in the simulated window. Any interior minimum would remain distinct from "
+            "the LSA global neutral crossing and nonlinear transport onset."
+        )
     }
     (args.output / "benchmark_summary.json").write_text(json.dumps(result, indent=2) + "\n", encoding="utf-8")
 
@@ -97,8 +121,33 @@ def main() -> int:
     axes[2].set_ylabel("NaCl inventory (mol m$^{-2}$)")
     axes[2].set_xlabel("time (h)")
     axes[2].legend()
-    fig.savefig(args.output / "B0_B1_COMPARISON.png", dpi=200)
+    for suffix in ("png", "svg"):
+        fig.savefig(args.output / f"B0_B1_COMPARISON.{suffix}", dpi=300, facecolor="white")
     plt.close(fig)
+    manifest = {
+        "analysis": "matched B0/B1 exploratory benchmark",
+        "remote_result": args.remote_result,
+        "binary_2d_sha256": args.binary_sha256,
+        "python": sys.version,
+        "platform": platform.platform(),
+        "inputs": {
+            "B0_component_budget_sha256": sha256(args.b0 / "component_budget.csv"),
+            "B1_component_budget_sha256": sha256(args.b1 / "component_budget.csv"),
+            "B0_run_status_sha256": sha256(args.b0 / "run_status.json"),
+            "B1_run_status_sha256": sha256(args.b1 / "run_status.json"),
+        },
+    }
+    (args.output / "manifest.json").write_text(
+        json.dumps(manifest, indent=2) + "\n", encoding="utf-8"
+    )
+    checksum_lines = [
+        f"{sha256(path)}  {path.name}"
+        for path in sorted(args.output.iterdir())
+        if path.is_file() and path.name != "SHA256SUMS.txt"
+    ]
+    (args.output / "SHA256SUMS.txt").write_text(
+        "\n".join(checksum_lines) + "\n", encoding="utf-8"
+    )
     return 0
 
 

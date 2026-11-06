@@ -5,13 +5,25 @@ from __future__ import annotations
 
 import argparse
 import csv
+import hashlib
+import json
 from pathlib import Path
+import platform
+import sys
 import xml.etree.ElementTree as ET
 
 import numpy as np
 
 
 FIELDS = ("p_liq", "S_liq", "x^NaCl_liq", "rho_liq")
+
+
+def sha256(path: Path) -> str:
+    digest = hashlib.sha256()
+    with path.open("rb") as handle:
+        for block in iter(lambda: handle.read(1024 * 1024), b""):
+            digest.update(block)
+    return digest.hexdigest()
 
 
 def read_vtu(path: Path):
@@ -77,8 +89,32 @@ def main() -> int:
         axis.set_xlabel(xlabel)
         axis.set_ylabel("z (m)")
         axis.legend()
-    fig.savefig(args.output / "B0_B1_VERTICAL_PROFILES.png", dpi=200)
+    for suffix in ("png", "svg"):
+        fig.savefig(args.output / f"B0_B1_VERTICAL_PROFILES.{suffix}", dpi=300, facecolor="white")
     plt.close(fig)
+    manifest = {
+        "analysis": "horizontally averaged final vertical profiles",
+        "python": sys.version,
+        "platform": platform.platform(),
+        "numpy": np.__version__,
+        "inputs": {
+            "B0_final_vtu": str(args.b0_vtu),
+            "B0_final_vtu_sha256": sha256(args.b0_vtu),
+            "B1_final_vtu": str(args.b1_vtu),
+            "B1_final_vtu_sha256": sha256(args.b1_vtu),
+        },
+    }
+    (args.output / "manifest.json").write_text(
+        json.dumps(manifest, indent=2) + "\n", encoding="utf-8"
+    )
+    checksum_lines = [
+        f"{sha256(path)}  {path.name}"
+        for path in sorted(args.output.iterdir())
+        if path.is_file() and path.name != "SHA256SUMS.txt"
+    ]
+    (args.output / "SHA256SUMS.txt").write_text(
+        "\n".join(checksum_lines) + "\n", encoding="utf-8"
+    )
     return 0
 
 

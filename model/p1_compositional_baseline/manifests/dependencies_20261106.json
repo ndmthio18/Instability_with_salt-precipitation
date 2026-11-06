@@ -1,7 +1,7 @@
 {
   "host": "sal",
   "remote_root": "/temp-hd/zhixin/p1_compositional_20261106",
-  "build_attempt": "build_attempt_06",
+  "build_attempt": "build_attempt_07",
   "cmake_build_type": "Release",
   "cmake_disable_find_package_superlu": true,
   "compiler_path": "/usr/lib/hpc/compiler/gnu/14/bin/c++",
@@ -29,8 +29,25 @@
     "upstream_2pnc_last_commit": "a153d6556efbd3da8c12eafe193e462539f954a7"
   },
   "executables": {
-    "p1_compositional_2d_sha256": "5f9107f2e76a8f1adad4ecdac05d35859c8e4dd0b633da325d235bdba5d914d8",
-    "p1_compositional_1d_sha256": "79381a44211e7e2c9ad8ccad0ecd759ccaa25891402ef59e41fc984a73db3c4d"
+    "p1_compositional_2d_sha256": "2ae1f1350c6dc62908e51e4b26fa9b2c294bf3ed4d9deacc6768061b553e8737",
+    "p1_compositional_1d_sha256": "ba03b3f0cbd224ce0bbd2196c3b77dce5c75adf15e82cbd4cb0a6cfbed2c1c82"
+  },
+  "accepted_verification": {
+    "remote_result": "/temp-hd/zhixin/p1_compositional_20261106/verification_run_07",
+    "provenance_sha256": "fbd4c75f92c103bcd5add705c50eb8de0aacc45641ede35da724c113bd754db8",
+    "verification_summary_sha256": "2b1ef203386333e0c1974708df337a81dc9ace6c79696d818f3c118ae9eef755",
+    "gate_assessment_sha256": "2f009ed4b0336fa6bd0d3162984210c87df71468e0b17c51959a9ea7bea5980c"
+  },
+  "accepted_benchmark": {
+    "remote_result": "/temp-hd/zhixin/p1_compositional_20261106/benchmark_run_01",
+    "benchmark_summary_sha256": "9bd46834015e750085ea40d1892e7b53856c433065c0099e69b763003ff99880",
+    "build_06_budget_bridge_sha256": "fb9c2addb38e6afb5a24b2b8218d29292a163a7f0a6df81a115f60d226f9ead2"
+  },
+  "accepted_sensitivity": {
+    "remote_base": "/temp-hd/zhixin/p1_compositional_20261106/convergence_run_01/B1_base_n280_nz100_dt227_t60000",
+    "remote_pairs": "/temp-hd/zhixin/p1_compositional_20261106/convergence_run_02_parallel",
+    "convergence_assessment_sha256": "6cb6b0cc93832fba8371ff039c1997d7fa34c204b294f834cf980af57820d541",
+    "result_manifest_sha256": "7742b9627d682df0e764279c30bdce6e3b558791712a4154b7b2f829f25997ac"
   },
   "runtime_workaround": {
     "reason": "OpenMPI/UCX allocator deadlock during MPI_Init on sal",

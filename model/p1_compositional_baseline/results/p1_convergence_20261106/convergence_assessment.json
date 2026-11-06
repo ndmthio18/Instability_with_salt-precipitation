@@ -1,0 +1,200 @@
+{
+  "overall_pass": false,
+  "failure_semantics": "One or more registered checks failed. In particular, an endpoint mode minimum leaves no post-minimum growth rate, so the onset-sensitive gate cannot pass even when terminal observables are insensitive.",
+  "plan_sha256": "9c5028f1fdd090c6d4a4833555c94ecada886872e0d23186964204b1ad030883",
+  "summaries": {
+    "base": {
+      "time_end_s": 60000.0,
+      "accepted_steps": 264,
+      "initial_mode_amplitude": 7.614628922423316e-07,
+      "final_mode_amplitude": 4.6980610586239363e-07,
+      "minimum_mode_amplitude": 4.6980610586239363e-07,
+      "mode_minimum_time_s": 60000.0,
+      "mode_minimum_is_endpoint": true,
+      "mode_monotonic_nonincreasing": true,
+      "numerical_detection_time_s": null,
+      "post_minimum_growth_rate_1_s": null,
+      "final_top_salt_mean": 0.008018127628056915,
+      "final_top_sw": 0.2581410867680393,
+      "final_salt_inventory_mol_m2": 4.815481937232008,
+      "max_abs_component_budget_residual_mol_m2": 4.5015435823358985e-10
+    },
+    "horizontal_coarse": {
+      "time_end_s": 60000.0,
+      "accepted_steps": 264,
+      "initial_mode_amplitude": 7.614628922423481e-07,
+      "final_mode_amplitude": 4.770848494528875e-07,
+      "minimum_mode_amplitude": 4.770848494528875e-07,
+      "mode_minimum_time_s": 60000.0,
+      "mode_minimum_is_endpoint": true,
+      "mode_monotonic_nonincreasing": true,
+      "numerical_detection_time_s": null,
+      "post_minimum_growth_rate_1_s": null,
+      "final_top_salt_mean": 0.00801812762816416,
+      "final_top_sw": 0.258141086768039,
+      "final_salt_inventory_mol_m2": 4.815481937232272,
+      "max_abs_component_budget_residual_mol_m2": 2.9286092069943004e-10
+    },
+    "vertical_coarse": {
+      "time_end_s": 60000.0,
+      "accepted_steps": 264,
+      "initial_mode_amplitude": 3.5935797197772543e-07,
+      "final_mode_amplitude": 2.414545294473328e-07,
+      "minimum_mode_amplitude": 2.414545294473328e-07,
+      "mode_minimum_time_s": 60000.0,
+      "mode_minimum_is_endpoint": true,
+      "mode_monotonic_nonincreasing": true,
+      "numerical_detection_time_s": null,
+      "post_minimum_growth_rate_1_s": null,
+      "final_top_salt_mean": 0.005856256832103645,
+      "final_top_sw": 0.25839412901944636,
+      "final_salt_inventory_mol_m2": 4.815473790757547,
+      "max_abs_component_budget_residual_mol_m2": 3.8173732693399154e-10
+    },
+    "time_half": {
+      "time_end_s": 60000.0,
+      "accepted_steps": 528,
+      "initial_mode_amplitude": 7.614628922423316e-07,
+      "final_mode_amplitude": 4.6967368933427047e-07,
+      "minimum_mode_amplitude": 4.6967368933427047e-07,
+      "mode_minimum_time_s": 60000.0,
+      "mode_minimum_is_endpoint": true,
+      "mode_monotonic_nonincreasing": true,
+      "numerical_detection_time_s": null,
+      "post_minimum_growth_rate_1_s": null,
+      "final_top_salt_mean": 0.008018747865166032,
+      "final_top_sw": 0.25814108690626053,
+      "final_salt_inventory_mol_m2": 4.815481937289972,
+      "max_abs_component_budget_residual_mol_m2": 4.029350464396231e-10
+    }
+  },
+  "comparisons_to_base": {
+    "horizontal_coarse": {
+      "final_surface_salinity_relative_difference": 1.337520175597316e-11,
+      "final_mode_amplitude_relative_difference": 0.015256706640005448,
+      "post_minimum_growth_rate_relative_difference": null,
+      "growth_rate_comparison_available": false,
+      "profile_norms_after_vertical_interpolation": {
+        "p_liq": {
+          "relative_L1": 1.2902657710403548e-16,
+          "relative_L2": 1.4248347554301365e-16,
+          "relative_Linf": 1.5520652259815495e-16
+        },
+        "S_liq": {
+          "relative_L1": 7.462677645346156e-17,
+          "relative_L2": 1.2068123313982422e-16,
+          "relative_Linf": 1.6279455123554666e-16
+        },
+        "x^NaCl_liq": {
+          "relative_L1": 4.32556473087261e-08,
+          "relative_L2": 1.8541720599695863e-07,
+          "relative_Linf": 4.988696860708676e-07
+        },
+        "rho_liq": {
+          "relative_L1": 3.975177324142174e-08,
+          "relative_L2": 2.8108730206566633e-07,
+          "relative_Linf": 1.969286999902231e-06
+        }
+      },
+      "checks": {
+        "budget": true,
+        "surface_salinity": true,
+        "mode_amplitude": true,
+        "post_minimum_growth_rate": false
+      },
+      "pair_pass": false
+    },
+    "vertical_coarse": {
+      "final_surface_salinity_relative_difference": 0.2696228965461317,
+      "final_mode_amplitude_relative_difference": 0.48605493535655553,
+      "post_minimum_growth_rate_relative_difference": null,
+      "growth_rate_comparison_available": false,
+      "profile_norms_after_vertical_interpolation": {
+        "p_liq": {
+          "relative_L1": 2.3926965026010967e-06,
+          "relative_L2": 1.316640751513513e-05,
+          "relative_Linf": 9.172511476280223e-05
+        },
+        "S_liq": {
+          "relative_L1": 3.634524389984518e-05,
+          "relative_L2": 0.00019677227808216461,
+          "relative_Linf": 0.0014428617931958154
+        },
+        "x^NaCl_liq": {
+          "relative_L1": 0.012864534691028655,
+          "relative_L2": 0.0642323564537866,
+          "relative_Linf": 0.26962260258818593
+        },
+        "rho_liq": {
+          "relative_L1": 0.00010224612340008451,
+          "relative_L2": 0.000515902945466149,
+          "relative_Linf": 0.004604193005880335
+        }
+      },
+      "checks": {
+        "budget": true,
+        "surface_salinity": false,
+        "mode_amplitude": false,
+        "post_minimum_growth_rate": false
+      },
+      "pair_pass": false
+    },
+    "time_half": {
+      "final_surface_salinity_relative_difference": 7.734837402871848e-05,
+      "final_mode_amplitude_relative_difference": 0.000281853569953259,
+      "post_minimum_growth_rate_relative_difference": null,
+      "growth_rate_comparison_available": false,
+      "profile_norms_after_vertical_interpolation": {
+        "p_liq": {
+          "relative_L1": 0.0,
+          "relative_L2": 0.0,
+          "relative_Linf": 0.0
+        },
+        "S_liq": {
+          "relative_L1": 0.0,
+          "relative_L2": 0.0,
+          "relative_Linf": 0.0
+        },
+        "x^NaCl_liq": {
+          "relative_L1": 5.439397621851613e-06,
+          "relative_L2": 2.1678356160087952e-05,
+          "relative_Linf": 7.73248013313569e-05
+        },
+        "rho_liq": {
+          "relative_L1": 9.937943308491242e-08,
+          "relative_L2": 5.962762122333848e-07,
+          "relative_Linf": 3.938574000140285e-06
+        }
+      },
+      "checks": {
+        "budget": true,
+        "surface_salinity": true,
+        "mode_amplitude": true,
+        "post_minimum_growth_rate": false
+      },
+      "pair_pass": false
+    }
+  },
+  "input_hashes": {
+    "base": {
+      "component_budget_sha256": "fb9c2addb38e6afb5a24b2b8218d29292a163a7f0a6df81a115f60d226f9ead2",
+      "final_vtu": "B1_base_n280_nz100_dt227_t60000-00006.vtu",
+      "final_vtu_sha256": "f1da361e2789907afe3b40c67783e82fc3ab4ac9b3822e5f7b63ca41c26f2cf3"
+    },
+    "horizontal_coarse": {
+      "component_budget_sha256": "ca58e37e37893c6ebe3edd53e05ca3d621e645514a824e38bd35924bcf3ae91a",
+      "final_vtu": "B1_hcoarse_n140_nz100_dt227_t60000-00006.vtu",
+      "final_vtu_sha256": "aafb8742a52d6ccbafd01a2e0b86c7286de55f699e458b0b328565746135ad64"
+    },
+    "vertical_coarse": {
+      "component_budget_sha256": "4ab5c5f2ff0c571eaa86c65364799e8bf4776ef18dd1c32024a2516ecdf86121",
+      "final_vtu": "B1_vcoarse_n280_nz50_dt227_t60000-00006.vtu",
+      "final_vtu_sha256": "b1d83badecf06542d4364bf3ee1f4005e1272c0d7b2d508e58525c06df021392"
+    },
+    "time_half": {
+      "component_budget_sha256": "edb05c5239bbb173c08ea1a76e4d470a63a69122e61cc8b2cdf4b4c39682776f",
+      "final_vtu": "B1_dt_half_n280_nz100_dt113_t60000-00011.vtu",
+      "final_vtu_sha256": "9668e91ca2e05a832373b08ac1297e6ef60c5716af95e2e45c29c42ee71c28a7"
+    }
+  }
+}

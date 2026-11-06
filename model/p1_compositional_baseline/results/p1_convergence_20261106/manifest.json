@@ -1,0 +1,43 @@
+{
+  "generated_utc": "2026-11-06T16:09:30.136407+00:00",
+  "generator": "D:\\3OutputFile\\1Research\\Article\\27Instability_with_salt precipitation\\surrogate_prat_surface\\model\\p1_compositional_baseline\\benchmark\\analyze_convergence.py",
+  "generator_sha256": "578594c493cc88c64a8f553f8f08b68f739cfab10ee97edd59f08a69402d7eb1",
+  "python": "3.12.4",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "numpy": "2.0.0",
+  "matplotlib": "3.9.2",
+  "accepted_binary_sha256": "2ae1f1350c6dc62908e51e4b26fa9b2c294bf3ed4d9deacc6768061b553e8737",
+  "remote_result_root": "/temp-hd/zhixin/p1_compositional_20261106/convergence_run_01 (base); /temp-hd/zhixin/p1_compositional_20261106/convergence_run_02_parallel (pairs)",
+  "plan": "D:\\3OutputFile\\1Research\\Article\\27Instability_with_salt precipitation\\surrogate_prat_surface\\model\\p1_compositional_baseline\\benchmark\\case36877\\convergence_plan.json",
+  "plan_sha256": "9c5028f1fdd090c6d4a4833555c94ecada886872e0d23186964204b1ad030883",
+  "inputs": {
+    "base": {
+      "component_budget_sha256": "fb9c2addb38e6afb5a24b2b8218d29292a163a7f0a6df81a115f60d226f9ead2",
+      "final_vtu": "B1_base_n280_nz100_dt227_t60000-00006.vtu",
+      "final_vtu_sha256": "f1da361e2789907afe3b40c67783e82fc3ab4ac9b3822e5f7b63ca41c26f2cf3"
+    },
+    "horizontal_coarse": {
+      "component_budget_sha256": "ca58e37e37893c6ebe3edd53e05ca3d621e645514a824e38bd35924bcf3ae91a",
+      "final_vtu": "B1_hcoarse_n140_nz100_dt227_t60000-00006.vtu",
+      "final_vtu_sha256": "aafb8742a52d6ccbafd01a2e0b86c7286de55f699e458b0b328565746135ad64"
+    },
+    "vertical_coarse": {
+      "component_budget_sha256": "4ab5c5f2ff0c571eaa86c65364799e8bf4776ef18dd1c32024a2516ecdf86121",
+      "final_vtu": "B1_vcoarse_n280_nz50_dt227_t60000-00006.vtu",
+      "final_vtu_sha256": "b1d83badecf06542d4364bf3ee1f4005e1272c0d7b2d508e58525c06df021392"
+    },
+    "time_half": {
+      "component_budget_sha256": "edb05c5239bbb173c08ea1a76e4d470a63a69122e61cc8b2cdf4b4c39682776f",
+      "final_vtu": "B1_dt_half_n280_nz100_dt113_t60000-00011.vtu",
+      "final_vtu_sha256": "9668e91ca2e05a832373b08ac1297e6ef60c5716af95e2e45c29c42ee71c28a7"
+    }
+  },
+  "outputs": {
+    "convergence_assessment.json": "6cb6b0cc93832fba8371ff039c1997d7fa34c204b294f834cf980af57820d541",
+    "CONVERGENCE_PROFILES.png": "ad89d46315b0f7aa70de713f899ddf0e7796ae8a911bafa13afa0c74f7f2c41c",
+    "CONVERGENCE_PROFILES.svg": "69cede7ac248781f51e41ce383c4aa9b6c9f5dca869a6852b683f1478122d62b",
+    "CONVERGENCE_TRAJECTORIES.png": "3c007393f5d678c355a0fe84a544bb86b43c68325686eed04c29bae6402249d5",
+    "CONVERGENCE_TRAJECTORIES.svg": "d5b6017ec8f312e368ed5ea32dd1e279dfe77ddedfeabadf25203e15da82ba4b",
+    "profile_norms.csv": "3f58b4a9c886b9713b92489032d80aff65b9c600b36f3d033d2864c172357037"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "analysis": "horizontally averaged final vertical profiles",
+  "python": "3.12.4 (tags/v3.12.4:8e8a4ba, Jun  6 2024, 19:30:16) [MSC v.1940 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "numpy": "2.0.0",
+  "inputs": {
+    "B0_final_vtu": "D:\\3OutputFile\\1Research\\Article\\27Instability_with_salt precipitation\\surrogate_prat_surface\\tmp\\p1_benchmark_raw_20261106\\B0_n280_nz100_dt227_t60000\\B0_n280_nz100_dt227_t60000-00006.vtu",
+    "B0_final_vtu_sha256": "bb9da9c84613f69f95276f961453f2986d832a27552fce367b9aeb153a9c4fb7",
+    "B1_final_vtu": "D:\\3OutputFile\\1Research\\Article\\27Instability_with_salt precipitation\\surrogate_prat_surface\\tmp\\p1_benchmark_raw_20261106\\B1_n280_nz100_dt227_t60000\\B1_n280_nz100_dt227_t60000-00006.vtu",
+    "B1_final_vtu_sha256": "f1da361e2789907afe3b40c67783e82fc3ab4ac9b3822e5f7b63ca41c26f2cf3"
+  }
+}

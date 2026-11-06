@@ -1,0 +1,164 @@
+{
+  "overall_pass": true,
+  "gates": {
+    "V1": {
+      "pass": true,
+      "max_abs_budget_residual_mol_m2": 1.9539925233402755e-12
+    },
+    "V2": {
+      "pass": true,
+      "max_abs_budget_residual_mol_m2": 2.6645352591003757e-12
+    },
+    "V3": {
+      "pass": true,
+      "max_pressure_endpoint_drift_pa": 0.008011555692064576,
+      "max_phase_darcy_velocity_m_s": 2.1536492154620977e-11,
+      "velocity_limit_m_s": 3.065544359023483e-11
+    },
+    "V4": {
+      "pass": true,
+      "effective_diffusivity_m2_s": 1.1104972126178213e-09,
+      "results": {
+        "40": {
+          "initial_amplitude": 9.992290362407195e-06,
+          "final_amplitude": 7.598782030780781e-06,
+          "analytical_amplitude": 7.597426924969968e-06,
+          "relative_error": 0.00017836378344871035
+        },
+        "80": {
+          "initial_amplitude": 9.998072404820632e-06,
+          "final_amplitude": 7.602378738262756e-06,
+          "analytical_amplitude": 7.6018231787936595e-06,
+          "relative_error": 7.308239826555011e-05
+        }
+      },
+      "coarse_to_fine_error_ratio": 2.4405847055075123
+    },
+    "V5": {
+      "pass": true,
+      "max_relative_difference": 9.170038879935227e-09,
+      "relative_differences": {
+        "water_inventory_mol_m2": 0.0,
+        "air_inventory_mol_m2": 6.029273053819142e-16,
+        "salt_inventory_mol_m2": 0.0,
+        "min_salt_x": 9.170038879935227e-09,
+        "max_salt_x": 9.122046903264439e-09,
+        "min_sw": 0.0,
+        "max_sw": 0.0,
+        "min_liquid_pressure_pa": 9.044161289455929e-12,
+        "max_liquid_pressure_pa": 9.101932395685232e-12
+      }
+    },
+    "V6": {
+      "pass": true,
+      "transition_times_s": {
+        "V6_appearance_dt10": 110.0,
+        "V6_appearance_dt5": 110.0,
+        "V6_disappearance_dt10": 670.0,
+        "V6_disappearance_dt5": 670.0
+      },
+      "appearance_dt_relative_difference": 0.0,
+      "disappearance_dt_relative_difference": 0.0,
+      "physical_bounds_pass": true
+    },
+    "V7": {
+      "pass": true,
+      "max_abs_independent_residual_mol_m2": 1.8189894035458565e-12,
+      "cases": {
+        "V1_closed_2d": {
+          "initial_mol_m2": {
+            "water": 1322.9601542146036,
+            "air": 2.3111284282962914,
+            "salt": 4.779736982109608
+          },
+          "final_mol_m2": {
+            "water": 1322.9601542146054,
+            "air": 2.3111284282962914,
+            "salt": 4.779736982109609
+          },
+          "analytic_boundary_out_mol_m2": {
+            "water": 0.0,
+            "air": 0.0,
+            "salt": 0.0
+          },
+          "residual_mol_m2": {
+            "water": 1.8189894035458565e-12,
+            "air": 0.0,
+            "salt": 1.7763568394002505e-15
+          },
+          "max_abs_residual_mol_m2": 1.8189894035458565e-12
+        },
+        "V2_water_flux": {
+          "initial_mol_m2": {
+            "water": 1322.9601542146036,
+            "air": 2.3111284282962914,
+            "salt": 4.779736982109608
+          },
+          "final_mol_m2": {
+            "water": 1322.9591542146034,
+            "air": 2.3111284282962914,
+            "salt": 4.7797369821096085
+          },
+          "analytic_boundary_out_mol_m2": {
+            "water": 0.001,
+            "air": 0.0,
+            "salt": 0.0
+          },
+          "residual_mol_m2": {
+            "water": -2.0372679238045421e-13,
+            "air": 0.0,
+            "salt": 8.881784197001252e-16
+          },
+          "max_abs_residual_mol_m2": 2.0372679238045421e-13
+        },
+        "V2_air_flux": {
+          "initial_mol_m2": {
+            "water": 1322.9601542146036,
+            "air": 2.3111284282962914,
+            "salt": 4.779736982109608
+          },
+          "final_mol_m2": {
+            "water": 1322.9601542146054,
+            "air": 2.310128428296293,
+            "salt": 4.779736982109601
+          },
+          "analytic_boundary_out_mol_m2": {
+            "water": 0.0,
+            "air": 0.001,
+            "salt": 0.0
+          },
+          "residual_mol_m2": {
+            "water": 1.8189894035458565e-12,
+            "air": 1.4424225702747151e-15,
+            "salt": -6.217248937900877e-15
+          },
+          "max_abs_residual_mol_m2": 1.8189894035458565e-12
+        },
+        "V2_salt_flux": {
+          "initial_mol_m2": {
+            "water": 1322.9601542146036,
+            "air": 2.3111284282962914,
+            "salt": 4.779736982109608
+          },
+          "final_mol_m2": {
+            "water": 1322.9601542146038,
+            "air": 2.31112842829629,
+            "salt": 4.7787369821096055
+          },
+          "analytic_boundary_out_mol_m2": {
+            "water": 0.0,
+            "air": 0.0,
+            "salt": 0.001
+          },
+          "residual_mol_m2": {
+            "water": 2.2737367544323206e-13,
+            "air": -1.3322676295501878e-15,
+            "salt": -2.110291108525786e-15
+          },
+          "max_abs_residual_mol_m2": 2.2737367544323206e-13
+        }
+      }
+    }
+  },
+  "dependent_benchmarks_authorized": true
+}

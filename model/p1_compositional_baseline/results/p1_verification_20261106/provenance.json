@@ -1,0 +1,13 @@
+{
+  "cases_sha256": "a942def0986a874a1203e2e5305dd3d0c99927a3d3a30efa2f6c502b17d1df92",
+  "criteria_sha256": "2df7f5c6ec6c3aadcffe105b9f2802620e857a1a98b46b54ee9c4f7628d9eb34",
+  "base_input_sha256": "651b9987ae06668e8d3b5dbaae83f62992eae9f879dab112673ac1a1c8f5502e",
+  "binary_1d_sha256": "ba03b3f0cbd224ce0bbd2196c3b77dce5c75adf15e82cbd4cb0a6cfbed2c1c82",
+  "binary_2d_sha256": "2ae1f1350c6dc62908e51e4b26fa9b2c294bf3ed4d9deacc6768061b553e8737",
+  "environment": {
+    "OMPI_MCA_pml": "ob1",
+    "OMPI_MCA_btl": "self,tcp",
+    "OMPI_MCA_mtl": "^ofi",
+    "UCX_TLS": "tcp,self"
+  }
+}

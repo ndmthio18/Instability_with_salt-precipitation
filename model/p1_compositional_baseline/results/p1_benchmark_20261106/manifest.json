@@ -1,0 +1,13 @@
+{
+  "analysis": "matched B0/B1 exploratory benchmark",
+  "remote_result": "/temp-hd/zhixin/p1_compositional_20261106/benchmark_run_01",
+  "binary_2d_sha256": "5f9107f2e76a8f1adad4ecdac05d35859c8e4dd0b633da325d235bdba5d914d8",
+  "python": "3.12.4 (tags/v3.12.4:8e8a4ba, Jun  6 2024, 19:30:16) [MSC v.1940 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "inputs": {
+    "B0_component_budget_sha256": "bc9aba7791dd872cb0e0480c5a9aef045c65f3bd9d5a517fc4c6dab6c7633b08",
+    "B1_component_budget_sha256": "fb9c2addb38e6afb5a24b2b8218d29292a163a7f0a6df81a115f60d226f9ead2",
+    "B0_run_status_sha256": "0b5b2a8d26eb58b7723ffad84011382c20246e61e62750aaac3ea7ecb6ca69a0",
+    "B1_run_status_sha256": "0b5b2a8d26eb58b7723ffad84011382c20246e61e62750aaac3ea7ecb6ca69a0"
+  }
+}
