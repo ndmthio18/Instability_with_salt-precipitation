@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "utc": "2026-11-06T08:56:42.758813+00:00",
+  "job_id": "16318229",
+  "node": "ibc12b11n02",
+  "affinity": [
+    0
+  ],
+  "scratch_path": "/tmp",
+  "scratch_free_bytes": 96724594688,
+  "available_memory_bytes": 172349558784,
+  "hashes": {
+    "executable": "112076759fdff0942000307f729c2bd3c7e96963229b43c1b67c1f12bbf9df81",
+    "profile": "d721e605d126e555f92b43200aa73b999ed4e2b61397edd1e98c0d9fddb36575",
+    "input": "9e14c53b70869665c5de042af67deeda5752d461343f0a06108afebf4cab7f19"
+  },
+  "checks": {
+    "compute_node": true,
+    "one_cpu_affinity": true,
+    "scratch_free": true,
+    "memory_available": true,
+    "hashes": true,
+    "new_root_isolated": true,
+    "production_not_started": true
+  },
+  "passed": true
+}

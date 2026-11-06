@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "utc": "2026-11-06T10:03:08.753763+00:00",
+  "job_id": "16318504",
+  "node": "ibc11b11n05",
+  "source_hashes": {
+    "fields": "9b2e911287b84e8a01041882b73ddecccff4625b0618a32e1ea86aa9b1b374ca",
+    "products": "c9235dac7d9fe875cd0d99d01b883a386be5044c9693e0958b5de7bb198d18fe"
+  },
+  "pvd_mapping": {
+    "datasets_before": 145,
+    "datasets_after": 145,
+    "vtu_files": 145
+  },
+  "numerical_acceptance_passed": true,
+  "output_bytes": 22832419,
+  "output_sha256": "d1ae896b3ed534d63df2df1185a63d4e080cefbbd2a2342b39af44a443acd18c"
+}

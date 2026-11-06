@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "campaign": "WP14 controlled R48 timestep refinement",
+  "grid": "R48",
+  "run_name": "WP14-R48-A1e4-dt2-6T",
+  "threads": 4,
+  "reference_commit": "213771645aa2cb45dad7e4f46e24c18637679ed3",
+  "reference_input_sha256": "ea7993e1b65fc5329fe1da9d3725641bfcdf6d0a715c8b227e469fcb9f986ca2",
+  "input_sha256": "9e14c53b70869665c5de042af67deeda5752d461343f0a06108afebf4cab7f19",
+  "profile_sha256": "d721e605d126e555f92b43200aa73b999ed4e2b61397edd1e98c0d9fddb36575",
+  "executable_sha256": "112076759fdff0942000307f729c2bd3c7e96963229b43c1b67c1f12bbf9df81",
+  "nominal_dt_s": 56.842943238478476,
+  "nominal_dt_text": "56.842943238478475",
+  "output_interval_steps": 100,
+  "expected_frames_if_horizon": 145,
+  "authorized_steps": 14400,
+  "authorized_horizon_T": 6.0,
+  "authorized_end_s": 818538.38263409,
+  "authorized_amplitude": 0.0001,
+  "solver_timeout_s": 14400,
+  "minimum_scratch_free_bytes": 34359738368,
+  "minimum_available_memory_bytes": 17179869184,
+  "estimated_wall_s_from_wp12_dt_scaling": 4686.64,
+  "requested_wall_time": "05:00:00",
+  "estimated_durable_output_bytes": 89128960,
+  "allowed_input_differences": {
+    "TimeLoop.DtInitial": {
+      "reference": "113.68588647695695",
+      "new": "56.842943238478475"
+    },
+    "TimeLoop.MaxTimeStepSize": {
+      "reference": "113.68588647695695",
+      "new": "56.842943238478475"
+    },
+    "TimeLoop.OutputInterval": {
+      "reference": "50",
+      "new": "100"
+    },
+    "Problem.Name": {
+      "reference": "WP12-R48-A1e4-6T",
+      "new": "WP14-R48-A1e4-dt2-6T"
+    }
+  },
+  "initial_salt_mole_fraction_range": [
+    0.0035,
+    0.0037
+  ],
+  "production_simulation_limit": 1,
+  "automatic_retry_authorized": false
+}

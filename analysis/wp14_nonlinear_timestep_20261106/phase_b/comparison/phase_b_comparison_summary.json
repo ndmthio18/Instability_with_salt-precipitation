@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "matching": "R48 dt step k versus R48 dt/2 step 2k; field outputs 50 versus 100 steps",
+  "maximum_matching_time_error_s": {
+    "surface": 1.748558133840561e-07,
+    "harmonic": 1.748558133840561e-07,
+    "field": 2.00001522898674e-07,
+    "flux": 1.748558133840561e-07,
+    "inventory": 1.748558133840561e-07
+  },
+  "normalized_milestone_T": {
+    "R48_dt": 2.374999999999799,
+    "R96_dt": 2.374999999999799,
+    "R48_dt2": 2.374999999999799
+  },
+  "resolved_downflow_T": {
+    "R48_dt": 3.1666666666663987,
+    "R96_dt": 3.1666666666663987,
+    "R48_dt2": 3.1666666666671315
+  },
+  "dominant_mode_6T": {
+    "R48_dt": 2,
+    "R96_dt": 2,
+    "R48_dt2": 2
+  },
+  "R48_dt_vs_dt2_modal": {
+    "dominant_mode_disagreement_frames": 0,
+    "frames": 145,
+    "maximum_modal_total_variation": 0.005617664961793108,
+    "median_modal_total_variation": 0.0006029284548481877
+  },
+  "conservation": {
+    "R48_dt": {
+      "passed": true,
+      "max_salt_reconstruction_m": 1.3715242185236357e-16,
+      "max_water_reconstruction_m": 1.6557176755791892e-14
+    },
+    "R96_dt": {
+      "passed": true,
+      "max_salt_reconstruction_m": 2.0605135233144924e-16,
+      "max_water_reconstruction_m": 9.692668054467785e-15
+    },
+    "R48_dt2": {
+      "passed": true,
+      "max_salt_reconstruction_m": 1.31281636494944e-16,
+      "max_water_reconstruction_m": 8.687345136981068e-15
+    }
+  },
+  "interpretation_thresholds": {
+    "delta_t_much_smaller_than_delta_x": "delta_t/delta_x < 0.25",
+    "comparable": "0.25 <= delta_t/delta_x <= 4",
+    "temporal_larger": "delta_t/delta_x > 4"
+  },
+  "limitations": [
+    "finite-resolution differences are not truncation-error bounds",
+    "spatial and temporal errors are not assumed additive or independent",
+    "no convergence order is inferred if modal branches differ",
+    "pulse timing is not a validated physical t_eff"
+  ]
+}

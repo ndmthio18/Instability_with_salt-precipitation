@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "cluster": "hpcc",
+  "partition": "cnmix",
+  "jobs": [
+    {
+      "job_id": "16318229",
+      "purpose": "compute preflight",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "elapsed_s": 2,
+      "allocated_cpus": 1,
+      "allocated_core_hours": 0.0005555555555555556
+    },
+    {
+      "job_id": "16318234",
+      "purpose": "sole authorized R48 dt/2 production simulation",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "elapsed_s": 3868,
+      "allocated_cpus": 4,
+      "allocated_core_hours": 4.297777777777778
+    },
+    {
+      "job_id": "16318503",
+      "purpose": "independent archive acceptance",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "elapsed_s": 6,
+      "allocated_cpus": 1,
+      "allocated_core_hours": 0.0016666666666666668
+    },
+    {
+      "job_id": "16318504",
+      "purpose": "archive reduction and diagnostic recomputation",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "elapsed_s": 33,
+      "allocated_cpus": 2,
+      "allocated_core_hours": 0.018333333333333333
+    }
+  ],
+  "total_allocated_core_hours": 4.318333333333333,
+  "production_solver_wall_s": 3846.7613167501986,
+  "production_peak_rss_kib": 48764,
+  "new_durable_archives": {
+    "fields_bytes": 63986752,
+    "products_bytes": 23728866,
+    "metrics_bytes": 22832419,
+    "total_bytes": 110548037
+  },
+  "resource_preflight": {
+    "node_scratch_free_bytes": 96724594688,
+    "available_memory_bytes": 172349558784,
+    "work_available_bytes_checked_after": 5421057928843264,
+    "inode_soft_quota": 2000000,
+    "inode_count_before": 2075519,
+    "inode_count_after": 2075568,
+    "balance_observed_before_and_immediately_after": 43190.179311000014,
+    "balance_note": "Immediate post-run balance may precede delayed accounting."
+  }
+}

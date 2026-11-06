@@ -1,0 +1,15 @@
+#!/bin/bash
+#SBATCH --job-name=WP14-dt2-accept
+#SBATCH --partition=cnmix
+#SBATCH --nodes=1
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=1
+#SBATCH --time=00:20:00
+#SBATCH --output=acceptance.stdout
+#SBATCH --error=acceptance.stderr
+set -euo pipefail
+export PATH=/rmprog/slurm/v22.05.7/bin:/usr/local/bin:/usr/bin:/bin
+case "$(hostname)" in ibcln*|test0*|gln0*) echo "refusing login/test node"; exit 2;; esac
+root="$1"; evidence="$2"
+srun -n 1 -c 1 /WORK/hulm_work/ys/miniconda3/bin/python3 "$root/wp14_archive_acceptance.py" \
+  "$evidence" "$evidence/archive_acceptance.json"

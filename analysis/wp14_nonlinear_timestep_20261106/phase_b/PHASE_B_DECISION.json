@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "primary_question": "Does the improved R48/R96 consistency at A=1e-4 survive normalized nonlinear diagnostics and an independent timestep refinement?",
+  "answer": "yes_with_bounded_scope",
+  "numerical_benchmark_go": true,
+  "replace_A1e6_physical_solution": false,
+  "claim_formal_space_time_convergence": false,
+  "modal_branch_changed_by_dt_halving": false,
+  "dominant_mode_disagreement_frames": 0,
+  "matched_field_frames": 145,
+  "maximum_modal_total_variation": 0.005617664961793108,
+  "qoi_error_budget_counts": {
+    "temporal_difference_much_smaller": 40,
+    "comparable_finite_resolution_differences": 7,
+    "undefined": 2,
+    "temporal_difference_larger": 0
+  },
+  "minimum_justified_next_experiment_if_separately_authorized": {
+    "grid": "R96x200",
+    "amplitude": 0.0001,
+    "timestep_s": 56.842943238478475,
+    "maximum_horizon_T": 6.0,
+    "purpose": "test the R48/R96 spatial difference at the refined timestep and expose space-time interaction",
+    "executed_in_wp14": false
+  },
+  "prohibited_claims": [
+    "A=1e-4 is the physical replacement for A=1e-6",
+    "crystallization delay or validated physical t_eff",
+    "validation of the original solubility-crossing time",
+    "Richardson order or complete nonlinear convergence"
+  ]
+}

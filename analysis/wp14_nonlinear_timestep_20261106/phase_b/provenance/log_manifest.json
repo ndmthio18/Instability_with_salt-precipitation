@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "empty_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "logs": {
+    "preflight.stderr": 0,
+    "production.stdout": 0,
+    "production.stderr": 0,
+    "acceptance.stderr": 0,
+    "reduction.stderr": 0
+  },
+  "note": "Git cannot retain zero-byte files; this manifest preserves their observed byte counts and empty-file hash. Nonempty stdout logs are committed directly."
+}

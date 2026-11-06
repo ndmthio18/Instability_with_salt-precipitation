@@ -1,0 +1,26 @@
+{
+  "reference_input": "analysis\\wp12_amplitude_convergence_20261106\\inputs\\R48\\params.input",
+  "reference_sha256": "ea7993e1b65fc5329fe1da9d3725641bfcdf6d0a715c8b227e469fcb9f986ca2",
+  "new_input_sha256": "9e14c53b70869665c5de042af67deeda5752d461343f0a06108afebf4cab7f19",
+  "changed_keys": {
+    "TimeLoop.DtInitial": {
+      "reference": "113.68588647695695",
+      "new": "56.842943238478475"
+    },
+    "TimeLoop.MaxTimeStepSize": {
+      "reference": "113.68588647695695",
+      "new": "56.842943238478475"
+    },
+    "TimeLoop.OutputInterval": {
+      "reference": "50",
+      "new": "100"
+    },
+    "Problem.Name": {
+      "reference": "WP12-R48-A1e4-6T",
+      "new": "WP14-R48-A1e4-dt2-6T"
+    }
+  },
+  "unchanged_key_count": 37,
+  "all_other_parameters_byte_preserved": true,
+  "output_interval_rationale": "100 dt/2 steps equals the original 50 dt steps at matching physical output times"
+}

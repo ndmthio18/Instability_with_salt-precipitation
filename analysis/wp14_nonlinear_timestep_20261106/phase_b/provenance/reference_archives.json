@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "scope": "Frozen WP12 A=1e-4 reference product archives used only for WP14 comparison",
+  "archives": {
+    "R48_dt": {
+      "remote_path": "/WORK/hulm_work/zhixin/paper2_wp12_amplitude_20261106/R48/products.tar.gz",
+      "bytes": 12283322,
+      "sha256": "c5b409f6a319b70edccf2cfc82180fbbc25003847c6d751e250553a1977a41b7",
+      "accepted_steps": 7200,
+      "stop_reason": "requested_horizon"
+    },
+    "R96_dt": {
+      "remote_path": "/WORK/hulm_work/zhixin/paper2_wp12_amplitude_20261106/R96/products.tar.gz",
+      "bytes": 12403412,
+      "sha256": "1db299d21fb780d99d26c6c1d0164dad9e349b7ec47929c81bd6c779ce3815bf",
+      "accepted_steps": 7200,
+      "stop_reason": "requested_horizon"
+    }
+  },
+  "note": "Raw archives are retained locally for audit and excluded from Git; reduced comparison tables are the committed deliverable."
+}
