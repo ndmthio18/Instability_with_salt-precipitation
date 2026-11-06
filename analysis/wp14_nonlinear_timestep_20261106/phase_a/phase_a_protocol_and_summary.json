@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "analysis_type": "read-only reanalysis of nine frozen 0-6T trajectories",
+  "cases": 9,
+  "grids": [
+    "R24",
+    "R48",
+    "R96"
+  ],
+  "amplitudes": [
+    1e-06,
+    1e-05,
+    0.0001
+  ],
+  "fourier_basis": "Neumann cosine modes cos(m*pi*x/W), m>=1, applied to x-horizontal_mean(z)",
+  "vertical_and_horizontal_weights": "control-volume widths from point coordinates; modal energy is width-weighted over x and z",
+  "normalized_ratio": "R_harm=sqrt((sum_m>=1 E_m-E_2)/E_2)",
+  "seed_mode": "m=2, the physical A28 mode in the reduced box",
+  "seed_floor": "per trajectory max(1e-30, 1e-8 times initial E2); ratio undefined below floor",
+  "ratio_thresholds": [
+    0.01,
+    0.1,
+    1.0
+  ],
+  "primary_ratio_threshold": 0.1,
+  "registered_duration_T": 0.25,
+  "positive_flux_floor_m_s": 1e-15,
+  "sustained_positive_steps": 50,
+  "cumulative_positive_fraction_denominator": "frozen C_adv+(z,6T), computed over the same 0-6T window",
+  "cumulative_resolution_floor_m": 5.684294323847848e-12,
+  "principal_pulse": "contiguous J_adv>1e-15 interval with largest resolved positive integral",
+  "warnings": [
+    "normalized thresholds are predefined and not fitted to improve agreement",
+    "saved-field cadence is 50 accepted steps; normalized milestone timing is quantized at 1/24 T",
+    "odd-mode suppression and grid agreement are associated observations, not a causal identification",
+    "adjacent finite-resolution differences are not Richardson convergence or truncation-error bounds",
+    "transport-pulse timings are diagnostics, not a validated physical t_eff"
+  ],
+  "source_commit": "acee5fc6d384b7c6719331a077dd87bbc77afebb"
+}

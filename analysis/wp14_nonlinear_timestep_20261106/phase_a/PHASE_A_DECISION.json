@@ -1,0 +1,20 @@
+{
+  "phase": "WP14 Phase A",
+  "decision": "GO_PHASE_B_SINGLE_AUTHORIZED_RUN",
+  "reason": "The A=1e-4 acceleration persists after amplitude normalization, and R48/R96 agreement persists for 5-10 mm principal-pulse timing and cumulative positive transport; timestep error must now be assessed independently.",
+  "authorized_next_run": {
+    "case": 36877,
+    "grid": "R48x200",
+    "amplitude": 0.0001,
+    "dt_s": 56.842943238478475,
+    "max_time_s": 818538.38263409,
+    "maximum_new_simulations": 1
+  },
+  "not_authorized": ["R24 dt/2", "R96 dt/2", "R192", "8T extension", "additional amplitudes"],
+  "limitations": [
+    "A=1e-4 selects a different nonlinear mode branch from A=1e-6.",
+    "Odd-mode suppression is associated with, but not proven to cause, improved grid consistency.",
+    "Finite-resolution differences are not Richardson convergence or truncation-error bounds.",
+    "Transport-pulse timings are not a validated physical t_eff."
+  ]
+}

@@ -1,0 +1,380 @@
+[
+  {
+    "grid": "R24",
+    "amplitude": 1e-06,
+    "path_relative_to_paper2": "analysis/wp12_amplitude_convergence_20261106/reference_metrics/R24/wp12_scalar_metrics.json",
+    "bytes": 11108,
+    "sha256": "6ecacb3aa06d9e4f2ffd6e031a441f972bbee11606ef0717ded1490a906784cf"
+  },
+  {
+    "grid": "R24",
+    "amplitude": 1e-06,
+    "path_relative_to_paper2": "analysis/wp12_amplitude_convergence_20261106/reference_metrics/R24/wp12_field_metrics.json",
+    "bytes": 1667,
+    "sha256": "586945dd0f49f62eac922b9dc37bc14160ed5f0f5bba7768fb827bf005f9f5fd"
+  },
+  {
+    "grid": "R24",
+    "amplitude": 1e-06,
+    "path_relative_to_paper2": "analysis/wp12_amplitude_convergence_20261106/reference_metrics/R24/field_state_series.csv",
+    "bytes": 56071,
+    "sha256": "c266234d0b1d5064b215207f16126f8d6a454472a54d36736bccd7988ff7803e"
+  },
+  {
+    "grid": "R24",
+    "amplitude": 1e-06,
+    "path_relative_to_paper2": "analysis/wp12_amplitude_convergence_20261106/reference_metrics/R24/harmonic_signal.csv",
+    "bytes": 957763,
+    "sha256": "4a22c27cc1c07223c3b7a344bf8b0f626d33313895938e33621a5b132371f3bf"
+  },
+  {
+    "grid": "R24",
+    "amplitude": 1e-06,
+    "path_relative_to_paper2": "analysis/wp12_amplitude_convergence_20261106/reference_metrics/R24/flux_series.csv",
+    "bytes": 4401513,
+    "sha256": "20ed0d57efb712c3f432fb7a41692d2bc724fb7e1d0f337b60f31a54c041ae3a"
+  },
+  {
+    "grid": "R24",
+    "amplitude": 1e-06,
+    "path_relative_to_paper2": "analysis/wp12_amplitude_convergence_20261106/reference_metrics/R24/surface_series.csv",
+    "bytes": 997308,
+    "sha256": "5f1f32796841e335d31c9d97c6c95f3388e7a86743ed44330cc3dc84f428a4a3"
+  },
+  {
+    "grid": "R48",
+    "amplitude": 1e-06,
+    "path_relative_to_paper2": "analysis/wp12_amplitude_convergence_20261106/reference_metrics/R48/wp12_scalar_metrics.json",
+    "bytes": 10941,
+    "sha256": "1ccb175df33de58f5070d50d4b819e366a7429b807e2d7d47cb3819b39675e43"
+  },
+  {
+    "grid": "R48",
+    "amplitude": 1e-06,
+    "path_relative_to_paper2": "analysis/wp12_amplitude_convergence_20261106/reference_metrics/R48/wp12_field_metrics.json",
+    "bytes": 1668,
+    "sha256": "2a1e3e2ea062d4c7b8eff6de5f156ac87bd812912dc28951fc760cfbcc8dcf1d"
+  },
+  {
+    "grid": "R48",
+    "amplitude": 1e-06,
+    "path_relative_to_paper2": "analysis/wp12_amplitude_convergence_20261106/reference_metrics/R48/field_state_series.csv",
+    "bytes": 55898,
+    "sha256": "edef298248a1258a78148a2933cc548711c1904f184d235bb9a2ed453cc6012d"
+  },
+  {
+    "grid": "R48",
+    "amplitude": 1e-06,
+    "path_relative_to_paper2": "analysis/wp12_amplitude_convergence_20261106/reference_metrics/R48/harmonic_signal.csv",
+    "bytes": 957315,
+    "sha256": "cce49db66fbfd6dd048d8dd7aab7e363ca56c7d4e8a1d5a3419f242c8864ef4c"
+  },
+  {
+    "grid": "R48",
+    "amplitude": 1e-06,
+    "path_relative_to_paper2": "analysis/wp12_amplitude_convergence_20261106/reference_metrics/R48/flux_series.csv",
+    "bytes": 4402226,
+    "sha256": "1ae368d92394806714eb6502f721d757ef0d6db700d48cb33e92c8dd48dd730a"
+  },
+  {
+    "grid": "R48",
+    "amplitude": 1e-06,
+    "path_relative_to_paper2": "analysis/wp12_amplitude_convergence_20261106/reference_metrics/R48/surface_series.csv",
+    "bytes": 997604,
+    "sha256": "1605bc86ce15ef7226d3ff422f57ca0ccfc2670f5f9ad10ed60340e8a331b7b8"
+  },
+  {
+    "grid": "R96",
+    "amplitude": 1e-06,
+    "path_relative_to_paper2": "analysis/wp12_amplitude_convergence_20261106/reference_metrics/R96/wp12_scalar_metrics.json",
+    "bytes": 10456,
+    "sha256": "36f47e7f897443dc6fa71056ce416ef1158336d6b99adf146cbf2a9c746bb126"
+  },
+  {
+    "grid": "R96",
+    "amplitude": 1e-06,
+    "path_relative_to_paper2": "analysis/wp12_amplitude_convergence_20261106/reference_metrics/R96/wp12_field_metrics.json",
+    "bytes": 1639,
+    "sha256": "2f0784ed741c1da6f6c1849d21ec8df4087d7ab585d51287906e13e81228e6f2"
+  },
+  {
+    "grid": "R96",
+    "amplitude": 1e-06,
+    "path_relative_to_paper2": "analysis/wp12_amplitude_convergence_20261106/reference_metrics/R96/field_state_series.csv",
+    "bytes": 56024,
+    "sha256": "01ee32db761a025c97d1283e7de75e5fcb5f1513a55f36925f8f38530987d0de"
+  },
+  {
+    "grid": "R96",
+    "amplitude": 1e-06,
+    "path_relative_to_paper2": "analysis/wp12_amplitude_convergence_20261106/reference_metrics/R96/harmonic_signal.csv",
+    "bytes": 957403,
+    "sha256": "9555927edb236d6d45ef3b84bb6de14cbff3247c98b312284c33807e90a48ee5"
+  },
+  {
+    "grid": "R96",
+    "amplitude": 1e-06,
+    "path_relative_to_paper2": "analysis/wp12_amplitude_convergence_20261106/reference_metrics/R96/flux_series.csv",
+    "bytes": 4404264,
+    "sha256": "9bd1b680120b23d481df04ffbcdb522d17ba47e8d8191706c58d2c9365d936fd"
+  },
+  {
+    "grid": "R96",
+    "amplitude": 1e-06,
+    "path_relative_to_paper2": "analysis/wp12_amplitude_convergence_20261106/reference_metrics/R96/surface_series.csv",
+    "bytes": 997206,
+    "sha256": "cbb1d7084a710ec4e65f0c2291a272bbc654e9ac34369aea8c4404ea1638bb7e"
+  },
+  {
+    "grid": "R24",
+    "amplitude": 1e-05,
+    "path_relative_to_paper2": "analysis/wp13_amplitude_1e5_20261106/metrics/R24/wp12_scalar_metrics.json",
+    "bytes": 10373,
+    "sha256": "fcadebc42adf5279ea372fea6ee067fc3ffb2d97332dad478076b0094c66d8ca"
+  },
+  {
+    "grid": "R24",
+    "amplitude": 1e-05,
+    "path_relative_to_paper2": "analysis/wp13_amplitude_1e5_20261106/metrics/R24/wp12_field_metrics.json",
+    "bytes": 1644,
+    "sha256": "0f188d811ecaf828c26d526d7e5e8a23811bbaf5e84e1620c3fc92ed2a8e2d3a"
+  },
+  {
+    "grid": "R24",
+    "amplitude": 1e-05,
+    "path_relative_to_paper2": "analysis/wp13_amplitude_1e5_20261106/metrics/R24/field_state_series.csv",
+    "bytes": 56129,
+    "sha256": "f970682999187755ad887a688f1709151f1f21958a7e5b9e9889e96eec526a32"
+  },
+  {
+    "grid": "R24",
+    "amplitude": 1e-05,
+    "path_relative_to_paper2": "analysis/wp13_amplitude_1e5_20261106/metrics/R24/harmonic_signal.csv",
+    "bytes": 955207,
+    "sha256": "e4d61990cf7e7bb34cc0c52397c849b067cb4415926a80858c35167c45269f39"
+  },
+  {
+    "grid": "R24",
+    "amplitude": 1e-05,
+    "path_relative_to_paper2": "analysis/wp13_amplitude_1e5_20261106/metrics/R24/flux_series.csv",
+    "bytes": 4404880,
+    "sha256": "f54f5139d5674fa05fe62aa5f0f26061cc20e5609cba5aaff39722ef228c9d0b"
+  },
+  {
+    "grid": "R24",
+    "amplitude": 1e-05,
+    "path_relative_to_paper2": "analysis/wp13_amplitude_1e5_20261106/metrics/R24/surface_series.csv",
+    "bytes": 997837,
+    "sha256": "0cf169ac2598d4e6f36b73790035f2621e1490978197d2917d6b9e68cb9b7a72"
+  },
+  {
+    "grid": "R48",
+    "amplitude": 1e-05,
+    "path_relative_to_paper2": "analysis/wp13_amplitude_1e5_20261106/metrics/R48/wp12_scalar_metrics.json",
+    "bytes": 10526,
+    "sha256": "0f30f44bb127580abd83d50950c00fe33ceae0fdceec98c2a5e8c44c8cb758fe"
+  },
+  {
+    "grid": "R48",
+    "amplitude": 1e-05,
+    "path_relative_to_paper2": "analysis/wp13_amplitude_1e5_20261106/metrics/R48/wp12_field_metrics.json",
+    "bytes": 1643,
+    "sha256": "bd5a619347b5ee93bc6f70d6cbb8685c2f79291156306d6e907863a9738d8aa0"
+  },
+  {
+    "grid": "R48",
+    "amplitude": 1e-05,
+    "path_relative_to_paper2": "analysis/wp13_amplitude_1e5_20261106/metrics/R48/field_state_series.csv",
+    "bytes": 56165,
+    "sha256": "6ce22d90bc1226b5c4e61b8122bef77e6d1e145a4f3745146ccee45b40c5c803"
+  },
+  {
+    "grid": "R48",
+    "amplitude": 1e-05,
+    "path_relative_to_paper2": "analysis/wp13_amplitude_1e5_20261106/metrics/R48/harmonic_signal.csv",
+    "bytes": 954056,
+    "sha256": "19a3e36bfb21ce55cdc6e99f1817c7eb7257661dc3f40e522918787f14751251"
+  },
+  {
+    "grid": "R48",
+    "amplitude": 1e-05,
+    "path_relative_to_paper2": "analysis/wp13_amplitude_1e5_20261106/metrics/R48/flux_series.csv",
+    "bytes": 4405484,
+    "sha256": "31985d170694a01d58d88f1163b8dff10874b108e0809ac6990b35095494629f"
+  },
+  {
+    "grid": "R48",
+    "amplitude": 1e-05,
+    "path_relative_to_paper2": "analysis/wp13_amplitude_1e5_20261106/metrics/R48/surface_series.csv",
+    "bytes": 997477,
+    "sha256": "2ccbd39e6dd0e063fd44d9d3dc90bd95ad28cb3b0fa7e687c35d824733266215"
+  },
+  {
+    "grid": "R96",
+    "amplitude": 1e-05,
+    "path_relative_to_paper2": "analysis/wp13_amplitude_1e5_20261106/metrics/R96/wp12_scalar_metrics.json",
+    "bytes": 10532,
+    "sha256": "6ebb5a6cd68b42c641c723625a9c0186eed6f207f254bfeb93008b38dab110d2"
+  },
+  {
+    "grid": "R96",
+    "amplitude": 1e-05,
+    "path_relative_to_paper2": "analysis/wp13_amplitude_1e5_20261106/metrics/R96/wp12_field_metrics.json",
+    "bytes": 1638,
+    "sha256": "266509622178c1d7659e5ba733964377581214800bc05c4e1b0b0b1235ff5328"
+  },
+  {
+    "grid": "R96",
+    "amplitude": 1e-05,
+    "path_relative_to_paper2": "analysis/wp13_amplitude_1e5_20261106/metrics/R96/field_state_series.csv",
+    "bytes": 56115,
+    "sha256": "d4423b685e87cd9ce152b95d814105cb9535a880e531786cd10c2e0b164279d3"
+  },
+  {
+    "grid": "R96",
+    "amplitude": 1e-05,
+    "path_relative_to_paper2": "analysis/wp13_amplitude_1e5_20261106/metrics/R96/harmonic_signal.csv",
+    "bytes": 955235,
+    "sha256": "825621380727d555ea8e6e64878dc56f55525d921513ecc5c3afe21c5abb02ab"
+  },
+  {
+    "grid": "R96",
+    "amplitude": 1e-05,
+    "path_relative_to_paper2": "analysis/wp13_amplitude_1e5_20261106/metrics/R96/flux_series.csv",
+    "bytes": 4405219,
+    "sha256": "381c788fa259bef3212f2374767fdf920f7a62cbcaf346df1b8a4e713f2c80c2"
+  },
+  {
+    "grid": "R96",
+    "amplitude": 1e-05,
+    "path_relative_to_paper2": "analysis/wp13_amplitude_1e5_20261106/metrics/R96/surface_series.csv",
+    "bytes": 997850,
+    "sha256": "93c0869d566eecad240bf34b67f010ea1725c5bcc68a51ae24b8643cad8ea963"
+  },
+  {
+    "grid": "R24",
+    "amplitude": 0.0001,
+    "path_relative_to_paper2": "analysis/wp12_amplitude_convergence_20261106/enhanced_metrics/R24/wp12_scalar_metrics.json",
+    "bytes": 10702,
+    "sha256": "4e8095ae65e33bdd931898f90e5c8028d35029ae3a46133b0a9d5a9a5de8034f"
+  },
+  {
+    "grid": "R24",
+    "amplitude": 0.0001,
+    "path_relative_to_paper2": "analysis/wp12_amplitude_convergence_20261106/enhanced_metrics/R24/wp12_field_metrics.json",
+    "bytes": 1645,
+    "sha256": "c401d6bb90b58fa6401e0df55b35efdb20313d1e392c6ac760d89466d80e6e26"
+  },
+  {
+    "grid": "R24",
+    "amplitude": 0.0001,
+    "path_relative_to_paper2": "analysis/wp12_amplitude_convergence_20261106/enhanced_metrics/R24/field_state_series.csv",
+    "bytes": 56204,
+    "sha256": "0b820e20ac953abe492cecc57cde04a4d85b0423ad135d43d007aac85c7e32d8"
+  },
+  {
+    "grid": "R24",
+    "amplitude": 0.0001,
+    "path_relative_to_paper2": "analysis/wp12_amplitude_convergence_20261106/enhanced_metrics/R24/harmonic_signal.csv",
+    "bytes": 950571,
+    "sha256": "f7ba5af6c5cba31cffb75b03e45c4b42765b620bfeaefad07b40d46740b29749"
+  },
+  {
+    "grid": "R24",
+    "amplitude": 0.0001,
+    "path_relative_to_paper2": "analysis/wp12_amplitude_convergence_20261106/enhanced_metrics/R24/flux_series.csv",
+    "bytes": 4432390,
+    "sha256": "2da5287784973d89e19a271c89d8135b26615bea92c4a29e007ff0d57b846f39"
+  },
+  {
+    "grid": "R24",
+    "amplitude": 0.0001,
+    "path_relative_to_paper2": "analysis/wp12_amplitude_convergence_20261106/enhanced_metrics/R24/surface_series.csv",
+    "bytes": 1002876,
+    "sha256": "536734de8bd4549052f0330435d38384fdf2a737f6db1d51d4fccc82e350f56b"
+  },
+  {
+    "grid": "R48",
+    "amplitude": 0.0001,
+    "path_relative_to_paper2": "analysis/wp12_amplitude_convergence_20261106/enhanced_metrics/R48/wp12_scalar_metrics.json",
+    "bytes": 10705,
+    "sha256": "8d5a7bf45e2c2ad6a8b3a4b474217c2deb651098f1457c0e223b2995e5034f62"
+  },
+  {
+    "grid": "R48",
+    "amplitude": 0.0001,
+    "path_relative_to_paper2": "analysis/wp12_amplitude_convergence_20261106/enhanced_metrics/R48/wp12_field_metrics.json",
+    "bytes": 1634,
+    "sha256": "6fada4bbe8b1473d336cd9e224af00081aab91dc48f1e140d227a6947e96bf75"
+  },
+  {
+    "grid": "R48",
+    "amplitude": 0.0001,
+    "path_relative_to_paper2": "analysis/wp12_amplitude_convergence_20261106/enhanced_metrics/R48/field_state_series.csv",
+    "bytes": 56235,
+    "sha256": "e77bb1958aa6cee2fb11eae2a78038f91a40797a9caea3b8c67b1db16e362a3c"
+  },
+  {
+    "grid": "R48",
+    "amplitude": 0.0001,
+    "path_relative_to_paper2": "analysis/wp12_amplitude_convergence_20261106/enhanced_metrics/R48/harmonic_signal.csv",
+    "bytes": 950046,
+    "sha256": "a9078981c2bddd559c68feb0fb703e54704a32444c6528fc836dfbd4fec3fcdc"
+  },
+  {
+    "grid": "R48",
+    "amplitude": 0.0001,
+    "path_relative_to_paper2": "analysis/wp12_amplitude_convergence_20261106/enhanced_metrics/R48/flux_series.csv",
+    "bytes": 4428248,
+    "sha256": "c5f91151dd9aca2385e3d3e692b00c3e773a1bf7fa3556859010730138e0df78"
+  },
+  {
+    "grid": "R48",
+    "amplitude": 0.0001,
+    "path_relative_to_paper2": "analysis/wp12_amplitude_convergence_20261106/enhanced_metrics/R48/surface_series.csv",
+    "bytes": 1002772,
+    "sha256": "11dc332c998203fcc92230afd0c229f1b55e8056a80ac8c616d7838ffbcd174b"
+  },
+  {
+    "grid": "R96",
+    "amplitude": 0.0001,
+    "path_relative_to_paper2": "analysis/wp12_amplitude_convergence_20261106/enhanced_metrics/R96/wp12_scalar_metrics.json",
+    "bytes": 10692,
+    "sha256": "548ef68aef250046403696e2c139b86fca988c205c3789d4e94182dbcedb876e"
+  },
+  {
+    "grid": "R96",
+    "amplitude": 0.0001,
+    "path_relative_to_paper2": "analysis/wp12_amplitude_convergence_20261106/enhanced_metrics/R96/wp12_field_metrics.json",
+    "bytes": 1645,
+    "sha256": "04ce49085a6b9f46164804b35b114d3dec3e782db400b6ae93a2a75dd228b3b8"
+  },
+  {
+    "grid": "R96",
+    "amplitude": 0.0001,
+    "path_relative_to_paper2": "analysis/wp12_amplitude_convergence_20261106/enhanced_metrics/R96/field_state_series.csv",
+    "bytes": 56275,
+    "sha256": "311505cb04cfbcd8672fef204532bce75351d23cc25a8dccb80510de3a63a107"
+  },
+  {
+    "grid": "R96",
+    "amplitude": 0.0001,
+    "path_relative_to_paper2": "analysis/wp12_amplitude_convergence_20261106/enhanced_metrics/R96/harmonic_signal.csv",
+    "bytes": 950394,
+    "sha256": "e435df04085265c28f47ad9c24ddcaf9c520422c45c8d4942af10a414dfd3afa"
+  },
+  {
+    "grid": "R96",
+    "amplitude": 0.0001,
+    "path_relative_to_paper2": "analysis/wp12_amplitude_convergence_20261106/enhanced_metrics/R96/flux_series.csv",
+    "bytes": 4428162,
+    "sha256": "46d6a6e623f9f7634e6a5f1e6772c8ce95925806fc41db7cb5e137e20f5ff3f8"
+  },
+  {
+    "grid": "R96",
+    "amplitude": 0.0001,
+    "path_relative_to_paper2": "analysis/wp12_amplitude_convergence_20261106/enhanced_metrics/R96/surface_series.csv",
+    "bytes": 1002804,
+    "sha256": "d0c13bfe6bca5fe2db9511bf17bed8d021642a01293c5d0304f6edace90a4bec"
+  }
+]
