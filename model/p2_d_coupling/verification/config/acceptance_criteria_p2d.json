@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "registered_before_runs": true,
+  "task": "P2-D first conservative Richards-Prat coupling",
+  "base_commit": "f04c361169bd8271813fd384447b43d02dde9174",
+  "environment": {
+    "cpp_toolchain": "absent: g++, clang++, cl, cmake, make, ninja all missing",
+    "consequence": "the C++ module of item 3 is written and self-checked by inspection and by generated reference vectors, but is NOT compiled or executed here; the 1D coupling of items 4-9 is demonstrated in an isolated Python mirror of the P1-R2 closures"
+  },
+  "declared_parameters": {
+    "column_cells": {
+      "value": 80,
+      "provenance": "declared base grid; convergence demonstrated at 40, 80, 160"
+    },
+    "column_height_m": {
+      "value": 0.2,
+      "provenance": "P1-R2 V5/V8 Grid.Positions1 upper bound"
+    },
+    "seed_height_m": {
+      "value": 1e-05,
+      "provenance": "declared smaller than the 1e-4 m seed of P2-A/P2-B, and why: at the Case 36877 soil state a 100 um crust at eps_0 = 0.43 holds 0.123 kg/m2 of NaCl, which is 44 percent of the entire 0.2 m column's 0.279 kg/m2 inventory. That is not a minimal perturbation of the soil. A 10 um seed holds 0.0137 kg/m2, about 4.9 percent, and is still about 19 reaction lengths thick, so it remains a continuum crust. Recorded before the coupled runs."
+    },
+    "cells_per_reaction_length": {
+      "value": 8.0,
+      "provenance": "P2-C grid-convergence gate; 4 is the minimum, 16 the production value there"
+    },
+    "interface_undersaturation_limit": {
+      "value": 0.02,
+      "provenance": "declared: the Prat reduction assumes a halite-equilibrated base, so an interface more than 2 percent below C_eq in relative terms is reported as outside the audited envelope"
+    },
+    "seeding_trigger": {
+      "value": "soil top mass fraction reaches C_eq",
+      "provenance": "declared: the crust is seeded only when the soil surface actually reaches halite saturation under the activity-controlled film, which is the physically consistent precondition item 6 asks for. No seed is created before that."
+    }
+  },
+  "predictions_registered_before_measurement": {
+    "hydrostatic_steady_state": "With no-flux top and bottom and a uniform mole fraction, the P1-R2 hydrostatic profile is an exact steady state of the mirror; inventories must not drift by more than 1e-12 relative over the test horizon.",
+    "prescribed_flux_budget": "With prescribed component fluxes the independently reconstructed inventory change equals the integrated boundary transfer to 1e-10 relative, for water, salt and total liquid separately.",
+    "film_evaporation_falls": "Under the water-activity-controlled film with a no-flux bottom, the surface concentrates, the water activity falls and the evaporation flux decreases monotonically in time; the integrated evaporation equals the water-inventory loss to the budget tolerance.",
+    "salt_is_conserved_under_evaporation": "With zero salt flux at the top and a no-flux bottom, the column salt inventory is constant to the budget tolerance however strongly the surface concentrates.",
+    "crust_base_generalisation_reduces": "Setting the crust base mass fraction to C_eq must reproduce the committed P2-C solve bit for bit, so every P2-C test must still pass unchanged.",
+    "interface_has_a_unique_root": "The interface residual g(w_i) = F_s,soil(w_i) - F_s,crust(w_i) is monotone in w_i over the admissible bracket, so the compatible interface concentration is unique.",
+    "three_route_closure": "At the converged interface the independently reconstructed crust transport flux, the crust inventory rate and the soil component flux agree to the declared tolerance; none of the three is computed from another.",
+    "undersaturated_base_is_refused": "If the compatible interface mass fraction falls below C_eq by more than the declared relative limit, the reduced Prat closure is outside its audited envelope and the model stops instead of extrapolating.",
+    "seeding_is_reached_by_evaporation": "Under the declared film and a no-flux bottom the Case 36877 soil surface reaches halite saturation in finite time, so the seed is produced by the model rather than prescribed at t = 0.",
+    "seed_is_budget_neutral": "Forming the seed from the soil's own top-cell salt and water leaves the combined soil+crust NaCl inventory exactly unchanged at t = 0."
+  },
+  "tolerances": {
+    "steady_state_drift_relative": 1e-12,
+    "budget_relative": 1e-10,
+    "interface_closure_relative": 1e-08,
+    "three_route_relative": 1e-06,
+    "crust_reduction_relative": 1e-12,
+    "newton_residual_relative": 1e-10,
+    "grid_convergence_successive_relative": 0.05,
+    "timestep_convergence_successive_relative": 0.02
+  },
+  "limitations": [
+    "The column is a cell-centred 1D finite-volume mirror of P1-R2's closures, not P1-R2 itself; P1-R2 is a 2D vertex-centred box scheme and could not be built in this environment.",
+    "The C++ module is not compiled or executed here.",
+    "No 2D instability run is performed, and no frozen P1-R2 result is touched.",
+    "A closing budget verifies the implementation, not the physics of either closure."
+  ]
+}

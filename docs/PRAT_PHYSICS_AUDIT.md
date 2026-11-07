@@ -157,6 +157,87 @@ The last factor is not generally one. The paper explicitly shows that it remains
 
 This is a local normal-speed law only after the local evaporation flux is known. It does not eliminate the need to solve the external gas-side evaporation problem, nor does it supply the soil-side water and salt fluxes.
 
+### 3.3 Stereological and kinetic closures, and the parameter values the paper supplies
+
+**[Added 2026-11-07 for P2-D item 1, read from the same PDF
+(SHA-256 `82E4F450...AB23AB3A`), page 5.]** The original audit stopped at the
+dimensionless groups and did not transcribe the closures that give `a_v` and
+`D_s,eff` their values. That omission is what allowed two sibling projects to
+use specific areas differing by a factor of six. The paper is explicit.
+
+**[Prat]** Equation (16) gives the specific surface area of the salt structure
+in terms of the **cubic crystal size** `d_c`:
+
+```
+a_v = 5 (1 - eps_s) / d_c
+```
+
+The coefficient 5 is **not** the naive cube-face value 6. The paper attributes
+the relation to numerical simulations of cube packings (its reference 32), so
+it is an empirical fit for a packing, not a single-cube surface-to-volume
+ratio.
+
+**[Prat]** Equation (17) re-expresses the same quantity using the **substrate
+grain size** `d_sub`, by combining equation (16) with the measured ratio
+`d_c/d_sub ~ 0.14` (Wijnhorst et al., the paper's reference 20, consistent
+with SEM images in its reference 18):
+
+```
+a_v = 36 (1 - eps_s) / d_sub          since 5/0.14 = 35.7 ~ 36
+```
+
+Both forms carry the **local, evolving** porosity `eps_s`, not a fixed
+reference porosity: `a_v` rises as the structure densifies.
+
+**[Prat]** The effective salt diffusivity is `D_s,eff = D_s / tau` with the
+packing tortuosity `tau ~ eps_s^(-1/2)`, i.e.
+
+```
+D_s,eff = sqrt(eps_s) D_s ,     D_s = 1.3e-9 m^2/s
+```
+
+**[Prat]** Parameter values the paper itself supplies, with their stated
+origin:
+
+| Quantity | Value | Origin stated by the paper |
+|---|---:|---|
+| `k_r` | 2.3e-3 m/s | NaCl crystallization in a microfluidic device (its ref. 23) |
+| `eps_s` | 0.43 | measured efflorescence porosity (its ref. 19; a second study agrees, a third reports 0.40) |
+| `d_c/d_sub` | 0.14 | its refs. 20 and 18 |
+| `D_s` | 1.3e-9 m^2/s | NaCl molecular diffusivity |
+| `beta` | 2 | the ideal cubic construction of the appendix |
+
+**[Derived]** Consequences for this repository:
+
+1. `a_v = 36(1-eps)/d_sub` is **equation (17) exactly**. The `salt_grow`
+   project's B2 closure is therefore traceable to the paper, and so is its
+   `D_s,eff = sqrt(eps) D_s`.
+2. The `6(1-eps_0)/d` used in `P2_B_EVOLVING_POROSITY.md` section 6.5 as "the
+   paper's own cubic construction" is **not** in the paper. It was a
+   single-cube surface-to-volume estimate. It is wrong in the coefficient
+   (5, not 6) and ambiguous in the length scale; expressed in the substrate
+   grain size the paper's value is 36, six times larger. The P2-B cubic
+   corollary `dh/d = beta eps_0 / (6 (1-eps_0))` must be read with
+   `a_v = 5(1-eps)/d_c`, which gives `dh/d_c = beta eps_0/(5(1-eps_0))` and,
+   per substrate grain, `dh/d_sub = beta eps_0/(36(1-eps_0))`.
+3. `k_r` and `eps_s` are **not** arbitrary declared placeholders: the paper
+   gives each an experimental source. Statements in `P2_A_SURFACE_MODULE.md`
+   and `P2_B_SALT_GROW_PARAMETER_COMPARISON.md` that "the audit supplies no
+   value for `a_v` or `k_r`" were true of the *audit* and are now superseded
+   for the *paper*. What remains genuinely unmeasured for this project is
+   `d_sub` for the specific soil being modelled, and whether a crust grown on
+   that soil has the porosity and crystal-size ratio reported for the
+   efflorescence in the paper's references.
+4. The P2-A declared `k_r = 1e-7 m/s` and `a_v = 1e5 1/m` have **no source**
+   and are 23000 and 8.2 times away from the paper's values respectively.
+   Every P2-A/P2-B result computed at them is a result about those
+   placeholders.
+
+**[Open]** `d_c` is treated as fixed while `eps_s` evolves. The paper lists
+changing crystal size among its unresolved items, so equations (16) and (17)
+are applied here with a fixed `d_sub` and an evolving `eps_s`, which is what
+both the paper's own `Da(h)` figure and `salt_grow` do.
+
 ## 4. Validity envelope
 
 The closed growth law is applicable only when all of the following are defensible:

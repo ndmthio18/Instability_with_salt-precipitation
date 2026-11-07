@@ -1,5 +1,14 @@
 # P2-B: removing the frozen-porosity assumption
 
+> **Correction (P2-D, 2026-11-07).** Section 6.5 calls `a_v = 6(1-eps_0)/d`
+> "the paper's own cubic construction". It is not: Prat equation (16) is
+> `a_v = 5(1-eps_s)/d_c` and equation (17) is `a_v = 36(1-eps_s)/d_sub`. The
+> corollary should read `dh/d_c = beta eps_0/(5(1-eps_0))`, or
+> `dh/d_sub = beta eps_0/(36(1-eps_0))` per substrate grain. The qualitative
+> statement -- that a constant-area self-replicating crust seals before adding
+> one crystal diameter of its own microstructure -- is unchanged and in fact
+> strengthened. See `PRAT_PHYSICS_AUDIT.md` section 3.3.
+>
 > **Read with P2-C (`P2_B_SALT_GROW_PARAMETER_COMPARISON.md`).** Every sealing
 > result below is evaluated at the P2-A **declared placeholder** `k_r = 1e-7`
 > and `a_v = 1e5`, for which `sqrt(Da*) = 0.053`. P2-C transfers the sibling

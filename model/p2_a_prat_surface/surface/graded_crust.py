@@ -416,16 +416,35 @@ class GradedProfileSolution:
     cells_across_reaction_length: float
     reaction_depth_95: float
     #: Closed form of (transport route - inventory route); see `solve_profile`.
+    #: Derived for a halite-equilibrated base and reported only there.
     route_difference_identity: float
     solution_mass_flux_top_relative: float
+    #: The NaCl mass fraction actually imposed at z = 0.
+    base_mass_fraction: float
+    #: True when the top closure has no positive supersaturation root.
+    growth_arrested: bool
 
 
 def solve_profile(
     state: GradedCrustState,
     params: GradedCrustParameters,
     evaporation_flux: float,
+    base_mass_fraction: float | None = None,
 ) -> GradedProfileSolution:
-    """Quasi-steady crust transport and the exact top closure."""
+    """Quasi-steady crust transport and the exact top closure.
+
+    ``base_mass_fraction`` is the NaCl mass fraction imposed at the crust base
+    ``z = 0``. ``None`` means ``C_eq``, i.e. Prat's own halite-equilibrated
+    base, and then every line below is the committed P2-C computation
+    unchanged. A different value is needed only by the P2-D soil/crust
+    coupling, where the interface concentration is an unknown to be solved
+    for rather than a prescribed equilibrium.
+
+    With ``u = C - C_eq`` the reduced problem is linear with ``u(0) = u_b``
+    and ``u(h) = s``, so it separates as ``u = u_b psi + s phi`` where
+    ``phi(0)=0, phi(h)=1`` and ``psi(0)=1, psi(h)=0``. ``psi`` is solved only
+    when ``u_b != 0``, so the default path is bit-identical to P2-C.
+    """
     if not state.active or state.height <= 0.0:
         raise CrustModelDomainExit(
             "the crust transport problem requires an active crust with h > 0"
@@ -478,12 +497,27 @@ def solve_profile(
 
     phi = _thomas(lower, diag, upper, rhs)
 
+    c_eq_base = c_eq if base_mass_fraction is None else base_mass_fraction
+    u_base = c_eq_base - c_eq
+    if u_base != 0.0:
+        rhs_psi = [0.0] * n
+        # phi(0)=0 contributes nothing; psi(0)=1 contributes at the bottom
+        # face only. The matrix is the same, so only the right-hand side
+        # changes: move the Dirichlet value to the right-hand side.
+        distance0 = z_cells[0]
+        coefficient0 = cond[0] / distance0 if distance0 > 0.0 else 0.0
+        rhs_psi[0] -= coefficient0
+        psi = _thomas(lower, diag, upper, rhs_psi)
+    else:
+        psi = [0.0] * n
+
     top_distance = state.height - z_cells[-1]
     if top_distance <= 0.0:
         raise CrustModelDomainExit("degenerate top cell in the crust grid")
     top_gradient = (1.0 - phi[-1]) / top_distance
     eps_top = eps_cells[-1]
     a_coefficient = rho * cond[-1] * top_gradient
+    b_coefficient = rho * cond[-1] * (0.0 - psi[-1]) / top_distance
 
     k_kinetic = params.beta * params.reaction_coefficient * rho / params.crystal_density
     skeleton = params.crystal_density * (1.0 - params.deposition_porosity)
@@ -493,16 +527,21 @@ def solve_profile(
         c_top = c_eq if params.linearised_top_closure else c_eq + s
         return (
             a_coefficient * s
+            + b_coefficient * u_base
             - c_top * evaporation_flux
             + skeleton * (1.0 - c_top) * v_s
             + c_top * params.vapour_density * v_s
         )
 
+    # residual(0) >= 0 means the top is not supersaturated: the Prat growth
+    # closure has no positive root and growth is arrested. Reported, not
+    # silently returned as zero velocity.
+    growth_arrested = residual(0.0) >= 0.0
     s_top = _solve_top_supersaturation(residual, c_eq, evaporation_flux)
     v_s = k_kinetic * s_top
     c_top = c_eq + s_top
 
-    c_star = [s_top * value for value in phi]
+    c_star = [s_top * phi[k] + u_base * psi[k] for k in range(n)]
     internal = 0.0
     dissolved = 0.0
     water = 0.0
@@ -531,12 +570,12 @@ def solve_profile(
     rho_u_base = rho_u_top + internal * release
     rho_u_base_legacy = rho_u_top + internal
 
-    base_gradient = s_top * phi[0] / z_cells[0] if z_cells[0] > 0.0 else 0.0
+    base_gradient = (c_star[0] - u_base) / z_cells[0] if z_cells[0] > 0.0 else 0.0
     diffusive_base = (
         -rho * eps_cells[0] * sat * params.diffusivity(eps_cells[0]) * base_gradient
     )
-    salt_base = c_eq * rho_u_base + diffusive_base
-    salt_base_legacy = c_eq * rho_u_base_legacy + diffusive_base
+    salt_base = c_eq_base * rho_u_base + diffusive_base
+    salt_base_legacy = c_eq_base * rho_u_base_legacy + diffusive_base
 
     # Closed form of the remaining route difference.
     #
@@ -605,6 +644,8 @@ def solve_profile(
         cells_across_reaction_length=across,
         reaction_depth_95=depth_95,
         route_difference_identity=route_identity,
+        base_mass_fraction=c_eq_base,
+        growth_arrested=growth_arrested,
         solution_mass_flux_top_relative=(
             evaporation_flux + skeleton * v_s - params.vapour_density * v_s
         ),
@@ -652,6 +693,7 @@ def activate(
     window: float = 0.0,
     ratio: float = 1.0,
     maximum_cell: float | None = None,
+    base_mass_fraction: float | None = None,
 ) -> GradedCrustState:
     """Create the seed crust at the declared deposition porosity.
 
@@ -669,7 +711,7 @@ def activate(
     state.height = sum(state.thicknesses)
     state.active = True
     state.activation_time = time
-    solution = solve_profile(state, params, evaporation_flux)
+    solution = solve_profile(state, params, evaporation_flux, base_mass_fraction)
     state.solid_salt_mass = params.crystal_density * state.solid_salt
     state.dissolved_salt = solution.dissolved_salt
     state.water = solution.water
@@ -742,6 +784,7 @@ def step(
     freeze_depth: float = 0.0,
     maximum_cell: float = 0.0,
     maximum_cells: int = 2_000_000,
+    base_mass_fraction: float | None = None,
 ) -> dict:
     """Advance porosity, the moving top and the inventories by ``dt``.
 
@@ -764,7 +807,7 @@ def step(
             "capillary-supply closure is disabled rather than extrapolated"
         )
 
-    before = solve_profile(state, params, evaporation_flux)
+    before = solve_profile(state, params, evaporation_flux, base_mass_fraction)
     solid_before = params.crystal_density * state.solid_salt
     dissolved_before = before.dissolved_salt
     water_before = before.water
@@ -812,7 +855,7 @@ def step(
     if freeze_depth > 0.0 and maximum_cell > 0.0:
         coarsen(state, freeze_depth, maximum_cell)
 
-    after = solve_profile(state, params, evaporation_flux)
+    after = solve_profile(state, params, evaporation_flux, base_mass_fraction)
     solid_after = params.crystal_density * state.solid_salt
     state.solid_salt_mass = solid_after
     state.dissolved_salt = after.dissolved_salt
@@ -911,6 +954,9 @@ def step(
         "cumulative_evaporation_kg_m2": state.cumulative_evaporation,
         "cumulative_internal_reaction_kg_m2": state.cumulative_internal_reaction,
         "cumulative_top_skeleton_kg_m2": state.cumulative_top_skeleton,
+        "base_mass_fraction": before.base_mass_fraction,
+        "growth_arrested": before.growth_arrested,
+        "salt_flux_base_route_corrected_kg_m2_s": before.salt_flux_base_route,
         "sealed": state.sealed,
         "disconnected": state.disconnected,
         "stopped": state.stopped,

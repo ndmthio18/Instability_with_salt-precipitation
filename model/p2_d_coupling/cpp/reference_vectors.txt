@@ -1,0 +1,78 @@
+# P2-D reference vectors for the C++ port of the Prat crust module.
+# Produced by verification/generate_cpp_vectors.py from the Python
+# model verified in P2-A, P2-B and P2-C. cpp/verify_vectors.cc must
+# reproduce every value from cpp/pratcrust.hh.
+#
+# Declared configuration (mirrored in verify_vectors.cc):
+#   seed height        1e-05 m
+#   cells per delta_r  8.0
+#   window             40.0 delta_r
+#   grading ratio      1.25
+#   maximum cell       10.0 delta_r
+#   time step          5.0 s, 10 steps
+#
+# name value
+constant_C_eq 0.2649408697676898
+constant_rho 1202.1685774416314
+constant_a_v0 820800.0000000001
+thermo_psat_293_15 2339.2147667769013
+thermo_dv_293_15_1e5 2.418907449661513e-05
+thermo_gaswmf_0_02 0.012536247039849437
+thermo_w_from_x_0_1 0.2649408697676898
+thermo_x_from_w_Ceq 0.1
+thermo_molality_Ceq 6.167603895754665
+thermo_brine_density_Ceq 1202.1685774416314
+activity_osmotic_1 0.9358687739996882
+activity_osmotic_6 1.2732022104189713
+activity_from_w_Ceq 0.7512135808791999
+film_transfer_coefficient 0.0034504574158055975
+film_flux_fresh 3.0502497217541225e-05
+film_flux_Ceq 1.781528648571137e-05
+closure_area_0_43 820800.0000000001
+closure_area_0_25 1080000.0
+closure_diffusivity_0_43 8.524670081592601e-10
+closure_diffusivity_0_25 6.5e-10
+closure_reaction_length_0_43 5.139599613243703e-07
+closure_damkohler_star_0_43 7.3025818198487205
+seed_cells 156.0
+seed_height 9.999999999999996e-06
+seed_top_cell 6.424499516554629e-08
+seed_solid_salt 0.012340499999999997
+seed_dissolved_salt 0.0013695658251005737
+seed_water 0.0037997590578984376
+profile_Ceq_s_top 1.4877029460842311e-06
+profile_Ceq_v_s 3.799981883606974e-09
+profile_Ceq_internal_reaction 1.7319266084452264e-06
+profile_Ceq_dissolved_salt 0.0013695658251005737
+profile_Ceq_water 0.0037997590578984376
+profile_Ceq_rho_u_base 2.523922071869062e-05
+profile_Ceq_salt_flux_transport 6.686901080318413e-06
+profile_Ceq_base_gradient 2.076433653650477e-08
+profile_0_99Ceq_s_top 1.4876978099389684e-06
+profile_0_99Ceq_v_s 3.799968764550511e-09
+profile_0_99Ceq_internal_reaction -0.0030831262833592595
+profile_0_99Ceq_dissolved_salt 0.0013688631760252902
+profile_0_99Ceq_water 0.0038004617069737246
+profile_0_99Ceq_rho_u_base -0.0013466769309795994
+profile_0_99Ceq_salt_flux_transport -0.002620775064434105
+profile_0_99Ceq_base_gradient 5145.719139555776
+profile_1_01Ceq_s_top 1.4877080822294943e-06
+profile_1_01Ceq_v_s 3.799995002663438e-09
+profile_1_01Ceq_internal_reaction 0.003086590136576152
+profile_1_01Ceq_dissolved_salt 0.00137026847417586
+profile_1_01Ceq_water 0.003799056408823153
+profile_1_01Ceq_rho_u_base 0.0013971553724169818
+profile_1_01Ceq_salt_flux_transport 0.0026414183997643297
+profile_1_01Ceq_base_gradient -5145.719139514251
+step10_time 50.0
+step10_height 1.0190872214120699e-05
+step10_cells 159.0
+step10_minimum_porosity 0.36513111913423213
+step10_solid_salt 0.012661564725393665
+step10_dissolved_salt 0.0013831258710946446
+step10_water 0.0038373806412079618
+step10_salt_flux_soil 6.69773554327186e-06
+step10_water_flux_soil 1.8582255050984455e-05
+step10_salt_flux_transport 6.697702690396011e-06
+step10_growth_velocity 3.833895309107318e-09
+step10_internal_reaction 1.6900762428108732e-06

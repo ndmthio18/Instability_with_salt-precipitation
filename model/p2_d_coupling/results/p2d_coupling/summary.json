@@ -1,0 +1,42 @@
+{
+  "criteria": "config/acceptance_criteria_p2d.json",
+  "environment": {
+    "cpp_tools": {
+      "cl": null,
+      "clang++": null,
+      "cmake": null,
+      "g++": null,
+      "make": null,
+      "ninja": null
+    },
+    "platform": "Windows-11-10.0.26300-SP0",
+    "python": "3.12.4"
+  },
+  "generated": "2026-11-07",
+  "headline": {
+    "coupled_salt_residual_relative": 8.179629913155618e-10,
+    "coupled_steps": 60,
+    "coupled_stop_reason": "steps",
+    "coupled_water_residual_relative": 1.5909674998326904e-11,
+    "cpp_compiled": false,
+    "film_production_flux_decline_percent": 40.71480823663212,
+    "film_production_liquid_residual_relative": 3.3881727292408617e-15,
+    "film_production_salt_residual_relative": 0.0,
+    "film_step_limit_note": "dt = 500 s converges on 40 cells and fails on 80; dt = 250 s converges on 80. The limit scales with the surface cell thickness.",
+    "interface_over_c_eq": 0.9999968360784048,
+    "predicted_route_1_minus_2_relative": 5.80508167888265e-06,
+    "seed_fraction_of_column_salt": 0.04907265111412408,
+    "seed_neutrality_residual_relative": 0.0,
+    "solubility_reached_s": 372000.0,
+    "worst_route_1_minus_2_relative": 9.377880362825823e-06,
+    "worst_route_2_minus_3_relative": 5.471581884988549e-10
+  },
+  "tables": [
+    "coupled_summary.csv",
+    "coupled_timestep.csv",
+    "coupled_trajectory.csv",
+    "film_evaporation.csv",
+    "film_trajectory.csv"
+  ],
+  "wall_seconds": 1217.2400679588318
+}

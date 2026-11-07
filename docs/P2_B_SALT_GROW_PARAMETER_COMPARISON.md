@@ -127,11 +127,20 @@ was held fixed for the one-factor study.
 ### 2.1 A declared discrepancy between the two projects
 
 salt_grow uses `a_v = 36(1-eps)/d_sub`. P2-B's own cubic corollary used
-`a_v = 6(1-eps_0)/d`. The two readings of the Prat appendix differ by a factor
-of 6 and this document does not adjudicate between them: the audit
-(`PRAT_PHYSICS_AUDIT.md`) transcribes no specific-area formula, so neither
-value is traceable to the paper through this repository. The task mandates the
-salt_grow value and it is used throughout.
+`a_v = 6(1-eps_0)/d`. When this document was written the audit transcribed no
+specific-area formula, so neither value was traceable to the paper and this
+section declined to adjudicate.
+
+> **Resolved in P2-D (2026-11-07).** The paper was read directly. Its
+> equation (16) is `a_v = 5(1-eps_s)/d_c` and its equation (17) is
+> `a_v = 36(1-eps_s)/d_sub`, obtained from (16) with the measured
+> `d_c/d_sub ~ 0.14`. **salt_grow's closure is equation (17) exactly**, and
+> its `D_s,eff = sqrt(eps) D_s` is the paper's `tau ~ eps^(-1/2)` tortuosity.
+> The `6(1-eps_0)/d` of P2-B is not in the paper; it was a single-cube
+> surface-to-volume estimate, wrong in the coefficient and ambiguous in the
+> length scale. See `PRAT_PHYSICS_AUDIT.md` section 3.3. Nothing in this
+> document changes: the mandated value was already the correct one, and the
+> table below showed the conclusion was insensitive to the factor anyway.
 
 The factor matters for `delta_r` (by `sqrt(6)`) and for `Da*` (by 6) but not
 for the conclusion, and it errs in the safe direction:
@@ -701,11 +710,14 @@ unchanged to better than 1e-6.
    That objection applies at *both* parameter sets and is untouched by this
    work.
 
-2. **`a_v` and `k_r` are still declared, not measured.** They now have
-   provenance -- a sibling project's baseline -- rather than being arbitrary
-   placeholders, but salt_grow's own RESULTS.md lists independent kinetic
-   measurements among the evidence it still needs. The sealing conclusion is
-   a conclusion about those declared numbers.
+2. **`a_v` and `k_r` have literature provenance, but not for this soil.**
+   P2-D's reading of the paper shows `k_r = 2.3e-3 m/s` comes from
+   microfluidic NaCl crystallization experiments and `eps_s = 0.43` from a
+   measured efflorescence porosity, so these are not arbitrary. What is not
+   measured is `d_sub` for the soil being modelled, and whether a crust grown
+   on it has the crystal-size ratio and porosity reported for those
+   efflorescences. salt_grow's own RESULTS.md still lists independent kinetic
+   measurements among the evidence it needs.
 
 3. **The margin is small.** Sealing returns if `a_v` is 3.4 times larger or
    `k_r` 3.4 times smaller:
@@ -721,11 +733,11 @@ unchanged to better than 1e-6.
    model back on the sealing side. "The crust does not seal" is therefore a
    parameter-conditional statement, exactly as "the crust seals" was.
 
-4. **The two projects disagree by a factor of 6 on the specific area**, and
-   the audit transcribes no formula for it, so `a_v` is not traceable to
-   Prat (2026) through this repository at all. The discrepancy errs away from
-   sealing and does not change any conclusion here, but no `a_v` should be
-   quoted as Prat's until it is resolved.
+4. ~~**The two projects disagree by a factor of 6 on the specific area.**~~
+   **Resolved in P2-D**: the paper's equations (16) and (17) give
+   `a_v = 5(1-eps_s)/d_c = 36(1-eps_s)/d_sub`, so the salt_grow closure used
+   here is the paper's. What remains unmeasured is `d_sub` for the specific
+   soil being modelled, not the formula.
 
 5. **`eps_stop` is declared, not derived.** Both the connectivity limit (0.02)
    and the clogging limit (0.01) are declared porosity thresholds, not
