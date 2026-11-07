@@ -1,0 +1,138 @@
+{
+  "checks": {
+    "dt_half": {
+      "accepted_steps": 4000,
+      "onset_bracket_s": [
+        0.5,
+        0.75
+      ],
+      "max_projection_salt_residual_kg": 1.3877787807814457e-17,
+      "max_projection_water_residual_kg": 4.163336342344337e-17,
+      "solid_accumulation_error_kg_m2": 7.806255641895632e-18,
+      "growth_formula_relative_error": 5.480433741561206e-16,
+      "finite_to_zero_reaction_demand_ratio": 0.7919146605854204,
+      "minimum_surface_sw": 0.997825228935014
+    },
+    "n160": {
+      "accepted_steps": 2000,
+      "onset_bracket_s": [
+        0.0,
+        0.5
+      ],
+      "max_projection_salt_residual_kg": 1.734723475976807e-17,
+      "max_projection_water_residual_kg": 4.163336342344337e-17,
+      "solid_accumulation_error_kg_m2": 3.469446951953614e-18,
+      "growth_formula_relative_error": 5.477704386340926e-16,
+      "finite_to_zero_reaction_demand_ratio": 0.7922402231105267,
+      "minimum_surface_sw": 0.9977085572131189
+    },
+    "n40": {
+      "accepted_steps": 2000,
+      "onset_bracket_s": [
+        2.5,
+        3.0
+      ],
+      "max_projection_salt_residual_kg": 1.3877787807814457e-17,
+      "max_projection_water_residual_kg": 4.163336342344337e-17,
+      "solid_accumulation_error_kg_m2": 8.673617379884035e-18,
+      "growth_formula_relative_error": 5.479904052452976e-16,
+      "finite_to_zero_reaction_demand_ratio": 0.7919793995402941,
+      "minimum_surface_sw": 0.9978306091123027
+    },
+    "n80": {
+      "accepted_steps": 2000,
+      "onset_bracket_s": [
+        0.5,
+        1.0
+      ],
+      "max_projection_salt_residual_kg": 1.734723475976807e-17,
+      "max_projection_water_residual_kg": 4.163336342344337e-17,
+      "solid_accumulation_error_kg_m2": 3.469446951953614e-18,
+      "growth_formula_relative_error": 5.466260973908832e-16,
+      "finite_to_zero_reaction_demand_ratio": 0.7919317111858359,
+      "minimum_surface_sw": 0.9978203129969198
+    },
+    "no_precip_control": {
+      "accepted_steps": 2000,
+      "onset_bracket_s": null,
+      "max_projection_salt_residual_kg": 1.3877787807814457e-17,
+      "max_projection_water_residual_kg": 4.163336342344337e-17,
+      "solid_accumulation_error_kg_m2": 0.0,
+      "growth_formula_relative_error": 0.0,
+      "finite_to_zero_reaction_demand_ratio": null,
+      "minimum_surface_sw": 0.998118813101701
+    },
+    "threshold_double": {
+      "accepted_steps": 2000,
+      "onset_bracket_s": [
+        0.5,
+        1.0
+      ],
+      "max_projection_salt_residual_kg": 1.734723475976807e-17,
+      "max_projection_water_residual_kg": 4.163336342344337e-17,
+      "solid_accumulation_error_kg_m2": 3.469446951953614e-18,
+      "growth_formula_relative_error": 5.422931179117446e-16,
+      "finite_to_zero_reaction_demand_ratio": 0.7757714039849638,
+      "minimum_surface_sw": 0.9978203129969198
+    },
+    "threshold_half": {
+      "accepted_steps": 2000,
+      "onset_bracket_s": [
+        0.5,
+        1.0
+      ],
+      "max_projection_salt_residual_kg": 1.734723475976807e-17,
+      "max_projection_water_residual_kg": 4.163336342344337e-17,
+      "solid_accumulation_error_kg_m2": 3.469446951953614e-18,
+      "growth_formula_relative_error": 5.827491737251248e-16,
+      "finite_to_zero_reaction_demand_ratio": 0.806073255335266,
+      "minimum_surface_sw": 0.9978203129969198
+    }
+  },
+  "comparisons": {
+    "n40__n80": {
+      "relative_to": "n80",
+      "tolerance": 0.02,
+      "relative_differences": {
+        "solid_kg_m2": 6.289291628186875e-05,
+        "h_prat_m": 0.001352690653445475,
+        "demand_over_actual": 0.0018911259998729258,
+        "onset_s": 2.0,
+        "continuum_s": 0.007731958762886598
+      },
+      "final_solid_pass": true
+    },
+    "n80__n160": {
+      "relative_to": "n160",
+      "tolerance": 0.02,
+      "relative_differences": {
+        "solid_kg_m2": 0.02081311188030377,
+        "h_prat_m": 0.008359352727641853,
+        "demand_over_actual": 0.01437956648326111,
+        "onset_s": 1.0,
+        "continuum_s": 0.04433497536945813
+      },
+      "final_solid_pass": false
+    },
+    "n80__dt_half": {
+      "relative_to": "dt_half",
+      "tolerance": 0.01,
+      "relative_differences": {
+        "solid_kg_m2": 0.0006903975165872109,
+        "h_prat_m": 0.00018499803980527027,
+        "demand_over_actual": 0.0005927381382661214,
+        "onset_s": 0.3333333333333333,
+        "continuum_s": 0.0012903225806451613
+      },
+      "final_solid_pass": true
+    }
+  },
+  "threshold_changes_leave_soil_histories_identical": true,
+  "no_precipitation_prefix_identical": true,
+  "no_precipitation_prefix_end_s": 0.5,
+  "final_control_top_mass_fraction": 0.2753695708558892,
+  "final_precipitating_top_mass_fraction": 0.2649408697676898,
+  "final_evaporation_relative_change": 0.04946732928798858,
+  "compatibility_within_10_percent": false,
+  "note": "Endpoint dt gate passes; grid and onset prediction not established. No 2D inference."
+}

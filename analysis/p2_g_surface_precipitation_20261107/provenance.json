@@ -1,0 +1,26 @@
+{
+  "base_commit": "3a84f863eae63da8a09aef1ca2e78c5053daaaeb",
+  "branch": "research/p2-g-surface-precipitation",
+  "remote": "https://github.com/ndmthio18/Instability_with_salt-precipitation.git",
+  "remote_workspace": "/WORK/hulm_work/zhixin/p2_g_surface_precipitation_20261107",
+  "local_external_archive_directory": "D:/3OutputFile/1Research/Article/27Instability_with_salt precipitation/p2_g_hpcc_artifacts",
+  "jobs": [
+    {"id": 16367348, "purpose": "build, unit checks, seven DuMuX cases, summary", "node": "ibc12b11n38", "state": "COMPLETED", "exit_code": "0:0", "elapsed_s": 198, "allocated_cpus": 8},
+    {"id": 16367390, "purpose": "independent full-history audit and archive", "node": "ibc11b11n19", "state": "COMPLETED", "exit_code": "0:0", "elapsed_s": 4, "allocated_cpus": 1}
+  ],
+  "sha256": {
+    "external_stack_archive": "2a29d942b87c157eb0bd58dd35577c1088932a048411e069837bf36b80cad684",
+    "source.tar.gz": "d53bacbcfc8c9764b9367c0f7ebaf1d3848e79174667a5d452c802f0192d2a93",
+    "build/solver": "0cf5ebdd21324acadc16d6419aa03f28bd5a237173124eda9cfd8d9b9df4ecba",
+    "audit.py": "67ff58bd3e42c75282d7c267c3264d3da1df1c50ed175fbab266b4a07c00f61b",
+    "audit.slurm": "fe2722eb4ebff6e364f54b3cd46ee5c405a8b891d28a44f53ec19e98f1b2fe27",
+    "accepted_histories.tar.gz": "aab7633aa8dd262b35e927098b63fb0b9920cc080f5859df4b5b5cfa79fc5f63",
+    "compact_results.tar.gz": "a2a566427543568d88bd0a731f156a2aa0563d5981f3f80d93e86ddaa6e06ac1"
+  },
+  "source_files_verified_against_local": 32,
+  "audit_sources_verified_against_local": true,
+  "transfers_sha256_verified": true,
+  "frozen_model_files_modified": false,
+  "raw_fields_committed": false,
+  "physical_validation": false
+}

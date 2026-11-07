@@ -1,5 +1,15 @@
 # Paper 2 — effective salt redistribution
 
+2026-11-07 当前开发主线切换为 **P2-G 最简表面析盐**：保留 Richards–salt，
+通过表面溶解度投影守恒地累积外部固体，并独立对照 Prat 增高需求；不使用人工
+晶种或盐层内部反应求解。HPCC 七条 1000 s 基准已完成，联合水盐预算通过，
+Prat 需盐量约为同期析盐量的 73%；80/160 层析盐量差 2.081%，未过 2% 门槛。
+代码链条可运行，定量物理高度和二维失稳结论尚未建立。见
+[模型入口](model/p2_g_surface_precipitation/README.md)、
+[公式与边界](docs/P2_G_FORMULATION.md)、
+[验收报告](analysis/p2_g_surface_precipitation_20261107/REPORT_ZH.md)。
+以下保留历史研究结果，不代表本轮启动了其他算例。
+
 `command/16.md` 的 WP9 已完成：R96-M1 在 sal 单线程、R96-M0 在用户单独授权后于 hpcc
 四线程完成，均为 9600/9600 接受步并通过守恒、时间轴、逐帧哈希和独立 VTU 再积分。
 R48/R96 的预注册 G1–G5 判定为 G1/G2 通过、G3/G4/G5 失败，最终 **NO-GO**；4T 的
