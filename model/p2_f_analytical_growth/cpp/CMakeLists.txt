@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 3.13)
+project(p2f_analytical_growth CXX)
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+add_executable(verify_analytical verify_analytical.cc)
+target_compile_options(verify_analytical PRIVATE -Wall -Wextra -Wpedantic)
+enable_testing()
+add_test(NAME analytical_growth COMMAND verify_analytical)

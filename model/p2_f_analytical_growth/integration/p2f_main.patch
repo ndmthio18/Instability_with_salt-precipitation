@@ -1,0 +1,314 @@
+diff --git a/appl/simpleRichardsnc/main.cc b/appl/simpleRichardsnc/main.cc
+--- a/appl/simpleRichardsnc/main.cc
++++ b/appl/simpleRichardsnc/main.cc
+@@ -16,5 +16,6 @@
+ #include <iomanip>
+ #include <map>
+ #include <cmath>
++#include <functional>
+
+ #include <dune/grid/yaspgrid.hh>
+@@ -42,4 +43,5 @@
+
+ #include "model.hh"
+ #include "transportdiagnostics.hh"
++#include "analyticalgrowth.hh"
+ #include <iostream>
+@@ -167,4 +169,32 @@
+                 if (eigenY_.size() < 2)
+                     throw std::runtime_error("Eigenprofile table needs >=2 rows: " + path);
+             }
++
++            if (evaporationBoundaryMode() == "p2f_analytical")
++            {
++                p2fParams_.equilibriumMassFraction =
++                    massFraction(getParam<Scalar>("Transport.SolubilityMoleFraction"));
++                p2fParams_.porosity = getParam<Scalar>("P2F.CrustPorosity", 0.43);
++                p2fParams_.crystalDensity = getParam<Scalar>("P2F.CrystalDensity", 2165.0);
++                p2fParams_.reactionCoefficient = getParam<Scalar>("P2F.ReactionCoefficient", 2.3e-3);
++                p2fParams_.beta = getParam<Scalar>("P2F.Beta", 2.0);
++                p2fParams_.molecularDiffusivity = getParam<Scalar>("P2F.MolecularDiffusivity", 1.3e-9);
++                p2fParams_.solutionDensity = rhoW(
++                    getParam<Scalar>("Transport.SolubilityMoleFraction"));
++                p2fParams_.vapourDensity = getParam<Scalar>("P2F.VapourDensity", 0.0);
++                p2fParams_.minimumInterfaceSaturation =
++                    getParam<Scalar>("P2F.MinimumInterfaceSaturation", 0.99);
++                p2fParams_.interfaceRelativeTolerance =
++                    getParam<Scalar>("P2F.InterfaceRelativeTolerance", 0.02);
++                p2fParams_.maximumSolutionPeclet = getParam<Scalar>("P2F.MaximumSolutionPeclet", 0.1);
++                p2fParams_.maximumMovingPeclet = getParam<Scalar>("P2F.MaximumMovingPeclet", 0.1);
++                p2fParams_.check();
++                p2fLog_.open("p2f_accepted_steps.csv");
++                p2fLog_ << std::setprecision(17)
++                    << "time_s,dt_s,active,activation_event,evaporation_kg_m2_s,height_m,"
++                       "velocity_m_s,interface_mass_fraction,interface_saturation,"
++                       "salt_flux_kg_m2_s,water_flux_kg_m2_s,total_flux_kg_m2_s,"
++                       "solid_salt_kg_m2,dissolved_salt_kg_m2,crust_water_kg_m2,"
++                       "cumulative_evaporation_kg_m2,solution_pe,moving_pe,valid\n";
++            }
+         }
+@@ -257,6 +287,25 @@
+                     values[conti0EqIdx] = 0.0;
+                     values[conti1EqIdx] = 0.0;
+                 }
++                else if (mode == "p2f_analytical")
++                {
++                    const Scalar evaporation =
++                        getParam<Scalar>("P2F.PrescribedEvaporationMassFlux");
++                    if (!p2fState_.active)
++                    {
++                        values[conti0EqIdx] = evaporation;
++                        values[conti1EqIdx] = 0.0;
++                    }
++                    else
++                    {
++                        if (!trialDtProvider_)
++                            throw std::runtime_error("P2-F trial-dt provider was not installed");
++                        const auto trial = p2f::evaluate(
++                            p2fState_, p2fParams_, evaporation, trialDtProvider_());
++                        values[conti0EqIdx] = trial.totalFlux;
++                        values[conti1EqIdx] = trial.saltFlux;
++                    }
++                }
+                 else
+                     throw std::runtime_error(
+                         "Unknown Problem.EvaporationBoundaryMode");
+@@ -264,5 +313,5 @@
+                 // Equation 0 is total mass and equation 1 is salt mass.
+                 // Zero net salt therefore makes the total top flux equal H2O flux.
+-                if (mode != "prescribed_components")
++                if (mode != "prescribed_components" && mode != "p2f_analytical")
+                     values[conti1EqIdx] = 0.0;
+             }
+@@ -444,4 +493,172 @@
+             return porosity_;
+         }
++
++        void setP2FTrialDtProvider(std::function<Scalar()> provider)
++        {
++            trialDtProvider_ = std::move(provider);
++        }
++
++        bool p2fCouplingEnabled() const
++        {
++            return evaporationBoundaryMode() == "p2f_analytical";
++        }
++
++        bool p2fActive() const
++        {
++            return p2fState_.active;
++        }
++
++        template<class SolutionVector>
++        void transferP2FSeedFromSoil(SolutionVector& x, Scalar timeAfter)
++        {
++            const Scalar seedHeight = getParam<Scalar>("P2F.SeedHeight", 1.0e-5);
++            auto seed = p2f::activate(p2fParams_, seedHeight);
++            seed.time = timeAfter;
++
++            const auto& gridView = this->gridGeometry().gridView();
++            std::vector<Scalar> volume(x.size(), 0.0);
++            std::vector<Scalar> y(x.size(), 0.0);
++            for (const auto& element : elements(gridView))
++            {
++                auto fvGeometry = localView(this->gridGeometry());
++                fvGeometry.bind(element);
++                for (const auto& scv : scvs(fvGeometry))
++                    volume[scv.dofIndex()] += scv.volume();
++            }
++            for (const auto& vertex : vertices(gridView))
++            {
++                const auto dof = this->gridGeometry().vertexMapper().index(vertex);
++                y[dof] = vertex.geometry().center()[GridView::dimensionworld-1];
++            }
++
++            auto inventory = [&](std::size_t dof) {
++                const Scalar mole = x[dof][moleFractionIdx];
++                const Scalar total = porosity_ * sw(x[dof][pressureIdx])
++                                   * rhoW(mole) * volume[dof];
++                const Scalar salt = total * massFraction(mole);
++                return std::pair<Scalar, Scalar>(salt, total-salt);
++            };
++            Scalar saltBefore = 0.0, waterBefore = 0.0;
++            for (std::size_t dof = 0; dof < x.size(); ++dof)
++            {
++                const auto m = inventory(dof);
++                saltBefore += m.first;
++                waterBefore += m.second;
++            }
++
++            const Scalar topArea = this->gridGeometry().bBoxMax()[0]
++                                 - this->gridGeometry().bBoxMin()[0];
++            const Scalar targetSalt = seed.totalSalt()*topArea;
++            const Scalar targetWater = seed.water*topArea;
++            const Scalar yTop = this->gridGeometry().bBoxMax()[GridView::dimensionworld-1];
++            std::vector<std::size_t> candidates;
++            for (std::size_t dof = 0; dof < x.size(); ++dof)
++                if (y[dof] < yTop-1.0e-12) candidates.push_back(dof);
++            std::sort(candidates.begin(), candidates.end(),
++                      [&](auto a, auto b) { return y[a] > y[b]; });
++
++            std::vector<std::size_t> pool;
++            Scalar poolSalt = 0.0, poolWater = 0.0;
++            for (const auto dof : candidates)
++            {
++                pool.push_back(dof);
++                const auto m = inventory(dof);
++                poolSalt += m.first;
++                poolWater += m.second;
++                if (poolSalt >= 1.05*targetSalt && poolWater >= 1.05*targetWater) break;
++            }
++            if (poolSalt < targetSalt || poolWater < targetWater)
++                throw std::runtime_error("soil cannot supply the declared P2-F seed");
++
++            for (const auto dof : pool)
++            {
++                const auto old = inventory(dof);
++                const Scalar salt = old.first-targetSalt*old.first/poolSalt;
++                const Scalar water = old.second-targetWater*old.second/poolWater;
++                const Scalar total = salt+water;
++                if (!(salt > 0.0 && water > 0.0 && total > 0.0))
++                    throw std::runtime_error("P2-F seed transfer created non-positive inventory");
++                const Scalar w = salt/total;
++                const Scalar mole = w*molarMassH2O()
++                    /(molarMassNaCl()-w*(molarMassNaCl()-molarMassH2O()));
++                const Scalar saturation = total/(porosity_*rhoW(mole)*volume[dof]);
++                static const Scalar swr = getParam<Scalar>("Problem.Swr");
++                if (!(saturation > swr && saturation <= 1.0))
++                    throw std::runtime_error("P2-F seed transfer created invalid saturation");
++                static const Scalar n = getParam<Scalar>("Problem.PcN");
++                static const Scalar m = 1.0-1.0/n;
++                static const Scalar alpha = getParam<Scalar>("Problem.PcAlpha");
++                const Scalar se = (saturation-swr)/(1.0-swr);
++                const Scalar pc = std::pow(std::pow(se, -1.0/m)-1.0, 1.0/n)/alpha;
++                x[dof][pressureIdx] = nonWettingReferencePressure()-pc;
++                x[dof][moleFractionIdx] = mole;
++            }
++
++            Scalar saltAfter = 0.0, waterAfter = 0.0;
++            for (std::size_t dof = 0; dof < x.size(); ++dof)
++            {
++                const auto m = inventory(dof);
++                saltAfter += m.first;
++                waterAfter += m.second;
++            }
++            std::ofstream ledger("p2f_activation_ledger.csv");
++            ledger << std::setprecision(17)
++                << "soil_salt_before_kg,soil_salt_after_kg,seed_salt_kg,salt_residual_kg,"
++                   "soil_water_before_kg,soil_water_after_kg,seed_water_kg,water_residual_kg,pool_dofs\n"
++                << saltBefore << ',' << saltAfter << ',' << targetSalt << ','
++                << (saltAfter+targetSalt-saltBefore) << ',' << waterBefore << ','
++                << waterAfter << ',' << targetWater << ','
++                << (waterAfter+targetWater-waterBefore) << ',' << pool.size() << '\n';
++            p2fState_ = seed;
++        }
++
++        template<class SolutionVector>
++        void acceptP2FStep(SolutionVector& x, Scalar timeAfter, Scalar dt,
++                           Scalar interfaceMassFraction, Scalar interfaceSaturation)
++        {
++            if (!p2fCouplingEnabled()) return;
++            const Scalar evaporation =
++                getParam<Scalar>("P2F.PrescribedEvaporationMassFlux");
++            const bool wasActive = p2fState_.active;
++            bool activation = false;
++            Scalar velocity = 0.0, saltFlux = 0.0, waterFlux = evaporation;
++            Scalar totalFlux = evaporation, solutionPe = 0.0, movingPe = 0.0;
++            bool valid = true;
++            if (wasActive)
++            {
++                auto trial = p2f::evaluate(p2fState_, p2fParams_, evaporation, dt);
++                const auto gate = p2f::validity(
++                    p2fParams_, trial, interfaceMassFraction, interfaceSaturation);
++                velocity = trial.velocity;
++                saltFlux = trial.saltFlux;
++                waterFlux = trial.waterFlux;
++                totalFlux = trial.totalFlux;
++                solutionPe = trial.solutionPe;
++                movingPe = trial.movingPe;
++                valid = gate.valid;
++                if (valid) p2f::commit(p2fState_, trial);
++            }
++            else
++            {
++                const Scalar activationTolerance =
++                    getParam<Scalar>("P2F.ActivationRelativeTolerance", 1.0e-10);
++                if (interfaceMassFraction >= p2fParams_.equilibriumMassFraction
++                                              *(1.0-activationTolerance))
++                {
++                    transferP2FSeedFromSoil(x, timeAfter);
++                    activation = true;
++                }
++            }
++            p2fLog_ << timeAfter << ',' << dt << ',' << p2fState_.active << ','
++                << activation << ',' << evaporation << ',' << p2fState_.height << ','
++                << velocity << ',' << interfaceMassFraction << ',' << interfaceSaturation << ','
++                << saltFlux << ',' << waterFlux << ',' << totalFlux << ','
++                << p2fState_.solidSalt << ',' << p2fState_.dissolvedSalt << ','
++                << p2fState_.water << ',' << p2fState_.cumulativeEvaporation << ','
++                << solutionPe << ',' << movingPe << ',' << valid << '\n';
++            p2fLog_.flush();
++            if (!valid)
++                throw std::runtime_error("P2-F physical validity gate failed; no crust commit");
++        }
+
+         Scalar nonWettingReferencePressure() const
+@@ -606,5 +823,10 @@
+         std::vector<Scalar> eigenY_;
+         std::vector<Scalar> eigenA_;
+
++        p2f::Parameters p2fParams_;
++        p2f::State p2fState_;
++        std::function<Scalar()> trialDtProvider_;
++        std::ofstream p2fLog_;
++
+         static constexpr Scalar eps_ = 1.5e-7;
+     };
+@@ -731,5 +953,6 @@
+     if (!(std::isfinite(tEnd) && std::isfinite(dt) && std::isfinite(maxDt)
+           && tEnd > 0 && dt > 0 && maxDt > 0))
+         throw std::runtime_error("TimeLoop times must be finite and positive");
++    problem->setP2FTrialDtProvider([dt] { return dt; });
+     TransportDiagnostics<TypeTag> transport(*problem, *gridGeometry, *gridVariables);
+     transport.write(0.0, 0.0, x);
+@@ -903,5 +1126,7 @@
+     // instantiate time loop
+     auto timeLoop = std::make_shared<TimeLoop<Scalar>>(0.0, dt, tEnd);
+     timeLoop->setMaxTimeStepSize(maxDt);
++    problem->setP2FTrialDtProvider(
++        [timeLoop] { return timeLoop->timeStepSize(); });
+
+     // the assembler with time loop for instationary problem
+@@ -930,9 +1155,24 @@
+         nonLinearSolver.solve(x, *timeLoop);
+
+         // Newton may reduce dt. Use the accepted dt, not the requested one.
+         const Scalar acceptedDt = timeLoop->timeStepSize();
++        problem->setP2FTrialDtProvider([acceptedDt] { return acceptedDt; });
++        if (problem->p2fCouplingEnabled())
++        {
++            Scalar topMassFraction = 0.0, topSaturation = 0.0;
++            for (const auto dof : topDofs)
++            {
++                topMassFraction += problem->massFraction(
++                    x[dof][ModelIndices::moleFractionIdx]);
++                topSaturation += problem->sw(x[dof][ModelIndices::pressureIdx]);
++            }
++            topMassFraction /= static_cast<Scalar>(topDofs.size());
++            topSaturation /= static_cast<Scalar>(topDofs.size());
++            problem->acceptP2FStep(x, timeBefore+acceptedDt, acceptedDt,
++                                   topMassFraction, topSaturation);
++        }
+         acceptedStepFile << timeLoop->timeStepIndex()+1 << ',' << timeBefore << ','
+                          << requestedDt << ',' << acceptedDt << ','
+                          << int(acceptedDt < requestedDt*(1.0-1e-14)) << '\n';
+         acceptedStepFile.flush();
+         gridVariables->update(x);
+@@ -957,5 +1197,7 @@
+
+         // set new dt as suggested by the newton solver
+         timeLoop->setTimeStepSize(nonLinearSolver.suggestTimeStepSize(timeLoop->timeStepSize()));
++        problem->setP2FTrialDtProvider(
++            [timeLoop] { return timeLoop->timeStepSize(); });
+
+     } while (!timeLoop->finished() && !transport.shouldStop());

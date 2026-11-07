@@ -1,0 +1,17 @@
+test_advection_is_not_silently_ignored_when_large (test_analytical_growth.AnalyticalGrowthTests) ... ok
+test_constant_porosity_and_no_internal_precipitation (test_analytical_growth.AnalyticalGrowthTests) ... ok
+test_euler_converges_to_independent_height_reference (test_analytical_growth.AnalyticalGrowthTests) ... ok
+test_growth_is_nonnegative (test_analytical_growth.AnalyticalGrowthTests) ... ok
+test_independent_bvp_reduces_at_small_peclet (test_analytical_growth.AnalyticalGrowthTests) ... ok
+test_inventory_fluxes_match_state_change (test_analytical_growth.AnalyticalGrowthTests) ... ok
+test_large_da_top_reference (test_analytical_growth.AnalyticalGrowthTests) ... ok
+test_solubility_conversion_is_explicit (test_analytical_growth.AnalyticalGrowthTests) ... ok
+test_supply_flags_do_not_clip_growth (test_analytical_growth.AnalyticalGrowthTests) ... ok
+test_transactional_lifecycle (test_analytical_growth.AnalyticalGrowthTests) ... ok
+test_zero_evaporation_means_zero_growth (test_analytical_growth.AnalyticalGrowthTests) ... ok
+test_zero_internal_reaction_limit (test_analytical_growth.AnalyticalGrowthTests) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.010s
+
+OK

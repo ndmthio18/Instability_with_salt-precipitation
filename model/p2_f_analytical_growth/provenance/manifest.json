@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "base_commit": "02c352f8c0f64f9dff952121b78ae7a61259a2e6",
+  "branch": "research/p2-f-analytical-growth",
+  "execution_policy": "HPCC Slurm compute nodes only",
+  "remote_workspace": "/WORK/hulm_work/zhixin/p2_f_analytical_growth_20261107",
+  "stack_archive_sha256": "2a29d942b87c157eb0bd58dd35577c1088932a048411e069837bf36b80cad684",
+  "solver_sha256": "e4effd7b257fc661b553d1b1d3825f5579fbb68a0fa514785cd36afae9591711",
+  "final_input_sha256": "4964084d568c86b806e3e917eb3f94878676d8713a0786bdda68fca68936a57f",
+  "integration_patch_sha256": "1b76c5aa1759984d913ffef6746d19feb9279c5b35d343c3e7c465fe90ca0b7f",
+  "small_result_archive_sha256": "5504e86eb0645ae4b04f4ac9248292182df9d3618db1475e6dd8b8993db0c9b3",
+  "jobs": {
+    "isolated_verification": 16367196,
+    "successful_build": 16367199,
+    "launcher_failure_preserved": 16367214,
+    "saturation_endpoint_audit": 16367222,
+    "high_flux_supply_audit": 16367237,
+    "low_flux_preactivation_audit": 16367246,
+    "final_coupled_matrix": 16367255,
+    "final_acceptance_no_go": 16367281
+  },
+  "decision": "NO-GO for 2D coupling"
+}

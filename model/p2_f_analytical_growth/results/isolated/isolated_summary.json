@@ -1,0 +1,49 @@
+{
+  "equilibrium_mass_fraction": 0.2649408697676898,
+  "solution_density_kg_m3": 1202.1685774416314,
+  "effective_diffusivity_m2_s": 8.524670081592601e-10,
+  "height_coefficient_per_m": 5257858.9102910785,
+  "reference_height_m_at_2000s": 2.0379285095813205e-05,
+  "timestep_rows": [
+    {
+      "dt_s": 40.0,
+      "height_m": 2.0378285138910107e-05,
+      "reference_height_m": 2.0379285095813205e-05,
+      "absolute_error_m": 9.999569030979736e-10,
+      "solid_salt_kg_m2": 0.02514782277567202,
+      "dissolved_salt_kg_m2": 0.0027909394861436528,
+      "water_kg_m2": 0.007743258157998053,
+      "cumulative_evaporation_kg_m2": 0.035999999999999956
+    },
+    {
+      "dt_s": 20.0,
+      "height_m": 2.0378786357114004e-05,
+      "reference_height_m": 2.0379285095813205e-05,
+      "absolute_error_m": 4.987386992008288e-10,
+      "solid_salt_kg_m2": 0.02514844130399654,
+      "dissolved_salt_kg_m2": 0.0027910081312561776,
+      "water_kg_m2": 0.00774344860885885,
+      "cumulative_evaporation_kg_m2": 0.03599999999999994
+    },
+    {
+      "dt_s": 10.0,
+      "height_m": 2.0379036036497973e-05,
+      "reference_height_m": 2.0379285095813205e-05,
+      "absolute_error_m": 2.4905931523156333e-10,
+      "solid_salt_kg_m2": 0.025148749420840326,
+      "dissolved_salt_kg_m2": 0.00279104232648148,
+      "water_kg_m2": 0.00774354348101878,
+      "cumulative_evaporation_kg_m2": 0.035999999999999935
+    },
+    {
+      "dt_s": 5.0,
+      "height_m": 2.0379160643674902e-05,
+      "reference_height_m": 2.0379285095813205e-05,
+      "absolute_error_m": 1.2445213830224937e-10,
+      "solid_salt_kg_m2": 0.025148903192327016,
+      "dissolved_salt_kg_m2": 0.0027910593922496727,
+      "water_kg_m2": 0.007743590828748617,
+      "cumulative_evaporation_kg_m2": 0.03599999999999993
+    }
+  ]
+}
