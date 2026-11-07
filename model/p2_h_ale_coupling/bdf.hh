@@ -1,0 +1,102 @@
+#pragma once
+#include "ale.hh"
+#include <cvode/cvode.h>
+#include <cvode/cvode_ls.h>
+#include <nvector/nvector_serial.h>
+#include <sunmatrix/sunmatrix_dense.h>
+#include <sunlinsol/sunlinsol_dense.h>
+#include <sundials/sundials_context.h>
+
+namespace p2h {
+// CVODE BDF/Newton advances E=eps*volume and Q=rho*C*E directly. A diagonal
+// error-weight transform uses M3's tolerance coefficients; its norm is not
+// identical to SciPy's primitive-variable norm. Every trial owns its solver.
+class BDF {
+    SUNContext context=nullptr;
+    N_Vector state=nullptr, tolerance=nullptr;
+    SUNMatrix matrix=nullptr;
+    SUNLinearSolver linear=nullptr;
+    void* memory=nullptr;
+    ALE model;
+    double relativeTolerance;
+    std::string error;
+    static int evaluate(realtype, N_Vector y, N_Vector dy, void* pointer) {
+        auto& self=*static_cast<BDF*>(pointer);
+        try {
+            Vec input(N_VGetArrayPointer(y),N_VGetArrayPointer(y)+self.model.size());
+            auto primitive=self.primitive(input);
+            auto f=self.model.rhs(primitive);
+            const auto flux=self.model.flux(primitive);
+            for(int i=0;i<self.model.n;++i) {
+                f[i]=flux.mesh[i]-flux.mesh[i+1]-flux.reaction[i]*flux.volume[i]/self.model.p.crystal;
+                f[self.model.n+i]=flux.salt[i]-flux.salt[i+1]-flux.reaction[i]*flux.volume[i];
+            }
+            std::copy(f.begin(),f.end(),N_VGetArrayPointer(dy)); return 0;
+        } catch(const std::exception& e) { self.error=e.what(); return 1; }
+    }
+    Vec primitive(const Vec& conservative) const {
+        auto y=conservative;
+        for(int i=0;i<model.n;++i) {
+            y[i]=conservative[i]/(conservative[2*model.n]*model.widths[i]);
+            y[model.n+i]=conservative[model.n+i]/(model.p.rho*conservative[i]);
+        }
+        return y;
+    }
+    static int weights(N_Vector y,N_Vector w,void* pointer) {
+        auto& self=*static_cast<BDF*>(pointer);
+        const int n=self.model.n; const double h=NV_Ith_S(y,2*n);
+        if(!(h>0)) return -1;
+        for(int i=0;i<n;++i) {
+            const double e=NV_Ith_S(y,i),q=NV_Ith_S(y,n+i),vol=h*self.model.widths[i];
+            if(!(e>0)) return -1;
+            NV_Ith_S(w,i)=1/(1e-12*vol+self.relativeTolerance*std::abs(e));
+            NV_Ith_S(w,n+i)=1/(1e-12*self.model.p.rho*e+self.relativeTolerance*std::abs(q));
+        }
+        for(int i=2*n;i<self.model.size();++i)
+            NV_Ith_S(w,i)=1/((i==2*n?1e-14:1e-12)+self.relativeTolerance*std::abs(NV_Ith_S(y,i)));
+        return 0;
+    }
+    static void checked(int flag,const char* name) {
+        if(flag<0) throw std::runtime_error(std::string(name)+" flag="+std::to_string(flag));
+    }
+public:
+    BDF(const ALE& source,const Vec& initial,double maxStep=60,double relative=1e-8) : model(source), relativeTolerance(relative) {
+        checked(SUNContext_Create(nullptr,&context),"context");
+        state=N_VNew_Serial(model.size(),context); tolerance=N_VClone(state);
+        std::copy(initial.begin(),initial.end(),N_VGetArrayPointer(state));
+        for(int i=0;i<model.n;++i) {
+            const double e=initial[i]*initial[2*model.n]*model.widths[i];
+            NV_Ith_S(state,i)=e;
+            NV_Ith_S(state,model.n+i)=model.p.rho*initial[model.n+i]*e;
+        }
+        for(int i=0;i<model.size();++i) NV_Ith_S(tolerance,i)=i==2*model.n?1e-14:1e-12;
+        memory=CVodeCreate(CV_BDF,context);
+        checked(CVodeInit(memory,evaluate,0,state),"init");
+        checked(CVodeSetUserData(memory,this),"user data");
+        checked(CVodeWFtolerances(memory,weights),"conservative error weights");
+        checked(CVodeSetMaxNumSteps(memory,200000),"step limit");
+        checked(CVodeSetMaxStep(memory,maxStep),"maximum step");
+        matrix=SUNDenseMatrix(model.size(),model.size(),context);
+        linear=SUNLinSol_Dense(state,matrix,context);
+        checked(CVodeSetLinearSolver(memory,linear,matrix),"linear solver");
+    }
+    BDF(const BDF&)=delete;
+    ~BDF() {
+        if(memory) CVodeFree(&memory);
+        if(linear) SUNLinSolFree(linear);
+        if(matrix) SUNMatDestroy(matrix);
+        if(state) N_VDestroy(state);
+        if(tolerance) N_VDestroy(tolerance);
+        if(context) SUNContext_Free(&context);
+    }
+    Vec advance(double time) {
+        double reached=0;
+        const int flag=CVode(memory,time,state,&reached,CV_NORMAL);
+        if(flag<0) throw std::runtime_error("BDF failed "+std::to_string(flag)+": "+error);
+        Vec y(N_VGetArrayPointer(state),N_VGetArrayPointer(state)+model.size());
+        y=primitive(y);
+        model.validate(y); return y;
+    }
+    long steps() const { long v; CVodeGetNumSteps(memory,&v); return v; }
+};
+}

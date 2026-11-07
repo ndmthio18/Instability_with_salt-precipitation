@@ -1,0 +1,45 @@
+{
+  "operator_checks": [
+    {
+      "case": "growth",
+      "max_scaled_difference": 1.2108093881651413e-12,
+      "max_absolute_difference": 6.938893903907228e-18
+    },
+    {
+      "case": "reverse_mesh",
+      "max_scaled_difference": 7.572683163193546e-14,
+      "max_absolute_difference": 2.168404344971009e-19
+    }
+  ],
+  "final": {
+    "time_s": 21600.0,
+    "height_m": 0.0016491969496796005,
+    "epsilon_min": 0.23612004813796447,
+    "velocity_m_s": 3.005781410394534e-08,
+    "internal_fraction": 0.2537854825329138,
+    "top_solid_kg_m2": 0.8029917070587032,
+    "internal_solid_kg_m2": 0.2730952468434249,
+    "salt_residual_kg_m2": -8.881784197001252e-15,
+    "water_residual_kg_m2": -9.769962616701378e-15,
+    "evaporation_kg_m2_s": 0.0001388888888888889,
+    "h_mass_m": 0.001869987027166399,
+    "dissolved_salt_kg_m2": 0.18479081816893092,
+    "pore_water_kg_m2": 0.5151743948647717
+  },
+  "relative_target_differences": {
+    "height_m": 1.9427608260195686e-10,
+    "epsilon_min": 7.885969555605869e-09,
+    "internal_fraction": 9.980530673451697e-09,
+    "velocity_m_s": 1.3125839719554396e-10
+  },
+  "maximum_relative_budgets": {
+    "salt": 1.2613193844221239e-14,
+    "water": 2.5725592498476406e-14
+  },
+  "reference_commit": "8c0df6eddeea95a8a76c61f245cef2f891255c86",
+  "history_height_relative_error": 2.34997576953333e-11,
+  "history_epsilon_min_absolute_error": 3.476993387652172e-09,
+  "snapshot_epsilon_absolute_error": 4.1826693231161727e-07,
+  "snapshot_concentration_absolute_error": 2.60978794131006e-10,
+  "integrator": "SUNDIALS 6.7.0 CVODE BDF/Newton in E,Q inventories; mapped tolerance coefficients, distinct error norm from primitive SciPy BDF"
+}

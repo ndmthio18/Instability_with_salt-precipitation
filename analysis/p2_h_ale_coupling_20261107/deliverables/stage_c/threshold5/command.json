@@ -1,0 +1,20 @@
+[
+  "/WORK/hulm_work/zhixin/p2_h_ale_coupling_20261107/build/soil_solver",
+  "params.input",
+  "-Grid.Cells1",
+  "80",
+  "-TimeLoop.DtInitial",
+  "0.5",
+  "-TimeLoop.MaxTimeStepSize",
+  "0.5",
+  "-P2H.CrustCells",
+  "64",
+  "-P2H.ActivationHeight",
+  "5e-06",
+  "-P2H.ActivationOnly",
+  "false",
+  "-P2H.InjectRejectedTrial",
+  "false",
+  "-P2H.RejectAfterActive",
+  "true"
+]

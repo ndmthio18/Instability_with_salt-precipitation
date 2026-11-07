@@ -1,0 +1,5 @@
+Frozen NPZ keys: ['time', 'faces', 'centers', 'widths', 'epsilon', 'concentration', 'height', 'top_solid', 'internal_solid', 'bottom_salt', 'bottom_solution', 'evaporated']
+Traceback (most recent call last):
+  File "/WORK/hulm_work/zhixin/p2_h_ale_coupling_20261107/source/verify_reference.py", line 48, in <module>
+    assert max(budgets.values())<1e-8,budgets
+AssertionError: {'salt': 4.263550536453211e-08, 'water': 1.4250049877129147e-07}

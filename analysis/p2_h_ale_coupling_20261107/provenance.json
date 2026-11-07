@@ -1,0 +1,71 @@
+{
+  "branch": "research/p2-h-ale-coupling",
+  "base_commit": "a3dae1374705f55a08d9d146c55567a3bb1becd0",
+  "salt_grow_reference_commit": "8c0df6eddeea95a8a76c61f245cef2f891255c86",
+  "hpcc_workspace": "/WORK/hulm_work/zhixin/p2_h_ale_coupling_20261107",
+  "archive_transfer_verified": true,
+  "archives": {
+    "full_accepted_histories.tar.gz": {
+      "sha256": "3f536775858179257f07cdb0515f624747edd9b38ecbe1ada5085d2eb3a8ba41",
+      "bytes": 18326356,
+      "local_path": "D:\\3OutputFile\\1Research\\Article\\27Instability_with_salt precipitation\\p2_h_hpcc_artifacts\\full_accepted_histories.tar.gz"
+    },
+    "compact_deliverables_r02.tar.gz": {
+      "sha256": "f449159a546396ad30d097d2a87297590365d64e1ea151cda281ef6b8e3f16bf",
+      "bytes": 1134698,
+      "local_path": "D:\\3OutputFile\\1Research\\Article\\27Instability_with_salt precipitation\\p2_h_hpcc_artifacts\\compact_deliverables_r02.tar.gz"
+    }
+  },
+  "verified_remote_source_paths": [
+    "model/p1_r2_conservative_richards/source/appl/CMakeLists.txt",
+    "model/p1_r2_conservative_richards/source/appl/simpleRichardsnc/CMakeLists.txt",
+    "model/p1_r2_conservative_richards/source/appl/simpleRichardsnc/main.cc",
+    "model/p1_r2_conservative_richards/source/appl/simpleRichardsnc/model.hh",
+    "model/p1_r2_conservative_richards/source/appl/simpleRichardsnc/params.input",
+    "model/p1_r2_conservative_richards/source/appl/simpleRichardsnc/transportdiagnostics.hh",
+    "model/p2_d_coupling/cpp/pratcrust.hh",
+    "model/p2_f_analytical_growth/integration/p2f_1d.input",
+    "model/p2_g_surface_precipitation/hpcc.opts",
+    "model/p2_g_surface_precipitation/surface.hh",
+    "model/p2_h_ale_coupling/PLAN.md",
+    "model/p2_h_ale_coupling/ale.hh",
+    "model/p2_h_ale_coupling/bdf.hh",
+    "model/p2_h_ale_coupling/collect.py",
+    "model/p2_h_ale_coupling/operator_check.cc",
+    "model/p2_h_ale_coupling/plot_results.py",
+    "model/p2_h_ale_coupling/postprocess.slurm",
+    "model/p2_h_ale_coupling/prepare_dependencies.py",
+    "model/p2_h_ale_coupling/prepare_dumux.py",
+    "model/p2_h_ale_coupling/regression.cc",
+    "model/p2_h_ale_coupling/run_soil.py",
+    "model/p2_h_ale_coupling/soil_methods.inc",
+    "model/p2_h_ale_coupling/stage_a.slurm",
+    "model/p2_h_ale_coupling/stage_b.slurm",
+    "model/p2_h_ale_coupling/stage_c.slurm",
+    "model/p2_h_ale_coupling/verify_reference.py",
+    "model/p2_h_ale_coupling/verify_soil.py",
+    "model/p2_h_ale_coupling/refresh_figures.slurm"
+  ],
+  "final_dumux_elf_sha256": "5a21e43ca5a5039d87981ace401d7b4ab97cfb1e9dd8311776c766239733a462",
+  "jobs": {
+    "16371392": "FAILED: lib vs lib64 link path",
+    "16371399": "FAILED: primitive-variable accumulated budget",
+    "16371406": "COMPLETED 0:0: conservative M3 regression",
+    "16371415": "COMPLETED 0:0: first activation tests, superseded by corrected build",
+    "16371422": "FAILED: legacy salt-flux override caught by budget",
+    "16371429": "COMPLETED 0:0: corrected build and activation tests",
+    "16371431": "COMPLETED 0:0: eight cases to 2500 s, five active and three precrust",
+    "16371440": "COMPLETED 0:0: full-history verification and figures",
+    "16371459": "COMPLETED 0:0: figure-label revision only"
+  },
+  "figure_visual_qa": "All five PNG figures inspected; concentration uses C-Ceq, absent-crust porosity masked, common color scales and snapshot labels checked. SVG companions included.",
+  "scientific_status": {
+    "conditional_mass_coupling": "implemented and numerically verified",
+    "crust_grid_and_time_gates": "pass",
+    "full_soil_grid_convergence": "fail: 160-layer pore charging refuses activation",
+    "activation_continuum_validity": "not established; 1/2 um below estimated crystal size",
+    "hydraulic_unsaturated_closure": "missing; Sw >= .99 is screening only",
+    "production_2d": "NO_GO"
+  },
+  "storage_note": "Complete accepted histories are outside Git. Raw VTK, ELF and failed-run source/build evidence remain on HPCC. Committed CSV trajectories are sampled and must not be summed to reconstruct cumulative fluxes."
+}
