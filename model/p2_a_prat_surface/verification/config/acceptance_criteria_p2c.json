@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "registered_before_runs": true,
+  "task": "P2-C transfer of the salt_grow crust parameters into the P2-B evolving-porosity model",
+  "note": "Registered separately so that the committed P2-A and P2-B criteria files stay untouched. Every prediction below was written down before the corresponding run was executed.",
+  "reference_project": {
+    "name": "salt_grow / prat_dynamic_growth",
+    "path": "D:/3OutputFile/1Research/Article/23salt grow/prat_dynamic_growth",
+    "config": "configs/baseline.json",
+    "paper_sha256": "82E4F450481F7185AFAF3F1B1C2A7A60C25C16FF04B0A570FCB2C989EB23AB3A",
+    "published_groups_at_h0_1mm": {
+      "Pe": 0.31575,
+      "Da": 3790500.0,
+      "Da_top": 5264.59,
+      "Da_star": 7.31193,
+      "delta_C_m": 5.136e-07
+    },
+    "published_velocities_m_s": {
+      "prat_analytical": 2.94033793e-08,
+      "m3_b2_corrected_6h": 3.00578141e-08
+    },
+    "published_b2_6h": {
+      "height_m": 0.00164919695,
+      "minimum_porosity": 0.23612005,
+      "L95_m": 1.00907e-06,
+      "internal_fraction_of_new_solid": 0.253785,
+      "top_excess_mass_fraction": 1.18162059e-05
+    }
+  },
+  "transferred_parameters": {
+    "deposition_porosity": {
+      "value": 0.43,
+      "provenance": "salt_grow configs/baseline.json physical.epsilon_ref and epsilon_birth"
+    },
+    "reaction_coefficient": {
+      "value": 0.0023,
+      "provenance": "salt_grow configs/baseline.json physical.k_reaction"
+    },
+    "substrate_size": {
+      "value": 2.5e-05,
+      "provenance": "salt_grow configs/baseline.json physical.d_sub"
+    },
+    "specific_area": {
+      "value": 820800.0,
+      "provenance": "36*(1-0.43)/25e-6, the salt_grow parameters.py a_v_ref property"
+    }
+  },
+  "declared_differences_from_salt_grow": {
+    "specific_area_constant": "salt_grow uses a_v = 36(1-eps)/d_sub; P2-B's own cubic corollary used a_v = 6(1-eps_0)/d. The factor 6 discrepancy between the two projects' readings of the Prat appendix is recorded, not silently resolved. The task mandates the salt_grow value, which is used.",
+    "solver": "salt_grow integrates a transient ALE system with scipy BDF; this repository forbids scipy and solves a quasi-steady reduced transport problem with explicit Euler porosity updates.",
+    "vapour_term": "P2-A/P2-B carry a vapour-density displacement term rho_v v_s that salt_grow does not have. It is retained in the one-factor cases and set to zero in the fully matched benchmark."
+  },
+  "predictions_registered_before_measurement": {
+    "thick_crust_wake_porosity": "For Da >> 1 a material point buried at speed v_s through an exponential reaction layer loses exactly d_eps = a_v delta_r / beta = (1-eps_0)/sqrt(Da*), independent of the evaporation flux, of C*_top, of rho and of k_r except through delta_r. The wake plateau is therefore eps_wake = eps_0 - (1-eps_0)/sqrt(Da*).",
+    "sealing_criterion": "The crust reaches the declared stop porosity eps_stop if and only if sqrt(Da*) <= (1-eps_0)/(eps_0-eps_stop). With eps_stop = 0.02 this predicts: Case 0 seals, Case 1 seals, Case 2 does not, Case 3 does not, and the fully matched salt_grow benchmark does not.",
+    "thin_crust_growth": "For Da <~ 1 the whole crust reacts almost uniformly and the P2-B law dh = integral beta/a_v d eps applies instead.",
+    "matched_benchmark_velocity": "The fully matched quasi-steady evolving-porosity model should reproduce the salt_grow M3 B2 value 3.00578141e-8 m/s to within 1 percent, because salt_grow's own attribution table puts the quasi-steady-versus-transient contrast T2-Q6 at approximately zero and advection/ALE at -0.0028 percentage points. A larger deviation must be attributed, not absorbed.",
+    "route_difference_converges": "With the corrected quasi-steady solution-mass balance d(rhoU)/dz = -R(1 - rho S/rho_cr) and the birth porosity at the moving interface, the transport-route and inventory-route base salt fluxes satisfy an exact identity, so their difference must converge to zero at first order under time-step refinement. The legacy P2-B closure must instead converge to a non-zero limit of approximately C_eq (rho S/rho_cr) R_int / F_s.",
+    "resolution_requirement": "The grid must resolve the reaction layer delta_r = h/sqrt(Da), not the growth increment. At least 4 cells across delta_r are required; results from grids with fewer are reported as under-resolved and are not interpreted.",
+    "original_32_cell_grid_is_insufficient": "At the salt_grow parameters delta_r is about 0.54 micrometres while the committed P2-B seed grid has 3.125-micrometre cells, so it carries about 0.17 cells across delta_r and must not be interpreted."
+  },
+  "tolerances": {
+    "p2b_equivalence_relative": 1e-12,
+    "eq28_reduction_relative": 1e-05,
+    "salt_budget_relative": 1e-10,
+    "water_budget_relative": 1e-10,
+    "solid_split_residual_relative": 1e-10,
+    "boundary_layer_cells_minimum": 4.0,
+    "grid_convergence_successive_relative": 0.005,
+    "timestep_convergence_successive_relative": 0.005,
+    "wake_porosity_prediction_relative": 0.15,
+    "matched_benchmark_velocity_relative": 0.01,
+    "route_difference_corrected_relative": 0.01,
+    "velocity_plateau_drift_relative": 0.001
+  },
+  "numerical_declarations": {
+    "top_cell_size": "declared as delta_r/n with n in {1,2,4,8,16}; the production value is delta_r/8 unless the convergence table says otherwise",
+    "window": "uniform fine cells over the top `window_reaction_lengths` * delta_r; declared 40",
+    "grading_ratio": "1.25 below the window, capped at `maximum_cell`",
+    "freeze_depth": "wake coarsening is disabled unless a table says otherwise; where used it is declared in reaction lengths and its influence is measured",
+    "time_step": "declared as tau_eps/n_steps with tau_eps = eps_0 rho_cr/(a_v rho k_r C*_top); convergence is demonstrated in n_steps"
+  },
+  "limitations": [
+    "a_v and k_r remain declared inputs; salt_grow supplies values but no measurement, and its own RESULTS.md records that the reaction layer is thinner than the estimated crystal size, so the continuum interpretation is doubtful at both parameter sets.",
+    "The quasi-steady transport reduction and the Pe << Da neglect of advection are inherited from the audit unchanged.",
+    "Connectivity loss and clogging are declared porosity thresholds, not derived from a percolation or permeability criterion.",
+    "Nothing here is coupled to a Richards solution, and no 2D run is performed."
+  ]
+}

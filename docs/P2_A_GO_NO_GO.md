@@ -12,6 +12,22 @@
 > document. Blocker 2 and every other item below are unchanged, and the
 > overall decision is unchanged.
 
+> **Update after P2-C (see `P2_B_SALT_GROW_PARAMETER_COMPARISON.md`).** The
+> sealing conclusion above is a property of the **declared placeholder
+> parameters**, not of the formulation. Transferring `eps_0 = 0.43`,
+> `k_r = 2.3e-3 m/s` and `a_v = 820800 1/m` from the sibling `salt_grow`
+> project moves `sqrt(Da*)` from 0.053 to 2.56, across the sealing threshold
+> `(1-eps_0)/(eps_0-eps_stop) = 1.390`, and the crust then grows steadily
+> instead of sealing. With every physical input and both closures matched, the
+> P2-B quasi-steady evolving-porosity model reproduces the salt_grow transient
+> ALE growth velocity to 0.05 %. Gate 1' is therefore **narrowed, not closed**:
+> the parameters now have provenance but still no measurement, and sealing
+> would return if `a_v` were 3.4 times larger or `k_r` 3.4 times smaller. Gate
+> 2 is partly addressed for the same reason. Blocker 2 and the overall decision
+> are unchanged. P2-C also found and fixed a defect in the P2-B **soil-side
+> flux diagnostics** (not in any growth result): see the new item under "What
+> is not established".
+
 ## Decision
 
 **GO** for accepting the P2-A surface module as a verified, conservative,
@@ -91,6 +107,22 @@ must be resolved - by evolving `eps_c`, by a defensible `a_v`/`k_r`
 measurement, or by a declared restriction of the usable window - before the
 crust is allowed to feed a soil simulation.
 
+### Corrected during P2-C - the P2-B base-flux diagnostics
+
+The committed P2-B `salt_flux_base_route` used a quasi-steady solution-mass
+balance `d(rho U)/dz = -R` and evaluated the moving-interface pore volume at
+the current top-cell porosity. Both are wrong: precipitation frees pore volume
+that refills with solution, so `d(rho U)/dz = -R(1 - rho S/rho_cr)`, and the
+new pore volume is created at the **deposition** porosity. This is the bulk of
+the 7.5-10.4 % transport-versus-inventory route difference reported in the P2-B
+verification, and the committed values of that specific diagnostic should be
+read as a closure defect rather than as a physical discrepancy. It is fixed in
+`graded_crust.py`, which drops the gap by three to four orders of magnitude; the
+remainder is a closed-form residual of Prat's own linearised sink. **No growth
+velocity, porosity, height or budget in P2-A or P2-B is affected**, because the
+diagnostic is never fed back into the solution, and no committed file was
+edited.
+
 ### Blocker 2 - no C++ implementation
 
 The module is Python. No C++ compiler was available in this environment, so the
@@ -144,26 +176,50 @@ Not supported, and must not be claimed:
 1. ~~Resolve the constant-porosity tension.~~ **Done in P2-B.** Porosity now
    evolves from equation (2); see `P2_B_EVOLVING_POROSITY.md`.
 
-1'. **(replaces gate 1)** Supply a defensible `a_v(eps)` closure, or a
-   measurement of `a_v`, that permits a crust to reach a thickness worth
-   modelling. With constant `a_v` the resolved model seals after
-   `dh = beta eps_0 / a_v`, which is 8.4 % of the seed height at the declared
-   inputs and under one crystal diameter in the paper's own cubic
-   construction. P2-B shows the growth before sealing is
-   `(beta eps_0^m / a_v0) * integral eps^-m d eps` for `a_v ~ eps^m` and is
-   independent of the evaporation flux for every `m`, so no atmospheric or
-   kinetic parameter can rescue it: only crystal coarsening can. That closure
-   is the audit's own unresolved "changing crystal size" item and P2-B does
-   not supply it. Until it exists, a crust that grows appreciably cannot be
-   claimed, and neither can one that seals, since the sealing threshold is
-   declared rather than derived from a percolation or permeability criterion.
+1'. **(replaces gate 1; narrowed by P2-C)** Supply a defensible `a_v` and
+   `k_r`, measured rather than declared, together with a crystal-coarsening
+   closure `a_v(eps)` if one is needed. P2-B showed that at the P2-A declared
+   placeholders the crust seals after `dh = beta eps_0 / a_v`, 8.4 % of the
+   seed height. P2-C showed that this is a statement about those placeholders:
+   `k_r = 1e-7 m/s` is 23000 times smaller than the value salt_grow uses, and
+   with the salt_grow values the crust does not seal at all. The gate is
+   therefore no longer "find a coarsening closure or admit the crust cannot
+   grow"; it is:
+
+   - whether a crust seals is decided by the single criterion
+     `sqrt(Da*) <= (1-eps_0)/(eps_0-eps_stop)`, which P2-C derived and
+     confirmed on four of four cases, so the needed evidence is a measured
+     `Da*`, not a trajectory;
+   - the salt_grow values are a sibling project's declared baseline with
+     provenance, not a measurement, and that project's own RESULTS.md lists
+     independent kinetic measurements as still required;
+   - the margin is 3.4 in `a_v` or `k_r`, so a measurement an order of
+     magnitude away from the salt_grow baseline can put the model back on the
+     sealing side;
+   - `eps_stop` is still a declared porosity threshold rather than a
+     percolation or permeability criterion, so a sealing *time* still cannot
+     be claimed even when the criterion says sealing occurs;
+   - the two projects disagree by a factor of 6 on the cubic-construction
+     specific area (`36(1-eps)/d_sub` versus `6(1-eps_0)/d`), and the audit
+     transcribes neither, so `a_v` is not traceable to the paper through this
+     repository at all. The discrepancy errs away from sealing and does not
+     change the conclusion, but it must be resolved before any `a_v` is
+     quoted as Prat's.
 2. Obtain or declare defensible `a_v` and `k_r` with provenance, and re-run the
-   regime tables.
+   regime tables. **Partly addressed by P2-C**: the salt_grow baseline supplies
+   values with traceable provenance and the regime tables have been re-run at
+   them (`P2_B_SALT_GROW_PARAMETER_COMPARISON.md` sections 3, 5 and 6). What
+   remains is a measurement rather than a declaration.
 3. Decide the atmospheric control variable and film thickness for Case 36877,
    closing gate 1 of the P1-R2 GO/NO-GO.
 4. Port the module to C++ against the P1-R2 isolated source, preserving the
    interface contract of `P1_R2_IMPLEMENTATION.md` section "Diagnostics and
-   future interface contract", and reproduce every identity test in C++.
+   future interface contract", and reproduce every identity test in C++. The
+   port must carry the corrected base-flux closure, the connectivity stop and
+   a top-refined grid: P2-C shows that at realistic parameters the reaction
+   layer is about 0.5 micrometres, so a surface subgrid using the committed
+   P2-B uniform 32-cell discretisation would be under-resolved by a factor of
+   about 23.
 5. Specify the top-patch sign convention and the time discretisation of the
    soil/crust exchange, then demonstrate that the coupled budgets close on at
    least one 1D column before any 2D run.
@@ -171,4 +227,9 @@ Not supported, and must not be claimed:
    stands: no large-scale density-instability run before conservative
    soil/crust coupling is verified.
 
-Until gates 1', 2, 4 and 5 are met, coupling remains held.
+Until gates 1', 2, 4 and 5 are met, coupling remains held. P2-C strengthens
+the case that the *formulation* is sound -- it reproduces an independent
+transient ALE implementation to 0.05 % on five diagnostics -- without changing
+the decision, because agreement between two models sharing one closure is
+verification and not validation, and because both projects record that the
+reaction layer is thinner than the estimated crystal size.

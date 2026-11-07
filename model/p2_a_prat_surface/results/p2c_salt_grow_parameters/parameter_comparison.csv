@@ -1,0 +1,12 @@
+quantity,symbol,p2b_value,salt_grow_value,unit,transferred,p2b_provenance,salt_grow_provenance,ratio_salt_grow_over_p2b
+deposition / crust porosity eps_0,eps_0,0.4,0.43,-,True,declared in acceptance_criteria.json,configs/baseline.json physical.epsilon_ref,1.075
+reaction coefficient,k_r,1e-07,0.0023,m/s,True,declared placeholder; the audit supplies no value,configs/baseline.json physical.k_reaction,23000.0
+specific crystal area,a_v,100000.0,820800.0000000001,1/m,True,declared placeholder; the audit supplies no value,36*(1-eps_0)/d_sub with d_sub = 25 um,8.208000000000002
+substrate / crystal size,d_sub,,2.5e-05,m,True,not used; P2-B's cubic corollary used a_v = 6(1-eps_0)/d,configs/baseline.json physical.d_sub,
+equilibrium mass fraction,C_eq,0.2649408697676898,0.264,-,False,frozen DuMuX SolubilityMoleFraction = 0.1,configs/baseline.json physical.C_eq,0.9964487556468173
+effective salt diffusivity,"D_s,eff",9.48683298050514e-10,8.524670081592601e-10,m2/s,False,declared in acceptance_criteria.json,sqrt(eps)*D_mol with D_mol = 1.3e-9,0.8985791253108676
+solution density,rho,1202.1685774416314,1200.0,kg/m3,False,BrineDensityLaw at C_eq,configs/baseline.json physical.rho_solution,0.9981961120242833
+crystal density,rho_cr,2165.0,2170.0,kg/m3,False,DuMuX nacl.hh,configs/baseline.json physical.rho_crystal,1.002309468822171
+upscaling factor,beta,2.0,2.0,-,False,Prat appendix cubic construction,configs/baseline.json physical.beta,1.0
+initial crust height,h0,0.0001,0.001,m,False,declared seed height,configs/baseline.json physical.h0,10.0
+evaporation mass flux,j,1.781528648571137e-05,0.0001388888888888889,kg/m2/s,False,"P2-A gas film at C_eq, physical inputs only",rho * U_evap with U_evap = 1 cm/day,7.796051385437096

@@ -10,6 +10,11 @@ any frozen P1 source, and it performs no DuMuX call. It supplies:
                        transport + moving-interface balances + inventories
 * `coupling`         - one-way diagnostic chain and conservative base-flux
                        reconstruction, with evaporation-interface options A/B
+* `evolving_crust`   - P2-B: depth-resolved crust whose porosity evolves from
+                       Prat equation (2) on a uniform material grid
+* `graded_crust`     - P2-C: the same physics on a top-refined, optionally
+                       wake-coarsened grid, with the salt_grow B1/B2 closures
+                       and corrected soil-side flux diagnostics
 
 No scipy/torch dependency. numpy is used only for array bookkeeping.
 """
@@ -20,4 +25,6 @@ __all__ = [
     "film_evaporation",
     "prat_crust",
     "coupling",
+    "evolving_crust",
+    "graded_crust",
 ]

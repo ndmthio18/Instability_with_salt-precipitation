@@ -1,5 +1,19 @@
 # P2-B: removing the frozen-porosity assumption
 
+> **Read with P2-C (`P2_B_SALT_GROW_PARAMETER_COMPARISON.md`).** Every sealing
+> result below is evaluated at the P2-A **declared placeholder** `k_r = 1e-7`
+> and `a_v = 1e5`, for which `sqrt(Da*) = 0.053`. P2-C transfers the sibling
+> `salt_grow` project's values (`k_r = 2.3e-3`, `a_v = 820800`,
+> `eps_0 = 0.43`), which give `sqrt(Da*) = 2.56`, and the crust then does not
+> seal at all: it settles to a travelling reaction layer and grows steadily.
+> The two regimes are separated by the single criterion
+> `sqrt(Da*) <= (1-eps_0)/(eps_0-eps_stop)`, derived in P2-C section 4. The
+> law `dh = integral beta/a_v d eps` below is correct, but it only governs the
+> thin-crust regime `delta_r > h` that the declared parameters happen to sit
+> in; for `Da >> 1` the controlling result is instead the wake plateau
+> `eps_0 - (1-eps_0)/sqrt(Da*)`. Nothing in this document is withdrawn; its
+> scope is narrower than its wording suggests.
+
 ## 1. Why
 
 `docs/P2_A_GO_NO_GO.md` holds coupling behind two blockers. This document
@@ -365,14 +379,28 @@ parameter; the two models diverge qualitatively.
 
 1. `a_v` and `k_r` are still declared inputs with no measured value. The
    sealing law is structural, but where a real crust sits on it is unknown.
+   **P2-C update:** the salt_grow baseline supplies values with provenance,
+   and they land on the non-sealing side of the criterion, with a margin of
+   only 3.4 in either `a_v` or `k_r`. They are still not a measurement.
 2. Sealing is declared at a porosity threshold, not derived from a percolation
    or permeability criterion. The true loss of hydraulic connectivity will
    occur at a porosity above zero and is material-specific.
 3. The quasi-steady transport reduction, the `Pe << Da` neglect of advection,
    the linearised reaction term and the independent-patch (no lateral
    transport) approximation are all inherited from the audit unchanged.
+   **P2-C update:** the first two are now benchmarked. Against salt_grow's
+   transient ALE model with every input matched, the quasi-steady reduction
+   costs less than 0.1 % in growth velocity, and the linearised reaction term
+   is shown to be exactly the residual `- s L_top` between the two base-flux
+   routes.
 4. Nothing here is coupled to a Richards solution, and the second P2-A
    blocker - no C++ implementation - is untouched.
+   **P2-C correction:** the `salt_flux_base_route` diagnostic in this module
+   omits the pore-volume released by precipitation and uses the top-cell
+   rather than the deposition porosity at the moving interface. That is most
+   of the 7.5-10.4 % route difference reported in section 6. It is a
+   diagnostic defect only - no growth velocity, porosity, height or budget
+   here is affected - and it is corrected in `surface/graded_crust.py`.
 5. A sealed crust is reported as a model-domain exit. What a real crust does
    after its pore network closes (fracture, detachment, efflorescence on a new
    site, vapour-mediated growth) is outside every closure used here.

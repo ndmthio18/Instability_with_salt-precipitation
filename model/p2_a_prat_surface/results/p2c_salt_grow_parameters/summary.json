@@ -1,0 +1,66 @@
+{
+  "criteria": "config/acceptance_criteria_p2c.json",
+  "generated": "2026-11-07",
+  "headline": {
+    "cases_that_lose_connectivity": [
+      0,
+      1
+    ],
+    "matched_B2_6h_difference_from_salt_grow_percent": -0.11348506565273711,
+    "matched_B2_6h_minimum_porosity": 0.2351575969456694,
+    "matched_B2_6h_velocity_m_s": 3.0023702969934836e-08,
+    "matched_B2_plateau_difference_from_salt_grow_percent": -0.07945005868279056,
+    "matched_B2_plateau_velocity_m_s": 3.0033933149058785e-08,
+    "route_difference_corrected_worst": 0.03587758523467778,
+    "route_difference_legacy_worst": 0.08270087809511129,
+    "salt_grow_6h_minimum_porosity": 0.23612005,
+    "sealing_predictions_correct": true,
+    "worst_salt_residual_relative": 3.007766036069846e-13,
+    "worst_water_residual_relative": 5.983772832618504e-13
+  },
+  "python": "3.12.4",
+  "reference_project": {
+    "config": "configs/baseline.json",
+    "name": "salt_grow / prat_dynamic_growth",
+    "paper_sha256": "82E4F450481F7185AFAF3F1B1C2A7A60C25C16FF04B0A570FCB2C989EB23AB3A",
+    "path": "D:/3OutputFile/1Research/Article/23salt grow/prat_dynamic_growth",
+    "published_b2_6h": {
+      "L95_m": 1.00907e-06,
+      "height_m": 0.00164919695,
+      "internal_fraction_of_new_solid": 0.253785,
+      "minimum_porosity": 0.23612005,
+      "top_excess_mass_fraction": 1.18162059e-05
+    },
+    "published_groups_at_h0_1mm": {
+      "Da": 3790500.0,
+      "Da_star": 7.31193,
+      "Da_top": 5264.59,
+      "Pe": 0.31575,
+      "delta_C_m": 5.136e-07
+    },
+    "published_velocities_m_s": {
+      "m3_b2_corrected_6h": 3.00578141e-08,
+      "prat_analytical": 2.94033793e-08
+    }
+  },
+  "tables": [
+    "case_0_trajectory.csv",
+    "case_1_trajectory.csv",
+    "case_2_trajectory.csv",
+    "case_3_trajectory.csv",
+    "case_summary.csv",
+    "conservation.csv",
+    "dimensionless_groups.csv",
+    "grid_convergence.csv",
+    "matched_6h.csv",
+    "matched_B1_trajectory.csv",
+    "matched_B2_6h_trajectory.csv",
+    "matched_B2_trajectory.csv",
+    "matched_benchmark.csv",
+    "parameter_comparison.csv",
+    "profile_snapshots.csv",
+    "profiles.csv",
+    "timestep_convergence.csv"
+  ],
+  "wall_seconds": 2585.342638015747
+}
