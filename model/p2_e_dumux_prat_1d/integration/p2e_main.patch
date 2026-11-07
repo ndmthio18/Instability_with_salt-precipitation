@@ -1,0 +1,159 @@
+diff --git a/appl/simpleRichardsnc/main.cc b/appl/simpleRichardsnc/main.cc
+--- a/appl/simpleRichardsnc/main.cc
++++ b/appl/simpleRichardsnc/main.cc
+@@ -16,6 +16,7 @@
+ #include <iomanip>
+ #include <map>
+ #include <cmath>
++#include <functional>
+ 
+ #include <dune/grid/yaspgrid.hh>
+@@ -42,6 +43,7 @@
+ 
+ #include "model.hh"
+ #include "transportdiagnostics.hh"
++#include "pratcoupling.hh"
+ #include <iostream>
+@@ -167,6 +169,43 @@
+                 if (eigenY_.size() < 2)
+                     throw std::runtime_error("Eigenprofile table needs >=2 rows: " + path);
+             }
++
++            if (evaporationBoundaryMode() == "prat_coupled")
++            {
++                crustParams_.equilibriumMassFraction =
++                    massFraction(getParam<Scalar>("Transport.SolubilityMoleFraction"));
++                crustParams_.depositionPorosity = getParam<Scalar>("Prat.DepositionPorosity", 0.43);
++                crustParams_.crystalDensity = getParam<Scalar>("Prat.CrystalDensity", 2165.0);
++                crustParams_.reactionCoefficient = getParam<Scalar>("Prat.ReactionCoefficient", 2.3e-3);
++                crustParams_.beta = getParam<Scalar>("Prat.Beta", 2.0);
++                crustParams_.solutionDensity = prat::brineDensity(crustParams_.equilibriumMassFraction);
++                crustParams_.vapourDensity = getParam<Scalar>("Prat.VapourDensity", 0.0);
++                crustParams_.crustSaturation = 1.0;
++                crustParams_.cloggingPorosity = getParam<Scalar>("Prat.CloggingPorosity", 0.01);
++                crustParams_.connectivityPorosity = getParam<Scalar>("Prat.ConnectivityPorosity", 0.02);
++                crustParams_.substrateSize = getParam<Scalar>("Prat.SubstrateSize", 25.0e-6);
++                crustParams_.molecularDiffusivity = getParam<Scalar>("Prat.MolecularDiffusivity", 1.3e-9);
++                crustParams_.check();
++
++                gasFilm_.temperature = getParam<Scalar>("GasFilm.Temperature", 293.15);
++                gasFilm_.relativeHumidity = getParam<Scalar>("GasFilm.RelativeHumidity", 0.4);
++                gasFilm_.thickness = getParam<Scalar>("GasFilm.Thickness", 0.0083);
++                gasFilm_.atmosphericPressure = getParam<Scalar>("GasFilm.AtmosphericPressure", 1.0e5);
++
++                const double seedHeight = getParam<Scalar>("Prat.SeedHeight", 1.0e-5);
++                const double delta = crustParams_.reactionLength(crustParams_.depositionPorosity);
++                crustState_.topCellSize = std::min(delta / 8.0, seedHeight / 8.0);
++                const double initialFilmFlux = gasFilm_.fluxFromMassFraction(
++                    crustParams_.equilibriumMassFraction);
++                prat::activate(crustState_, crustParams_, seedHeight, initialFilmFlux,
++                               40.0 * delta, 1.25, 10.0 * delta,
++                               crustParams_.equilibriumMassFraction);
++                crustLog_.open("prat_accepted_steps.csv");
++                crustLog_ << std::setprecision(17)
++                          << "time_s,dt_s,interface_mass_fraction,total_flux_kg_m2_s,"
++                             "salt_inventory_flux_kg_m2_s,salt_transport_flux_kg_m2_s,"
++                             "water_flux_kg_m2_s,evaporation_kg_m2_s,height_m,min_porosity,"
++                             "gas_residual,top_residual\n";
++            }
+         }
+@@ -205,7 +244,7 @@
+         {
+             return getParam<std::string>(
+                 "Problem.EvaporationBoundaryMode", "mass_demand");
+-        }
++        }
+         PrimaryVariables dirichletAtPos(const GlobalPosition &globalPos) const
+@@ -257,6 +296,19 @@
+                     values[conti0EqIdx] = 0.0;
+                     values[conti1EqIdx] = 0.0;
+                 }
++                else if (mode == "prat_coupled")
++                {
++                    if (!trialDtProvider_)
++                        throw std::runtime_error("Prat trial-dt provider was not installed");
++                    const auto& insideVolVars = elemVolVars[scvf.insideScvIdx()];
++                    const auto trial = prat::coupling::evaluateBoundaryState(
++                        crustState_, crustParams_, gasFilm_,
++                        insideVolVars.massFraction(), trialDtProvider_());
++                    values[conti0EqIdx] = trial.fluxes.totalMass;
++                    values[conti1EqIdx] = trial.fluxes.saltMass;
++                }
+                 else
+                     throw std::runtime_error(
+                         "Unknown Problem.EvaporationBoundaryMode");
+@@ -264,7 +316,7 @@
+                 // Equation 0 is total mass and equation 1 is salt mass.
+                 // Zero net salt therefore makes the total top flux equal H2O flux.
+-                if (mode != "prescribed_components")
++                if (mode != "prescribed_components" && mode != "prat_coupled")
+                     values[conti1EqIdx] = 0.0;
+             }
+@@ -453,6 +505,37 @@
+             return porosity_;
+         }
++
++        void setPratTrialDtProvider(std::function<Scalar()> provider)
++        {
++            trialDtProvider_ = std::move(provider);
++        }
++
++        bool pratCouplingEnabled() const
++        {
++            return evaporationBoundaryMode() == "prat_coupled";
++        }
++
++        void acceptPratStep(Scalar timeAfter, Scalar dt, Scalar interfaceMassFraction)
++        {
++            if (!pratCouplingEnabled()) return;
++            auto trial = prat::coupling::evaluateBoundaryState(
++                crustState_, crustParams_, gasFilm_, interfaceMassFraction, dt);
++            prat::coupling::commit(crustState_, trial);
++            crustLog_ << timeAfter << ',' << dt << ',' << interfaceMassFraction << ','
++                      << trial.fluxes.totalMass << ',' << trial.fluxes.saltMass << ','
++                      << trial.fluxes.saltFluxTransportRoute << ','
++                      << trial.fluxes.waterMass << ',' << trial.fluxes.evaporation << ','
++                      << trial.fluxes.height << ',' << trial.fluxes.minimumPorosity << ','
++                      << trial.gasFilmResidual << ',' << trial.topClosureResidual << '\n';
++            crustLog_.flush();
++        }
++
++        const prat::CrustState& crustState() const
++        {
++            return crustState_;
++        }
+ 
+         Scalar nonWettingReferencePressure() const
+@@ -596,6 +679,12 @@
+         std::vector<Scalar> eigenY_;
+         std::vector<Scalar> eigenA_;
+ 
++        prat::CrustParameters crustParams_;
++        prat::GasFilm gasFilm_;
++        prat::CrustState crustState_;
++        std::function<Scalar()> trialDtProvider_;
++        std::ofstream crustLog_;
++
+         static constexpr Scalar eps_ = 1.5e-7;
+@@ -906,6 +995,8 @@
+     auto timeLoop = std::make_shared<TimeLoop<Scalar>>(0.0, dt, tEnd);
+     timeLoop->setMaxTimeStepSize(maxDt);
++    problem->setPratTrialDtProvider(
++        [timeLoop] { return timeLoop->timeStepSize(); });
+ 
+     // the assembler with time loop for instationary problem
+@@ -932,6 +1023,15 @@
+ 
+         // Newton may reduce dt. Use the accepted dt, not the requested one.
+         const Scalar acceptedDt = timeLoop->timeStepSize();
++        if (problem->pratCouplingEnabled())
++        {
++            Scalar topMassFraction = 0.0;
++            for (const auto dof : topDofs)
++                topMassFraction += problem->massFraction(
++                    x[dof][ModelIndices::moleFractionIdx]);
++            topMassFraction /= static_cast<Scalar>(topDofs.size());
++            problem->acceptPratStep(timeBefore + acceptedDt, acceptedDt,
++                                    topMassFraction);
++        }
+         acceptedStepFile << timeLoop->timeStepIndex()+1 << ',' << timeBefore << ','

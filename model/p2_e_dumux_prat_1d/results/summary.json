@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "decision": "NO-GO",
+  "production_richards_prat_authorized": false,
+  "two_dimensional_instability_authorized": false,
+  "cpp_reference_vectors": {
+    "checked": 64,
+    "failures": 0,
+    "missing": 0,
+    "worst_relative_difference": 9.712556e-14,
+    "tolerance": 1e-11
+  },
+  "lifecycle": {
+    "repeat_evaluation": "pass_bitwise",
+    "rollback": "pass",
+    "newton_retry": "pass",
+    "stale_trial_rejected": true,
+    "double_commit_rejected": true,
+    "forced_failure_rejected": true,
+    "interface_iterations": 10,
+    "interface_residual_kg_m2_s": 1.49724e-14,
+    "gas_film_residual_kg_m2_s": -2.03288e-20,
+    "top_closure_residual_kg_m2_s": -4.23516e-22
+  },
+  "activation": {
+    "mode": "conservative initial soil-to-crust transaction at a saturated interface; no nucleation rate",
+    "seed_heights_m": [5e-6, 1e-5, 2e-5],
+    "worst_salt_residual_kg": 3.469446951953614e-18,
+    "worst_water_residual_kg": 2.7755575615628914e-17,
+    "first_step_salt_inventory_flux_kg_m2_s": [
+      9.318446251457791e-7,
+      -5.00980138317059e-6,
+      -1.631105871152585e-5
+    ],
+    "sensitivity_gate": "fail"
+  },
+  "surface_refinement": {
+    "cells_vertical": [40, 80, 160],
+    "accepted_time_s": [20, 20, 0],
+    "top_mass_fraction_at_20s": [0.26493637217421695, 0.2648941219271987, null],
+    "evaporation_kg_m2_s_at_20s": [1.781516869272617e-5, 1.781516869276009e-5, null],
+    "salt_inventory_flux_kg_m2_s_at_20s": [2.035208201030042e-6, -3.730549151649489e-5, null],
+    "failure_160": "CVFE boundary state outside the declared 2 percent Prat undersaturation envelope",
+    "solubility_crossing_time": "not demonstrated; pre-activation refinement remains required",
+    "gate": "fail"
+  },
+  "three_route_relative": {
+    "initially_active_80": 4.837813743033076e-6,
+    "activated_40": 5.914319326499708e-5,
+    "activated_80": 3.055027233705012e-5,
+    "tolerance": 1e-6,
+    "gate": "fail"
+  },
+  "accepted_step_budget_relative_to_inventory": {
+    "activated_40_total": 1.10957089291438e-9,
+    "activated_40_salt": 9.335440468041065e-9,
+    "activated_80_total": 1.520107232801169e-8,
+    "activated_80_salt": 1.087944890318973e-7,
+    "tolerance": 1e-8,
+    "gate": "fail"
+  },
+  "bottom_boundary": {
+    "closed_bottom_verified_separately": true,
+    "reservoir_bottom_verified_separately": true,
+    "reservoir_80_bottom_total_in_kg_s_at_20s": 1.146301977859614e-7,
+    "reservoir_80_bottom_salt_in_kg_s_at_20s": 3.037022430305492e-8
+  },
+  "hydraulic_supply": {
+    "potential_closure_present": false,
+    "bounded_numerical_envelope": "20 s accepted for 40/80 vertical cells; 0 s for 160 cells",
+    "physical_continuous_supply_validated": false
+  }
+}

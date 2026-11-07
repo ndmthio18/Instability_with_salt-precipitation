@@ -1,0 +1,116 @@
+diff --git a/appl/simpleRichardsnc/main.cc b/appl/simpleRichardsnc/main.cc
+--- a/appl/simpleRichardsnc/main.cc
++++ b/appl/simpleRichardsnc/main.cc
+@@ -524,6 +524,108 @@ namespace Dumux
+             return crustState_;
+         }
+ 
++        template<class SolutionVector>
++        void transferSeedFromSoil(SolutionVector& x)
++        {
++            if (!pratCouplingEnabled()) return;
++            const auto& gridView = this->gridGeometry().gridView();
++            std::vector<Scalar> volume(x.size(), 0.0);
++            std::vector<Scalar> y(x.size(), 0.0);
++            for (const auto& element : elements(gridView))
++            {
++                auto fvGeometry = localView(this->gridGeometry());
++                fvGeometry.bind(element);
++                for (const auto& scv : scvs(fvGeometry))
++                    volume[scv.dofIndex()] += scv.volume();
++            }
++            for (const auto& vertex : vertices(gridView))
++            {
++                const auto dof = this->gridGeometry().vertexMapper().index(vertex);
++                y[dof] = vertex.geometry().center()[GridView::dimensionworld-1];
++            }
++
++            auto inventory = [&](std::size_t dof) {
++                const Scalar mole = x[dof][moleFractionIdx];
++                const Scalar total = porosity_ * sw(x[dof][pressureIdx])
++                                   * rhoW(mole) * volume[dof];
++                const Scalar salt = total * massFraction(mole);
++                return std::pair<Scalar, Scalar>(salt, total - salt);
++            };
++            Scalar saltBefore = 0.0, waterBefore = 0.0;
++            for (std::size_t dof = 0; dof < x.size(); ++dof)
++            {
++                const auto m = inventory(dof);
++                saltBefore += m.first;
++                waterBefore += m.second;
++            }
++
++            const Scalar topArea = this->gridGeometry().bBoxMax()[0]
++                                 - this->gridGeometry().bBoxMin()[0];
++            const Scalar targetSalt = crustState_.seedSalt * topArea;
++            const Scalar targetWater = crustState_.seedWater * topArea;
++            const Scalar yTop = this->gridGeometry().bBoxMax()[GridView::dimensionworld-1];
++            std::vector<std::size_t> candidates;
++            for (std::size_t dof = 0; dof < x.size(); ++dof)
++                if (y[dof] < yTop - 1.0e-12) candidates.push_back(dof);
++            std::sort(candidates.begin(), candidates.end(),
++                      [&](auto a, auto b) { return y[a] > y[b]; });
++
++            std::vector<std::size_t> pool;
++            Scalar poolSalt = 0.0, poolWater = 0.0;
++            for (const auto dof : candidates)
++            {
++                pool.push_back(dof);
++                const auto m = inventory(dof);
++                poolSalt += m.first;
++                poolWater += m.second;
++                if (poolSalt >= 1.05 * targetSalt
++                    && poolWater >= 1.05 * targetWater) break;
++            }
++            if (poolSalt < targetSalt || poolWater < targetWater)
++                throw std::runtime_error("soil cannot supply the declared Prat seed");
++
++            for (const auto dof : pool)
++            {
++                const auto old = inventory(dof);
++                const Scalar salt = old.first - targetSalt * old.first / poolSalt;
++                const Scalar water = old.second - targetWater * old.second / poolWater;
++                const Scalar total = salt + water;
++                if (!(salt > 0.0 && water > 0.0 && total > 0.0))
++                    throw std::runtime_error("seed transfer created non-positive soil inventory");
++                const Scalar w = salt / total;
++                const Scalar mole = w * molarMassH2O()
++                    / (molarMassNaCl() - w * (molarMassNaCl() - molarMassH2O()));
++                const Scalar saturation = total / (porosity_ * rhoW(mole) * volume[dof]);
++                if (!(saturation > getParam<Scalar>("Problem.Swr") && saturation <= 1.0))
++                    throw std::runtime_error("seed transfer created invalid soil saturation");
++                static const Scalar n = getParam<Scalar>("Problem.PcN");
++                static const Scalar m = 1.0 - 1.0 / n;
++                static const Scalar alpha = getParam<Scalar>("Problem.PcAlpha");
++                static const Scalar swr = getParam<Scalar>("Problem.Swr");
++                const Scalar se = (saturation - swr) / (1.0 - swr);
++                const Scalar pc = std::pow(std::pow(se, -1.0/m) - 1.0, 1.0/n) / alpha;
++                x[dof][pressureIdx] = nonWettingReferencePressure() - pc;
++                x[dof][moleFractionIdx] = mole;
++            }
++
++            Scalar saltAfter = 0.0, waterAfter = 0.0;
++            for (std::size_t dof = 0; dof < x.size(); ++dof)
++            {
++                const auto m = inventory(dof);
++                saltAfter += m.first;
++                waterAfter += m.second;
++            }
++            std::ofstream ledger("prat_activation_ledger.csv");
++            ledger << std::setprecision(17)
++                   << "soil_salt_before_kg,soil_salt_after_kg,seed_salt_kg,salt_residual_kg,"
++                      "soil_water_before_kg,soil_water_after_kg,seed_water_kg,water_residual_kg,"
++                      "pool_dofs\n"
++                   << saltBefore << ',' << saltAfter << ',' << targetSalt << ','
++                   << (saltAfter + targetSalt - saltBefore) << ','
++                   << waterBefore << ',' << waterAfter << ',' << targetWater << ','
++                   << (waterAfter + targetWater - waterBefore) << ',' << pool.size() << '\n';
++        }
++
+         Scalar nonWettingReferencePressure() const
+@@ -760,6 +862,7 @@ int runPaper2(int argc, char **argv)
+     using SolutionVector = GetPropType<TypeTag, Properties::SolutionVector>;
+     SolutionVector x(gridGeometry->numDofs());
+     problem->applyInitialSolution(x);
++    problem->transferSeedFromSoil(x);
+     auto xOld = x;

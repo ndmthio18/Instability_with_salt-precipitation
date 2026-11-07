@@ -1,0 +1,9 @@
+diff --git a/appl/simpleRichardsnc/main.cc b/appl/simpleRichardsnc/main.cc
+--- a/appl/simpleRichardsnc/main.cc
++++ b/appl/simpleRichardsnc/main.cc
+@@ -731,6 +731,7 @@ int runPaper2(int argc, char **argv)
+     if (!(std::isfinite(tEnd) && std::isfinite(dt) && std::isfinite(maxDt)
+           && tEnd > 0 && dt > 0 && maxDt > 0))
+         throw std::runtime_error("TimeLoop times must be finite and positive");
++    problem->setPratTrialDtProvider([dt] { return dt; });
+     TransportDiagnostics<TypeTag> transport(*problem, *gridGeometry, *gridVariables);

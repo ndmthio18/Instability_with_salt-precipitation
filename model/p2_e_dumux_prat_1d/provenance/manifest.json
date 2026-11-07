@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "base_commit": "eadcc799c08092c69444879494765872bc66a5c9",
+  "host": "sal.iws.uni-stuttgart.de",
+  "remote_root": "/temp-hd/zhixin/p2_e_20261107",
+  "compiler": "g++ (SUSE Linux) 15.2.1 20251006",
+  "kernel": "Linux 6.18.7-1-default x86_64",
+  "binary_sha256": "3180abda93c281b123a9d650d3e8914218ed4717ab173d99bb6979836ea2aeae",
+  "patched_main_sha256": "5c71816ad1d0ea1db94b0aad8e390a659a48ac9449f4ac449cf169f08c9cbc21",
+  "local_pratcoupling_sha256": "66f501580977cd160060fd30b37c66f4adf8340f5e446748d77498ce01cfb088",
+  "local_verify_lifecycle_sha256": "535fbe43ad2791d1333f850393ed977a659c874373f4e817346620c593987164",
+  "patch_series_reconstruction_sha256": "5c71816ad1d0ea1db94b0aad8e390a659a48ac9449f4ac449cf169f08c9cbc21",
+  "dumux_git_sha1": "63568e6ad0016124fa89ecd932adb613118527bf",
+  "dune_common_git_sha1": "cce9c197680c1a9964d21ab4d0e0835ea36affb0",
+  "dune_geometry_git_sha1": "7d5b1d81ad997f81637ac97f753f80a64ff9cdb0",
+  "dune_grid_git_sha1": "75b66b0ebf0656e21af08798188b3d2848c9574d",
+  "dune_istl_git_sha1": "1582b9e200ad098d0f00de2c135f9eed38508319",
+  "dune_localfunctions_git_sha1": "f2c7cfb96327fbfd29744dccf5eac015a1dfa06f",
+  "run_environment": {
+    "OMPI_MCA_pml": "ob1",
+    "OMPI_MCA_btl": "self,tcp",
+    "OMPI_MCA_mtl": "^ofi",
+    "UCX_TLS": "tcp,self"
+  },
+  "raw_data_policy": "VTU, detailed logs and binaries remain on sal and are not committed"
+}

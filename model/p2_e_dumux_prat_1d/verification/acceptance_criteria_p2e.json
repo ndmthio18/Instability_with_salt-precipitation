@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "registered_before_runs": true,
+  "task": "P2-E DuMuX-Prat 1D coupling validation",
+  "base_commit": "eadcc799c08092c69444879494765872bc66a5c9",
+  "scope": "bounded 1D only; no density-instability production run",
+  "tolerances": {
+    "cpp_reference_vectors_relative": 1e-11,
+    "repeat_evaluation": "bitwise identical",
+    "interface_root_relative": 1e-9,
+    "interface_root_absolute_kg_m2_s": 1e-14,
+    "subroot_relative": 1e-10,
+    "subroot_absolute_kg_m2_s": 1e-14,
+    "accepted_step_salt_budget_relative": 1e-8,
+    "accepted_step_water_budget_relative": 1e-8,
+    "activation_salt_budget_relative": 1e-10,
+    "activation_water_budget_relative": 1e-10,
+    "three_route_flux_relative": 1e-6,
+    "surface_grid_successive_relative": 0.01,
+    "crossing_time_successive_relative": 0.02
+  },
+  "required_gates": [
+    "all 64 frozen Python-to-C++ vectors pass after compilation",
+    "repeat evaluation, rejected-step rollback, reduced-dt retry, stale-trial rejection and forced root failure pass",
+    "persistent crust state changes once and only once after an accepted DuMuX step",
+    "combined salt and water inventories close across seed activation",
+    "top salinity, evaporation and solubility-crossing time converge under strong vertical refinement",
+    "closed-bottom verification and reservoir-bottom supply cases remain distinct",
+    "soil face, crust transport and crust inventory fluxes satisfy the three-route tolerance",
+    "every accepted step satisfies separate salt and water budgets",
+    "continuous saturated-crust supply is admitted only inside a quantified hydraulic-supply envelope"
+  ],
+  "decision_rule": "GO requires every gate; otherwise NO-GO with the failed gate retained. Compilation or a closing scalar endpoint alone is insufficient."
+}

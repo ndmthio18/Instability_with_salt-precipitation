@@ -1,0 +1,16 @@
+diff --git a/appl/simpleRichardsnc/main.cc b/appl/simpleRichardsnc/main.cc
+--- a/appl/simpleRichardsnc/main.cc
++++ b/appl/simpleRichardsnc/main.cc
+@@ -1024,6 +1024,7 @@ int runPaper2(int argc, char **argv)
+ 
+         // Newton may reduce dt. Use the accepted dt, not the requested one.
+         const Scalar acceptedDt = timeLoop->timeStepSize();
++        problem->setPratTrialDtProvider([acceptedDt] { return acceptedDt; });
+         if (problem->pratCouplingEnabled())
+@@ -1062,6 +1063,8 @@ int runPaper2(int argc, char **argv)
+         // set new dt as suggested by the newton solver
+         timeLoop->setTimeStepSize(nonLinearSolver.suggestTimeStepSize(timeLoop->timeStepSize()));
++        problem->setPratTrialDtProvider(
++            [timeLoop] { return timeLoop->timeStepSize(); });
+ 
+     } while (!timeLoop->finished() && !transport.shouldStop());
