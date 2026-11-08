@@ -1,6 +1,15 @@
 # Paper 2 — effective salt redistribution
 
-当前 `task/9.md` 的 **P2-H 条件 DuMuX–ALE 水盐耦合**已完成独立分支验证：
+`research/p2-h-adaptive-donor` 增加了守恒、限深的多层孔隙液初始化，保留
+`top_only` 旧模式；ALE、BDF和土壤物理方程保持不变。新方法解决80/160层的
+局部单BOX供液限制，但320层的高度容差把侧面误判为顶面并施加蒸发，
+额外面积0.03617%解释了激活前的水预算失败；本轮未改动冻结边界。完整四网格验证
+仍为NO-GO。2 mm限深还会使40/80层10 um案例拒绝激活，不能隐去这些结果。
+见[本轮中文报告](analysis/p2_h_adaptive_donor_20261108/REPORT_ZH.md)、
+[复算说明](analysis/p2_h_adaptive_donor_20261108/REPRODUCE.md)和
+[初始化假设](model/p2_h_ale_coupling/ADAPTIVE_FORMULATION.md)。
+
+此前 `task/9.md` 的 **P2-H 条件 DuMuX–ALE 水盐耦合**已完成独立分支验证：
 C++隐式库存积分复现冻结M3，从零固体守恒激活，激活后真实双向交换且不再重复
 执行P2-G析盐扣除。HPCC最终8组实验均到2500 s，其中5组形成ALE、3组按供液
 筛查保持预盐壳；联合水盐误差低于1.11e-13。盐壳网格与时间步门通过，但土壤

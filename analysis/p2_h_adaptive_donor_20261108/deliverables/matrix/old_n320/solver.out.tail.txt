@@ -1,0 +1,35 @@
+Solve: M deltax^k = r[K
+Update: x^(k+1) = x^k - deltax^k[K
+Newton iteration  4 done, maximum relative shift = 3.6850e-13
+Assemble/solve/update time: 0.069(97.16%)/0.00079(1.12%)/0.0012(1.71%)
+Assemble: r(x^k) = dS/dt + div F - q;   M = grad r
+Solve: M deltax^k = r[K
+Update: x^(k+1) = x^k - deltax^k[K
+Newton iteration  1 done, maximum relative shift = 2.6117e-03
+Assemble: r(x^k) = dS/dt + div F - q;   M = grad r
+Solve: M deltax^k = r[K
+Update: x^(k+1) = x^k - deltax^k[K
+Newton iteration  2 done, maximum relative shift = 2.4578e-05
+Assemble: r(x^k) = dS/dt + div F - q;   M = grad r
+Solve: M deltax^k = r[K
+Update: x^(k+1) = x^k - deltax^k[K
+Newton iteration  3 done, maximum relative shift = 1.9258e-08
+Assemble: r(x^k) = dS/dt + div F - q;   M = grad r
+Solve: M deltax^k = r[K
+Update: x^(k+1) = x^k - deltax^k[K
+Newton iteration  4 done, maximum relative shift = 1.2294e-12
+Assemble/solve/update time: 0.044(84.91%)/0.00092(1.79%)/0.0068(13.30%)
+Assemble: r(x^k) = dS/dt + div F - q;   M = grad r
+Solve: M deltax^k = r[K
+Update: x^(k+1) = x^k - deltax^k[K
+Newton iteration  1 done, maximum relative shift = 2.6104e-03
+Assemble: r(x^k) = dS/dt + div F - q;   M = grad r
+Solve: M deltax^k = r[K
+Update: x^(k+1) = x^k - deltax^k[K
+Newton iteration  2 done, maximum relative shift = 1.2931e-05
+Assemble: r(x^k) = dS/dt + div F - q;   M = grad r
+Solve: M deltax^k = r[K
+Update: x^(k+1) = x^k - deltax^k[K
+Newton iteration  3 done, maximum relative shift = 7.8061e-09
+Assemble/solve/update time: 0.026(95.16%)/0.00054(1.98%)/0.00077(2.86%)
+Paper 2 run failed: global coupled budget failed

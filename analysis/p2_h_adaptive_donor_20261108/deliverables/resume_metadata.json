@@ -1,0 +1,60 @@
+{
+  "primary_job": "16371535",
+  "primary_state": "TIMEOUT",
+  "job": "16371664",
+  "command_identity_checked": true,
+  "cases": [
+    {
+      "case": "new_n320_h10_d5",
+      "previous_exit_code": null,
+      "last_accepted_time_s": 70.3872813131059,
+      "archived_prefix": "failures/16371535/new_n320_h10_d5"
+    },
+    {
+      "case": "new_n320_h10_d10",
+      "previous_exit_code": null,
+      "last_accepted_time_s": 49.60838076662658,
+      "archived_prefix": "failures/16371535/new_n320_h10_d10"
+    },
+    {
+      "case": "old_n80_h2",
+      "previous_exit_code": null,
+      "last_accepted_time_s": 1587.5,
+      "archived_prefix": "failures/16371535/old_n80_h2"
+    },
+    {
+      "case": "dt_half_n160",
+      "previous_exit_code": null,
+      "last_accepted_time_s": 276.75,
+      "archived_prefix": "failures/16371535/dt_half_n160"
+    },
+    {
+      "case": "dt_half_n320",
+      "previous_exit_code": null,
+      "last_accepted_time_s": 15.210026331453841,
+      "archived_prefix": "failures/16371535/dt_half_n320"
+    },
+    {
+      "case": "rollback_activation",
+      "previous_exit_code": null,
+      "last_accepted_time_s": 374.66666666666663,
+      "archived_prefix": "failures/16371535/rollback_activation"
+    },
+    {
+      "case": "rollback_coupled",
+      "previous_exit_code": null,
+      "last_accepted_time_s": 306.60416666666663,
+      "archived_prefix": "failures/16371535/rollback_coupled"
+    }
+  ],
+  "execution_order": [
+    "dt_half_n160",
+    "dt_half_n320",
+    "rollback_activation",
+    "rollback_coupled",
+    "new_n320_h10_d10",
+    "new_n320_h10_d5",
+    "old_n80_h2"
+  ],
+  "action": "replayed scheduler-interrupted cases from frozen initial conditions"
+}

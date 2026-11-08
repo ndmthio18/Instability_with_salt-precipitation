@@ -9,7 +9,85 @@
         double heldLiquid_=0,heldSalt_=0,initialSalt_=0,initialWater_=0;
         unsigned long coupledTrials_=0,rejectedTrials_=0;
         bool injectedFailure_=false;
-        std::ofstream surfaceLog_,eventLog_,crustFields_,soilFields_;
+        std::ofstream surfaceLog_,eventLog_,crustFields_,soilFields_,donorLog_,allocationLog_;
+        unsigned long allocationAttempt_=0, candidateAttempt_=0;
+        bool controlledDonorComplete() const { return getParam<bool>("P2H.ControlledDonorTest",false); }
+
+        template<class Solution> std::vector<p2h::Donor> donors_(const Solution& x) const {
+            const auto vol=volumes_(x); std::vector<p2h::Donor> donors(x.size());
+            const double top=this->gridGeometry().bBoxMax()[1];
+            for(const auto& vertex:vertices(this->gridGeometry().gridView())) {
+                const auto i=this->gridGeometry().vertexMapper().index(vertex);
+                donors[i]={i,top-vertex.geometry().center()[1],0,vol[i],porosity_,
+                    sw(x[i][pressureIdx]),rhoW(x[i][moleFractionIdx]),massFraction(x[i][moleFractionIdx])};
+            }
+            // Sum each element SCV once into its global BOX DOF; rectangular
+            // tensor meshes may be graded. The opposite corner follows from
+            // SCV center and DOF position, not an assumed uniform spacing.
+            for(const auto& e:elements(this->gridGeometry().gridView())) {
+                auto g=localView(this->gridGeometry()); g.bind(e);
+                for(const auto& s:scvs(g)) {
+                    const auto i=s.dofIndex();
+                    const double low=std::min(s.dofPosition()[1],2*s.center()[1]-s.dofPosition()[1]);
+                    donors[i].deepest=std::max(donors[i].deepest,top-low);
+                }
+            }
+            return donors;
+        }
+        template<class Solution> bool adaptiveDonors_(Solution& x,SurfaceState& next,double time,double h) {
+            const auto before=inventory_(x); const auto original=x;
+            const double area=area_(),required=ale_->p.rho*ale_->p.birth*h*area;
+            const auto plan=p2h::allocate(donors_(x),required,getParam<double>("P2H.MaxDonorDepth",.005),
+                                        getParam<double>("P2H.MinimumSupplySaturation",.99));
+            const auto attempt=++allocationAttempt_; auto candidate=x;
+            double minSw=1,saltResidual=0,waterResidual=0;
+            unsigned count=0;
+            if(plan.sufficient) {
+                for(const auto& d:plan.donors) if(d.extracted>0) {
+                    ++count;
+                    const double mass=d.porosity*d.saturation*d.density*d.volume;
+                    assignMass_(candidate,d.id,(mass-d.extracted)*d.concentration,
+                                (mass-d.extracted)*(1-d.concentration),d.volume);
+                    minSw=std::min(minSw,double(sw(candidate[d.id][pressureIdx])));
+                }
+                if(minSw<getParam<double>("P2H.MinimumSupplySaturation",.99))
+                    throw std::runtime_error("reconstructed donor saturation below retained minimum");
+                const double mix=plan.salt/(plan.salt+plan.water);
+                auto crust=ale_->initial(h,mix); const auto cm=ale_->inventory(crust);
+                const auto after=inventory_(candidate);
+                saltResidual=after.first+cm.salt*area-before.first;
+                waterResidual=after.second+cm.water*area-before.second;
+                if(std::abs(saltResidual)>1e-12*initialSalt_ || std::abs(waterResidual)>1e-12*initialWater_ ||
+                   std::abs(cm.solid-next.loose)>1e-12*initialSalt_/area)
+                    throw std::runtime_error("adaptive activation transfer budget failed");
+                next.active=true; next.crust=std::move(crust); next.initialSolid=next.loose; next.loose=0;
+                next.poreSaltTransfer=plan.salt; next.poreWaterTransfer=plan.water;
+                next.activation=time; next.pratHeight=h; x=candidate; candidateAttempt_=attempt;
+            }
+            allocationLog_<<attempt<<','<<time<<','<<h<<','<<required<<','<<plan.available<<','<<plan.sufficient<<','
+                <<count<<','<<plan.usedDepth<<','<<(plan.sufficient?plan.salt:0)<<','<<(plan.sufficient?plan.water:0)<<','
+                <<saltResidual<<','<<waterResidual<<','<<initialSalt_<<','<<initialWater_<<'\n';
+            // First refusal and every successful trial keep complete profiles;
+            // accepted_attempt events distinguish rejected trials from acceptance.
+            if(attempt==1 || plan.sufficient || controlledDonorComplete()) {
+                const auto all=donors_(original);
+                for(const auto& d:all) {
+                    double extracted=0,available=0;
+                    for(const auto& p:plan.donors) if(p.id==d.id) {
+                        available=p.available; if(plan.sufficient) extracted=p.extracted;
+                    }
+                    donorLog_<<attempt<<','<<time<<','<<d.id<<','<<d.depth<<','<<d.deepest<<','<<d.volume<<','
+                        <<available<<','<<extracted<<','<<d.saturation<<','<<sw(candidate[d.id][pressureIdx])<<','
+                        <<d.concentration<<','<<massFraction(candidate[d.id][moleFractionIdx])<<','
+                        <<original[d.id][pressureIdx]<<','<<candidate[d.id][pressureIdx]<<','<<d.density<<','
+                        <<rhoW(candidate[d.id][moleFractionIdx])<<'\n';
+                }
+            }
+            eventLog_<<time<<(plan.sufficient?",activation_trial,":",activation_blocked_donor_depth,")
+                <<attempt<<','<<(plan.sufficient?plan.usedDepth:required-plan.available)<<'\n';
+            allocationLog_.flush(); donorLog_.flush(); eventLog_.flush();
+            return plan.sufficient;
+        }
 
         double area_() const { return this->gridGeometry().bBoxMax()[0]-this->gridGeometry().bBoxMin()[0]; }
         template<class Solution> std::vector<double> volumes_(const Solution& x) const {
@@ -75,11 +153,25 @@
             heldLiquid_=film_(topC_(x)); heldSalt_=0;
             surfaceLog_.open("coupled_history.csv"); eventLog_.open("coupling_events.csv"); crustFields_.open("crust_fields.csv");
             soilFields_.open("soil_fields.csv");
+            donorLog_.open("donor_profiles.csv"); allocationLog_.open("donor_attempts.csv");
+            donorLog_<<std::setprecision(17)<<"attempt,time_s,dof,depth_m,box_deepest_m,volume_m3,available_kg,extracted_kg,sw_before,sw_after,c_before,c_after,p_before_pa,p_after_pa,rho_before,rho_after\n";
+            allocationLog_<<std::setprecision(17)<<"attempt,time_s,h_m,required_kg,available_kg,sufficient,donor_count,used_depth_m,salt_transfer_kg,water_transfer_kg,salt_transfer_residual_kg,water_transfer_residual_kg,initial_salt_kg,initial_water_kg\n";
+            const auto mode=getParam<std::string>("P2H.DonorMode","top_only");
+            if(mode!="top_only" && mode!="adaptive_multilayer") throw std::runtime_error("unknown donor mode");
             surfaceLog_<<std::setprecision(17)<<"time_s,dt_s,active,activation_s,h_m,h_mass_m,h_prat_m,top_solid_kg_m2,internal_solid_kg_m2,epsilon_min,top_soil_mass_fraction,top_soil_sw,evaporation_kg_m2_s,soil_salt_kg,crust_salt_kg,soil_water_kg,crust_water_kg,vapour_kg,salt_residual_kg,water_residual_kg,solid_ledger_residual_kg,pore_salt_transfer_kg,pore_water_transfer_kg,coupled_trials,rejected_trials,interface_liquid_kg_m2,interface_salt_kg_m2\n";
             eventLog_<<std::setprecision(17)<<"time_s,event,value1,value2\n";
             crustFields_<<std::setprecision(17)<<"time_s,z_bottom_m,z_top_m,epsilon,concentration\n";
             soilFields_<<std::setprecision(17)<<"time_s,y_m,mass_fraction,saturation,density_kg_m3\n";
             writeSurface_(x,0,0,0);
+            if(controlledDonorComplete()) {
+                // Separate prescribed-inventory allocation harness only. Its
+                // synthetic solid inventory never enters a coupled simulation.
+                auto candidate=x; SurfaceState test;
+                const double h=getParam<double>("P2H.ActivationHeight",1e-6);
+                test.loose=h*p.crystal*(1-p.birth);
+                const bool ok=adaptiveDonors_(candidate,test,0,h);
+                eventLog_<<0<<(ok?",controlled_allocation_pass,":",controlled_allocation_refused,")<<h<<",0\n";
+            }
         }
         template<class Solution> void precrust_(Solution& x,SurfaceState& next,double time,double dt) {
             const double ceq=ale_->p.ceq,area=area_(); auto vol=volumes_(x);
@@ -92,6 +184,10 @@
             next.vapour+=heldLiquid_*dt*area;
             const double h=next.loose/(ale_->p.crystal*(1-ale_->p.birth));
             if(h<getParam<double>("P2H.ActivationHeight",1e-6)) return;
+            if(getParam<bool>("P2H.PrecrustOnly",false)) return;
+            if(getParam<std::string>("P2H.DonorMode","top_only")=="adaptive_multilayer") {
+                adaptiveDonors_(x,next,time,h); return;
+            }
             double available=0;
             for(auto i:topDofs_()) available+=porosity_*sw(x[i][pressureIdx])*rhoW(x[i][moleFractionIdx])*vol[i];
             const double required=ale_->p.rho*ale_->p.birth*h*area;
@@ -175,6 +271,8 @@
                         injectedFailure_=true; throw std::runtime_error("injected rollback test");
                     }
                     acceptedSurface_=std::move(next);
+                    if(!original.active && acceptedSurface_.active)
+                        eventLog_<<loop.time()+dt<<",accepted_activation_attempt,"<<candidateAttempt_<<','<<acceptedSurface_.activation<<'\n';
                     writeSurface_(x,loop.time()+dt,dt,j);
                     return;
                 } catch(const std::exception& e) {

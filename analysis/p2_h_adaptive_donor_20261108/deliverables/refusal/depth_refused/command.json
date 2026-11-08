@@ -1,0 +1,16 @@
+[
+  "/WORK/hulm_work/zhixin/p2_h_adaptive_donor_20261108/build/soil_solver",
+  "params.input",
+  "-TimeLoop.TEnd",
+  "400",
+  "-TimeLoop.DtInitial",
+  ".5",
+  "-TimeLoop.MaxTimeStepSize",
+  ".5",
+  "-P2H.DonorMode",
+  "adaptive_multilayer",
+  "-P2H.MaxDonorDepth",
+  "1e-9",
+  "-P2H.PrecrustOnly",
+  "false"
+]

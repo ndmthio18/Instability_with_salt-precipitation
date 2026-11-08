@@ -1,0 +1,20 @@
+[
+  {
+    "name": "depth_refused",
+    "n": 80,
+    "h_um": 1,
+    "depth_mm": 1e-06,
+    "mode": "adaptive_multilayer",
+    "precrust": false,
+    "tend": 400
+  },
+  {
+    "name": "precrust_reference",
+    "n": 80,
+    "h_um": 1,
+    "depth_mm": 1e-06,
+    "mode": "adaptive_multilayer",
+    "precrust": true,
+    "tend": 400
+  }
+]

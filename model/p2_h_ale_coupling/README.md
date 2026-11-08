@@ -1,5 +1,14 @@
 # P2-H C++ ALE and conditional DuMuX coupling
 
+The `research/p2-h-adaptive-donor` extension adds optional conservative,
+depth-limited multi-layer pore charging. See [registered experiments](ADAPTIVE_PLAN.md),
+[allocation equations and assumptions](ADAPTIVE_FORMULATION.md), and
+[reproduction instructions](../../analysis/p2_h_adaptive_donor_20261108/REPRODUCE.md).
+Select `P2H.DonorMode=adaptive_multilayer` and `P2H.MaxDonorDepth` in metres;
+`top_only` remains the compatibility default. The ALE operator and BDF are
+unchanged. Diagnostic `ControlledDonorTest` and `PrecrustOnly` settings are
+explicit test modes, not production initial conditions.
+
 User scope: `task/9.md`, isolated branch `research/p2-h-ale-coupling`.
 See [equations and limitations](../../docs/P2_H_FORMULATION.md) and
 [registered staged plan](PLAN.md). The final Chinese report and accepted

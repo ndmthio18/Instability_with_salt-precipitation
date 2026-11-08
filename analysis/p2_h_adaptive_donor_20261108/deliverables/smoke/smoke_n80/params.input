@@ -1,0 +1,63 @@
+[Grid]
+Positions0 = 0 0.001
+Positions1 = 0 0.20
+Cells0 = 1
+Cells1 = 80
+Grading1 = -0.97
+
+[TimeLoop]
+TEnd = 2500
+DtInitial = 0.025
+MaxTimeStepSize = 0.025
+OutputInterval = 1000000
+
+[Problem]
+Name = p2f_1d
+WaterLevel = 0.01
+Permeability = 2.89e-11
+Porosity = 0.41
+Swr = 0.122
+PcN = 10.8
+PcAlpha = 1.77e-04
+SweL = 0.73
+SaltMoleFraction = 0.09999
+EvaporationRate = 1.08e-8
+EvaporationBoundaryMode = p2h_ale
+BottomBoundaryMode = no_flux
+SaltDiffusivity = 1.5e-09
+ReferenceViscosity = 0.0011
+PureWaterDensity = 998.203
+DensityLinearCoefficient = 0.670804
+DensityQuadraticCoefficient = 0.373854
+MolarMassH2O = 0.01801528
+MolarMassNaCl = 0.05844
+Amplitude = 0
+WaveNumber = 1
+StandardDeviationSaltMoleFraction = 0
+PerturbationType = Constant
+EnableGravity = true
+PerturbationHeight = 0.20
+
+[P2F]
+SeedHeight = 1e-5
+CrustPorosity = 0.43
+CrystalDensity = 2165
+ReactionCoefficient = 2.3e-3
+Beta = 2
+MolecularDiffusivity = 1.3e-9
+VapourDensity = 0
+PrescribedEvaporationMassFlux = 1e-6
+ActivationRelativeTolerance = 1e-10
+InterfaceRelativeTolerance = 0.02
+MinimumInterfaceSaturation = 0.99
+MaximumSolutionPeclet = 0.1
+MaximumMovingPeclet = 0.1
+
+[Transport]
+StopAtSolubility = false
+SolubilityMoleFraction = 0.1
+WriteFaceFluxes = false
+
+[Vtk]
+Precision = Float64
+AddVelocity = true

@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/WORK/hulm_work/zhixin/p2_h_adaptive_donor_20261108/repo/model/p2_h_ale_coupling/verify_adaptive.py", line 19, in <module>
+    assert actual==hashlib.sha256((frozen_root/name).read_bytes()).hexdigest(),name
+  File "/apps/soft/anaconda3/lib/python3.10/pathlib.py", line 1124, in read_bytes
+    with self.open(mode='rb') as f:
+  File "/apps/soft/anaconda3/lib/python3.10/pathlib.py", line 1117, in open
+    return self._accessor.open(self, mode, buffering, encoding, errors,
+FileNotFoundError: [Errno 2] No such file or directory: '/WORK/hulm_work/zhixin/p2_h_ale_coupling_20261107/repo/model/p1_r2_conservative_richards/source/kiemle2023b.pc.in'

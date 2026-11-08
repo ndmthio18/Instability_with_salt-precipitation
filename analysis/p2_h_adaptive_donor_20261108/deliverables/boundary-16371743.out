@@ -1,0 +1,91 @@
+{
+  "source_boundary_tolerance_m": 1.5e-07,
+  "geometry": [
+    {
+      "n": 40,
+      "top_cell_height_m": 0.0025971604171884655,
+      "top_box_depth_m": 0.0012985802085942466,
+      "minimum_spacing_m": 0.0025971604171884655,
+      "maximum_spacing_m": 0.00851924560467282,
+      "misclassified_side_faces": [],
+      "unintended_side_area_m2": 0,
+      "intended_top_area_m2": 0.001,
+      "extra_area_fraction": 0.0
+    },
+    {
+      "n": 80,
+      "top_cell_height_m": 0.0005927336301261854,
+      "top_box_depth_m": 0.00029636681506312046,
+      "minimum_spacing_m": 0.0005927336301261854,
+      "maximum_spacing_m": 0.006574951621222486,
+      "misclassified_side_faces": [],
+      "unintended_side_area_m2": 0,
+      "intended_top_area_m2": 0.001,
+      "extra_area_fraction": 0.0
+    },
+    {
+      "n": 160,
+      "top_cell_height_m": 4.766402425840366e-05,
+      "top_box_depth_m": 2.383201212918795e-05,
+      "minimum_spacing_m": 4.766402425840366e-05,
+      "maximum_spacing_m": 0.0060462341035308065,
+      "misclassified_side_faces": [],
+      "unintended_side_area_m2": 0,
+      "intended_top_area_m2": 0.001,
+      "extra_area_fraction": 0.0
+    },
+    {
+      "n": 320,
+      "top_cell_height_m": 3.617094677388355e-07,
+      "top_box_depth_m": 1.8085473385553996e-07,
+      "minimum_spacing_m": 3.617094677388355e-07,
+      "maximum_spacing_m": 0.006000350858183678,
+      "misclassified_side_faces": [
+        {
+          "side": "left",
+          "ip_depth_m": 9.042736693470887e-08,
+          "area_m2": 1.8085473386941775e-07
+        },
+        {
+          "side": "right",
+          "ip_depth_m": 9.042736693470887e-08,
+          "area_m2": 1.8085473386941775e-07
+        }
+      ],
+      "unintended_side_area_m2": 3.617094677388355e-07,
+      "intended_top_area_m2": 0.001,
+      "extra_area_fraction": 0.0003617094677388355
+    }
+  ],
+  "comparisons": [
+    {
+      "case": "old_n320",
+      "last_time_s": 112.44768911569221,
+      "original_max_relative_water_defect": 9.999998460676846e-09,
+      "max_relative_difference_from_predicted_side_loss": 7.259926261949333e-15,
+      "last_observed_water_defect_kg": -7.246082206480153e-10,
+      "last_predicted_unrecorded_side_loss_kg": -7.246084711271917e-10
+    },
+    {
+      "case": "pre_n320",
+      "last_time_s": 112.44768911569221,
+      "original_max_relative_water_defect": 9.999998460676846e-09,
+      "max_relative_difference_from_predicted_side_loss": 7.259926261949333e-15,
+      "last_observed_water_defect_kg": -7.246082206480153e-10,
+      "last_predicted_unrecorded_side_loss_kg": -7.246084711271917e-10
+    },
+    {
+      "case": "new_n320_h1_d2",
+      "last_time_s": 112.44768911569221,
+      "original_max_relative_water_defect": 9.999998460676846e-09,
+      "max_relative_difference_from_predicted_side_loss": 7.259926261949333e-15,
+      "last_observed_water_defect_kg": -7.246082206480153e-10,
+      "last_predicted_unrecorded_side_loss_kg": -7.246084711271917e-10
+    }
+  ],
+  "upstream_source_hashes": {
+    "dumux/dumux/discretization/box/subcontrolvolumeface.hh": "e1b5db130ca51103c9bd45e39f4095e82f0849b72919fd86409cddfb886b10c8",
+    "dumux/dumux/discretization/box/boxgeometryhelper.hh": "f636d0c0518b83bb96473a5d1c0a63810e032c932d76ac56c524f1601d1cd0a9"
+  },
+  "interpretation": "Read-only attribution. Actual side faces satisfy the legacy height-only top predicate. Predicted extra vapor loss is compared with the observed ledger defect. No run is repaired or retroactively accepted; top-face selection requires a separate correction and rerun."
+}
