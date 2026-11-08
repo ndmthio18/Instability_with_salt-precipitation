@@ -7,14 +7,30 @@ std::string precipitationMode_() const {
 template<class Solution,class State,class Solver,class TimeLoop>
 void solvePrecipitation_(Solution& x,const Solution& base,const State& original,Solver& solver,TimeLoop& loop,GridVariables& variables,double& dt,double evaporation) {
     double flux=original.precipFlux,previousFlux=0,previousResidual=0;
+    const bool progressive=getParam<std::string>("P2H.DonorMode","top_only")=="progressive_top_boundary_filling";
     for(int iteration=0;iteration<24;++iteration) {
-        heldSalt_=flux; heldLiquid_=evaporation+flux;
+        precipitationFlux_=flux; evaporationFlux_=evaporation;
+        fillDensity_=ale_->p.rho;
+        const auto fill=p2h::progressiveIncrement(flux,1.0,ale_->p.birth,ale_->p.crystal,
+                                                  ale_->p.ceq,fillDensity_);
+        fillSaltFlux_=progressive?fill.poreSalt:0;
+        fillLiquidFlux_=progressive?fill.poreSalt+fill.poreWater:0;
+        heldSalt_=precipitationFlux_+fillSaltFlux_;
+        heldLiquid_=evaporationFlux_+precipitationFlux_+fillLiquidFlux_;
         x=base; variables.update(x); loop.setTimeStepSize(dt); solver.solve(x,loop);
         if(loop.timeStepSize()<dt*(1-1e-12)) {
             dt=loop.timeStepSize(); throw std::runtime_error("soil reduced precipitation trial dt");
         }
         const double residual=topC_(x)-ale_->p.ceq;
-        if((flux==0 && residual<=0) || (flux>0 && std::abs(residual)<5e-13)) return;
+        if((flux==0 && residual<=0) || (flux>0 && std::abs(residual)<5e-13)) {
+            if(progressive && flux>0) {
+                if(std::abs(topRho_(x)-fillDensity_)>1e-10*fillDensity_)
+                    throw std::runtime_error("progressive interface density mismatch");
+                if(topSw_(x)<getParam<double>("P2H.MinimumSupplySaturation",.99))
+                    throw std::runtime_error("progressive hydraulic supply screen failed");
+            }
+            return;
+        }
         double next=flux+std::max(1e-8,evaporation*ale_->p.ceq/(1-ale_->p.ceq));
         if(iteration>0 && flux!=previousFlux) {
             const double slope=(residual-previousResidual)/(flux-previousFlux);
@@ -48,7 +64,7 @@ template<class Solution> void initializeGridDiagnostics_(const Solution& x) {
     }
     gridBudget_.open("grid_budgets.csv"); gridProfile_.open("grid_profiles.csv");
     aleDiagnostic_.open("ale_diagnostics.csv");
-    gridBudget_<<std::setprecision(17)<<"time_s,dt_s,active,depth_m,salt_before_kg,salt_transport_kg,salt_after_kg,water_before_kg,water_transport_kg,water_after_kg,adv_in_kg_s,diff_in_kg_s,liquid_in_kg_s,projection_salt_kg,surface_solid_kg,soil_salt_kg,soil_water_kg,evap_kg_m2_s,supersaturation_excess_kg,boundary_reconstruction_salt_kg_s,boundary_precip_kg_m2_s\n";
+    gridBudget_<<std::setprecision(17)<<"time_s,dt_s,active,depth_m,salt_before_kg,salt_transport_kg,salt_after_kg,water_before_kg,water_transport_kg,water_after_kg,adv_in_kg_s,diff_in_kg_s,liquid_in_kg_s,projection_salt_kg,surface_solid_kg,soil_salt_kg,soil_water_kg,evap_kg_m2_s,supersaturation_excess_kg,boundary_reconstruction_salt_kg_s,boundary_precip_kg_m2_s,boundary_fill_liquid_kg_m2_s,boundary_fill_salt_kg_m2_s\n";
     gridProfile_<<std::setprecision(17)<<"time_s,dof,depth_m,box_volume_m3,pressure_pa,sw,c,rho\n";
     aleDiagnostic_<<std::setprecision(17)<<"time_s,status,i,z_bottom_m,z_top_m,epsilon,c,reaction_kg_m3_s,deff_m2_s,av_m_inv,h_m,speed_m_s,bottom_c,bottom_liquid_kg_m2_s,bottom_salt_kg_m2_s,bottom_adv_kg_m2_s,bottom_diff_kg_m2_s,evap_kg_m2_s,pore_salt_kg_m2,pore_water_kg_m2,solid_kg_m2\n";
     writeGridProfile_(x,0);
@@ -120,7 +136,7 @@ template<class Solution,class State> void writeGridDiagnostics_(const Solution& 
             as+=w*after.first[i]; aw+=w*after.second[i];
             excess+=w*std::max(0.,after.first[i]-ale_->p.ceq/(1-ale_->p.ceq)*after.second[i]);
         }
-        gridBudget_<<time<<','<<dt<<','<<now.active<<','<<cutDepths_[k]<<','<<bs<<','<<ts<<','<<as<<','<<bw<<','<<tw<<','<<aw<<','<<cutAdv_[k]<<','<<cutDiff_[k]<<','<<cutLiquid_[k]<<','<<ts-as<<','<<(now.active?now.initialSolid:now.loose)*area_()<<','<<all.first<<','<<all.second<<','<<j<<','<<excess<<','<<cutBoundarySalt_[k]<<','<<heldSalt_<<'\n';
+        gridBudget_<<time<<','<<dt<<','<<now.active<<','<<cutDepths_[k]<<','<<bs<<','<<ts<<','<<as<<','<<bw<<','<<tw<<','<<aw<<','<<cutAdv_[k]<<','<<cutDiff_[k]<<','<<cutLiquid_[k]<<','<<ts-as<<','<<(now.active?now.initialSolid:now.loose)*area_()<<','<<all.first<<','<<all.second<<','<<j<<','<<excess<<','<<cutBoundarySalt_[k]<<','<<precipitationFlux_<<','<<fillLiquidFlux_<<','<<fillSaltFlux_<<'\n';
     }
     // Full near-activation fields on every accepted step; elsewhere every 100 s.
     if(time<=10 || (now.active && time-now.activation<=10) || std::fmod(time,100)<1e-8)

@@ -1,5 +1,23 @@
 # P2-H C++ ALE and conditional DuMuX coupling
 
+## Progressive top-boundary precursor filling
+
+`P2H.DonorMode=progressive_top_boundary_filling` replaces the instantaneous
+BOX-DOF pore-liquid withdrawal during activation by an accepted-step precursor
+ledger.  New solid comes from the existing implicit surface-precipitation
+complementarity condition; its birth-porosity liquid demand leaves the soil
+only through the physical top boundary with the converged interface salt mass
+fraction.  ALE activation transfers the accumulated solid, dissolved salt and
+water once and does not modify a soil DOF.  This mode requires
+`P2H.PrecipitationMode=implicit_surface`.
+
+The closure is a diagnostic saturated-birth, zero-precursor-resistance
+assumption, not a calibrated capillary law.  A Richards failure or the declared
+top-state screen rejects the complete trial; the code never substitutes a
+top-cell-volume-over-time-step rate or a deep donor.  See
+`analysis/p2_h_progressive_activation_20261108/FORMULATION.md` for the
+pre-implementation grid-dependence audit and limits.
+
 ## Reservoir-fed long-time revision
 
 `RESERVOIR_FORMULATION.md` documents the accepted-step bottom component-flux

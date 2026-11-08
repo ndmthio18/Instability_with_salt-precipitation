@@ -26,6 +26,7 @@
             p2h::Vec crust;
             double loose=0, initialSolid=0, vapour=0, activation=-1, pratHeight=0;
             double poreSaltTransfer=0, poreWaterTransfer=0, precipFlux=0;
+            p2h::PrecursorInventory precursor;
             double internalPositive=0, internalDissolution=0;
             double bottomLiquidFlux=0, bottomSaltFlux=0;
             double cumulativeBottomLiquid=0, cumulativeBottomSalt=0;
@@ -39,6 +40,7 @@
         SurfaceState acceptedSurface_;
         std::unique_ptr<p2h::ALE> ale_;
         double heldLiquid_=0,heldSalt_=0,initialSalt_=0,initialWater_=0;
+        double evaporationFlux_=0,precipitationFlux_=0,fillLiquidFlux_=0,fillSaltFlux_=0,fillDensity_=0;
         double nextFieldOutputTime_=0;
         unsigned long coupledTrials_=0,rejectedTrials_=0;
         bool injectedFailure_=false;
@@ -201,6 +203,11 @@
             for(auto i:topDofs_()) s=std::min(s,double(sw(x[i][pressureIdx])));
             return s;
         }
+        template<class Solution> double topRho_(const Solution& x) const {
+            double rho=0; const auto ids=topDofs_();
+            for(auto i:ids) rho+=rhoW(x[i][moleFractionIdx]);
+            return rho/ids.size();
+        }
         template<class Solution> void assignMass_(Solution& x,std::size_t i,double salt,double water,double vol) const {
             if(!(salt>=0 && water>0)) throw std::runtime_error("negative donor inventory");
             const double w=salt/(salt+water);
@@ -243,6 +250,7 @@
             ale_->gasFilm=[this](double c){return film_(c);};
             const auto m=inventory_(x); initialSalt_=m.first; initialWater_=m.second;
             heldLiquid_=film_(topC_(x)); heldSalt_=0;
+            evaporationFlux_=heldLiquid_; precipitationFlux_=fillLiquidFlux_=fillSaltFlux_=0;
             surfaceLog_.open("coupled_history.csv"); eventLog_.open("coupling_events.csv"); crustFields_.open("crust_fields.csv");
             soilFields_.open("soil_fields.csv");
             donorLog_.open("donor_profiles.csv"); allocationLog_.open("donor_attempts.csv");
@@ -266,8 +274,11 @@
             if(std::max(std::abs(xmin-x0),std::abs(xmax-x0))>1e-14)
                 throw std::runtime_error("accepted initial salt field differs from Problem.SaltMoleFraction");
             const auto mode=getParam<std::string>("P2H.DonorMode","top_only");
-            if(mode!="top_only" && mode!="adaptive_multilayer") throw std::runtime_error("unknown donor mode");
-            surfaceLog_<<std::setprecision(17)<<"time_s,dt_s,active,activation_s,h_m,h_mass_m,h_prat_m,top_solid_kg_m2,internal_solid_kg_m2,internal_positive_kg_m2,internal_dissolution_kg_m2,internal_quadrature_residual_kg_m2,top_new_solid_kg_m2,internal_fraction_net,internal_fraction_positive,positive_reaction_kg_m2_s,dissolution_kg_m2_s,top_growth_velocity_m_s,crust_top_mass_fraction,epsilon_min,top_soil_mass_fraction,top_soil_sw,evaporation_kg_m2_s,soil_salt_kg,crust_salt_kg,soil_water_kg,crust_water_kg,vapour_kg,salt_residual_kg,water_residual_kg,solid_ledger_residual_kg,pore_salt_transfer_kg,pore_water_transfer_kg,coupled_trials,rejected_trials,interface_liquid_kg_m2,interface_salt_kg_m2,reaction_coefficient_m_s,av_multiplier\n";
+            if(mode!="top_only" && mode!="adaptive_multilayer" && mode!="progressive_top_boundary_filling")
+                throw std::runtime_error("unknown donor mode");
+            if(mode=="progressive_top_boundary_filling" && precipitationMode_()!="implicit_surface")
+                throw std::runtime_error("progressive filling requires implicit surface precipitation");
+            surfaceLog_<<std::setprecision(17)<<"time_s,dt_s,active,activation_s,h_m,h_mass_m,h_prat_m,top_solid_kg_m2,internal_solid_kg_m2,internal_positive_kg_m2,internal_dissolution_kg_m2,internal_quadrature_residual_kg_m2,top_new_solid_kg_m2,internal_fraction_net,internal_fraction_positive,positive_reaction_kg_m2_s,dissolution_kg_m2_s,top_growth_velocity_m_s,crust_top_mass_fraction,epsilon_min,top_soil_mass_fraction,top_soil_sw,evaporation_kg_m2_s,soil_salt_kg,crust_salt_kg,soil_water_kg,crust_water_kg,vapour_kg,salt_residual_kg,water_residual_kg,solid_ledger_residual_kg,pore_salt_transfer_kg,pore_water_transfer_kg,coupled_trials,rejected_trials,interface_liquid_kg_m2,interface_salt_kg_m2,reaction_coefficient_m_s,av_multiplier,precipitation_flux_kg_m2_s,fill_liquid_flux_kg_m2_s,fill_salt_flux_kg_m2_s,precursor_pore_salt_kg_m2,precursor_pore_water_kg_m2,precursor_required_volume_m3_m2,precursor_filled_volume_m3_m2,precursor_unfilled_volume_m3_m2,precursor_concentration\n";
             eventLog_<<std::setprecision(17)<<"time_s,event,value1,value2\n";
             crustFields_<<std::setprecision(17)<<"time_s,z_bottom_m,z_top_m,epsilon,concentration\n";
             soilFields_<<std::setprecision(17)<<"time_s,y_m,mass_fraction,saturation,density_kg_m3\n";
@@ -285,6 +296,7 @@
         }
         template<class Solution> void precrust_(Solution& x,SurfaceState& next,double time,double dt) {
             const double ceq=ale_->p.ceq,area=area_(); auto vol=volumes_(x);
+            const auto donorMode=getParam<std::string>("P2H.DonorMode","top_only");
             if(precipitationMode_()=="projection") for(auto i:topDofs_()) {
                 const double c=massFraction(x[i][moleFractionIdx]);
                 const double total=porosity_*sw(x[i][pressureIdx])*rhoW(x[i][moleFractionIdx])*vol[i];
@@ -292,13 +304,49 @@
                 if(p>0) { assignMass_(x,i,s-p,w,vol[i]); next.loose+=p/area; }
             }
             if(precipitationMode_()=="implicit_surface") {
-                next.loose+=heldSalt_*dt; next.precipFlux=heldSalt_;
+                next.loose+=precipitationFlux_*dt; next.precipFlux=precipitationFlux_;
+                if(donorMode=="progressive_top_boundary_filling") {
+                    const auto increment=p2h::progressiveIncrement(precipitationFlux_,dt,ale_->p.birth,
+                        ale_->p.crystal,topC_(x),topRho_(x));
+                    const double fluxTolerance=1e-12*std::max(1e-12,fillLiquidFlux_);
+                    if(std::abs((increment.poreSalt+increment.poreWater)/dt-fillLiquidFlux_)>fluxTolerance ||
+                       std::abs(increment.poreSalt/dt-fillSaltFlux_)>fluxTolerance)
+                        throw std::runtime_error("progressive accepted interface flux mismatch");
+                    p2h::acceptProgressiveIncrement(next.precursor,increment);
+                }
             }
-            next.vapour+=(heldLiquid_-heldSalt_)*dt*area;
+            next.vapour+=evaporationFlux_*dt*area;
             const double h=next.loose/(ale_->p.crystal*(1-ale_->p.birth));
             if(h<getParam<double>("P2H.ActivationHeight",3.5e-6)) return;
             if(getParam<bool>("P2H.PrecrustOnly",false)) return;
-            if(getParam<std::string>("P2H.DonorMode","top_only")=="adaptive_multilayer") {
+            if(donorMode=="progressive_top_boundary_filling") {
+                const double volumeTolerance=1e-12*std::max(h,1e-12);
+                const double volumeResidual=p2h::precursorVolumeResidual(next.precursor);
+                if(std::abs(volumeResidual)>volumeTolerance) {
+                    eventLog_<<time<<",activation_blocked_unfilled_precursor,"<<volumeResidual<<','<<next.precursor.requiredPoreVolume<<'\n';
+                    return;
+                }
+                if(topSw_(x)<getParam<double>("P2H.MinimumSupplySaturation",.99)) {
+                    eventLog_<<time<<",activation_blocked_top_state,"<<topSw_(x)<<','<<getParam<double>("P2H.MinimumSupplySaturation",.99)<<'\n';
+                    return;
+                }
+                const double c=p2h::precursorConcentration(next.precursor);
+                auto crust=ale_->initial(h,c); const auto cm=ale_->inventory(crust);
+                const double saltResidual=cm.salt-next.precursor.poreSalt;
+                const double waterResidual=cm.water-next.precursor.poreWater;
+                const double solidResidual=cm.solid-next.loose;
+                const double scale=std::max(initialSalt_/area,1e-30);
+                if(std::abs(saltResidual)>1e-12*scale || std::abs(waterResidual)>1e-12*scale ||
+                   std::abs(solidResidual)>1e-12*scale || std::abs(cm.pore-next.precursor.filledPoreVolume)>volumeTolerance)
+                    throw std::runtime_error("progressive activation transfer budget failed");
+                next.active=true; next.crust=std::move(crust); next.initialSolid=next.loose; next.loose=0;
+                next.poreSaltTransfer=next.precursor.poreSalt*area;
+                next.poreWaterTransfer=next.precursor.poreWater*area;
+                next.activation=time; next.pratHeight=h; candidateAttempt_=++allocationAttempt_;
+                eventLog_<<time<<",activation_trial_progressive,"<<h<<','<<c<<'\n';
+                return;
+            }
+            if(donorMode=="adaptive_multilayer") {
                 adaptiveDonors_(x,next,time,h); return;
             }
             double available=0;
@@ -328,7 +376,8 @@
             eventLog_<<time<<",activation_trial,"<<h<<','<<topSw_(x)<<'\n';
         }
         template<class Solution> void checkBudgets_(const Solution& x,const SurfaceState& state) const {
-            const auto sm=inventory_(x); double salt=state.loose*area_(),water=0;
+            const auto sm=inventory_(x); double salt=(state.loose+state.precursor.poreSalt)*area_();
+            double water=state.precursor.poreWater*area_();
             if(state.active) { auto cm=ale_->inventory(state.crust); salt=(cm.salt+cm.solid)*area_(); water=cm.water*area_(); }
             const double bottomWater=state.cumulativeBottomLiquid-state.cumulativeBottomSalt;
             if(std::abs(sm.first+salt-state.cumulativeBottomSalt-initialSalt_)>1e-8*initialSalt_ ||
@@ -344,13 +393,15 @@
                 double j=heldLiquid_;
                 try {
                     if(!original.active) {
-                        heldLiquid_=film_(topC_(base)); heldSalt_=0; j=heldLiquid_;
+                        evaporationFlux_=film_(topC_(base)); heldLiquid_=evaporationFlux_; heldSalt_=0;
+                        precipitationFlux_=fillLiquidFlux_=fillSaltFlux_=0; j=evaporationFlux_;
                         if(precipitationMode_()=="implicit_surface")
                             solvePrecipitation_(x,base,original,solver,loop,variables,dt,j);
                         else { solver.solve(x,loop); dt=loop.timeStepSize(); }
                         captureTransport_(x,variables);
                         precrust_(x,next,loop.time()+dt,dt);
                     } else {
+                        precipitationFlux_=fillLiquidFlux_=fillSaltFlux_=0;
                         double c=topC_(base),previousC=0,previousR=0; bool solved=false;
                         for(int iteration=0;iteration<16;++iteration) {
                             ++coupledTrials_;
@@ -372,6 +423,7 @@
                                 next.internalDissolution=trial[model.dissolutionInv()];
                                 diagnosticBottomC_=c;
                                 next.crust=std::move(trial); next.vapour+=j*dt*area_();
+                                evaporationFlux_=j;
                                 next.pratHeight+=p2g::velocity(next.pratHeight,j,ale_->p.ceq)*dt;
                                 solved=true; break;
                             }
@@ -398,7 +450,7 @@
                     acceptedSurface_=std::move(next);
                     if(!original.active && acceptedSurface_.active)
                         eventLog_<<loop.time()+dt<<",accepted_activation_attempt,"<<candidateAttempt_<<','<<acceptedSurface_.activation<<'\n';
-                    const double topEvaporation=original.active?j:heldLiquid_-heldSalt_;
+                    const double topEvaporation=original.active?j:evaporationFlux_;
                     writeGridDiagnostics_(base,x,original,acceptedSurface_,loop.time()+dt,dt,topEvaporation);
                     writeSurface_(x,loop.time()+dt,dt,topEvaporation,&bottom);
                     return;
@@ -423,7 +475,7 @@
             const bool fieldOutput=periodicOutput || time==st.activation || activationOnlyComplete();
             if(periodicOutput && time>0)
                 while(nextFieldOutputTime_<=time+outputTolerance) nextFieldOutputTime_+=outputInterval;
-            double cs=0,cw=0,top=st.loose,inside=0,eps=ale_->p.birth,h=0,solid=st.loose,defect=0;
+            double cs=st.precursor.poreSalt*a,cw=st.precursor.poreWater*a,top=st.loose,inside=0,eps=ale_->p.birth,h=0,solid=st.loose,defect=0;
             double topNew=0,netFraction=0,positiveFraction=0,positiveRate=0,dissolutionRate=0,growth=0,crustTopC=0;
             if(st.active) {
                 auto m=ale_->inventory(st.crust); const int k=ale_->inv();
@@ -451,7 +503,9 @@
                 <<positiveRate<<','<<dissolutionRate<<','<<growth<<','<<crustTopC<<','<<eps<<','<<topC_(x)<<','<<topSw_(x)<<','<<j<<','<<sm.first<<','<<cs<<','<<sm.second<<','<<cw<<','<<st.vapour<<','
                 <<saltResidual<<','<<waterResidual<<','<<defect<<','<<st.poreSaltTransfer<<','<<st.poreWaterTransfer<<','<<coupledTrials_<<','<<rejectedTrials_<<','
                 <<(st.active?st.crust[ale_->inv()+3]:0)<<','<<(st.active?st.crust[ale_->inv()+2]:0)<<','
-                <<ale_->p.reaction<<','<<ale_->p.avMultiplier<<'\n';
+                <<ale_->p.reaction<<','<<ale_->p.avMultiplier<<','<<precipitationFlux_<<','<<fillLiquidFlux_<<','<<fillSaltFlux_<<','
+                <<st.precursor.poreSalt<<','<<st.precursor.poreWater<<','<<st.precursor.requiredPoreVolume<<','<<st.precursor.filledPoreVolume<<','
+                <<p2h::precursorVolumeResidual(st.precursor)<<','<<((st.precursor.poreSalt+st.precursor.poreWater)>0?p2h::precursorConcentration(st.precursor):0)<<'\n';
             const BottomFlux zero; const auto& bf=bottom?*bottom:zero;
             boundaryLog_<<time<<','<<dt<<','<<st.bottomLiquidFlux<<','<<st.bottomSaltFlux<<','<<st.bottomLiquidFlux-st.bottomSaltFlux<<','
                 <<st.bottomLiquidFlux/a<<','<<st.bottomSaltFlux/a<<','<<(st.bottomLiquidFlux-st.bottomSaltFlux)/a<<','
