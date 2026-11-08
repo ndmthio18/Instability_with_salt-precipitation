@@ -1,0 +1,465 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "check": "five unique runs",
+      "passed": true,
+      "detail": "['kr0p1_av1', 'kr10_av1', 'kr1_av0p5', 'kr1_av1_ref', 'kr1_av2']"
+    },
+    {
+      "check": "reference reused",
+      "passed": true,
+      "detail": "{'reference': {'reaction_coefficient_m_s': 0.001, 'av_multiplier': 1.0}, 'fixed_av_group': ['kr0p1_av1', 'kr1_av1_ref', 'kr10_av1'], 'fixed_kr_group': ['kr1_av0p5', 'kr1_av1_ref', 'kr1_av2'], 'unique_runs': ['kr0p1_av1', 'kr1_av1_ref', 'kr10_av1', 'kr1_av0p5', 'kr1_av2'], 'reference_reused': True}"
+    },
+    {
+      "check": "corrected matrix provenance",
+      "passed": true,
+      "detail": "{'branch': 'research/p2-h-kr-av-comparison', 'base_commit': '63f267f9eae85bf434a2ad9ed0804a63723e9478', 'hpcc_root': '/WORK/hulm_work/zhixin/p2_h_kr_av_comparison_20261108', 'build_job': '16407548', 'corrected_matrix_job': '16408105', 'invalidated_wrong_namespace_matrix_job': '16407598', 'solver_sha256': 'bce211633378d0fc3ef92dde787dfd96ba33ca367202634848138ff5a28f54f0', 'case_jobs': ['16408105', '16408106', '16408107', '16408108', '16408109'], 'interpretation': 'zero initial crust and solid; conservative ALE activation threshold at 0.1 um equivalent real surface solid', 'initial_salt_mole_fraction': 0.05, 'requested_end_s': 180000.0, 'source_hashes': {'run_kr_av.py': 'd42fbd4fe4b9c17979d78d1eec694774675519c4ccbccb4cd453d4402f6969b2', 'analyze_kr_av.py': 'a62123f59ff8908dba22830235cf5337282d8a06208766389482d457000ee216', 'plot_kr_av.py': '0ad1fe4a714b6317904714995ed15afc745dadfd5cf202d07119de0cd371915a', 'verify_kr_av.py': 'c2617c6832ec4a1c06ba37e69f79d0d902ca83d9303ac2d01e675ba6391c3589'}}"
+    },
+    {
+      "check": "solver checksum",
+      "passed": true,
+      "detail": "bce211633378d0fc3ef92dde787dfd96ba33ca367202634848138ff5a28f54f0"
+    },
+    {
+      "check": "pre-ALE parameter independence",
+      "passed": true,
+      "detail": "0.0"
+    },
+    {
+      "check": "kr0p1_av1 kr",
+      "passed": true,
+      "detail": "0.0001"
+    },
+    {
+      "check": "kr0p1_av1 av",
+      "passed": true,
+      "detail": "1.0"
+    },
+    {
+      "check": "kr0p1_av1 zero artificial seed",
+      "passed": true,
+      "detail": "zero solid; conservative activation at h_eq=0.1 um"
+    },
+    {
+      "check": "kr0p1_av1 x0 command",
+      "passed": true,
+      "detail": "{'-Grid.Cells1': '80', '-TimeLoop.DtInitial': '0.5', '-TimeLoop.MaxTimeStepSize': '0.5', '-TimeLoop.TEnd': '180000.0', '-Problem.SaltMoleFraction': '0.05', '-P2H.ActivationHeight': '1e-07', '-P2H.DonorMode': 'adaptive_multilayer', '-P2H.MaxDonorDepth': '0.005', '-P2H.MinimumSupplySaturation': '0.99', '-P2H.CrustCells': '64', '-P2H.ReactionCoefficient': '0.0001', '-P2H.AvMultiplier': '1.0', '-P2H.PrecipitationMode': 'implicit_surface', '-P2H.FieldOutputInterval': '100.0', '-P2H.GridDiagnostics': 'false'}"
+    },
+    {
+      "check": "kr0p1_av1 x0 accepted field",
+      "passed": true,
+      "detail": "0.05000000000000001"
+    },
+    {
+      "check": "kr0p1_av1 activation 0.1 um",
+      "passed": true,
+      "detail": "{'-Grid.Cells1': '80', '-TimeLoop.DtInitial': '0.5', '-TimeLoop.MaxTimeStepSize': '0.5', '-TimeLoop.TEnd': '180000.0', '-Problem.SaltMoleFraction': '0.05', '-P2H.ActivationHeight': '1e-07', '-P2H.DonorMode': 'adaptive_multilayer', '-P2H.MaxDonorDepth': '0.005', '-P2H.MinimumSupplySaturation': '0.99', '-P2H.CrustCells': '64', '-P2H.ReactionCoefficient': '0.0001', '-P2H.AvMultiplier': '1.0', '-P2H.PrecipitationMode': 'implicit_surface', '-P2H.FieldOutputInterval': '100.0', '-P2H.GridDiagnostics': 'false'}"
+    },
+    {
+      "check": "kr0p1_av1 production grid",
+      "passed": true,
+      "detail": "{'-Grid.Cells1': '80', '-TimeLoop.DtInitial': '0.5', '-TimeLoop.MaxTimeStepSize': '0.5', '-TimeLoop.TEnd': '180000.0', '-Problem.SaltMoleFraction': '0.05', '-P2H.ActivationHeight': '1e-07', '-P2H.DonorMode': 'adaptive_multilayer', '-P2H.MaxDonorDepth': '0.005', '-P2H.MinimumSupplySaturation': '0.99', '-P2H.CrustCells': '64', '-P2H.ReactionCoefficient': '0.0001', '-P2H.AvMultiplier': '1.0', '-P2H.PrecipitationMode': 'implicit_surface', '-P2H.FieldOutputInterval': '100.0', '-P2H.GridDiagnostics': 'false'}"
+    },
+    {
+      "check": "kr0p1_av1 dt",
+      "passed": true,
+      "detail": "{'-Grid.Cells1': '80', '-TimeLoop.DtInitial': '0.5', '-TimeLoop.MaxTimeStepSize': '0.5', '-TimeLoop.TEnd': '180000.0', '-Problem.SaltMoleFraction': '0.05', '-P2H.ActivationHeight': '1e-07', '-P2H.DonorMode': 'adaptive_multilayer', '-P2H.MaxDonorDepth': '0.005', '-P2H.MinimumSupplySaturation': '0.99', '-P2H.CrustCells': '64', '-P2H.ReactionCoefficient': '0.0001', '-P2H.AvMultiplier': '1.0', '-P2H.PrecipitationMode': 'implicit_surface', '-P2H.FieldOutputInterval': '100.0', '-P2H.GridDiagnostics': 'false'}"
+    },
+    {
+      "check": "kr0p1_av1 horizon",
+      "passed": true,
+      "detail": "{'-Grid.Cells1': '80', '-TimeLoop.DtInitial': '0.5', '-TimeLoop.MaxTimeStepSize': '0.5', '-TimeLoop.TEnd': '180000.0', '-Problem.SaltMoleFraction': '0.05', '-P2H.ActivationHeight': '1e-07', '-P2H.DonorMode': 'adaptive_multilayer', '-P2H.MaxDonorDepth': '0.005', '-P2H.MinimumSupplySaturation': '0.99', '-P2H.CrustCells': '64', '-P2H.ReactionCoefficient': '0.0001', '-P2H.AvMultiplier': '1.0', '-P2H.PrecipitationMode': 'implicit_surface', '-P2H.FieldOutputInterval': '100.0', '-P2H.GridDiagnostics': 'false'}"
+    },
+    {
+      "check": "kr0p1_av1 salt conservation",
+      "passed": true,
+      "detail": "3.4287798224546903e-12"
+    },
+    {
+      "check": "kr0p1_av1 water conservation",
+      "passed": true,
+      "detail": "3.89299719784941e-12"
+    },
+    {
+      "check": "kr0p1_av1 no activation classified",
+      "passed": true,
+      "detail": "{'case': 'kr0p1_av1', 'reaction_coefficient_m_s': '0.0001', 'av_multiplier': '1.0', 'av_closure': 'alpha_av*36*(1-epsilon)/d_sub; d_sub=25e-6 m', 'initial_crystal_interpretation': 'zero solid; conservative activation at h_eq=0.1 um', 'initial_salt_mole_fraction': '0.05000000000000001', 'activation_threshold_m': '1e-07', 'soil_cells': '80', 'ale_cells': '64', 'maximum_soil_timestep_s': '0.5', 'actual_end_s': '180000.0', 'completed_50h': '1', 'ale_activated': '0', 'scientific_status': 'FAIL_NO_ALE_ACTIVATION', 'exit_code': '0', 'stop_reason': 'requested_horizon', 'last_coupling_event': 'activation_blocked_donor_depth', 'first_surface_precipitation_s': '108399.0', 'activation_s': 'nan', 'activation_initial_crust_concentration_mass_fraction': 'nan', 'final_crust_height_m': '0.0', 'final_minimum_porosity': '0.43', 'final_evaporation_kg_m2_s': '1.781528648571133e-05', 'total_evaporated_water_kg_m2': '3.536763778601293', 'final_internal_solid_kg_m2': '0.0', 'final_top_new_solid_kg_m2': '0.0', 'final_total_top_solid_kg_m2': '0.13182678580716806', 'final_internal_fraction_net': '0.0', 'salt_relative_residual': '3.4287798224546903e-12', 'water_relative_residual': '3.89299719784941e-12', 'solid_ledger_absolute_residual_kg': '0.0', 'activation_transfer_relative_residual': 'nan', 'soil_field_snapshots': '1801', 'crust_field_snapshots': '0', 'soil_field_max_gap_s': '100.0', 'crust_field_max_gap_s': 'nan', 'soil_field_rows': '291762', 'crust_field_rows': '0', 'compact_history_rows': '1801', 'command': '/WORK/hulm_work/zhixin/p2_h_kr_av_comparison_20261108/build/soil_solver params.input -Grid.Cells1 80 -TimeLoop.DtInitial 0.5 -TimeLoop.MaxTimeStepSize 0.5 -TimeLoop.TEnd 180000.0 -Problem.SaltMoleFraction 0.05 -P2H.ActivationHeight 1e-07 -P2H.DonorMode adaptive_multilayer -P2H.MaxDonorDepth 0.005 -P2H.MinimumSupplySaturation 0.99 -P2H.CrustCells 64 -P2H.ReactionCoefficient 0.0001 -P2H.AvMultiplier 1.0 -P2H.PrecipitationMode implicit_surface -P2H.FieldOutputInterval 100.0 -P2H.GridDiagnostics false'}"
+    },
+    {
+      "check": "kr0p1_av1 scientific no-go classified",
+      "passed": true,
+      "detail": "FAIL_NO_ALE_ACTIVATION"
+    },
+    {
+      "check": "kr0p1_av1 soil fields",
+      "passed": true,
+      "detail": "1801"
+    },
+    {
+      "check": "kr0p1_av1 field scheduler",
+      "passed": true,
+      "detail": "100.0"
+    },
+    {
+      "check": "kr1_av1_ref kr",
+      "passed": true,
+      "detail": "0.001"
+    },
+    {
+      "check": "kr1_av1_ref av",
+      "passed": true,
+      "detail": "1.0"
+    },
+    {
+      "check": "kr1_av1_ref zero artificial seed",
+      "passed": true,
+      "detail": "zero solid; conservative activation at h_eq=0.1 um"
+    },
+    {
+      "check": "kr1_av1_ref x0 command",
+      "passed": true,
+      "detail": "{'-Grid.Cells1': '80', '-TimeLoop.DtInitial': '0.5', '-TimeLoop.MaxTimeStepSize': '0.5', '-TimeLoop.TEnd': '180000.0', '-Problem.SaltMoleFraction': '0.05', '-P2H.ActivationHeight': '1e-07', '-P2H.DonorMode': 'adaptive_multilayer', '-P2H.MaxDonorDepth': '0.005', '-P2H.MinimumSupplySaturation': '0.99', '-P2H.CrustCells': '64', '-P2H.ReactionCoefficient': '0.001', '-P2H.AvMultiplier': '1.0', '-P2H.PrecipitationMode': 'implicit_surface', '-P2H.FieldOutputInterval': '100.0', '-P2H.GridDiagnostics': 'false'}"
+    },
+    {
+      "check": "kr1_av1_ref x0 accepted field",
+      "passed": true,
+      "detail": "0.05000000000000001"
+    },
+    {
+      "check": "kr1_av1_ref activation 0.1 um",
+      "passed": true,
+      "detail": "{'-Grid.Cells1': '80', '-TimeLoop.DtInitial': '0.5', '-TimeLoop.MaxTimeStepSize': '0.5', '-TimeLoop.TEnd': '180000.0', '-Problem.SaltMoleFraction': '0.05', '-P2H.ActivationHeight': '1e-07', '-P2H.DonorMode': 'adaptive_multilayer', '-P2H.MaxDonorDepth': '0.005', '-P2H.MinimumSupplySaturation': '0.99', '-P2H.CrustCells': '64', '-P2H.ReactionCoefficient': '0.001', '-P2H.AvMultiplier': '1.0', '-P2H.PrecipitationMode': 'implicit_surface', '-P2H.FieldOutputInterval': '100.0', '-P2H.GridDiagnostics': 'false'}"
+    },
+    {
+      "check": "kr1_av1_ref production grid",
+      "passed": true,
+      "detail": "{'-Grid.Cells1': '80', '-TimeLoop.DtInitial': '0.5', '-TimeLoop.MaxTimeStepSize': '0.5', '-TimeLoop.TEnd': '180000.0', '-Problem.SaltMoleFraction': '0.05', '-P2H.ActivationHeight': '1e-07', '-P2H.DonorMode': 'adaptive_multilayer', '-P2H.MaxDonorDepth': '0.005', '-P2H.MinimumSupplySaturation': '0.99', '-P2H.CrustCells': '64', '-P2H.ReactionCoefficient': '0.001', '-P2H.AvMultiplier': '1.0', '-P2H.PrecipitationMode': 'implicit_surface', '-P2H.FieldOutputInterval': '100.0', '-P2H.GridDiagnostics': 'false'}"
+    },
+    {
+      "check": "kr1_av1_ref dt",
+      "passed": true,
+      "detail": "{'-Grid.Cells1': '80', '-TimeLoop.DtInitial': '0.5', '-TimeLoop.MaxTimeStepSize': '0.5', '-TimeLoop.TEnd': '180000.0', '-Problem.SaltMoleFraction': '0.05', '-P2H.ActivationHeight': '1e-07', '-P2H.DonorMode': 'adaptive_multilayer', '-P2H.MaxDonorDepth': '0.005', '-P2H.MinimumSupplySaturation': '0.99', '-P2H.CrustCells': '64', '-P2H.ReactionCoefficient': '0.001', '-P2H.AvMultiplier': '1.0', '-P2H.PrecipitationMode': 'implicit_surface', '-P2H.FieldOutputInterval': '100.0', '-P2H.GridDiagnostics': 'false'}"
+    },
+    {
+      "check": "kr1_av1_ref horizon",
+      "passed": true,
+      "detail": "{'-Grid.Cells1': '80', '-TimeLoop.DtInitial': '0.5', '-TimeLoop.MaxTimeStepSize': '0.5', '-TimeLoop.TEnd': '180000.0', '-Problem.SaltMoleFraction': '0.05', '-P2H.ActivationHeight': '1e-07', '-P2H.DonorMode': 'adaptive_multilayer', '-P2H.MaxDonorDepth': '0.005', '-P2H.MinimumSupplySaturation': '0.99', '-P2H.CrustCells': '64', '-P2H.ReactionCoefficient': '0.001', '-P2H.AvMultiplier': '1.0', '-P2H.PrecipitationMode': 'implicit_surface', '-P2H.FieldOutputInterval': '100.0', '-P2H.GridDiagnostics': 'false'}"
+    },
+    {
+      "check": "kr1_av1_ref salt conservation",
+      "passed": true,
+      "detail": "3.4287798224546903e-12"
+    },
+    {
+      "check": "kr1_av1_ref water conservation",
+      "passed": true,
+      "detail": "3.89299719784941e-12"
+    },
+    {
+      "check": "kr1_av1_ref no activation classified",
+      "passed": true,
+      "detail": "{'case': 'kr1_av1_ref', 'reaction_coefficient_m_s': '0.001', 'av_multiplier': '1.0', 'av_closure': 'alpha_av*36*(1-epsilon)/d_sub; d_sub=25e-6 m', 'initial_crystal_interpretation': 'zero solid; conservative activation at h_eq=0.1 um', 'initial_salt_mole_fraction': '0.05000000000000001', 'activation_threshold_m': '1e-07', 'soil_cells': '80', 'ale_cells': '64', 'maximum_soil_timestep_s': '0.5', 'actual_end_s': '180000.0', 'completed_50h': '1', 'ale_activated': '0', 'scientific_status': 'FAIL_NO_ALE_ACTIVATION', 'exit_code': '0', 'stop_reason': 'requested_horizon', 'last_coupling_event': 'activation_blocked_donor_depth', 'first_surface_precipitation_s': '108399.0', 'activation_s': 'nan', 'activation_initial_crust_concentration_mass_fraction': 'nan', 'final_crust_height_m': '0.0', 'final_minimum_porosity': '0.43', 'final_evaporation_kg_m2_s': '1.781528648571133e-05', 'total_evaporated_water_kg_m2': '3.536763778601293', 'final_internal_solid_kg_m2': '0.0', 'final_top_new_solid_kg_m2': '0.0', 'final_total_top_solid_kg_m2': '0.13182678580716806', 'final_internal_fraction_net': '0.0', 'salt_relative_residual': '3.4287798224546903e-12', 'water_relative_residual': '3.89299719784941e-12', 'solid_ledger_absolute_residual_kg': '0.0', 'activation_transfer_relative_residual': 'nan', 'soil_field_snapshots': '1801', 'crust_field_snapshots': '0', 'soil_field_max_gap_s': '100.0', 'crust_field_max_gap_s': 'nan', 'soil_field_rows': '291762', 'crust_field_rows': '0', 'compact_history_rows': '1801', 'command': '/WORK/hulm_work/zhixin/p2_h_kr_av_comparison_20261108/build/soil_solver params.input -Grid.Cells1 80 -TimeLoop.DtInitial 0.5 -TimeLoop.MaxTimeStepSize 0.5 -TimeLoop.TEnd 180000.0 -Problem.SaltMoleFraction 0.05 -P2H.ActivationHeight 1e-07 -P2H.DonorMode adaptive_multilayer -P2H.MaxDonorDepth 0.005 -P2H.MinimumSupplySaturation 0.99 -P2H.CrustCells 64 -P2H.ReactionCoefficient 0.001 -P2H.AvMultiplier 1.0 -P2H.PrecipitationMode implicit_surface -P2H.FieldOutputInterval 100.0 -P2H.GridDiagnostics false'}"
+    },
+    {
+      "check": "kr1_av1_ref scientific no-go classified",
+      "passed": true,
+      "detail": "FAIL_NO_ALE_ACTIVATION"
+    },
+    {
+      "check": "kr1_av1_ref soil fields",
+      "passed": true,
+      "detail": "1801"
+    },
+    {
+      "check": "kr1_av1_ref field scheduler",
+      "passed": true,
+      "detail": "100.0"
+    },
+    {
+      "check": "kr10_av1 kr",
+      "passed": true,
+      "detail": "0.01"
+    },
+    {
+      "check": "kr10_av1 av",
+      "passed": true,
+      "detail": "1.0"
+    },
+    {
+      "check": "kr10_av1 zero artificial seed",
+      "passed": true,
+      "detail": "zero solid; conservative activation at h_eq=0.1 um"
+    },
+    {
+      "check": "kr10_av1 x0 command",
+      "passed": true,
+      "detail": "{'-Grid.Cells1': '80', '-TimeLoop.DtInitial': '0.5', '-TimeLoop.MaxTimeStepSize': '0.5', '-TimeLoop.TEnd': '180000.0', '-Problem.SaltMoleFraction': '0.05', '-P2H.ActivationHeight': '1e-07', '-P2H.DonorMode': 'adaptive_multilayer', '-P2H.MaxDonorDepth': '0.005', '-P2H.MinimumSupplySaturation': '0.99', '-P2H.CrustCells': '64', '-P2H.ReactionCoefficient': '0.01', '-P2H.AvMultiplier': '1.0', '-P2H.PrecipitationMode': 'implicit_surface', '-P2H.FieldOutputInterval': '100.0', '-P2H.GridDiagnostics': 'false'}"
+    },
+    {
+      "check": "kr10_av1 x0 accepted field",
+      "passed": true,
+      "detail": "0.05000000000000001"
+    },
+    {
+      "check": "kr10_av1 activation 0.1 um",
+      "passed": true,
+      "detail": "{'-Grid.Cells1': '80', '-TimeLoop.DtInitial': '0.5', '-TimeLoop.MaxTimeStepSize': '0.5', '-TimeLoop.TEnd': '180000.0', '-Problem.SaltMoleFraction': '0.05', '-P2H.ActivationHeight': '1e-07', '-P2H.DonorMode': 'adaptive_multilayer', '-P2H.MaxDonorDepth': '0.005', '-P2H.MinimumSupplySaturation': '0.99', '-P2H.CrustCells': '64', '-P2H.ReactionCoefficient': '0.01', '-P2H.AvMultiplier': '1.0', '-P2H.PrecipitationMode': 'implicit_surface', '-P2H.FieldOutputInterval': '100.0', '-P2H.GridDiagnostics': 'false'}"
+    },
+    {
+      "check": "kr10_av1 production grid",
+      "passed": true,
+      "detail": "{'-Grid.Cells1': '80', '-TimeLoop.DtInitial': '0.5', '-TimeLoop.MaxTimeStepSize': '0.5', '-TimeLoop.TEnd': '180000.0', '-Problem.SaltMoleFraction': '0.05', '-P2H.ActivationHeight': '1e-07', '-P2H.DonorMode': 'adaptive_multilayer', '-P2H.MaxDonorDepth': '0.005', '-P2H.MinimumSupplySaturation': '0.99', '-P2H.CrustCells': '64', '-P2H.ReactionCoefficient': '0.01', '-P2H.AvMultiplier': '1.0', '-P2H.PrecipitationMode': 'implicit_surface', '-P2H.FieldOutputInterval': '100.0', '-P2H.GridDiagnostics': 'false'}"
+    },
+    {
+      "check": "kr10_av1 dt",
+      "passed": true,
+      "detail": "{'-Grid.Cells1': '80', '-TimeLoop.DtInitial': '0.5', '-TimeLoop.MaxTimeStepSize': '0.5', '-TimeLoop.TEnd': '180000.0', '-Problem.SaltMoleFraction': '0.05', '-P2H.ActivationHeight': '1e-07', '-P2H.DonorMode': 'adaptive_multilayer', '-P2H.MaxDonorDepth': '0.005', '-P2H.MinimumSupplySaturation': '0.99', '-P2H.CrustCells': '64', '-P2H.ReactionCoefficient': '0.01', '-P2H.AvMultiplier': '1.0', '-P2H.PrecipitationMode': 'implicit_surface', '-P2H.FieldOutputInterval': '100.0', '-P2H.GridDiagnostics': 'false'}"
+    },
+    {
+      "check": "kr10_av1 horizon",
+      "passed": true,
+      "detail": "{'-Grid.Cells1': '80', '-TimeLoop.DtInitial': '0.5', '-TimeLoop.MaxTimeStepSize': '0.5', '-TimeLoop.TEnd': '180000.0', '-Problem.SaltMoleFraction': '0.05', '-P2H.ActivationHeight': '1e-07', '-P2H.DonorMode': 'adaptive_multilayer', '-P2H.MaxDonorDepth': '0.005', '-P2H.MinimumSupplySaturation': '0.99', '-P2H.CrustCells': '64', '-P2H.ReactionCoefficient': '0.01', '-P2H.AvMultiplier': '1.0', '-P2H.PrecipitationMode': 'implicit_surface', '-P2H.FieldOutputInterval': '100.0', '-P2H.GridDiagnostics': 'false'}"
+    },
+    {
+      "check": "kr10_av1 salt conservation",
+      "passed": true,
+      "detail": "3.4287798224546903e-12"
+    },
+    {
+      "check": "kr10_av1 water conservation",
+      "passed": true,
+      "detail": "3.89299719784941e-12"
+    },
+    {
+      "check": "kr10_av1 no activation classified",
+      "passed": true,
+      "detail": "{'case': 'kr10_av1', 'reaction_coefficient_m_s': '0.01', 'av_multiplier': '1.0', 'av_closure': 'alpha_av*36*(1-epsilon)/d_sub; d_sub=25e-6 m', 'initial_crystal_interpretation': 'zero solid; conservative activation at h_eq=0.1 um', 'initial_salt_mole_fraction': '0.05000000000000001', 'activation_threshold_m': '1e-07', 'soil_cells': '80', 'ale_cells': '64', 'maximum_soil_timestep_s': '0.5', 'actual_end_s': '180000.0', 'completed_50h': '1', 'ale_activated': '0', 'scientific_status': 'FAIL_NO_ALE_ACTIVATION', 'exit_code': '0', 'stop_reason': 'requested_horizon', 'last_coupling_event': 'activation_blocked_donor_depth', 'first_surface_precipitation_s': '108399.0', 'activation_s': 'nan', 'activation_initial_crust_concentration_mass_fraction': 'nan', 'final_crust_height_m': '0.0', 'final_minimum_porosity': '0.43', 'final_evaporation_kg_m2_s': '1.781528648571133e-05', 'total_evaporated_water_kg_m2': '3.536763778601293', 'final_internal_solid_kg_m2': '0.0', 'final_top_new_solid_kg_m2': '0.0', 'final_total_top_solid_kg_m2': '0.13182678580716806', 'final_internal_fraction_net': '0.0', 'salt_relative_residual': '3.4287798224546903e-12', 'water_relative_residual': '3.89299719784941e-12', 'solid_ledger_absolute_residual_kg': '0.0', 'activation_transfer_relative_residual': 'nan', 'soil_field_snapshots': '1801', 'crust_field_snapshots': '0', 'soil_field_max_gap_s': '100.0', 'crust_field_max_gap_s': 'nan', 'soil_field_rows': '291762', 'crust_field_rows': '0', 'compact_history_rows': '1801', 'command': '/WORK/hulm_work/zhixin/p2_h_kr_av_comparison_20261108/build/soil_solver params.input -Grid.Cells1 80 -TimeLoop.DtInitial 0.5 -TimeLoop.MaxTimeStepSize 0.5 -TimeLoop.TEnd 180000.0 -Problem.SaltMoleFraction 0.05 -P2H.ActivationHeight 1e-07 -P2H.DonorMode adaptive_multilayer -P2H.MaxDonorDepth 0.005 -P2H.MinimumSupplySaturation 0.99 -P2H.CrustCells 64 -P2H.ReactionCoefficient 0.01 -P2H.AvMultiplier 1.0 -P2H.PrecipitationMode implicit_surface -P2H.FieldOutputInterval 100.0 -P2H.GridDiagnostics false'}"
+    },
+    {
+      "check": "kr10_av1 scientific no-go classified",
+      "passed": true,
+      "detail": "FAIL_NO_ALE_ACTIVATION"
+    },
+    {
+      "check": "kr10_av1 soil fields",
+      "passed": true,
+      "detail": "1801"
+    },
+    {
+      "check": "kr10_av1 field scheduler",
+      "passed": true,
+      "detail": "100.0"
+    },
+    {
+      "check": "kr1_av0p5 kr",
+      "passed": true,
+      "detail": "0.001"
+    },
+    {
+      "check": "kr1_av0p5 av",
+      "passed": true,
+      "detail": "0.5"
+    },
+    {
+      "check": "kr1_av0p5 zero artificial seed",
+      "passed": true,
+      "detail": "zero solid; conservative activation at h_eq=0.1 um"
+    },
+    {
+      "check": "kr1_av0p5 x0 command",
+      "passed": true,
+      "detail": "{'-Grid.Cells1': '80', '-TimeLoop.DtInitial': '0.5', '-TimeLoop.MaxTimeStepSize': '0.5', '-TimeLoop.TEnd': '180000.0', '-Problem.SaltMoleFraction': '0.05', '-P2H.ActivationHeight': '1e-07', '-P2H.DonorMode': 'adaptive_multilayer', '-P2H.MaxDonorDepth': '0.005', '-P2H.MinimumSupplySaturation': '0.99', '-P2H.CrustCells': '64', '-P2H.ReactionCoefficient': '0.001', '-P2H.AvMultiplier': '0.5', '-P2H.PrecipitationMode': 'implicit_surface', '-P2H.FieldOutputInterval': '100.0', '-P2H.GridDiagnostics': 'false'}"
+    },
+    {
+      "check": "kr1_av0p5 x0 accepted field",
+      "passed": true,
+      "detail": "0.05000000000000001"
+    },
+    {
+      "check": "kr1_av0p5 activation 0.1 um",
+      "passed": true,
+      "detail": "{'-Grid.Cells1': '80', '-TimeLoop.DtInitial': '0.5', '-TimeLoop.MaxTimeStepSize': '0.5', '-TimeLoop.TEnd': '180000.0', '-Problem.SaltMoleFraction': '0.05', '-P2H.ActivationHeight': '1e-07', '-P2H.DonorMode': 'adaptive_multilayer', '-P2H.MaxDonorDepth': '0.005', '-P2H.MinimumSupplySaturation': '0.99', '-P2H.CrustCells': '64', '-P2H.ReactionCoefficient': '0.001', '-P2H.AvMultiplier': '0.5', '-P2H.PrecipitationMode': 'implicit_surface', '-P2H.FieldOutputInterval': '100.0', '-P2H.GridDiagnostics': 'false'}"
+    },
+    {
+      "check": "kr1_av0p5 production grid",
+      "passed": true,
+      "detail": "{'-Grid.Cells1': '80', '-TimeLoop.DtInitial': '0.5', '-TimeLoop.MaxTimeStepSize': '0.5', '-TimeLoop.TEnd': '180000.0', '-Problem.SaltMoleFraction': '0.05', '-P2H.ActivationHeight': '1e-07', '-P2H.DonorMode': 'adaptive_multilayer', '-P2H.MaxDonorDepth': '0.005', '-P2H.MinimumSupplySaturation': '0.99', '-P2H.CrustCells': '64', '-P2H.ReactionCoefficient': '0.001', '-P2H.AvMultiplier': '0.5', '-P2H.PrecipitationMode': 'implicit_surface', '-P2H.FieldOutputInterval': '100.0', '-P2H.GridDiagnostics': 'false'}"
+    },
+    {
+      "check": "kr1_av0p5 dt",
+      "passed": true,
+      "detail": "{'-Grid.Cells1': '80', '-TimeLoop.DtInitial': '0.5', '-TimeLoop.MaxTimeStepSize': '0.5', '-TimeLoop.TEnd': '180000.0', '-Problem.SaltMoleFraction': '0.05', '-P2H.ActivationHeight': '1e-07', '-P2H.DonorMode': 'adaptive_multilayer', '-P2H.MaxDonorDepth': '0.005', '-P2H.MinimumSupplySaturation': '0.99', '-P2H.CrustCells': '64', '-P2H.ReactionCoefficient': '0.001', '-P2H.AvMultiplier': '0.5', '-P2H.PrecipitationMode': 'implicit_surface', '-P2H.FieldOutputInterval': '100.0', '-P2H.GridDiagnostics': 'false'}"
+    },
+    {
+      "check": "kr1_av0p5 horizon",
+      "passed": true,
+      "detail": "{'-Grid.Cells1': '80', '-TimeLoop.DtInitial': '0.5', '-TimeLoop.MaxTimeStepSize': '0.5', '-TimeLoop.TEnd': '180000.0', '-Problem.SaltMoleFraction': '0.05', '-P2H.ActivationHeight': '1e-07', '-P2H.DonorMode': 'adaptive_multilayer', '-P2H.MaxDonorDepth': '0.005', '-P2H.MinimumSupplySaturation': '0.99', '-P2H.CrustCells': '64', '-P2H.ReactionCoefficient': '0.001', '-P2H.AvMultiplier': '0.5', '-P2H.PrecipitationMode': 'implicit_surface', '-P2H.FieldOutputInterval': '100.0', '-P2H.GridDiagnostics': 'false'}"
+    },
+    {
+      "check": "kr1_av0p5 salt conservation",
+      "passed": true,
+      "detail": "3.4287798224546903e-12"
+    },
+    {
+      "check": "kr1_av0p5 water conservation",
+      "passed": true,
+      "detail": "3.89299719784941e-12"
+    },
+    {
+      "check": "kr1_av0p5 no activation classified",
+      "passed": true,
+      "detail": "{'case': 'kr1_av0p5', 'reaction_coefficient_m_s': '0.001', 'av_multiplier': '0.5', 'av_closure': 'alpha_av*36*(1-epsilon)/d_sub; d_sub=25e-6 m', 'initial_crystal_interpretation': 'zero solid; conservative activation at h_eq=0.1 um', 'initial_salt_mole_fraction': '0.05000000000000001', 'activation_threshold_m': '1e-07', 'soil_cells': '80', 'ale_cells': '64', 'maximum_soil_timestep_s': '0.5', 'actual_end_s': '180000.0', 'completed_50h': '1', 'ale_activated': '0', 'scientific_status': 'FAIL_NO_ALE_ACTIVATION', 'exit_code': '0', 'stop_reason': 'requested_horizon', 'last_coupling_event': 'activation_blocked_donor_depth', 'first_surface_precipitation_s': '108399.0', 'activation_s': 'nan', 'activation_initial_crust_concentration_mass_fraction': 'nan', 'final_crust_height_m': '0.0', 'final_minimum_porosity': '0.43', 'final_evaporation_kg_m2_s': '1.781528648571133e-05', 'total_evaporated_water_kg_m2': '3.536763778601293', 'final_internal_solid_kg_m2': '0.0', 'final_top_new_solid_kg_m2': '0.0', 'final_total_top_solid_kg_m2': '0.13182678580716806', 'final_internal_fraction_net': '0.0', 'salt_relative_residual': '3.4287798224546903e-12', 'water_relative_residual': '3.89299719784941e-12', 'solid_ledger_absolute_residual_kg': '0.0', 'activation_transfer_relative_residual': 'nan', 'soil_field_snapshots': '1801', 'crust_field_snapshots': '0', 'soil_field_max_gap_s': '100.0', 'crust_field_max_gap_s': 'nan', 'soil_field_rows': '291762', 'crust_field_rows': '0', 'compact_history_rows': '1801', 'command': '/WORK/hulm_work/zhixin/p2_h_kr_av_comparison_20261108/build/soil_solver params.input -Grid.Cells1 80 -TimeLoop.DtInitial 0.5 -TimeLoop.MaxTimeStepSize 0.5 -TimeLoop.TEnd 180000.0 -Problem.SaltMoleFraction 0.05 -P2H.ActivationHeight 1e-07 -P2H.DonorMode adaptive_multilayer -P2H.MaxDonorDepth 0.005 -P2H.MinimumSupplySaturation 0.99 -P2H.CrustCells 64 -P2H.ReactionCoefficient 0.001 -P2H.AvMultiplier 0.5 -P2H.PrecipitationMode implicit_surface -P2H.FieldOutputInterval 100.0 -P2H.GridDiagnostics false'}"
+    },
+    {
+      "check": "kr1_av0p5 scientific no-go classified",
+      "passed": true,
+      "detail": "FAIL_NO_ALE_ACTIVATION"
+    },
+    {
+      "check": "kr1_av0p5 soil fields",
+      "passed": true,
+      "detail": "1801"
+    },
+    {
+      "check": "kr1_av0p5 field scheduler",
+      "passed": true,
+      "detail": "100.0"
+    },
+    {
+      "check": "kr1_av2 kr",
+      "passed": true,
+      "detail": "0.001"
+    },
+    {
+      "check": "kr1_av2 av",
+      "passed": true,
+      "detail": "2.0"
+    },
+    {
+      "check": "kr1_av2 zero artificial seed",
+      "passed": true,
+      "detail": "zero solid; conservative activation at h_eq=0.1 um"
+    },
+    {
+      "check": "kr1_av2 x0 command",
+      "passed": true,
+      "detail": "{'-Grid.Cells1': '80', '-TimeLoop.DtInitial': '0.5', '-TimeLoop.MaxTimeStepSize': '0.5', '-TimeLoop.TEnd': '180000.0', '-Problem.SaltMoleFraction': '0.05', '-P2H.ActivationHeight': '1e-07', '-P2H.DonorMode': 'adaptive_multilayer', '-P2H.MaxDonorDepth': '0.005', '-P2H.MinimumSupplySaturation': '0.99', '-P2H.CrustCells': '64', '-P2H.ReactionCoefficient': '0.001', '-P2H.AvMultiplier': '2.0', '-P2H.PrecipitationMode': 'implicit_surface', '-P2H.FieldOutputInterval': '100.0', '-P2H.GridDiagnostics': 'false'}"
+    },
+    {
+      "check": "kr1_av2 x0 accepted field",
+      "passed": true,
+      "detail": "0.05000000000000001"
+    },
+    {
+      "check": "kr1_av2 activation 0.1 um",
+      "passed": true,
+      "detail": "{'-Grid.Cells1': '80', '-TimeLoop.DtInitial': '0.5', '-TimeLoop.MaxTimeStepSize': '0.5', '-TimeLoop.TEnd': '180000.0', '-Problem.SaltMoleFraction': '0.05', '-P2H.ActivationHeight': '1e-07', '-P2H.DonorMode': 'adaptive_multilayer', '-P2H.MaxDonorDepth': '0.005', '-P2H.MinimumSupplySaturation': '0.99', '-P2H.CrustCells': '64', '-P2H.ReactionCoefficient': '0.001', '-P2H.AvMultiplier': '2.0', '-P2H.PrecipitationMode': 'implicit_surface', '-P2H.FieldOutputInterval': '100.0', '-P2H.GridDiagnostics': 'false'}"
+    },
+    {
+      "check": "kr1_av2 production grid",
+      "passed": true,
+      "detail": "{'-Grid.Cells1': '80', '-TimeLoop.DtInitial': '0.5', '-TimeLoop.MaxTimeStepSize': '0.5', '-TimeLoop.TEnd': '180000.0', '-Problem.SaltMoleFraction': '0.05', '-P2H.ActivationHeight': '1e-07', '-P2H.DonorMode': 'adaptive_multilayer', '-P2H.MaxDonorDepth': '0.005', '-P2H.MinimumSupplySaturation': '0.99', '-P2H.CrustCells': '64', '-P2H.ReactionCoefficient': '0.001', '-P2H.AvMultiplier': '2.0', '-P2H.PrecipitationMode': 'implicit_surface', '-P2H.FieldOutputInterval': '100.0', '-P2H.GridDiagnostics': 'false'}"
+    },
+    {
+      "check": "kr1_av2 dt",
+      "passed": true,
+      "detail": "{'-Grid.Cells1': '80', '-TimeLoop.DtInitial': '0.5', '-TimeLoop.MaxTimeStepSize': '0.5', '-TimeLoop.TEnd': '180000.0', '-Problem.SaltMoleFraction': '0.05', '-P2H.ActivationHeight': '1e-07', '-P2H.DonorMode': 'adaptive_multilayer', '-P2H.MaxDonorDepth': '0.005', '-P2H.MinimumSupplySaturation': '0.99', '-P2H.CrustCells': '64', '-P2H.ReactionCoefficient': '0.001', '-P2H.AvMultiplier': '2.0', '-P2H.PrecipitationMode': 'implicit_surface', '-P2H.FieldOutputInterval': '100.0', '-P2H.GridDiagnostics': 'false'}"
+    },
+    {
+      "check": "kr1_av2 horizon",
+      "passed": true,
+      "detail": "{'-Grid.Cells1': '80', '-TimeLoop.DtInitial': '0.5', '-TimeLoop.MaxTimeStepSize': '0.5', '-TimeLoop.TEnd': '180000.0', '-Problem.SaltMoleFraction': '0.05', '-P2H.ActivationHeight': '1e-07', '-P2H.DonorMode': 'adaptive_multilayer', '-P2H.MaxDonorDepth': '0.005', '-P2H.MinimumSupplySaturation': '0.99', '-P2H.CrustCells': '64', '-P2H.ReactionCoefficient': '0.001', '-P2H.AvMultiplier': '2.0', '-P2H.PrecipitationMode': 'implicit_surface', '-P2H.FieldOutputInterval': '100.0', '-P2H.GridDiagnostics': 'false'}"
+    },
+    {
+      "check": "kr1_av2 salt conservation",
+      "passed": true,
+      "detail": "3.4287798224546903e-12"
+    },
+    {
+      "check": "kr1_av2 water conservation",
+      "passed": true,
+      "detail": "3.89299719784941e-12"
+    },
+    {
+      "check": "kr1_av2 no activation classified",
+      "passed": true,
+      "detail": "{'case': 'kr1_av2', 'reaction_coefficient_m_s': '0.001', 'av_multiplier': '2.0', 'av_closure': 'alpha_av*36*(1-epsilon)/d_sub; d_sub=25e-6 m', 'initial_crystal_interpretation': 'zero solid; conservative activation at h_eq=0.1 um', 'initial_salt_mole_fraction': '0.05000000000000001', 'activation_threshold_m': '1e-07', 'soil_cells': '80', 'ale_cells': '64', 'maximum_soil_timestep_s': '0.5', 'actual_end_s': '180000.0', 'completed_50h': '1', 'ale_activated': '0', 'scientific_status': 'FAIL_NO_ALE_ACTIVATION', 'exit_code': '0', 'stop_reason': 'requested_horizon', 'last_coupling_event': 'activation_blocked_donor_depth', 'first_surface_precipitation_s': '108399.0', 'activation_s': 'nan', 'activation_initial_crust_concentration_mass_fraction': 'nan', 'final_crust_height_m': '0.0', 'final_minimum_porosity': '0.43', 'final_evaporation_kg_m2_s': '1.781528648571133e-05', 'total_evaporated_water_kg_m2': '3.536763778601293', 'final_internal_solid_kg_m2': '0.0', 'final_top_new_solid_kg_m2': '0.0', 'final_total_top_solid_kg_m2': '0.13182678580716806', 'final_internal_fraction_net': '0.0', 'salt_relative_residual': '3.4287798224546903e-12', 'water_relative_residual': '3.89299719784941e-12', 'solid_ledger_absolute_residual_kg': '0.0', 'activation_transfer_relative_residual': 'nan', 'soil_field_snapshots': '1801', 'crust_field_snapshots': '0', 'soil_field_max_gap_s': '100.0', 'crust_field_max_gap_s': 'nan', 'soil_field_rows': '291762', 'crust_field_rows': '0', 'compact_history_rows': '1801', 'command': '/WORK/hulm_work/zhixin/p2_h_kr_av_comparison_20261108/build/soil_solver params.input -Grid.Cells1 80 -TimeLoop.DtInitial 0.5 -TimeLoop.MaxTimeStepSize 0.5 -TimeLoop.TEnd 180000.0 -Problem.SaltMoleFraction 0.05 -P2H.ActivationHeight 1e-07 -P2H.DonorMode adaptive_multilayer -P2H.MaxDonorDepth 0.005 -P2H.MinimumSupplySaturation 0.99 -P2H.CrustCells 64 -P2H.ReactionCoefficient 0.001 -P2H.AvMultiplier 2.0 -P2H.PrecipitationMode implicit_surface -P2H.FieldOutputInterval 100.0 -P2H.GridDiagnostics false'}"
+    },
+    {
+      "check": "kr1_av2 scientific no-go classified",
+      "passed": true,
+      "detail": "FAIL_NO_ALE_ACTIVATION"
+    },
+    {
+      "check": "kr1_av2 soil fields",
+      "passed": true,
+      "detail": "1801"
+    },
+    {
+      "check": "kr1_av2 field scheduler",
+      "passed": true,
+      "detail": "100.0"
+    },
+    {
+      "check": "figure figure1_fixed_av_kr_evolution.png",
+      "passed": true,
+      "detail": "/WORK/hulm_work/zhixin/p2_h_kr_av_comparison_20261108/analysis/figures/figure1_fixed_av_kr_evolution.png"
+    },
+    {
+      "check": "figure figure1_fixed_av_kr_evolution.pdf",
+      "passed": true,
+      "detail": "/WORK/hulm_work/zhixin/p2_h_kr_av_comparison_20261108/analysis/figures/figure1_fixed_av_kr_evolution.pdf"
+    },
+    {
+      "check": "figure figure1_fixed_av_kr_evolution.svg",
+      "passed": true,
+      "detail": "/WORK/hulm_work/zhixin/p2_h_kr_av_comparison_20261108/analysis/figures/figure1_fixed_av_kr_evolution.svg"
+    },
+    {
+      "check": "figure figure2_fixed_kr_av_evolution.png",
+      "passed": true,
+      "detail": "/WORK/hulm_work/zhixin/p2_h_kr_av_comparison_20261108/analysis/figures/figure2_fixed_kr_av_evolution.png"
+    },
+    {
+      "check": "figure figure2_fixed_kr_av_evolution.pdf",
+      "passed": true,
+      "detail": "/WORK/hulm_work/zhixin/p2_h_kr_av_comparison_20261108/analysis/figures/figure2_fixed_kr_av_evolution.pdf"
+    },
+    {
+      "check": "figure figure2_fixed_kr_av_evolution.svg",
+      "passed": true,
+      "detail": "/WORK/hulm_work/zhixin/p2_h_kr_av_comparison_20261108/analysis/figures/figure2_fixed_kr_av_evolution.svg"
+    },
+    {
+      "check": "figure figure3_evaporation_rate.png",
+      "passed": true,
+      "detail": "/WORK/hulm_work/zhixin/p2_h_kr_av_comparison_20261108/analysis/figures/figure3_evaporation_rate.png"
+    },
+    {
+      "check": "figure figure3_evaporation_rate.pdf",
+      "passed": true,
+      "detail": "/WORK/hulm_work/zhixin/p2_h_kr_av_comparison_20261108/analysis/figures/figure3_evaporation_rate.pdf"
+    },
+    {
+      "check": "figure figure3_evaporation_rate.svg",
+      "passed": true,
+      "detail": "/WORK/hulm_work/zhixin/p2_h_kr_av_comparison_20261108/analysis/figures/figure3_evaporation_rate.svg"
+    },
+    {
+      "check": "figure figure4_height_and_minimum_porosity.png",
+      "passed": true,
+      "detail": "/WORK/hulm_work/zhixin/p2_h_kr_av_comparison_20261108/analysis/figures/figure4_height_and_minimum_porosity.png"
+    },
+    {
+      "check": "figure figure4_height_and_minimum_porosity.pdf",
+      "passed": true,
+      "detail": "/WORK/hulm_work/zhixin/p2_h_kr_av_comparison_20261108/analysis/figures/figure4_height_and_minimum_porosity.pdf"
+    },
+    {
+      "check": "figure figure4_height_and_minimum_porosity.svg",
+      "passed": true,
+      "detail": "/WORK/hulm_work/zhixin/p2_h_kr_av_comparison_20261108/analysis/figures/figure4_height_and_minimum_porosity.svg"
+    }
+  ]
+}

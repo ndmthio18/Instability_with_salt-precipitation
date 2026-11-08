@@ -1,0 +1,25 @@
+{
+  "branch": "research/p2-h-kr-av-comparison",
+  "base_commit": "63f267f9eae85bf434a2ad9ed0804a63723e9478",
+  "hpcc_root": "/WORK/hulm_work/zhixin/p2_h_kr_av_comparison_20261108",
+  "build_job": "16407548",
+  "corrected_matrix_job": "16408105",
+  "invalidated_wrong_namespace_matrix_job": "16407598",
+  "solver_sha256": "bce211633378d0fc3ef92dde787dfd96ba33ca367202634848138ff5a28f54f0",
+  "case_jobs": [
+    "16408105",
+    "16408106",
+    "16408107",
+    "16408108",
+    "16408109"
+  ],
+  "interpretation": "zero initial crust and solid; conservative ALE activation threshold at 0.1 um equivalent real surface solid",
+  "initial_salt_mole_fraction": 0.05,
+  "requested_end_s": 180000.0,
+  "source_hashes": {
+    "run_kr_av.py": "d42fbd4fe4b9c17979d78d1eec694774675519c4ccbccb4cd453d4402f6969b2",
+    "analyze_kr_av.py": "a62123f59ff8908dba22830235cf5337282d8a06208766389482d457000ee216",
+    "plot_kr_av.py": "0ad1fe4a714b6317904714995ed15afc745dadfd5cf202d07119de0cd371915a",
+    "verify_kr_av.py": "c2617c6832ec4a1c06ba37e69f79d0d902ca83d9303ac2d01e675ba6391c3589"
+  }
+}

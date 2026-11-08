@@ -1,0 +1,24 @@
+{
+  "reference": {
+    "reaction_coefficient_m_s": 0.001,
+    "av_multiplier": 1.0
+  },
+  "fixed_av_group": [
+    "kr0p1_av1",
+    "kr1_av1_ref",
+    "kr10_av1"
+  ],
+  "fixed_kr_group": [
+    "kr1_av0p5",
+    "kr1_av1_ref",
+    "kr1_av2"
+  ],
+  "unique_runs": [
+    "kr0p1_av1",
+    "kr1_av1_ref",
+    "kr10_av1",
+    "kr1_av0p5",
+    "kr1_av2"
+  ],
+  "reference_reused": true
+}

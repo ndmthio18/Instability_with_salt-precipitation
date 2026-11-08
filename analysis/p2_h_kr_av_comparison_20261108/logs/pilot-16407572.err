@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/WORK/hulm_work/zhixin/p2_h_kr_av_comparison_20261108/repo/model/p2_h_ale_coupling/run_kr_av.py", line 58, in <module>
+    os.replace(manifest_tmp, stage_dir / "cases.json")
+FileNotFoundError: [Errno 2] No such file or directory: '/WORK/hulm_work/zhixin/p2_h_kr_av_comparison_20261108/pilot/cases.16407572.tmp' -> '/WORK/hulm_work/zhixin/p2_h_kr_av_comparison_20261108/pilot/cases.json'

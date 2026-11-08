@@ -31,6 +31,7 @@
         SurfaceState acceptedSurface_;
         std::unique_ptr<p2h::ALE> ale_;
         double heldLiquid_=0,heldSalt_=0,initialSalt_=0,initialWater_=0;
+        double nextFieldOutputTime_=0;
         unsigned long coupledTrials_=0,rejectedTrials_=0;
         bool injectedFailure_=false;
         std::ofstream surfaceLog_,eventLog_,crustFields_,soilFields_,donorLog_,allocationLog_;
@@ -192,6 +193,9 @@
             surfaceLog_.open("coupled_history.csv"); eventLog_.open("coupling_events.csv"); crustFields_.open("crust_fields.csv");
             soilFields_.open("soil_fields.csv");
             donorLog_.open("donor_profiles.csv"); allocationLog_.open("donor_attempts.csv");
+            nextFieldOutputTime_=getParam<double>("P2H.FieldOutputInterval",100.0);
+            if(!(std::isfinite(nextFieldOutputTime_) && nextFieldOutputTime_>0))
+                throw std::runtime_error("invalid P2-H field output interval");
             donorLog_<<std::setprecision(17)<<"attempt,time_s,dof,depth_m,box_deepest_m,volume_m3,available_kg,extracted_kg,sw_before,sw_after,c_before,c_after,p_before_pa,p_after_pa,rho_before,rho_after\n";
             allocationLog_<<std::setprecision(17)<<"attempt,time_s,h_m,required_kg,available_kg,sufficient,donor_count,used_depth_m,salt_transfer_kg,water_transfer_kg,salt_transfer_residual_kg,water_transfer_residual_kg,initial_salt_kg,initial_water_kg\n";
             const auto mode=getParam<std::string>("P2H.DonorMode","top_only");
@@ -340,6 +344,12 @@
         bool activationOnlyComplete() const { return acceptedSurface_.active && getParam<bool>("P2H.ActivationOnly",false); }
         template<class Solution> void writeSurface_(const Solution& x,double time,double dt,double j) {
             const auto& st=acceptedSurface_; const auto sm=inventory_(x); const double a=area_();
+            const double outputInterval=getParam<double>("P2H.FieldOutputInterval",100.0);
+            const double outputTolerance=1e-10*std::max(1.0,time);
+            const bool periodicOutput=time==0 || time+outputTolerance>=nextFieldOutputTime_;
+            const bool fieldOutput=periodicOutput || time==st.activation || activationOnlyComplete();
+            if(periodicOutput && time>0)
+                while(nextFieldOutputTime_<=time+outputTolerance) nextFieldOutputTime_+=outputInterval;
             double cs=0,cw=0,top=st.loose,inside=0,eps=ale_->p.birth,h=0,solid=st.loose,defect=0;
             double topNew=0,netFraction=0,positiveFraction=0,positiveRate=0,dissolutionRate=0,growth=0,crustTopC=0;
             if(st.active) {
@@ -356,7 +366,7 @@
                 if(inside+topNew>0) netFraction=inside/(inside+topNew);
                 if(st.internalPositive+topNew>0) positiveFraction=st.internalPositive/(st.internalPositive+topNew);
                 defect=(solid-top-inside)*a;
-                if(time==st.activation || std::fmod(time,100)<1e-8 || activationOnlyComplete())
+                if(fieldOutput)
                     for(int i=0;i<ale_->n;++i) crustFields_<<time<<','<<ale_->faces[i]*h<<','<<ale_->faces[i+1]*h<<','<<st.crust[i]<<','<<st.crust[ale_->n+i]<<'\n';
             }
             surfaceLog_<<time<<','<<dt<<','<<st.active<<','<<st.activation<<','<<h<<','<<solid/(ale_->p.crystal*(1-ale_->p.birth))<<','<<st.pratHeight<<','
@@ -366,7 +376,7 @@
                 <<sm.first+cs+solid*a-initialSalt_<<','<<sm.second+cw+st.vapour-initialWater_<<','<<defect<<','<<st.poreSaltTransfer<<','<<st.poreWaterTransfer<<','<<coupledTrials_<<','<<rejectedTrials_<<','
                 <<(st.active?st.crust[ale_->inv()+3]:0)<<','<<(st.active?st.crust[ale_->inv()+2]:0)<<','
                 <<ale_->p.reaction<<','<<ale_->p.avMultiplier<<'\n';
-            if(time==0 || time==st.activation || std::fmod(time,100)<1e-8 || activationOnlyComplete())
+            if(fieldOutput)
                 for(const auto& vertex:vertices(this->gridGeometry().gridView())) {
                     const auto i=this->gridGeometry().vertexMapper().index(vertex);
                     soilFields_<<time<<','<<vertex.geometry().center()[1]<<','<<massFraction(x[i][moleFractionIdx])<<','<<sw(x[i][pressureIdx])<<','<<rhoW(x[i][moleFractionIdx])<<'\n';
