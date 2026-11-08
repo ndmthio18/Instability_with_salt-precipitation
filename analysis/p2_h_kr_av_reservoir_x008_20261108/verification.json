@@ -1,0 +1,10 @@
+{
+  "numerical_conservation_passed": true,
+  "activation_transfer_passed": true,
+  "ale_activation_passed": true,
+  "requested_horizon_passed": false,
+  "scientific_status": "FAIL_ALE_UPPER_POROSITY_BOUND",
+  "matrix_status": "NOT_RUN_PILOT_GATE_FAILED",
+  "figures_passed": true,
+  "overall_passed": false
+}

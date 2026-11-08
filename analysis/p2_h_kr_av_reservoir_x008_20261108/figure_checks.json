@@ -1,0 +1,50 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "stem": "figure1_surface_activation",
+      "pixels": [
+        2194,
+        1774
+      ],
+      "nonblank": true,
+      "formats": true
+    },
+    {
+      "stem": "figure2_ale_evolution",
+      "pixels": [
+        2584,
+        1894
+      ],
+      "nonblank": true,
+      "formats": true
+    },
+    {
+      "stem": "figure3_last_accepted_rejected_profiles",
+      "pixels": [
+        2554,
+        1174
+      ],
+      "nonblank": true,
+      "formats": true
+    },
+    {
+      "stem": "figure4_flux_and_conservation",
+      "pixels": [
+        2584,
+        1894
+      ],
+      "nonblank": true,
+      "formats": true
+    },
+    {
+      "stem": "figure5_porosity_columns",
+      "pixels": [
+        2190,
+        1294
+      ],
+      "nonblank": true,
+      "formats": true
+    }
+  ]
+}

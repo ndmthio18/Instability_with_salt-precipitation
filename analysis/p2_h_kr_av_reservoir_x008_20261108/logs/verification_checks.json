@@ -1,0 +1,399 @@
+{
+  "stage": "verification",
+  "passed": true,
+  "checks": [
+    {
+      "name": "hydrostatic_reservoir: exit",
+      "passed": true,
+      "detail": {
+        "case": "hydrostatic_reservoir",
+        "exit_code": 0,
+        "elapsed_s": 1.9247114639729261,
+        "slurm_job_id": "16437446",
+        "hostname": "ibc11b11n19"
+      }
+    },
+    {
+      "name": "hydrostatic_reservoir: boundary mode",
+      "passed": true,
+      "detail": {
+        "bottom_mode": "reservoir",
+        "domain_bottom_y_m": "0",
+        "domain_top_y_m": "0.20000000000000001",
+        "water_level_parameter_m": "0.01",
+        "water_table_y_m": "-0.01",
+        "reservoir_pressure_pa": "99885.822518923713",
+        "configured_salt_mole_fraction": "0.080000000000000002",
+        "reservoir_salt_mole_fraction": "0.080000000000000002",
+        "initial_min_salt_mole_fraction": "0.080000000000000002",
+        "initial_max_salt_mole_fraction": "0.080000000000000002"
+      }
+    },
+    {
+      "name": "hydrostatic_reservoir: domain/water-level geometry",
+      "passed": true,
+      "detail": {
+        "bottom_mode": "reservoir",
+        "domain_bottom_y_m": "0",
+        "domain_top_y_m": "0.20000000000000001",
+        "water_level_parameter_m": "0.01",
+        "water_table_y_m": "-0.01",
+        "reservoir_pressure_pa": "99885.822518923713",
+        "configured_salt_mole_fraction": "0.080000000000000002",
+        "reservoir_salt_mole_fraction": "0.080000000000000002",
+        "initial_min_salt_mole_fraction": "0.080000000000000002",
+        "initial_max_salt_mole_fraction": "0.080000000000000002"
+      }
+    },
+    {
+      "name": "hydrostatic_reservoir: initial/reservoir xNaCl",
+      "passed": true,
+      "detail": {
+        "bottom_mode": "reservoir",
+        "domain_bottom_y_m": "0",
+        "domain_top_y_m": "0.20000000000000001",
+        "water_level_parameter_m": "0.01",
+        "water_table_y_m": "-0.01",
+        "reservoir_pressure_pa": "99885.822518923713",
+        "configured_salt_mole_fraction": "0.080000000000000002",
+        "reservoir_salt_mole_fraction": "0.080000000000000002",
+        "initial_min_salt_mole_fraction": "0.080000000000000002",
+        "initial_max_salt_mole_fraction": "0.080000000000000002"
+      }
+    },
+    {
+      "name": "hydrostatic_reservoir: finite boundary ledger",
+      "passed": true,
+      "detail": {
+        "rows": 201
+      }
+    },
+    {
+      "name": "hydrostatic_reservoir: local face reconstruction",
+      "passed": true,
+      "detail": {
+        "max_abs_kg_s": 0.0
+      }
+    },
+    {
+      "name": "hydrostatic_reservoir: salt balance",
+      "passed": true,
+      "detail": {
+        "relative": 1.4870445048851239e-15
+      }
+    },
+    {
+      "name": "hydrostatic_reservoir: water balance",
+      "passed": true,
+      "detail": {
+        "relative": 1.4914296948265136e-15
+      }
+    },
+    {
+      "name": "evaporating_reservoir: exit",
+      "passed": true,
+      "detail": {
+        "case": "evaporating_reservoir",
+        "exit_code": 0,
+        "elapsed_s": 3.374143147841096,
+        "slurm_job_id": "16437446",
+        "hostname": "ibc11b11n19"
+      }
+    },
+    {
+      "name": "evaporating_reservoir: boundary mode",
+      "passed": true,
+      "detail": {
+        "bottom_mode": "reservoir",
+        "domain_bottom_y_m": "0",
+        "domain_top_y_m": "0.20000000000000001",
+        "water_level_parameter_m": "0.01",
+        "water_table_y_m": "-0.01",
+        "reservoir_pressure_pa": "99885.822518923713",
+        "configured_salt_mole_fraction": "0.080000000000000002",
+        "reservoir_salt_mole_fraction": "0.080000000000000002",
+        "initial_min_salt_mole_fraction": "0.080000000000000002",
+        "initial_max_salt_mole_fraction": "0.080000000000000002"
+      }
+    },
+    {
+      "name": "evaporating_reservoir: domain/water-level geometry",
+      "passed": true,
+      "detail": {
+        "bottom_mode": "reservoir",
+        "domain_bottom_y_m": "0",
+        "domain_top_y_m": "0.20000000000000001",
+        "water_level_parameter_m": "0.01",
+        "water_table_y_m": "-0.01",
+        "reservoir_pressure_pa": "99885.822518923713",
+        "configured_salt_mole_fraction": "0.080000000000000002",
+        "reservoir_salt_mole_fraction": "0.080000000000000002",
+        "initial_min_salt_mole_fraction": "0.080000000000000002",
+        "initial_max_salt_mole_fraction": "0.080000000000000002"
+      }
+    },
+    {
+      "name": "evaporating_reservoir: initial/reservoir xNaCl",
+      "passed": true,
+      "detail": {
+        "bottom_mode": "reservoir",
+        "domain_bottom_y_m": "0",
+        "domain_top_y_m": "0.20000000000000001",
+        "water_level_parameter_m": "0.01",
+        "water_table_y_m": "-0.01",
+        "reservoir_pressure_pa": "99885.822518923713",
+        "configured_salt_mole_fraction": "0.080000000000000002",
+        "reservoir_salt_mole_fraction": "0.080000000000000002",
+        "initial_min_salt_mole_fraction": "0.080000000000000002",
+        "initial_max_salt_mole_fraction": "0.080000000000000002"
+      }
+    },
+    {
+      "name": "evaporating_reservoir: finite boundary ledger",
+      "passed": true,
+      "detail": {
+        "rows": 601
+      }
+    },
+    {
+      "name": "evaporating_reservoir: local face reconstruction",
+      "passed": true,
+      "detail": {
+        "max_abs_kg_s": 0.0
+      }
+    },
+    {
+      "name": "evaporating_reservoir: salt balance",
+      "passed": true,
+      "detail": {
+        "relative": 4.130679180236455e-15
+      }
+    },
+    {
+      "name": "evaporating_reservoir: water balance",
+      "passed": true,
+      "detail": {
+        "relative": 5.220003931892798e-15
+      }
+    },
+    {
+      "name": "no_flux_regression: exit",
+      "passed": true,
+      "detail": {
+        "case": "no_flux_regression",
+        "exit_code": 0,
+        "elapsed_s": 4.726957315579057,
+        "slurm_job_id": "16437446",
+        "hostname": "ibc11b11n19"
+      }
+    },
+    {
+      "name": "no_flux_regression: boundary mode",
+      "passed": true,
+      "detail": {
+        "bottom_mode": "no_flux",
+        "domain_bottom_y_m": "0",
+        "domain_top_y_m": "0.20000000000000001",
+        "water_level_parameter_m": "0.01",
+        "water_table_y_m": "-0.01",
+        "reservoir_pressure_pa": "99885.822518923713",
+        "configured_salt_mole_fraction": "0.080000000000000002",
+        "reservoir_salt_mole_fraction": "0.080000000000000002",
+        "initial_min_salt_mole_fraction": "0.080000000000000002",
+        "initial_max_salt_mole_fraction": "0.080000000000000002"
+      }
+    },
+    {
+      "name": "no_flux_regression: domain/water-level geometry",
+      "passed": true,
+      "detail": {
+        "bottom_mode": "no_flux",
+        "domain_bottom_y_m": "0",
+        "domain_top_y_m": "0.20000000000000001",
+        "water_level_parameter_m": "0.01",
+        "water_table_y_m": "-0.01",
+        "reservoir_pressure_pa": "99885.822518923713",
+        "configured_salt_mole_fraction": "0.080000000000000002",
+        "reservoir_salt_mole_fraction": "0.080000000000000002",
+        "initial_min_salt_mole_fraction": "0.080000000000000002",
+        "initial_max_salt_mole_fraction": "0.080000000000000002"
+      }
+    },
+    {
+      "name": "no_flux_regression: initial/reservoir xNaCl",
+      "passed": true,
+      "detail": {
+        "bottom_mode": "no_flux",
+        "domain_bottom_y_m": "0",
+        "domain_top_y_m": "0.20000000000000001",
+        "water_level_parameter_m": "0.01",
+        "water_table_y_m": "-0.01",
+        "reservoir_pressure_pa": "99885.822518923713",
+        "configured_salt_mole_fraction": "0.080000000000000002",
+        "reservoir_salt_mole_fraction": "0.080000000000000002",
+        "initial_min_salt_mole_fraction": "0.080000000000000002",
+        "initial_max_salt_mole_fraction": "0.080000000000000002"
+      }
+    },
+    {
+      "name": "no_flux_regression: finite boundary ledger",
+      "passed": true,
+      "detail": {
+        "rows": 601
+      }
+    },
+    {
+      "name": "no_flux_regression: local face reconstruction",
+      "passed": true,
+      "detail": {
+        "max_abs_kg_s": 0.0
+      }
+    },
+    {
+      "name": "no_flux_regression: salt balance",
+      "passed": true,
+      "detail": {
+        "relative": 2.41231664125809e-14
+      }
+    },
+    {
+      "name": "no_flux_regression: water balance",
+      "passed": true,
+      "detail": {
+        "relative": 2.5540733523904046e-14
+      }
+    },
+    {
+      "name": "hydrostatic reservoir remains stationary",
+      "passed": true,
+      "detail": {
+        "soil_salt_kg": 0.0,
+        "soil_water_kg": 0.0,
+        "top_soil_mass_fraction": 0.0,
+        "top_soil_sw": 0.0
+      }
+    },
+    {
+      "name": "hydrostatic reservoir reaction is zero",
+      "passed": true,
+      "detail": {
+        "last": {
+          "time_s": "100",
+          "dt_s": "0.5",
+          "bottom_liquid_in_kg_s": "1.4599398385075971e-18",
+          "bottom_salt_in_kg_s": "3.2121253709954899e-19",
+          "bottom_water_in_kg_s": "1.1387273014080481e-18",
+          "bottom_liquid_in_kg_m2_s": "1.4599398385075971e-15",
+          "bottom_salt_in_kg_m2_s": "3.2121253709954899e-16",
+          "bottom_water_in_kg_m2_s": "1.138727301408048e-15",
+          "cumulative_bottom_liquid_kg": "1.4599398385075931e-16",
+          "cumulative_bottom_salt_kg": "3.2121253709954987e-17",
+          "cumulative_bottom_water_kg": "1.1387273014080432e-16",
+          "bottom_liquid_before_kg": "0.0015687649330630271",
+          "bottom_liquid_after_kg": "0.0015687649330630271",
+          "bottom_salt_before_kg": "0.00034515510862159548",
+          "bottom_salt_after_kg": "0.00034515510862159548",
+          "cut_liquid_down_kg_s": "-1.4599398385075971e-18",
+          "cut_salt_down_kg_s": "-3.2121253709954899e-19",
+          "soil_water_kg": "0.07444018504367382",
+          "crust_water_kg": "0",
+          "vapour_kg": "0",
+          "soil_salt_kg": "0.020998041729756233",
+          "crust_dissolved_salt_kg": "0",
+          "solid_salt_kg": "0",
+          "water_residual_kg": "-1.1102230246251565e-16",
+          "salt_residual_kg": "-3.1225022567582528e-17"
+        }
+      }
+    },
+    {
+      "name": "no-flux ledger remains zero",
+      "passed": true,
+      "detail": {
+        "last": {
+          "time_s": "300",
+          "dt_s": "0.5",
+          "bottom_liquid_in_kg_s": "0",
+          "bottom_salt_in_kg_s": "0",
+          "bottom_water_in_kg_s": "0",
+          "bottom_liquid_in_kg_m2_s": "0",
+          "bottom_salt_in_kg_m2_s": "0",
+          "bottom_water_in_kg_m2_s": "0",
+          "cumulative_bottom_liquid_kg": "0",
+          "cumulative_bottom_salt_kg": "0",
+          "cumulative_bottom_water_kg": "0",
+          "bottom_liquid_before_kg": "0",
+          "bottom_liquid_after_kg": "0",
+          "bottom_salt_before_kg": "0",
+          "bottom_salt_after_kg": "0",
+          "cut_liquid_down_kg_s": "0",
+          "cut_salt_down_kg_s": "0",
+          "soil_water_kg": "0.074433934536734581",
+          "crust_water_kg": "0",
+          "vapour_kg": "6.2505069379091956e-06",
+          "soil_salt_kg": "0.02099804172975582",
+          "crust_dissolved_salt_kg": "0",
+          "solid_salt_kg": "0",
+          "water_residual_kg": "-1.3322676295501878e-15",
+          "salt_residual_kg": "-4.1286418728248009e-16"
+        }
+      }
+    },
+    {
+      "name": "evaporation case changes state",
+      "passed": true,
+      "detail": {
+        "last": {
+          "time_s": "300",
+          "dt_s": "0.5",
+          "active": "0",
+          "activation_s": "-1",
+          "h_m": "0",
+          "h_mass_m": "0",
+          "h_prat_m": "0",
+          "top_solid_kg_m2": "0",
+          "internal_solid_kg_m2": "0",
+          "internal_positive_kg_m2": "0",
+          "internal_dissolution_kg_m2": "0",
+          "internal_quadrature_residual_kg_m2": "0",
+          "top_new_solid_kg_m2": "0",
+          "internal_fraction_net": "0",
+          "internal_fraction_positive": "0",
+          "positive_reaction_kg_m2_s": "0",
+          "dissolution_kg_m2_s": "0",
+          "top_growth_velocity_m_s": "0",
+          "crust_top_mass_fraction": "0",
+          "epsilon_min": "0.42999999999999999",
+          "top_soil_mass_fraction": "0.22551619789638039",
+          "top_soil_sw": "0.99992384971285664",
+          "evaporation_kg_m2_s": "2.0685339956973426e-05",
+          "soil_salt_kg": "0.02099963375692546",
+          "crust_salt_kg": "0",
+          "soil_water_kg": "0.074439578391224448",
+          "crust_water_kg": "0",
+          "vapour_kg": "6.2505500373858293e-06",
+          "salt_residual_kg": "-7.9797279894933126e-17",
+          "water_residual_kg": "-2.7755575615628914e-16",
+          "solid_ledger_residual_kg": "0",
+          "pore_salt_transfer_kg": "0",
+          "pore_water_transfer_kg": "0",
+          "coupled_trials": "0",
+          "rejected_trials": "0",
+          "interface_liquid_kg_m2": "0",
+          "interface_salt_kg_m2": "0",
+          "reaction_coefficient_m_s": "0.001",
+          "av_multiplier": "1"
+        }
+      }
+    },
+    {
+      "name": "frozen no-flux executable regression",
+      "passed": true,
+      "detail": {
+        "new_rows": 601,
+        "old_rows": 601,
+        "max_abs": 0.0
+      }
+    }
+  ]
+}
