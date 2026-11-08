@@ -1,0 +1,41 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "stem": "figure1_activation_comparison",
+      "pixels": [
+        2194,
+        1774
+      ],
+      "nonblank": true,
+      "formats": true
+    },
+    {
+      "stem": "figure2_post_activation_comparison",
+      "pixels": [
+        2584,
+        1894
+      ],
+      "nonblank": true,
+      "formats": true
+    },
+    {
+      "stem": "figure3_failure_profiles",
+      "pixels": [
+        2584,
+        1924
+      ],
+      "nonblank": true,
+      "formats": true
+    },
+    {
+      "stem": "figure4_censored_endpoints",
+      "pixels": [
+        2494,
+        1144
+      ],
+      "nonblank": true,
+      "formats": true
+    }
+  ]
+}

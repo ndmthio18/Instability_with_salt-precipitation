@@ -1,0 +1,14 @@
+{
+  "activation_delay_s": 3732.5,
+  "accepted_window_ratio_h3p5_over_h0p1": 0.41588186832921403,
+  "failure_height_ratio_h3p5_over_h0p1": 4.033157366430226,
+  "failure_mass_height_ratio_h3p5_over_h0p1": 4.8892815383678165,
+  "initial_ale_liquid_mass_fraction_h0p1": 0.26494086976769915,
+  "initial_ale_liquid_mass_fraction_h3p5": 0.2640671415653032,
+  "h3p5_initial_ale_relative_undersaturation": -0.003297825123564909,
+  "donor_count_h0p1": 2,
+  "donor_count_h3p5": 4,
+  "donor_depth_m_h0p1": 0.00029636681506312046,
+  "donor_depth_m_h3p5": 0.0008982664291604103,
+  "same_failure_mechanism": "ALE soil-side cell reaches epsilon=0.95 after net internal dissolution"
+}

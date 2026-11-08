@@ -1,0 +1,10 @@
+{
+  "registered_activation_height_passed": true,
+  "activation_transfer_passed": true,
+  "numerical_conservation_passed": true,
+  "requested_horizon_passed": false,
+  "same_upper_porosity_failure_reproduced": true,
+  "scientific_status": "FAIL_ALE_UPPER_POROSITY_BOUND",
+  "figures_passed": true,
+  "overall_passed": false
+}

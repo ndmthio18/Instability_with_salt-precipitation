@@ -1,0 +1,42 @@
+{
+  "run": {
+    "exit_code": 1,
+    "elapsed_s": 394.10124924592674,
+    "slurm_job_id": "16438590",
+    "hostname": "ibc11b11n19",
+    "diagnostic_end_s": 23615.815040957943
+  },
+  "expected_solver_failure_reproduced": true,
+  "last_accepted": {
+    "time_s": 23613.815040957943,
+    "status": "accepted",
+    "cells": 64,
+    "epsilon_min": 0.19093606251501768,
+    "epsilon_min_cell": 34,
+    "epsilon_min_z_m": 4.100143416719032e-06,
+    "epsilon_max": 0.9499999999125653,
+    "epsilon_max_cell": 0,
+    "epsilon_max_z_m": 8.071899146230306e-08,
+    "concentration_min": 0.26493353605287506,
+    "concentration_max": 0.264944011969276,
+    "epsilon_bound_violations": 0,
+    "concentration_bound_violations": 0
+  },
+  "first_rejected": {
+    "time_s": 23614.0,
+    "status": "bound_rejected",
+    "cells": 64,
+    "epsilon_min": 0.19091755780486167,
+    "epsilon_min_cell": 34,
+    "epsilon_min_z_m": 4.1006520397369955e-06,
+    "epsilon_max": 0.9500526589230762,
+    "epsilon_max_cell": 0,
+    "epsilon_max_z_m": 8.072900465766523e-08,
+    "concentration_min": 0.26493353847343,
+    "concentration_max": 0.26494401198350304,
+    "epsilon_bound_violations": 1,
+    "concentration_bound_violations": 0
+  },
+  "rejected_trial_count": 25,
+  "diagnostic_passed": true
+}

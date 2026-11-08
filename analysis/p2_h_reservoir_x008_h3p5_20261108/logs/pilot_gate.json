@@ -1,0 +1,212 @@
+{
+  "stage": "pilot",
+  "passed": false,
+  "checks": [
+    {
+      "name": "pilot registered activation height",
+      "passed": true,
+      "detail": {
+        "name": "pilot_ref_ale64",
+        "reaction_coefficient_m_s": 0.001,
+        "av_multiplier": 1.0,
+        "soil_cells": 80,
+        "ale_cells": 64,
+        "dt_s": 0.5,
+        "tend_s": 180000.0,
+        "bottom_mode": "reservoir",
+        "salt_mole_fraction": 0.08,
+        "activation_height_m": 3.5e-06,
+        "zero_evaporation_verification": false
+      }
+    },
+    {
+      "name": "pilot_ref_ale64: exit",
+      "passed": false,
+      "detail": {
+        "case": "pilot_ref_ale64",
+        "exit_code": 1,
+        "elapsed_s": 368.2927272133529,
+        "slurm_job_id": "16438585",
+        "hostname": "ibc11b11n19"
+      }
+    },
+    {
+      "name": "pilot_ref_ale64: boundary mode",
+      "passed": true,
+      "detail": {
+        "bottom_mode": "reservoir",
+        "domain_bottom_y_m": "0",
+        "domain_top_y_m": "0.20000000000000001",
+        "water_level_parameter_m": "0.01",
+        "water_table_y_m": "-0.01",
+        "reservoir_pressure_pa": "99885.822518923713",
+        "configured_salt_mole_fraction": "0.080000000000000002",
+        "reservoir_salt_mole_fraction": "0.080000000000000002",
+        "initial_min_salt_mole_fraction": "0.080000000000000002",
+        "initial_max_salt_mole_fraction": "0.080000000000000002"
+      }
+    },
+    {
+      "name": "pilot_ref_ale64: domain/water-level geometry",
+      "passed": true,
+      "detail": {
+        "bottom_mode": "reservoir",
+        "domain_bottom_y_m": "0",
+        "domain_top_y_m": "0.20000000000000001",
+        "water_level_parameter_m": "0.01",
+        "water_table_y_m": "-0.01",
+        "reservoir_pressure_pa": "99885.822518923713",
+        "configured_salt_mole_fraction": "0.080000000000000002",
+        "reservoir_salt_mole_fraction": "0.080000000000000002",
+        "initial_min_salt_mole_fraction": "0.080000000000000002",
+        "initial_max_salt_mole_fraction": "0.080000000000000002"
+      }
+    },
+    {
+      "name": "pilot_ref_ale64: initial/reservoir xNaCl",
+      "passed": true,
+      "detail": {
+        "bottom_mode": "reservoir",
+        "domain_bottom_y_m": "0",
+        "domain_top_y_m": "0.20000000000000001",
+        "water_level_parameter_m": "0.01",
+        "water_table_y_m": "-0.01",
+        "reservoir_pressure_pa": "99885.822518923713",
+        "configured_salt_mole_fraction": "0.080000000000000002",
+        "reservoir_salt_mole_fraction": "0.080000000000000002",
+        "initial_min_salt_mole_fraction": "0.080000000000000002",
+        "initial_max_salt_mole_fraction": "0.080000000000000002"
+      }
+    },
+    {
+      "name": "pilot_ref_ale64: finite boundary ledger",
+      "passed": true,
+      "detail": {
+        "rows": 47235
+      }
+    },
+    {
+      "name": "pilot_ref_ale64: local face reconstruction",
+      "passed": true,
+      "detail": {
+        "max_abs_kg_s": 0.0
+      }
+    },
+    {
+      "name": "pilot_ref_ale64: salt balance",
+      "passed": true,
+      "detail": {
+        "relative": 2.4784075081418733e-14
+      }
+    },
+    {
+      "name": "pilot_ref_ale64: water balance",
+      "passed": true,
+      "detail": {
+        "relative": 2.740502064243719e-14
+      }
+    },
+    {
+      "name": "pilot reaches 50 h",
+      "passed": false,
+      "detail": {
+        "end_s": 23613.815040957943
+      }
+    },
+    {
+      "name": "pilot accepts ALE activation",
+      "passed": true,
+      "detail": {
+        "active_rows": 1003
+      }
+    },
+    {
+      "name": "pilot has nontrivial post-activation window",
+      "passed": true,
+      "detail": {
+        "post_activation_s": 497.815040957943,
+        "minimum_s": 100.0
+      }
+    },
+    {
+      "name": "reservoir supplies net water",
+      "passed": true,
+      "detail": {
+        "cumulative_bottom_water_kg": 0.0004025981217097204
+      }
+    },
+    {
+      "name": "nontrivial ALE fields",
+      "passed": true,
+      "detail": {
+        "time_s": "23613.815040957943",
+        "dt_s": "1.0220275167248052e-05",
+        "active": "1",
+        "activation_s": "23116",
+        "h_m": "5.206692740623517e-06",
+        "h_mass_m": "4.1128272653930901e-06",
+        "h_prat_m": "5.3907807191831829e-06",
+        "top_solid_kg_m2": "0.0064253191765665978",
+        "internal_solid_kg_m2": "-0.0013498846897079815",
+        "internal_positive_kg_m2": "0.00085807072954952816",
+        "internal_dissolution_kg_m2": "0.0022079554192575277",
+        "internal_quadrature_residual_kg_m2": "-1.7997756063259374e-17",
+        "top_new_solid_kg_m2": "0.002105987422275103",
+        "internal_fraction_net": "-1.7853191524977698",
+        "internal_fraction_positive": "0.2894918674322608",
+        "positive_reaction_kg_m2_s": "1.8834670736867762e-06",
+        "dissolution_kg_m2_s": "4.6161247441186987e-06",
+        "top_growth_velocity_m_s": "3.4920577919068832e-09",
+        "crust_top_mass_fraction": "0.26494401421234648",
+        "epsilon_min": "0.19093606251501768",
+        "top_soil_mass_fraction": "0.26493333742662345",
+        "top_soil_sw": "0.99992331066755291",
+        "evaporation_kg_m2_s": "1.7815038271481167e-05",
+        "soil_salt_kg": "0.021105619259566978",
+        "crust_salt_kg": "9.1166688945762231e-07",
+        "soil_water_kg": "0.07439888053523723",
+        "crust_water_kg": "2.5293978450599839e-06",
+        "vapour_kg": "0.00044137323230298967",
+        "salt_residual_kg": "-1.3877787807814457e-17",
+        "water_residual_kg": "1.7486012637846216e-15",
+        "solid_ledger_residual_kg": "-2.7256842616285584e-19",
+        "pore_salt_transfer_kg": "4.7778443541891007e-07",
+        "pore_water_transfer_kg": "1.3315449365989828e-06",
+        "coupled_trials": "3011",
+        "rejected_trials": "20",
+        "interface_liquid_kg_m2": "0.011256434478319503",
+        "interface_salt_kg_m2": "0.0011899851866058271",
+        "reaction_coefficient_m_s": "0.001",
+        "av_multiplier": "1"
+      }
+    },
+    {
+      "name": "activation uses actual threshold-crossing solid height",
+      "passed": true,
+      "detail": {
+        "attempt": "1",
+        "time_s": "23116",
+        "h_m": "3.5001270242627885e-06",
+        "required_kg": "1.809329372017893e-06",
+        "available_kg": "2.3812863375242757e-05",
+        "sufficient": "1",
+        "donor_count": "4",
+        "used_depth_m": "0.00089826642916041033",
+        "salt_transfer_kg": "4.7778443541891007e-07",
+        "water_transfer_kg": "1.3315449365989828e-06",
+        "salt_transfer_residual_kg": "0",
+        "water_transfer_residual_kg": "-2.7755575615628914e-17",
+        "initial_salt_kg": "0.020998041729756233",
+        "initial_water_kg": "0.07444018504367382"
+      }
+    },
+    {
+      "name": "activation transfer conservation",
+      "passed": true,
+      "detail": {
+        "relative": 3.728574237066284e-16,
+        "accepted_attempts": 1
+      }
+    }
+  ]
+}
