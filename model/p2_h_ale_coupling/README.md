@@ -95,6 +95,13 @@ are controlled lifecycle tests. Film settings retain P2G `FilmThickness` and
 `RelativeHumidity`. Sources and physical settings are frozen per run archive;
 failed attempts are preserved under `failures/`, with separately hashed binaries.
 
+The reservoir experiment driver keeps its historical 0.1-micrometre scenario
+when `P2H_ACTIVATION_HEIGHT_M` is absent. Set that environment variable
+explicitly for controlled activation-height comparisons. The registered
+`x_NaCl=0.08` crystal-scale test uses `P2H_ACTIVATION_HEIGHT_M=3.5e-6` and does
+not create a seed; it waits for the actual surface solid inventory to cross the
+threshold.
+
 ## Interpretation
 
 This is a conditional saturated-crust mass coupling, not a calibrated crust

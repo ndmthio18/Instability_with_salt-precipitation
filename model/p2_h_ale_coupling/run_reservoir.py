@@ -14,6 +14,9 @@ if not os.environ.get("SLURM_JOB_ID"):
 salt_mole_fraction = float(os.environ.get("P2H_SALT_MOLE_FRACTION", "0.05"))
 if not 0.0 <= salt_mole_fraction < 1.0:
     raise ValueError("P2H_SALT_MOLE_FRACTION must be in [0, 1)")
+activation_height_m = float(os.environ.get("P2H_ACTIVATION_HEIGHT_M", "1e-7"))
+if not activation_height_m > 0.0:
+    raise ValueError("P2H_ACTIVATION_HEIGHT_M must be positive")
 
 base = (root / "repo/model/p2_f_analytical_growth/integration/p2f_1d.input").read_text()
 base = base.replace("Name = p2f_analytical", "Name = p2h_ale_reservoir")
@@ -32,6 +35,7 @@ def case(name, kr=1e-3, av=1.0, ale=64, tend=180000.0, dt=0.5, mode="reservoir",
         "tend_s": tend,
         "bottom_mode": mode,
         "salt_mole_fraction": salt_mole_fraction,
+        "activation_height_m": activation_height_m,
         "zero_evaporation_verification": zero_evap,
     }
 
@@ -92,7 +96,7 @@ for spec in selected:
         "Problem.BottomBoundaryMode": spec["bottom_mode"],
         "Problem.WaterLevel": 0.01,
         "Problem.SaltMoleFraction": spec["salt_mole_fraction"],
-        "P2H.ActivationHeight": 1e-7,
+        "P2H.ActivationHeight": spec["activation_height_m"],
         "P2H.DonorMode": "adaptive_multilayer",
         "P2H.MaxDonorDepth": 0.005,
         "P2H.MinimumSupplySaturation": 0.99,

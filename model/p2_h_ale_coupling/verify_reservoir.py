@@ -10,6 +10,7 @@ import sys
 root = pathlib.Path.cwd()
 stage = sys.argv[1]
 expected_salt_mole_fraction = float(os.environ.get("P2H_SALT_MOLE_FRACTION", "0.05"))
+expected_activation_height_m = float(os.environ.get("P2H_ACTIVATION_HEIGHT_M", "1e-7"))
 checks = []
 
 
@@ -121,6 +122,12 @@ if stage == "verification":
     )
 elif stage == "pilot":
     path = root / stage / "pilot_ref_ale64"
+    spec = json.loads((path / "case_spec.json").read_text())
+    record(
+        "pilot registered activation height",
+        abs(float(spec["activation_height_m"]) - expected_activation_height_m) < 1e-15,
+        spec,
+    )
     history, budget = audit_case(path, "reservoir")
     end = float(history[-1]["time_s"])
     active = [row for row in history if int(row["active"]) == 1]
@@ -142,6 +149,11 @@ elif stage == "pilot":
     )
     attempts = rows(path / "donor_attempts.csv")
     accepted = [row for row in attempts if int(row["sufficient"]) == 1]
+    record(
+        "activation uses actual threshold-crossing solid height",
+        bool(accepted) and float(accepted[0]["h_m"]) >= expected_activation_height_m,
+        accepted[0] if accepted else {},
+    )
     transfer_rel = 0.0
     for row in accepted:
         transfer_rel = max(
