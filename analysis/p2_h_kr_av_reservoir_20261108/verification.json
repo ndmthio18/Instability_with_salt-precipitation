@@ -1,0 +1,50 @@
+{
+  "branch": "research/p2-h-kr-av-reservoir",
+  "base_commit": "1e713ae2a41e6a8ec8ba1a42f332cbb74714074c",
+  "tested_content_commit": "7d8a1f44a75b6bfd8316ba45cfc5e1bcf3a933b0",
+  "execution_environment": {
+    "system": "HPCC Slurm compute nodes",
+    "build_job": "16430286",
+    "verification_job": "16430417",
+    "pilot_job": "16430419",
+    "solver_sha256": "ad3188a97326887b1f980bfb96c40205697bc444e9bdf7028040bf761216e088"
+  },
+  "numerical_implementation": {
+    "status": "PASS",
+    "hydrostatic_reservoir_salt_relative_residual": 1.9447360072173456e-14,
+    "hydrostatic_reservoir_water_relative_residual": 1.9562799989193014e-14,
+    "evaporating_reservoir_salt_relative_residual": 4.204834610199666e-15,
+    "evaporating_reservoir_water_relative_residual": 5.0253064192422426e-15,
+    "noflux_regression_max_abs_difference": 0.0
+  },
+  "pilot": {
+    "execution_status": "COMPLETED_180000_S",
+    "scientific_status": "FAIL_NO_SURFACE_PRECIPITATION_NO_ALE_ACTIVATION",
+    "final_surface_nacl_mass_fraction": 0.262856471841408,
+    "equilibrium_nacl_mass_fraction": 0.264940870223385,
+    "final_surface_sw": 0.9999551078323523,
+    "cumulative_evaporation_kg_m2": 3.689868433834851,
+    "cumulative_bottom_water_kg_m2": 3.4714274584530624,
+    "cumulative_bottom_salt_kg_m2": 0.5926846563233023,
+    "maximum_salt_relative_residual": 6.529319743150669e-13,
+    "maximum_water_relative_residual": 2.2667721455367687e-13,
+    "surface_solid_kg_m2": 0.0,
+    "ale_accepted_states": 0
+  },
+  "dependent_stages": {
+    "ale_grid_and_timestep_pilot": "NOT_RUN_PILOT_GATE_FAILED",
+    "five_case_kr_av_matrix": "NOT_RUN_PILOT_GATE_FAILED",
+    "parameter_sensitivity": "NOT_TESTED"
+  },
+  "visual_qa": {
+    "status": "PASS",
+    "figures_checked": 4,
+    "formats": ["png", "pdf", "svg"]
+  },
+  "evidence": {
+    "compressed_solver_log_sha256": "d83254db9433443151b54e3346dc3ff9780b8b4d97402cc39748fccd7e8b25ca",
+    "decompressed_solver_log_sha256": "1ec03978df08ffa89b6dc0833ddfde18e02fe194c5db7e052f4b0f299b121f98",
+    "hpcc_archive_sha256": "89719b1c07aa686bf635df3c55c51d07a53ee65e53d5afc1ce1133fc28a8f016"
+  },
+  "overall_scientific_decision": "NO-GO"
+}
