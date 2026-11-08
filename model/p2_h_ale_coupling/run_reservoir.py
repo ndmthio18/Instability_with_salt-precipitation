@@ -11,6 +11,9 @@ stage = sys.argv[1]
 index = int(sys.argv[2]) if len(sys.argv) > 2 else None
 if not os.environ.get("SLURM_JOB_ID"):
     raise RuntimeError("run_reservoir.py requires a Slurm compute allocation")
+salt_mole_fraction = float(os.environ.get("P2H_SALT_MOLE_FRACTION", "0.05"))
+if not 0.0 <= salt_mole_fraction < 1.0:
+    raise ValueError("P2H_SALT_MOLE_FRACTION must be in [0, 1)")
 
 base = (root / "repo/model/p2_f_analytical_growth/integration/p2f_1d.input").read_text()
 base = base.replace("Name = p2f_analytical", "Name = p2h_ale_reservoir")
@@ -28,6 +31,7 @@ def case(name, kr=1e-3, av=1.0, ale=64, tend=180000.0, dt=0.5, mode="reservoir",
         "dt_s": dt,
         "tend_s": tend,
         "bottom_mode": mode,
+        "salt_mole_fraction": salt_mole_fraction,
         "zero_evaporation_verification": zero_evap,
     }
 
@@ -87,7 +91,7 @@ for spec in selected:
         "TimeLoop.TEnd": spec["tend_s"],
         "Problem.BottomBoundaryMode": spec["bottom_mode"],
         "Problem.WaterLevel": 0.01,
-        "Problem.SaltMoleFraction": 0.05,
+        "Problem.SaltMoleFraction": spec["salt_mole_fraction"],
         "P2H.ActivationHeight": 1e-7,
         "P2H.DonorMode": "adaptive_multilayer",
         "P2H.MaxDonorDepth": 0.005,

@@ -2,12 +2,14 @@
 import csv
 import json
 import math
+import os
 import pathlib
 import sys
 
 
 root = pathlib.Path.cwd()
 stage = sys.argv[1]
+expected_salt_mole_fraction = float(os.environ.get("P2H_SALT_MOLE_FRACTION", "0.05"))
 checks = []
 
 
@@ -40,7 +42,7 @@ def audit_case(path, expect_mode):
     record(
         f"{path.name}: initial/reservoir xNaCl",
         max(
-            abs(float(config[key]) - 0.05)
+            abs(float(config[key]) - expected_salt_mole_fraction)
             for key in (
                 "configured_salt_mole_fraction",
                 "reservoir_salt_mole_fraction",

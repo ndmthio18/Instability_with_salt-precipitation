@@ -11,6 +11,12 @@ post-processing scripts require a Slurm allocation. Every reservoir case passes
 `Problem.BottomBoundaryMode=reservoir` and
 `Problem.SaltMoleFraction=0.05` explicitly.
 
+The follow-up `research/p2-h-kr-av-reservoir-x008` keeps the same compiled
+physics and accepts the initial/reservoir mole fraction through the explicit
+`P2H_SALT_MOLE_FRACTION` run environment. The registered x=0.08 Slurm scripts
+set this value for both the accepted initial soil field and the bottom
+Dirichlet reservoir; the default remains 0.05 for frozen-task reproduction.
+
 The isolated `research/p2-h-av-sensitivity` revision adds an internal-only
 `P2H.AvMultiplier`, exact accepted-state precipitation/dissolution BDF ledgers,
 and registered 80/160-soil plus 64/128/256-ALE sensitivity checks at fixed
