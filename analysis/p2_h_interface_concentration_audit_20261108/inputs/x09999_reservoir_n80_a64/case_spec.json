@@ -1,0 +1,12 @@
+{
+  "name": "x09999_reservoir_n80_a64",
+  "salt_mole_fraction": 0.09999,
+  "bottom_mode": "reservoir",
+  "tend_s": 2500.0,
+  "soil_cells": 80,
+  "ale_cells": 64,
+  "dt_s": 0.5,
+  "activation_height_m": 3.5e-06,
+  "reaction_coefficient_m_s": 0.001,
+  "av_multiplier": 1.0
+}

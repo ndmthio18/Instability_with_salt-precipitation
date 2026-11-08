@@ -1,0 +1,6 @@
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-ixbvt3pc because the default path (/home/hulm/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-8990fhh1 because the default path (/home/hulm/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+/WORK/hulm_work/zhixin/p2_h_interface_concentration_audit_20261108/analyze_interface_audit.py:297: UserWarning: All values for SymLogScale are below linthresh, making it effectively linear. You likely should lower the value of linthresh.
+  ax.axhline(0, color="0.65", lw=0.8)
+/WORK/hulm_work/zhixin/p2_h_interface_concentration_audit_20261108/analyze_interface_audit.py:276: UserWarning: constrained_layout not applied because axes sizes collapsed to zero.  Try making figure larger or axes decorations smaller.
+  fig.savefig(FIG / f"{stem}.{suffix}", dpi=400 if suffix == "png" else None,

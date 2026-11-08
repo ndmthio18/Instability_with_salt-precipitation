@@ -1,0 +1,30 @@
+{
+  "branch": "research/p2-h-interface-concentration-audit",
+  "base_commit": "1fe9d1f7f9fee8094b671367992d463a8e8b96c9",
+  "historical_commits": {
+    "av_sensitivity": "63f267f9eae85bf434a2ad9ed0804a63723e9478",
+    "x008_h0p1": "b2e1797a54a68f56ea6e8c49c1ad72360f847ba9",
+    "x008_h3p5": "1fe9d1f7f9fee8094b671367992d463a8e8b96c9"
+  },
+  "hpcc_root": "/WORK/hulm_work/zhixin/p2_h_interface_concentration_audit_20261108",
+  "soil_solver_sha256": "ad3188a97326887b1f980bfb96c40205697bc444e9bdf7028040bf761216e088",
+  "coupled_jobs": [
+    "16438805",
+    "16438806",
+    "16438807",
+    "16438808",
+    "16438809",
+    "16438810",
+    "16438811",
+    "16438821"
+  ],
+  "counterfactual_array_job": "16438812",
+  "counterfactual_build_job": "16438804",
+  "coupled_array_jobs": [
+    "16438805",
+    "16438821"
+  ],
+  "postprocess_job": "16438878",
+  "raw_fields_retained_on_hpcc": true,
+  "raw_fields_committed_to_git": false
+}
