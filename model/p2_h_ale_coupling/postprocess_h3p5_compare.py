@@ -27,8 +27,14 @@ for path in (results, figures, logs, source):
 
 
 def read_rows(path):
+    def convert(value):
+        try:
+            return float(value)
+        except ValueError:
+            return value
+
     with path.open(newline="") as handle:
-        return [{key: float(value) for key, value in row.items()} for row in csv.DictReader(handle)]
+        return [{key: convert(value) for key, value in row.items()} for row in csv.DictReader(handle)]
 
 
 def compact(path, destination, interval=10.0):
