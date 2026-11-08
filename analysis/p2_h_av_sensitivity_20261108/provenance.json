@@ -1,0 +1,33 @@
+{
+  "base_commit": "301097e3d2de3541bf63741cd729bd5cda22329a",
+  "branch": "research/p2-h-av-sensitivity",
+  "hpcc_root": "/WORK/hulm_work/zhixin/p2_h_av_sensitivity_20261108",
+  "source_archive_hashes": {
+    "overlay_av_r02.sha256": "976ef943c17d131f61c64d092cb275501c6a0ea08b729e0160bb01d2a5a899fc  /WORK/hulm_work/zhixin/overlay_av_r02.tar.gz",
+    "overlay_av_r04.sha256": "9760572f6665f7803ae7c1ef1de3ed5f1342de6e99bb3db50e44260c833e9f6f  /WORK/hulm_work/zhixin/overlay_av_r04.tar.gz",
+    "overlay_av_r05.sha256": "de80fc55af3b3144bc7b3cf73464ff45f37a8da0d0ed76260a853d69504875a8  /WORK/hulm_work/zhixin/overlay_av_r05.tar.gz",
+    "overlay_av_r07.sha256": "031f01e25036b8b2ce0d6ad29cb60232fece1404358909a687bf0aa3e36f2cbd  /WORK/hulm_work/zhixin/overlay_av_r07.tar.gz",
+    "overlay_av_r08_analysis.sha256": "0373ae8c695d6b872ae26aa2b7736962efb919d6f4462f5fbdaca2baa9c6e6d0  /WORK/hulm_work/zhixin/overlay_av_r08_analysis.tar.gz",
+    "overlay_av_r09_auditfix.sha256": "0ed1796e33153aa87cb4992d5c28b3ab78961ae763a74bd73b4e5bfbd138ee6b  av_overlay_r09_auditfix.tar.gz",
+    "overlay_av_r10_verifyfix.sha256": "76b5df6fea9fa6c2e4c4410048db47c669fe3d37ec885dc9ca00f3dc3c6cb045  av_overlay_r10_verifyfix.tar.gz",
+    "overlay_av_r11_ale256.sha256": "ea98c424d1ff302f6d3c00116a48d00893161271951a5b9004d7ff0b0489142b  av_overlay_r11_ale256.tar.gz",
+    "overlay_av_r12_commonstate.sha256": "17664464705f0091f38e2ff0f3ef0b4bb7c9f56a58334fb64dfea9604fdb3e15  av_overlay_r12_commonstate.tar.gz",
+    "overlay_av_r13_figure9.sha256": "79d435b46c92720012e1a81f94680b9b6375a6ca68693848dd4560c8c39a4814  av_overlay_r13_figure9.tar.gz",
+    "source_av_r01.sha256": "ed4b8b0086015eeda415375f037b6e16b8640791826d42699c50a8022deefef1  /WORK/hulm_work/zhixin/source_av_r01.tar.gz",
+    "source_av_r06_exact.sha256": "f0c1db6bd5f7062273f04662c3f1ea0749b9d834da40e496da373527e6154eb3  /WORK/hulm_work/zhixin/source_av_r06_exact.tar.gz"
+  },
+  "exact_binary_hashes": [
+    "a4b6d59563fbc1b8caa24a6a163766215dc1995bdcff126cf8902efa720ad8b5  build_exact/soil_solver",
+    "5e9f71f1227ab0b21860cc1cdbb8f2a3c5c2d7a74c4af7e5fa573f3ec7b34456  build_exact/av_parameter_test_r02",
+    "d49f49252db00a61e7f45a5a15cd80fc3a9db39970b2cc8e6f72d871e7c3df0f  build_exact/av_mechanism"
+  ],
+  "historical_default": "ReactionCoefficient=2.3e-3, AvMultiplier=1, splitReactionLedgers=false",
+  "sensitivity_configuration": "ReactionCoefficient=1e-3, AvMultiplier in {0.1,1,10}, splitReactionLedgers=true",
+  "preliminary_endpoint_quadrature": "retained in raw primary/dt_half/ale_refine; excluded from final quantitative tables",
+  "raw_evidence": "full_av_evidence.tar.gz retained on HPCC; see archive SHA-256",
+  "archive_sha256": {
+    "full_av_evidence.tar.gz": "1cd92d3c7b6798de7c7f77f849b281dedf6a988050f32bbae2e1934f106e1cdf",
+    "av_delivery.tar.gz": "973394ee7c31ebf2e61b17e54696153cdd880e7c1dd557192182a227d829c831"
+  },
+  "final_figure9_job": "16406497"
+}

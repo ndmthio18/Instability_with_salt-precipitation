@@ -1,0 +1,115 @@
+{
+  "case_count": 16,
+  "completed_count": 10,
+  "preactivation_identity": [
+    {
+      "soil_cells": 80,
+      "reference": "n80_av0.1",
+      "case": "n80_av1",
+      "through_s": 675.0,
+      "row_count_reference": 1351,
+      "row_count_case": 1351,
+      "maximum_absolute_difference": 0.0
+    },
+    {
+      "soil_cells": 80,
+      "reference": "n80_av0.1",
+      "case": "n80_av10",
+      "through_s": 675.0,
+      "row_count_reference": 1351,
+      "row_count_case": 1351,
+      "maximum_absolute_difference": 0.0
+    },
+    {
+      "soil_cells": 160,
+      "reference": "n160_av0.1",
+      "case": "n160_av1",
+      "through_s": 675.0,
+      "row_count_reference": 1351,
+      "row_count_case": 1351,
+      "maximum_absolute_difference": 0.0
+    },
+    {
+      "soil_cells": 160,
+      "reference": "n160_av0.1",
+      "case": "n160_av10",
+      "through_s": 675.0,
+      "row_count_reference": 1351,
+      "row_count_case": 1351,
+      "maximum_absolute_difference": 0.0
+    }
+  ],
+  "activation_identity": [
+    {
+      "soil_cells": 80,
+      "reference": "n80_av0.1",
+      "case": "n80_av1",
+      "activation_difference_s": 0.0,
+      "initial_ale_max_abs": 0.0,
+      "post_transfer_soil_max_abs": 0.0,
+      "donor_profile_max_abs": 0.0,
+      "ale_rows_reference": 64,
+      "ale_rows_case": 64,
+      "soil_rows_reference": 162,
+      "soil_rows_case": 162,
+      "donor_rows_reference": 162,
+      "donor_rows_case": 162
+    },
+    {
+      "soil_cells": 80,
+      "reference": "n80_av0.1",
+      "case": "n80_av10",
+      "activation_difference_s": 0.0,
+      "initial_ale_max_abs": 0.0,
+      "post_transfer_soil_max_abs": 0.0,
+      "donor_profile_max_abs": 0.0,
+      "ale_rows_reference": 64,
+      "ale_rows_case": 64,
+      "soil_rows_reference": 162,
+      "soil_rows_case": 162,
+      "donor_rows_reference": 162,
+      "donor_rows_case": 162
+    },
+    {
+      "soil_cells": 160,
+      "reference": "n160_av0.1",
+      "case": "n160_av1",
+      "activation_difference_s": 0.0,
+      "initial_ale_max_abs": 0.0,
+      "post_transfer_soil_max_abs": 0.0,
+      "donor_profile_max_abs": 0.0,
+      "ale_rows_reference": 64,
+      "ale_rows_case": 64,
+      "soil_rows_reference": 322,
+      "soil_rows_case": 322,
+      "donor_rows_reference": 322,
+      "donor_rows_case": 322
+    },
+    {
+      "soil_cells": 160,
+      "reference": "n160_av0.1",
+      "case": "n160_av10",
+      "activation_difference_s": 0.0,
+      "initial_ale_max_abs": 0.0,
+      "post_transfer_soil_max_abs": 0.0,
+      "donor_profile_max_abs": 0.0,
+      "ale_rows_reference": 64,
+      "ale_rows_case": 64,
+      "soil_rows_reference": 322,
+      "soil_rows_case": 322,
+      "donor_rows_reference": 322,
+      "donor_rows_case": 322
+    }
+  ],
+  "all_zero_initial_solid": true,
+  "maximum_salt_relative_residual": 6.470047437511045e-14,
+  "maximum_water_relative_residual": 8.312021324952615e-14,
+  "stopped_cases": [
+    "n80_av10",
+    "n160_av10",
+    "n80_av10_dt2",
+    "n160_av10_dt2",
+    "n80_av10_ale128",
+    "n80_av10_ale256"
+  ]
+}

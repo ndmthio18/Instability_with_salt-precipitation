@@ -1,5 +1,15 @@
 # P2-H C++ ALE and conditional DuMuX coupling
 
+The isolated `research/p2-h-av-sensitivity` revision adds an internal-only
+`P2H.AvMultiplier`, exact accepted-state precipitation/dissolution BDF ledgers,
+and registered 80/160-soil plus 64/128/256-ALE sensitivity checks at fixed
+`kr=1e-3 m/s`. See the [parameter contract](AV_SENSITIVITY.md),
+[Chinese scientific report](../../analysis/p2_h_av_sensitivity_20261108/REPORT_ZH.md),
+[failure record](../../analysis/p2_h_av_sensitivity_20261108/FAILURES.md), and
+[reproduction record](../../analysis/p2_h_av_sensitivity_20261108/REPRODUCE.md).
+The `10av` local-porosity/stop-time ALE refinement gate fails; this branch is
+not a calibrated physical salt-crust model.
+
 The `research/p2-h-adaptive-donor` extension adds optional conservative,
 depth-limited multi-layer pore charging. See [registered experiments](ADAPTIVE_PLAN.md),
 [allocation equations and assumptions](ADAPTIVE_FORMULATION.md), and

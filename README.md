@@ -1,5 +1,16 @@
 # Paper 2 — effective salt redistribution
 
+`research/p2-h-av-sensitivity` fixes `kr=1e-3 m/s` and varies only the internal
+reactive-area multiplier `{0.1,1,10}`. Real HPCC DuMuX--ALE runs show robust
+80/160-soil-grid ordering: higher area increases internal precipitation,
+localizes the reaction zone, suppresses top growth and accelerates densification.
+The `10av` case reaches the porosity protection bound near 742 s, and its stop
+time shifts to 735/731 s on 128/256 ALE cells; local quantitative convergence is
+therefore NO-GO despite water/salt residuals below `8.32e-14`. See the
+[report](analysis/p2_h_av_sensitivity_20261108/REPORT_ZH.md),
+[ten figures](analysis/p2_h_av_sensitivity_20261108/figures/), and
+[failure record](analysis/p2_h_av_sensitivity_20261108/FAILURES.md).
+
 `research/p2-h-crystal-boundary` 将默认激活阈值设为3.5 μm，保持零初始固体、
 真实质量初始化及epsilon_birth=0.43，并在隔离应用中修复顶部侧面误分类。
 HPCC四网格均成功激活；40/80/160层完成2500 s，320层及dt/2在激活后快速

@@ -10,8 +10,9 @@ namespace p2h {
 using Vec = std::vector<double>;
 struct Parameters {
     double ceq=.264, rho=1200, crystal=2170, birth=.43, diffusion=1.3e-9;
-    double reaction=.0023, beta=2, grain=25e-6, initialHeight=.001;
+    double reaction=.0023, avMultiplier=1, beta=2, grain=25e-6, initialHeight=.001;
     double evaporation=1200*.01/86400, bottomC=.264;
+    bool splitReactionLedgers=false;
 };
 struct Fluxes {
     Vec volume, reaction, liquid, salt, mesh;
@@ -31,8 +32,16 @@ public:
         for(int i=0;i<=n;++i) faces.push_back(1-std::pow(1-double(i)/n,power));
         for(int i=0;i<n;++i) { centers.push_back((faces[i]+faces[i+1])/2); widths.push_back(faces[i+1]-faces[i]); }
     }
-    int size() const { return 2*n+6; }
+    int size() const { return 2*n+6+(p.splitReactionLedgers?2:0); }
     int inv() const { return 2*n+1; }
+    int positiveInv() const { return 2*n+6; }
+    int dissolutionInv() const { return 2*n+7; }
+    double specificArea(double epsilon) const {
+        return p.avMultiplier*36*(1-epsilon)/p.grain;
+    }
+    double reactionRate(double epsilon,double concentration) const {
+        return p.rho*specificArea(epsilon)*p.reaction*(concentration-p.ceq);
+    }
     Vec initial(double h=-1,double concentration=-1) const {
         Vec y(size(),0);
         std::fill(y.begin(),y.begin()+n,p.birth);
@@ -64,7 +73,7 @@ public:
             if(!(y[i]>0 && y[i]<1)) throw std::runtime_error("invalid porosity");
             d[i]=std::sqrt(y[i])*p.diffusion;
             f.volume[i]=h*widths[i];
-            f.reaction[i]=p.rho*36*(1-y[i])/p.grain*p.reaction*(y[n+i]-p.ceq);
+            f.reaction[i]=reactionRate(y[i],y[n+i]);
         }
         auto t=top(y[2*n-1],y[n-1],d[n-1],h,f.evaporation);
         if(gasFilm) {
@@ -98,17 +107,23 @@ public:
     }
     Vec rhs(const Vec& y) const {
         const auto f=flux(y); Vec v(size(),0);
-        double internal=0;
+        double internal=0,positive=0,dissolution=0;
         for(int i=0;i<n;++i) {
             const double e=f.mesh[i]-f.mesh[i+1]-f.reaction[i]*f.volume[i]/p.crystal;
             const double q=f.salt[i]-f.salt[i+1]-f.reaction[i]*f.volume[i];
             v[i]=(e-y[i]*widths[i]*f.speed)/f.volume[i];
             v[n+i]=(q-p.rho*y[n+i]*e)/(p.rho*y[i]*f.volume[i]);
             internal+=f.reaction[i]*f.volume[i];
+            positive+=std::max(0.,f.reaction[i])*f.volume[i];
+            dissolution+=std::max(0.,-f.reaction[i])*f.volume[i];
         }
         v[2*n]=f.speed;
         v[inv()]=f.salt[n]; v[inv()+1]=internal; v[inv()+2]=f.salt[0];
         v[inv()+3]=f.liquid[0]; v[inv()+4]=f.evaporation;
+        if(p.splitReactionLedgers) {
+            v[positiveInv()]=positive;
+            v[dissolutionInv()]=dissolution;
+        }
         return v;
     }
     struct Inventory { double salt=0,water=0,solid=0,pore=0; };

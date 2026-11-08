@@ -1,0 +1,106 @@
+{
+  "checks": {
+    "primary_case_count": 6,
+    "primary_all_reached_2500_s": false,
+    "primary_all_cases_accounted": true,
+    "stopped_cases_have_rejected_bound_state": true,
+    "preactivation_exact_identity": true,
+    "activation_exact_identity": true,
+    "zero_initial_solid": true,
+    "global_mass_gate": true,
+    "historical_m3_regression": true,
+    "av_unit_test": true,
+    "timestep_cases": 6,
+    "timestep_maximum_relative_difference": 0.00035535487775725647,
+    "timestep_one_percent_gate": true,
+    "ale_refinement_cases": 4,
+    "ale_resolution_gate": false
+  },
+  "numerical_observations_by_increasing_av": {
+    "80": {
+      "cumulative_positive_internal_kg_m2": [
+        0.0016904202198333316,
+        0.003843038594314697,
+        0.00024240205903331956
+      ],
+      "net_internal_solid_kg_m2": [
+        0.0016904197285664555,
+        0.003834247418200017,
+        0.0002417496965197406
+      ],
+      "cumulative_new_top_solid_kg_m2": [
+        0.01001522905704249,
+        0.007871713426456112,
+        0.00018584062843618812
+      ],
+      "internal_fraction_net": [
+        0.14441059692861077,
+        0.32754657811369525,
+        0.565376909649809
+      ],
+      "l95_bottom_m": [
+        1.1496111767447348e-05,
+        9.846110439386897e-06,
+        3.6458869865771163e-06
+      ],
+      "l95_shortest_m": [
+        5.893365193067759e-06,
+        1.1997237400999989e-06,
+        1.1456345715659652e-07
+      ],
+      "epsilon_min": [
+        0.3362582206034986,
+        0.15483842518169522,
+        0.02000000259966936
+      ],
+      "final_height_m": [
+        1.1616713289780824e-05,
+        9.879736967439221e-06,
+        3.651567283860985e-06
+      ]
+    },
+    "160": {
+      "cumulative_positive_internal_kg_m2": [
+        0.0016903128885459747,
+        0.00384298468523138,
+        0.00024240138817284193
+      ],
+      "net_internal_solid_kg_m2": [
+        0.00169031232298288,
+        0.0038341236282332224,
+        0.00024174270942755097
+      ],
+      "cumulative_new_top_solid_kg_m2": [
+        0.010015216547832391,
+        0.007871713832241254,
+        0.00018583983948074545
+      ],
+      "internal_fraction_net": [
+        0.1444029006837307,
+        0.32753945552203256,
+        0.5653708507158871
+      ],
+      "l95_bottom_m": [
+        1.1496550026141145e-05,
+        9.846558377234566e-06,
+        3.6463339038518953e-06
+      ],
+      "l95_shortest_m": [
+        5.893174173750487e-06,
+        1.1997195402383829e-06,
+        1.1456542888416442e-07
+      ],
+      "epsilon_min": [
+        0.3362610965288503,
+        0.15483851713329383,
+        0.020000002630248395
+      ],
+      "final_height_m": [
+        1.1617150751075266e-05,
+        9.88018489427021e-06,
+        3.6520142425458006e-06
+      ]
+    }
+  },
+  "note": "Monotonicity is reported as an observation, not an acceptance condition."
+}
