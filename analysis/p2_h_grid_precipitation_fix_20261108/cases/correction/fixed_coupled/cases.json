@@ -1,0 +1,47 @@
+[
+  {
+    "name": "fixed40",
+    "n": 40,
+    "pre": false,
+    "mode": "implicit_surface"
+  },
+  {
+    "name": "fixed80",
+    "n": 80,
+    "pre": false,
+    "mode": "implicit_surface"
+  },
+  {
+    "name": "fixed160",
+    "n": 160,
+    "pre": false,
+    "mode": "implicit_surface"
+  },
+  {
+    "name": "fixed320",
+    "n": 320,
+    "pre": false,
+    "mode": "implicit_surface"
+  },
+  {
+    "name": "fixed_half160",
+    "n": 160,
+    "dt": 0.25,
+    "pre": false,
+    "mode": "implicit_surface"
+  },
+  {
+    "name": "fixed_half320",
+    "n": 320,
+    "dt": 0.25,
+    "pre": false,
+    "mode": "implicit_surface"
+  },
+  {
+    "name": "fixed80_rollback",
+    "n": 80,
+    "pre": false,
+    "mode": "implicit_surface",
+    "inject": true
+  }
+]

@@ -1,0 +1,77 @@
+[
+  {
+    "case": "fixed40",
+    "exit_code": 0,
+    "elapsed_s": 24.971203956753016
+  },
+  {
+    "case": "fixed80",
+    "exit_code": 0,
+    "elapsed_s": 63.94970420002937
+  },
+  {
+    "case": "fixed160",
+    "exit_code": 0,
+    "elapsed_s": 116.15613740123808
+  },
+  {
+    "case": "fixed320",
+    "exit_code": 0,
+    "elapsed_s": 350.82467555068433
+  },
+  {
+    "case": "fixedA160",
+    "exit_code": 0,
+    "elapsed_s": 116.45660102181137
+  },
+  {
+    "case": "fixedA320",
+    "exit_code": 0,
+    "elapsed_s": 223.22568245604634
+  },
+  {
+    "case": "fixedA640",
+    "exit_code": 0,
+    "elapsed_s": 442.5398858357221
+  },
+  {
+    "case": "fixedB40_top80",
+    "exit_code": 0,
+    "elapsed_s": 92.85464657470584
+  },
+  {
+    "case": "fixedB80_top80",
+    "exit_code": 0,
+    "elapsed_s": 124.00165491737425
+  },
+  {
+    "case": "fixedB160_top40",
+    "exit_code": 0,
+    "elapsed_s": 157.42317418009043
+  },
+  {
+    "case": "fixedB160_top80",
+    "exit_code": 0,
+    "elapsed_s": 184.15851030498743
+  },
+  {
+    "case": "fixedB160_top160",
+    "exit_code": 0,
+    "elapsed_s": 236.31695674359798
+  },
+  {
+    "case": "fixedB320_top80",
+    "exit_code": 0,
+    "elapsed_s": 305.26239748857915
+  },
+  {
+    "case": "fixed_half160",
+    "exit_code": 0,
+    "elapsed_s": 225.9616947621107
+  },
+  {
+    "case": "fixed_half320",
+    "exit_code": 0,
+    "elapsed_s": 659.8896082118154
+  }
+]

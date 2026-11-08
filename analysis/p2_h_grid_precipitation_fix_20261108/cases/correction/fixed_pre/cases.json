@@ -1,0 +1,94 @@
+[
+  {
+    "name": "fixed40",
+    "n": 40,
+    "mode": "implicit_surface"
+  },
+  {
+    "name": "fixed80",
+    "n": 80,
+    "mode": "implicit_surface"
+  },
+  {
+    "name": "fixed160",
+    "n": 160,
+    "mode": "implicit_surface"
+  },
+  {
+    "name": "fixed320",
+    "n": 320,
+    "mode": "implicit_surface"
+  },
+  {
+    "name": "fixedA160",
+    "n": 160,
+    "grading": -0.9848857801796105,
+    "mode": "implicit_surface"
+  },
+  {
+    "name": "fixedA320",
+    "n": 320,
+    "grading": -0.9924141172814958,
+    "mode": "implicit_surface"
+  },
+  {
+    "name": "fixedA640",
+    "n": 640,
+    "grading": -0.9961998380252306,
+    "mode": "implicit_surface"
+  },
+  {
+    "name": "fixedB40_top80",
+    "n": "40 80",
+    "positions": "0 0.198 0.2",
+    "grading": "1 1",
+    "mode": "implicit_surface"
+  },
+  {
+    "name": "fixedB80_top80",
+    "n": "80 80",
+    "positions": "0 0.198 0.2",
+    "grading": "1 1",
+    "mode": "implicit_surface"
+  },
+  {
+    "name": "fixedB160_top40",
+    "n": "160 40",
+    "positions": "0 0.198 0.2",
+    "grading": "1 1",
+    "mode": "implicit_surface"
+  },
+  {
+    "name": "fixedB160_top80",
+    "n": "160 80",
+    "positions": "0 0.198 0.2",
+    "grading": "1 1",
+    "mode": "implicit_surface"
+  },
+  {
+    "name": "fixedB160_top160",
+    "n": "160 160",
+    "positions": "0 0.198 0.2",
+    "grading": "1 1",
+    "mode": "implicit_surface"
+  },
+  {
+    "name": "fixedB320_top80",
+    "n": "320 80",
+    "positions": "0 0.198 0.2",
+    "grading": "1 1",
+    "mode": "implicit_surface"
+  },
+  {
+    "name": "fixed_half160",
+    "n": 160,
+    "dt": 0.25,
+    "mode": "implicit_surface"
+  },
+  {
+    "name": "fixed_half320",
+    "n": 320,
+    "dt": 0.25,
+    "mode": "implicit_surface"
+  }
+]

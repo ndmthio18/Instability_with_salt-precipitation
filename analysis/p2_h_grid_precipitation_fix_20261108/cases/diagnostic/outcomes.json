@@ -1,0 +1,82 @@
+[
+  {
+    "case": "historical40",
+    "exit_code": 0,
+    "elapsed_s": 30.473225589841604
+  },
+  {
+    "case": "historical80",
+    "exit_code": 0,
+    "elapsed_s": 43.328397599980235
+  },
+  {
+    "case": "historical160",
+    "exit_code": 0,
+    "elapsed_s": 82.62308849394321
+  },
+  {
+    "case": "historical320",
+    "exit_code": 0,
+    "elapsed_s": 1047.3030488491058
+  },
+  {
+    "case": "familyA40",
+    "exit_code": 0,
+    "elapsed_s": 29.313030768185854
+  },
+  {
+    "case": "familyA80",
+    "exit_code": 0,
+    "elapsed_s": 43.21179820969701
+  },
+  {
+    "case": "familyA160",
+    "exit_code": 0,
+    "elapsed_s": 67.97232324630022
+  },
+  {
+    "case": "familyA320",
+    "exit_code": 0,
+    "elapsed_s": 119.64754444360733
+  },
+  {
+    "case": "familyA640",
+    "exit_code": 0,
+    "elapsed_s": 230.8864301610738
+  },
+  {
+    "case": "familyB40_top80",
+    "exit_code": 0,
+    "elapsed_s": 67.17246910370886
+  },
+  {
+    "case": "familyB80_top80",
+    "exit_code": 0,
+    "elapsed_s": 84.14811855368316
+  },
+  {
+    "case": "familyB160_top80",
+    "exit_code": 0,
+    "elapsed_s": 119.11453759670258
+  },
+  {
+    "case": "familyB320_top80",
+    "exit_code": 0,
+    "elapsed_s": 192.1795646790415
+  },
+  {
+    "case": "familyB160_top40",
+    "exit_code": 0,
+    "elapsed_s": 100.98678883165121
+  },
+  {
+    "case": "familyB160_top160",
+    "exit_code": 0,
+    "elapsed_s": 154.27510404773057
+  },
+  {
+    "case": "historical320_half",
+    "exit_code": 0,
+    "elapsed_s": 1080.151537694037
+  }
+]

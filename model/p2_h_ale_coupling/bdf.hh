@@ -60,6 +60,7 @@ class BDF {
         if(flag<0) throw std::runtime_error(std::string(name)+" flag="+std::to_string(flag));
     }
 public:
+    std::function<void(const Vec&,double)> rejectedState;
     BDF(const ALE& source,const Vec& initial,double maxStep=60,double relative=1e-8) : model(source), relativeTolerance(relative) {
         checked(SUNContext_Create(nullptr,&context),"context");
         state=N_VNew_Serial(model.size(),context); tolerance=N_VClone(state);
@@ -95,7 +96,8 @@ public:
         if(flag<0) throw std::runtime_error("BDF failed "+std::to_string(flag)+": "+error);
         Vec y(N_VGetArrayPointer(state),N_VGetArrayPointer(state)+model.size());
         y=primitive(y);
-        model.validate(y); return y;
+        try { model.validate(y); } catch(...) { if(rejectedState) rejectedState(y,reached); throw; }
+        return y;
     }
     long steps() const { long v; CVodeGetNumSteps(memory,&v); return v; }
 };

@@ -1,0 +1,37 @@
+[
+  {
+    "case": "fixed40",
+    "exit_code": 0,
+    "elapsed_s": 36.767711602151394
+  },
+  {
+    "case": "fixed80",
+    "exit_code": 0,
+    "elapsed_s": 79.99037738889456
+  },
+  {
+    "case": "fixed160",
+    "exit_code": 0,
+    "elapsed_s": 132.38699036464095
+  },
+  {
+    "case": "fixed320",
+    "exit_code": 0,
+    "elapsed_s": 299.1522268783301
+  },
+  {
+    "case": "fixed_half160",
+    "exit_code": 0,
+    "elapsed_s": 241.6122799795121
+  },
+  {
+    "case": "fixed_half320",
+    "exit_code": 0,
+    "elapsed_s": 562.3416940569878
+  },
+  {
+    "case": "fixed80_rollback",
+    "exit_code": 0,
+    "elapsed_s": 79.93905085325241
+  }
+]

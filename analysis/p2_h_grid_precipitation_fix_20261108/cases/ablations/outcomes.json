@@ -1,0 +1,50 @@
+[
+  {
+    "case": "eq0_n320_native",
+    "exit_code": 0
+  },
+  {
+    "case": "eq0_n320_equilibrium_boundary",
+    "exit_code": 0
+  },
+  {
+    "case": "eq0_n320_replay_total",
+    "exit_code": 0
+  },
+  {
+    "case": "eq0_n160_replay_total",
+    "exit_code": 0
+  },
+  {
+    "case": "eq0_n320_replay_advective",
+    "exit_code": 0
+  },
+  {
+    "case": "eq0_n320_replay_diffusive",
+    "exit_code": 0
+  },
+  {
+    "case": "eq1_n320_native",
+    "exit_code": 0
+  },
+  {
+    "case": "eq1_n320_equilibrium_boundary",
+    "exit_code": 0
+  },
+  {
+    "case": "eq1_n320_replay_total",
+    "exit_code": 0
+  },
+  {
+    "case": "eq1_n160_replay_total",
+    "exit_code": 0
+  },
+  {
+    "case": "eq1_n320_replay_advective",
+    "exit_code": 0
+  },
+  {
+    "case": "eq1_n320_replay_diffusive",
+    "exit_code": 0
+  }
+]

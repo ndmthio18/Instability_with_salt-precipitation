@@ -1,0 +1,22 @@
+[
+  "/WORK/hulm_work/zhixin/p2_h_grid_precipitation_fix_20261108/build/soil_solver",
+  "params.input",
+  "-Grid.Cells1",
+  "320",
+  "-TimeLoop.DtInitial",
+  "0.5",
+  "-TimeLoop.MaxTimeStepSize",
+  "0.5",
+  "-TimeLoop.TEnd",
+  "2500",
+  "-P2H.DonorMode",
+  "adaptive_multilayer",
+  "-P2H.MaxDonorDepth",
+  "0.005",
+  "-P2H.CrustCells",
+  "64",
+  "-P2H.PrecrustOnly",
+  "false",
+  "-P2H.GridDiagnostics",
+  "true"
+]

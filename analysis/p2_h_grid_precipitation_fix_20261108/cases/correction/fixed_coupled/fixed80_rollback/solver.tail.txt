@@ -1,0 +1,45 @@
+Update: x^(k+1) = x^k - deltax^k[K
+Newton iteration  2 done, maximum relative shift = 6.2876e-11
+Assemble/solve/update time: 0.003(93.56%)/6.2e-05(1.93%)/0.00014(4.50%)
+[100%] Time step 4999 done in 0.0089 seconds. Wall clock time: 79.21, time: 2499.2, time step size: 0.5
+Assemble: r(x^k) = dS/dt + div F - q;   M = grad r
+Solve: M deltax^k = r[K
+Update: x^(k+1) = x^k - deltax^k[K
+Newton iteration  1 done, maximum relative shift = 6.0625e-07
+Assemble: r(x^k) = dS/dt + div F - q;   M = grad r
+Solve: M deltax^k = r[K
+Update: x^(k+1) = x^k - deltax^k[K
+Newton iteration  2 done, maximum relative shift = 5.7375e-11
+Assemble/solve/update time: 0.003(93.61%)/6.2e-05(1.93%)/0.00014(4.45%)
+[100%] Time step 5000 done in 0.0093 seconds. Wall clock time: 79.219, time: 2499.7, time step size: 0.5
+Assemble: r(x^k) = dS/dt + div F - q;   M = grad r
+Solve: M deltax^k = r[K
+Update: x^(k+1) = x^k - deltax^k[K
+Newton iteration  1 done, maximum relative shift = 4.0410e-07
+Assemble: r(x^k) = dS/dt + div F - q;   M = grad r
+Solve: M deltax^k = r[K
+Update: x^(k+1) = x^k - deltax^k[K
+Newton iteration  2 done, maximum relative shift = 2.5755e-11
+Assemble/solve/update time: 0.003(93.49%)/6.2e-05(1.94%)/0.00015(4.57%)
+Assemble: r(x^k) = dS/dt + div F - q;   M = grad r
+Solve: M deltax^k = r[K
+Update: x^(k+1) = x^k - deltax^k[K
+Newton iteration  1 done, maximum relative shift = 4.0388e-07
+Assemble: r(x^k) = dS/dt + div F - q;   M = grad r
+Solve: M deltax^k = r[K
+Update: x^(k+1) = x^k - deltax^k[K
+Newton iteration  2 done, maximum relative shift = 2.5736e-11
+Assemble/solve/update time: 0.003(93.71%)/5.7e-05(1.79%)/0.00014(4.50%)
+Assemble: r(x^k) = dS/dt + div F - q;   M = grad r
+Solve: M deltax^k = r[K
+Update: x^(k+1) = x^k - deltax^k[K
+Newton iteration  1 done, maximum relative shift = 4.0410e-07
+Assemble: r(x^k) = dS/dt + div F - q;   M = grad r
+Solve: M deltax^k = r[K
+Update: x^(k+1) = x^k - deltax^k[K
+Newton iteration  2 done, maximum relative shift = 2.5754e-11
+Assemble/solve/update time: 0.003(93.74%)/5.6e-05(1.78%)/0.00014(4.49%)
+Writing output for problem "p2f_1d". Took 0.0025 seconds.
+[100%] Time step 5001 done in 0.027 seconds. Wall clock time: 79.249, time: 2500, time step size: 0.33333
+Simulation took 79.25 seconds on 1 processes.
+The cumulative CPU time was 79.25 seconds.

@@ -1,0 +1,56 @@
+{
+  "base_commit": "301097e3d2de3541bf63741cd729bd5cda22329a",
+  "branch": "research/p2-h-grid-precipitation-fix",
+  "hpcc_root": "/WORK/hulm_work/zhixin/p2_h_grid_precipitation_fix_20261108",
+  "diagnostic_binary_sha256": "260119a917c9e6fddb2a6030d7ee5306ae476ba5bf06dc25c56e7df11582df73",
+  "corrected_binary_sha256": "b64d3c453c24f2e195f71f70560cf6ccc7db4b7221fc474bb81110e347a2fa72",
+  "ablation_binary_sha256": "6a217cab4825d3dbdd756c0ff5679ca34681dabbe165d3a0671f21f533a0584e",
+  "protected_sources_unchanged": [
+    "model/p2_h_ale_coupling/ale.hh",
+    "model/p2_h_ale_coupling/donor.hh",
+    "model/p2_d_coupling/cpp/pratcrust.hh",
+    "model/p1_r2_conservative_richards/source/appl/CMakeLists.txt",
+    "model/p1_r2_conservative_richards/source/appl/simpleRichardsnc/main.cc",
+    "model/p1_r2_conservative_richards/source/appl/simpleRichardsnc/model.hh",
+    "model/p1_r2_conservative_richards/source/appl/simpleRichardsnc/params.input",
+    "model/p1_r2_conservative_richards/source/appl/simpleRichardsnc/transportdiagnostics.hh",
+    "model/p1_r2_conservative_richards/source/appl/simpleRichardsnc/CMakeLists.txt"
+  ],
+  "source_archives": {
+    "source_r01.tar.gz": "d8b4d0777aa9f5b9cec4271cc36639d5493d90343b254f0c871639c55a7d24cc",
+    "overlay_r02.tar.gz": "b4c27e3161fa3c66559ff69303c9c6c527eac98b1494f69a07a89120871e9237"
+  },
+  "stages": [
+    "smoke",
+    "diagnostic",
+    "ale_diagnostic",
+    "ablations",
+    "correction/fixed_smoke",
+    "correction/fixed_tests",
+    "correction/fixed_pre",
+    "correction/fixed_coupled"
+  ],
+  "raw_archive": "full_grid_evidence.tar.gz",
+  "compact_archive": "grid_delivery_v2.tar.gz",
+  "accepted_vs_rejected": "Explicit status column; failed histories never extrapolated",
+  "compatibility_default": "projection; corrected matrix explicitly selects implicit_surface",
+  "threads": "DUMUX_NUM_THREADS=1; independent cases parallel in Slurm",
+  "scientific_status": "PASS exploratory numerical gates; conditional GO for declared 1D equations; physical validation NOT TESTED",
+  "compiled_main_sha256": {
+    "build": "2da2e2a3645445a628fed0e22db47b313ba668ec43f9a2465853dbb582523af5",
+    "correction/build": "b7fed5ef79a9ca57997b5cf9b88162080087c76356f8fbf829220bd62eb809a7"
+  },
+  "historical_reference_sha256": {
+    "crystal_n40/coupled_history.csv": "c2df5ecce584679147f591ca64ed5496d2dbd2153df5b8e0aecfe8b1980452cf",
+    "crystal_n40/donor_attempts.csv": "6c3267f1ed8c8d24e3d72c662803a0b6374db0658349fcafd6e18f7603263cfd",
+    "crystal_n80/coupled_history.csv": "f72b304a66ed35798a30d327f86ab5e3014092eb6916174b8e3e3b8dda8aea20",
+    "crystal_n80/donor_attempts.csv": "a6292218f2a9dfad0514a98bdc27f40cc0cfc01b697f4c1d56dc1d69aaaccf62"
+  },
+  "rendered_visual_qa": "11 PNG figures inspected; final v2 figures 5, 5b and 9 rechecked locally",
+  "archive_sha256": {
+    "full_grid_evidence.tar.gz": "54902318559c5b8405ea991ac39f2e28ba5faf50d2ab24d6d3b42e24b81e6412",
+    "grid_delivery_v2.tar.gz": "dc89782de22fa6b4bcd05f8bd711ff1328d4035939e5f7296d3e9392034f36fb"
+  },
+  "local_core_source_verification": "local_source_verification.json",
+  "original_remote_provenance": "provenance_hpcc.json"
+}

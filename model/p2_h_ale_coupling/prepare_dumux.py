@@ -28,7 +28,7 @@ replace('    } while (!timeLoop->finished() && !transport.shouldStop());',
 replace('transport.finish(transport.shouldStop() ? transport.thresholdReason() : "requested_horizon");',
         'transport.finish(problem->activationOnlyComplete() ? "conservative_activation_complete" : (transport.shouldStop() ? transport.thresholdReason() : "requested_horizon"));')
 (app/'main.cc').write_text(src)
-for name in ('ale.hh','bdf.hh','donor.hh'):
+for name in ('ale.hh','bdf.hh','donor.hh','grid_diagnostics.inc'):
     shutil.copyfile(here/name,app/name)
 shutil.copyfile(root/'model/p2_g_surface_precipitation/surface.hh',app/'surface.hh')
 old=(root/'model/p2_d_coupling/cpp/pratcrust.hh').read_text()

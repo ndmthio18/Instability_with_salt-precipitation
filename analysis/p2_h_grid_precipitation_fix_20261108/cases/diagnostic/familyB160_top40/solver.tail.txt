@@ -1,0 +1,45 @@
+Update: x^(k+1) = x^k - deltax^k[K
+Newton iteration  3 done, maximum relative shift = 1.0703e-13
+Assemble/solve/update time: 0.012(92.24%)/0.00043(3.35%)/0.00056(4.41%)
+[100%] Time step 4997 done in 0.017 seconds. Wall clock time: 100.22, time: 2498.5, time step size: 0.5
+Assemble: r(x^k) = dS/dt + div F - q;   M = grad r
+Solve: M deltax^k = r[K
+Update: x^(k+1) = x^k - deltax^k[K
+Newton iteration  1 done, maximum relative shift = 8.8296e-05
+Assemble: r(x^k) = dS/dt + div F - q;   M = grad r
+Solve: M deltax^k = r[K
+Update: x^(k+1) = x^k - deltax^k[K
+Newton iteration  2 done, maximum relative shift = 1.2383e-08
+Assemble: r(x^k) = dS/dt + div F - q;   M = grad r
+Solve: M deltax^k = r[K
+Update: x^(k+1) = x^k - deltax^k[K
+Newton iteration  3 done, maximum relative shift = 1.1804e-13
+Assemble/solve/update time: 0.012(93.01%)/0.00032(2.49%)/0.00058(4.50%)
+[100%] Time step 4998 done in 0.017 seconds. Wall clock time: 100.24, time: 2499, time step size: 0.5
+Assemble: r(x^k) = dS/dt + div F - q;   M = grad r
+Solve: M deltax^k = r[K
+Update: x^(k+1) = x^k - deltax^k[K
+Newton iteration  1 done, maximum relative shift = 8.8292e-05
+Assemble: r(x^k) = dS/dt + div F - q;   M = grad r
+Solve: M deltax^k = r[K
+Update: x^(k+1) = x^k - deltax^k[K
+Newton iteration  2 done, maximum relative shift = 8.5407e-09
+Assemble/solve/update time: 0.0081(93.37%)/0.00023(2.67%)/0.00035(3.96%)
+[100%] Time step 4999 done in 0.013 seconds. Wall clock time: 100.25, time: 2499.5, time step size: 0.5
+Assemble: r(x^k) = dS/dt + div F - q;   M = grad r
+Solve: M deltax^k = r[K
+Update: x^(k+1) = x^k - deltax^k[K
+Newton iteration  1 done, maximum relative shift = 8.8298e-05
+Assemble: r(x^k) = dS/dt + div F - q;   M = grad r
+Solve: M deltax^k = r[K
+Update: x^(k+1) = x^k - deltax^k[K
+Newton iteration  2 done, maximum relative shift = 1.3790e-08
+Assemble: r(x^k) = dS/dt + div F - q;   M = grad r
+Solve: M deltax^k = r[K
+Update: x^(k+1) = x^k - deltax^k[K
+Newton iteration  3 done, maximum relative shift = 1.2290e-13
+Assemble/solve/update time: 0.014(92.81%)/0.00045(3.01%)/0.00063(4.18%)
+Writing output for problem "p2f_1d". Took 0.0054 seconds.
+[100%] Time step 5000 done in 0.027 seconds. Wall clock time: 100.28, time: 2500, time step size: 0.5
+Simulation took 100.28 seconds on 1 processes.
+The cumulative CPU time was 100.28 seconds.

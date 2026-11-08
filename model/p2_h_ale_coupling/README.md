@@ -1,5 +1,14 @@
 # P2-H C++ ALE and conditional DuMuX coupling
 
+The grid-precipitation revision adds the opt-in conservative surface equilibrium
+flux closure `P2H.PrecipitationMode=implicit_surface`; `projection` remains the
+compatibility default. Four soil grids and two timestep-halving runs reached
+2500 s on HPCC and passed the declared exploratory numerical gates. This is
+conditional numerical verification, not experimental validation. See
+[revision and diagnostic semantics](GRID_REVISION.md),
+[boundary equations](SURFACE_COMPLEMENTARITY.md), and
+[results and limitations](../../analysis/p2_h_grid_precipitation_fix_20261108/REPORT_ZH.md).
+
 The `research/p2-h-adaptive-donor` extension adds optional conservative,
 depth-limited multi-layer pore charging. See [registered experiments](ADAPTIVE_PLAN.md),
 [allocation equations and assumptions](ADAPTIVE_FORMULATION.md), and

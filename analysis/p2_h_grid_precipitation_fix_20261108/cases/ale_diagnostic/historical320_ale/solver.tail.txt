@@ -1,0 +1,45 @@
+Newton iteration  1 done, maximum relative shift = 7.7753e-10
+Assemble: r(x^k) = dS/dt + div F - q;   M = grad r
+Solve: M deltax^k = r[K
+Update: x^(k+1) = x^k - deltax^k[K
+Newton iteration  2 done, maximum relative shift = 1.2631e-12
+Assemble/solve/update time: 0.012(94.10%)/0.00022(1.83%)/0.0005(4.07%)
+Assemble: r(x^k) = dS/dt + div F - q;   M = grad r
+Solve: M deltax^k = r[K
+Update: x^(k+1) = x^k - deltax^k[K
+Newton iteration  1 done, maximum relative shift = 8.2322e-10
+Assemble: r(x^k) = dS/dt + div F - q;   M = grad r
+Solve: M deltax^k = r[K
+Update: x^(k+1) = x^k - deltax^k[K
+Newton iteration  2 done, maximum relative shift = 1.2631e-12
+Assemble/solve/update time: 0.011(94.10%)/0.00022(1.80%)/0.0005(4.10%)
+[ 57%] Time step 9019 done in 0.059 seconds. Wall clock time: 592.91, time: 1417.6, time step size: 1.3777e-06
+Assemble: r(x^k) = dS/dt + div F - q;   M = grad r
+Solve: M deltax^k = r[K
+Update: x^(k+1) = x^k - deltax^k[K
+Newton iteration  1 done, maximum relative shift = 6.8609e-10
+Assemble: r(x^k) = dS/dt + div F - q;   M = grad r
+Solve: M deltax^k = r[K
+Update: x^(k+1) = x^k - deltax^k[K
+Newton iteration  2 done, maximum relative shift = 1.2988e-12
+Assemble/solve/update time: 0.012(94.03%)/0.00023(1.89%)/0.0005(4.08%)
+Assemble: r(x^k) = dS/dt + div F - q;   M = grad r
+Solve: M deltax^k = r[K
+Update: x^(k+1) = x^k - deltax^k[K
+Newton iteration  1 done, maximum relative shift = 6.4807e-10
+Assemble: r(x^k) = dS/dt + div F - q;   M = grad r
+Solve: M deltax^k = r[K
+Update: x^(k+1) = x^k - deltax^k[K
+Newton iteration  2 done, maximum relative shift = 1.2988e-12
+Assemble/solve/update time: 0.011(94.15%)/0.00021(1.76%)/0.0005(4.09%)
+Assemble: r(x^k) = dS/dt + div F - q;   M = grad r
+Solve: M deltax^k = r[K
+Update: x^(k+1) = x^k - deltax^k[K
+Newton iteration  1 done, maximum relative shift = 6.8540e-10
+Assemble: r(x^k) = dS/dt + div F - q;   M = grad r
+Solve: M deltax^k = r[K
+Update: x^(k+1) = x^k - deltax^k[K
+Newton iteration  2 done, maximum relative shift = 1.2988e-12
+Assemble/solve/update time: 0.011(94.21%)/0.0002(1.62%)/0.00051(4.17%)
+[ 57%] Time step 9020 done in 0.055 seconds. Wall clock time: 592.96, time: 1417.6, time step size: 1.1481e-06
+Paper 2 run failed: ALE accepted state outside M3 physical bounds

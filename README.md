@@ -1,5 +1,13 @@
 # Paper 2 — effective salt redistribution
 
+`research/p2-h-grid-precipitation-fix` 已定位并修正顶部BOX步后投影的网格／时间分裂误差。
+新增守恒表面平衡通量模式 `P2H.PrecipitationMode=implicit_surface`，保留旧投影回归。
+HPCC四网格40/80/160/320与160/320时间步减半均完成2500 s；探索性数值门槛通过，
+物理定量预测仍需独立验证。原320层失败、受控网格、消融与接受／拒绝空间场均保留。
+见[本轮报告](analysis/p2_h_grid_precipitation_fix_20261108/REPORT_ZH.md)、
+[根因证据](analysis/p2_h_grid_precipitation_fix_20261108/ROOT_CAUSE_ANALYSIS.md)和
+[复算说明](analysis/p2_h_grid_precipitation_fix_20261108/REPRODUCE.md)。
+
 `research/p2-h-crystal-boundary` 将默认激活阈值设为3.5 μm，保持零初始固体、
 真实质量初始化及epsilon_birth=0.43，并在隔离应用中修复顶部侧面误分类。
 HPCC四网格均成功激活；40/80/160层完成2500 s，320层及dt/2在激活后快速

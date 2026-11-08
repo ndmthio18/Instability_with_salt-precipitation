@@ -1,0 +1,21 @@
+[
+  {
+    "name": "undersaturated_projection",
+    "n": 80,
+    "tend": 20,
+    "mode": "projection",
+    "salt": 0.01
+  },
+  {
+    "name": "undersaturated_implicit_surface",
+    "n": 80,
+    "tend": 20,
+    "mode": "implicit_surface",
+    "salt": 0.01
+  },
+  {
+    "name": "projection40_regression",
+    "n": 40,
+    "mode": "projection"
+  }
+]

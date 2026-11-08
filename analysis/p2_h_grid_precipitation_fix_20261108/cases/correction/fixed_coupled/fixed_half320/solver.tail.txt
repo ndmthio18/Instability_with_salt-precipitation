@@ -1,0 +1,45 @@
+Assemble/solve/update time: 0.017(94.23%)/0.00028(1.53%)/0.00078(4.24%)
+Assemble: r(x^k) = dS/dt + div F - q;   M = grad r
+Solve: M deltax^k = r[K
+Update: x^(k+1) = x^k - deltax^k[K
+Newton iteration  1 done, maximum relative shift = 1.1907e-06
+Assemble: r(x^k) = dS/dt + div F - q;   M = grad r
+Solve: M deltax^k = r[K
+Update: x^(k+1) = x^k - deltax^k[K
+Newton iteration  2 done, maximum relative shift = 6.9380e-08
+Assemble: r(x^k) = dS/dt + div F - q;   M = grad r
+Solve: M deltax^k = r[K
+Update: x^(k+1) = x^k - deltax^k[K
+Newton iteration  3 done, maximum relative shift = 7.4811e-11
+Assemble/solve/update time: 0.017(94.15%)/0.00028(1.51%)/0.0008(4.34%)
+Assemble: r(x^k) = dS/dt + div F - q;   M = grad r
+Solve: M deltax^k = r[K
+Update: x^(k+1) = x^k - deltax^k[K
+Newton iteration  1 done, maximum relative shift = 3.0311e-07
+Assemble: r(x^k) = dS/dt + div F - q;   M = grad r
+Solve: M deltax^k = r[K
+Update: x^(k+1) = x^k - deltax^k[K
+Newton iteration  2 done, maximum relative shift = 6.9480e-08
+Assemble: r(x^k) = dS/dt + div F - q;   M = grad r
+Solve: M deltax^k = r[K
+Update: x^(k+1) = x^k - deltax^k[K
+Newton iteration  3 done, maximum relative shift = 1.3450e-11
+Assemble/solve/update time: 0.017(94.24%)/0.00027(1.50%)/0.00078(4.27%)
+[100%] Time step 9999 done in 0.072 seconds. Wall clock time: 561.63, time: 2499.8, time step size: 0.25
+Assemble: r(x^k) = dS/dt + div F - q;   M = grad r
+Solve: M deltax^k = r[K
+Update: x^(k+1) = x^k - deltax^k[K
+Newton iteration  1 done, maximum relative shift = 3.0308e-07
+Assemble: r(x^k) = dS/dt + div F - q;   M = grad r
+Solve: M deltax^k = r[K
+Update: x^(k+1) = x^k - deltax^k[K
+Newton iteration  2 done, maximum relative shift = 6.9467e-08
+Assemble: r(x^k) = dS/dt + div F - q;   M = grad r
+Solve: M deltax^k = r[K
+Update: x^(k+1) = x^k - deltax^k[K
+Newton iteration  3 done, maximum relative shift = 1.1888e-11
+Assemble/solve/update time: 0.017(94.18%)/0.00028(1.55%)/0.00078(4.27%)
+Writing output for problem "p2f_1d". Took 0.006 seconds.
+[100%] Time step 10000 done in 0.03 seconds. Wall clock time: 561.67, time: 2500, time step size: 0.25
+Simulation took 561.67 seconds on 1 processes.
+The cumulative CPU time was 561.67 seconds.
