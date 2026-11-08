@@ -1,0 +1,35 @@
+Assemble/solve/update time: 0.0011(88.21%)/0.0001(7.82%)/5.1e-05(3.97%)
+[100%] Time step 4997 done in 0.02 seconds. Wall clock time: 130.5, time: 2498.5, time step size: 0.5
+Assemble: r(x^k) = dS/dt + div F - q;   M = grad r
+Solve: M deltax^k = r[K
+Update: x^(k+1) = x^k - deltax^k[K
+Newton iteration  1 done, maximum relative shift = 1.7110e-06
+Assemble: r(x^k) = dS/dt + div F - q;   M = grad r
+Solve: M deltax^k = r[K
+Update: x^(k+1) = x^k - deltax^k[K
+Newton iteration  2 done, maximum relative shift = 6.3071e-11
+Assemble/solve/update time: 0.0046(27.47%)/0.00011(0.64%)/0.012(71.88%)
+[100%] Time step 4998 done in 0.03 seconds. Wall clock time: 130.52, time: 2499, time step size: 0.5
+Assemble: r(x^k) = dS/dt + div F - q;   M = grad r
+Solve: M deltax^k = r[K
+Update: x^(k+1) = x^k - deltax^k[K
+Newton iteration  1 done, maximum relative shift = 1.7110e-06
+Assemble: r(x^k) = dS/dt + div F - q;   M = grad r
+Solve: M deltax^k = r[K
+Update: x^(k+1) = x^k - deltax^k[K
+Newton iteration  2 done, maximum relative shift = 6.5673e-11
+Assemble/solve/update time: 0.013(91.49%)/0.00015(1.10%)/0.001(7.41%)
+[100%] Time step 4999 done in 0.018 seconds. Wall clock time: 130.54, time: 2499.5, time step size: 0.5
+Assemble: r(x^k) = dS/dt + div F - q;   M = grad r
+Solve: M deltax^k = r[K
+Update: x^(k+1) = x^k - deltax^k[K
+Newton iteration  1 done, maximum relative shift = 1.7110e-06
+Assemble: r(x^k) = dS/dt + div F - q;   M = grad r
+Solve: M deltax^k = r[K
+Update: x^(k+1) = x^k - deltax^k[K
+Newton iteration  2 done, maximum relative shift = 6.4320e-11
+Assemble/solve/update time: 0.0017(90.76%)/8.2e-05(4.41%)/9e-05(4.83%)
+Writing output for problem "p2f_1d". Took 0.0084 seconds.
+[100%] Time step 5000 done in 0.005 seconds. Wall clock time: 130.56, time: 2500, time step size: 0.5
+Simulation took 130.56 seconds on 1 processes.
+The cumulative CPU time was 130.56 seconds.

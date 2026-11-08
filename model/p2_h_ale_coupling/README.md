@@ -61,7 +61,7 @@ is `/WORK/hulm_work/zhixin/p2_h_ale_coupling_20261107`.
 7. `postprocess.slurm` audits complete accepted histories, generates PNG/SVG
    figures and creates compact and full-history archives with transfer hashes.
 
-Configure P2H `ActivationHeight` (1e-6 m default), `CrustCells` (64),
+Configure P2H `ActivationHeight` (3.5e-6 m default), `CrustCells` (64),
 `MinimumSupplySaturation` (.99), `ActivationOnly` (false),
 `InjectRejectedTrial` (false), and `RejectAfterActive` (false). The last two
 are controlled lifecycle tests. Film settings retain P2G `FilmThickness` and

@@ -1,0 +1,94 @@
+[
+  {
+    "name": "crystal_n40",
+    "n": 40,
+    "h_um": 3.5,
+    "depth_mm": 5,
+    "mode": "adaptive_multilayer"
+  },
+  {
+    "name": "crystal_n80",
+    "n": 80,
+    "h_um": 3.5,
+    "depth_mm": 5,
+    "mode": "adaptive_multilayer"
+  },
+  {
+    "name": "crystal_n160",
+    "n": 160,
+    "h_um": 3.5,
+    "depth_mm": 5,
+    "mode": "adaptive_multilayer"
+  },
+  {
+    "name": "crystal_n320",
+    "n": 320,
+    "h_um": 3.5,
+    "depth_mm": 5,
+    "mode": "adaptive_multilayer"
+  },
+  {
+    "name": "pre_n40",
+    "n": 40,
+    "h_um": 3.5,
+    "depth_mm": 5,
+    "mode": "adaptive_multilayer",
+    "precrust": true
+  },
+  {
+    "name": "pre_n80",
+    "n": 80,
+    "h_um": 3.5,
+    "depth_mm": 5,
+    "mode": "adaptive_multilayer",
+    "precrust": true
+  },
+  {
+    "name": "pre_n160",
+    "n": 160,
+    "h_um": 3.5,
+    "depth_mm": 5,
+    "mode": "adaptive_multilayer",
+    "precrust": true
+  },
+  {
+    "name": "pre_n320",
+    "n": 320,
+    "h_um": 3.5,
+    "depth_mm": 5,
+    "mode": "adaptive_multilayer",
+    "precrust": true
+  },
+  {
+    "name": "dt_half_n160",
+    "n": 160,
+    "h_um": 3.5,
+    "depth_mm": 5,
+    "mode": "adaptive_multilayer",
+    "dt": 0.25
+  },
+  {
+    "name": "dt_half_n320",
+    "n": 320,
+    "h_um": 3.5,
+    "depth_mm": 5,
+    "mode": "adaptive_multilayer",
+    "dt": 0.25
+  },
+  {
+    "name": "old_n80",
+    "n": 80,
+    "h_um": 1,
+    "depth_mm": 5,
+    "mode": "top_only",
+    "explicit_height": true
+  },
+  {
+    "name": "old_n160",
+    "n": 160,
+    "h_um": 1,
+    "depth_mm": 5,
+    "mode": "top_only",
+    "explicit_height": true
+  }
+]

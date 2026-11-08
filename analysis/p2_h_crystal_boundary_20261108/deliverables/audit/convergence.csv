@@ -1,0 +1,6 @@
+coarse,fine,gate,kind,reason,relative_differences.epsilon_min,relative_differences.evaporation_kg_m2_s,relative_differences.h_m,relative_differences.h_mass_m,relative_differences.internal_solid_kg_m2,relative_differences.top_solid_kg_m2,time_s
+crystal_n40,crystal_n80,True,grid,,2.6728321122530224e-07,1.5579745322241163e-12,0.00012815868696953366,0.00019178538650665677,0.0004720028982530394,0.00012815868695600569,2500.0
+crystal_n80,crystal_n160,True,grid,,2.5611299564357707e-06,6.076100675304864e-11,0.006233420104290471,0.0018188516505950043,0.01717107657133799,0.006233420104284636,2500.0
+crystal_n160,crystal_n320,False,grid,no exactly matched accepted active timestamp; final state unavailable,,,,,,,
+crystal_n160,dt_half_n160,True,timestep,,1.4018339109998968e-06,3.193847790967384e-11,0.003311219620723883,0.0010036313072253808,0.009045875310778781,0.0033112196207301164,2500.0
+crystal_n320,dt_half_n320,False,timestep,no exactly matched accepted active timestamp; final state unavailable,,,,,,,

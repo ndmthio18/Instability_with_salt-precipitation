@@ -1,0 +1,50 @@
+[
+  {
+    "case": "crystal_n40",
+    "exit_code": 0
+  },
+  {
+    "case": "crystal_n80",
+    "exit_code": 0
+  },
+  {
+    "case": "crystal_n160",
+    "exit_code": 0
+  },
+  {
+    "case": "crystal_n320",
+    "exit_code": 1
+  },
+  {
+    "case": "pre_n40",
+    "exit_code": 0
+  },
+  {
+    "case": "pre_n80",
+    "exit_code": 0
+  },
+  {
+    "case": "pre_n160",
+    "exit_code": 0
+  },
+  {
+    "case": "pre_n320",
+    "exit_code": 0
+  },
+  {
+    "case": "dt_half_n160",
+    "exit_code": 0
+  },
+  {
+    "case": "dt_half_n320",
+    "exit_code": 1
+  },
+  {
+    "case": "old_n80",
+    "exit_code": 0
+  },
+  {
+    "case": "old_n160",
+    "exit_code": 0
+  }
+]

@@ -1,3 +1,25 @@
+        bool topFace_(const SubControlVolumeFace& face) const {
+            // This one-column rectangular mesh has an upward top and lateral
+            // faces which can lie inside the legacy coordinate tolerance.
+            return onUpperBoundary_(face.ipGlobal()) && face.unitOuterNormal()[1] > 0.5;
+        }
+        void auditBoundaryFaces_() const {
+            std::ofstream log("boundary_faces.csv");
+            log<<std::setprecision(17)<<"id,x_m,y_m,nx,ny,area_m2,legacy_top,selected_top\n";
+            double selectedArea=0,sideArea=0; unsigned id=0;
+            for(const auto& e:elements(this->gridGeometry().gridView())) {
+                auto g=localView(this->gridGeometry()); g.bind(e);
+                for(const auto& face:scvfs(g)) if(face.boundary()) {
+                    const auto x=face.ipGlobal(); const auto n=face.unitOuterNormal();
+                    const bool selected=topFace_(face);
+                    log<<id++<<','<<x[0]<<','<<x[1]<<','<<n[0]<<','<<n[1]<<','<<face.area()<<','
+                       <<onUpperBoundary_(x)<<','<<selected<<'\n';
+                    if(selected) { selectedArea+=face.area(); if(n[1]<.5) sideArea+=face.area(); }
+                }
+            }
+            if(std::abs(selectedArea-area_())>1e-12*area_() || sideArea!=0)
+                throw std::runtime_error("top boundary area audit failed");
+        }
         struct SurfaceState {
             bool active=false;
             p2h::Vec crust;
@@ -143,6 +165,11 @@
         }
         template<class Solution> void initializeSurface(const Solution& x) {
             if(getParam<int>("Grid.Cells0")!=1) throw std::runtime_error("P2-H supports one horizontal cell only");
+            auditBoundaryFaces_();
+            std::ofstream config("activation_config.csv");
+            config<<std::setprecision(17)<<"threshold_m,birth_porosity,crust_cells,initial_height_m,initial_solid_kg_m2\n"
+                  <<getParam<double>("P2H.ActivationHeight",3.5e-6)<<",0.43,"
+                  <<getParam<int>("P2H.CrustCells",64)<<",0,0\n";
             p2h::Parameters p;
             p.ceq=massFraction(getParam<double>("Transport.SolubilityMoleFraction"));
             p.bottomC=p.ceq; p.crystal=2165;
@@ -167,7 +194,7 @@
                 // Separate prescribed-inventory allocation harness only. Its
                 // synthetic solid inventory never enters a coupled simulation.
                 auto candidate=x; SurfaceState test;
-                const double h=getParam<double>("P2H.ActivationHeight",1e-6);
+                const double h=getParam<double>("P2H.ActivationHeight",3.5e-6);
                 test.loose=h*p.crystal*(1-p.birth);
                 const bool ok=adaptiveDonors_(candidate,test,0,h);
                 eventLog_<<0<<(ok?",controlled_allocation_pass,":",controlled_allocation_refused,")<<h<<",0\n";
@@ -183,7 +210,7 @@
             }
             next.vapour+=heldLiquid_*dt*area;
             const double h=next.loose/(ale_->p.crystal*(1-ale_->p.birth));
-            if(h<getParam<double>("P2H.ActivationHeight",1e-6)) return;
+            if(h<getParam<double>("P2H.ActivationHeight",3.5e-6)) return;
             if(getParam<bool>("P2H.PrecrustOnly",false)) return;
             if(getParam<std::string>("P2H.DonorMode","top_only")=="adaptive_multilayer") {
                 adaptiveDonors_(x,next,time,h); return;

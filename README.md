@@ -1,5 +1,12 @@
 # Paper 2 — effective salt redistribution
 
+`research/p2-h-crystal-boundary` 将默认激活阈值设为3.5 μm，保持零初始固体、
+真实质量初始化及epsilon_birth=0.43，并在隔离应用中修复顶部侧面误分类。
+HPCC四网格均成功激活；40/80/160层完成2500 s，320层及dt/2在激活后快速
+进入ALE状态保护边界。联合预算通过，完整四网格和定量物理准入仍为NO-GO。
+见[本轮报告及七图](analysis/p2_h_crystal_boundary_20261108/REPORT_ZH.md)和
+[复算记录](analysis/p2_h_crystal_boundary_20261108/REPRODUCE.md)。
+
 `research/p2-h-adaptive-donor` 增加了守恒、限深的多层孔隙液初始化，保留
 `top_only` 旧模式；ALE、BDF和土壤物理方程保持不变。新方法解决80/160层的
 局部单BOX供液限制，但320层的高度容差把侧面误判为顶面并施加蒸发，

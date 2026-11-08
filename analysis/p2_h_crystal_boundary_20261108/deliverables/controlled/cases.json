@@ -1,0 +1,34 @@
+[
+  {
+    "name": "control_n40",
+    "n": 40,
+    "h_um": 3.5,
+    "depth_mm": 5,
+    "mode": "adaptive_multilayer",
+    "controlled": true
+  },
+  {
+    "name": "control_n80",
+    "n": 80,
+    "h_um": 3.5,
+    "depth_mm": 5,
+    "mode": "adaptive_multilayer",
+    "controlled": true
+  },
+  {
+    "name": "control_n160",
+    "n": 160,
+    "h_um": 3.5,
+    "depth_mm": 5,
+    "mode": "adaptive_multilayer",
+    "controlled": true
+  },
+  {
+    "name": "control_n320",
+    "n": 320,
+    "h_um": 3.5,
+    "depth_mm": 5,
+    "mode": "adaptive_multilayer",
+    "controlled": true
+  }
+]

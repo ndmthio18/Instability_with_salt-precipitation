@@ -15,6 +15,7 @@ def replace(old,new):
     assert src.count(old)==1,(old,src.count(old))
     src=src.replace(old,new)
 replace('#include "model.hh"','#include "model.hh"\n#include "bdf.hh"\n#include "surface.hh"\n#include "film.hh"\n#include "donor.hh"')
+replace('if (onUpperBoundary_(globalPos))','if (topFace_(scvf))')
 replace('else if (mode == "no_flux")','else if (mode == "p2h_ale")\n                { values[conti0EqIdx]=heldLiquid_; values[conti1EqIdx]=heldSalt_; }\n                else if (mode == "no_flux")')
 replace('if (mode != "prescribed_components")','if (mode != "prescribed_components" && mode != "p2h_ale")')
 replace('        Scalar nonWettingReferencePressure() const',(here/'soil_methods.inc').read_text()+'\n        Scalar nonWettingReferencePressure() const')
