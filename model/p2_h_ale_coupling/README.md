@@ -1,5 +1,16 @@
 # P2-H C++ ALE and conditional DuMuX coupling
 
+## Reservoir-fed long-time revision
+
+`RESERVOIR_FORMULATION.md` documents the accepted-step bottom component-flux
+ledger used by branch `research/p2-h-kr-av-reservoir`. Its registered sequence
+is `build_reservoir.slurm`, `verify_reservoir.slurm`, the gated 50 h
+`pilot_reservoir.slurm`, `ale_pilot_reservoir.slurm`, the five unique cases in
+`matrix_reservoir.slurm`, and `postprocess_reservoir.slurm`. Simulation and
+post-processing scripts require a Slurm allocation. Every reservoir case passes
+`Problem.BottomBoundaryMode=reservoir` and
+`Problem.SaltMoleFraction=0.05` explicitly.
+
 The isolated `research/p2-h-av-sensitivity` revision adds an internal-only
 `P2H.AvMultiplier`, exact accepted-state precipitation/dissolution BDF ledgers,
 and registered 80/160-soil plus 64/128/256-ALE sensitivity checks at fixed

@@ -1,0 +1,41 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "stem": "figure1_reservoir_vs_no_flux",
+      "pixels": [
+        2194,
+        1774
+      ],
+      "nonblank": true,
+      "formats": true
+    },
+    {
+      "stem": "figure2_reservoir_supply",
+      "pixels": [
+        2584,
+        1894
+      ],
+      "nonblank": true,
+      "formats": true
+    },
+    {
+      "stem": "figure3_soil_profiles",
+      "pixels": [
+        2554,
+        1174
+      ],
+      "nonblank": true,
+      "formats": true
+    },
+    {
+      "stem": "figure4_conservation",
+      "pixels": [
+        2494,
+        1024
+      ],
+      "nonblank": true,
+      "formats": true
+    }
+  ]
+}

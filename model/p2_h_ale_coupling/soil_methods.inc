@@ -27,6 +27,14 @@
             double loose=0, initialSolid=0, vapour=0, activation=-1, pratHeight=0;
             double poreSaltTransfer=0, poreWaterTransfer=0, precipFlux=0;
             double internalPositive=0, internalDissolution=0;
+            double bottomLiquidFlux=0, bottomSaltFlux=0;
+            double cumulativeBottomLiquid=0, cumulativeBottomSalt=0;
+        };
+        struct BottomFlux {
+            double liquid=0, salt=0;
+            double bottomLiquidBefore=0, bottomLiquidAfter=0;
+            double bottomSaltBefore=0, bottomSaltAfter=0;
+            double cutLiquidDown=0, cutSaltDown=0;
         };
         SurfaceState acceptedSurface_;
         std::unique_ptr<p2h::ALE> ale_;
@@ -34,7 +42,7 @@
         double nextFieldOutputTime_=0;
         unsigned long coupledTrials_=0,rejectedTrials_=0;
         bool injectedFailure_=false;
-        std::ofstream surfaceLog_,eventLog_,crustFields_,soilFields_,donorLog_,allocationLog_;
+        std::ofstream surfaceLog_,eventLog_,crustFields_,soilFields_,donorLog_,allocationLog_,boundaryLog_;
         unsigned long allocationAttempt_=0, candidateAttempt_=0;
         bool controlledDonorComplete() const { return getParam<bool>("P2H.ControlledDonorTest",false); }
 
@@ -139,6 +147,50 @@
             }
             return {s,w};
         }
+        template<class Solution,class GridVariables>
+        BottomFlux reconstructBottomFlux_(const Solution& before,const Solution& after,double dt,GridVariables& gv) const {
+            BottomFlux result;
+            if(!bottomIsDirichlet()) return result;
+            if(!(dt>0)) throw std::runtime_error("invalid dt for bottom-flux reconstruction");
+            const double bottom=this->gridGeometry().bBoxMin()[1];
+            const double tol=1e-12*std::max(1.,this->gridGeometry().bBoxMax()[1]-bottom);
+            std::vector<double> y(after.size()),levels;
+            for(const auto& vertex:vertices(this->gridGeometry().gridView())) {
+                const auto i=this->gridGeometry().vertexMapper().index(vertex);
+                y[i]=vertex.geometry().center()[1]; levels.push_back(y[i]);
+            }
+            std::sort(levels.begin(),levels.end());
+            levels.erase(std::unique(levels.begin(),levels.end(),[&](double a,double b){return std::abs(a-b)<tol;}),levels.end());
+            if(levels.size()<2) throw std::runtime_error("bottom flux needs two vertical DOF levels");
+            const double cut=.5*(levels[0]+levels[1]);
+            const auto mb=dofMasses_(before),ma=dofMasses_(after);
+            for(std::size_t i=0;i<after.size();++i) if(std::abs(y[i]-bottom)<tol) {
+                result.bottomSaltBefore+=mb.first[i]; result.bottomSaltAfter+=ma.first[i];
+                result.bottomLiquidBefore+=mb.first[i]+mb.second[i];
+                result.bottomLiquidAfter+=ma.first[i]+ma.second[i];
+            }
+            using Residual=RichardsSaltModelLocalResidual<TypeTag>;
+            gv.update(after);
+            for(const auto& e:elements(this->gridGeometry().gridView())) {
+                auto g=localView(this->gridGeometry()); g.bind(e);
+                auto vv=localView(gv.curGridVolVars()); vv.bind(e,g,after);
+                auto cache=localView(gv.gridFluxVarsCache()); cache.bind(e,g,vv);
+                for(const auto& face:scvfs(g)) if(!face.boundary()) {
+                    const auto zi=y[g.scv(face.insideScvIdx()).dofIndex()];
+                    const auto zo=y[g.scv(face.outsideScvIdx()).dofIndex()];
+                    const int sign=int(zi>cut)-int(zo>cut);
+                    if(!sign) continue;
+                    const auto f=Residual::transportFlux(*this,e,g,vv,face,cache);
+                    result.cutLiquidDown+=sign*f.totalMass;
+                    result.cutSaltDown+=sign*f.saltTotal;
+                }
+            }
+            // Backward-Euler balance over the bottom BOX control volumes:
+            // dM_bottom/dt = B_in + F_cut,down.
+            result.liquid=(result.bottomLiquidAfter-result.bottomLiquidBefore)/dt-result.cutLiquidDown;
+            result.salt=(result.bottomSaltAfter-result.bottomSaltBefore)/dt-result.cutSaltDown;
+            return result;
+        }
         template<class Solution> double topC_(const Solution& x) const {
             double c=0; auto ids=topDofs_();
             for(auto i:ids) c+=massFraction(x[i][moleFractionIdx]);
@@ -161,6 +213,7 @@
             x[i][moleFractionIdx]=mole;
         }
         double film_(double c) const {
+            if(getParam<bool>("P2H.VerificationZeroEvaporation",false)) return 0;
             p2gfilm::GasFilm f;
             f.thickness=getParam<double>("P2G.FilmThickness",.0083);
             f.relativeHumidity=getParam<double>("P2G.RelativeHumidity",.4);
@@ -193,11 +246,25 @@
             surfaceLog_.open("coupled_history.csv"); eventLog_.open("coupling_events.csv"); crustFields_.open("crust_fields.csv");
             soilFields_.open("soil_fields.csv");
             donorLog_.open("donor_profiles.csv"); allocationLog_.open("donor_attempts.csv");
+            boundaryLog_.open("open_boundary_budget.csv");
             nextFieldOutputTime_=getParam<double>("P2H.FieldOutputInterval",100.0);
             if(!(std::isfinite(nextFieldOutputTime_) && nextFieldOutputTime_>0))
                 throw std::runtime_error("invalid P2-H field output interval");
             donorLog_<<std::setprecision(17)<<"attempt,time_s,dof,depth_m,box_deepest_m,volume_m3,available_kg,extracted_kg,sw_before,sw_after,c_before,c_after,p_before_pa,p_after_pa,rho_before,rho_after\n";
             allocationLog_<<std::setprecision(17)<<"attempt,time_s,h_m,required_kg,available_kg,sufficient,donor_count,used_depth_m,salt_transfer_kg,water_transfer_kg,salt_transfer_residual_kg,water_transfer_residual_kg,initial_salt_kg,initial_water_kg\n";
+            boundaryLog_<<std::setprecision(17)<<"time_s,dt_s,bottom_liquid_in_kg_s,bottom_salt_in_kg_s,bottom_water_in_kg_s,bottom_liquid_in_kg_m2_s,bottom_salt_in_kg_m2_s,bottom_water_in_kg_m2_s,cumulative_bottom_liquid_kg,cumulative_bottom_salt_kg,cumulative_bottom_water_kg,bottom_liquid_before_kg,bottom_liquid_after_kg,bottom_salt_before_kg,bottom_salt_after_kg,cut_liquid_down_kg_s,cut_salt_down_kg_s,soil_water_kg,crust_water_kg,vapour_kg,soil_salt_kg,crust_dissolved_salt_kg,solid_salt_kg,water_residual_kg,salt_residual_kg\n";
+            const double x0=getParam<double>("Problem.SaltMoleFraction");
+            double xmin=std::numeric_limits<double>::infinity(),xmax=-xmin;
+            for(const auto& value:x) { xmin=std::min(xmin,double(value[moleFractionIdx])); xmax=std::max(xmax,double(value[moleFractionIdx])); }
+            const double yBottom=this->gridGeometry().bBoxMin()[1];
+            const double reservoirPressure=nonWettingReferencePressure()-(getParam<double>("Problem.WaterLevel")+yBottom)*rhoW(x0)*gravitationalAcceleration();
+            std::ofstream reservoir("reservoir_config.csv");
+            reservoir<<std::setprecision(17)<<"bottom_mode,domain_bottom_y_m,domain_top_y_m,water_level_parameter_m,water_table_y_m,reservoir_pressure_pa,configured_salt_mole_fraction,reservoir_salt_mole_fraction,initial_min_salt_mole_fraction,initial_max_salt_mole_fraction\n"
+                     <<(bottomIsDirichlet()?"reservoir":"no_flux")<<','<<yBottom<<','<<this->gridGeometry().bBoxMax()[1]<<','
+                     <<getParam<double>("Problem.WaterLevel")<<','<<-getParam<double>("Problem.WaterLevel")<<','<<reservoirPressure<<','
+                     <<x0<<','<<x0<<','<<xmin<<','<<xmax<<'\n';
+            if(std::max(std::abs(xmin-x0),std::abs(xmax-x0))>1e-14)
+                throw std::runtime_error("accepted initial salt field differs from Problem.SaltMoleFraction");
             const auto mode=getParam<std::string>("P2H.DonorMode","top_only");
             if(mode!="top_only" && mode!="adaptive_multilayer") throw std::runtime_error("unknown donor mode");
             surfaceLog_<<std::setprecision(17)<<"time_s,dt_s,active,activation_s,h_m,h_mass_m,h_prat_m,top_solid_kg_m2,internal_solid_kg_m2,internal_positive_kg_m2,internal_dissolution_kg_m2,internal_quadrature_residual_kg_m2,top_new_solid_kg_m2,internal_fraction_net,internal_fraction_positive,positive_reaction_kg_m2_s,dissolution_kg_m2_s,top_growth_velocity_m_s,crust_top_mass_fraction,epsilon_min,top_soil_mass_fraction,top_soil_sw,evaporation_kg_m2_s,soil_salt_kg,crust_salt_kg,soil_water_kg,crust_water_kg,vapour_kg,salt_residual_kg,water_residual_kg,solid_ledger_residual_kg,pore_salt_transfer_kg,pore_water_transfer_kg,coupled_trials,rejected_trials,interface_liquid_kg_m2,interface_salt_kg_m2,reaction_coefficient_m_s,av_multiplier\n";
@@ -263,8 +330,9 @@
         template<class Solution> void checkBudgets_(const Solution& x,const SurfaceState& state) const {
             const auto sm=inventory_(x); double salt=state.loose*area_(),water=0;
             if(state.active) { auto cm=ale_->inventory(state.crust); salt=(cm.salt+cm.solid)*area_(); water=cm.water*area_(); }
-            if(std::abs(sm.first+salt-initialSalt_)>1e-8*initialSalt_ ||
-               std::abs(sm.second+water+state.vapour-initialWater_)>1e-8*initialWater_)
+            const double bottomWater=state.cumulativeBottomLiquid-state.cumulativeBottomSalt;
+            if(std::abs(sm.first+salt-state.cumulativeBottomSalt-initialSalt_)>1e-8*initialSalt_ ||
+               std::abs(sm.second+water+state.vapour-bottomWater-initialWater_)>1e-8*initialWater_)
                 throw std::runtime_error("global coupled budget failed");
         }
         template<class Solution,class Solver,class TimeLoop,class GridVariables>
@@ -318,6 +386,10 @@
                         }
                         if(!solved) throw std::runtime_error("coupled interface root not converged");
                     }
+                    const auto bottom=reconstructBottomFlux_(base,x,dt,variables);
+                    next.bottomLiquidFlux=bottom.liquid; next.bottomSaltFlux=bottom.salt;
+                    next.cumulativeBottomLiquid+=bottom.liquid*dt;
+                    next.cumulativeBottomSalt+=bottom.salt*dt;
                     checkBudgets_(x,next);
                     if(next.active && (!getParam<bool>("P2H.RejectAfterActive",false) || original.active) &&
                        !injectedFailure_ && getParam<bool>("P2H.InjectRejectedTrial",false)) {
@@ -326,8 +398,9 @@
                     acceptedSurface_=std::move(next);
                     if(!original.active && acceptedSurface_.active)
                         eventLog_<<loop.time()+dt<<",accepted_activation_attempt,"<<candidateAttempt_<<','<<acceptedSurface_.activation<<'\n';
-                    writeGridDiagnostics_(base,x,original,acceptedSurface_,loop.time()+dt,dt,j);
-                    writeSurface_(x,loop.time()+dt,dt,j);
+                    const double topEvaporation=original.active?j:heldLiquid_-heldSalt_;
+                    writeGridDiagnostics_(base,x,original,acceptedSurface_,loop.time()+dt,dt,topEvaporation);
+                    writeSurface_(x,loop.time()+dt,dt,topEvaporation,&bottom);
                     return;
                 } catch(const std::exception& e) {
                     ++rejectedTrials_;
@@ -342,7 +415,7 @@
             }
         }
         bool activationOnlyComplete() const { return acceptedSurface_.active && getParam<bool>("P2H.ActivationOnly",false); }
-        template<class Solution> void writeSurface_(const Solution& x,double time,double dt,double j) {
+        template<class Solution> void writeSurface_(const Solution& x,double time,double dt,double j,const BottomFlux* bottom=nullptr) {
             const auto& st=acceptedSurface_; const auto sm=inventory_(x); const double a=area_();
             const double outputInterval=getParam<double>("P2H.FieldOutputInterval",100.0);
             const double outputTolerance=1e-10*std::max(1.0,time);
@@ -369,17 +442,27 @@
                 if(fieldOutput)
                     for(int i=0;i<ale_->n;++i) crustFields_<<time<<','<<ale_->faces[i]*h<<','<<ale_->faces[i+1]*h<<','<<st.crust[i]<<','<<st.crust[ale_->n+i]<<'\n';
             }
+            const double bottomWater=st.cumulativeBottomLiquid-st.cumulativeBottomSalt;
+            const double saltResidual=sm.first+cs+solid*a-st.cumulativeBottomSalt-initialSalt_;
+            const double waterResidual=sm.second+cw+st.vapour-bottomWater-initialWater_;
             surfaceLog_<<time<<','<<dt<<','<<st.active<<','<<st.activation<<','<<h<<','<<solid/(ale_->p.crystal*(1-ale_->p.birth))<<','<<st.pratHeight<<','
                 <<top<<','<<inside<<','<<st.internalPositive<<','<<st.internalDissolution<<','
                 <<st.internalPositive-st.internalDissolution-inside<<','<<topNew<<','<<netFraction<<','<<positiveFraction<<','
                 <<positiveRate<<','<<dissolutionRate<<','<<growth<<','<<crustTopC<<','<<eps<<','<<topC_(x)<<','<<topSw_(x)<<','<<j<<','<<sm.first<<','<<cs<<','<<sm.second<<','<<cw<<','<<st.vapour<<','
-                <<sm.first+cs+solid*a-initialSalt_<<','<<sm.second+cw+st.vapour-initialWater_<<','<<defect<<','<<st.poreSaltTransfer<<','<<st.poreWaterTransfer<<','<<coupledTrials_<<','<<rejectedTrials_<<','
+                <<saltResidual<<','<<waterResidual<<','<<defect<<','<<st.poreSaltTransfer<<','<<st.poreWaterTransfer<<','<<coupledTrials_<<','<<rejectedTrials_<<','
                 <<(st.active?st.crust[ale_->inv()+3]:0)<<','<<(st.active?st.crust[ale_->inv()+2]:0)<<','
                 <<ale_->p.reaction<<','<<ale_->p.avMultiplier<<'\n';
+            const BottomFlux zero; const auto& bf=bottom?*bottom:zero;
+            boundaryLog_<<time<<','<<dt<<','<<st.bottomLiquidFlux<<','<<st.bottomSaltFlux<<','<<st.bottomLiquidFlux-st.bottomSaltFlux<<','
+                <<st.bottomLiquidFlux/a<<','<<st.bottomSaltFlux/a<<','<<(st.bottomLiquidFlux-st.bottomSaltFlux)/a<<','
+                <<st.cumulativeBottomLiquid<<','<<st.cumulativeBottomSalt<<','<<bottomWater<<','
+                <<bf.bottomLiquidBefore<<','<<bf.bottomLiquidAfter<<','<<bf.bottomSaltBefore<<','<<bf.bottomSaltAfter<<','
+                <<bf.cutLiquidDown<<','<<bf.cutSaltDown<<','<<sm.second<<','<<cw<<','<<st.vapour<<','<<sm.first<<','<<cs<<','<<solid*a<<','
+                <<waterResidual<<','<<saltResidual<<'\n';
             if(fieldOutput)
                 for(const auto& vertex:vertices(this->gridGeometry().gridView())) {
                     const auto i=this->gridGeometry().vertexMapper().index(vertex);
                     soilFields_<<time<<','<<vertex.geometry().center()[1]<<','<<massFraction(x[i][moleFractionIdx])<<','<<sw(x[i][pressureIdx])<<','<<rhoW(x[i][moleFractionIdx])<<'\n';
                 }
-            surfaceLog_.flush(); eventLog_.flush(); crustFields_.flush(); soilFields_.flush();
+            surfaceLog_.flush(); eventLog_.flush(); crustFields_.flush(); soilFields_.flush(); boundaryLog_.flush();
         }

@@ -1,0 +1,21 @@
+{
+  "status": "FAIL_NO_SURFACE_PRECIPITATION_NO_ALE_ACTIVATION",
+  "actual_end_s": 180000.0,
+  "surface_mass_fraction_initial": 0.14583373676341735,
+  "surface_mass_fraction_final": 0.262856471841408,
+  "equilibrium_mass_fraction": 0.264940870223385,
+  "surface_sw_final": 0.9999551078323523,
+  "bottom_sw_final": 1.0,
+  "final_evaporation_kg_m2_s": 1.7978985570197326e-05,
+  "cumulative_evaporation_kg_m2": 3.689868433834851,
+  "cumulative_bottom_water_kg_m2": 3.4714274584530624,
+  "cumulative_bottom_salt_kg_m2": 0.5926846563233023,
+  "water_relative_residual": 2.25061937490349e-13,
+  "salt_relative_residual": 6.520121667440857e-13,
+  "surface_precipitated_solid_kg_m2": 0.0,
+  "ale_activated": 0,
+  "old_no_flux_first_precipitation_s": 108399.0,
+  "old_no_flux_first_activation_attempt_s": 108996.0,
+  "old_no_flux_final_surface_sw": 0.8033293443420428,
+  "old_no_flux_final_surface_mass_fraction": 0.2649408697676901
+}

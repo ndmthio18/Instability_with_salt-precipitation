@@ -1,0 +1,135 @@
+{
+  "stage": "pilot",
+  "passed": false,
+  "checks": [
+    {
+      "name": "pilot_ref_ale64: exit",
+      "passed": true,
+      "detail": {
+        "case": "pilot_ref_ale64",
+        "exit_code": 0,
+        "elapsed_s": 2969.8231957033277,
+        "slurm_job_id": "16430419",
+        "hostname": "ibc11b11n05"
+      }
+    },
+    {
+      "name": "pilot_ref_ale64: boundary mode",
+      "passed": true,
+      "detail": {
+        "bottom_mode": "reservoir",
+        "domain_bottom_y_m": "0",
+        "domain_top_y_m": "0.20000000000000001",
+        "water_level_parameter_m": "0.01",
+        "water_table_y_m": "-0.01",
+        "reservoir_pressure_pa": "99891.699582996633",
+        "configured_salt_mole_fraction": "0.050000000000000003",
+        "reservoir_salt_mole_fraction": "0.050000000000000003",
+        "initial_min_salt_mole_fraction": "0.050000000000000003",
+        "initial_max_salt_mole_fraction": "0.050000000000000003"
+      }
+    },
+    {
+      "name": "pilot_ref_ale64: domain/water-level geometry",
+      "passed": true,
+      "detail": {
+        "bottom_mode": "reservoir",
+        "domain_bottom_y_m": "0",
+        "domain_top_y_m": "0.20000000000000001",
+        "water_level_parameter_m": "0.01",
+        "water_table_y_m": "-0.01",
+        "reservoir_pressure_pa": "99891.699582996633",
+        "configured_salt_mole_fraction": "0.050000000000000003",
+        "reservoir_salt_mole_fraction": "0.050000000000000003",
+        "initial_min_salt_mole_fraction": "0.050000000000000003",
+        "initial_max_salt_mole_fraction": "0.050000000000000003"
+      }
+    },
+    {
+      "name": "pilot_ref_ale64: initial/reservoir xNaCl",
+      "passed": true,
+      "detail": {
+        "bottom_mode": "reservoir",
+        "domain_bottom_y_m": "0",
+        "domain_top_y_m": "0.20000000000000001",
+        "water_level_parameter_m": "0.01",
+        "water_table_y_m": "-0.01",
+        "reservoir_pressure_pa": "99891.699582996633",
+        "configured_salt_mole_fraction": "0.050000000000000003",
+        "reservoir_salt_mole_fraction": "0.050000000000000003",
+        "initial_min_salt_mole_fraction": "0.050000000000000003",
+        "initial_max_salt_mole_fraction": "0.050000000000000003"
+      }
+    },
+    {
+      "name": "pilot_ref_ale64: finite boundary ledger",
+      "passed": true,
+      "detail": {
+        "rows": 360001
+      }
+    },
+    {
+      "name": "pilot_ref_ale64: local face reconstruction",
+      "passed": true,
+      "detail": {
+        "max_abs_kg_s": 0.0
+      }
+    },
+    {
+      "name": "pilot_ref_ale64: salt balance",
+      "passed": true,
+      "detail": {
+        "relative": 6.529319743150669e-13
+      }
+    },
+    {
+      "name": "pilot_ref_ale64: water balance",
+      "passed": true,
+      "detail": {
+        "relative": 2.2667721455367687e-13
+      }
+    },
+    {
+      "name": "pilot reaches 50 h",
+      "passed": true,
+      "detail": {
+        "end_s": 180000.0
+      }
+    },
+    {
+      "name": "pilot accepts ALE activation",
+      "passed": false,
+      "detail": {
+        "active_rows": 0
+      }
+    },
+    {
+      "name": "pilot has nontrivial post-activation window",
+      "passed": false,
+      "detail": {
+        "post_activation_s": 0.0,
+        "minimum_s": 100.0
+      }
+    },
+    {
+      "name": "reservoir supplies net water",
+      "passed": true,
+      "detail": {
+        "cumulative_bottom_water_kg": 0.0034714274584530624
+      }
+    },
+    {
+      "name": "nontrivial ALE fields",
+      "passed": false,
+      "detail": {}
+    },
+    {
+      "name": "activation transfer conservation",
+      "passed": false,
+      "detail": {
+        "relative": 0.0,
+        "accepted_attempts": 0
+      }
+    }
+  ]
+}
