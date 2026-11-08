@@ -74,6 +74,12 @@ _, boundary_last, boundary, _ = compact(
 old_history = read_rows(old / "results/pilot_history.csv")
 old_extrema = read_rows(old / "results/ale_extrema.csv")
 old_summary = json.loads((old / "results/pilot_summary.json").read_text())
+old_attempts = list(csv.DictReader((old / "logs/donor_attempts.csv").open(newline="")))
+old_accepted_attempt = next(row for row in old_attempts if int(row["sufficient"]) == 1)
+old_initial_ale_concentration = (
+    float(old_accepted_attempt["salt_transfer_kg"])
+    / float(old_accepted_attempt["required_kg"])
+)
 
 first_precipitation = activation = None
 with (case / "coupled_history.csv").open(newline="") as handle:
@@ -149,6 +155,10 @@ with (results / "h3p5_last_accepted_and_first_rejected.csv").open("w", newline="
 
 attempts = list(csv.DictReader((case / "donor_attempts.csv").open(newline="")))
 accepted_attempt = next(row for row in attempts if int(row["sufficient"]) == 1)
+initial_ale_concentration = (
+    float(accepted_attempt["salt_transfer_kg"])
+    / float(accepted_attempt["required_kg"])
+)
 transfer_relative = max(
     abs(float(accepted_attempt["salt_transfer_residual_kg"])) / abs(float(accepted_attempt["initial_salt_kg"])),
     abs(float(accepted_attempt["water_transfer_residual_kg"])) / abs(float(accepted_attempt["initial_water_kg"])),
@@ -167,6 +177,10 @@ summary = {
     "donor_count": int(accepted_attempt["donor_count"]),
     "used_donor_depth_m": float(accepted_attempt["used_depth_m"]),
     "required_pore_liquid_kg": float(accepted_attempt["required_kg"]),
+    "initial_ale_liquid_mass_fraction": initial_ale_concentration,
+    "initial_ale_relative_undersaturation": (
+        initial_ale_concentration - 0.264940870223385
+    ) / 0.264940870223385,
     "last_height_m": last["h_m"],
     "last_mass_height_m": last["h_mass_m"],
     "last_top_solid_kg_m2": last["top_solid_kg_m2"],
@@ -195,6 +209,13 @@ comparison = {
     "accepted_window_ratio_h3p5_over_h0p1": summary["accepted_ale_window_s"] / old_summary["accepted_ale_window_s"],
     "failure_height_ratio_h3p5_over_h0p1": summary["last_height_m"] / old_summary["last_height_m"],
     "failure_mass_height_ratio_h3p5_over_h0p1": summary["last_mass_height_m"] / old_summary["last_mass_height_m"],
+    "initial_ale_liquid_mass_fraction_h0p1": old_initial_ale_concentration,
+    "initial_ale_liquid_mass_fraction_h3p5": initial_ale_concentration,
+    "h3p5_initial_ale_relative_undersaturation": summary["initial_ale_relative_undersaturation"],
+    "donor_count_h0p1": int(old_accepted_attempt["donor_count"]),
+    "donor_count_h3p5": summary["donor_count"],
+    "donor_depth_m_h0p1": float(old_accepted_attempt["used_depth_m"]),
+    "donor_depth_m_h3p5": summary["used_donor_depth_m"],
     "same_failure_mechanism": "ALE soil-side cell reaches epsilon=0.95 after net internal dissolution",
 }
 (results / "comparison.json").write_text(json.dumps(comparison, indent=2) + "\n")
