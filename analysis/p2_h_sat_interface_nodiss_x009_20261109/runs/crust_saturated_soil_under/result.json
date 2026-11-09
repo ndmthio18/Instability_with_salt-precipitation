@@ -1,0 +1,22 @@
+{
+  "verdict": "STOPPED_AT_DECLARED_JUMP_BOUND",
+  "solver_exit_code": 1,
+  "requested_horizon_s": 12500.0,
+  "last_accepted_time_s": 6750.0,
+  "activation_time_s": 6745.0,
+  "accepted_interface_steps": 10,
+  "minimum_soil_minus_ceq": -9.67445446806714e-05,
+  "maximum_abs_soil_minus_ceq": 9.67445446806714e-05,
+  "declared_max_undersaturation": 0.0001,
+  "final_height_um": 3.5174345580716997,
+  "final_internal_positive_g_m2": 0.01127133862372013,
+  "final_top_new_g_m2": 0.020579175348793152,
+  "internal_dissolution_kg_m2": 0.0,
+  "interface_phase_source_kg_m2_s": 0.0,
+  "salt_max_relative_residual": 2.488025879101279e-14,
+  "water_max_relative_residual": 3.344042238191232e-14,
+  "rejected_bound_event": true,
+  "elapsed_s": 160.73990433104336,
+  "slurm_job_id": "16461382",
+  "hostname": "ibc11b11n11"
+}

@@ -1,0 +1,23 @@
+{
+  "name": "crust_saturated_soil_under",
+  "soil_cells": 80,
+  "horizontal_cells": 1,
+  "ale_cells": 64,
+  "dt_s": 0.5,
+  "tend_s": 25000.0,
+  "salt_mole_fraction": 0.09,
+  "bottom_mode": "reservoir",
+  "water_level_m": 0.01,
+  "activation_height_m": 3.5e-06,
+  "reaction_coefficient_m_s": 0.001,
+  "av_multiplier": 1.0,
+  "donor_mode": "progressive_top_boundary_filling",
+  "precipitation_mode": "implicit_surface",
+  "minimum_supply_saturation": 0.99,
+  "suppress_dissolution": true,
+  "requested_horizon_s": 12500,
+  "interface_mode": "crust_saturated_soil_undersaturated",
+  "max_soil_side_undersaturation": 0.0001,
+  "interface_phase_source_kg_m2_s": 0,
+  "physical_status": "uncalibrated concentration-jump control"
+}

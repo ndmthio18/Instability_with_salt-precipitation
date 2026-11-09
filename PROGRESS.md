@@ -1,5 +1,12 @@
 # PROGRESS — Instability with salt precipitation
 
+## 2026-11-09 盐层侧饱和、土壤侧欠饱和、禁止溶解对照
+
+- Status: In progress
+- 分支`research/p2-h-saturated-interface-no-dissolution-x009`从`fdd4d1f`隔离实现：ALE底面固定`C_eq`，土壤侧允许最多`1e-4`质量分数欠饱和，内部溶解和界面相变源均为0，保持通量守恒与事务回滚。
+- HPCC作业16461380/16461382实际编译和运行；6745 s激活后只接受10个0.5 s步，6750.5 s浓度跳跃达到`-1.06278e-4`并按预声明上限停止。最后接受时间6750 s，高度3.517435 μm；盐/水最大相对残差`2.49e-14/3.34e-14`。
+- 科学判断：小幅浓度跳跃持续增大，12500 s门槛FAIL；继续放宽上限不能替代界面传质、有限溶解/耗尽或供盐受限蒸发闭合。报告见`analysis/p2_h_sat_interface_nodiss_x009_20261109/REPORT_ZH.md`。
+
 ## Current state
 
 - 说明: Status 只写 Not started / In progress（Done 由用户决定）；进度为科研阶段的粗略估计，仓库准备不代表研究验证完成。

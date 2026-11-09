@@ -1,0 +1,18 @@
+{
+  "date": "2026-11-09",
+  "branch": "research/p2-h-saturated-interface-no-dissolution-x009",
+  "base_commit": "fdd4d1f306c09caf3f44cac39f9cc7431aadfaa0",
+  "remote_root": "/WORK/hulm_work/zhixin/p2_h_sat_interface_nodiss_x009_20261109",
+  "strict_run_job": 16461250,
+  "relaxed_build_job": 16461380,
+  "relaxed_run_job": 16461382,
+  "relaxed_solver_sha256": "42f97fc495611efe85b523641c193e54cbc11ca7457ad31f0c037d6853d094ce",
+  "relaxed_evidence_sha256": "030e938027d2c7a81e23e80de2a8646457bfc5433969ca0da8f028bb504cd6aa",
+  "requested_horizon_s": 12500,
+  "last_accepted_time_s": 6750,
+  "no_interface_phase_source": true,
+  "no_internal_dissolution": true,
+  "soil_side_undersaturation_bound": 0.0001,
+  "physical_status": "uncalibrated concentration-jump control"
+}
+

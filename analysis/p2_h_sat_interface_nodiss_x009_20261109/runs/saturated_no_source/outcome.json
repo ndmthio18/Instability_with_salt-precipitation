@@ -1,0 +1,21 @@
+{
+  "diagnostic_success": true,
+  "verdict": "INCOMPATIBLE_WITHOUT_SOURCE",
+  "solver_exit_code_expected_nonzero": 1,
+  "last_accepted_time_s": 6745.0,
+  "attempted_time_s": 6745.5,
+  "attempted_dt_s": 0.5,
+  "ale_boundary_c": 0.2649408697676898,
+  "soil_surface_c": 0.26493107775001173,
+  "concentration_residual": -9.792017678089682e-06,
+  "soil_surface_sw": 0.9999088708246215,
+  "ale_liquid_kg_m2_s": 2.4652369722274318e-05,
+  "ale_salt_kg_m2_s": 6.4935465609082845e-06,
+  "interface_phase_source_kg_m2_s": 0.0,
+  "internal_dissolution_kg_m2": 0.0,
+  "accepted_salt_relative_residual": 2.3260833662603675e-14,
+  "accepted_water_relative_residual": 3.098434616177187e-14,
+  "elapsed_s": 161.5605739094317,
+  "slurm_job_id": "16461250",
+  "hostname": "ibc12b11n38"
+}

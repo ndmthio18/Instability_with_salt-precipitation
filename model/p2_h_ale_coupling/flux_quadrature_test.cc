@@ -34,5 +34,18 @@ int main() {
     plain.advance(0.1);
     if(!plain.integratedSaltFaces().empty() || !plain.integratedReaction().empty())
         throw std::runtime_error("diagnostic-disabled solver produced quadrature");
+    p2h::Parameters limited=p;
+    limited.suppressDissolution=true;
+    limited.bottomC=limited.ceq;
+    p2h::ALE limitedModel(16,2,limited);
+    const auto limitedUnder=limitedModel.flux(limitedModel.initial(3.5e-6,limited.ceq-1e-4));
+    if(!std::all_of(limitedUnder.reaction.begin(),limitedUnder.reaction.end(),
+                    [](double value){return value==0;}))
+        throw std::runtime_error("no-dissolution reaction clamp failed");
+    const auto limitedOver=limitedModel.flux(limitedModel.initial(3.5e-6,limited.ceq+1e-4));
+    if(!std::all_of(limitedOver.reaction.begin(),limitedOver.reaction.end(),
+                    [](double value){return value>0;}))
+        throw std::runtime_error("no-dissolution clamp removed precipitation");
     std::cout<<"PASS accepted-step quadrature local salt balance worst_relative="<<worst<<'\n';
+    std::cout<<"PASS saturated ALE boundary adds no phase source and dissolution is suppressed\n";
 }

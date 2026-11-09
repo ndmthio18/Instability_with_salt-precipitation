@@ -12,7 +12,7 @@ struct Parameters {
     double ceq=.264, rho=1200, crystal=2170, birth=.43, diffusion=1.3e-9;
     double reaction=.0023, avMultiplier=1, beta=2, grain=25e-6, initialHeight=.001;
     double evaporation=1200*.01/86400, bottomC=.264;
-    bool splitReactionLedgers=false;
+    bool splitReactionLedgers=false, suppressDissolution=false;
 };
 struct Fluxes {
     Vec volume, reaction, liquid, salt, mesh;
@@ -40,7 +40,8 @@ public:
         return p.avMultiplier*36*(1-epsilon)/p.grain;
     }
     double reactionRate(double epsilon,double concentration) const {
-        return p.rho*specificArea(epsilon)*p.reaction*(concentration-p.ceq);
+        const double rate=p.rho*specificArea(epsilon)*p.reaction*(concentration-p.ceq);
+        return p.suppressDissolution?std::max(0.,rate):rate;
     }
     Vec initial(double h=-1,double concentration=-1) const {
         Vec y(size(),0);

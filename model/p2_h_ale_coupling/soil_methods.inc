@@ -44,7 +44,7 @@
         double nextFieldOutputTime_=0;
         unsigned long coupledTrials_=0,rejectedTrials_=0;
         bool injectedFailure_=false;
-        std::ofstream surfaceLog_,eventLog_,crustFields_,soilFields_,donorLog_,allocationLog_,boundaryLog_,saltBudgetLog_,localBalanceLog_;
+        std::ofstream surfaceLog_,eventLog_,crustFields_,soilFields_,donorLog_,allocationLog_,boundaryLog_,saltBudgetLog_,localBalanceLog_,interfaceCompatibilityLog_;
         unsigned long allocationAttempt_=0, candidateAttempt_=0;
         bool controlledDonorComplete() const { return getParam<bool>("P2H.ControlledDonorTest",false); }
 
@@ -231,11 +231,13 @@
             auditBoundaryFaces_();
             precipitationMode_();
             std::ofstream config("activation_config.csv");
-            config<<std::setprecision(17)<<"threshold_m,birth_porosity,crust_cells,reaction_coefficient_m_s,av_multiplier,initial_height_m,initial_solid_kg_m2\n"
+            config<<std::setprecision(17)<<"threshold_m,birth_porosity,crust_cells,reaction_coefficient_m_s,av_multiplier,suppress_dissolution,interface_mode,initial_height_m,initial_solid_kg_m2\n"
                   <<getParam<double>("P2H.ActivationHeight",3.5e-6)<<",0.43,"
                   <<getParam<int>("P2H.CrustCells",64)<<','
                   <<getParam<double>("P2H.ReactionCoefficient",2.3e-3)<<','
-                  <<getParam<double>("P2H.AvMultiplier",1.0)<<",0,0\n";
+                  <<getParam<double>("P2H.AvMultiplier",1.0)<<','
+                  <<getParam<bool>("P2H.SuppressDissolution",false)<<','
+                  <<getParam<std::string>("P2H.InterfaceMode","coupled")<<",0,0\n";
             p2h::Parameters p;
             p.ceq=massFraction(getParam<double>("Transport.SolubilityMoleFraction"));
             p.bottomC=p.ceq; p.crystal=2165;
@@ -243,6 +245,13 @@
             p.reaction=getParam<double>("P2H.ReactionCoefficient",p.reaction);
             p.avMultiplier=getParam<double>("P2H.AvMultiplier",1.0);
             p.splitReactionLedgers=true;
+            p.suppressDissolution=getParam<bool>("P2H.SuppressDissolution",false);
+            const auto interfaceMode=getParam<std::string>("P2H.InterfaceMode","coupled");
+            if(interfaceMode!="coupled" && interfaceMode!="saturated_no_source_strict" &&
+               interfaceMode!="crust_saturated_soil_undersaturated")
+                throw std::runtime_error("unknown P2H.InterfaceMode");
+            if(interfaceMode!="coupled" && !p.suppressDissolution)
+                throw std::runtime_error("saturated no-source modes require SuppressDissolution=true");
             if(!(std::isfinite(p.reaction) && p.reaction>0 &&
                  std::isfinite(p.avMultiplier) && p.avMultiplier>0))
                 throw std::runtime_error("invalid P2-H reaction parameter");
@@ -256,6 +265,8 @@
             donorLog_.open("donor_profiles.csv"); allocationLog_.open("donor_attempts.csv");
             boundaryLog_.open("open_boundary_budget.csv"); saltBudgetLog_.open("salt_budget.csv");
             localBalanceLog_.open("ale_local_balance.csv");
+            interfaceCompatibilityLog_.open("interface_compatibility.csv");
+            interfaceCompatibilityLog_<<std::setprecision(17)<<"time_s,dt_s,mode,ale_boundary_c,soil_surface_c,residual_c,max_allowed_undersaturation,soil_surface_sw,ale_liquid_kg_m2_s,ale_salt_kg_m2_s,interface_phase_source_kg_m2_s,accepted\n";
             localBalanceLog_<<std::setprecision(17)<<"time_s,dt_s,scope,cell,xi_bottom,xi_top,z_bottom_m,z_top_m,q_before_kg_m2,q_after_kg_m2,integrated_salt_in_kg_m2,integrated_salt_out_kg_m2,integrated_reaction_kg_m2,balance_residual_kg_m2,relative_residual\n";
             saltBudgetLog_<<std::setprecision(17)<<"time_s,dt_s,phase,evaporation_kg_m2_s,interface_liquid_kg_m2_s,interface_salt_kg_m2_s,interface_water_kg_m2_s,"
                 "interface_mass_fraction,interface_minus_ceq,advective_salt_kg_m2_s,implied_back_diffusion_kg_m2_s,back_diffusion_fraction,"
@@ -413,6 +424,48 @@
                         precrust_(x,next,loop.time()+dt,dt);
                     } else {
                         precipitationFlux_=fillLiquidFlux_=fillSaltFlux_=0;
+                        const auto interfaceMode=getParam<std::string>("P2H.InterfaceMode","coupled");
+                        if(interfaceMode!="coupled") {
+                            ++coupledTrials_;
+                            auto model=*ale_; model.p.bottomC=model.p.ceq;
+                            p2h::BDF integrator(model,original.crust,std::min(dt,60.),1e-8,gridDiagnostics_());
+                            integrator.rejectedState=[&](const p2h::Vec& y,double t){
+                                writeAleDiagnostic_(model,y,loop.time()+t,"bound_rejected",model.p.ceq);
+                            };
+                            auto trial=integrator.advance(dt); const int k=model.inv();
+                            heldLiquid_=(trial[k+3]-original.crust[k+3])/dt;
+                            heldSalt_=(trial[k+2]-original.crust[k+2])/dt;
+                            if(heldLiquid_<0) throw std::runtime_error("reverse interface supply outside demonstration");
+                            x=base; variables.update(x); loop.setTimeStepSize(dt); solver.solve(x,loop);
+                            if(loop.timeStepSize()<dt*(1-1e-12)) {
+                                dt=loop.timeStepSize();
+                                throw std::runtime_error("soil reduced saturated-no-source trial dt");
+                            }
+                            const double residual=topC_(x)-model.p.ceq;
+                            const double maxUnder=getParam<double>("P2H.MaxSoilSideUndersaturation",1e-4);
+                            if(!(std::isfinite(maxUnder) && maxUnder>=0))
+                                throw std::runtime_error("invalid soil-side undersaturation bound");
+                            const bool concentrationCompatible=interfaceMode=="saturated_no_source_strict"
+                                ? std::abs(residual)<5e-13
+                                : residual<=5e-13 && residual>=-maxUnder;
+                            const bool compatible=concentrationCompatible &&
+                                topSw_(x)>=getParam<double>("P2H.MinimumSupplySaturation",.99);
+                            interfaceCompatibilityLog_<<loop.time()+dt<<','<<dt<<','<<interfaceMode<<','
+                                <<model.p.ceq<<','<<topC_(x)<<','<<residual<<','<<maxUnder<<','<<topSw_(x)<<','
+                                <<heldLiquid_<<','<<heldSalt_<<",0,"<<compatible<<'\n';
+                            interfaceCompatibilityLog_.flush();
+                            if(!compatible)
+                                throw std::runtime_error("saturated no-source interface bound exceeded");
+                            j=(trial[k+4]-original.crust[k+4])/dt;
+                            next.internalPositive=trial[model.positiveInv()];
+                            next.internalDissolution=trial[model.dissolutionInv()];
+                            diagnosticBottomC_=model.p.ceq;
+                            acceptedSaltIntegral=integrator.integratedSaltFaces();
+                            acceptedReactionIntegral=integrator.integratedReaction();
+                            next.crust=std::move(trial); next.vapour+=j*dt*area_();
+                            evaporationFlux_=j;
+                            next.pratHeight+=p2g::velocity(next.pratHeight,j,ale_->p.ceq)*dt;
+                        } else {
                         double c=topC_(base),previousC=0,previousR=0; bool solved=false;
                         for(int iteration=0;iteration<16;++iteration) {
                             ++coupledTrials_;
@@ -450,6 +503,7 @@
                             previousC=c; previousR=residual; c=newC;
                         }
                         if(!solved) throw std::runtime_error("coupled interface root not converged");
+                        }
                     }
                     const auto bottom=reconstructBottomFlux_(base,x,dt,variables);
                     next.bottomLiquidFlux=bottom.liquid; next.bottomSaltFlux=bottom.salt;
@@ -478,6 +532,7 @@
                     eventLog_<<loop.time()<<",rejected_"<<reason<<','<<dt<<','<<retry<<'\n'; eventLog_.flush();
                     // Both states remain at the old accepted time. No compensation.
                     x=base; variables.update(x); dt*=.5;
+                    if(reason=="saturated no-source interface bound exceeded") throw;
                     if(retry==8 || dt<1e-6) throw;
                 }
             }
