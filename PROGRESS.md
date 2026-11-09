@@ -1,5 +1,13 @@
 # PROGRESS — Instability with salt precipitation
 
+## 2026-11-09 取消土壤侧欠饱和跳跃阈值的 12500 s 对照
+
+- Status: In progress
+- 在同一隔离分支新增默认开启的 `P2H.EnforceSoilSideUndersaturationBound` 开关；本对照仅将其设为 `false`，保留 `Sw>=0.99`、ALE 状态边界、求解器与全局水盐守恒检查。
+- HPCC 编译/运行作业 16463070/16463072 实际完成；80 层、xNaCl=0.09、3.5 μm 激活、64 ALE、禁止溶解案例达到 12500 s。最终高度 23.691013 μm，内部正析盐 12.032143 g/m²，最低孔隙率 0.155269，盐/水最大相对残差 4.18e-14/5.59e-14。
+- 土壤表面最终质量分数 0.25136263，而盐层侧固定 0.26494087，浓度跳跃扩大到 -0.01357824（相对饱和值 5.13%）。数值完成 PASS，但局部平衡物理解 FAIL；删除停止阈值只是暴露了持续增大的无本构界面跳跃。
+- 报告：`analysis/p2_h_sat_interface_unbounded_x009_20261109/REPORT_ZH.md`；完整逐步诊断保留在 HPCC `/WORK/hulm_work/zhixin/p2_h_sat_interface_unbounded_x009_20261109/`。
+
 ## 2026-11-09 盐层侧饱和、土壤侧欠饱和、禁止溶解对照
 
 - Status: In progress

@@ -28,6 +28,15 @@ change falls below the concentration tolerance would hide a continuous-time
 compatibility failure. The rejected trial is logged in
 `interface_compatibility.csv`; it never enters accepted inventories.
 
+For a diagnostic continuation only,
+`P2H.EnforceSoilSideUndersaturationBound=false` removes the soil-side
+concentration-jump rejection while retaining the saturation screen, ALE state
+bounds, nonlinear-solver checks, and global water/NaCl conservation checks.
+The default is `true`, so previous bounded runs remain unchanged. An unbounded
+continuation is not evidence that an arbitrary concentration discontinuity is
+physical; it is intended to reveal which model or numerical limit is reached
+next.
+
 This mode does not project concentrations, clip a salt deficit, add a reservoir,
 reduce evaporation, dissolve interface solid, or settle the skeleton. A failed
 pilot is therefore a scientific result, not a solver result to be tuned away.

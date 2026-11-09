@@ -1,0 +1,20 @@
+{
+  "date": "2026-11-09",
+  "branch": "research/p2-h-saturated-interface-no-dissolution-x009",
+  "remote_root": "/WORK/hulm_work/zhixin/p2_h_sat_interface_unbounded_x009_20261109",
+  "failed_build_job": 16463064,
+  "cancelled_dependency_job": 16463065,
+  "verified_build_job": 16463070,
+  "verified_run_job": 16463072,
+  "requested_horizon_s": 12500,
+  "last_accepted_time_s": 12500,
+  "soil_cells": 80,
+  "ale_cells": 64,
+  "initial_nacl_mole_fraction": 0.09,
+  "activation_height_m": 3.5e-6,
+  "enforce_soil_side_undersaturation_bound": false,
+  "suppress_internal_dissolution": true,
+  "interface_phase_source_kg_m2_s": 0,
+  "source_archive_sha256": "06e966b7cd19344ce9b4124ffddd680c3ba9fe46b41771641be015ffa2b8aecb",
+  "dependency_archive_sha256": "3524304f36a01138557403ba7f7eee60e6393e068693c46e9dc04a438860e637"
+}

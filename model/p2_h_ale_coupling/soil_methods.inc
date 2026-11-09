@@ -231,13 +231,14 @@
             auditBoundaryFaces_();
             precipitationMode_();
             std::ofstream config("activation_config.csv");
-            config<<std::setprecision(17)<<"threshold_m,birth_porosity,crust_cells,reaction_coefficient_m_s,av_multiplier,suppress_dissolution,interface_mode,initial_height_m,initial_solid_kg_m2\n"
+            config<<std::setprecision(17)<<"threshold_m,birth_porosity,crust_cells,reaction_coefficient_m_s,av_multiplier,suppress_dissolution,interface_mode,enforce_soil_undersaturation_bound,initial_height_m,initial_solid_kg_m2\n"
                   <<getParam<double>("P2H.ActivationHeight",3.5e-6)<<",0.43,"
                   <<getParam<int>("P2H.CrustCells",64)<<','
                   <<getParam<double>("P2H.ReactionCoefficient",2.3e-3)<<','
                   <<getParam<double>("P2H.AvMultiplier",1.0)<<','
                   <<getParam<bool>("P2H.SuppressDissolution",false)<<','
-                  <<getParam<std::string>("P2H.InterfaceMode","coupled")<<",0,0\n";
+                  <<getParam<std::string>("P2H.InterfaceMode","coupled")<<','
+                  <<getParam<bool>("P2H.EnforceSoilSideUndersaturationBound",true)<<",0,0\n";
             p2h::Parameters p;
             p.ceq=massFraction(getParam<double>("Transport.SolubilityMoleFraction"));
             p.bottomC=p.ceq; p.crystal=2165;
@@ -266,7 +267,7 @@
             boundaryLog_.open("open_boundary_budget.csv"); saltBudgetLog_.open("salt_budget.csv");
             localBalanceLog_.open("ale_local_balance.csv");
             interfaceCompatibilityLog_.open("interface_compatibility.csv");
-            interfaceCompatibilityLog_<<std::setprecision(17)<<"time_s,dt_s,mode,ale_boundary_c,soil_surface_c,residual_c,max_allowed_undersaturation,soil_surface_sw,ale_liquid_kg_m2_s,ale_salt_kg_m2_s,interface_phase_source_kg_m2_s,accepted\n";
+            interfaceCompatibilityLog_<<std::setprecision(17)<<"time_s,dt_s,mode,ale_boundary_c,soil_surface_c,residual_c,enforce_undersaturation_bound,max_allowed_undersaturation,soil_surface_sw,ale_liquid_kg_m2_s,ale_salt_kg_m2_s,interface_phase_source_kg_m2_s,accepted\n";
             localBalanceLog_<<std::setprecision(17)<<"time_s,dt_s,scope,cell,xi_bottom,xi_top,z_bottom_m,z_top_m,q_before_kg_m2,q_after_kg_m2,integrated_salt_in_kg_m2,integrated_salt_out_kg_m2,integrated_reaction_kg_m2,balance_residual_kg_m2,relative_residual\n";
             saltBudgetLog_<<std::setprecision(17)<<"time_s,dt_s,phase,evaporation_kg_m2_s,interface_liquid_kg_m2_s,interface_salt_kg_m2_s,interface_water_kg_m2_s,"
                 "interface_mass_fraction,interface_minus_ceq,advective_salt_kg_m2_s,implied_back_diffusion_kg_m2_s,back_diffusion_fraction,"
@@ -442,16 +443,17 @@
                                 throw std::runtime_error("soil reduced saturated-no-source trial dt");
                             }
                             const double residual=topC_(x)-model.p.ceq;
+                            const bool enforceUnder=getParam<bool>("P2H.EnforceSoilSideUndersaturationBound",true);
                             const double maxUnder=getParam<double>("P2H.MaxSoilSideUndersaturation",1e-4);
-                            if(!(std::isfinite(maxUnder) && maxUnder>=0))
+                            if(enforceUnder && !(std::isfinite(maxUnder) && maxUnder>=0))
                                 throw std::runtime_error("invalid soil-side undersaturation bound");
                             const bool concentrationCompatible=interfaceMode=="saturated_no_source_strict"
                                 ? std::abs(residual)<5e-13
-                                : residual<=5e-13 && residual>=-maxUnder;
+                                : residual<=5e-13 && (!enforceUnder || residual>=-maxUnder);
                             const bool compatible=concentrationCompatible &&
                                 topSw_(x)>=getParam<double>("P2H.MinimumSupplySaturation",.99);
                             interfaceCompatibilityLog_<<loop.time()+dt<<','<<dt<<','<<interfaceMode<<','
-                                <<model.p.ceq<<','<<topC_(x)<<','<<residual<<','<<maxUnder<<','<<topSw_(x)<<','
+                                <<model.p.ceq<<','<<topC_(x)<<','<<residual<<','<<enforceUnder<<','<<maxUnder<<','<<topSw_(x)<<','
                                 <<heldLiquid_<<','<<heldSalt_<<",0,"<<compatible<<'\n';
                             interfaceCompatibilityLog_.flush();
                             if(!compatible)
