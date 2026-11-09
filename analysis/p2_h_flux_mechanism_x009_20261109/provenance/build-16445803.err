@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "repo/model/p2_h_ale_coupling/prepare_dumux.py", line 10, in <module>
+    shutil.copytree(root/'model/p1_r2_conservative_richards/source/appl',target,dirs_exist_ok=True)
+TypeError: copytree() got an unexpected keyword argument 'dirs_exist_ok'

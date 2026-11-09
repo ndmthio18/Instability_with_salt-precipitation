@@ -44,7 +44,7 @@
         double nextFieldOutputTime_=0;
         unsigned long coupledTrials_=0,rejectedTrials_=0;
         bool injectedFailure_=false;
-        std::ofstream surfaceLog_,eventLog_,crustFields_,soilFields_,donorLog_,allocationLog_,boundaryLog_,saltBudgetLog_;
+        std::ofstream surfaceLog_,eventLog_,crustFields_,soilFields_,donorLog_,allocationLog_,boundaryLog_,saltBudgetLog_,localBalanceLog_;
         unsigned long allocationAttempt_=0, candidateAttempt_=0;
         bool controlledDonorComplete() const { return getParam<bool>("P2H.ControlledDonorTest",false); }
 
@@ -255,6 +255,8 @@
             soilFields_.open("soil_fields.csv");
             donorLog_.open("donor_profiles.csv"); allocationLog_.open("donor_attempts.csv");
             boundaryLog_.open("open_boundary_budget.csv"); saltBudgetLog_.open("salt_budget.csv");
+            localBalanceLog_.open("ale_local_balance.csv");
+            localBalanceLog_<<std::setprecision(17)<<"time_s,dt_s,scope,cell,xi_bottom,xi_top,z_bottom_m,z_top_m,q_before_kg_m2,q_after_kg_m2,integrated_salt_in_kg_m2,integrated_salt_out_kg_m2,integrated_reaction_kg_m2,balance_residual_kg_m2,relative_residual\n";
             saltBudgetLog_<<std::setprecision(17)<<"time_s,dt_s,phase,evaporation_kg_m2_s,interface_liquid_kg_m2_s,interface_salt_kg_m2_s,interface_water_kg_m2_s,"
                 "interface_mass_fraction,interface_minus_ceq,advective_salt_kg_m2_s,implied_back_diffusion_kg_m2_s,back_diffusion_fraction,"
                 "evaporation_limited_precipitation_kg_m2_s,crust_top_mass_fraction,top_limited_precipitation_kg_m2_s,"
@@ -398,6 +400,7 @@
             double dt=loop.timeStepSize();
             for(int retry=0;retry<9;++retry) {
                 SurfaceState next=original; x=base; variables.update(x); loop.setTimeStepSize(dt);
+                p2h::Vec acceptedSaltIntegral,acceptedReactionIntegral;
                 double j=heldLiquid_;
                 try {
                     if(!original.active) {
@@ -414,7 +417,7 @@
                         for(int iteration=0;iteration<16;++iteration) {
                             ++coupledTrials_;
                             auto model=*ale_; model.p.bottomC=c;
-                            p2h::BDF integrator(model,original.crust,std::min(dt,60.));
+                            p2h::BDF integrator(model,original.crust,std::min(dt,60.),1e-8,gridDiagnostics_());
                             integrator.rejectedState=[&](const p2h::Vec& y,double t){ writeAleDiagnostic_(model,y,loop.time()+t,"bound_rejected",c); };
                             auto trial=integrator.advance(dt); const int k=model.inv();
                             heldLiquid_=(trial[k+3]-original.crust[k+3])/dt;
@@ -430,6 +433,8 @@
                                 next.internalPositive=trial[model.positiveInv()];
                                 next.internalDissolution=trial[model.dissolutionInv()];
                                 diagnosticBottomC_=c;
+                                acceptedSaltIntegral=integrator.integratedSaltFaces();
+                                acceptedReactionIntegral=integrator.integratedReaction();
                                 next.crust=std::move(trial); next.vapour+=j*dt*area_();
                                 evaporationFlux_=j;
                                 next.pratHeight+=p2g::velocity(next.pratHeight,j,ale_->p.ceq)*dt;
@@ -459,6 +464,8 @@
                     if(!original.active && acceptedSurface_.active)
                         eventLog_<<loop.time()+dt<<",accepted_activation_attempt,"<<candidateAttempt_<<','<<acceptedSurface_.activation<<'\n';
                     const double topEvaporation=original.active?j:evaporationFlux_;
+                    if(original.active)
+                        writeLocalBalance_(original,acceptedSurface_,loop.time()+dt,dt,acceptedSaltIntegral,acceptedReactionIntegral);
                     writeGridDiagnostics_(base,x,original,acceptedSurface_,loop.time()+dt,dt,topEvaporation);
                     writeSurface_(x,loop.time()+dt,dt,topEvaporation,&bottom);
                     writeSaltBudget_(x,original,acceptedSurface_,loop.time()+dt,dt,topEvaporation);
@@ -503,7 +510,8 @@
                 const auto flux=ale_->flux(after.crust); const int n=ale_->n; const double h=after.crust[2*n];
                 topC=flux.topC; speed=flux.speed; topLimit=topC*j/(1-topC);
                 eps0=after.crust[0]; cell=h*ale_->widths[0];
-                const double effective=eps0*std::sqrt(eps0)*p.diffusion, kinetic=ale_->specificArea(eps0)*p.reaction;
+                const double effective=eps0*std::sqrt(eps0)*p.diffusion,
+                             kinetic=(1-p.ceq)*ale_->specificArea(eps0)*p.reaction;
                 length=std::sqrt(effective/kinetic);
                 within=0; for(int i=0;i<n;++i) if(ale_->centers[i]*h<length) ++within;
                 predicted=-dissolution/(p.rho*std::sqrt(effective*kinetic));
@@ -520,6 +528,33 @@
                 <<after.precipFlux<<','<<speed<<','<<eps0<<','<<cell<<','
                 <<length<<','<<within<<','<<predicted<<'\n';
             saltBudgetLog_.flush();
+        }
+        void writeLocalBalance_(const SurfaceState& before,const SurfaceState& after,double time,double dt,
+                                const p2h::Vec& saltIntegral,const p2h::Vec& reactionIntegral) {
+            const int n=ale_->n;
+            if(int(saltIntegral.size())!=n+1 || int(reactionIntegral.size())!=n)
+                throw std::runtime_error("missing accepted ALE quadrature diagnostics");
+            const auto& p=ale_->p; const double h0=before.crust[2*n],h1=after.crust[2*n];
+            double totalBefore=0,totalAfter=0,totalReaction=0;
+            for(int i=0;i<n;++i) {
+                const double q0=p.rho*before.crust[i]*before.crust[n+i]*h0*ale_->widths[i];
+                const double q1=p.rho*after.crust[i]*after.crust[n+i]*h1*ale_->widths[i];
+                const double expected=saltIntegral[i]-saltIntegral[i+1]-reactionIntegral[i];
+                const double residual=(q1-q0)-expected;
+                const double scale=std::max({std::abs(q1-q0),std::abs(saltIntegral[i]),
+                    std::abs(saltIntegral[i+1]),std::abs(reactionIntegral[i]),1e-30});
+                localBalanceLog_<<time<<','<<dt<<",cell,"<<i<<','<<ale_->faces[i]<<','<<ale_->faces[i+1]<<','
+                    <<ale_->faces[i]*h1<<','<<ale_->faces[i+1]*h1<<','<<q0<<','<<q1<<','
+                    <<saltIntegral[i]<<','<<saltIntegral[i+1]<<','<<reactionIntegral[i]<<','<<residual<<','<<residual/scale<<'\n';
+                totalBefore+=q0; totalAfter+=q1; totalReaction+=reactionIntegral[i];
+            }
+            const double expected=saltIntegral.front()-saltIntegral.back()-totalReaction;
+            const double residual=(totalAfter-totalBefore)-expected;
+            const double scale=std::max({std::abs(totalAfter-totalBefore),std::abs(saltIntegral.front()),
+                std::abs(saltIntegral.back()),std::abs(totalReaction),1e-30});
+            localBalanceLog_<<time<<','<<dt<<",whole,-1,0,1,0,"<<h1<<','<<totalBefore<<','<<totalAfter<<','
+                <<saltIntegral.front()<<','<<saltIntegral.back()<<','<<totalReaction<<','<<residual<<','<<residual/scale<<'\n';
+            localBalanceLog_.flush();
         }
         bool activationOnlyComplete() const { return acceptedSurface_.active && getParam<bool>("P2H.ActivationOnly",false); }
         template<class Solution> void writeSurface_(const Solution& x,double time,double dt,double j,const BottomFlux* bottom=nullptr) {

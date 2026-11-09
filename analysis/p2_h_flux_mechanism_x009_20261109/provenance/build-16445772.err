@@ -1,0 +1,18 @@
+In file included from source/flux_quadrature_test.cc:1:
+source/bdf.hh: In constructor ‘p2h::BDF::BDF(const p2h::ALE&, const p2h::Vec&, double, double, bool)’:
+source/bdf.hh:100:21: error: ‘CVodeQuadInit’ was not declared in this scope; did you mean ‘CVodeRootInit’?
+  100 |             checked(CVodeQuadInit(memory,evaluateQuadrature,quadrature),"quadrature init");
+      |                     ^~~~~~~~~~~~~
+      |                     CVodeRootInit
+source/bdf.hh:101:21: error: ‘CVodeQuadSStolerances’ was not declared in this scope; did you mean ‘CVodeSStolerances’?
+  101 |             checked(CVodeQuadSStolerances(memory,relativeTolerance,1e-16),"quadrature tolerance");
+      |                     ^~~~~~~~~~~~~~~~~~~~~
+      |                     CVodeSStolerances
+source/bdf.hh:102:21: error: ‘CVodeSetQuadErrCon’ was not declared in this scope
+  102 |             checked(CVodeSetQuadErrCon(memory,SUNTRUE),"quadrature error control");
+      |                     ^~~~~~~~~~~~~~~~~~
+source/bdf.hh: In member function ‘p2h::Vec p2h::BDF::advance(double)’:
+source/bdf.hh:127:21: error: ‘CVodeGetQuad’ was not declared in this scope; did you mean ‘CVodeGetJac’?
+  127 |             checked(CVodeGetQuad(memory,&quadratureTime,quadrature),"quadrature get");
+      |                     ^~~~~~~~~~~~
+      |                     CVodeGetJac

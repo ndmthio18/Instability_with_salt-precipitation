@@ -7,7 +7,17 @@ here=pathlib.Path(__file__).resolve().parent
 root=here.parents[1]
 target=pathlib.Path(sys.argv[1])
 prefix=pathlib.Path(sys.argv[2])
-shutil.copytree(root/'model/p1_r2_conservative_richards/source/appl',target,dirs_exist_ok=True)
+source=root/'model/p1_r2_conservative_richards/source/appl'
+# The HPCC production image provides Python 3.6, before copytree gained
+# dirs_exist_ok. Merge the frozen application tree explicitly and preserve
+# metadata instead of depending on the client-side Python version.
+for path in source.rglob('*'):
+    destination=target/path.relative_to(source)
+    if path.is_dir():
+        destination.mkdir(parents=True,exist_ok=True)
+    else:
+        destination.parent.mkdir(parents=True,exist_ok=True)
+        shutil.copy2(str(path),str(destination))
 app=target/'simpleRichardsnc'
 src=(app/'main.cc').read_text()
 def replace(old,new):
