@@ -1,0 +1,6 @@
+case,Grid.Positions0,Grid.Positions1,Grid.Cells0,Grid.Cells1,Grid.Grading1,Problem.WaterLevel,Problem.Permeability,Problem.Porosity,Problem.Swr,Problem.PcN,Problem.PcAlpha,Problem.SweL,Problem.SaltMoleFraction,Problem.BottomBoundaryMode,Problem.SaltDiffusivity,Transport.SolubilityMoleFraction
+analytical_kr0p0023,0 0.001,0 0.20,1,80,-0.97,0.01,2.89e-11,0.41,0.122,10.8,1.77e-04,0.73,0.09,reservoir,1.5e-09,0.1
+analytical_kr0p001,0 0.001,0 0.20,1,80,-0.97,0.01,2.89e-11,0.41,0.122,10.8,1.77e-04,0.73,0.09,reservoir,1.5e-09,0.1
+ALE_reversible,0 0.001,0 0.20,1,80,-0.97,0.01,2.89e-11,0.41,0.122,10.8,1.77e-04,0.73,0.09,reservoir,1.5e-09,0.1
+ALE_no_dissolution,0 0.001,0 0.20,1,80,-0.97,0.01,2.89e-11,0.41,0.122,10.8,1.77e-04,0.73,0.09,reservoir,1.5e-09,0.1
+ALE_reversible_dt_half,0 0.001,0 0.20,1,80,-0.97,0.01,2.89e-11,0.41,0.122,10.8,1.77e-04,0.73,0.09,reservoir,1.5e-09,0.1

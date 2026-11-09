@@ -1,0 +1,56 @@
+[Grid]
+Positions0 = 0 0.001
+Positions1 = 0 0.20
+Cells0 = 1
+Cells1 = 80
+Grading1 = -0.97
+
+[TimeLoop]
+TEnd = 25000
+DtInitial = 0.5
+MaxTimeStepSize = 0.5
+OutputInterval = 1000000
+
+[Problem]
+Name = prat_analytical
+WaterLevel = 0.01
+Permeability = 2.89e-11
+Porosity = 0.41
+Swr = 0.122
+PcN = 10.8
+PcAlpha = 1.77e-04
+SweL = 0.73
+SaltMoleFraction = 0.08
+EvaporationRate = 1.08e-8
+EvaporationBoundaryMode = prat_analytical
+BottomBoundaryMode = reservoir
+SaltDiffusivity = 1.5e-09
+ReferenceViscosity = 0.0011
+PureWaterDensity = 998.203
+DensityLinearCoefficient = 0.670804
+DensityQuadraticCoefficient = 0.373854
+MolarMassH2O = 0.01801528
+MolarMassNaCl = 0.05844
+Amplitude = 0
+WaveNumber = 1
+StandardDeviationSaltMoleFraction = 0
+PerturbationType = Constant
+EnableGravity = true
+PerturbationHeight = 0.20
+
+[PratBoundary]
+ActivationHeight = 3.5e-6
+ReactionCoefficient = 2.3e-3
+MinimumSupplySaturation = 0.99
+FilmThickness = 0.0083
+RelativeHumidity = 0.4
+FieldOutputInterval = 100
+
+[Transport]
+StopAtSolubility = false
+SolubilityMoleFraction = 0.1
+WriteFaceFluxes = false
+
+[Vtk]
+Precision = Float64
+AddVelocity = true

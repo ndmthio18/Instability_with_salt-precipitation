@@ -1,0 +1,14 @@
+[
+  "/WORK/hulm_work/zhixin/p2_h_progressive_activation_20261108/build/soil_solver",
+  "params.input",
+  "-Problem.EvaporationBoundaryMode",
+  "p2h_ale",
+  "-P2H.DonorMode",
+  "progressive_top_boundary_filling",
+  "-P2H.PrecipitationMode",
+  "implicit_surface",
+  "-P2H.PrecrustOnly",
+  "true",
+  "-TimeLoop.TEnd",
+  "300"
+]

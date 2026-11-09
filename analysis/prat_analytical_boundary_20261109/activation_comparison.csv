@@ -1,0 +1,5 @@
+case,first_precipitation_s,accepted_activation_s,actual_activation_h_um,activation_solid_kg_m2,activation_pore_salt_kg_m2,activation_pore_water_kg_m2,last_precursor_salt_flux_kg_m2_s,first_growth_salt_flux_kg_m2_s,activation_flux_ratio,final_growth_evap_relative_to_eq_film
+hydrostatic,,,,,,,,,,
+pilot_n80_dt0p5,19048.5,23136.0,3.5006055757070618,0.0043199223107013,0.0004794308382701341,0.0013301459125366327,1.7005568933428587e-06,6.766211398413593e-06,3.97882095265449,-8.73659427191864e-06
+rollback_injection,19048.5,23135.75,3.5002954746576673,0.004319539630501295,0.00047938836790240935,0.0013300280815972695,1.7005115157657949e-06,6.766180509025841e-06,3.9789089613890756,-8.553600362448677e-06
+short_evaporation,,,,,,,,,,

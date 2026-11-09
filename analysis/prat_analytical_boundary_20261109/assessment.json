@@ -1,0 +1,262 @@
+{
+  "hydrostatic_profile": {
+    "c": 5.551115123125783e-17,
+    "sw": 1.1102230246251565e-16,
+    "pressure_pa": 4.3655745685100555e-11,
+    "status": "PASS"
+  },
+  "rollback": {
+    "injected_rejection_observed": true,
+    "accepted_prefix_max_difference": 0.0,
+    "last_accepted_s": 23137.0,
+    "status": "PASS"
+  },
+  "units": {
+    "reference.json": {
+      "status": "PASS",
+      "exact_h_m": 6.3086926421315786e-06,
+      "errors_m": [
+        3.2914245972190577e-11,
+        1.645558044888933e-11,
+        8.22740459067257e-12,
+        4.113605908916118e-12
+      ],
+      "ratios": [
+        2.0001874789176535,
+        2.000093743723879,
+        2.0000468622528755
+      ]
+    },
+    "verification.json": {
+      "status": "PASS",
+      "cases": [
+        {
+          "name": "hydrostatic",
+          "exit_code": 0,
+          "job": "16462573",
+          "node": "ibc11b11n32",
+          "elapsed_s": 1.826094040647149,
+          "requested_s": 100.0,
+          "last": {
+            "time_s": "100",
+            "dt_s": "0.5",
+            "active": "0",
+            "activation_s": "-1",
+            "h_m": "0",
+            "solid_kg_m2": "0",
+            "pore_salt_kg_m2": "0",
+            "pore_water_kg_m2": "0",
+            "j_kg_m2_s": "0",
+            "v_m_s": "0",
+            "da_top": "0",
+            "pe_u": "0",
+            "pe_move": "0",
+            "c_top": "0",
+            "c_soil": "0.22001709838559252",
+            "sw_soil": "0.9999239313182896",
+            "total_out_kg_m2_s": "0",
+            "salt_out_kg_m2_s": "0",
+            "soil_salt_kg": "0.020998041729756233",
+            "soil_water_kg": "0.07444018504367382",
+            "vapour_kg": "0",
+            "bottom_salt_kg": "3.2121253709954987e-17",
+            "bottom_water_kg": "1.1387273014080432e-16",
+            "salt_residual_rel": "-1.4870445048851239e-15",
+            "water_residual_rel": "-1.4914296948265136e-15",
+            "precip_flux": "0",
+            "fill_liquid_flux": "0"
+          },
+          "max_salt_residual": 1.4870445048851239e-15,
+          "max_water_residual": 1.4914296948265136e-15,
+          "completed": true,
+          "coupling_pass": false
+        },
+        {
+          "name": "short_evaporation",
+          "exit_code": 0,
+          "job": "16462573",
+          "node": "ibc11b11n32",
+          "elapsed_s": 3.3374304808676243,
+          "requested_s": 300.0,
+          "last": {
+            "time_s": "300",
+            "dt_s": "0.5",
+            "active": "0",
+            "activation_s": "-1",
+            "h_m": "0",
+            "solid_kg_m2": "0",
+            "pore_salt_kg_m2": "0",
+            "pore_water_kg_m2": "0",
+            "j_kg_m2_s": "2.0685339956973426e-05",
+            "v_m_s": "0",
+            "da_top": "0",
+            "pe_u": "0",
+            "pe_move": "0",
+            "c_top": "0",
+            "c_soil": "0.22551619789638039",
+            "sw_soil": "0.99992384971285664",
+            "total_out_kg_m2_s": "2.0685339956973426e-05",
+            "salt_out_kg_m2_s": "0",
+            "soil_salt_kg": "0.02099963375692546",
+            "soil_water_kg": "0.074439578391224448",
+            "vapour_kg": "6.2505500373858293e-06",
+            "bottom_salt_kg": "1.5920271693050949e-06",
+            "bottom_water_kg": "5.643897588301584e-06",
+            "salt_residual_rel": "-3.8002248458175391e-15",
+            "water_residual_rel": "-3.7285742370662845e-15",
+            "precip_flux": "0",
+            "fill_liquid_flux": "0"
+          },
+          "max_salt_residual": 4.130679180236455e-15,
+          "max_water_residual": 5.220003931892798e-15,
+          "completed": true,
+          "coupling_pass": false
+        }
+      ]
+    },
+    "frozen_regression.json": {
+      "status": "PASS",
+      "exit_code": 0,
+      "max_absolute_differences": {
+        "time_s": 0.0,
+        "c_soil": 0.0,
+        "sw_soil": 0.0,
+        "j_kg_m2_s": 0.0,
+        "soil_salt_kg": 0.0,
+        "soil_water_kg": 0.0
+      },
+      "job": "16462576",
+      "node": "ibc11b11n11"
+    }
+  },
+  "budget_audits": [
+    {
+      "case": "hydrostatic",
+      "salt_flux_residual_rel": 0.0,
+      "water_flux_residual_rel": 0.0,
+      "global_salt_residual_rel": 1.4870445048851239e-15,
+      "global_water_residual_rel": 1.4914296948265136e-15,
+      "activation_transfer_residual_rel": 0,
+      "accepted_activation_count": 0,
+      "strictly_increasing_time": true,
+      "dt_matches_accepted_interval": true,
+      "max_interface_relative_error_active": null,
+      "max_pe_u": 0.0,
+      "max_pe_move": 0.0,
+      "zero_initial_inventories": true,
+      "height_solid_identity_max_absolute_m": 0.0,
+      "numerical_budget_gate": "PASS",
+      "finite_da_velocity_relative_error": null,
+      "gasfilm_coupling_relative_error": null,
+      "top_kinetic_absolute_error": null
+    },
+    {
+      "case": "pilot_n80_dt0p5",
+      "salt_flux_residual_rel": 8.674829665135251e-20,
+      "water_flux_residual_rel": 2.9129486227080347e-21,
+      "global_salt_residual_rel": 2.4784075081418733e-14,
+      "global_water_residual_rel": 3.2065738438770046e-14,
+      "activation_transfer_residual_rel": 2.5816744876477844e-21,
+      "accepted_activation_count": 1,
+      "strictly_increasing_time": true,
+      "dt_matches_accepted_interval": true,
+      "max_interface_relative_error_active": 0.01999999999983837,
+      "max_pe_u": 0.00035728641740316217,
+      "max_pe_move": 3.494694532874346e-05,
+      "zero_initial_inventories": true,
+      "height_solid_identity_max_absolute_m": 1.1858461261560205e-20,
+      "numerical_budget_gate": "PASS",
+      "finite_da_velocity_relative_error": 4.984978092032756e-16,
+      "gasfilm_coupling_relative_error": 2.092010845978273e-15,
+      "top_kinetic_absolute_error": 2.7737787923736573e-17
+    },
+    {
+      "case": "rollback_injection",
+      "salt_flux_residual_rel": 6.187951037580784e-20,
+      "water_flux_residual_rel": 1.4564743113540173e-21,
+      "global_salt_residual_rel": 2.4784075081418733e-14,
+      "global_water_residual_rel": 3.0760737455796844e-14,
+      "activation_transfer_residual_rel": 2.0653395901182275e-20,
+      "accepted_activation_count": 1,
+      "strictly_increasing_time": true,
+      "dt_matches_accepted_interval": true,
+      "max_interface_relative_error_active": 0.00010834424247474495,
+      "max_pe_u": 0.00021052370942970593,
+      "max_pe_move": 2.030134575693659e-05,
+      "zero_initial_inventories": true,
+      "height_solid_identity_max_absolute_m": 8.470329472543003e-22,
+      "numerical_budget_gate": "PASS",
+      "finite_da_velocity_relative_error": 1.676085984686471e-16,
+      "gasfilm_coupling_relative_error": 1.1410967000865835e-15,
+      "top_kinetic_absolute_error": 2.1250786097189514e-17
+    },
+    {
+      "case": "short_evaporation",
+      "salt_flux_residual_rel": 0.0,
+      "water_flux_residual_rel": 0.0,
+      "global_salt_residual_rel": 4.130679180236455e-15,
+      "global_water_residual_rel": 5.220003931892798e-15,
+      "activation_transfer_residual_rel": 0,
+      "accepted_activation_count": 0,
+      "strictly_increasing_time": true,
+      "dt_matches_accepted_interval": true,
+      "max_interface_relative_error_active": null,
+      "max_pe_u": 0.0,
+      "max_pe_move": 0.0,
+      "zero_initial_inventories": true,
+      "height_solid_identity_max_absolute_m": 0.0,
+      "numerical_budget_gate": "PASS",
+      "finite_da_velocity_relative_error": null,
+      "gasfilm_coupling_relative_error": null,
+      "top_kinetic_absolute_error": null
+    }
+  ],
+  "comparisons": [
+    {
+      "kind": "grid",
+      "coarse": "nested_n40_dt0p5",
+      "fine": "pilot_n80_dt0p5",
+      "tolerance": 0.02,
+      "status": "NOT TESTED",
+      "h_m_relative_difference": null,
+      "solid_kg_m2_relative_difference": null,
+      "j_kg_m2_s_relative_difference": null,
+      "vapour_kg_relative_difference": null
+    },
+    {
+      "kind": "grid",
+      "coarse": "pilot_n80_dt0p5",
+      "fine": "nested_n160_dt0p5",
+      "tolerance": 0.02,
+      "status": "NOT TESTED",
+      "h_m_relative_difference": null,
+      "solid_kg_m2_relative_difference": null,
+      "j_kg_m2_s_relative_difference": null,
+      "vapour_kg_relative_difference": null
+    },
+    {
+      "kind": "grid",
+      "coarse": "nested_n160_dt0p5",
+      "fine": "nested_n320_dt0p5",
+      "tolerance": 0.02,
+      "status": "NOT TESTED",
+      "h_m_relative_difference": null,
+      "solid_kg_m2_relative_difference": null,
+      "j_kg_m2_s_relative_difference": null,
+      "vapour_kg_relative_difference": null
+    },
+    {
+      "kind": "timestep",
+      "coarse": "pilot_n80_dt0p5",
+      "fine": "nested_n80_dt0p25",
+      "tolerance": 0.01,
+      "status": "NOT TESTED",
+      "h_m_relative_difference": null,
+      "solid_kg_m2_relative_difference": null,
+      "j_kg_m2_s_relative_difference": null,
+      "vapour_kg_relative_difference": null
+    }
+  ],
+  "pilot_gate": "FAIL",
+  "quantitative_research": "NO-GO"
+}

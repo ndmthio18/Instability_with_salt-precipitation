@@ -1,0 +1,10 @@
+{
+  "common_start_s": 6745.0,
+  "common_end_s": 7382.770655725123,
+  "interpolation": "Linear within accepted-time brackets only, never beyond a stopped run",
+  "evaporation_plot": "1e6*(j/j_equilibrium-1), ppm; avoids ambiguous automatic axis offset",
+  "j_equilibrium_kg_m2_s": 1.781528648571093e-05,
+  "parameters": "Primary analytical kr=0.0023 differs from legacy kr=0.001; added analytical kr=0.001 is the matched coefficient control.",
+  "limitations": "Different constitutive closures and stopping criteria remain. No-dissolution is a positive-only reaction counterfactual, not removal of internal precipitation.",
+  "analytical_internal_inventory": "Exactly zero by model construction; no spatial internal fields generated."
+}

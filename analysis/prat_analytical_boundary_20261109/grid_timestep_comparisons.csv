@@ -1,0 +1,5 @@
+kind,coarse,fine,tolerance,status,h_m_relative_difference,solid_kg_m2_relative_difference,j_kg_m2_s_relative_difference,vapour_kg_relative_difference
+grid,nested_n40_dt0p5,pilot_n80_dt0p5,0.02,NOT TESTED,,,,
+grid,pilot_n80_dt0p5,nested_n160_dt0p5,0.02,NOT TESTED,,,,
+grid,nested_n160_dt0p5,nested_n320_dt0p5,0.02,NOT TESTED,,,,
+timestep,pilot_n80_dt0p5,nested_n80_dt0p25,0.01,NOT TESTED,,,,
