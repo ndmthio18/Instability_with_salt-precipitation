@@ -3,6 +3,7 @@
 ## 分支与工作目录
 
 - Git branch: `research/p2-h-flux-mechanism-x009`
+- Verified result commit: `82bfef1f747dc84e8db63c0ce719cbccbdcf773b`
 - HPCC: `/WORK/hulm_work/zhixin/p2_h_flux_mechanism_x009_20261109`
 
 ## Slurm 命令

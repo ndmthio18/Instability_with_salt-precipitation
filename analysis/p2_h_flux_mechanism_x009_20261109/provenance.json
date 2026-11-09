@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "branch": "research/p2-h-flux-mechanism-x009",
+  "base_commit": "f154edaad5a9debe0791258328f1a634ace34940",
+  "verified_result_commit": "82bfef1f747dc84e8db63c0ce719cbccbdcf773b",
+  "hpcc_root": "/WORK/hulm_work/zhixin/p2_h_flux_mechanism_x009_20261109",
+  "jobs": {
+    "build": 16445808,
+    "run_array": 16445813,
+    "final_postprocess": 16446287,
+    "compact_package": 16446308,
+    "retained_failed_builds": [16445764, 16445772, 16445803]
+  },
+  "binary_sha256": "32f2c0dd1f6265859489f9c882b899bb6119a0c6571c6127e92f475c75498a93",
+  "compact_archive_sha256": "e9f9481d1913e3bf2c8d1f5b2a73d7b1efa99d69fc1a4aa48c35aa32786437c3",
+  "cases": [
+    "x008_progressive_reservoir_n80_a64_dt0p5_diagnostic",
+    "x009_progressive_reservoir_n80_a64_dt0p5",
+    "x009_progressive_reservoir_n80_a64_dt0p25_timecheck"
+  ],
+  "scientific_decision": {
+    "numerical_mechanism_audit": "GO",
+    "quantitative_physical_model": "NO-GO",
+    "next_priority": "conservative interface solid equilibrium depletion and recession closure"
+  }
+}
