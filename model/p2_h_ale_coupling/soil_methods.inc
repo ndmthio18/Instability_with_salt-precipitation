@@ -44,7 +44,7 @@
         double nextFieldOutputTime_=0;
         unsigned long coupledTrials_=0,rejectedTrials_=0;
         bool injectedFailure_=false;
-        std::ofstream surfaceLog_,eventLog_,crustFields_,soilFields_,donorLog_,allocationLog_,boundaryLog_;
+        std::ofstream surfaceLog_,eventLog_,crustFields_,soilFields_,donorLog_,allocationLog_,boundaryLog_,saltBudgetLog_;
         unsigned long allocationAttempt_=0, candidateAttempt_=0;
         bool controlledDonorComplete() const { return getParam<bool>("P2H.ControlledDonorTest",false); }
 
@@ -254,7 +254,15 @@
             surfaceLog_.open("coupled_history.csv"); eventLog_.open("coupling_events.csv"); crustFields_.open("crust_fields.csv");
             soilFields_.open("soil_fields.csv");
             donorLog_.open("donor_profiles.csv"); allocationLog_.open("donor_attempts.csv");
-            boundaryLog_.open("open_boundary_budget.csv");
+            boundaryLog_.open("open_boundary_budget.csv"); saltBudgetLog_.open("salt_budget.csv");
+            saltBudgetLog_<<std::setprecision(17)<<"time_s,dt_s,phase,evaporation_kg_m2_s,interface_liquid_kg_m2_s,interface_salt_kg_m2_s,interface_water_kg_m2_s,"
+                "interface_mass_fraction,interface_minus_ceq,advective_salt_kg_m2_s,implied_back_diffusion_kg_m2_s,back_diffusion_fraction,"
+                "evaporation_limited_precipitation_kg_m2_s,crust_top_mass_fraction,top_limited_precipitation_kg_m2_s,"
+                "top_precipitation_kg_m2_s,internal_positive_kg_m2_s,dissolution_kg_m2_s,gross_precipitation_kg_m2_s,"
+                "net_solid_kg_m2_s,pore_salt_change_kg_m2_s,pore_water_change_kg_m2_s,dissolution_implied_by_supply_kg_m2_s,"
+                "salt_closure_residual_kg_m2_s,water_closure_residual_kg_m2_s,ledger_solid_residual_kg_m2_s,"
+                "precrust_precipitation_reference_kg_m2_s,top_growth_velocity_m_s,bottom_cell_porosity,bottom_cell_thickness_m,"
+                "reaction_diffusion_length_m,cells_within_length,predicted_interface_minus_ceq\n";
             nextFieldOutputTime_=getParam<double>("P2H.FieldOutputInterval",100.0);
             if(!(std::isfinite(nextFieldOutputTime_) && nextFieldOutputTime_>0))
                 throw std::runtime_error("invalid P2-H field output interval");
@@ -453,6 +461,7 @@
                     const double topEvaporation=original.active?j:evaporationFlux_;
                     writeGridDiagnostics_(base,x,original,acceptedSurface_,loop.time()+dt,dt,topEvaporation);
                     writeSurface_(x,loop.time()+dt,dt,topEvaporation,&bottom);
+                    writeSaltBudget_(x,original,acceptedSurface_,loop.time()+dt,dt,topEvaporation);
                     return;
                 } catch(const std::exception& e) {
                     ++rejectedTrials_;
@@ -465,6 +474,52 @@
                     if(retry==8 || dt<1e-6) throw;
                 }
             }
+        }
+        struct SurfaceInventory { double solid=0, poreSalt=0, poreWater=0; };  // per unit soil area
+        SurfaceInventory surfaceInventory_(const SurfaceState& s) const {
+            SurfaceInventory r;
+            if(s.active) { const auto m=ale_->inventory(s.crust); r.solid=m.solid; r.poreSalt=m.salt; r.poreWater=m.water; }
+            else { r.solid=s.loose; r.poreSalt=s.precursor.poreSalt; r.poreWater=s.precursor.poreWater; }
+            return r;
+        }
+        // Observer only: accepted-step salt budget decomposition. All rates are
+        // step averages in kg/m2/s from accepted inventories and BDF ledgers;
+        // the interface-cell diagnostics are end-of-step values.
+        template<class Solution>
+        void writeSaltBudget_(const Solution& x,const SurfaceState& before,const SurfaceState& after,double time,double dt,double j) {
+            const auto& p=ale_->p; const double nan=std::numeric_limits<double>::quiet_NaN();
+            const auto b=surfaceInventory_(before), a=surfaceInventory_(after);
+            const double cb=topC_(x), jl=heldLiquid_, js=heldSalt_;
+            const char* phase=before.active?"active":(after.active?"activation":"precrust");
+            double top=0,positive=0,dissolution=0;
+            if(before.active) {
+                const int k=ale_->inv();
+                top=(after.crust[k]-before.crust[k])/dt;
+                positive=(after.crust[ale_->positiveInv()]-before.crust[ale_->positiveInv()])/dt;
+                dissolution=(after.crust[ale_->dissolutionInv()]-before.crust[ale_->dissolutionInv()])/dt;
+            } else top=precipitationFlux_;
+            double topC=nan,topLimit=nan,speed=0,eps0=nan,cell=nan,length=nan,within=nan,predicted=nan;
+            if(after.active) {
+                const auto flux=ale_->flux(after.crust); const int n=ale_->n; const double h=after.crust[2*n];
+                topC=flux.topC; speed=flux.speed; topLimit=topC*j/(1-topC);
+                eps0=after.crust[0]; cell=h*ale_->widths[0];
+                const double effective=eps0*std::sqrt(eps0)*p.diffusion, kinetic=ale_->specificArea(eps0)*p.reaction;
+                length=std::sqrt(effective/kinetic);
+                within=0; for(int i=0;i<n;++i) if(ale_->centers[i]*h<length) ++within;
+                predicted=-dissolution/(p.rho*std::sqrt(effective*kinetic));
+            }
+            const double gross=top+positive;
+            const double net=(a.solid-b.solid)/dt, poreSalt=(a.poreSalt-b.poreSalt)/dt, poreWater=(a.poreWater-b.poreWater)/dt;
+            const double advective=cb*jl, back=advective-js;
+            saltBudgetLog_<<time<<','<<dt<<','<<phase<<','<<j<<','<<jl<<','<<js<<','<<jl-js<<','
+                <<cb<<','<<cb-p.ceq<<','<<advective<<','<<back<<','<<(advective!=0?back/advective:nan)<<','
+                <<p.ceq*j/(1-p.ceq)<<','<<topC<<','<<topLimit<<','
+                <<top<<','<<positive<<','<<dissolution<<','<<gross<<','
+                <<net<<','<<poreSalt<<','<<poreWater<<','<<gross+poreSalt-js<<','
+                <<js-net-poreSalt<<','<<(jl-js)-j-poreWater<<','<<net-(gross-dissolution)<<','
+                <<after.precipFlux<<','<<speed<<','<<eps0<<','<<cell<<','
+                <<length<<','<<within<<','<<predicted<<'\n';
+            saltBudgetLog_.flush();
         }
         bool activationOnlyComplete() const { return acceptedSurface_.active && getParam<bool>("P2H.ActivationOnly",false); }
         template<class Solution> void writeSurface_(const Solution& x,double time,double dt,double j,const BottomFlux* bottom=nullptr) {

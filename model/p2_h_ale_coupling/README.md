@@ -1,5 +1,28 @@
 # P2-H C++ ALE and conditional DuMuX coupling
 
+## Salt-budget diagnostics
+
+Every accepted coupled step appends one row to `salt_budget.csv`. Rates are
+step averages per unit soil area (kg m^-2 s^-1), taken from accepted
+inventories and the BDF ledgers. The bottom-cell columns are end-of-step values.
+`phase` is `precrust`, `activation` or `active`. The main identities are:
+
+```text
+J_s = C_b J_L - D                       (D: implied soil back-diffusion)
+gross = top + internal_positive         (precrust: P)
+evaporation_limited = C_eq j/(1-C_eq)
+dissolution_implied = gross + dPoreSalt/dt - J_s
+salt residual  = J_s - dSolid/dt - dPoreSalt/dt
+water residual = (J_L - J_s) - j - dPoreWater/dt
+predicted C_b - C_eq = -dissolution / (rho_l sqrt(eps0 D_eff a_v k_r))
+```
+
+Pore liquid moved directly from soil DOFs (`top_only`, `adaptive_multilayer`)
+makes the residuals nonzero on the `activation` row only. `salt_budget.py`
+summarizes this file. It also differences a legacy `coupled_history.csv`, where
+pore terms come from `J_s` minus the net solid change. The logger is an
+observer and does not change the solution.
+
 ## Progressive top-boundary precursor filling
 
 `P2H.DonorMode=progressive_top_boundary_filling` replaces the instantaneous
