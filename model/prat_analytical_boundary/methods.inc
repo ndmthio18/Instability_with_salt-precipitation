@@ -8,8 +8,10 @@
         double heldLiquid_=0,heldSalt_=0,initialSalt_=0,initialWater_=0;
         double evaporationFlux_=0,precipitationFlux_=0,fillLiquidFlux_=0,fillSaltFlux_=0,fillDensity_=0;
         double nextOutput_=0;
+        pratboundary::GrowthLaw growthLaw_=pratboundary::GrowthLaw::M1;
+        double substrateGrainSize_=25e-6;
         bool injected_=false;
-        std::ofstream history_,events_,profiles_;
+        std::ofstream history_,events_,profiles_,rejected_;
         // GENERATED_HELPERS
         double film_(double c) const {
             if(getParam<bool>("PratBoundary.ZeroEvaporation",false)) return 0;
@@ -24,13 +26,17 @@
             params_.solutionDensity=rhoW(getParam<double>("Transport.SolubilityMoleFraction"));
             params_.reactionCoefficient=getParam<double>("PratBoundary.ReactionCoefficient",.0023);
             params_.minimumInterfaceSaturation=getParam<double>("PratBoundary.MinimumSupplySaturation",.99);
+            growthLaw_=pratboundary::parseGrowthLaw(getParam<std::string>("PratBoundary.GrowthLaw","M1"));
+            substrateGrainSize_=getParam<double>("PratBoundary.SubstrateGrainSize",25e-6);
+            if(!(substrateGrainSize_>0 && std::isfinite(substrateGrainSize_))) throw std::runtime_error("invalid substrate grain size");
             params_.check(); auditBoundaryFaces_();
             const auto m=inventory_(x); initialSalt_=m.first; initialWater_=m.second;
-            history_.open("history.csv"); events_.open("events.csv"); profiles_.open("soil_profiles.csv");
-            history_<<std::setprecision(17)<<"time_s,dt_s,active,activation_s,h_m,solid_kg_m2,pore_salt_kg_m2,pore_water_kg_m2,j_kg_m2_s,v_m_s,da_top,pe_u,pe_move,c_top,c_soil,sw_soil,total_out_kg_m2_s,salt_out_kg_m2_s,soil_salt_kg,soil_water_kg,vapour_kg,bottom_salt_kg,bottom_water_kg,salt_residual_rel,water_residual_rel,precip_flux,fill_liquid_flux\n";
+            history_.open("history.csv"); events_.open("events.csv"); profiles_.open("soil_profiles.csv"); rejected_.open("rejected_trials.csv");
+            history_<<std::setprecision(17)<<"time_s,dt_s,active,activation_s,growth_law,h_m,solid_kg_m2,pore_salt_kg_m2,pore_water_kg_m2,j_kg_m2_s,v_m_s,da,da_star,da_top,specific_area_m_inv,efficiency_m1,efficiency_m2,efficiency_m3,selected_efficiency,m3_relative_error,m3_valid,pe_u,pe_move,c_top,c_soil,c_soil_relative_to_ceq,sw_soil,total_out_kg_m2_s,salt_out_kg_m2_s,solid_rate_kg_m2_s,pore_salt_rate_kg_m2_s,pore_water_rate_kg_m2_s,soil_salt_kg,soil_water_kg,vapour_kg,bottom_salt_kg,bottom_water_kg,salt_residual_rel,water_residual_rel,precip_flux,fill_liquid_flux\n";
             events_<<std::setprecision(17)<<"time_s,event,value1,value2\n";
+            rejected_<<std::setprecision(17)<<"time_s,dt_s,retry,growth_law,reason,c_soil,sw_soil,total_out_kg_m2_s,salt_out_kg_m2_s,da,da_star,da_top,selected_efficiency\n";
             profiles_<<std::setprecision(17)<<"time_s,z_m,c,sw,pressure_pa\n";
-            write_(x,0,0,0,0,0,0,0);
+            write_(x,0,0,0,0,0,0,0,{});
         }
         template<class Solution> void budget_(const Solution& x,const SurfaceState& s) const {
             for(const auto& value:x) {
@@ -55,6 +61,7 @@
             for(int retry=0;retry<9;++retry) {
                 auto next=original; x=base; variables.update(x); loop.setTimeStepSize(dt);
                 double j=0,v=0,pu=0,pm=0,ct=0;
+                pratboundary::GrowthDiagnostics growth;
                 try {
                     precipitationFlux_=fillLiquidFlux_=fillSaltFlux_=0;
                     if(!original.growth.active) {
@@ -78,7 +85,8 @@
                             events_<<next.activation<<",activation_trial,"<<rs<<','<<rw<<'\n';
                         }
                     } else {
-                        auto trial=pratboundary::evaluate(original.growth,params_,dt,[this](double c){return film_(c);});
+                        auto trial=pratboundary::evaluate(original.growth,params_,dt,[this](double c){return film_(c);},growthLaw_,substrateGrainSize_);
+                        growth=trial.growth;
                         heldLiquid_=trial.totalFlux; heldSalt_=trial.saltFlux;
                         solver.solve(x,loop);
                         if(loop.timeStepSize()<dt*(1-1e-12)) { dt=loop.timeStepSize(); throw std::runtime_error("soil reduced active trial dt"); }
@@ -99,8 +107,15 @@
                     acceptedSurface_=next;
                     if(original.loose==0 && next.loose>0) events_<<loop.time()+dt<<",accepted_first_precipitation,"<<next.loose<<",0\n";
                     if(!original.growth.active && next.growth.active) events_<<next.activation<<",accepted_activation,"<<next.growth.height<<','<<topC_(x)<<'\n';
-                    write_(x,loop.time()+dt,dt,j,v,pu,pm,ct); return;
+                    if(next.growth.active && growth.damkohler==0)
+                        growth=pratboundary::growthDiagnostics(params_,next.growth.height,substrateGrainSize_,growthLaw_);
+                    write_(x,loop.time()+dt,dt,j,v,pu,pm,ct,growth); return;
                 } catch(const std::exception& e) {
+                    double rejectedC=std::numeric_limits<double>::quiet_NaN(),rejectedSw=rejectedC;
+                    try { rejectedC=topC_(x); rejectedSw=topSw_(x); } catch(...) {}
+                    rejected_<<loop.time()+dt<<','<<dt<<','<<retry<<','<<pratboundary::growthLawName(growthLaw_)<<','<<e.what()<<','
+                        <<rejectedC<<','<<rejectedSw<<','<<heldLiquid_<<','<<heldSalt_<<','<<growth.damkohler<<','
+                        <<growth.damkohlerStar<<','<<growth.damkohlerTop<<','<<growth.selectedEfficiency<<'\n'; rejected_.flush();
                     events_<<loop.time()<<",rejected_"<<e.what()<<','<<dt<<','<<retry<<'\n'; events_.flush();
                     x=base; variables.update(x); heldLiquid_=savedLiquid; heldSalt_=savedSalt;
                     precipitationFlux_=fillLiquidFlux_=fillSaltFlux_=0;
@@ -117,16 +132,23 @@
                 }
             }
         }
-        template<class Solution> void write_(const Solution& x,double t,double dt,double j,double v,double pu,double pm,double ct) {
+        template<class Solution> void write_(const Solution& x,double t,double dt,double j,double v,double pu,double pm,double ct,
+                                             const pratboundary::GrowthDiagnostics& growth) {
             const auto& s=acceptedSurface_; const auto m=inventory_(x); const auto a=area_();
             const bool active=s.growth.active;
             const double solid=active?s.growth.solidSalt:s.loose;
             const double salt=active?s.growth.dissolvedSalt:s.precursor.poreSalt;
             const double water=active?s.growth.water:s.precursor.poreWater;
             const double h=active?s.growth.height:solid/(params_.crystalDensity*(1-params_.porosity));
-            history_<<t<<','<<dt<<','<<active<<','<<s.activation<<','<<h<<','<<solid<<','<<salt<<','<<water<<','<<j<<','<<v<<','
-                <<(h>0?params_.damkohlerTop(h):0)<<','<<pu<<','<<pm<<','<<ct<<','<<topC_(x)<<','<<topSw_(x)<<','
-                <<heldLiquid_<<','<<heldSalt_<<','<<m.first<<','<<m.second<<','<<s.vapour<<','<<s.bottomSalt<<','<<s.bottomLiquid-s.bottomSalt<<','
+            const double solidRate=params_.crystalDensity*(1-params_.porosity)*v;
+            const double poreSaltRate=params_.rho()*params_.porosity*params_.equilibriumMassFraction*v;
+            const double poreWaterRate=params_.rho()*params_.porosity*(1-params_.equilibriumMassFraction)*v;
+            history_<<t<<','<<dt<<','<<active<<','<<s.activation<<','<<pratboundary::growthLawName(growthLaw_)<<','<<h<<','<<solid<<','<<salt<<','<<water<<','<<j<<','<<v<<','
+                <<growth.damkohler<<','<<growth.damkohlerStar<<','<<growth.damkohlerTop<<','<<growth.specificArea<<','
+                <<growth.efficiencyM1<<','<<growth.efficiencyM2<<','<<growth.efficiencyM3<<','<<growth.selectedEfficiency<<','
+                <<growth.m3RelativeError<<','<<growth.m3Valid<<','<<pu<<','<<pm<<','<<ct<<','<<topC_(x)<<','
+                <<topC_(x)/params_.equilibriumMassFraction-1<<','<<topSw_(x)<<','<<heldLiquid_<<','<<heldSalt_<<','
+                <<solidRate<<','<<poreSaltRate<<','<<poreWaterRate<<','<<m.first<<','<<m.second<<','<<s.vapour<<','<<s.bottomSalt<<','<<s.bottomLiquid-s.bottomSalt<<','
                 <<(m.first+(solid+salt)*a-s.bottomSalt-initialSalt_)/initialSalt_<<','
                 <<(m.second+water*a+s.vapour-(s.bottomLiquid-s.bottomSalt)-initialWater_)/initialWater_<<','<<precipitationFlux_<<','<<fillLiquidFlux_<<'\n';
             if(t==0 || t>=nextOutput_ || t==s.activation) {

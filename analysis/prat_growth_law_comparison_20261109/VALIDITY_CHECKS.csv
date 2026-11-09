@@ -1,0 +1,4 @@
+model,minimum_da_active,maximum_da_active,da_star,all_m3_steps_da_ge_10,maximum_abs_m3_relative_error,maximum_abs_soil_relative_deviation,undersaturation_0p5pct_time_s,undersaturation_1pct_time_s,undersaturation_2pct_accepted_time_s,first_rejected_time_s,first_rejected_reason,first_rejected_c_soil,completed_requested_horizon
+M1,20.17148516322653,97.41623368500655,3.17503557384727,True,9.029907240170644e-05,0.019999999986458405,6848.0,7013.5,,7617.0,soil interface outside equilibrium envelope,0.2596418664624931,False
+M2,20.17148516322653,199.69115405577938,3.17503557384727,True,9.029907240170644e-05,0.012173224619062006,7031.0,7962.0,,,,,True
+M3,20.17148516322653,199.69243272589813,3.17503557384727,True,9.029907240170644e-05,0.012173330164130025,7031.0,7962.0,,,,,True

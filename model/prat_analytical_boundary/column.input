@@ -40,7 +40,9 @@ PerturbationHeight = 0.20
 
 [PratBoundary]
 ActivationHeight = 3.5e-6
-ReactionCoefficient = 2.3e-3
+ReactionCoefficient = 1.0e-3
+GrowthLaw = M1
+SubstrateGrainSize = 25e-6
 MinimumSupplySaturation = 0.99
 FilmThickness = 0.0083
 RelativeHumidity = 0.4

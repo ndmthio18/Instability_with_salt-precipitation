@@ -4,7 +4,7 @@
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=8
 #SBATCH --time=00:45:00
-#SBATCH --job-name=prat-build
+#SBATCH --job-name=prat-law-build
 #SBATCH --output=logs/build-%j.out
 #SBATCH --error=logs/build-%j.err
 set -euo pipefail
@@ -13,7 +13,7 @@ case "$(hostname)" in ibcln*|login*|test*) exit 91;; esac
 module purge
 module load compilers/gcc/v12.2.0 mpi/openmpi-gcc12/v4.1.4 tools/cmake/v3.25.2
 export OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 DUMUX_NUM_THREADS=1
-cd /WORK/hulm_work/zhixin/prat_analytical_boundary_20261109
+cd /WORK/hulm_work/zhixin/prat_growth_law_comparison_20261109
 mkdir -p build unit
 SRC=repo/model/prat_analytical_boundary
 g++ -std=c++17 -O2 -Wall -Wextra -pedantic "$SRC/test.cc" -I "$SRC" -I repo/model/p2_f_analytical_growth/cpp -I repo/model/p2_h_ale_coupling -o build/unit_test

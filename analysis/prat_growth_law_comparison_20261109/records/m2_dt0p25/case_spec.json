@@ -1,0 +1,20 @@
+{
+  "growth_law": "M2",
+  "formula_replacement_diagnostic_only": true,
+  "initial_and_reservoir_nacl_mole_fraction": 0.09,
+  "soil_vertical_cells": 80,
+  "soil_horizontal_cells": 1,
+  "dt_max_s": 0.25,
+  "requested_horizon_s": 9000,
+  "activation_height_m": 3.5e-06,
+  "reaction_coefficient_m_s": 0.001,
+  "beta": 2.0,
+  "crust_porosity": 0.43,
+  "crystal_density_kg_m3": 2165.0,
+  "molecular_diffusivity_m2_s": 1.3e-09,
+  "substrate_grain_size_m": 2.5e-05,
+  "specific_area_law": "36*(1-epsilon)/d_sub",
+  "effective_diffusivity_law": "sqrt(epsilon)*D_s",
+  "interface_relative_tolerance": 0.02,
+  "binary_sha256": "4541a8ac579a85e9ee05955fef9d690fb935368fc002b549c9f88cc11e66bb9c"
+}
