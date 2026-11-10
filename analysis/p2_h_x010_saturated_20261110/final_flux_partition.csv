@@ -1,0 +1,8 @@
+quantity,kg_m2_s,microgram_m2_s,fraction_of_soil_supply,meaning
+soil_net_salt_supply,6.6008773362068121e-6,6.6008773362068121,1.0,DuMuX-to-ALE bottom salt flux
+advective_salt_supply,6.6008773105322728e-6,6.6008773105322728,0.999999996111194,Upward dissolved salt advection
+diffusive_salt_supply,2.5674539554824605e-14,2.5674539554824605e-8,3.888806e-9,Bottom diffusion; effectively zero
+top_skeleton_growth,4.34632481069592e-6,4.34632481069592,0.65844653510764,NaCl incorporated in the moving top skeleton
+internal_precipitation,2.0647726510536999e-6,2.0647726510536999,0.312802759,Positive internal NaCl reaction
+pore_dissolved_salt_storage,1.897798744571922e-7,0.1897798744571922,0.028750706,Residual required for exact instantaneous salt closure
+internal_dissolution,9.0618035576547729e-16,9.061803557654773e-10,1.3728e-10,Reversible internal dissolution rate; numerical zero
