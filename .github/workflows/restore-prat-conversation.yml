@@ -1,0 +1,34 @@
+name: Restore verified Prat conversation files
+on:
+  push:
+    branches: [figures/prat-interface-editable]
+    paths:
+      - 'conversation_files/2026-11-10/_payload/**'
+      - 'conversation_files/2026-11-10/restore_editables.py'
+      - '.github/workflows/restore-prat-conversation.yml'
+permissions:
+  contents: write
+jobs:
+  restore:
+    if: github.ref == 'refs/heads/figures/prat-interface-editable'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Check out archive branch only
+        uses: actions/checkout@v4
+        with:
+          ref: figures/prat-interface-editable
+          sparse-checkout: conversation_files/2026-11-10
+      - name: Restore and verify exact original bytes
+        run: python3 conversation_files/2026-11-10/restore_editables.py
+      - name: Commit only verified archive outputs
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -f conversation_files/2026-11-10/editable conversation_files/2026-11-10/original_archives conversation_files/2026-11-10/verified_download_bundle.zip conversation_files/2026-11-10/VERIFIED_FILES.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'Restore SHA-256 verified original editable conversation files'
+            git push origin HEAD:refs/heads/figures/prat-interface-editable
+          fi
