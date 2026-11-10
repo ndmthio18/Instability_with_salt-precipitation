@@ -1,0 +1,56 @@
+{
+  "status": "PARTIAL_CONVERSATION_ARCHIVE",
+  "verified_original_count": 8,
+  "payload_sha256": "6bf0643f5f1ec32122748eee1c711d60eb5cfe8f84504fc52ba73f13731bb921",
+  "files": [
+    {
+      "path": "editable/Prat_crust_salt_balance_editable.svg",
+      "bytes": 48244,
+      "sha256": "afee2cefa9309442d23932e187c5c4094c9c7809f073b537158901ccd5107ba5",
+      "status": "VERIFIED_ORIGINAL"
+    },
+    {
+      "path": "editable/prat_salt_balance.svg",
+      "bytes": 48244,
+      "sha256": "afee2cefa9309442d23932e187c5c4094c9c7809f073b537158901ccd5107ba5",
+      "status": "VERIFIED_ORIGINAL"
+    },
+    {
+      "path": "editable/prat_editable_direct.svg",
+      "bytes": 19877,
+      "sha256": "ebe97e62b0ad0a43eff0a7bf56baa6f671c49ebe349f6d5d0234871468c2f353",
+      "status": "VERIFIED_ORIGINAL"
+    },
+    {
+      "path": "editable/prat_editable_direct.txt",
+      "bytes": 19877,
+      "sha256": "ebe97e62b0ad0a43eff0a7bf56baa6f671c49ebe349f6d5d0234871468c2f353",
+      "status": "VERIFIED_ORIGINAL"
+    },
+    {
+      "path": "editable/prat_interface_editable.svg",
+      "bytes": 53026,
+      "sha256": "4871a9f7918d3aaddf5717e1927fbc3fbe3998c8837d329a05e09f7cc8aa7c75",
+      "status": "VERIFIED_ORIGINAL"
+    },
+    {
+      "path": "editable/prat_interface_source.txt",
+      "bytes": 53026,
+      "sha256": "4871a9f7918d3aaddf5717e1927fbc3fbe3998c8837d329a05e09f7cc8aa7c75",
+      "status": "VERIFIED_ORIGINAL"
+    },
+    {
+      "path": "original_archives/prat_salt_balance.zip",
+      "bytes": 6255,
+      "sha256": "bafaea275ba7046187558d8d7317a3965aa0d19d7f0a1fe157f046f31661b396",
+      "status": "VERIFIED_ORIGINAL"
+    },
+    {
+      "path": "images/figure9_physical_columns.png",
+      "bytes": 71849,
+      "sha256": "9d7a58764f56bf545de6e2f5612a968268f8422e211079c850d25847f69b2c3b",
+      "status": "VERIFIED_ORIGINAL"
+    }
+  ],
+  "note": "Original AI-generated PNGs and the large original preview package are not included. See UPLOAD_STATUS.md."
+}

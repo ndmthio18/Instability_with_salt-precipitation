@@ -1,0 +1,287 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="2200" height="1190" viewBox="0 0 2200 1190" version="1.1" role="img" aria-labelledby="figure-title figure-desc">
+  <title id="figure-title">Porous salt crust: configuration, salt balance, and soil–crust flux comparison</title>
+  <desc id="figure-desc">Editable vector reconstruction. All labels and mathematical symbols are native SVG text; fraction bars, radicals, boxes and arrows are vector paths. No raster images and no embedded fonts. The internal-precipitation contribution to pore-liquid salt storage is negative. Equation 4 uses a near-equilibrium approximation for the porosity-change contribution. Equations 2 and 3 refer to the linear quasi-steady Prat solution with a saturated base and spatially uniform structural coefficients. Eq. numbers are local to this figure.</desc>
+  <metadata>{"figure_type": "editable scientific vector diagram", "units": "SI; salt rates per unit projected area", "equations": {"1": "J_s,Gamma^crust = G_top + R_int + dQ_pore/dt", "2": "G_top = eta S", "3": "R_int = (1-eta) S (1-sech(sqrt(Da)))", "4": "dQ_pore/dt approximately equals rho epsilon_t C_t dh/dt - (rho C_eq/rho_cr) R_int + rho integral_0^h epsilon (partial C/partial t) dz", "5": "J_s,Gamma^soil = rho q C_Gamma - rho phi D_eff^soil (partial C/partial z)|_Gamma", "6": "Delta J_s = J_s,Gamma^crust - J_s,Gamma^soil", "definitions": "S=C_eq j/(1-C_eq); eta=sqrt(Da*)tanh(sqrt(Da))/(1+sqrt(Da*)tanh(sqrt(Da))); Da=h^2/ell^2; ell=sqrt(epsilon_s D_eff/((1-C_eq)a_v k_r))"}, "correction": "Restored minus sign before internal precipitation in Eq. 4; approximate equality explicitly shown."}</metadata>
+  <g id="background-panels" inkscape:label="Background and panel borders" inkscape:groupmode="layer">
+    <rect x="0" y="0" width="2200" height="1190" fill="#FFFFFF"/>
+    <rect x="16" y="16" width="720" height="1110" rx="13" fill="#FFFFFF" stroke="#171717" stroke-width="1.5"/>
+    <rect x="760" y="16" width="1424" height="1110" rx="13" fill="#FFFFFF" stroke="#171717" stroke-width="1.5"/>
+  </g>
+  <defs>
+    <marker id="arrow-black" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse" markerUnits="strokeWidth">
+      <path d="M 0 0 L 10 5 L 0 10 L 2.8 5 Z" fill="#171717"/>
+    </marker>
+    <marker id="arrow-blue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse" markerUnits="strokeWidth">
+      <path d="M 0 0 L 10 5 L 0 10 L 2.8 5 Z" fill="#3678B9"/>
+    </marker>
+  </defs>
+  <g id="panel-a" inkscape:label="Panel a — physical configuration and fluxes" inkscape:groupmode="layer">
+    <text x="48.000" y="73.000" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="41.000" font-style="normal" font-weight="700" fill="#171717" text-anchor="start">(a) Configuration and fluxes</text>
+    <rect x="220" y="330" width="374" height="490" fill="#F7FAFC"/>
+    <rect x="220" y="330" width="374" height="74" fill="#F7DDC8"/>
+    <rect x="220" y="820" width="374" height="240" fill="#DCDDD9"/>
+    <path d="M220,1060 V330 H594 V1060" fill="none" stroke="#171717" stroke-width="2.3"/>
+    <line x1="220" y1="820" x2="594" y2="820" stroke="#171717" stroke-width="2.3"/>
+    <line x1="220" y1="404" x2="594" y2="404" stroke="#171717" stroke-width="1.4" stroke-dasharray="9 7"/>
+    <line x1="112" y1="820" x2="112" y2="250" stroke="#171717" stroke-width="2" marker-end="url(#arrow-black)"/>
+    <text x="112.000" y="226.000" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="37.000" font-style="italic" font-weight="400" fill="#171717" text-anchor="middle">z</text>
+    <line x1="112" y1="330" x2="220" y2="330" stroke="#171717" stroke-width="1.4" stroke-dasharray="9 7"/>
+    <line x1="112" y1="820" x2="220" y2="820" stroke="#171717" stroke-width="1.4" stroke-dasharray="9 7"/>
+    <text x="99.000" y="340.000" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="35.000" font-style="italic" font-weight="400" fill="#171717" text-anchor="end">h(t)</text>
+    <text x="99.000" y="831.000" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="35.000" font-style="normal" font-weight="400" fill="#171717" text-anchor="end">0</text>
+    <line x1="255" y1="280" x2="255" y2="194" stroke="#171717" stroke-width="2.5" marker-end="url(#arrow-black)"/>
+    <line x1="325" y1="280" x2="325" y2="194" stroke="#171717" stroke-width="2.5" marker-end="url(#arrow-black)"/>
+    <line x1="395" y1="280" x2="395" y2="194" stroke="#171717" stroke-width="2.5" marker-end="url(#arrow-black)"/>
+    <line x1="465" y1="280" x2="465" y2="194" stroke="#171717" stroke-width="2.5" marker-end="url(#arrow-black)"/>
+    <line x1="535" y1="280" x2="535" y2="194" stroke="#171717" stroke-width="2.5" marker-end="url(#arrow-black)"/>
+    <g id="evaporation-label" inkscape:label="evaporation label">
+      <text x="311.057" y="153.000" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="34.000" font-style="normal" font-weight="400" fill="#171717" text-anchor="start">Evaporation</text>
+      <text x="493.221" y="153.000" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="35.000" font-style="italic" font-weight="400" fill="#171717" text-anchor="start">j</text>
+    </g>
+    <g id="top-crystallization-label" inkscape:label="top crystallization label">
+      <text x="277.416" y="316.000" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="27.000" font-style="normal" font-weight="400" fill="#171717" text-anchor="start">Top crystallization</text>
+      <text x="489.709" y="316.000" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="29.000" font-style="italic" font-weight="400" fill="#171717" text-anchor="start">G</text>
+      <text x="511.666" y="325.570" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="19.430" font-style="normal" font-weight="400" fill="#171717" text-anchor="start">top</text>
+    </g>
+    <text x="407.000" y="361.000" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="25.000" font-style="normal" font-weight="400" fill="#171717" text-anchor="middle">Near-surface</text>
+    <text x="407.000" y="391.000" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="25.000" font-style="normal" font-weight="400" fill="#171717" text-anchor="middle">reaction zone</text>
+    <line x1="616" y1="332" x2="616" y2="402" stroke="#171717" stroke-width="1.7" marker-start="url(#arrow-black)" marker-end="url(#arrow-black)"/>
+    <g id="reaction-layer-thickness" inkscape:label="reaction layer thickness">
+      <text x="610.000" y="455.000" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="25.000" font-style="italic" font-weight="400" fill="#171717" text-anchor="start">δ</text>
+      <text x="622.496" y="463.250" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="16.750" font-style="italic" font-weight="400" fill="#171717" text-anchor="start">C</text>
+      <text x="639.168" y="455.000" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="25.000" font-style="normal" font-weight="400" fill="#171717" text-anchor="start">∼</text>
+      <text x="683.198" y="444.250" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="25.000" font-style="italic" font-weight="400" fill="#171717" text-anchor="start">h</text>
+      <line x1="664.11328125" y1="449.5" x2="714.78265625" y2="449.5" stroke="#171717" stroke-width="1.55"/>
+      <path d="M 668.113,469.360 L 670.793,466.600 L 674.243,473.960 L 679.993,452.750 H 711.783" fill="none" stroke="#171717" stroke-width="1.65" stroke-linejoin="miter"/>
+      <text x="680.913" y="470.510" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="23.000" font-style="italic" font-weight="400" fill="#171717" text-anchor="start">Da</text>
+    </g>
+    <text x="258.000" y="551.000" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="33.000" font-style="normal" font-weight="400" fill="#171717" text-anchor="start">Porous</text>
+    <text x="258.000" y="593.000" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="33.000" font-style="normal" font-weight="400" fill="#171717" text-anchor="start">salt crust</text>
+    <text x="451.000" y="536.000" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="29.000" font-style="normal" font-weight="400" fill="#171717" text-anchor="start">Internal</text>
+    <text x="451.000" y="572.000" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="29.000" font-style="normal" font-weight="400" fill="#171717" text-anchor="start">reaction</text>
+    <g id="internal-reaction-label" inkscape:label="internal reaction label">
+      <text x="459.676" y="613.000" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="34.000" font-style="italic" font-weight="400" fill="#171717" text-anchor="start">R</text>
+      <text x="480.445" y="613.000" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="34.000" font-style="italic" font-weight="400" fill="#171717" text-anchor="start">(z)</text>
+    </g>
+    <text x="260.000" y="998.000" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="38.000" font-style="normal" font-weight="400" fill="#171717" text-anchor="start">Soil</text>
+    <line x1="398" y1="914" x2="398" y2="447" stroke="#3678B9" stroke-width="5.0" marker-end="url(#arrow-blue)"/>
+    <g id="interface-salt-flux-label" inkscape:label="interface salt flux label">
+      <text x="431.000" y="744.000" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="34.000" font-style="italic" font-weight="400" fill="#171717" text-anchor="start">J</text>
+      <text x="447.280" y="755.220" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="22.780" font-style="italic" font-weight="400" fill="#171717" text-anchor="start">s,Γ</text>
+    </g>
+    <g id="soil-salt-flux-label" inkscape:label="soil salt flux label">
+      <text x="431.000" y="945.000" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="34.000" font-style="italic" font-weight="400" fill="#171717" text-anchor="start">J</text>
+      <text x="447.280" y="956.220" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="22.780" font-style="italic" font-weight="400" fill="#171717" text-anchor="start">s,soil</text>
+    </g>
+    <text x="48.000" y="1096.000" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="22.000" font-style="normal" font-weight="400" fill="#575757" text-anchor="start">Schematic; not to scale.</text>
+  </g>
+  <g id="panel-b" inkscape:label="Panel b — editable equations and labels" inkscape:groupmode="layer">
+    <text x="798.000" y="73.000" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="41.000" font-style="normal" font-weight="700" fill="#171717" text-anchor="start">(b) Salt balance and flux comparison</text>
+    <rect x="792" y="132" width="234" height="104" rx="5" fill="#EDF3FA" stroke="#7294BB" stroke-width="1.3"/>
+    <text x="909.000" y="175.000" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="31.000" font-style="normal" font-weight="700" fill="#171717" text-anchor="middle">Crust-side</text>
+    <text x="909.000" y="213.000" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="29.000" font-style="normal" font-weight="400" fill="#171717" text-anchor="middle">balance</text>
+    <rect x="1057" y="128" width="1031" height="117" fill="#FFFFFF" stroke="#171717" stroke-width="1.6"/>
+    <g id="equation-1-crust-balance" inkscape:label="equation 1 crust balance">
+      <text x="1336.178" y="204.000" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="46.000" font-style="italic" font-weight="400" fill="#171717" text-anchor="start">J</text>
+      <text x="1358.205" y="219.180" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="30.820" font-style="italic" font-weight="400" fill="#171717" text-anchor="start">s,Γ</text>
+      <text x="1358.205" y="177.780" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="30.820" font-style="italic" font-weight="400" fill="#171717" text-anchor="start">crust</text>
+      <text x="1429.822" y="204.000" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="46.000" font-style="normal" font-weight="400" fill="#171717" text-anchor="start">=</text>
+      <text x="1465.883" y="204.000" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="46.000" font-style="italic" font-weight="400" fill="#171717" text-anchor="start">G</text>
+      <text x="1500.712" y="219.180" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="30.820" font-style="normal" font-weight="400" fill="#171717" text-anchor="start">top</text>
+      <text x="1550.125" y="204.000" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="46.000" font-style="normal" font-weight="400" fill="#171717" text-anchor="start">+</text>
+      <text x="1586.186" y="204.000" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="46.000" font-style="italic" font-weight="400" fill="#171717" text-anchor="start">R</text>
+      <text x="1615.894" y="219.180" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="30.820" font-style="normal" font-weight="400" fill="#171717" text-anchor="start">int</text>
+      <text x="1658.475" y="204.000" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="46.000" font-style="normal" font-weight="400" fill="#171717" text-anchor="start">+</text>
+      <text x="1700.056" y="168.086" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="41.860" font-style="italic" font-weight="400" fill="#171717" text-anchor="start">d</text>
+      <text x="1720.931" y="168.086" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="41.860" font-style="italic" font-weight="400" fill="#171717" text-anchor="start">Q</text>
+      <text x="1752.549" y="181.900" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="28.046" font-style="normal" font-weight="400" fill="#171717" text-anchor="start">pore</text>
+      <line x1="1694.5361218749997" y1="193.88" x2="1807.8224718749998" y2="193.88" stroke="#171717" stroke-width="1.55"/>
+      <text x="1734.943" y="229.110" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="41.860" font-style="italic" font-weight="400" fill="#171717" text-anchor="start">d</text>
+      <text x="1755.818" y="229.110" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="41.860" font-style="italic" font-weight="400" fill="#171717" text-anchor="start">t</text>
+    </g>
+    <text x="2152.000" y="204.000" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="34.000" font-style="normal" font-weight="400" fill="#171717" text-anchor="middle">(1)</text>
+    <path d="M 1050,271 C 1024,271 1025,287 1025,315 L 1025,396 C 1025,419 1015,426 1003,431 C 1015,436 1025,443 1025,466 L 1025,550 C 1025,579 1024,595 1050,595" fill="none" stroke="#171717" stroke-width="2"/>
+    <g id="equation-2-top-growth" inkscape:label="equation 2 top growth">
+      <text x="1082.000" y="302.000" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="44.000" font-style="italic" font-weight="400" fill="#171717" text-anchor="start">G</text>
+      <text x="1115.317" y="316.520" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="29.480" font-style="normal" font-weight="400" fill="#171717" text-anchor="start">top</text>
+      <text x="1162.693" y="302.000" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="44.000" font-style="normal" font-weight="400" fill="#171717" text-anchor="start">=</text>
+      <text x="1197.189" y="302.000" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="44.000" font-style="italic" font-weight="400" fill="#171717" text-anchor="start">η</text>
+      <text x="1224.017" y="302.000" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="44.000" font-style="italic" font-weight="400" fill="#171717" text-anchor="start">S</text>
+    </g>
+    <text x="2152.000" y="302.000" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="34.000" font-style="normal" font-weight="400" fill="#171717" text-anchor="middle">(2)</text>
+    <g id="equation-3-internal-precipitation" inkscape:label="equation 3 internal precipitation">
+      <text x="1082.000" y="405.000" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="44.000" font-style="italic" font-weight="400" fill="#171717" text-anchor="start">R</text>
+      <text x="1110.419" y="419.520" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="29.480" font-style="normal" font-weight="400" fill="#171717" text-anchor="start">int</text>
+      <text x="1151.240" y="405.000" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="44.000" font-style="normal" font-weight="400" fill="#171717" text-anchor="start">=</text>
+      <path d="M1197.1759375,373.61 C1186.7359374999999,379.2364 1186.7359374999999,411.2636 1197.1759375,416.89" fill="none" stroke="#171717" stroke-width="1.7"/>
+      <path d="M1285.1804687499998,373.61 C1295.6204687499999,379.2364 1295.6204687499999,411.2636 1285.1804687499998,416.89" fill="none" stroke="#171717" stroke-width="1.7"/>
+      <text x="1197.176" y="405.000" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="44.000" font-style="normal" font-weight="400" fill="#171717" text-anchor="start">1</text>
+      <text x="1228.856" y="405.000" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="44.000" font-style="normal" font-weight="400" fill="#171717" text-anchor="start">−</text>
+      <text x="1263.352" y="405.000" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="44.000" font-style="italic" font-weight="400" fill="#171717" text-anchor="start">η</text>
+      <text x="1303.620" y="405.000" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="44.000" font-style="italic" font-weight="400" fill="#171717" text-anchor="start">S</text>
+      <path d="M1346.06046875,357.79200000000003 C1335.6204687499999,368.52740000000006 1335.6204687499999,429.6366 1346.06046875,440.372" fill="none" stroke="#171717" stroke-width="1.7"/>
+      <path d="M1578.9885625,357.79200000000003 C1589.4285625,368.52740000000006 1589.4285625,429.6366 1578.9885625,440.372" fill="none" stroke="#171717" stroke-width="1.7"/>
+      <text x="1346.060" y="405.000" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="44.000" font-style="normal" font-weight="400" fill="#171717" text-anchor="start">1</text>
+      <text x="1377.740" y="405.000" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="44.000" font-style="normal" font-weight="400" fill="#171717" text-anchor="start">−</text>
+      <text x="1485.738" y="386.432" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="39.600" font-style="normal" font-weight="400" fill="#171717" text-anchor="start">1</text>
+      <line x1="1412.2368749999998" y1="395.32" x2="1578.9885624999997" y2="395.32" stroke="#171717" stroke-width="1.55"/>
+      <text x="1417.517" y="431.792" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="39.600" font-style="normal" font-weight="400" fill="#171717" text-anchor="start">cosh</text>
+      <path d="M 1497.919,429.812 L 1503.255,425.060 L 1509.195,437.732 L 1519.095,401.040 H 1573.709" fill="none" stroke="#171717" stroke-width="1.65" stroke-linejoin="miter"/>
+      <text x="1520.679" y="431.792" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="39.600" font-style="italic" font-weight="400" fill="#171717" text-anchor="start">Da</text>
+    </g>
+    <text x="2152.000" y="405.000" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="34.000" font-style="normal" font-weight="400" fill="#171717" text-anchor="middle">(3)</text>
+    <g id="equation-4-pore-liquid-storage" inkscape:label="equation 4 pore liquid storage">
+      <text x="1087.160" y="513.287" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="39.130" font-style="italic" font-weight="400" fill="#171717" text-anchor="start">d</text>
+      <text x="1106.785" y="513.287" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="39.130" font-style="italic" font-weight="400" fill="#171717" text-anchor="start">Q</text>
+      <text x="1136.498" y="526.200" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="26.217" font-style="normal" font-weight="400" fill="#171717" text-anchor="start">pore</text>
+      <line x1="1082" y1="537.54" x2="1188.30283125" y2="537.54" stroke="#171717" stroke-width="1.55"/>
+      <text x="1119.886" y="570.630" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="39.130" font-style="italic" font-weight="400" fill="#171717" text-anchor="start">d</text>
+      <text x="1139.511" y="570.630" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="39.130" font-style="italic" font-weight="400" fill="#171717" text-anchor="start">t</text>
+      <text x="1197.763" y="547.000" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="43.000" font-style="normal" font-weight="400" fill="#171717" text-anchor="start">≃</text>
+      <text x="1240.668" y="547.000" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="43.000" font-style="italic" font-weight="400" fill="#171717" text-anchor="start">ρ</text>
+      <text x="1263.309" y="547.000" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="43.000" font-style="italic" font-weight="400" fill="#171717" text-anchor="start">ε</text>
+      <text x="1281.759" y="561.190" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="28.810" font-style="italic" font-weight="400" fill="#171717" text-anchor="start">t</text>
+      <text x="1291.747" y="547.000" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="43.000" font-style="italic" font-weight="400" fill="#171717" text-anchor="start">C</text>
+      <text x="1321.932" y="561.190" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="28.810" font-style="italic" font-weight="400" fill="#171717" text-anchor="start">t</text>
+      <text x="1340.080" y="528.820" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="39.130" font-style="italic" font-weight="400" fill="#171717" text-anchor="start">d</text>
+      <text x="1359.705" y="528.820" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="39.130" font-style="italic" font-weight="400" fill="#171717" text-anchor="start">h</text>
+      <line x1="1334.9203312500003" y1="537.54" x2="1384.4903312500003" y2="537.54" stroke="#171717" stroke-width="1.55"/>
+      <text x="1344.440" y="570.630" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="39.130" font-style="italic" font-weight="400" fill="#171717" text-anchor="start">d</text>
+      <text x="1364.065" y="570.630" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="39.130" font-style="italic" font-weight="400" fill="#171717" text-anchor="start">t</text>
+      <text x="1393.950" y="547.000" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="43.000" font-style="normal" font-weight="400" fill="#171717" text-anchor="start">−</text>
+      <text x="1432.820" y="513.287" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="39.130" font-style="italic" font-weight="400" fill="#171717" text-anchor="start">ρ</text>
+      <text x="1451.660" y="513.287" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="39.130" font-style="italic" font-weight="400" fill="#171717" text-anchor="start">C</text>
+      <text x="1479.209" y="526.200" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="26.217" font-style="normal" font-weight="400" fill="#171717" text-anchor="start">eq</text>
+      <line x1="1427.6603312500004" y1="537.54" x2="1509.1467562500004" y2="537.54" stroke="#171717" stroke-width="1.55"/>
+      <text x="1448.102" y="564.652" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="39.130" font-style="italic" font-weight="400" fill="#171717" text-anchor="start">ρ</text>
+      <text x="1468.311" y="577.564" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="26.217" font-style="normal" font-weight="400" fill="#171717" text-anchor="start">cr</text>
+      <text x="1512.147" y="547.000" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="43.000" font-style="italic" font-weight="400" fill="#171717" text-anchor="start">R</text>
+      <text x="1539.917" y="561.190" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="28.810" font-style="normal" font-weight="400" fill="#171717" text-anchor="start">int</text>
+      <text x="1579.729" y="547.000" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="43.000" font-style="normal" font-weight="400" fill="#171717" text-anchor="start">+</text>
+      <text x="1613.439" y="547.000" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="43.000" font-style="italic" font-weight="400" fill="#171717" text-anchor="start">ρ</text>
+      <text x="1639.080" y="547.000" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="70.950" font-style="normal" font-weight="400" fill="#171717" text-anchor="start">∫</text>
+      <text x="1660.214" y="562.893" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="26.660" font-style="normal" font-weight="400" fill="#171717" text-anchor="start">0</text>
+      <text x="1660.214" y="519.549" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="28.810" font-style="italic" font-weight="400" fill="#171717" text-anchor="start">h</text>
+      <text x="1679.589" y="547.000" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="43.000" font-style="italic" font-weight="400" fill="#171717" text-anchor="start">ε</text>
+      <text x="1708.695" y="528.820" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="39.130" font-style="normal" font-weight="400" fill="#171717" text-anchor="start">∂</text>
+      <text x="1728.089" y="528.820" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="39.130" font-style="italic" font-weight="400" fill="#171717" text-anchor="start">C</text>
+      <line x1="1703.5347000000004" y1="537.54" x2="1759.4289187500003" y2="537.54" stroke="#171717" stroke-width="1.55"/>
+      <text x="1716.331" y="571.630" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="39.130" font-style="normal" font-weight="400" fill="#171717" text-anchor="start">∂</text>
+      <text x="1735.726" y="571.630" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="39.130" font-style="italic" font-weight="400" fill="#171717" text-anchor="start">t</text>
+      <text x="1767.429" y="547.000" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="43.000" font-style="italic" font-weight="400" fill="#171717" text-anchor="start">d</text>
+      <text x="1788.929" y="547.000" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="43.000" font-style="italic" font-weight="400" fill="#171717" text-anchor="start">z</text>
+    </g>
+    <text x="2152.000" y="547.000" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="34.000" font-style="normal" font-weight="400" fill="#171717" text-anchor="middle">(4)</text>
+    <rect x="792" y="660" width="234" height="104" rx="5" fill="#EDF3FA" stroke="#171717" stroke-width="1.3"/>
+    <text x="909.000" y="703.000" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="31.000" font-style="normal" font-weight="700" fill="#171717" text-anchor="middle">Soil-side</text>
+    <text x="909.000" y="741.000" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="29.000" font-style="normal" font-weight="400" fill="#171717" text-anchor="middle">(DuMuX)</text>
+    <rect x="1057" y="651" width="1031" height="121" fill="#FFFFFF" stroke="#171717" stroke-width="1.6"/>
+    <g id="equation-5-soil-side-transport" inkscape:label="equation 5 soil side transport">
+      <text x="1325.860" y="727.000" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="46.000" font-style="italic" font-weight="400" fill="#171717" text-anchor="start">J</text>
+      <text x="1347.888" y="742.180" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="30.820" font-style="italic" font-weight="400" fill="#171717" text-anchor="start">s,Γ</text>
+      <text x="1347.888" y="700.780" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="30.820" font-style="italic" font-weight="400" fill="#171717" text-anchor="start">soil</text>
+      <text x="1402.434" y="727.000" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="46.000" font-style="normal" font-weight="400" fill="#171717" text-anchor="start">=</text>
+      <text x="1438.495" y="727.000" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="46.000" font-style="italic" font-weight="400" fill="#171717" text-anchor="start">ρ</text>
+      <text x="1463.573" y="727.000" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="46.000" font-style="italic" font-weight="400" fill="#171717" text-anchor="start">q</text>
+      <text x="1489.573" y="727.000" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="46.000" font-style="italic" font-weight="400" fill="#171717" text-anchor="start">C</text>
+      <text x="1521.867" y="742.180" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="30.820" font-style="italic" font-weight="400" fill="#171717" text-anchor="start">Γ</text>
+      <text x="1549.479" y="727.000" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="46.000" font-style="normal" font-weight="400" fill="#171717" text-anchor="start">−</text>
+      <text x="1585.540" y="727.000" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="46.000" font-style="italic" font-weight="400" fill="#171717" text-anchor="start">ρ</text>
+      <text x="1610.618" y="727.000" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="46.000" font-style="italic" font-weight="400" fill="#171717" text-anchor="start">ϕ</text>
+      <text x="1639.427" y="727.000" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="46.000" font-style="italic" font-weight="400" fill="#171717" text-anchor="start">D</text>
+      <text x="1674.256" y="742.180" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="30.820" font-style="normal" font-weight="400" fill="#171717" text-anchor="start">eff</text>
+      <text x="1674.256" y="700.780" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="30.820" font-style="italic" font-weight="400" fill="#171717" text-anchor="start">soil</text>
+      <text x="1731.202" y="707.551" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="41.860" font-style="normal" font-weight="400" fill="#171717" text-anchor="start">∂</text>
+      <text x="1751.830" y="707.551" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="41.860" font-style="italic" font-weight="400" fill="#171717" text-anchor="start">C</text>
+      <line x1="1725.6815624999997" y1="716.88" x2="1785.1981249999997" y2="716.88" stroke="#171717" stroke-width="1.55"/>
+      <text x="1737.002" y="753.110" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="41.860" font-style="normal" font-weight="400" fill="#171717" text-anchor="start">∂</text>
+      <text x="1757.631" y="753.110" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="41.860" font-style="italic" font-weight="400" fill="#171717" text-anchor="start">z</text>
+      <text x="1785.198" y="727.000" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="71.300" font-style="normal" font-weight="400" fill="#171717" text-anchor="start">|</text>
+      <text x="1801.074" y="742.180" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="29.900" font-style="italic" font-weight="400" fill="#171717" text-anchor="start">Γ</text>
+    </g>
+    <text x="2152.000" y="727.000" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="34.000" font-style="normal" font-weight="400" fill="#171717" text-anchor="middle">(5)</text>
+    <rect x="792" y="812" width="234" height="71" rx="5" fill="#FAE9DD" stroke="#B99E8A" stroke-width="1.2"/>
+    <text x="909.000" y="858.000" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="29.000" font-style="normal" font-weight="400" fill="#171717" text-anchor="middle">Flux difference</text>
+    <rect x="1057" y="803" width="818" height="91" fill="#FFFFFF" stroke="#171717" stroke-width="1.6"/>
+    <g id="equation-6-flux-difference" inkscape:label="equation 6 flux difference">
+      <text x="1313.042" y="862.000" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="46.000" font-style="normal" font-weight="400" fill="#171717" text-anchor="start">Δ</text>
+      <text x="1342.624" y="862.000" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="46.000" font-style="italic" font-weight="400" fill="#171717" text-anchor="start">J</text>
+      <text x="1364.652" y="877.180" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="30.820" font-style="italic" font-weight="400" fill="#171717" text-anchor="start">s</text>
+      <text x="1386.737" y="862.000" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="46.000" font-style="normal" font-weight="400" fill="#171717" text-anchor="start">=</text>
+      <text x="1422.799" y="862.000" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="46.000" font-style="italic" font-weight="400" fill="#171717" text-anchor="start">J</text>
+      <text x="1444.826" y="877.180" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="30.820" font-style="italic" font-weight="400" fill="#171717" text-anchor="start">s,Γ</text>
+      <text x="1444.826" y="835.780" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="30.820" font-style="italic" font-weight="400" fill="#171717" text-anchor="start">crust</text>
+      <text x="1516.443" y="862.000" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="46.000" font-style="normal" font-weight="400" fill="#171717" text-anchor="start">−</text>
+      <text x="1552.504" y="862.000" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="46.000" font-style="italic" font-weight="400" fill="#171717" text-anchor="start">J</text>
+      <text x="1574.532" y="877.180" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="30.820" font-style="italic" font-weight="400" fill="#171717" text-anchor="start">s,Γ</text>
+      <text x="1574.532" y="835.780" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="30.820" font-style="italic" font-weight="400" fill="#171717" text-anchor="start">soil</text>
+    </g>
+    <text x="2152.000" y="862.000" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="34.000" font-style="normal" font-weight="400" fill="#171717" text-anchor="middle">(6)</text>
+  </g>
+  <g id="definitions-and-notes" inkscape:label="Definitions, assumptions and figure notes" inkscape:groupmode="layer">
+    <rect x="810" y="916" width="1350" height="188" rx="7" fill="#FFFFFF" stroke="#6B6B6B" stroke-width="1.25" stroke-dasharray="6 5"/>
+    <g id="definition-S" inkscape:label="definition S">
+      <text x="860.000" y="976.000" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="31.000" font-style="italic" font-weight="400" fill="#171717" text-anchor="start">S</text>
+      <text x="882.320" y="976.000" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="31.000" font-style="normal" font-weight="400" fill="#171717" text-anchor="start">=</text>
+      <text x="927.822" y="951.738" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="28.520" font-style="italic" font-weight="400" fill="#171717" text-anchor="start">C</text>
+      <text x="947.828" y="961.150" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="19.108" font-style="normal" font-weight="400" fill="#171717" text-anchor="start">eq</text>
+      <text x="965.762" y="951.738" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="28.520" font-style="italic" font-weight="400" fill="#171717" text-anchor="start">j</text>
+      <line x1="906.624375" y1="969.18" x2="994.877" y2="969.18" stroke="#171717" stroke-width="1.55"/>
+      <text x="910.344" y="992.210" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="28.520" font-style="normal" font-weight="400" fill="#171717" text-anchor="start">1</text>
+      <text x="930.869" y="992.210" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="28.520" font-style="normal" font-weight="400" fill="#171717" text-anchor="start">−</text>
+      <text x="953.217" y="992.210" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="28.520" font-style="italic" font-weight="400" fill="#171717" text-anchor="start">C</text>
+      <text x="973.223" y="1001.622" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="19.108" font-style="normal" font-weight="400" fill="#171717" text-anchor="start">eq</text>
+    </g>
+    <g id="definition-eta" inkscape:label="definition eta">
+      <text x="1190.000" y="976.000" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="31.000" font-style="italic" font-weight="400" fill="#171717" text-anchor="start">η</text>
+      <text x="1212.199" y="976.000" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="31.000" font-style="normal" font-weight="400" fill="#171717" text-anchor="start">=</text>
+      <path d="M 1260.583,960.004 L 1263.700,956.916 L 1267.559,965.150 L 1273.992,932.037 H 1319.107" fill="none" stroke="#171717" stroke-width="1.65" stroke-linejoin="miter"/>
+      <text x="1275.021" y="961.290" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="25.730" font-style="italic" font-weight="400" fill="#171717" text-anchor="start">Da</text>
+      <text x="1307.394" y="946.624" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="17.239" font-style="normal" font-weight="400" fill="#171717" text-anchor="start">*</text>
+      <text x="1326.107" y="961.290" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="25.730" font-style="normal" font-weight="400" fill="#171717" text-anchor="start">tanh</text>
+      <path d="M 1378.439,960.004 L 1381.556,956.916 L 1385.415,965.150 L 1391.848,941.203 H 1427.437" fill="none" stroke="#171717" stroke-width="1.65" stroke-linejoin="miter"/>
+      <text x="1392.877" y="961.290" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="25.730" font-style="italic" font-weight="400" fill="#171717" text-anchor="start">Da</text>
+      <line x1="1236.50328125" y1="969.18" x2="1450.5170125000002" y2="969.18" stroke="#171717" stroke-width="1.55"/>
+      <text x="1240.223" y="1002.464" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="25.730" font-style="normal" font-weight="400" fill="#171717" text-anchor="start">1</text>
+      <text x="1258.759" y="1002.464" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="25.730" font-style="normal" font-weight="400" fill="#171717" text-anchor="start">+</text>
+      <path d="M 1279.943,1001.177 L 1283.060,998.090 L 1286.919,1006.323 L 1293.352,973.210 H 1338.467" fill="none" stroke="#171717" stroke-width="1.65" stroke-linejoin="miter"/>
+      <text x="1294.381" y="1002.464" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="25.730" font-style="italic" font-weight="400" fill="#171717" text-anchor="start">Da</text>
+      <text x="1326.754" y="987.798" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="17.239" font-style="normal" font-weight="400" fill="#171717" text-anchor="start">*</text>
+      <text x="1345.467" y="1002.464" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="25.730" font-style="normal" font-weight="400" fill="#171717" text-anchor="start">tanh</text>
+      <path d="M 1397.799,1001.177 L 1400.916,998.090 L 1404.775,1006.323 L 1411.208,982.376 H 1446.797" fill="none" stroke="#171717" stroke-width="1.65" stroke-linejoin="miter"/>
+      <text x="1412.237" y="1002.464" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="25.730" font-style="italic" font-weight="400" fill="#171717" text-anchor="start">Da</text>
+    </g>
+    <g id="definition-Da" inkscape:label="definition Da">
+      <text x="1925.000" y="976.000" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="31.000" font-style="italic" font-weight="400" fill="#171717" text-anchor="start">Da</text>
+      <text x="1969.707" y="976.000" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="31.000" font-style="normal" font-weight="400" fill="#171717" text-anchor="start">=</text>
+      <text x="1997.731" y="962.893" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="28.210" font-style="italic" font-weight="400" fill="#171717" text-anchor="start">h</text>
+      <text x="2012.843" y="946.813" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="18.901" font-style="normal" font-weight="400" fill="#171717" text-anchor="start">2</text>
+      <line x1="1994.01109375" y1="969.18" x2="2026.06344375" y2="969.18" stroke="#171717" stroke-width="1.55"/>
+      <text x="1998.911" y="1002.040" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="28.210" font-style="italic" font-weight="400" fill="#171717" text-anchor="start">ℓ</text>
+      <text x="2011.664" y="985.960" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="18.901" font-style="normal" font-weight="400" fill="#171717" text-anchor="start">2</text>
+    </g>
+    <g id="definition-reaction-diffusion-length" inkscape:label="definition reaction diffusion length">
+      <text x="1388.379" y="1062.000" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="28.000" font-style="italic" font-weight="400" fill="#171717" text-anchor="start">ℓ</text>
+      <text x="1406.204" y="1062.000" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="28.000" font-style="normal" font-weight="400" fill="#171717" text-anchor="start">=</text>
+      <path d="M 1429.156,1060.600 L 1432.636,1057.240 L 1436.836,1091.320 L 1443.836,1022.423 H 1591.621" fill="none" stroke="#171717" stroke-width="1.65" stroke-linejoin="miter"/>
+      <text x="1486.547" y="1042.533" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="25.200" font-style="italic" font-weight="400" fill="#171717" text-anchor="start">ε</text>
+      <text x="1497.378" y="1050.849" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="16.884" font-style="italic" font-weight="400" fill="#171717" text-anchor="start">s</text>
+      <text x="1508.995" y="1042.533" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="25.200" font-style="italic" font-weight="400" fill="#171717" text-anchor="start">D</text>
+      <text x="1528.112" y="1050.849" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="16.884" font-style="normal" font-weight="400" fill="#171717" text-anchor="start">eff</text>
+      <line x1="1444.9564687499999" y1="1055.84" x2="1588.2605624999999" y2="1055.84" stroke="#171717" stroke-width="1.55"/>
+      <path d="M1454.8684687499997,1059.48 C1449.3164687499998,1063.6192 1449.3164687499998,1087.1807999999999 1454.8684687499997,1091.32" fill="none" stroke="#171717" stroke-width="1.7"/>
+      <path d="M1526.5884687499997,1059.48 C1532.1404687499996,1063.6192 1532.1404687499996,1087.1807999999999 1526.5884687499997,1091.32" fill="none" stroke="#171717" stroke-width="1.7"/>
+      <text x="1454.868" y="1077.992" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="25.200" font-style="normal" font-weight="400" fill="#171717" text-anchor="start">1</text>
+      <text x="1473.037" y="1077.992" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="25.200" font-style="normal" font-weight="400" fill="#171717" text-anchor="start">−</text>
+      <text x="1492.820" y="1077.992" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="25.200" font-style="italic" font-weight="400" fill="#171717" text-anchor="start">C</text>
+      <text x="1510.542" y="1086.308" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="16.884" font-style="normal" font-weight="400" fill="#171717" text-anchor="start">eq</text>
+      <text x="1539.140" y="1077.992" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="25.200" font-style="italic" font-weight="400" fill="#171717" text-anchor="start">a</text>
+      <text x="1552.647" y="1086.308" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="16.884" font-style="italic" font-weight="400" fill="#171717" text-anchor="start">v</text>
+      <text x="1566.194" y="1077.992" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="25.200" font-style="italic" font-weight="400" fill="#171717" text-anchor="start">k</text>
+      <text x="1578.283" y="1086.308" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="16.884" font-style="italic" font-weight="400" fill="#171717" text-anchor="start">r</text>
+    </g>
+    <text x="30.000" y="1155.000" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="21.000" font-style="normal" font-weight="400" fill="#525252" text-anchor="start">Fixed base; no interfacial source or storage. Eqs. (2)–(3): linear quasi-steady Prat limit with a saturated base and uniform coefficients.</text>
+    <text x="30.000" y="1182.000" font-family="'Times New Roman', Tinos, 'Liberation Serif', serif" font-size="21.000" font-style="normal" font-weight="400" fill="#525252" text-anchor="start">Eq. (4) uses C ≈ C_eq in the porosity-change term. All salt rates are per unit projected area; upward is positive.</text>
+  </g>
+</svg>
