@@ -1,5 +1,10 @@
 # PROGRESS — Instability with salt precipitation
 
+## 2026-11-11 — Standalone porous-salt growth module
+
+- Added `model/porous_salt_growth/` as a soil-independent module. The finite-layer API resolves top growth and signed internal precipitation/dissolution from externally supplied `j` and `s`/`B`; the separate thick-layer API adds the explicitly conditional moving-bottom closure and integrates top, base, thickness, and solid-mass partitions.
+- Six unit tests cover Prat finite-thickness recovery, coherent parameter reduction, signed-reaction and kinematic budgets, constant-forcing integration, and rejection of a disconnected thick layer. No soil saturation, soil diffusion, evaporation, coverage, or CT observation code is included.
+
 ## Current state
 
 - 说明: Status 只写 Not started / In progress（Done 由用户决定）；进度为科研阶段的粗略估计，仓库准备不代表研究验证完成。
