@@ -1,0 +1,20 @@
+{
+  "name": "figure2_error_map",
+  "size_inches": [
+    6.0,
+    4.3
+  ],
+  "formats": [
+    "png",
+    "pdf",
+    "svg"
+  ],
+  "dpi_for_png": 300,
+  "sources": [
+    "results/main_validation.csv"
+  ],
+  "transformations": "documented in analyze_validation.py; no smoothing",
+  "missing_data": "none silently connected; invalid cases would be gaps",
+  "description": "Absolute normalized-velocity error over the six-by-five Da-u matrix; zero-u normalization points are retained.",
+  "journal_profile": "provisional general research figure; target journal pending"
+}

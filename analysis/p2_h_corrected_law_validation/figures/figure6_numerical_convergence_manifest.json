@@ -1,0 +1,21 @@
+{
+  "name": "figure6_numerical_convergence",
+  "size_inches": [
+    7.09,
+    3.1
+  ],
+  "formats": [
+    "png",
+    "pdf",
+    "svg"
+  ],
+  "dpi_for_png": 300,
+  "sources": [
+    "results/spatial_convergence.csv",
+    "results/temporal_convergence.csv"
+  ],
+  "transformations": "documented in analyze_validation.py; no smoothing",
+  "missing_data": "none silently connected; invalid cases would be gaps",
+  "description": "Spatial and temporal convergence for the Da=20, u=0.9 representative benchmark.",
+  "journal_profile": "provisional general research figure; target journal pending"
+}

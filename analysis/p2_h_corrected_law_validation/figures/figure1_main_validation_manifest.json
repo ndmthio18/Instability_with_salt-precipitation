@@ -1,0 +1,20 @@
+{
+  "name": "figure1_main_validation",
+  "size_inches": [
+    7.09,
+    4.2
+  ],
+  "formats": [
+    "png",
+    "pdf",
+    "svg"
+  ],
+  "dpi_for_png": 300,
+  "sources": [
+    "results/main_validation.csv"
+  ],
+  "transformations": "documented in analyze_validation.py; no smoothing",
+  "missing_data": "none silently connected; invalid cases would be gaps",
+  "description": "Normalized ALE top velocities (markers) and prescribed-flux analytical predictions (lines) versus downward diffusion.",
+  "journal_profile": "provisional general research figure; target journal pending"
+}

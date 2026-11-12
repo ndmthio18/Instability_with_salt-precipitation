@@ -1,0 +1,40 @@
+{
+  "baseline_commit": "eaa5156420000fffe35d854ece86b52c0bbbe44a",
+  "branch": "research/p2-h-corrected-law-validation",
+  "remote_run_directory": "/WORK/hulm_work/zhixin/p2_h_corrected_law_validation_20261112",
+  "platform": {
+    "scheduler": "Slurm",
+    "partition": "cnmix",
+    "compiler": "GCC 12.2.0",
+    "language_standard": "C++17",
+    "sundials": "6.7.0",
+    "sundials_prefix": "/WORK/hulm_work/zhixin/p2_h_ale_coupling_20261107/dependencies/install"
+  },
+  "local_postprocessing": {
+    "python": "3.12.4",
+    "numpy": "2.0.0",
+    "pandas": "2.2.2",
+    "scipy": "1.14.0",
+    "matplotlib": "3.9.2"
+  },
+  "slurm_jobs": {
+    "build_pass": 16569420,
+    "array_failed_before_solver_crlf": 16570638,
+    "array_cancelled_after_wrapper_retry": 16570777,
+    "array_pass_135_of_135": 16570915,
+    "pack_failed_script_syntax": 16571055,
+    "pack_pass": 16571056
+  },
+  "archive": {
+    "name": "p2_h_corrected_law_validation_16570915.tar.gz",
+    "sha256": "24139d234ab75c183601c20b88be84c209e03e72125f6b59975a781a247c5126",
+    "policy": "raw archive retained locally under ignored raw_remote and remotely; compact derived evidence is committed"
+  },
+  "case_counts": {
+    "main": 30,
+    "spatial": 72,
+    "temporal": 24,
+    "boundary": 9,
+    "total": 135
+  }
+}

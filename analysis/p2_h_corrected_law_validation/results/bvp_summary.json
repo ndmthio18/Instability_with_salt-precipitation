@@ -1,0 +1,32 @@
+{
+  "status": "PASS",
+  "cases": 30,
+  "max_velocity_relative_error": 2.020462036839474e-12,
+  "max_top_flux_relative_error": 2.0204938111092733e-12,
+  "max_top_concentration_abs_error": 5.551115123125783e-17,
+  "max_profile_relative_error": 1.9959353127927185e-10,
+  "max_internal_abs_error_kg_m2_s": 9.646765062655029e-16,
+  "parameters": {
+    "ceq": 0.264940869768,
+    "rho": 1202.168577,
+    "rho_cr": 2165.0,
+    "eps": 0.43,
+    "d0": 1.3e-09,
+    "kr": 0.001,
+    "beta": 2.0,
+    "grain": 2.5e-05,
+    "j": 1.78e-05,
+    "deff": 8.524670081592601e-10,
+    "av": 820800.0000000001,
+    "mathcal_d": 4.986820766280226e-10,
+    "ell": 7.79458873990615e-07,
+    "ks": 0.0011400000000000002,
+    "da_star": 3.1750355738459297,
+    "x": 1.781862950354468,
+    "s_ref": 6.415738935698885e-06
+  },
+  "boundary_conditions": {
+    "bottom": "rho*eps*Deff*dC/dz = Bsoil",
+    "top": "Sref-rho*mathcalD*dC/dz = rho*ks*(C-Ceq)"
+  }
+}

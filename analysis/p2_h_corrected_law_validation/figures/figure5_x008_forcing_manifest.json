@@ -1,0 +1,20 @@
+{
+  "name": "figure5_x008_forcing",
+  "size_inches": [
+    7.09,
+    5.0
+  ],
+  "formats": [
+    "png",
+    "pdf",
+    "svg"
+  ],
+  "dpi_for_png": 300,
+  "sources": [
+    "results/x008_flux_comparison.csv"
+  ],
+  "transformations": "documented in analyze_validation.py; no smoothing",
+  "missing_data": "none silently connected; invalid cases would be gaps",
+  "description": "One-way x0=0.08 soil SCVF flux, analytical reconstructed supply, ALE bottom flux, and direct top velocities.",
+  "journal_profile": "provisional general research figure; target journal pending"
+}

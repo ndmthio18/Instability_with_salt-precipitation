@@ -1,0 +1,92 @@
+{
+  "case_count": 135,
+  "main_cases": 30,
+  "spatial_cases": 72,
+  "temporal_cases": 24,
+  "boundary_cases": 9,
+  "parameters": {
+    "ceq": 0.264940869768,
+    "rho": 1202.168577,
+    "rho_cr": 2165.0,
+    "eps": 0.43,
+    "d0": 1.3e-09,
+    "kr": 0.001,
+    "beta": 2.0,
+    "grain": 2.5e-05,
+    "j": 1.78e-05,
+    "deff": 8.524670081592601e-10,
+    "av": 820800.0000000001,
+    "mathcal_d": 4.986820766280226e-10,
+    "ell": 7.79458873990615e-07,
+    "ks": 0.0011400000000000002,
+    "da_star": 3.1750355738459297,
+    "x": 1.781862950354468,
+    "s_ref": 6.415738935698885e-06
+  },
+  "physical_lengths": [
+    {
+      "da": 1.0,
+      "height_m": 7.79458873990615e-07,
+      "height_um": 0.779458873990615,
+      "height_over_ell": 1.0,
+      "ell_m": 7.79458873990615e-07,
+      "grain_m": 2.5e-05,
+      "height_over_grain": 0.031178354959624597
+    },
+    {
+      "da": 4.0,
+      "height_m": 1.55891774798123e-06,
+      "height_um": 1.55891774798123,
+      "height_over_ell": 2.0,
+      "ell_m": 7.79458873990615e-07,
+      "grain_m": 2.5e-05,
+      "height_over_grain": 0.062356709919249194
+    },
+    {
+      "da": 10.0,
+      "height_m": 2.464865384240522e-06,
+      "height_um": 2.4648653842405217,
+      "height_over_ell": 3.1622776601683795,
+      "ell_m": 7.79458873990615e-07,
+      "grain_m": 2.5e-05,
+      "height_over_grain": 0.09859461536962087
+    },
+    {
+      "da": 20.0,
+      "height_m": 3.485846055816916e-06,
+      "height_um": 3.485846055816916,
+      "height_over_ell": 4.47213595499958,
+      "ell_m": 7.79458873990615e-07,
+      "grain_m": 2.5e-05,
+      "height_over_grain": 0.13943384223267663
+    },
+    {
+      "da": 45.0,
+      "height_m": 5.228769083725374e-06,
+      "height_um": 5.228769083725374,
+      "height_over_ell": 6.708203932499369,
+      "ell_m": 7.79458873990615e-07,
+      "grain_m": 2.5e-05,
+      "height_over_grain": 0.20915076334901495
+    },
+    {
+      "da": 100.0,
+      "height_m": 7.79458873990615e-06,
+      "height_um": 7.79458873990615,
+      "height_over_ell": 10.0,
+      "ell_m": 7.79458873990615e-07,
+      "grain_m": 2.5e-05,
+      "height_over_grain": 0.311783549596246
+    }
+  ],
+  "main_mesh": {
+    "cells": 64,
+    "power": 1.5
+  },
+  "main_time": {
+    "duration": "20 h^2/Deff",
+    "output_dt": "(h^2/Deff)/20",
+    "max_step": "(h^2/Deff)/50"
+  },
+  "comparison_window_candidate": "10 <= t/(h^2/Deff) <= 20"
+}

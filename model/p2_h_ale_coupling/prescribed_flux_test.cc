@@ -9,7 +9,7 @@ int main() {
         p.ceq=0.264940869768;
         p.bottomC=p.ceq;
         p.initialHeight=3.5e-6;
-        p2h::ALE legacy(16,3,p), forced(16,3,p);
+        p2h::ALE legacy(16,3,p), forced(16,3,p), neumann(16,3,p);
         const auto y=legacy.initial();
         const double t=123.0, back=1.7e-6, evap=1.8e-5;
         forced.bottomBackDiffusion=[&](double time){return back+0.0*time;};
@@ -19,6 +19,21 @@ int main() {
         if(std::abs(ff.salt[0]-expected)>1e-18) throw std::runtime_error("Neumann salt flux mismatch");
         if(std::abs(ff.evaporation-evap)>1e-18) throw std::runtime_error("evaporation history mismatch");
         if(std::abs(fl.salt[0]-p.ceq*fl.liquid[0])>1e-18) throw std::runtime_error("legacy path changed");
+        neumann.bottomBackDiffusion=[&](double time){return back+0.0*time;};
+        neumann.evaporationHistory=[&](double time){return evap+0.0*time;};
+        neumann.p.prescribedDiffusionUsesEquilibriumInflow=false;
+        const auto fn=neumann.flux(y,t);
+        const double d0=std::sqrt(y[0])*p.diffusion;
+        const double reconstructed=y[neumann.n]
+            -back*(y[2*neumann.n]*neumann.centers[0])/(p.rho*y[0]*d0);
+        if(std::abs(fn.bottomC-reconstructed)>1e-18)
+            throw std::runtime_error("Neumann boundary concentration mismatch");
+        if(std::abs(fn.bottomDiffusiveSalt+back)>1e-18)
+            throw std::runtime_error("prescribed diffusive component mismatch");
+        if(std::abs(fn.bottomAdvectiveSalt-fn.bottomC*fn.liquid[0])>1e-18)
+            throw std::runtime_error("Neumann advective component mismatch");
+        if(std::abs(fn.salt[0]-fn.bottomAdvectiveSalt-fn.bottomDiffusiveSalt)>1e-18)
+            throw std::runtime_error("Neumann total salt flux mismatch");
         const auto rhs=forced.rhs(y,t);
         if(!std::all_of(rhs.begin(),rhs.end(),[](double x){return std::isfinite(x);}))
             throw std::runtime_error("non-finite forced RHS");

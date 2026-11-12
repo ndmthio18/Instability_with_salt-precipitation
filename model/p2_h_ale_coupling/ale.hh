@@ -18,10 +18,16 @@ struct Parameters {
     // the default and geometric height must not be interpreted as solid crust
     // height when this option is active.
     bool allowCompleteDissolution=false;
+    // Backward-compatible default for prescribed bottom diffusion: use the
+    // equilibrium concentration for advective inflow, as in the x008 study.
+    // The independent validation sets this false and reconstructs the boundary
+    // concentration from the Neumann flux without imposing a Dirichlet value.
+    bool prescribedDiffusionUsesEquilibriumInflow=true;
 };
 struct Fluxes {
     Vec volume, reaction, liquid, salt, mesh;
     double topC, speed, evaporation;
+    double bottomC, bottomAdvectiveSalt, bottomDiffusiveSalt;
 };
 
 // Exact M3 spatial operator. Primitive variables reproduce the pinned M3
@@ -80,7 +86,8 @@ public:
         Vec d(n), eface(n+1);
         const double imposedEvaporation=evaporationHistory?evaporationHistory(time):p.evaporation;
         if(!(imposedEvaporation>=0)) throw std::runtime_error("negative imposed evaporation");
-        Fluxes f{Vec(n),Vec(n),Vec(n+1),Vec(n+1),Vec(n+1),0,0,imposedEvaporation};
+        Fluxes f{Vec(n),Vec(n),Vec(n+1),Vec(n+1),Vec(n+1),
+                 0,0,imposedEvaporation,0,0,0};
         for(int i=0;i<n;++i) {
             const bool porosityValid=y[i]>0 &&
                 (p.allowCompleteDissolution ? y[i]<=1.0 : y[i]<1.0);
@@ -118,9 +125,20 @@ public:
         if(bottomBackDiffusion) {
             const double back=bottomBackDiffusion(time);
             if(!(back>=0)) throw std::runtime_error("negative imposed back-diffusion");
-            f.salt[0]=p.ceq*f.liquid[0]-back;
+            const double distance=h*centers[0];
+            f.bottomC=y[n]-back*distance/(p.rho*y[0]*d[0]);
+            if(!(f.bottomC>=0 && f.bottomC<=1))
+                throw std::runtime_error("Neumann reconstruction outside concentration bounds");
+            const double inflowC=p.prescribedDiffusionUsesEquilibriumInflow
+                ? p.ceq : f.bottomC;
+            f.bottomAdvectiveSalt=inflowC*f.liquid[0];
+            f.bottomDiffusiveSalt=-back;
+            f.salt[0]=f.bottomAdvectiveSalt+f.bottomDiffusiveSalt;
         } else {
-            f.salt[0]=p.bottomC*f.liquid[0]-p.rho*y[0]*d[0]*(y[n]-p.bottomC)/(h*centers[0]);
+            f.bottomC=p.bottomC;
+            f.bottomAdvectiveSalt=p.bottomC*f.liquid[0];
+            f.bottomDiffusiveSalt=-p.rho*y[0]*d[0]*(y[n]-p.bottomC)/(h*centers[0]);
+            f.salt[0]=f.bottomAdvectiveSalt+f.bottomDiffusiveSalt;
         }
         f.salt[n]=p.crystal*(1-p.birth)*f.speed;
         return f;

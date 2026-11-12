@@ -1,0 +1,20 @@
+{
+  "name": "figure3_concentration_profiles",
+  "size_inches": [
+    7.09,
+    2.8
+  ],
+  "formats": [
+    "png",
+    "pdf",
+    "svg"
+  ],
+  "dpi_for_png": 300,
+  "sources": [
+    "results/profile_comparison.csv"
+  ],
+  "transformations": "documented in analyze_validation.py; no smoothing",
+  "missing_data": "none silently connected; invalid cases would be gaps",
+  "description": "Analytical concentration profiles (lines) and ALE cell concentrations (markers) at 15 diffusion times.",
+  "journal_profile": "provisional general research figure; target journal pending"
+}

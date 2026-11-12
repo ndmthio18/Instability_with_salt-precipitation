@@ -1,0 +1,40 @@
+{
+  "status": "PASS_CONTROLLED_BENCHMARKS_WITH_SCOPE_LIMITS",
+  "bvp_cases": 30,
+  "ale_cases": 135,
+  "ale_completed_cases": 135,
+  "quasi_steady_valid_cases": 135,
+  "main_valid_cases": 30,
+  "max_ratio_absolute_error": 5.840619726660279e-05,
+  "max_velocity_relative_error": 0.0006130492904021811,
+  "max_top_concentration_abs_error": 1.8382747546397127e-09,
+  "max_bottom_concentration_abs_deviation_from_ceq": 7.540746641332419e-06,
+  "max_rate_balance_abs_residual_kg_m2_s": 1.6940658945086007e-21,
+  "max_salt_inventory_residual_kg_m2": 3.214913551303697e-17,
+  "max_water_inventory_residual_kg_m2": 8.152522710733191e-17,
+  "spatial_n64_p1p5_max_relative_difference_from_n128": 0.00022635737717890036,
+  "spatial_n32_p1p5_max_relative_difference_from_n128": 0.0011262016239939284,
+  "temporal_max_relative_difference": 2.622300865497741e-11,
+  "large_da_top_fraction_u0": 0.6409213374751856,
+  "large_da_positive_internal_fraction_u0": 0.359079502662441,
+  "large_da_theory_top_fraction": 0.640528660884398,
+  "large_da_theory_internal_fraction": 0.3594713391156019,
+  "x008": {
+    "soil_exported_net_kg_m2": 0.5949903634409492,
+    "reconstructed_supply_kg_m2": 0.6063993741411075,
+    "ale_bottom_total_kg_m2": 0.6986073260469088,
+    "reconstructed_minus_soil_fraction": 0.01917511845767988,
+    "median_top_velocity_relative_error": 0.06315166413138362,
+    "max_top_velocity_relative_error": 0.9999756674048381,
+    "post_first_sample_median_top_velocity_relative_error": 0.06314039611330476,
+    "post_first_sample_max_top_velocity_relative_error": 0.06807876318174268
+  },
+  "slurm": {
+    "build_job": 16569420,
+    "failed_crlf_array": 16570638,
+    "cancelled_retry_before_solve_completion": 16570777,
+    "successful_array": 16570915,
+    "failed_pack": 16571055,
+    "successful_pack": 16571056
+  }
+}
