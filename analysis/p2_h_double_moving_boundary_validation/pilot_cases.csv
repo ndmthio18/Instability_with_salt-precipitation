@@ -1,0 +1,7 @@
+id,nc,nl,kappa,gap,rtol,maxstep,u,end
+pilot_u06_n32_qjac,32,8,1,1e-09,1e-08,10,0.6,3600
+pilot_u06_n64_qjac,64,16,1,1e-09,1e-08,10,0.6,3600
+pilot_u06_n128_qjac,128,32,1,1e-09,1e-08,10,0.6,3600
+pilot_seed1e-10_qjac,64,16,1,1e-10,1e-08,10,0.6,3600
+pilot_seed1e-08_qjac,64,16,1,1e-08,1e-08,10,0.6,3600
+pilot_u09_n64_qjac,64,16,1,1e-09,1e-08,10,0.9,3600

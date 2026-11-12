@@ -1,0 +1,42 @@
+{
+  "baseline_commit": "c7da956041b7e42f85278603a068c3915394ec20",
+  "model": "two-region saturated stationary-skeleton kinetic sharp front",
+  "rho_liquid_kg_m3": 1202.168577,
+  "rho_crystal_kg_m3": 2165,
+  "Ceq_mass_fraction": 0.264940869768,
+  "epsilon_birth": 0.43,
+  "h0_m": 3.5e-06,
+  "liquid_seed_m": 1e-09,
+  "kr_m_s": 0.001,
+  "beta_top": 2,
+  "Ds_m2_s": 1.3e-09,
+  "grain_parameter_m": 2.5e-05,
+  "av_law": "36*(1-epsilon)/grain_parameter",
+  "Deff_law": "sqrt(epsilon)*Ds",
+  "j_reference_kg_m2_s": 1.78e-05,
+  "bottom_reactive_area": "kappa_b*phi_b per projected unit area",
+  "kappa_b_reference": 1,
+  "grid": "symmetric cosine crust faces; uniform liquid cells",
+  "primary_observable": "z_top-z_bottom",
+  "variables": "solid volume, full dissolved salt inventory Q, top and bottom positions, 11 integrated ledgers",
+  "tolerances": {
+    "relative_default": 1e-08,
+    "relative_strict": 1e-09,
+    "recovery_comparison": 1e-10,
+    "budget_kg_m2": 2e-09
+  },
+  "screens": {
+    "minimum_porosity": 0.05,
+    "minimum_active_thickness_m": 1e-09,
+    "minimum_positive_intact_trace_phi": 1e-08
+  },
+  "x008_support_s": [
+    0,
+    160951.5
+  ],
+  "production_array": "16572089",
+  "physical_verification_job": "16572081",
+  "pilot_array": "16572082",
+  "pilot_gate_job": "16572088",
+  "initial_condition": "uniform C=Ceq, epsilon=.43, crust h0 above liquid seed; full liquid seed inventories retained"
+}

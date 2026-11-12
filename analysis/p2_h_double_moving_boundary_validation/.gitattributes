@@ -1,0 +1,9 @@
+# Preserve compiler inputs and machine-produced evidence byte for byte.
+two_front.hh -text
+two_bdf.hh -text
+run_case.cc -text
+verify.cc -text
+provenance/source/** -text
+provenance/source_*/** -text
+logs/* -text -whitespace
+forcing.csv -text

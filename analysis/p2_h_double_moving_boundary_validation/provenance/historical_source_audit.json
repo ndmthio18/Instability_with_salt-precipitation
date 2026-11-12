@@ -1,0 +1,297 @@
+[
+  {
+    "snapshot": "source_custom_jac_failed_v6",
+    "source": "source/ale.hh",
+    "match": true
+  },
+  {
+    "snapshot": "source_custom_jac_failed_v6",
+    "source": "source/bdf.hh",
+    "match": true
+  },
+  {
+    "snapshot": "source_custom_jac_failed_v6",
+    "source": "source/run_case.cc",
+    "match": true
+  },
+  {
+    "snapshot": "source_custom_jac_failed_v6",
+    "source": "source/two_bdf.hh",
+    "match": true
+  },
+  {
+    "snapshot": "source_custom_jac_failed_v6",
+    "source": "source/two_front.hh",
+    "match": true
+  },
+  {
+    "snapshot": "source_custom_jac_failed_v6",
+    "source": "source/verify.cc",
+    "match": true
+  },
+  {
+    "snapshot": "source_default_jac_failed_v5",
+    "source": "source/ale.hh",
+    "match": true
+  },
+  {
+    "snapshot": "source_default_jac_failed_v5",
+    "source": "source/bdf.hh",
+    "match": true
+  },
+  {
+    "snapshot": "source_default_jac_failed_v5",
+    "source": "source/run_case.cc",
+    "match": true
+  },
+  {
+    "snapshot": "source_default_jac_failed_v5",
+    "source": "source/two_bdf.hh",
+    "match": true
+  },
+  {
+    "snapshot": "source_default_jac_failed_v5",
+    "source": "source/two_front.hh",
+    "match": true
+  },
+  {
+    "snapshot": "source_default_jac_failed_v5",
+    "source": "source/verify.cc",
+    "match": true
+  },
+  {
+    "snapshot": "source_excess_refeq_v3",
+    "source": "source/ale.hh",
+    "match": true
+  },
+  {
+    "snapshot": "source_excess_refeq_v3",
+    "source": "source/bdf.hh",
+    "match": true
+  },
+  {
+    "snapshot": "source_excess_refeq_v3",
+    "source": "source/run_case.cc",
+    "match": true
+  },
+  {
+    "snapshot": "source_excess_refeq_v3",
+    "source": "source/two_bdf.hh",
+    "match": true
+  },
+  {
+    "snapshot": "source_excess_refeq_v3",
+    "source": "source/two_front.hh",
+    "match": true
+  },
+  {
+    "snapshot": "source_excess_refeq_v3",
+    "source": "source/verify.cc",
+    "match": true
+  },
+  {
+    "snapshot": "source_excess_weightT_failed_v2",
+    "source": "source/ale.hh",
+    "match": true
+  },
+  {
+    "snapshot": "source_excess_weightT_failed_v2",
+    "source": "source/bdf.hh",
+    "match": true
+  },
+  {
+    "snapshot": "source_excess_weightT_failed_v2",
+    "source": "source/run_case.cc",
+    "match": true
+  },
+  {
+    "snapshot": "source_excess_weightT_failed_v2",
+    "source": "source/two_bdf.hh",
+    "match": true
+  },
+  {
+    "snapshot": "source_excess_weightT_failed_v2",
+    "source": "source/two_front.hh",
+    "match": true
+  },
+  {
+    "snapshot": "source_excess_weightT_failed_v2",
+    "source": "source/verify.cc",
+    "match": true
+  },
+  {
+    "snapshot": "source_extreme_diffusion_failed_v4",
+    "source": "source/ale.hh",
+    "match": true
+  },
+  {
+    "snapshot": "source_extreme_diffusion_failed_v4",
+    "source": "source/bdf.hh",
+    "match": true
+  },
+  {
+    "snapshot": "source_extreme_diffusion_failed_v4",
+    "source": "source/run_case.cc",
+    "match": true
+  },
+  {
+    "snapshot": "source_extreme_diffusion_failed_v4",
+    "source": "source/two_bdf.hh",
+    "match": true
+  },
+  {
+    "snapshot": "source_extreme_diffusion_failed_v4",
+    "source": "source/two_front.hh",
+    "match": true
+  },
+  {
+    "snapshot": "source_extreme_diffusion_failed_v4",
+    "source": "source/verify.cc",
+    "match": true
+  },
+  {
+    "snapshot": "source_q_inventory_v1",
+    "source": "source/ale.hh",
+    "match": true
+  },
+  {
+    "snapshot": "source_q_inventory_v1",
+    "source": "source/bdf.hh",
+    "match": true
+  },
+  {
+    "snapshot": "source_q_inventory_v1",
+    "source": "source/run_case.cc",
+    "match": true
+  },
+  {
+    "snapshot": "source_q_inventory_v1",
+    "source": "source/two_bdf.hh",
+    "match": true
+  },
+  {
+    "snapshot": "source_q_inventory_v1",
+    "source": "source/two_front.hh",
+    "match": true
+  },
+  {
+    "snapshot": "source_q_inventory_v1",
+    "source": "source/verify.cc",
+    "match": true
+  },
+  {
+    "snapshot": "source_q_jac_exactzero_v9",
+    "source": "source/ale.hh",
+    "match": true
+  },
+  {
+    "snapshot": "source_q_jac_exactzero_v9",
+    "source": "source/bdf.hh",
+    "match": true
+  },
+  {
+    "snapshot": "source_q_jac_exactzero_v9",
+    "source": "source/run_case.cc",
+    "match": true
+  },
+  {
+    "snapshot": "source_q_jac_exactzero_v9",
+    "source": "source/two_bdf.hh",
+    "match": true
+  },
+  {
+    "snapshot": "source_q_jac_exactzero_v9",
+    "source": "source/two_front.hh",
+    "match": true
+  },
+  {
+    "snapshot": "source_q_jac_exactzero_v9",
+    "source": "source/verify.cc",
+    "match": true
+  },
+  {
+    "snapshot": "source_recovery_diag_v7",
+    "source": "source/ale.hh",
+    "match": true
+  },
+  {
+    "snapshot": "source_recovery_diag_v7",
+    "source": "source/bdf.hh",
+    "match": true
+  },
+  {
+    "snapshot": "source_recovery_diag_v7",
+    "source": "source/run_case.cc",
+    "match": true
+  },
+  {
+    "snapshot": "source_recovery_diag_v7",
+    "source": "source/two_bdf.hh",
+    "match": true
+  },
+  {
+    "snapshot": "source_recovery_diag_v7",
+    "source": "source/two_front.hh",
+    "match": true
+  },
+  {
+    "snapshot": "source_recovery_diag_v7",
+    "source": "source/verify.cc",
+    "match": true
+  },
+  {
+    "snapshot": "source_t_jac_verified_partial_v8",
+    "source": "source/ale.hh",
+    "match": true
+  },
+  {
+    "snapshot": "source_t_jac_verified_partial_v8",
+    "source": "source/bdf.hh",
+    "match": true
+  },
+  {
+    "snapshot": "source_t_jac_verified_partial_v8",
+    "source": "source/run_case.cc",
+    "match": true
+  },
+  {
+    "snapshot": "source_t_jac_verified_partial_v8",
+    "source": "source/two_bdf.hh",
+    "match": true
+  },
+  {
+    "snapshot": "source_t_jac_verified_partial_v8",
+    "source": "source/two_front.hh",
+    "match": true
+  },
+  {
+    "snapshot": "source_t_jac_verified_partial_v8",
+    "source": "source/verify.cc",
+    "match": true
+  },
+  {
+    "snapshot": "source_verification_v0",
+    "source": "source/ale.hh",
+    "match": true
+  },
+  {
+    "snapshot": "source_verification_v0",
+    "source": "source/bdf.hh",
+    "match": true
+  },
+  {
+    "snapshot": "source_verification_v0",
+    "source": "source/two_bdf.hh",
+    "match": true
+  },
+  {
+    "snapshot": "source_verification_v0",
+    "source": "source/two_front.hh",
+    "match": true
+  },
+  {
+    "snapshot": "source_verification_v0",
+    "source": "source/verify.cc",
+    "match": true
+  }
+]

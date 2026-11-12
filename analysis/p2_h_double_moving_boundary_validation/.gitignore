@@ -1,0 +1,8 @@
+raw/
+__pycache__/
+*.tar.gz
+!logs/*.out
+
+provenance/archive_main/
+provenance/archive_refine/
+provenance/archive_temporal/

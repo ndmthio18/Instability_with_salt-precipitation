@@ -1,0 +1,40 @@
+source/run_case.cc: In function ‘int main(int, char**)’:
+source/run_case.cc:19:6: warning: this ‘while’ clause does not guard... [-Wmisleading-indentation]
+   19 |      while(std::getline(ss,x,','))row.push_back(std::stod(x));times.push_back(row.at(0));js.push_back(row.at(2));bs.push_back(row.at(3));}
+      |      ^~~~~
+source/run_case.cc:19:63: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘while’
+   19 |      while(std::getline(ss,x,','))row.push_back(std::stod(x));times.push_back(row.at(0));js.push_back(row.at(2));bs.push_back(row.at(3));}
+      |                                                               ^~~~~
+source/run_case.cc:20:4: warning: this ‘if’ clause does not guard... [-Wmisleading-indentation]
+   20 |    if(times.empty())throw std::runtime_error("missing forcing");end=std::min(end,times.back());}
+      |    ^~
+source/run_case.cc:20:65: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+   20 |    if(times.empty())throw std::runtime_error("missing forcing");end=std::min(end,times.back());}
+      |                                                                 ^~~
+source/run_case.cc: In lambda function:
+source/run_case.cc:22:4: warning: this ‘if’ clause does not guard... [-Wmisleading-indentation]
+   22 |    if(it==times.begin())return v.front();if(it==times.end())return v.back();auto k=it-times.begin();double a=(t-times[k-1])/(times[k]-times[k-1]);return (1-a)*v[k-1]+a*v[k];};
+      |    ^~
+source/run_case.cc:22:42: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+   22 |    if(it==times.begin())return v.front();if(it==times.end())return v.back();auto k=it-times.begin();double a=(t-times[k-1])/(times[k]-times[k-1]);return (1-a)*v[k-1]+a*v[k];};
+      |                                          ^~
+source/run_case.cc: In lambda function:
+source/run_case.cc:51:3: warning: this ‘for’ clause does not guard... [-Wmisleading-indentation]
+   51 |   for(int i=0;i<NLEDGER;++i)out<<','<<y[k+i];out<<'\n';out.flush();
+      |   ^~~
+source/run_case.cc:51:46: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘for’
+   51 |   for(int i=0;i<NLEDGER;++i)out<<','<<y[k+i];out<<'\n';out.flush();
+      |                                              ^~~
+source/run_case.cc:54:4: warning: this ‘for’ clause does not guard... [-Wmisleading-indentation]
+   54 |    for(int i=0;i<m.n;++i)pro<<t<<",crust,"<<i<<','<<y[m.bottomIndex()]+h*m.faces[i]<<','<<y[m.bottomIndex()]+h*m.faces[i+1]<<','<<1-f.eps[i]<<','<<f.cc[i]<<','<<f.R[i]<<'\n';pro.flush();}
+      |    ^~~
+source/run_case.cc:54:175: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘for’
+   54 |    for(int i=0;i<m.n;++i)pro<<t<<",crust,"<<i<<','<<y[m.bottomIndex()]+h*m.faces[i]<<','<<y[m.bottomIndex()]+h*m.faces[i+1]<<','<<1-f.eps[i]<<','<<f.cc[i]<<','<<f.R[i]<<'\n';pro.flush();}
+      |                                                                                                                                                                               ^~~
+source/run_case.cc: In function ‘int main(int, char**)’:
+source/run_case.cc:61:2: warning: this ‘for’ clause does not guard... [-Wmisleading-indentation]
+   61 |  for(double t=120;t<=end;t+=60)schedule.push_back(t);schedule.push_back(end);
+      |  ^~~
+source/run_case.cc:61:54: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘for’
+   61 |  for(double t=120;t<=end;t+=60)schedule.push_back(t);schedule.push_back(end);
+      |                                                      ^~~~~~~~

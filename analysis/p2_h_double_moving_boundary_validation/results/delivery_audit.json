@@ -1,0 +1,685 @@
+{
+  "pass": true,
+  "checks": [
+    {
+      "check": "all registered cases accounted for",
+      "pass": true
+    },
+    {
+      "check": "two registered temporal failures retained; all other endpoints reached",
+      "pass": true
+    },
+    {
+      "check": "geometric thickness from positions",
+      "pass": true
+    },
+    {
+      "check": "net speed from independently evolved interfaces",
+      "pass": true
+    },
+    {
+      "check": "nonnegative crystal inventory",
+      "pass": true
+    },
+    {
+      "check": "accepted porosity within registered screens",
+      "pass": true
+    },
+    {
+      "check": "nonnegative liquid inventories",
+      "pass": true
+    },
+    {
+      "check": "global and region inventory ledgers",
+      "pass": true
+    },
+    {
+      "check": "interface water jump",
+      "pass": true
+    },
+    {
+      "check": "interface concentration/flux matching",
+      "pass": true
+    },
+    {
+      "check": "no x008 forcing extrapolation",
+      "pass": true
+    },
+    {
+      "check": "50 h completed controlled forcing trajectories",
+      "pass": true
+    },
+    {
+      "check": "computed mean solid fraction",
+      "pass": true
+    },
+    {
+      "check": "exact net-growth discrepancy decomposition",
+      "pass": true
+    },
+    {
+      "check": "raw hash raw/pilot_seed1e-08_history.csv",
+      "pass": true
+    },
+    {
+      "check": "raw hash raw/pilot_seed1e-08_profiles.csv",
+      "pass": true
+    },
+    {
+      "check": "raw hash raw/pilot_seed1e-08_qjac_history.csv",
+      "pass": true
+    },
+    {
+      "check": "raw hash raw/pilot_seed1e-08_qjac_profiles.csv",
+      "pass": true
+    },
+    {
+      "check": "raw hash raw/pilot_seed1e-08_qjac_status.txt",
+      "pass": true
+    },
+    {
+      "check": "raw hash raw/pilot_seed1e-08_status.txt",
+      "pass": true
+    },
+    {
+      "check": "raw hash raw/pilot_seed1e-10_history.csv",
+      "pass": true
+    },
+    {
+      "check": "raw hash raw/pilot_seed1e-10_profiles.csv",
+      "pass": true
+    },
+    {
+      "check": "raw hash raw/pilot_seed1e-10_qjac_history.csv",
+      "pass": true
+    },
+    {
+      "check": "raw hash raw/pilot_seed1e-10_qjac_profiles.csv",
+      "pass": true
+    },
+    {
+      "check": "raw hash raw/pilot_seed1e-10_qjac_status.txt",
+      "pass": true
+    },
+    {
+      "check": "raw hash raw/pilot_seed1e-10_status.txt",
+      "pass": true
+    },
+    {
+      "check": "raw hash raw/pilot_u06_n128_history.csv",
+      "pass": true
+    },
+    {
+      "check": "raw hash raw/pilot_u06_n128_profiles.csv",
+      "pass": true
+    },
+    {
+      "check": "raw hash raw/pilot_u06_n128_qjac_history.csv",
+      "pass": true
+    },
+    {
+      "check": "raw hash raw/pilot_u06_n128_qjac_profiles.csv",
+      "pass": true
+    },
+    {
+      "check": "raw hash raw/pilot_u06_n128_qjac_status.txt",
+      "pass": true
+    },
+    {
+      "check": "raw hash raw/pilot_u06_n128_status.txt",
+      "pass": true
+    },
+    {
+      "check": "raw hash raw/pilot_u06_n32_history.csv",
+      "pass": true
+    },
+    {
+      "check": "raw hash raw/pilot_u06_n32_profiles.csv",
+      "pass": true
+    },
+    {
+      "check": "raw hash raw/pilot_u06_n32_qjac_history.csv",
+      "pass": true
+    },
+    {
+      "check": "raw hash raw/pilot_u06_n32_qjac_profiles.csv",
+      "pass": true
+    },
+    {
+      "check": "raw hash raw/pilot_u06_n32_qjac_status.txt",
+      "pass": true
+    },
+    {
+      "check": "raw hash raw/pilot_u06_n32_status.txt",
+      "pass": true
+    },
+    {
+      "check": "raw hash raw/pilot_u06_n64_history.csv",
+      "pass": true
+    },
+    {
+      "check": "raw hash raw/pilot_u06_n64_profiles.csv",
+      "pass": true
+    },
+    {
+      "check": "raw hash raw/pilot_u06_n64_qjac_history.csv",
+      "pass": true
+    },
+    {
+      "check": "raw hash raw/pilot_u06_n64_qjac_profiles.csv",
+      "pass": true
+    },
+    {
+      "check": "raw hash raw/pilot_u06_n64_qjac_status.txt",
+      "pass": true
+    },
+    {
+      "check": "raw hash raw/pilot_u06_n64_status.txt",
+      "pass": true
+    },
+    {
+      "check": "raw hash raw/pilot_u09_n64_history.csv",
+      "pass": true
+    },
+    {
+      "check": "raw hash raw/pilot_u09_n64_profiles.csv",
+      "pass": true
+    },
+    {
+      "check": "raw hash raw/pilot_u09_n64_qjac_history.csv",
+      "pass": true
+    },
+    {
+      "check": "raw hash raw/pilot_u09_n64_qjac_profiles.csv",
+      "pass": true
+    },
+    {
+      "check": "raw hash raw/pilot_u09_n64_qjac_status.txt",
+      "pass": true
+    },
+    {
+      "check": "raw hash raw/pilot_u09_n64_status.txt",
+      "pass": true
+    },
+    {
+      "check": "raw hash raw/u0.3_n128_history.csv",
+      "pass": true
+    },
+    {
+      "check": "raw hash raw/u0.3_n128_profiles.csv",
+      "pass": true
+    },
+    {
+      "check": "raw hash raw/u0.3_n128_status.txt",
+      "pass": true
+    },
+    {
+      "check": "raw hash raw/u0.3_n256_history.csv",
+      "pass": true
+    },
+    {
+      "check": "raw hash raw/u0.3_n256_profiles.csv",
+      "pass": true
+    },
+    {
+      "check": "raw hash raw/u0.3_n256_status.txt",
+      "pass": true
+    },
+    {
+      "check": "raw hash raw/u0.3_n64_history.csv",
+      "pass": true
+    },
+    {
+      "check": "raw hash raw/u0.3_n64_profiles.csv",
+      "pass": true
+    },
+    {
+      "check": "raw hash raw/u0.3_n64_status.txt",
+      "pass": true
+    },
+    {
+      "check": "raw hash raw/u0.6_k0.5_history.csv",
+      "pass": true
+    },
+    {
+      "check": "raw hash raw/u0.6_k0.5_profiles.csv",
+      "pass": true
+    },
+    {
+      "check": "raw hash raw/u0.6_k0.5_status.txt",
+      "pass": true
+    },
+    {
+      "check": "raw hash raw/u0.6_k2_history.csv",
+      "pass": true
+    },
+    {
+      "check": "raw hash raw/u0.6_k2_profiles.csv",
+      "pass": true
+    },
+    {
+      "check": "raw hash raw/u0.6_k2_status.txt",
+      "pass": true
+    },
+    {
+      "check": "raw hash raw/u0.6_liquid64_history.csv",
+      "pass": true
+    },
+    {
+      "check": "raw hash raw/u0.6_liquid64_profiles.csv",
+      "pass": true
+    },
+    {
+      "check": "raw hash raw/u0.6_liquid64_status.txt",
+      "pass": true
+    },
+    {
+      "check": "raw hash raw/u0.6_n128_history.csv",
+      "pass": true
+    },
+    {
+      "check": "raw hash raw/u0.6_n128_profiles.csv",
+      "pass": true
+    },
+    {
+      "check": "raw hash raw/u0.6_n128_status.txt",
+      "pass": true
+    },
+    {
+      "check": "raw hash raw/u0.6_n256_history.csv",
+      "pass": true
+    },
+    {
+      "check": "raw hash raw/u0.6_n256_profiles.csv",
+      "pass": true
+    },
+    {
+      "check": "raw hash raw/u0.6_n256_status.txt",
+      "pass": true
+    },
+    {
+      "check": "raw hash raw/u0.6_n64_history.csv",
+      "pass": true
+    },
+    {
+      "check": "raw hash raw/u0.6_n64_profiles.csv",
+      "pass": true
+    },
+    {
+      "check": "raw hash raw/u0.6_n64_status.txt",
+      "pass": true
+    },
+    {
+      "check": "raw hash raw/u0.6_seed1e-08_history.csv",
+      "pass": true
+    },
+    {
+      "check": "raw hash raw/u0.6_seed1e-08_profiles.csv",
+      "pass": true
+    },
+    {
+      "check": "raw hash raw/u0.6_seed1e-08_status.txt",
+      "pass": true
+    },
+    {
+      "check": "raw hash raw/u0.6_seed1e-10_history.csv",
+      "pass": true
+    },
+    {
+      "check": "raw hash raw/u0.6_seed1e-10_profiles.csv",
+      "pass": true
+    },
+    {
+      "check": "raw hash raw/u0.6_seed1e-10_status.txt",
+      "pass": true
+    },
+    {
+      "check": "raw hash raw/u0.6_strict_history.csv",
+      "pass": true
+    },
+    {
+      "check": "raw hash raw/u0.6_strict_profiles.csv",
+      "pass": true
+    },
+    {
+      "check": "raw hash raw/u0.6_strict_status.txt",
+      "pass": true
+    },
+    {
+      "check": "raw hash raw/u0.9_n128_history.csv",
+      "pass": true
+    },
+    {
+      "check": "raw hash raw/u0.9_n128_profiles.csv",
+      "pass": true
+    },
+    {
+      "check": "raw hash raw/u0.9_n128_status.txt",
+      "pass": true
+    },
+    {
+      "check": "raw hash raw/u0.9_n256_history.csv",
+      "pass": true
+    },
+    {
+      "check": "raw hash raw/u0.9_n256_profiles.csv",
+      "pass": true
+    },
+    {
+      "check": "raw hash raw/u0.9_n256_status.txt",
+      "pass": true
+    },
+    {
+      "check": "raw hash raw/u0.9_n64_history.csv",
+      "pass": true
+    },
+    {
+      "check": "raw hash raw/u0.9_n64_profiles.csv",
+      "pass": true
+    },
+    {
+      "check": "raw hash raw/u0.9_n64_status.txt",
+      "pass": true
+    },
+    {
+      "check": "raw hash raw/u0_n128_history.csv",
+      "pass": true
+    },
+    {
+      "check": "raw hash raw/u0_n128_profiles.csv",
+      "pass": true
+    },
+    {
+      "check": "raw hash raw/u0_n128_status.txt",
+      "pass": true
+    },
+    {
+      "check": "raw hash raw/u0_n256_history.csv",
+      "pass": true
+    },
+    {
+      "check": "raw hash raw/u0_n256_profiles.csv",
+      "pass": true
+    },
+    {
+      "check": "raw hash raw/u0_n256_status.txt",
+      "pass": true
+    },
+    {
+      "check": "raw hash raw/u0_n64_history.csv",
+      "pass": true
+    },
+    {
+      "check": "raw hash raw/u0_n64_profiles.csv",
+      "pass": true
+    },
+    {
+      "check": "raw hash raw/u0_n64_status.txt",
+      "pass": true
+    },
+    {
+      "check": "raw hash raw/u0_strict_history.csv",
+      "pass": true
+    },
+    {
+      "check": "raw hash raw/u0_strict_profiles.csv",
+      "pass": true
+    },
+    {
+      "check": "raw hash raw/u0_strict_status.txt",
+      "pass": true
+    },
+    {
+      "check": "raw hash raw/x008_n128_history.csv",
+      "pass": true
+    },
+    {
+      "check": "raw hash raw/x008_n128_profiles.csv",
+      "pass": true
+    },
+    {
+      "check": "raw hash raw/x008_n128_status.txt",
+      "pass": true
+    },
+    {
+      "check": "raw hash raw/x008_n256_history.csv",
+      "pass": true
+    },
+    {
+      "check": "raw hash raw/x008_n256_profiles.csv",
+      "pass": true
+    },
+    {
+      "check": "raw hash raw/x008_n256_status.txt",
+      "pass": true
+    },
+    {
+      "check": "raw hash raw/x008_n64_history.csv",
+      "pass": true
+    },
+    {
+      "check": "raw hash raw/x008_n64_profiles.csv",
+      "pass": true
+    },
+    {
+      "check": "raw hash raw/x008_n64_status.txt",
+      "pass": true
+    },
+    {
+      "check": "raw hash raw/x008_strict_history.csv",
+      "pass": true
+    },
+    {
+      "check": "raw hash raw/x008_strict_profiles.csv",
+      "pass": true
+    },
+    {
+      "check": "raw hash raw/x008_strict_status.txt",
+      "pass": true
+    },
+    {
+      "check": "raw hash raw/u0.6_n512_history.csv",
+      "pass": true
+    },
+    {
+      "check": "raw hash raw/u0.6_n512_profiles.csv",
+      "pass": true
+    },
+    {
+      "check": "raw hash raw/u0.6_n512_status.txt",
+      "pass": true
+    },
+    {
+      "check": "raw hash raw/u0.9_n512_history.csv",
+      "pass": true
+    },
+    {
+      "check": "raw hash raw/u0.9_n512_profiles.csv",
+      "pass": true
+    },
+    {
+      "check": "raw hash raw/u0.9_n512_status.txt",
+      "pass": true
+    },
+    {
+      "check": "raw hash raw/u0.6_strict_tighter_history.csv",
+      "pass": true
+    },
+    {
+      "check": "raw hash raw/u0.6_strict_tighter_profiles.csv",
+      "pass": true
+    },
+    {
+      "check": "raw hash raw/u0.6_strict_tighter_status.txt",
+      "pass": true
+    },
+    {
+      "check": "compiled source hash source/ale.hh",
+      "pass": true
+    },
+    {
+      "check": "compiled source hash source/bdf.hh",
+      "pass": true
+    },
+    {
+      "check": "compiled source hash source/run_case.cc",
+      "pass": true
+    },
+    {
+      "check": "delivered source matches executed run_case.cc",
+      "pass": true
+    },
+    {
+      "check": "compiled source hash source/two_bdf.hh",
+      "pass": true
+    },
+    {
+      "check": "delivered source matches executed two_bdf.hh",
+      "pass": true
+    },
+    {
+      "check": "compiled source hash source/two_front.hh",
+      "pass": true
+    },
+    {
+      "check": "delivered source matches executed two_front.hh",
+      "pass": true
+    },
+    {
+      "check": "compiled source hash source/verify.cc",
+      "pass": true
+    },
+    {
+      "check": "delivered source matches executed verify.cc",
+      "pass": true
+    },
+    {
+      "check": "figure 1 SVG present",
+      "pass": true
+    },
+    {
+      "check": "figure 1 remains vector",
+      "pass": true
+    },
+    {
+      "check": "figure 1 Times New Roman",
+      "pass": true
+    },
+    {
+      "check": "figure 1 exports",
+      "pass": true
+    },
+    {
+      "check": "figure 2 SVG present",
+      "pass": true
+    },
+    {
+      "check": "figure 2 remains vector",
+      "pass": true
+    },
+    {
+      "check": "figure 2 Times New Roman",
+      "pass": true
+    },
+    {
+      "check": "figure 2 exports",
+      "pass": true
+    },
+    {
+      "check": "figure 3 SVG present",
+      "pass": true
+    },
+    {
+      "check": "figure 3 remains vector",
+      "pass": true
+    },
+    {
+      "check": "figure 3 Times New Roman",
+      "pass": true
+    },
+    {
+      "check": "figure 3 exports",
+      "pass": true
+    },
+    {
+      "check": "figure 4 SVG present",
+      "pass": true
+    },
+    {
+      "check": "figure 4 remains vector",
+      "pass": true
+    },
+    {
+      "check": "figure 4 Times New Roman",
+      "pass": true
+    },
+    {
+      "check": "figure 4 exports",
+      "pass": true
+    },
+    {
+      "check": "figure 5 SVG present",
+      "pass": true
+    },
+    {
+      "check": "figure 5 remains vector",
+      "pass": true
+    },
+    {
+      "check": "figure 5 Times New Roman",
+      "pass": true
+    },
+    {
+      "check": "figure 5 exports",
+      "pass": true
+    },
+    {
+      "check": "figure 6 SVG present",
+      "pass": true
+    },
+    {
+      "check": "figure 6 remains vector",
+      "pass": true
+    },
+    {
+      "check": "figure 6 Times New Roman",
+      "pass": true
+    },
+    {
+      "check": "figure 6 exports",
+      "pass": true
+    },
+    {
+      "check": "figure 7 SVG present",
+      "pass": true
+    },
+    {
+      "check": "figure 7 remains vector",
+      "pass": true
+    },
+    {
+      "check": "figure 7 Times New Roman",
+      "pass": true
+    },
+    {
+      "check": "figure 7 exports",
+      "pass": true
+    },
+    {
+      "check": "figure 8 SVG present",
+      "pass": true
+    },
+    {
+      "check": "figure 8 remains vector",
+      "pass": true
+    },
+    {
+      "check": "figure 8 Times New Roman",
+      "pass": true
+    },
+    {
+      "check": "figure 8 exports",
+      "pass": true
+    }
+  ]
+}
