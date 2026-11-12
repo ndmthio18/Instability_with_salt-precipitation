@@ -1,0 +1,28 @@
+source/longterm.cc: In function ‘int main(int, char**)’:
+source/longterm.cc:23:4: warning: this ‘if’ clause does not guard... [-Wmisleading-indentation]
+   23 |    if(times.empty())throw std::runtime_error("missing forcing");end=times.back(); }
+      |    ^~
+source/longterm.cc:23:65: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+   23 |    if(times.empty())throw std::runtime_error("missing forcing");end=times.back(); }
+      |                                                                 ^~~
+source/longterm.cc: In lambda function:
+source/longterm.cc:25:4: warning: this ‘if’ clause does not guard... [-Wmisleading-indentation]
+   25 |    if(it==times.begin())return v.front();if(it==times.end())return v.back();
+      |    ^~
+source/longterm.cc:25:42: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+   25 |    if(it==times.begin())return v.front();if(it==times.end())return v.back();
+      |                                          ^~
+source/longterm.cc: In lambda function:
+source/longterm.cc:54:4: warning: this ‘if’ clause does not guard... [-Wmisleading-indentation]
+   54 |    if(emin<=.05)return std::string("pore_filling_limit_eps_0.05");return std::string("end");
+      |    ^~
+source/longterm.cc:54:67: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+   54 |    if(emin<=.05)return std::string("pore_filling_limit_eps_0.05");return std::string("end");
+      |                                                                   ^~~~~~
+source/longterm.cc: In function ‘int main(int, char**)’:
+source/longterm.cc:64:5: warning: this ‘if’ clause does not guard... [-Wmisleading-indentation]
+   64 |     if(status!="end")break;previous=t;
+      |     ^~
+source/longterm.cc:64:28: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+   64 |     if(status!="end")break;previous=t;
+      |                            ^~~~~~~~

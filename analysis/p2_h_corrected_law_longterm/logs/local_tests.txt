@@ -1,0 +1,12 @@
+test_frozen_bvp_constant_property_limit (test_models.ModelChecks.test_frozen_bvp_constant_property_limit) ... ok
+test_material_definitions (test_models.ModelChecks.test_material_definitions) ... ok
+test_screening_limit (test_models.ModelChecks.test_screening_limit) ... ok
+test_all_registered_runs_accounted_for (test_models.ProductionEvidenceChecks.test_all_registered_runs_accounted_for) ... ok
+test_prescribed_diffusion_not_equilibrium_advection (test_models.ProductionEvidenceChecks.test_prescribed_diffusion_not_equilibrium_advection) ... ok
+test_reconstructed_inventory_budgets (test_models.ProductionEvidenceChecks.test_reconstructed_inventory_budgets) ... ok
+test_thresholds_and_numerical_gates (test_models.ProductionEvidenceChecks.test_thresholds_and_numerical_gates) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.510s
+
+OK

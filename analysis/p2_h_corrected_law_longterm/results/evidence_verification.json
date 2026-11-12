@@ -1,0 +1,21 @@
+{
+  "all_pass": true,
+  "checks": {
+    "P0": true,
+    "P1": true,
+    "event_and_refinement": true,
+    "ale.hh": true,
+    "bdf.hh": true,
+    "forcing.csv": true,
+    "cases.csv": true,
+    "cases_events.csv": true,
+    "cases_p0_initial.csv": true,
+    "cases_p1.csv": true,
+    "cases_refine.csv": true,
+    "cases_refined.csv": true,
+    "compact.tar.gz": true,
+    "compact_p1.tar.gz": true,
+    "compact_refine.tar.gz": true
+  },
+  "full_archive": "Remote retained; full archive digest is recorded, not falsely claimed locally verified."
+}

@@ -1,0 +1,34 @@
+source/longterm.cc: In function ‘int main(int, char**)’:
+source/longterm.cc:22:4: warning: this ‘if’ clause does not guard... [-Wmisleading-indentation]
+   22 |    if(times.empty())throw std::runtime_error("missing forcing");end=times.back(); }
+      |    ^~
+source/longterm.cc:22:65: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+   22 |    if(times.empty())throw std::runtime_error("missing forcing");end=times.back(); }
+      |                                                                 ^~~
+source/longterm.cc: In lambda function:
+source/longterm.cc:24:4: warning: this ‘if’ clause does not guard... [-Wmisleading-indentation]
+   24 |    if(it==times.begin())return v.front();if(it==times.end())return v.back();
+      |    ^~
+source/longterm.cc:24:42: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+   24 |    if(it==times.begin())return v.front();if(it==times.end())return v.back();
+      |                                          ^~
+source/longterm.cc: In lambda function:
+source/longterm.cc:53:4: warning: this ‘if’ clause does not guard... [-Wmisleading-indentation]
+   53 |    if(emin<=.05)return std::string("pore_filling_limit_eps_0.05");return std::string("end");
+      |    ^~
+source/longterm.cc:53:67: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+   53 |    if(emin<=.05)return std::string("pore_filling_limit_eps_0.05");return std::string("end");
+      |                                                                   ^~~~~~
+source/longterm.cc: In function ‘int main(int, char**)’:
+source/longterm.cc:57:3: warning: this ‘for’ clause does not guard... [-Wmisleading-indentation]
+   57 |   for(double t=120;t<=end;t+=60)schedule.push_back(t);schedule.push_back(end);
+      |   ^~~
+source/longterm.cc:57:55: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘for’
+   57 |   for(double t=120;t<=end;t+=60)schedule.push_back(t);schedule.push_back(end);
+      |                                                       ^~~~~~~~
+source/longterm.cc:61:5: warning: this ‘if’ clause does not guard... [-Wmisleading-indentation]
+   61 |     if(status!="end")break;previous=t;
+      |     ^~
+source/longterm.cc:61:28: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+   61 |     if(status!="end")break;previous=t;
+      |                            ^~~~~~~~

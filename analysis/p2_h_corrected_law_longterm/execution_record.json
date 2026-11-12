@@ -1,0 +1,64 @@
+{
+  "task": "task/26.md",
+  "branch": "research/p2-h-corrected-law-longterm",
+  "baseline_commit": "c6fb6277c4cdf1689d80f4bbdda7a421060d874a",
+  "remote": "instability",
+  "host": "hpcc",
+  "production_root": "/WORK/hulm_work/zhixin/p2_h_corrected_law_longterm_20261112",
+  "scheduler": "Slurm",
+  "partition": "cnmix",
+  "production_date": "2026-11-12",
+  "compiler": "GCC 12.2.0, -O2 -std=c++17",
+  "sundials_version": "6.7.0",
+  "sundials_prefix": "/WORK/hulm_work/zhixin/p2_h_ale_coupling_20261107/dependencies/install",
+  "jobs": {
+    "16571663": "P0 build and prescribed-diffusion operator test",
+    "16571666": "P0 initial array, 30 cases",
+    "16571705": "P0 adaptive 128/256/512 power-2 array, 3 cases",
+    "16571714": "P0 full evidence archive",
+    "16571715": "initial P0 transfer archive",
+    "16571730": "P1 clock-scaled driver build and operator test",
+    "16571731": "P0 compact evidence archive",
+    "16571732": "P1 array, 24 cases; 8 original state-bound failures preserved",
+    "16571758": "P1 compact evidence archive",
+    "16571762": "event diagnostic driver build and operator test",
+    "16571763": "8 event-output diagnostic reruns",
+    "16571786": "5 adaptive P1 spatial checks",
+    "16571805": "final full archive and compact refinement transfer"
+  },
+  "versions": {
+    "P0": {
+      "driver_sha256": "dea5c00924af89421cc00847edd492d5815c26ca06824686836a7ba18923a568",
+      "executable_sha256": "c692e35d510d74485128162d1c1c9f0b75b32fcbc19e708341ed6142d5334cd5",
+      "driver_copy": "provenance/longterm_p0.cc"
+    },
+    "P1": {
+      "driver_sha256": "23d03af9a4539347058bf9676af3e74e99b22f3f7d8b51d0c95e5677341d8c38",
+      "executable_sha256": "75fc80c95ca25cf9a66fb2334834541166bf7b72636d486d7c81fcd73b5e6de1",
+      "driver_copy": "provenance/longterm_p1.cc"
+    },
+    "event_and_refinement": {
+      "driver_sha256": "477e7310a84645accd28e79b6d41260f2840e42664dc9c5b10728e94abdf97e2",
+      "executable_sha256": "5bc32939f6529358cc54d4c2cfe6acaf383836e0976f660691c11037831cd980",
+      "driver_copy": "longterm.cc"
+    }
+  },
+  "shared_operator_sha256": {
+    "ale.hh": "e9c9470915e17ae4814407ba081ebf28124784c1af2df4088c8321ac3874d7c1",
+    "bdf.hh": "1cbdee52e0ec046493304bc0ce0c01eec78541485afd9e481b9d0732c25ec01b"
+  },
+  "forcing_sha256": "53e08c29af27990aafedf80590cba3fc045c317112e20ab477eb6c9071d700d0",
+  "analysis_versions": {
+    "Python": "3.12.4",
+    "NumPy": "2.0.0",
+    "SciPy": "1.14.0",
+    "pandas": "2.2.2",
+    "Matplotlib": "3.9.2"
+  },
+  "archive": "evidence_final.tar.gz",
+  "archive_digest_file": "evidence_final.sha256",
+  "full_raw_digests_file": "final_sha256.txt",
+  "accounting_file": "accounting.txt",
+  "production_commit_interpretation": "Baseline operators plus hash-pinned driver; final delivery commit is obtained from git log for this directory, avoiding a self-referential commit field.",
+  "execution_policy": "Builds, operator tests, simulations and remote archive processing ran as compute-node Slurm jobs. Login node used only for staging, submission and read-only status queries. Local Python performs bounded analysis and figure generation."
+}

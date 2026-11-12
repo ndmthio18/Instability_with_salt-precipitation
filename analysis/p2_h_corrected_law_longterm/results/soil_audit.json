@@ -1,0 +1,13 @@
+{
+  "internal_scvf_integral": 0.5949903634409492,
+  "native_surface_salt_integral": 0.5949832274719249,
+  "top_storage_integral": 7.136910574274972e-06,
+  "analytical_reconstruction_integral": 0.6063993741411075,
+  "pointwise_internal_boundary_balance_residual_max": 2.563676111101644e-13,
+  "new_ALE_support_s": 900.0,
+  "common_window_ALE_bottom_salt_accepted_integral": 0.0015066155763819,
+  "common_window_ALE_water_demand_integral": 0.018528003360589,
+  "common_window_evaporation_integral": 0.0160342397296651,
+  "interface_geometry": "export identifies top_internal_scvf; coordinates not provided",
+  "hydraulic_compatibility": "NOT_ESTABLISHED: native bare-soil boundary is not a coupled soil-crust interface"
+}
