@@ -17,7 +17,8 @@ no horizontal crust gradients and is not a 2D discretization.
 
 For each crust cell, V_i=h*Delta_xi_i, E_i=eps_i*V_i and Q_i=rho*C_i*E_i.
 The B2 closures are `D_eff=sqrt(eps)*D_s` and
-`a_v=36*(1-eps)/d_sub`. Reaction is signed:
+`a_v=36*(1-eps)/d_sub`. Here `k_r` has units m/s (not s^-1), because
+`a_v` has units 1/m. Reaction is signed:
 `R_i=rho*a_v*k_r*(C_i-Ceq)`; dissolution is not silently clipped.
 Let w=xi*dh/dt and H=-w*eps_upwind. The SAME H enters pore-volume transport
 and relative liquid/salt transport:
