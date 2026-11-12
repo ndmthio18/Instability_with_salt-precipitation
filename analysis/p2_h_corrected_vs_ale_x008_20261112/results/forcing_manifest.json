@@ -1,0 +1,18 @@
+{
+  "case": "x0=0.08",
+  "precipitation_onset_absolute_s": 19048.5,
+  "forcing_duration_s": 160951.5,
+  "source_sampling_s": 300.0,
+  "interpolation": "linear only at t_precip; ALE callbacks linearly interpolate stored accepted states",
+  "b_soil_definition": "-j_s_diff at the first internal soil SCVF; positive downward",
+  "coupling_scope": "one-way prescribed soil history; no crust feedback to soil",
+  "inputs": {
+    "flux_decomposition.csv": "5db50face267c40af9a5e05c6d7e4a40c4d3abb89dafb97c120301ad0d90b2dd",
+    "x008_timeseries.csv": "51c904c1e376a5d4694ba9835acf524732881a94dd7d3327563bf42f140f8b82",
+    "case_summary.csv": "7da3f2da5fad0f743a17827f8f948663707a3240adfda6984ba597fcbf922505"
+  },
+  "output": {
+    "x008_forcing.csv": "53e08c29af27990aafedf80590cba3fc045c317112e20ab477eb6c9071d700d0"
+  },
+  "rows": 538
+}

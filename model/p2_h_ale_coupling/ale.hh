@@ -13,6 +13,11 @@ struct Parameters {
     double reaction=.0023, avMultiplier=1, beta=2, grain=25e-6, initialHeight=.001;
     double evaporation=1200*.01/86400, bottomC=.264;
     bool splitReactionLedgers=false;
+    // Diagnostic opt-in: permit cells with zero remaining crystal
+    // (epsilon=1).  The legacy M3 acceptance ceiling epsilon<0.95 remains
+    // the default and geometric height must not be interpreted as solid crust
+    // height when this option is active.
+    bool allowCompleteDissolution=false;
 };
 struct Fluxes {
     Vec volume, reaction, liquid, salt, mesh;
@@ -27,6 +32,11 @@ public:
     int n;
     Vec faces, centers, widths;
     std::function<double(double)> gasFilm;
+    // Optional accepted forcing histories for standalone one-way diagnostics.
+    // The argument is elapsed ALE time [s].  bottomBackDiffusion is positive
+    // downward, so the upward salt flux at z=0 is C_eq J_L-B_soil.
+    std::function<double(double)> evaporationHistory;
+    std::function<double(double)> bottomBackDiffusion;
     explicit ALE(int cells=640, double power=3, Parameters params={}) : p(params), n(cells) {
         if(n<4 || power<1) throw std::runtime_error("invalid ALE mesh");
         for(int i=0;i<=n;++i) faces.push_back(1-std::pow(1-double(i)/n,power));
@@ -63,14 +73,18 @@ public:
         if(!found) throw std::runtime_error("no physical top root");
         return {p.ceq+excess,p.beta*p.rho/p.crystal*p.reaction*excess};
     }
-    Fluxes flux(const Vec& y) const {
+    Fluxes flux(const Vec& y,double time=0) const {
         if(int(y.size())!=size()) throw std::runtime_error("ALE state size");
         const double h=y[2*n];
         if(!(h>0)) throw std::runtime_error("nonpositive ALE height");
         Vec d(n), eface(n+1);
-        Fluxes f{Vec(n),Vec(n),Vec(n+1),Vec(n+1),Vec(n+1),0,0,p.evaporation};
+        const double imposedEvaporation=evaporationHistory?evaporationHistory(time):p.evaporation;
+        if(!(imposedEvaporation>=0)) throw std::runtime_error("negative imposed evaporation");
+        Fluxes f{Vec(n),Vec(n),Vec(n+1),Vec(n+1),Vec(n+1),0,0,imposedEvaporation};
         for(int i=0;i<n;++i) {
-            if(!(y[i]>0 && y[i]<1)) throw std::runtime_error("invalid porosity");
+            const bool porosityValid=y[i]>0 &&
+                (p.allowCompleteDissolution ? y[i]<=1.0 : y[i]<1.0);
+            if(!porosityValid) throw std::runtime_error("invalid porosity");
             d[i]=std::sqrt(y[i])*p.diffusion;
             f.volume[i]=h*widths[i];
             f.reaction[i]=reactionRate(y[i],y[n+i]);
@@ -101,12 +115,18 @@ public:
             const double relative=f.liquid[i]+p.rho*f.mesh[i];
             f.salt[i]=relative*(relative>=0?y[n+i-1]:y[n+i])-p.rho*(y[n+i]-y[n+i-1])/resistance;
         }
-        f.salt[0]=p.bottomC*f.liquid[0]-p.rho*y[0]*d[0]*(y[n]-p.bottomC)/(h*centers[0]);
+        if(bottomBackDiffusion) {
+            const double back=bottomBackDiffusion(time);
+            if(!(back>=0)) throw std::runtime_error("negative imposed back-diffusion");
+            f.salt[0]=p.ceq*f.liquid[0]-back;
+        } else {
+            f.salt[0]=p.bottomC*f.liquid[0]-p.rho*y[0]*d[0]*(y[n]-p.bottomC)/(h*centers[0]);
+        }
         f.salt[n]=p.crystal*(1-p.birth)*f.speed;
         return f;
     }
-    Vec rhs(const Vec& y) const {
-        const auto f=flux(y); Vec v(size(),0);
+    Vec rhs(const Vec& y,double time=0) const {
+        const auto f=flux(y,time); Vec v(size(),0);
         double internal=0,positive=0,dissolution=0;
         for(int i=0;i<n;++i) {
             const double e=f.mesh[i]-f.mesh[i+1]-f.reaction[i]*f.volume[i]/p.crystal;
@@ -138,7 +158,9 @@ public:
     }
     void validate(const Vec& y) const {
         for(int i=0;i<n;++i)
-            if(!(y[i]>.02 && y[i]<.95 && y[n+i]>=0 && y[n+i]<.95))
+            if(!(y[i]>.02 &&
+                 (p.allowCompleteDissolution ? y[i]<=1.0 : y[i]<.95) &&
+                 y[n+i]>=0 && y[n+i]<.95))
                 throw std::runtime_error("ALE accepted state outside M3 physical bounds");
     }
 };
