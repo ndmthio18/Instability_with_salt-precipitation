@@ -1,155 +1,221 @@
 # 修正增长律与 ALE 的同口径比较
 
-## 结论状态
+## Target
 
-**数学一致性：通过。** 在把“高度”严格定义为晶体库存等效的净增长高度后，修正增长律与 ALE 在同一 `x0=0.08` 单向土壤通量驱动下高度一致。
+说明修正增长律与 ALE 应比较哪个高度，并推导核心固相分数
+\(\phi_{\mathrm{core}}\) 的来源。
 
-**独立物理验证：未建立。** 两者的一致性主要来自共同的盐质量守恒和同一个核心固相分数换算，不能据此证明反应动力学、核心孔隙率或实验室坐标中的壳顶位置正确。
+## Status
 
-## 1. 土壤反扩散后的净供盐
+**COHERENT AFTER REFRAMING / EXTRA ASSUMPTION。**
 
-在土壤—盐壳界面取液相盐质量分数为平衡值 (C_{eq})。水通量为 (j)，向下的土壤扩散通量为 (B_{soil}>0)。总液体质量通量为 (m)，则
+把高度限定为“晶体库存等效净高度”后，两种模型总量一致；固定底面 ALE
+几何顶高不是同一个物理量。当前结果是守恒一致性检查，不是独立动力学验证。
 
-\[
-P=mC_{eq}-B_{soil},\qquad
-j=m(1-C_{eq})+B_{soil}.
-\]
+## Invariant Object
 
-消去 (m)：
+单位面积盐壳中的晶体质量库存 \(M_{\mathrm{cr}}\)。
 
-\[
-\boxed{P(t)=\frac{C_{eq}j(t)-B_{soil}(t)}{1-C_{eq}}}.
-\tag{1}
-\]
+## Assumptions
 
-本次不重新求解土壤；(j(t)) 与 (B_{soil}(t)) 均取自先前 `x0=0.08` 土柱，从首次析盐时刻 (t=19048.5\,\mathrm{s}) 起按原始 300 s 状态线性插值。这是**单向规定通量试验**，盐壳不会反过来改变土壤通量。
+- 界面液相取 \(C=C_{\mathrm{eq}}\)。
+- 壳内浓度扰动小，且 \(Pe_\ell\ll1\)。
+- 盐壳内反应—扩散场准稳态。
+- 厚壳极限 \(h/\ell\gg1\)，顶部和底部活性层不重叠。
+- 顶部活性区形成稳定推进结构。
+- 新生顶面材料孔隙率为 \(\varepsilon_t\)。
+- 顶部活性区最终把进入该区的盐全部转化为晶体。
+- \(j(t)\) 和 \(B_{\mathrm{soil}}(t)\) 是既有土壤计算的单向规定输入。
 
-## 2. 动力学给出的核心固相分数
+## Notation
 
-共同参数为
+- \(j\)：向上的水质量通量。
+- \(B_{\mathrm{soil}}>0\)：土壤侧向下的盐扩散通量。
+- \(P\)：进入盐壳并导致净固体增加的盐通量。
+- \(S_{\mathrm{ref}}=C_{\mathrm{eq}}j/(1-C_{\mathrm{eq}})\)：平衡界面的参考盐通量。
+- \(X=\sqrt{Da^*}\)：顶部表面反应与内部反应—扩散的分配参数。
+- \(\varepsilon_t\)：新生顶面材料孔隙率。
+- \(\phi_{\mathrm{core}}\)：厚壳稳定推进解预测的核区固相分数。
 
-\[
-D_{eff}=\sqrt{\varepsilon_t}D_0,\qquad
-a_v=\frac{36(1-\varepsilon_t)}{d_g},
-\]
+## Derivation Strategy
 
-\[
-Da^*=\frac{\beta^2(1-\varepsilon_t)^2(1-C_{eq})k_r}
-{\varepsilon_tD_{eff}a_v}.
-\tag{2}
-\]
+先由界面水盐守恒得到 \(P\)，再用顶部表面析出决定推进速度 \(v_t\)，
+最后用全部盐转化后的晶体库存闭合求出 \(\phi_{\mathrm{core}}\)。
 
-厚壳稳定推进闭合给出
+## Derivation Map
 
-\[
-\boxed{\phi_{core}=(1-\varepsilon_t)
-\frac{1+\sqrt{Da^*}}{\sqrt{Da^*}}}.
-\tag{3}
-\]
+1. 界面水盐守恒给出净供盐 \(P\)。
+2. 厚壳解把 \(S_{\mathrm{ref}}\) 分为表面析出和层内析出。
+3. 表面析出与新生材料堆积密度决定 \(v_t\)。
+4. 顶部区的总晶体产量决定后方核区固相分数。
+5. ALE 使用总晶体库存定义同口径等效净高度。
 
-本算例中
+## Main Derivation
 
-\[
-Da^*=3.17503557,\qquad
-\sqrt{Da^*}=1.78186295,\qquad
-\phi_{core}=0.88988992.
-\]
+### Step 1. 土壤反扩散后的净供盐
 
-## 3. 修正模型的净增长高度
-
-净固体库存每单位面积为 (ho_{cr}\phi_{core}h_{net})。因此
+界面总液体质量通量为 \(m\)：
 
 \[
-\rho_{cr}\phi_{core}\frac{dh_{net}}{dt}=P(t),
+P=mC_{\mathrm{eq}}-B_{\mathrm{soil}},\qquad
+j=m(1-C_{\mathrm{eq}})+B_{\mathrm{soil}}.
 \]
 
-即
+消去 \(m\)：
 
 \[
 \boxed{
-\frac{dh_{net}}{dt}
-=\frac{\sqrt{Da^*}}{1+\sqrt{Da^*}}
-\frac{C_{eq}j(t)-B_{soil}(t)}
-{\rho_{cr}(1-\varepsilon_t)(1-C_{eq})}}
+P(t)=\frac{C_{\mathrm{eq}}j(t)-B_{\mathrm{soil}}(t)}
+{1-C_{\mathrm{eq}}}}.
+\tag{1}
+\]
+
+### Step 2. 顶部区的盐通量分配
+
+厚壳极限下，
+
+\[
+\boxed{G_{\mathrm{top}}=\frac{X}{1+X}S_{\mathrm{ref}}},
+\qquad
+\boxed{R_{\mathrm{up}}=\frac{1}{1+X}S_{\mathrm{ref}}},
+\qquad X=\sqrt{Da^*}.
+\tag{2}
+\]
+
+因此 \(G_{\mathrm{top}}+R_{\mathrm{up}}=S_{\mathrm{ref}}\)。
+
+### Step 3. 顶面推进速度
+
+新生材料的固相分数为 \(1-\varepsilon_t\)。表面析出控制顶面推进：
+
+\[
+\rho_{\mathrm{cr}}(1-\varepsilon_t)v_t
+=G_{\mathrm{top}}
+=\frac{X}{1+X}S_{\mathrm{ref}}.
+\tag{3}
+\]
+
+所以
+
+\[
+v_t=\frac{X}{1+X}
+\frac{S_{\mathrm{ref}}}
+{\rho_{\mathrm{cr}}(1-\varepsilon_t)}.
 \tag{4}
+\]
+
+### Step 4. 核区固相分数
+
+稳定推进时，表面析出和顶部层内析出最终都留在后方核区。因此
+
+\[
+\rho_{\mathrm{cr}}\phi_{\mathrm{core}}v_t
+=S_{\mathrm{ref}}.
+\tag{5}
+\]
+
+把式 (4) 代入式 (5)：
+
+\[
+\boxed{
+\phi_{\mathrm{core}}
+=\frac{S_{\mathrm{ref}}}{\rho_{\mathrm{cr}}v_t}
+=(1-\varepsilon_t)\frac{1+X}{X}
+=(1-\varepsilon_t)
+\frac{1+\sqrt{Da^*}}{\sqrt{Da^*}}}.
+\tag{6}
+\]
+
+这里最后两行之间是乘法，不是相加。该因子表达：顶面只直接接收
+\(X/(1+X)\) 的盐，但顶部活性区整体接收全部 \(S_{\mathrm{ref}}\)。
+
+本算例
+
+\[
+\varepsilon_t=0.43,\qquad
+Da^*=3.17503557,\qquad
+\sqrt{Da^*}=1.78186295,
+\]
+
+因此
+
+\[
+\boxed{\phi_{\mathrm{core}}=0.88988992},\qquad
+\boxed{\varepsilon_{\mathrm{core}}=1-\phi_{\mathrm{core}}
+=0.11011008}.
+\tag{7}
+\]
+
+物理可行性要求 \(\phi_{\mathrm{core}}\le1\)，即
+
+\[
+\sqrt{Da^*}\ge
+\frac{1-\varepsilon_t}{\varepsilon_t}.
+\tag{8}
+\]
+
+本算例右端为 1.32558，小于 1.78186，因此没有违反体积分数上界。
+
+### Step 5. 修正模型净高度
+
+\[
+\boxed{
+\frac{dh_{\mathrm{net}}}{dt}
+=\frac{P(t)}{\rho_{\mathrm{cr}}\phi_{\mathrm{core}}}}
+\tag{9}
 \]
 
 以及
 
 \[
-h_{net}^{corr}(t)=h_0+
-\frac{1}{\rho_{cr}\phi_{core}}
+h_{\mathrm{net}}^{\mathrm{corr}}(t)
+=h_0+\frac{1}{\rho_{\mathrm{cr}}\phi_{\mathrm{core}}}
 \int_0^tP(\tau)\,d\tau.
-\tag{5}
+\tag{10}
 \]
 
-对分段线性的 (j(t)) 和 (B_{soil}(t))，代码逐段解析积分，没有时间平滑或外推。
+### Step 6. ALE 的同口径净高度
 
-## 4. ALE 中允许完全溶解
-
-原 ALE 以孔隙体积为守恒变量，并在 (arepsilon=0.95) 停止。为了描述底部固相消失，本次仅在显式开关 `allowCompleteDissolution=true` 下改用非负固相体积
+允许局部固相完全溶解时，以非负固相体积
 
 \[
-S_i=V_i-E_i=V_i(1-\varepsilon_i),\qquad S_i\ge0.
-\tag{6}
+S_i=V_i(1-\varepsilon_i)\ge0
 \]
 
-于是 (S_i=0) 等价于
-
-\[
-\boxed{\varepsilon_i=1},
-\]
-
-表示该单元中晶体完全溶解、只剩孔液；它不再计入固体高度。反应比表面积 (a_v\propto1-\varepsilon)，故在 (arepsilon=1) 时溶解反应自动降为零。CVODE 的未接受 Newton 试探态可能产生机器精度量级的 (S_i<0)，代码只在残差评估时把这种试探态投影回物理区间；接受态仍由 (S_i\ge0) 约束，未修改守恒库存。
-
-## 5. ALE 的同口径净高度
-
-ALE 给出空间非均匀孔隙率和总晶体库存 (M_{cr}^{ALE}(t))。与式 (5) 比较的量定义为
+为守恒变量；\(S_i=0\) 对应 \(\varepsilon_i=1\)，该单元不贡献晶体库存。
+与式 (10) 同口径的 ALE 高度定义为
 
 \[
 \boxed{
-h_{net}^{ALE}(t)=h_0+
-\frac{M_{cr}^{ALE}(t)-M_{cr}^{ALE}(0)}
-{\rho_{cr}\phi_{core}}}.
-\tag{7}
+h_{\mathrm{net}}^{\mathrm{ALE}}(t)
+=h_0+
+\frac{M_{\mathrm{cr}}^{\mathrm{ALE}}(t)
+-M_{\mathrm{cr}}^{\mathrm{ALE}}(0)}
+{\rho_{\mathrm{cr}}\phi_{\mathrm{core}}}}.
+\tag{11}
 \]
 
-这一定义只统计新增净固体；完全溶解区贡献为零。它与固定底面 ALE 的几何顶面坐标 (z_t^{ALE}) 不相同：
+## Remarks and Interpretation
 
-\[
-h_{net}^{ALE}\ne z_t^{ALE}
-\]
+- \(\phi_{\mathrm{core}}\) 不是从 ALE 拟合出来的，而是厚壳稳定推进解析闭合的预测。
+- 本次 ALE 末态最小孔隙率为 0.16275，对应最大局部固相分数约 0.83725，
+  并未直接复现理论值 0.88989。
+- 因此把 ALE 晶体库存也除以同一个 \(\phi_{\mathrm{core}}\)，只是在定义共同的
+  等效高度；这不能验证 \(\phi_{\mathrm{core}}\)。
+- 不使用 \(\phi_{\mathrm{core}}\) 时，可直接比较晶体质量增量：
+  修正式累计供盐为 \(0.606399\,\mathrm{kg\,m^{-2}}\)，ALE 晶体增量为
+  \(0.606438\,\mathrm{kg\,m^{-2}}\)。
 
-除非另行规定底部移动、壳体沉降以及把非均匀孔隙率映射成实验室坐标中的厚度。
+## Boundaries and Non-Claims
 
-## 6. 数值结果
+- 固定底面 ALE 的几何顶高不等于式 (11) 的净库存高度。
+- 若要验证 \(\phi_{\mathrm{core}}\)，应从 ALE 的稳定核区平台或实验截面独立测量
+  固相分数，再与式 (6) 比较。
+- 若要预测实验室坐标中的壳顶位置，还需底部退缩、壳体下沉或接触条件闭合。
+- 本次 \(B_{\mathrm{soil}}\) 为单向输入，不是同步双向耦合解。
 
-共同输入：(h_0=3.5\,\mu\mathrm m)、(C_{eq}=0.264940869768)、(ho_{cr}=2165\,\mathrm{kg\,m^{-3}})、(arepsilon_t=0.43)、(k_r=10^{-3}\,\mathrm{m\,s^{-1}})、64 个 ALE 单元。
+## Open Risks
 
-| 量 | 修正模型 | ALE |
-|---|---:|---:|
-| 计算时长 | 44.70875 h | 44.70875 h |
-| 最终净高度 | 318.249142 µm | 318.269417 µm |
-| 从 (h_0) 起的净增量 | 314.749142 µm | 314.769417 µm |
-| ALE − 修正 | — | 0.020275 µm |
-| 增量相对差 | — | (6.4415\times10^{-5}) |
-| 固定底面几何顶高 | — | 573.346069 µm |
-
-ALE 底部单元在 (2710\,\mathrm{s}=0.75278\,\mathrm h) 达到 (arepsilon=1)，之后保持完全溶解状态；末态顶部孔隙率为 0.429102，最小孔隙率为 0.162754。盐和水的最大绝对守恒残差分别为 (7.29\times10^{-13}) 和 (3.63\times10^{-12}\,\mathrm{kg\,m^{-2}})。
-
-## 7. 能支持与不能支持的结论
-
-本计算支持：
-
-1. 允许 (arepsilon=1) 后，ALE 可以守恒地跨过底部固相完全溶解事件并完成全部驱动时段。
-2. 当观测量统一为式 (7) 的净固体库存等效高度时，修正增长律与 ALE 的总量演化一致。
-3. 固定底面几何顶高不能直接称为净增长高度。
-
-本计算不能支持：
-
-1. 不能把 (6.44\times10^{-5}) 的差异解释为对动力学的独立验证；式 (4) 和式 (7) 都建立在总盐守恒及相同 (phi_{core}) 上。
-2. 不能证明 (phi_{core}=0.88989) 是真实壳体的均匀固相分数；ALE 本身给出显著空间非均匀孔隙率。
-3. 不能预测实验室坐标中的壳顶轨迹；仍需底部退缩/下沉的运动学闭合。
-4. (B_{soil}(t)) 是既有土壤算例的输出并被单向施加，不是与本次盐壳同步耦合求出的量。
-5. 按式 (1) 重构的累计供盐为 (0.606399\,\mathrm{kg\,m^{-2}})，而原土壤文件直接导出的累计净 SCVF 盐通量为 (0.594990\,\mathrm{kg\,m^{-2}})，相差约 1.92%。这来自界面平衡近似和两套通量定义，论文中必须明确选择哪一个作为模型输入，不能混用。
-
+- 当前 ALE 在有限计算时段内尚未形成与理论假设完全相同的均匀核区平台。
+- 反应层尺度接近或小于晶粒尺度时，连续介质 \(\phi_{\mathrm{core}}\) 的解释可能失效。
+- 原土壤直接 SCVF 净盐通量与式 (1) 重构供盐累计相差约 1.92%，论文中不可混用。
