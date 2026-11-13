@@ -1,0 +1,68 @@
+{
+  "pdf": "figures\\figure2_early_flux_convergence.pdf",
+  "auditable": true,
+  "verdict": "FIX BEFORE DELIVERY",
+  "page_count": 1,
+  "visible_text_box_count": 123,
+  "text_trace_count": 123,
+  "stroke_path_count": 178,
+  "filled_region_count": 70,
+  "image_region_count": 0,
+  "summary": {
+    "fail": 2,
+    "warn": 0,
+    "contained_fill_overlays": 0,
+    "contained_image_overlays": 0
+  },
+  "thresholds": {
+    "text_inset_pt": 0.6,
+    "min_overlap_ratio": 0.05,
+    "clipping_tolerance_pt": 0.5
+  },
+  "findings": [
+    {
+      "severity": "FAIL",
+      "kind": "text-text",
+      "page": 1,
+      "message": "Text boxes overlap by 92.1% of the smaller box",
+      "text": "C at bottom − C equilibrium (10⁻⁶)",
+      "text_bbox": [
+        38.154266357421875,
+        311.20477294921875,
+        47.154266357421875,
+        437.5361328125
+      ],
+      "other_text": "e",
+      "other_bbox": [
+        42.33070755004883,
+        310.3280334472656,
+        46.77070617675781,
+        321.4180603027344
+      ],
+      "object_count": 1,
+      "object_indexes": []
+    },
+    {
+      "severity": "FAIL",
+      "kind": "text-text",
+      "page": 1,
+      "message": "Text boxes overlap by 92.1% of the smaller box",
+      "text": "C at bottom − C equilibrium (10⁻⁶)",
+      "text_bbox": [
+        294.7493591308594,
+        311.20477294921875,
+        303.7493591308594,
+        437.5361022949219
+      ],
+      "other_text": "f",
+      "other_bbox": [
+        298.9258117675781,
+        310.3280334472656,
+        302.25579833984375,
+        321.4180603027344
+      ],
+      "object_count": 1,
+      "object_indexes": []
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+# Preserve archived source/data bytes and their SHA-256 across Windows/Linux.
+* -text
+# Generated vector path whitespace and original execution logs are evidence.
+*.svg -whitespace
+logs/** -whitespace
+provenance/** -whitespace
+source_legacy/** -whitespace

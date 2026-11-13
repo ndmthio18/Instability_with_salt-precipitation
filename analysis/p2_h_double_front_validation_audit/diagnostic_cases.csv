@@ -1,0 +1,10 @@
+id,nc,nl,kappa,gap,rtol,maxstep,u,end,weight,jac,scaling
+short_u0.6_r1e-09,128,32,1,1e-09,1e-09,15,0.6,1000,excess,ad,scaled
+short_u0.6_r1e-10,128,32,1,1e-09,1e-10,15,0.6,1000,excess,ad,scaled
+short_u0.9_r1e-09,128,32,1,1e-09,1e-09,15,0.9,1000,excess,ad,scaled
+short_u0.9_r1e-10,128,32,1,1e-09,1e-10,15,0.9,1000,excess,ad,scaled
+short_x008_r1e-09,128,32,1,1e-09,1e-09,15,-1,1000,excess,ad,scaled
+short_x008_r1e-10,128,32,1,1e-09,1e-10,15,-1,1000,excess,ad,scaled
+ablate_physical,128,32,1,1e-09,1e-09,15,0.6,1000,physical,ad,scaled
+ablate_fd,128,32,1,1e-09,1e-09,15,0.6,1000,excess,fd,scaled
+ablate_unscaled,128,32,1,1e-09,1e-09,15,0.6,1000,excess,ad,none

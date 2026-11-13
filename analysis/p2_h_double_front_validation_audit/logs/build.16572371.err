@@ -1,0 +1,21 @@
+In file included from source/run_case.cc:1:
+source/two_bdf.hh: In static member function ‘static int audit28::Solver::eval(realtype, N_Vector, N_Vector, void*)’:
+source/two_bdf.hh:25:14: warning: this ‘for’ clause does not guard... [-Wmisleading-indentation]
+   25 |              for(int i=0;i<s.model.size();++i)NV_Ith_S(b,i)=static_cast<double>(dy[i]/s.scale[i]);return 0;
+      |              ^~~
+source/two_bdf.hh:25:99: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘for’
+   25 |              for(int i=0;i<s.model.size();++i)NV_Ith_S(b,i)=static_cast<double>(dy[i]/s.scale[i]);return 0;
+      |                                                                                                   ^~~~~~
+In file included from source/verify.cc:1:
+source/two_bdf.hh: In static member function ‘static int audit28::Solver::eval(realtype, N_Vector, N_Vector, void*)’:
+source/two_bdf.hh:25:14: warning: this ‘for’ clause does not guard... [-Wmisleading-indentation]
+   25 |              for(int i=0;i<s.model.size();++i)NV_Ith_S(b,i)=static_cast<double>(dy[i]/s.scale[i]);return 0;
+      |              ^~~
+source/two_bdf.hh:25:99: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘for’
+   25 |              for(int i=0;i<s.model.size();++i)NV_Ith_S(b,i)=static_cast<double>(dy[i]/s.scale[i]);return 0;
+      |                                                                                                   ^~~~~~
+
+[CVODE ERROR]  CVode
+  At t = 0.0221885 and h = 1.3515e-08, the error test failed repeatedly or with |h| = hmin.
+
+FAIL CVODE -3:

@@ -1,0 +1,7 @@
+id=parallel_x008_n512
+status=censored_duplicate_performance_trial
+last_s=11220.0
+previous_s=11160.0
+target_s=160951.5
+transfers=0
+reason=8-thread trial had no observed throughput gain on this allocation; identical prefix retained; primary serial run continues

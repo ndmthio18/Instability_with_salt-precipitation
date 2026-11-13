@@ -1,0 +1,36 @@
+{
+  "velocity": [
+    {
+      "case": "u06",
+      "complete": true,
+      "worst_velocity_normalized": 6.1954831946528774e-09
+    },
+    {
+      "case": "u09",
+      "complete": true,
+      "worst_velocity_normalized": 5.530042712056424e-09
+    },
+    {
+      "case": "x008",
+      "complete": true,
+      "worst_velocity_normalized": 6.925427588782512e-09
+    }
+  ],
+  "flux": [
+    {
+      "case": "u06",
+      "complete": true,
+      "earliest_s": 0.0,
+      "common_end": 100.0
+    },
+    {
+      "case": "x008",
+      "complete": true,
+      "earliest_s": 5e-09,
+      "common_end": 100.0
+    }
+  ],
+  "failures": [],
+  "P0_pass": true,
+  "P1_pass": true
+}

@@ -1,0 +1,94 @@
+                              id                status   last_s
+                       ablate_fd                   end     1000
+                 ablate_physical solver_stop:CVODE -3:        5
+                 ablate_unscaled                   end     1000
+           early_u06_n128_b1e-08                   end      100
+           early_u06_n128_b1e-09                   end      100
+           early_u06_n128_b1e-10 solver_stop:CVODE -3:        2
+       early_u06_n128_consistent                   end      100
+            early_u06_n128_tight                   end      100
+           early_u06_n256_b1e-08                   end      100
+           early_u06_n256_b1e-09                   end      100
+           early_u06_n256_b1e-10                   end      100
+       early_u06_n256_consistent                   end      100
+            early_u06_n256_tight                   end      100
+           early_u06_n512_b1e-08                   end      100
+           early_u06_n512_b1e-09                   end      100
+           early_u06_n512_b1e-10                   end      100
+       early_u06_n512_consistent                   end      100
+            early_u06_n512_tight                   end      100
+          early_x008_n128_b1e-08                   end      100
+          early_x008_n128_b1e-09                   end      100
+          early_x008_n128_b1e-10 solver_stop:CVODE -3:        2
+      early_x008_n128_consistent                   end      100
+           early_x008_n128_tight                   end      100
+          early_x008_n256_b1e-08                   end      100
+          early_x008_n256_b1e-09                   end      100
+          early_x008_n256_b1e-10                   end      100
+      early_x008_n256_consistent                   end      100
+           early_x008_n256_tight                   end      100
+          early_x008_n512_b1e-08                   end      100
+          early_x008_n512_b1e-09                   end      100
+          early_x008_n512_b1e-10                   end      100
+      early_x008_n512_consistent                   end      100
+           early_x008_n512_tight                   end      100
+             fresh_early_u06_b01                   end      100
+                      legacy_r10 solver_stop:CVODE -3:        5
+                       legacy_r8                   end      100
+                       legacy_r9 solver_stop:CVODE -3:        2
+         nonlinear_early_u06_b01                   end      100
+                p0_ld_u06_r1e-09                   end   180000
+                p0_ld_u06_r1e-10                   end   180000
+                p0_ld_u09_r1e-09                   end   180000
+                p0_ld_u09_r1e-10                   end   180000
+               p0_ld_x008_r1e-09                   end 160951.5
+               p0_ld_x008_r1e-10                   end 160951.5
+             setup_early_u06_b01                   end      100
+     setup_early_u06_n128_b1e-08                   end      100
+     setup_early_u06_n128_b1e-09                   end      100
+     setup_early_u06_n128_b1e-10                   end      100
+ setup_early_u06_n128_consistent                   end      100
+      setup_early_u06_n128_tight                   end      100
+     setup_early_u06_n256_b1e-08                   end      100
+     setup_early_u06_n256_b1e-09                   end      100
+     setup_early_u06_n256_b1e-10                   end      100
+ setup_early_u06_n256_consistent                   end      100
+      setup_early_u06_n256_tight                   end      100
+     setup_early_u06_n512_b1e-08                   end      100
+     setup_early_u06_n512_b1e-09                   end      100
+     setup_early_u06_n512_b1e-10                   end      100
+ setup_early_u06_n512_consistent                   end      100
+      setup_early_u06_n512_tight                   end      100
+    setup_early_x008_n128_b1e-08                   end      100
+    setup_early_x008_n128_b1e-09                   end      100
+    setup_early_x008_n128_b1e-10                   end      100
+setup_early_x008_n128_consistent                   end      100
+     setup_early_x008_n128_tight                   end      100
+    setup_early_x008_n256_b1e-08                   end      100
+    setup_early_x008_n256_b1e-09                   end      100
+    setup_early_x008_n256_b1e-10                   end      100
+setup_early_x008_n256_consistent                   end      100
+     setup_early_x008_n256_tight                   end      100
+    setup_early_x008_n512_b1e-08                   end      100
+    setup_early_x008_n512_b1e-09                   end      100
+    setup_early_x008_n512_b1e-10                   end      100
+setup_early_x008_n512_consistent                   end      100
+     setup_early_x008_n512_tight                   end      100
+          setup_p0_ld_u06_r1e-09                   end   180000
+          setup_p0_ld_u06_r1e-10                   end   180000
+          setup_p0_ld_u09_r1e-09                   end   180000
+          setup_p0_ld_u09_r1e-10                   end   180000
+         setup_p0_ld_x008_r1e-09                   end 160951.5
+         setup_p0_ld_x008_r1e-10                   end 160951.5
+               short_u0.6_r1e-09                   end     1000
+               short_u0.6_r1e-10                   end     1000
+               short_u0.9_r1e-09                   end     1000
+               short_u0.9_r1e-10                   end     1000
+               short_x008_r1e-09                   end     1000
+               short_x008_r1e-10                   end     1000
+                        smoke_r9                   end      100
+                     id               reference         kind    end_s  n_times   vt_max_abs  vt_max_normalized   vb_max_abs  vb_max_normalized  vnet_max_abs  vnet_max_normalized   zt_max_abs  zt_max_normalized   zb_max_abs  zb_max_normalized   hc_max_abs  hc_max_normalized  Fplus_max_abs  Fplus_max_normalized  Fminus_max_abs  Fminus_max_normalized
+ setup_p0_ld_u06_r1e-09  setup_p0_ld_u06_r1e-10 P0 tolerance 180000.0     3009 2.063135e-17       6.195483e-09 1.611499e-17       4.839244e-09  1.611299e-17         4.838642e-09 1.000719e-16       1.367476e-11 7.732257e-15       7.736353e-10 7.750621e-15       7.897873e-10   1.450269e-11          2.260487e-06    1.450700e-11           2.261158e-06
+ setup_p0_ld_u09_r1e-09  setup_p0_ld_u09_r1e-10 P0 tolerance 180000.0     3009 1.841539e-17       5.530043e-09 1.609309e-17       4.832669e-09  1.611837e-17         4.840259e-09 3.001072e-16       1.845429e-11 1.377301e-14       1.537448e-09 1.400161e-14       3.317762e-09   8.241123e-12          1.284517e-06    8.243583e-12           1.284900e-06
+setup_p0_ld_x008_r1e-09 setup_p0_ld_x008_r1e-10 P0 tolerance 160951.5     2692 1.090958e-17       3.272109e-09 2.308192e-17       6.925428e-09  2.307625e-17         6.923728e-09 2.589996e-14       6.532632e-11 3.530000e-14       3.183807e-09 6.110000e-14       4.188712e-09   2.919090e-12          4.544384e-07    2.919960e-12           4.545738e-07
+[{'case': 'u06', 'common_end_s': 100.0, 'all_complete_100s': True, 'earliest_prefix_pass_s': 0.0, 'certified_earliest_s': 0.0, 'max_normalized_error': 0.008213850997184094}, {'case': 'x008', 'common_end_s': 100.0, 'all_complete_100s': True, 'earliest_prefix_pass_s': 4.999999999999999e-09, 'certified_earliest_s': 4.999999999999999e-09, 'max_normalized_error': 0.012778126075848058}]

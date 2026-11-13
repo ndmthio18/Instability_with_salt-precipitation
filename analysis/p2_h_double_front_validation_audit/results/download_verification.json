@@ -1,0 +1,20 @@
+[
+  {
+    "archive": "p2_kinetic_light.tar.gz",
+    "expected": "ffb6948982ea076cdee61d80dc82ed7fd9ec70f790317ea448c35bf5f6d1c6cf",
+    "actual": "ffb6948982ea076cdee61d80dc82ed7fd9ec70f790317ea448c35bf5f6d1c6cf",
+    "match": true
+  },
+  {
+    "archive": "partial_light.tar.gz",
+    "expected": "bc7a190b7b6cdf29be5bc1b46ef3322caa34495a10d13786cc40fca8e1b6f74e",
+    "actual": "bc7a190b7b6cdf29be5bc1b46ef3322caa34495a10d13786cc40fca8e1b6f74e",
+    "match": true
+  },
+  {
+    "archive": "retry_light.tar.gz",
+    "expected": "5e929dd862d0c646d6d26e5829407cb159040d32b06cd7530373a7d7d2e0694f",
+    "actual": "5e929dd862d0c646d6d26e5829407cb159040d32b06cd7530373a7d7d2e0694f",
+    "match": true
+  }
+]

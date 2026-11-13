@@ -1,0 +1,64 @@
+{
+  "numerical_status": "GO_WITHIN_TESTED_ENVELOPE",
+  "overall": "NO_GO_UNQUALIFIED_PHYSICAL_VALIDATION",
+  "gates": [
+    {
+      "name": "mathematical_conservation",
+      "status": "PASS",
+      "max_abs_kg_m2": 3.89910326248355e-13
+    },
+    {
+      "name": "moving_interface_consistency",
+      "status": "PASS_CONDITIONAL_ON_KINETIC_CLOSURE",
+      "evidence": "Independent inventories and moving-frame integral jumps; not empirical calibration"
+    },
+    {
+      "name": "spatial_convergence",
+      "status": "PASS_WITHIN_TESTED_ENVELOPE",
+      "maximum_scaled_difference": 0.0097772116532219,
+      "criterion": 0.01
+    },
+    {
+      "name": "temporal_convergence",
+      "status": "PASS_WITHIN_TESTED_ENVELOPE",
+      "maximum_velocity_scaled_difference": 1.1577892004028551e-08,
+      "criterion": 0.01
+    },
+    {
+      "name": "interface_flux_convergence",
+      "status": "PASS_AT_SAMPLED_TIMES",
+      "evidence": [
+        {
+          "case": "u06",
+          "complete": true,
+          "earliest_s": 0.0,
+          "common_end": 100.0
+        },
+        {
+          "case": "x008",
+          "complete": true,
+          "earliest_s": 5e-09,
+          "common_end": 100.0
+        }
+      ]
+    },
+    {
+      "name": "bottom_kinetic_sensitivity",
+      "status": "AUDITED_NOT_EMPIRICALLY_VALIDATED",
+      "max_net_change_reference": 0.3497501565814792,
+      "max_relative_thickness_change": 0.4202838075937003
+    },
+    {
+      "name": "corrected_top_growth_law",
+      "status": "CONDITIONAL_APPROXIMATION_WITH_SYSTEMATIC_BIAS",
+      "no_fitted_parameters": true
+    },
+    {
+      "name": "corrected_geometric_net_growth_law",
+      "status": "NOT_VALIDATED_AS_UNCONDITIONAL_GEOMETRIC_LAW",
+      "requires": "Stable density, dissolved-storage approximation, and additional bottom-interface physics"
+    }
+  ],
+  "primary_completed": 51,
+  "primary_total": 51
+}

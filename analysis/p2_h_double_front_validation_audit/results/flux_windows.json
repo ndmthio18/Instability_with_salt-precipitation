@@ -1,0 +1,18 @@
+[
+  {
+    "case": "u06",
+    "common_end_s": 100.0,
+    "all_complete_100s": true,
+    "earliest_prefix_pass_s": 0.0,
+    "certified_earliest_s": 0.0,
+    "max_normalized_error": 0.008213850997184094
+  },
+  {
+    "case": "x008",
+    "common_end_s": 100.0,
+    "all_complete_100s": true,
+    "earliest_prefix_pass_s": 4.999999999999999e-09,
+    "certified_earliest_s": 4.999999999999999e-09,
+    "max_normalized_error": 0.012778126075848058
+  }
+]

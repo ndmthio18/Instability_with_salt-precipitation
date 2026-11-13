@@ -1,0 +1,8 @@
+In file included from source/run_case.cc:1:
+source/two_bdf.hh: In constructor ‘audit28::Solver::Solver(const audit28::Model&, const p2h::Vec&, double, double, double)’:
+source/two_bdf.hh:96:9: warning: this ‘for’ clause does not guard... [-Wmisleading-indentation]
+   96 |         for(int i=0;i<m.size();++i)NV_Ith_S(state,i)=initial[i]/scale[i];N_VConst(0.,constraints);
+      |         ^~~
+source/two_bdf.hh:96:74: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘for’
+   96 |         for(int i=0;i<m.size();++i)NV_Ith_S(state,i)=initial[i]/scale[i];N_VConst(0.,constraints);
+      |                                                                          ^~~~~~~~

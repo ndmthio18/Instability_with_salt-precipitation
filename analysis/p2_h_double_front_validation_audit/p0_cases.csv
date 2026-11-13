@@ -1,0 +1,7 @@
+id,nc,nl,kappa,gap,rtol,maxstep,u,end,weight,jac,scaling
+p0_ld_u06_r1e-09,128,32,1,1e-09,1e-09,30,0.6,180000,excess,ad,scaled
+p0_ld_u06_r1e-10,128,32,1,1e-09,1e-10,30,0.6,180000,excess,ad,scaled
+p0_ld_u09_r1e-09,128,32,1,1e-09,1e-09,30,0.9,180000,excess,ad,scaled
+p0_ld_u09_r1e-10,128,32,1,1e-09,1e-10,30,0.9,180000,excess,ad,scaled
+p0_ld_x008_r1e-09,128,32,1,1e-09,1e-09,30,-1,160951.5,excess,ad,scaled
+p0_ld_x008_r1e-10,128,32,1,1e-09,1e-10,30,-1,160951.5,excess,ad,scaled
